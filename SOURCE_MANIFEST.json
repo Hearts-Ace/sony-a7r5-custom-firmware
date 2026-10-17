@@ -1,0 +1,307 @@
+{
+  "sources": [
+    {
+      "path": "tools/apply_fl2_fl3_cn2_property.py",
+      "original_sha256": "732b394ce20762fc8215c7dc913e7e03c52ec003d8c04e4b6317bda26bbe6ea6",
+      "public_sha256": "7dc2aa7ccb211cd3464a0b784e84520ec21ab5fa469c91c1f273467faf4dbd59",
+      "publication_changes": [
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/apply_fl2_fl3_property.py",
+      "original_sha256": "8334352f018a6b475ed34fdbc96eef5a9023bf46a1446e380c7800d78df2836c",
+      "public_sha256": "fbe78b6de2aa01f48fe1213d6490e90ef780789270568273e7b51505631c0429",
+      "publication_changes": [
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/backup_r5_all.py",
+      "original_sha256": "68feb5ebd79bf371aba8d8ee57d722298c5535efc9f1202b7cf72af4a2b7bcfb",
+      "public_sha256": "68feb5ebd79bf371aba8d8ee57d722298c5535efc9f1202b7cf72af4a2b7bcfb",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/build_corrected_fl2_fl3.py",
+      "original_sha256": "f047703f1e48bf595f3e2ece90e749b8c0eae1fe1d3fedf81f21ca9a7ab18222",
+      "public_sha256": "f836918d0b22a7c9de64ed11c437577a2823b0193a362eac77c6a8807357fdb5",
+      "publication_changes": [
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/build_r5_m4strict403.py",
+      "original_sha256": "38fc3e3a2975aec7049a850182cf13aa4153b53bf5cf1b1560fc1c4d765bd384",
+      "public_sha256": "38fc3e3a2975aec7049a850182cf13aa4153b53bf5cf1b1560fc1c4d765bd384",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/build_r5_m4strict404.py",
+      "original_sha256": "999d85642d7368d8ce29420972625db3520719cb9a36e479932eb52833767c67",
+      "public_sha256": "999d85642d7368d8ce29420972625db3520719cb9a36e479932eb52833767c67",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/build_r5_m4strict_ap.py",
+      "original_sha256": "a3f95f81971e49136ae0f789d67ecbb81bc18065463ba79ec54e50df997c370c",
+      "public_sha256": "a3f95f81971e49136ae0f789d67ecbb81bc18065463ba79ec54e50df997c370c",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/build_r5_m4strict_cp.py",
+      "original_sha256": "2050cfe4c51c6314a923868dc07a6aeb0dc729611f7af8d0fde98ed06a0c3e90",
+      "public_sha256": "2050cfe4c51c6314a923868dc07a6aeb0dc729611f7af8d0fde98ed06a0c3e90",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/build_r5_m4strict_gamma.py",
+      "original_sha256": "9be7afb4a480c1cfc72a78c5d609724b82746cfcf9b7a070d57f1ff7c0e866f4",
+      "public_sha256": "9be7afb4a480c1cfc72a78c5d609724b82746cfcf9b7a070d57f1ff7c0e866f4",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/build_r5_m4strict_personal.py",
+      "original_sha256": "a95187c2d6dcb5633f74c35f10ab5a687216b624f542a7af56a5dd79763132ce",
+      "public_sha256": "a95187c2d6dcb5633f74c35f10ab5a687216b624f542a7af56a5dd79763132ce",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/build_r5_m4strict_release.py",
+      "original_sha256": "71c9ac42140f822a7891e8304a464876e71296ee9c111e4ed98260d16753394b",
+      "public_sha256": "71c9ac42140f822a7891e8304a464876e71296ee9c111e4ed98260d16753394b",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/build_r5_m4strict_wbi.py",
+      "original_sha256": "afd18a4367669d0e6e589bf60e9a3082ef31dd4258d3a8196c83c451a119fce9",
+      "public_sha256": "afd18a4367669d0e6e589bf60e9a3082ef31dd4258d3a8196c83c451a119fce9",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/build_r5_partition1.py",
+      "original_sha256": "96181cc289a4dd43347040617854ae2340ec57aaad98a04c12899ce0f35de257",
+      "public_sha256": "96181cc289a4dd43347040617854ae2340ec57aaad98a04c12899ce0f35de257",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/build_r5_verifykey_skip.py",
+      "original_sha256": "47df4b4234381c045aa21a5106bee41a2c97f26d72a86cbc8e40301e78f28a1b",
+      "public_sha256": "62e48f51753fe462b1105b9de8ddf639b1b6619bd7cefde40dbe386fdd4f1177",
+      "publication_changes": [
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/deploy_r5_m4strict_personal.py",
+      "original_sha256": "e189cda6405ca03fd9f0617ebf4677d63c90d17553a3623efc6adacbdc716120",
+      "public_sha256": "8f2391ccb0775779407b7d17ffd50253e9e245ca678f085e50f5981e3fdff3df",
+      "publication_changes": [
+        "External bootloader archive path now requires R5_BOOTLOADER_ZIP; no default archive supplied."
+      ]
+    },
+    {
+      "path": "tools/elf_study.py",
+      "original_sha256": "64d7da9557720a506185497d4594b49cbb45d448578c83c54cd8edb0ba18a4b0",
+      "public_sha256": "64d7da9557720a506185497d4594b49cbb45d448578c83c54cd8edb0ba18a4b0",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/ext2read.py",
+      "original_sha256": "ba8fdfd5dfb6367d9d58f3571bb87ee40d94e9d46f10878d8f42b8342ebfd776",
+      "public_sha256": "ba8fdfd5dfb6367d9d58f3571bb87ee40d94e9d46f10878d8f42b8342ebfd776",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/fdat_encrypt.py",
+      "original_sha256": "865c46a284f3f4bdfb9f53ae38f05f4f6cf61a7c4845b67d2bafd2cfb5afa7b3",
+      "public_sha256": "865c46a284f3f4bdfb9f53ae38f05f4f6cf61a7c4845b67d2bafd2cfb5afa7b3",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/flash_r5_verifykey_skip.py",
+      "original_sha256": "a4d70fc277181a5f4d17d2a6fc2ce0f744bbce6be98ec5460d8d3260d0203b43",
+      "public_sha256": "08f844086ad3e95bf7c58eb25f3c2a16de76d5bd04d18993e1bc003bd9e0ee80",
+      "publication_changes": [
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/modify_r5_slot_settings.py",
+      "original_sha256": "4670d7f15c4a85a7149f8a7edb26db7d9fd734a4c7f85b4324d8dea67252a6d8",
+      "public_sha256": "c5ec7a0cfa57c1f5f12749c58216f4cf9a948b4dbbffe015346cfcfaa30f5816",
+      "publication_changes": [
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/patch_images.py",
+      "original_sha256": "b9d2c73099682b933f791f7fc8059fd81b061dd2bf0c0d147b7dff01ab3e0041",
+      "public_sha256": "f930efc16e60992de002a2b77240f374829790ab220be3d1b1f022f643582d43",
+      "publication_changes": [
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/patch_r5_slot_settings.py",
+      "original_sha256": "05b412c3b31c0bcbbda0fbf597dee31214d4d8c7ef676c3e33517883b6095790",
+      "public_sha256": "98c89dc124920f6dd91124194a1df5e5473d541291b4dce2903bbf795c97897f",
+      "publication_changes": [
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/r5_boot_probe.py",
+      "original_sha256": "8c72d3a7cdbc6104a6b3d235ebd59370055c666327fdf253f77f4b558d82ffd2",
+      "public_sha256": "a94b22c22628d991cd1d36250488398147b480e9c32786c1340bb953c8a7cc07",
+      "publication_changes": [
+        "External bootloader archive path now requires R5_BOOTLOADER_ZIP; no default archive supplied.",
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/r5_partition1_boot.py",
+      "original_sha256": "f28bdacb3c04103e3b52055176ffe25753795a65d0f9a718fb0b656bdbb67d6a",
+      "public_sha256": "5953a92d3d3f040ca39a41c89dacabfbdda3de6bb088b1b40dfbb7115e27e376",
+      "publication_changes": [
+        "External bootloader archive path now requires R5_BOOTLOADER_ZIP; no default archive supplied.",
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/r5_settings_ram_boot.py",
+      "original_sha256": "80b79977a51bdfdfb5d8947ff92192ec04d803df3dbc2d0f79d2a634500329d8",
+      "public_sha256": "1da898c28ffea300571f05751e951e6ae386a8756f3783c4b27ddb6b11e17e06",
+      "publication_changes": [
+        "External bootloader archive path now requires R5_BOOTLOADER_ZIP; no default archive supplied."
+      ]
+    },
+    {
+      "path": "tools/rebuild_tar.py",
+      "original_sha256": "cb6ac2405e10f2f43d466d35e66bfdb29e49d10a206075f73acd7d7aab84cb15",
+      "public_sha256": "3729683cd2736f0ba88748eabbae8ea2203b1bbff43960361c750ce0a498e43a",
+      "publication_changes": [
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/resume_r5_raw_backup.py",
+      "original_sha256": "6872f07013d5b74d4dce2ac1219a912369e984b3c52fcd50f523aea98e5048ee",
+      "public_sha256": "6872f07013d5b74d4dce2ac1219a912369e984b3c52fcd50f523aea98e5048ee",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/run_r5_m4strict_personal.py",
+      "original_sha256": "658afda1a6eb9235f9d48096b604e943a2b71fbf99dc9c19a68af355df978675",
+      "public_sha256": "658afda1a6eb9235f9d48096b604e943a2b71fbf99dc9c19a68af355df978675",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/sign_r5_firmware.py",
+      "original_sha256": "1204df05afa8133a2751485cbc50f8e4bac4820c6839c715232a9ba21e3fb594",
+      "public_sha256": "b9ab65c97c4565d1e3699fb6ab5c9ac96612f9117295ae0d5344e42ab0f96cf7",
+      "publication_changes": [
+        "Deprecated or identity-bound standalone entry disabled; imported helper functions retained."
+      ]
+    },
+    {
+      "path": "tools/sony_bk4.py",
+      "original_sha256": "da9a920d767eeaa8ba8965cc106397e7d1de409fff34c39c73c9debbc631c717",
+      "public_sha256": "da9a920d767eeaa8ba8965cc106397e7d1de409fff34c39c73c9debbc631c717",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/verify_r5_full_backup.py",
+      "original_sha256": "67ef6ab201a32b7edfa7e1445c51f914e784d1de738cadc49134a3ed8fa06ff7",
+      "public_sha256": "67ef6ab201a32b7edfa7e1445c51f914e784d1de738cadc49134a3ed8fa06ff7",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/verify_r5_m4strict_cp.py",
+      "original_sha256": "e4738fd7a27a96cf3b76be00a51461889d04a127e252cd1d53c9e29d7111cdb5",
+      "public_sha256": "e4738fd7a27a96cf3b76be00a51461889d04a127e252cd1d53c9e29d7111cdb5",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/verify_r5_m4strict_cp_cpu.py",
+      "original_sha256": "35e128f922715fe9af84468a5127066744e72f56e9e684b8d887f64fdb7414d6",
+      "public_sha256": "35e128f922715fe9af84468a5127066744e72f56e9e684b8d887f64fdb7414d6",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/verify_r5_m4strict_cp_reference.py",
+      "original_sha256": "3fab21b876f526893c5982723e2192bed6d9252fdd1e5a9283b87db983b13d67",
+      "public_sha256": "3fab21b876f526893c5982723e2192bed6d9252fdd1e5a9283b87db983b13d67",
+      "publication_changes": []
+    },
+    {
+      "path": "tools/verify_r5_m4strict_personal.py",
+      "original_sha256": "4388c60dd9863c31222e408dbfe2dd7d57e6d0b56f6d2e7854dc633ca596f60a",
+      "public_sha256": "4388c60dd9863c31222e408dbfe2dd7d57e6d0b56f6d2e7854dc633ca596f60a",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_live_system_20261014/host_tools/configure_fastboot_usb.c",
+      "original_sha256": "95e4f953c0935b6fc5f8d7bf71a77a87ccf6f4bf66c05f73f22ddb498c9d4be8",
+      "public_sha256": "95e4f953c0935b6fc5f8d7bf71a77a87ccf6f4bf66c05f73f22ddb498c9d4be8",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_live_system_20261014/host_tools/read_fastboot_usb.c",
+      "original_sha256": "13a69c2ff23a8646f19f6912258c123c20288db49a61e202601a4b44145b8811",
+      "public_sha256": "13a69c2ff23a8646f19f6912258c123c20288db49a61e202601a4b44145b8811",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_live_system_20261014/host_tools/read_fastboot_usb_all.c",
+      "original_sha256": "ba8e6bcd568aa438b95784164dae242a76905864d5b2ef49d5ce356118c203ef",
+      "public_sha256": "ba8e6bcd568aa438b95784164dae242a76905864d5b2ef49d5ce356118c203ef",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_verifykey_skip_flash_20261014/partition1_usb.c",
+      "original_sha256": "bbf3faa3e45d04ec7f1231587721c70cbcea31f42846656d5bf21cc0fbb3b0c3",
+      "public_sha256": "bbf3faa3e45d04ec7f1231587721c70cbcea31f42846656d5bf21cc0fbb3b0c3",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_partition1_flash_20261014/partition1_usb.c",
+      "original_sha256": "6078acbd8ac7500df9ad3ccf10151216d441fe60668c5d71b7a75763332953f7",
+      "public_sha256": "6078acbd8ac7500df9ad3ccf10151216d441fe60668c5d71b7a75763332953f7",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_fl_edit_comparison_20261017/compare.py",
+      "original_sha256": "705d7482038a01991e4fad0c738961a3a96ebf00149ff1b4123acda5d664a6d5",
+      "public_sha256": "9e5788fdeb6e9596475695e4e67a30b5710ffb3293085fbbf654861ea63b8909",
+      "publication_changes": [
+        "Personal input paths replaced by samples/ or local-ied-research/; raw images and local IED records not included."
+      ]
+    },
+    {
+      "path": "analysis/r5_fl_edit_comparison_20261017/metrics.json",
+      "original_sha256": "bbcb953d47dac3339fc74413d40570907f7a5a63ad3020df4d19e83e26542c3e",
+      "public_sha256": "7bafaaa973d42f9c41ca1153129aeeb1383db42e5fb61731a612693d8f18d2d3",
+      "publication_changes": [
+        "Personal input paths replaced by samples/ or local-ied-research/; raw images and local IED records not included."
+      ]
+    },
+    {
+      "path": "analysis/r5_r6_st_comparison_20261017/compare.py",
+      "original_sha256": "08b36ba0f0dac5d7438d825b2e88c6a95782a241adc53cbbf9cbb4befe661ec9",
+      "public_sha256": "1fe5420950ff4c7c5163b2b2ff3687b1a3d1c23a52dca80e79d3cdb9127f573c",
+      "publication_changes": [
+        "Personal input paths replaced by samples/ or local-ied-research/; raw images and local IED records not included."
+      ]
+    },
+    {
+      "path": "analysis/r5_r6_st_comparison_20261017/metrics.json",
+      "original_sha256": "b3127d1493bbb88b6edb49110e7f31d9e9549203232d18641681d4ad08c15727",
+      "public_sha256": "10d70992bf20ea48113e228128251e3f0b2fd49949f5b2b89d1ccde7a56e26dc",
+      "publication_changes": [
+        "Personal input paths replaced by samples/ or local-ied-research/; raw images and local IED records not included."
+      ]
+    }
+  ],
+  "device_operations_executed_for_export": false
+}

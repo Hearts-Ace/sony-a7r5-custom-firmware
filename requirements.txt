@@ -1,0 +1,9 @@
+capstone
+unicorn
+cryptography
+pycryptodomex
+numpy
+pyelftools
+dissect.extfs==3.15
+pyserial==3.5
+Pillow
