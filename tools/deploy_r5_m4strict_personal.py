@@ -27,10 +27,10 @@ PAYLOAD_SHA = '330ac322bd0e40a7bb4974f69a2667e7d59a25e59c1322339690f30a3ceadbdc'
 MODULE_SHA = 'f944d89d012f356afd5fbf47b54739dc811f06b4acf6f11872a1ad7f20cc77c3'
 SERIAL_SHA = 'd2262ca69ecfb0cb14b1c310998999692ed7ceb5cb106d2fb65fa421223264e5'
 PINS = {
-    'tools/r5_settings_ram_boot.py': '80b79977a51bdfdfb5d8947ff92192ec04d803df3dbc2d0f79d2a634500329d8',
+    'tools/r5_settings_ram_boot.py': '1da898c28ffea300571f05751e951e6ae386a8756f3783c4b27ddb6b11e17e06',
     'tools/build_r5_m4strict_personal.py': 'a95187c2d6dcb5633f74c35f10ab5a687216b624f542a7af56a5dd79763132ce',
-    'tools/modify_r5_slot_settings.py': '4670d7f15c4a85a7149f8a7edb26db7d9fd734a4c7f85b4324d8dea67252a6d8',
-    'tools/patch_r5_slot_settings.py': '05b412c3b31c0bcbbda0fbf597dee31214d4d8c7ef676c3e33517883b6095790',
+    'tools/modify_r5_slot_settings.py': 'c5ec7a0cfa57c1f5f12749c58216f4cf9a948b4dbbffe015346cfcfaa30f5816',
+    'tools/patch_r5_slot_settings.py': '98c89dc124920f6dd91124194a1df5e5473d541291b4dce2903bbf795c97897f',
     'analysis/r5_verifykey_skip_flash_20261014/partition1_usb.c': 'bbf3faa3e45d04ec7f1231587721c70cbcea31f42846656d5bf21cc0fbb3b0c3',
 }
 

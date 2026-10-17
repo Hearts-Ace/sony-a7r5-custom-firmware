@@ -25,4 +25,8 @@ SD包承担AP／CP／Gamma／WBI适配，个人设置的六槽、CC1与block13�
 
 公开源码保留原基线及散列校验。不同地区、版本、签名身份与设备布局需要独立适配，不能删除校验以强行运行。原厂输入、供体、私钥和外部载荷必须自行合法取得。完整流程包含持久存储写入，错误操作可能导致无法启动；本仓库不是通用一键刷机工具。
 
+## 致谢
+
+特别感谢[Erlla/sony-a7m4-custom-firmware](https://github.com/Erlla/sony-a7m4-custom-firmware)公开FL2／FL3修改方案，以及[DavidBuchanan314/ILCE-7M4-RE](https://github.com/DavidBuchanan314/ILCE-7M4-RE)公开Sony相机BootROM、串行引导、fastboot和存储研究。本项目在这些成果基础上适配R5，参考提交和使用范围见[第三方说明](THIRD_PARTY_NOTICES.md)及研究总结第八部分。
+
 原创主机代码与文档以MIT许可开放；第三方项目遵循各自许可，详见[说明](THIRD_PARTY_NOTICES.md)。

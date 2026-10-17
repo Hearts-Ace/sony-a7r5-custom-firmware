@@ -95,9 +95,10 @@
     {
       "path": "tools/deploy_r5_m4strict_personal.py",
       "original_sha256": "e189cda6405ca03fd9f0617ebf4677d63c90d17553a3623efc6adacbdc716120",
-      "public_sha256": "8f2391ccb0775779407b7d17ffd50253e9e245ca678f085e50f5981e3fdff3df",
+      "public_sha256": "0e10c2d03548fbd56f90655998ee01eefbe1498aabbb8913c06dac7816006c00",
       "publication_changes": [
-        "External bootloader archive path now requires R5_BOOTLOADER_ZIP; no default archive supplied."
+        "External bootloader archive path now requires R5_BOOTLOADER_ZIP; no default archive supplied.",
+        "Reviewed-source PINS updated to exact sanitized public copies; all input/device/payload guards retained. Public copies have no new device acceptance."
       ]
     },
     {
