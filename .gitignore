@@ -22,3 +22,17 @@ local-ied-research/
 samples/
 analysis/*/upstream/
 analysis/sony_write_path_20261008/reference/
+
+# Local build/runtime and private fitting inputs
+*.o
+*.so
+*.dylib
+*.elf
+*.npz
+*.tif
+*.tiff
+*.cube
+*.dcp
+*.onnx
+*.tar
+*.tar.gz

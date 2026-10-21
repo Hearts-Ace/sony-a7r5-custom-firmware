@@ -11,3 +11,12 @@
 分析工具：[Capstone](https://github.com/capstone-engine/capstone)、[Unicorn](https://github.com/unicorn-engine/unicorn)、[Ghidra](https://github.com/NationalSecurityAgency/ghidra)。Python依赖由使用者单独安装，保留各发行包许可证；本仓库MIT不覆盖Python、cryptography/OpenSSL、PyCryptodome、NumPy、pySerial、pyelftools、Dissect或Pillow。外部fastboot、编译器与SDK遵循原条款。
 
 Sony固件、颜色供体、校准／个人资料、Imaging Edge软件及工具输出的权利不因主机源码开源而改变。致谢不是第三方再分发许可。
+
+
+## 4.18自定义外观与色彩拟合新增来源
+
+[QAQLeonard/a7c2-fl23-research](https://github.com/QAQLeonard/a7c2-fl23-research/tree/008a12f2b8d79f04ffa405d5d4ce2546b2a3db42)，固定提交008a12f2b8d79f04ffa405d5d4ce2546b2a3db42（feature/lut-device-import），用于自定义外观、导入与消费者路线参考。R5的原生1–12映射、独立保存、三端点及Gamma路由按本机结构适配；不表示上游验收本实现。上游MIT原文见licenses/a7c2-fl23-MIT.txt。
+
+[shenmintao/Raw-Alchemy](https://github.com/shenmintao/Raw-Alchemy/tree/v0.6.2) 0.6.2提供RAW→工作空间→S-Log3与LUT参考及实际导出对照。其许可为AGPL-3.0，原文见licenses/Raw-Alchemy-AGPL-3.0.txt。公开的raw_slog3_reference.py、build_raw_slog3_reference.py、build_full_chain_pairs.py按AGPL-3.0-or-later发布，源文件声明优先于根MIT；不捆绑应用程序、ONNX、源码树或用户LUT。相关算法核对脚本需自行取得上游源码，并遵守上游许可。
+
+[Colour](https://github.com/colour-science/colour/tree/4ee3b72a2c6205c1d0cd964075621ec19290d571)提供色域矩阵与S-Log3独立数值核对，固定提交4ee3b72a2c6205c1d0cd964075621ec19290d571；BSD-3-Clause原文见licenses/Colour-BSD-3-Clause.txt。NumPy、SciPy、rawpy/LibRaw作为外部依赖单独安装，遵循各自许可。Sony Imaging Edge仅用于本地渲染研究，不随源码分发。
