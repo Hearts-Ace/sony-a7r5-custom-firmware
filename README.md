@@ -1,32 +1,32 @@
 # sony-a7r5-custom-firmware
 
-Sony ILCE-7RM5（A7R V / R5）FL2／FL3创意外观的固件适配源码与色彩研究。
+Sony ILCE-7RM5（A7R V / R5）4.18自定义创意外观、FL2/FL3移植与RAW→S-Log3 LUT原生参数拟合研究。
 
-基于原厂R5 4.00 CN2及[Erlla A7M4方法](https://github.com/Erlla/sony-a7m4-custom-firmware/tree/086df3b1e33dfa0206553ac2bb003535c58ddb80)，研究版本为4.04。公开主机脚本与研究文档，不分发Sony固件、机身镜像、个人设置或签名私钥。
+**4.18用户已确认实机结果没问题。** 支持按原生1–12序号导入名称、CC1三端点、block13三端点和129点Gamma，保存到独立内部文件，无卡启动重载。额外补偿矩阵和网格未加入。拟合器的最终LUT还原色彩精度仍未通过，不能把固件验收当作拟合精度验收。
 
-## 阅读入口
+- [唯一研究总结：4.18方案、完整刷写、拟合、RAW换算及实拍证据](analysis/R5_FL2_FL3固件色彩与RAW参数研究总结.md)
+- [4.18 AP/CP、Gamma、名称及参数编译源码](analysis/r5_native_overwrite418_20261021/)
+- [PC拟合与数学参考源码](research/r5_custom_lut/scripts/)
+- [公开范围与复现依赖](PUBLICATION.md)
+- [源码来源与公开副本散列](SOURCE_MANIFEST.json)
+- [致谢与许可](THIRD_PARTY_NOTICES.md)
 
-- [唯一研究总结：完整刷写流程、十字段换算、共用参数追查、图像对照及致谢](analysis/R5_FL2_FL3固件色彩与RAW参数研究总结.md)
-- [公开源码的范围、外部依赖与复现限制](PUBLICATION.md)
-- [源码原件与公开副本散列](SOURCE_MANIFEST.json)
-- [第三方说明与致谢](THIRD_PARTY_NOTICES.md)
+## 参数文件
 
-## 当前证据
+```sh
+python analysis/r5_native_overwrite418_20261021/import/native_overwrite_config.py pack native_config.json --output R5NATIVE.BIN
+```
 
-4.04已在研究机身安装。最近成功设置部署为会话T：仅修改本次新读出的nflasha2，30扇区、3711字节；六槽0A／0B、CC1／block13、完整20MiB回读与40,960个raw扇区独立解密核验通过，正常重启后恢复拍摄。后续U未进入fastboot，没有取得重启后的独立设置快照。
+配置必须包含完整参数及原生序号；可用下述命令生成格式示例到新目录，再用上面的编译器打包：
 
-FL／FL2／FL3的单场景机内JPG与Edit输出对照，缩至1584×1056后的平均ΔE00分别为1.000／1.005／0.962。FL2／FL3残差与原生FL对照相近；这不是逐像素相同、全部模式或长期保持验收。公开指标见研究总结及相邻JSON，个人原片不公开。
+```sh
+python tools/example_native418_config.py --output native_config.json
+```
 
-早期427／429样片确曾选FL2／FL3却保存ST，不能与后来的430／431／432结果混为一谈。失败旧4.03曾叠加多余升级动作，其具体失败根因仍未锁定，当前源码不使用该包。
+示例为用于格式验证的中性开发参数，不是原厂ST、FL或合格S-Log3配方；不要把它当推荐拍摄效果。原厂参数与用户拟合数据须自行取得并核验。
 
-## 方案边界
+## 发布边界
 
-SD包承担AP／CP／Gamma／WBI适配，个人设置的六槽、CC1与block13另用fastboot基于新回读部署。不得把M4分区号照搬到R5；R5 nflasha6不是颜色镜像。不得刷入其他机身或历史备份的整区设置。
+本仓库公开源码与研究文档，不分发完整DAT、Sony AP/CP、机身镜像、个人设置、私钥、Edit程序/运行时转储、原片或商业LUT。构建仍需明确基线、外部参考树和本机签名身份；不声称在干净环境完成固件重建，不是通用一键刷机工具。历史工具中的固定散列与身份校验不得删改绕过。
 
-公开源码保留原基线及散列校验。不同地区、版本、签名身份与设备布局需要独立适配，不能删除校验以强行运行。原厂输入、供体、私钥和外部载荷必须自行合法取得。完整流程包含持久存储写入，错误操作可能导致无法启动；本仓库不是通用一键刷机工具。
-
-## 致谢
-
-特别感谢[Erlla/sony-a7m4-custom-firmware](https://github.com/Erlla/sony-a7m4-custom-firmware)公开FL2／FL3修改方案，以及[DavidBuchanan314/ILCE-7M4-RE](https://github.com/DavidBuchanan314/ILCE-7M4-RE)公开Sony相机BootROM、串行引导、fastboot和存储研究。本项目在这些成果基础上适配R5，参考提交和使用范围见[第三方说明](THIRD_PARTY_NOTICES.md)及研究总结第八部分。
-
-原创主机代码与文档以MIT许可开放；第三方项目遵循各自许可，详见[说明](THIRD_PARTY_NOTICES.md)。
+特别感谢 [Erlla/sony-a7m4-custom-firmware](https://github.com/Erlla/sony-a7m4-custom-firmware) 和 [DavidBuchanan314/ILCE-7M4-RE](https://github.com/DavidBuchanan314/ILCE-7M4-RE)。自定义外观参考 [QAQLeonard/a7c2-fl23-research](https://github.com/QAQLeonard/a7c2-fl23-research)，RAW目标链参考 [Raw Alchemy](https://github.com/shenmintao/Raw-Alchemy) 与 [Colour](https://github.com/colour-science/colour)。固定版本、具体贡献和许可见第三方说明。
