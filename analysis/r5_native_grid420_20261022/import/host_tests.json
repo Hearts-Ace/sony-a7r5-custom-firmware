@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "codec_roundtrips": 4095,
+  "invalid_files": 17,
+  "transfer_masks": 4095,
+  "transfer_packets": 32766,
+  "hostile_acks": 11,
+  "full12_pretty_json_load": true,
+  "replacement_and_clear": true,
+  "utf8_valid_names": 4,
+  "utf8_invalid_names": 6,
+  "wire_bytes": 2424,
+  "record_bytes": 2392,
+  "set_bytes": 28708,
+  "limitations": [
+    "Host C ABI/state machine only. Native filesystem, queues, hardware and menu/display remain separate acceptance."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "CP_sha256": "c25b64c288a0b582363361771b424edcf1c86df44525e5c7aea9a55a2b1114ae",
+  "rows": [
+    {
+      "copy_only": 0,
+      "stack_arg6": "0x30014000",
+      "native_memory_MMIO_return_and_callee_saved_equal": true
+    },
+    {
+      "copy_only": 1,
+      "stack_arg6": "0x30014000",
+      "native_memory_MMIO_return_and_callee_saved_equal": true
+    }
+  ],
+  "camera_io": false
+}

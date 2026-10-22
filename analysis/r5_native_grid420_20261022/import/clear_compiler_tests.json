@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "bytes": 128,
+  "BIN_sha256": "73903d695b1a0296c52f3cc3009fe25ffeb69cee05694097df31ba5396198348",
+  "actual_C_decoder_clears_nonzero_set": true
+}

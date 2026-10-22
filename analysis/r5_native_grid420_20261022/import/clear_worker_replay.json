@@ -1,0 +1,170 @@
+{
+  "schema": "r5-411-readonly-sd-worker-replay/1",
+  "passed": true,
+  "camera_io": false,
+  "candidate_sha256": "27c68273926a872955d88f89d6c5dec2eb13352559e983ce43e98a19e42fb039",
+  "cases": 6,
+  "results": [
+    {
+      "bias": "0x0",
+      "scenario": "clear_zero",
+      "result": 0,
+      "parsed_mask": 0,
+      "fresh_BSS_restart_verified": true,
+      "internal_diagnostics": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "open_calls": 0,
+      "read_calls": 0,
+      "close_calls": 0,
+      "poll_attempts": 1,
+      "instructions": 616677,
+      "observed_stack_span_with_isolated_events": 131776
+    },
+    {
+      "bias": "0x0",
+      "scenario": "clear_header",
+      "result": 0,
+      "parsed_mask": 0,
+      "fresh_BSS_restart_verified": true,
+      "internal_diagnostics": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "open_calls": 0,
+      "read_calls": 0,
+      "close_calls": 0,
+      "poll_attempts": 1,
+      "instructions": 652783,
+      "observed_stack_span_with_isolated_events": 131776
+    },
+    {
+      "bias": "0x0",
+      "scenario": "clear_corrupt_old",
+      "result": 0,
+      "parsed_mask": 0,
+      "fresh_BSS_restart_verified": true,
+      "internal_diagnostics": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "open_calls": 0,
+      "read_calls": 0,
+      "close_calls": 0,
+      "poll_attempts": 1,
+      "instructions": 616677,
+      "observed_stack_span_with_isolated_events": 131776
+    },
+    {
+      "bias": "0x40000000",
+      "scenario": "clear_zero",
+      "result": 0,
+      "parsed_mask": 0,
+      "fresh_BSS_restart_verified": true,
+      "internal_diagnostics": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "open_calls": 0,
+      "read_calls": 0,
+      "close_calls": 0,
+      "poll_attempts": 1,
+      "instructions": 616677,
+      "observed_stack_span_with_isolated_events": 131776
+    },
+    {
+      "bias": "0x40000000",
+      "scenario": "clear_header",
+      "result": 0,
+      "parsed_mask": 0,
+      "fresh_BSS_restart_verified": true,
+      "internal_diagnostics": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "open_calls": 0,
+      "read_calls": 0,
+      "close_calls": 0,
+      "poll_attempts": 1,
+      "instructions": 652783,
+      "observed_stack_span_with_isolated_events": 131776
+    },
+    {
+      "bias": "0x40000000",
+      "scenario": "clear_corrupt_old",
+      "result": 0,
+      "parsed_mask": 0,
+      "fresh_BSS_restart_verified": true,
+      "internal_diagnostics": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "open_calls": 0,
+      "read_calls": 0,
+      "close_calls": 0,
+      "poll_attempts": 1,
+      "instructions": 616677,
+      "observed_stack_span_with_isolated_events": 131776
+    }
+  ],
+  "current_set_digest_boundary_checked": true,
+  "upload_uses_current_after_directory_release": true,
+  "original_Fsys_wrappers_executed": [
+    "0x3691104",
+    "0x3691138",
+    "0x3691124",
+    "0x3690da8"
+  ],
+  "full_decoded_set_compared_to_independent_wire_oracle": true,
+  "invalid_SD_preserves_internal": true,
+  "internal_file_transactions": true,
+  "fresh_BSS_no_card_restart_reloaded": true,
+  "limitations": [
+    "Lower Fsys, clock, sleep and sched_setscheduler are fixtures; CP probe is stubbed, separately verified.",
+    "No kernel/card/TLS/WBI, actual callback coverage, startup or thread-RAM observation.",
+    "Bounded loops do not impose a timeout on synchronous native calls."
+  ]
+}

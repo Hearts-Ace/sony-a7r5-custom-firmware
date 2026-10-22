@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "AP_sha256": "27c68273926a872955d88f89d6c5dec2eb13352559e983ce43e98a19e42fb039",
+  "bytes": 97452032,
+  "reverse_to407_exact": true,
+  "module_audit_sha256": "5ea3ac28ba72f324e994d1a959dded8ca525d5333c904aae57f9d069ffdb56fa",
+  "patches": [
+    {
+      "offset": 25170660,
+      "before": "60a26e39",
+      "after": "2741da15"
+    },
+    {
+      "offset": 55422568,
+      "before": "60c21091",
+      "after": "8bda6615"
+    },
+    {
+      "offset": 55464256,
+      "before": "60c21091",
+      "after": "1cb26615"
+    },
+    {
+      "offset": 54279380,
+      "before": "a003168b",
+      "after": "7d376b15"
+    },
+    {
+      "offset": 55921996,
+      "before": "20008052",
+      "after": "a8f36415"
+    },
+    {
+      "offset": 25713464,
+      "before": "6e56f997",
+      "after": "a13fd895"
+    },
+    {
+      "offset": 32,
+      "before": "4000000000000000",
+      "after": "0000ce0500000000"
+    },
+    {
+      "offset": 56,
+      "before": "0600",
+      "after": "0800"
+    }
+  ],
+  "rx_file": 97386496,
+  "rw_file": 97452032,
+  "rx_bytes": 23116,
+  "bss_bytes": 86896,
+  "device_IO": false,
+  "partition_sha256": "818d69566827f44b5f39980a23e110b332cd1641b913544a12e475c1c3248120",
+  "partition_original_sha256": "aa7d0dfbed3d5b675f0c2060441ba74d7e8f6cefbbff4b940699068ccd086a73",
+  "only_AP_payload_changed": true,
+  "native_readonly_e2fsck_passed": true
+}

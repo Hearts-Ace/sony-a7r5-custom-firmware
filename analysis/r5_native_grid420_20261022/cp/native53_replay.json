@@ -1,0 +1,2286 @@
+{
+  "passed": true,
+  "CP_sha256": "c25b64c288a0b582363361771b424edcf1c86df44525e5c7aea9a55a2b1114ae",
+  "cases": 168,
+  "rows": [
+    {
+      "ordinal": 1,
+      "profile": 0,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 0,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 0,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 0,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 0,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 0,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 0,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 21,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 21,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 21,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 21,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 21,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 21,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 1,
+      "profile": 21,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 6,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 6,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 6,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 6,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 6,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 6,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 6,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 27,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 27,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 27,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 27,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 27,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 27,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "profile": 27,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 2,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 2,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 2,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 2,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 2,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 2,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 2,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 23,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 23,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 23,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 23,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 23,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 23,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "profile": 23,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 1,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 1,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 1,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 1,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 1,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 1,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 1,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 22,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 22,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 22,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 22,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 22,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 22,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "profile": 22,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 42,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 42,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 42,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 42,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 42,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 42,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 42,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 46,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 46,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 46,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 46,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 46,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 46,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "profile": 46,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 41,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 41,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 41,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 41,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 41,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 41,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 41,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 45,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 45,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 45,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 45,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 45,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 45,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "profile": 45,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 54,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 54,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 54,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 54,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 54,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 54,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 54,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 56,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 56,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 56,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 56,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 56,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 56,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "profile": 56,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 55,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 55,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 55,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 55,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 55,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 55,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 55,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 57,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 57,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 57,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 57,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 57,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 57,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "profile": 57,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 43,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 43,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 43,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 43,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 43,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 43,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 43,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 47,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 47,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 47,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 47,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 47,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 47,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "profile": 47,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 44,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 44,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 44,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 44,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 44,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 44,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 44,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 48,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 48,
+      "fault": "unimported",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 48,
+      "fault": "notready",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 48,
+      "fault": "scene",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 48,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 48,
+      "fault": "received",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "profile": 48,
+      "fault": "unsealed",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "unimported",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "notready",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "scene",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "received",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "unsealed",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "unimported",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "notready",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "scene",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "received",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "profile": 53,
+      "fault": "unsealed",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "unimported",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "notready",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "scene",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "received",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "unsealed",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "none",
+      "ordinary_matrix": true,
+      "custom_B13": true,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "unimported",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "notready",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "scene",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "badcontext",
+      "ordinary_matrix": true,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6f2",
+        "0x71d6f8",
+        "0x119620c",
+        "0x71e41e",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "received",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "profile": 53,
+      "fault": "unsealed",
+      "ordinary_matrix": false,
+      "custom_B13": false,
+      "hits": [
+        "0x71d6d0",
+        "0x71eccc"
+      ]
+    }
+  ],
+  "camera_io": false,
+  "actual_original_caller_interpolation": true,
+  "valid_BW_SE_B13_consumed": true,
+  "invalid_BW_SE_native_identity": true,
+  "gate_preserves_live_regs_SP": true,
+  "bank_never_written": true,
+  "minimum_SP": "0x300dfc8",
+  "limits": [
+    "BW/SE original native selector and blackwhite/sepia downstream semantics remain; arbitrary full-color behavior on BW/SE not claimed.",
+    "Not full camera scheduler or ISP execution."
+  ]
+}

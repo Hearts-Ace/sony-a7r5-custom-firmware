@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "camera_io": false,
+  "CP_sha256": "c25b64c288a0b582363361771b424edcf1c86df44525e5c7aea9a55a2b1114ae",
+  "counts": {
+    "custom_CC1": 48,
+    "native_CC1": 312,
+    "custom_matrix": 912,
+    "native_matrix": 2904,
+    "resolver_guards": 24
+  },
+  "actual_installed_CC1_loop": true,
+  "actual_installed_matrix_callsite": true,
+  "all_12_ordinals_still_movie": true,
+  "common_Gamma_ready_before_after": true,
+  "native_fallback_byte_equal404": true,
+  "SP_callee_saved_output_tail": true,
+  "bank_write_guard": true,
+  "limits": [
+    "Original native caller state/context constructed as ABI fixtures; no complete camera scheduler, ISP, JPEG or preview execution.",
+    "BW/SE original profile53 bypass observed in native_wrapper_evidence.json is repaired by installed native418_b13_gate; actual caller coverage is independently tested in native53_replay.json. This all12 suite alone tests helper mathematics and BL seam.",
+    "Matrix native hue values above15 checked against native fallback behavior, custom fallback hue0."
+  ]
+}

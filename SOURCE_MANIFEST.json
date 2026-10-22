@@ -1077,6 +1077,832 @@
       "publication_changes": [
         "New public synthetic format example; no extracted Sony parameter values."
       ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/b13_gate.S",
+      "original_sha256": "6298a5387f74eb516a6e561d93bbe8e7ae5ffac29a96881ae15707710b418194",
+      "public_sha256": "6298a5387f74eb516a6e561d93bbe8e7ae5ffac29a96881ae15707710b418194",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/build_cp.py",
+      "original_sha256": "7b01699fb22bbb3c8a0d88f4a55155ecb885cf1029dcf5b6c3db66bb69e9462f",
+      "public_sha256": "7b01699fb22bbb3c8a0d88f4a55155ecb885cf1029dcf5b6c3db66bb69e9462f",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/cc1_gate.S",
+      "original_sha256": "b556dff897c12050b0f99a85edd37403d40e444337218083c65a1c6476a9ffc1",
+      "public_sha256": "b556dff897c12050b0f99a85edd37403d40e444337218083c65a1c6476a9ffc1",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/cc1_gate_original.S",
+      "original_sha256": "a171f2056ca21970942fa6ceb6cb9378d2922b47b1e807a477757a3b3dbe4777",
+      "public_sha256": "a171f2056ca21970942fa6ceb6cb9378d2922b47b1e807a477757a3b3dbe4777",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/cp_stage413_gate.S",
+      "original_sha256": "23012255b4115820ed6c3b3c7b1a0e981b12f2a409c8eb685da220a661092bd9",
+      "public_sha256": "23012255b4115820ed6c3b3c7b1a0e981b12f2a409c8eb685da220a661092bd9",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/cp_stage413_probe.c",
+      "original_sha256": "efb6e1b38c5e2722468cf69eb15e1e117787bf2937c1b94875cedcf7fcf7c3f3",
+      "public_sha256": "efb6e1b38c5e2722468cf69eb15e1e117787bf2937c1b94875cedcf7fcf7c3f3",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/cp_transfer.c",
+      "original_sha256": "cee3405912994db68830239b1200cae5c040bd80e1cf1e5d8bf3a40cfe6e0826",
+      "public_sha256": "cee3405912994db68830239b1200cae5c040bd80e1cf1e5d8bf3a40cfe6e0826",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/grid_gate.S",
+      "original_sha256": "ba43ca0210c6fd22702e332fce3b05454fef7c3b17fafeaf0e58d2f550251bd3",
+      "public_sha256": "ba43ca0210c6fd22702e332fce3b05454fef7c3b17fafeaf0e58d2f550251bd3",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/grid_observe.S",
+      "original_sha256": "8233c281db3df76e8904923a7f41aad4c9604b7d285d47069957b6c6851a5fda",
+      "public_sha256": "8233c281db3df76e8904923a7f41aad4c9604b7d285d47069957b6c6851a5fda",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/native_color.c",
+      "original_sha256": "73a2af68f90f7df0fa75260def8e62e98bd1a0ce1e9f2a280f6c0d8082982ad4",
+      "public_sha256": "73a2af68f90f7df0fa75260def8e62e98bd1a0ce1e9f2a280f6c0d8082982ad4",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/native_wrapper_evidence.py",
+      "original_sha256": "607abb7e43995890b80fa00626e86d611e88ced5cd6bcee0aadf70b4ef5a64f8",
+      "public_sha256": "607abb7e43995890b80fa00626e86d611e88ced5cd6bcee0aadf70b4ef5a64f8",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/r5_stage413_probe.h",
+      "original_sha256": "244c009417e7a163ba056a51ef9df35c00c87d4ba9327e95da14d23fb932e987",
+      "public_sha256": "244c009417e7a163ba056a51ef9df35c00c87d4ba9327e95da14d23fb932e987",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/replay_b13_native53.py",
+      "original_sha256": "530f9874755493c36ca7d608453ab99dfd8ab93075b6c7bf3144d74010a833a5",
+      "public_sha256": "530f9874755493c36ca7d608453ab99dfd8ab93075b6c7bf3144d74010a833a5",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/replay_grid.py",
+      "original_sha256": "50ebcb1d496edd1ab83a2b49d1c3a5159a5ada145d37456e57924e9951c451e9",
+      "public_sha256": "51d4bd2e775db6fe9ce2abeae84f00362a62f423d4296c55110b2614793e8236",
+      "publication_changes": [
+        "Removed local temporary dependency path; use requirements.txt environment."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/replay_loader.py",
+      "original_sha256": "13bc9ae32d242bdf73f02966f8490ac75a422b21d8237b3fa09fa7aeb6e32168",
+      "public_sha256": "13bc9ae32d242bdf73f02966f8490ac75a422b21d8237b3fa09fa7aeb6e32168",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/replay_native_color.py",
+      "original_sha256": "55895cfa7e06614cc2b991b4fbefd99822d2611ed86c54da164c07512b313526",
+      "public_sha256": "55895cfa7e06614cc2b991b4fbefd99822d2611ed86c54da164c07512b313526",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/replay_observer_abi.py",
+      "original_sha256": "3da6f6086cfde94c5d83a66212fceb48496ed7a2ea665b61977b7bac8579f328",
+      "public_sha256": "3da6f6086cfde94c5d83a66212fceb48496ed7a2ea665b61977b7bac8579f328",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/getter_build_dynamic/getter_gates.S",
+      "original_sha256": "7f13f484b768c6397c0d4d9a2142628a39f6672fb9c22960ae9e1fd3c745d4f0",
+      "public_sha256": "7f13f484b768c6397c0d4d9a2142628a39f6672fb9c22960ae9e1fd3c745d4f0",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/getter_gates.py",
+      "original_sha256": "85a48fb3705725c933902de09bab2c42f0728365a91f22c1a946e70822f48196",
+      "public_sha256": "85a48fb3705725c933902de09bab2c42f0728365a91f22c1a946e70822f48196",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/native_gamma.c",
+      "original_sha256": "6e4325d62e428750a941d82f30d0d5e6b415c76e03e919eb07e20024f9e15859",
+      "public_sha256": "6e4325d62e428750a941d82f30d0d5e6b415c76e03e919eb07e20024f9e15859",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/native_gamma.h",
+      "original_sha256": "07525d3d832716b82c72271c30cf25dbffc9fcee2ac0c85a974bf71ad0d84a91",
+      "public_sha256": "07525d3d832716b82c72271c30cf25dbffc9fcee2ac0c85a974bf71ad0d84a91",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/patch_native_gamma.py",
+      "original_sha256": "66a26189908e06af80360c642dba1a581154dc5c5893e44b89912f6a1c6131f3",
+      "public_sha256": "66a26189908e06af80360c642dba1a581154dc5c5893e44b89912f6a1c6131f3",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/replay_final_gamma.py",
+      "original_sha256": "02e570695756ed5c5582813dc47c9ec22a8d6c84606b88912b539065d21986e4",
+      "public_sha256": "02e570695756ed5c5582813dc47c9ec22a8d6c84606b88912b539065d21986e4",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/replay_final_request.py",
+      "original_sha256": "f108464b4186056623c7772adde296e5362bc91df3fddd909fd839fcd7bb356f",
+      "public_sha256": "f108464b4186056623c7772adde296e5362bc91df3fddd909fd839fcd7bb356f",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/replay_getter_gates.py",
+      "original_sha256": "042c80b8a1b69e1b3c8dba9ef562a6f3c29d676e8ccaaafbf31576110c53cfaa",
+      "public_sha256": "042c80b8a1b69e1b3c8dba9ef562a6f3c29d676e8ccaaafbf31576110c53cfaa",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/replay_native_gamma.py",
+      "original_sha256": "088a3ca72f5265eb9c57cf3327c4c29061b7f975efd40c720cd32b1d992953f0",
+      "public_sha256": "088a3ca72f5265eb9c57cf3327c4c29061b7f975efd40c720cd32b1d992953f0",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/build_ap_image.py",
+      "original_sha256": "537bfb76e51e11515e1dd3fdb75d10169aba96cbfcc40eb20bf9db72d61e256d",
+      "public_sha256": "537bfb76e51e11515e1dd3fdb75d10169aba96cbfcc40eb20bf9db72d61e256d",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/build_ap_module.py",
+      "original_sha256": "9a834107796485e6f93bb7cf2d4ada173bef399840f5b6af1a223411be81cde9",
+      "public_sha256": "9a834107796485e6f93bb7cf2d4ada173bef399840f5b6af1a223411be81cde9",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/cp_bridge.py",
+      "original_sha256": "7e02dfc20b168443b2a60bff16937c5ea7d801a14f742007ec3c9ba3ad960034",
+      "public_sha256": "7e02dfc20b168443b2a60bff16937c5ea7d801a14f742007ec3c9ba3ad960034",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/native_overwrite_config.py",
+      "original_sha256": "eb97ad2f97e815402cb7dae652e01af8df45d06d0094d70b0a9897658fa33163",
+      "public_sha256": "eb97ad2f97e815402cb7dae652e01af8df45d06d0094d70b0a9897658fa33163",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_aa_snapshot.h",
+      "original_sha256": "5e5ee6593234c2e35dc7b483ccb20a503db0a4079330d622e4f8867980705905",
+      "public_sha256": "5e5ee6593234c2e35dc7b483ccb20a503db0a4079330d622e4f8867980705905",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_ap_activation.h",
+      "original_sha256": "b12245559e6dad1bbe05651f6b7b334df1bb33fcdd299ffcd8033a275fbc3292",
+      "public_sha256": "b12245559e6dad1bbe05651f6b7b334df1bb33fcdd299ffcd8033a275fbc3292",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_ap_terminal.h",
+      "original_sha256": "d040c23ab4c8a9c28c6707fee0760bc782d295daa0cea24628db265140805e12",
+      "public_sha256": "d040c23ab4c8a9c28c6707fee0760bc782d295daa0cea24628db265140805e12",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_async_import.h",
+      "original_sha256": "2d7cee5b8d61bb8660038f8f402066b9bcc04b27f5017ff05c363d765ae5946f",
+      "public_sha256": "2d7cee5b8d61bb8660038f8f402066b9bcc04b27f5017ff05c363d765ae5946f",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_boot_bank.h",
+      "original_sha256": "b04fcb762993329b2e6f0e44504af95ec87eeaed0dd7d2cdc6708109bbc09e8e",
+      "public_sha256": "b04fcb762993329b2e6f0e44504af95ec87eeaed0dd7d2cdc6708109bbc09e8e",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_boot_coordinator.h",
+      "original_sha256": "9ca01f71c88b7cb1fece3ddf6863318011501987a222fb69a7a7bec9e52279e3",
+      "public_sha256": "9ca01f71c88b7cb1fece3ddf6863318011501987a222fb69a7a7bec9e52279e3",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_boot_media_bridge.h",
+      "original_sha256": "320df3f42dcb8ab9dc2f9ad33783861b1837f058e1a09816ddedcc2fdac64c0c",
+      "public_sha256": "320df3f42dcb8ab9dc2f9ad33783861b1837f058e1a09816ddedcc2fdac64c0c",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_boot_runtime.h",
+      "original_sha256": "8ac1a1b1c0a939cfed43f0310b8641c342ef9edb71febe81b7bf543ae6b66840",
+      "public_sha256": "8ac1a1b1c0a939cfed43f0310b8641c342ef9edb71febe81b7bf543ae6b66840",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_boot_services.h",
+      "original_sha256": "436c0bed03856009409e7dca97bd405e13f3dc895664ce7076f029c2d7ba7b54",
+      "public_sha256": "436c0bed03856009409e7dca97bd405e13f3dc895664ce7076f029c2d7ba7b54",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_boot_transaction.h",
+      "original_sha256": "e5ee3dd11f1109eff2ff6bfa6dba93c4f9d5933ced135b25241dd926821f5b44",
+      "public_sha256": "e5ee3dd11f1109eff2ff6bfa6dba93c4f9d5933ced135b25241dd926821f5b44",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_boot_transfer_adapter.h",
+      "original_sha256": "bc3bdc8207ab492b9afd3062252354a08bdede505d3d1f94019740682bdc293d",
+      "public_sha256": "bc3bdc8207ab492b9afd3062252354a08bdede505d3d1f94019740682bdc293d",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_color_consumer.h",
+      "original_sha256": "be94d154620ea1a0648148d7c92f0a434f59078c8fe69abd597edbe5b4481db8",
+      "public_sha256": "be94d154620ea1a0648148d7c92f0a434f59078c8fe69abd597edbe5b4481db8",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_color_q_carrier.h",
+      "original_sha256": "46408fed44e198819597afe22b5189f70a548d6e5ce32eb8760a8602e1e17870",
+      "public_sha256": "46408fed44e198819597afe22b5189f70a548d6e5ce32eb8760a8602e1e17870",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_color_shadow.h",
+      "original_sha256": "99d9558c962030f32553fe264b5f29db28d2c9892dcf13d6cfe8661cdc54d5b8",
+      "public_sha256": "99d9558c962030f32553fe264b5f29db28d2c9892dcf13d6cfe8661cdc54d5b8",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_dedicated_worker.h",
+      "original_sha256": "0fdb68688ef5b14349f9837fdd66940085b23c26caf69433516e3a4f6be2e109",
+      "public_sha256": "0fdb68688ef5b14349f9837fdd66940085b23c26caf69433516e3a4f6be2e109",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_direct_pthread.h",
+      "original_sha256": "6ee7d46003ad6af6817cfdbd21b44445e0e018c96b2734279f140fc9529daabc",
+      "public_sha256": "6ee7d46003ad6af6817cfdbd21b44445e0e018c96b2734279f140fc9529daabc",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_fsys_adapter.c",
+      "original_sha256": "02016da2f9e50c6d04947fd0e570c2b004e8689c2a89e50bf1a05163d77baa3b",
+      "public_sha256": "02016da2f9e50c6d04947fd0e570c2b004e8689c2a89e50bf1a05163d77baa3b",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_fsys_adapter.h",
+      "original_sha256": "b6038bbd5422fb559f4305801215087b378f2453e89d63ca9b1a1682768f5fae",
+      "public_sha256": "b6038bbd5422fb559f4305801215087b378f2453e89d63ca9b1a1682768f5fae",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_gamma_identity.h",
+      "original_sha256": "09190d689af74f307f333b97369fd022e80774b1c9e20bf7d7aaa05e537acca3",
+      "public_sha256": "09190d689af74f307f333b97369fd022e80774b1c9e20bf7d7aaa05e537acca3",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_gamma_qualification.h",
+      "original_sha256": "ae24eddf783c8a75f59262fbb224c96cdc9ba55578b3f6518ee1e9135b7b1980",
+      "public_sha256": "ae24eddf783c8a75f59262fbb224c96cdc9ba55578b3f6518ee1e9135b7b1980",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_grid420_log.c",
+      "original_sha256": "b0f805ab08caa8989e28759813f1d2fecfa8aa6da3d3f0195d6a7667c47b80e3",
+      "public_sha256": "b0f805ab08caa8989e28759813f1d2fecfa8aa6da3d3f0195d6a7667c47b80e3",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_grid_diagnostics.h",
+      "original_sha256": "9a0d07f469b5e01580432a974e3f47ba76cc31950a433327a80efefbf42eb4e8",
+      "public_sha256": "9a0d07f469b5e01580432a974e3f47ba76cc31950a433327a80efefbf42eb4e8",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_isp_carrier.h",
+      "original_sha256": "11127dfc7c3644ff62af46a556f74c7d0265ca1bcf01725a86c0c2744c4a2de9",
+      "public_sha256": "11127dfc7c3644ff62af46a556f74c7d0265ca1bcf01725a86c0c2744c4a2de9",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_lifecycle.h",
+      "original_sha256": "ec75906fd92038114f6d691c89ae78bbeb04cdf878daa171104927cfe6d45fb6",
+      "public_sha256": "ec75906fd92038114f6d691c89ae78bbeb04cdf878daa171104927cfe6d45fb6",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_look_transfer.h",
+      "original_sha256": "ec6cdbdca8e6789bd0fce188e7866933f87f01fb763272af83e1649b364eb805",
+      "public_sha256": "ec6cdbdca8e6789bd0fce188e7866933f87f01fb763272af83e1649b364eb805",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_lut_directory.c",
+      "original_sha256": "6becb278134c984b98d514d3a11c92b333646a42b6bb578836fd08e91ce6d41f",
+      "public_sha256": "6becb278134c984b98d514d3a11c92b333646a42b6bb578836fd08e91ce6d41f",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_lut_directory.h",
+      "original_sha256": "e8ed9746378b768179bff63c8e91e3fe658cf313e2e08f5cbd38ed32b482c188",
+      "public_sha256": "e8ed9746378b768179bff63c8e91e3fe658cf313e2e08f5cbd38ed32b482c188",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_lut_mount_guard.c",
+      "original_sha256": "f2a2934e12e7f6e7108eba40d5ab74c7f044fffeaf6e8f81977b2ae5d26c09ac",
+      "public_sha256": "f2a2934e12e7f6e7108eba40d5ab74c7f044fffeaf6e8f81977b2ae5d26c09ac",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_lut_mount_guard.h",
+      "original_sha256": "ec7f65e67edb817cff953cd48b5b03165d3b10f92822b9c9702f80a7f17c1fea",
+      "public_sha256": "ec7f65e67edb817cff953cd48b5b03165d3b10f92822b9c9702f80a7f17c1fea",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_lut_mount_reader.h",
+      "original_sha256": "f7f70f3948c42a79b685bfea8bc00e3ffb33cd0123248c8d12a3041611a350b7",
+      "public_sha256": "f7f70f3948c42a79b685bfea8bc00e3ffb33cd0123248c8d12a3041611a350b7",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_native_lut_directory.c",
+      "original_sha256": "376b8c200c28f5d9f86ac434e46ba136dfce68adcf08ba0d996a4cf3f90fd691",
+      "public_sha256": "376b8c200c28f5d9f86ac434e46ba136dfce68adcf08ba0d996a4cf3f90fd691",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_native_lut_directory.h",
+      "original_sha256": "0ca38d1291541852bc25175abe55cfdc0ae01b512f3a19d27e6758c813840408",
+      "public_sha256": "0ca38d1291541852bc25175abe55cfdc0ae01b512f3a19d27e6758c813840408",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_native_readonly_services.h",
+      "original_sha256": "b22a7cf70e563ea4312e1c00ccd7b571c20378c42a7db1d73307cbafa4e8aeea",
+      "public_sha256": "b22a7cf70e563ea4312e1c00ccd7b571c20378c42a7db1d73307cbafa4e8aeea",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_native_transport.h",
+      "original_sha256": "4f55864941aa28bbe3054224ee90fd381b28df81e5387905fb5e5e81d2079e35",
+      "public_sha256": "4f55864941aa28bbe3054224ee90fd381b28df81e5387905fb5e5e81d2079e35",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_native_transport_pie.c",
+      "original_sha256": "ecd7dddd3b57afb99f892ff24cd31a3f2a675af412ed9547b5e0ae3a0081cbe1",
+      "public_sha256": "ecd7dddd3b57afb99f892ff24cd31a3f2a675af412ed9547b5e0ae3a0081cbe1",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_posix_persist.h",
+      "original_sha256": "ce341a9e792a5fdbbd3ddd5bf3f5051aabf9ec99cdef6c3b3c34ed65071abbce",
+      "public_sha256": "ce341a9e792a5fdbbd3ddd5bf3f5051aabf9ec99cdef6c3b3c34ed65071abbce",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_posix_stage.h",
+      "original_sha256": "51495add0df53ad22088c489cf2764763b950cfa6cb73819725111c78eb5b7c2",
+      "public_sha256": "51495add0df53ad22088c489cf2764763b950cfa6cb73819725111c78eb5b7c2",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_preview.h",
+      "original_sha256": "25c62139aa472af6b77e03cf8b346213de58d865c56ef74d950bea205f36fb61",
+      "public_sha256": "25c62139aa472af6b77e03cf8b346213de58d865c56ef74d950bea205f36fb61",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_render_binding.h",
+      "original_sha256": "fb3d6b5e2b892703e7abf86607c0126b44348d281652d52bc83ca6e17f6ef589",
+      "public_sha256": "fb3d6b5e2b892703e7abf86607c0126b44348d281652d52bc83ca6e17f6ef589",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_scan_gate.c",
+      "original_sha256": "a09a8c8b39de66fb920bab7a6a0ed304412fd414ad6734a67d28ceebd628d537",
+      "public_sha256": "a09a8c8b39de66fb920bab7a6a0ed304412fd414ad6734a67d28ceebd628d537",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_scan_gate.h",
+      "original_sha256": "d65b0030bed4350b68b946c1acaeab9c582e83e3e3348be0e444adc92678f524",
+      "public_sha256": "d65b0030bed4350b68b946c1acaeab9c582e83e3e3348be0e444adc92678f524",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_stage410_codec.c",
+      "original_sha256": "1b98eef6cdc6bbe1a930406d30cc72cfee835c459ac6e915f1e08498f60fbda5",
+      "public_sha256": "1b98eef6cdc6bbe1a930406d30cc72cfee835c459ac6e915f1e08498f60fbda5",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_stage411_hooks.c",
+      "original_sha256": "991be7ac90ae007b4d10e75235a185dd0ce7de12ccefb41981121f5ff1178ee5",
+      "public_sha256": "991be7ac90ae007b4d10e75235a185dd0ce7de12ccefb41981121f5ff1178ee5",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_stage413_probe.c",
+      "original_sha256": "222245d51d2d0e76a2249923bd577c23d2deba87aeea07e9d710eb565eb66f8b",
+      "public_sha256": "222245d51d2d0e76a2249923bd577c23d2deba87aeea07e9d710eb565eb66f8b",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_stage413_thread.c",
+      "original_sha256": "f832755dae386aa4b370124c7cad63b51eed7395e7abadffcb010d735419bafd",
+      "public_sha256": "f832755dae386aa4b370124c7cad63b51eed7395e7abadffcb010d735419bafd",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_stage413_transfer.c",
+      "original_sha256": "9d8b1159affea0cbf6140c1dddcbf1e846d12d9de5c6c47be71f1c2085182a51",
+      "public_sha256": "9d8b1159affea0cbf6140c1dddcbf1e846d12d9de5c6c47be71f1c2085182a51",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/r5_stage413_transfer_core.c",
+      "original_sha256": "0f18463e71b186cf3f2f7e5eb8fb6384370cd988da4c131eae22c42c6d9d6e7d",
+      "public_sha256": "0f18463e71b186cf3f2f7e5eb8fb6384370cd988da4c131eae22c42c6d9d6e7d",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/replay_grid420_status.py",
+      "original_sha256": "e1b4f20bf99e7a2cb59678dfd674a8f2b12473589936c17995ffa267906a07d3",
+      "public_sha256": "e1b4f20bf99e7a2cb59678dfd674a8f2b12473589936c17995ffa267906a07d3",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/replay_native12_probe.py",
+      "original_sha256": "91a4b73819e2777bcd7c5e00979f126e2a6659745bc3cbb52732ef8c8548c303",
+      "public_sha256": "91a4b73819e2777bcd7c5e00979f126e2a6659745bc3cbb52732ef8c8548c303",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/replay_native12_sd.py",
+      "original_sha256": "992062a424ee55724fa48d0190ed573e8e7f86eae3ebda66b44f4cf08eadcc1c",
+      "public_sha256": "992062a424ee55724fa48d0190ed573e8e7f86eae3ebda66b44f4cf08eadcc1c",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/replay_native12_transfer.py",
+      "original_sha256": "fd30b44a1c595616ba94c9efe0031981cac8bc72f75f1bc849b72768162eede4",
+      "public_sha256": "fd30b44a1c595616ba94c9efe0031981cac8bc72f75f1bc849b72768162eede4",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/sd_native_look.h",
+      "original_sha256": "26dd03cd81fcd0aa69933f99644077aa3a2bb1779d45c625511000688e8eddef",
+      "public_sha256": "26dd03cd81fcd0aa69933f99644077aa3a2bb1779d45c625511000688e8eddef",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/sd_native_persist.c",
+      "original_sha256": "18cba48ec86c172766249dc57b36f0455b02444666543b6dfc4f58ed8965efba",
+      "public_sha256": "18cba48ec86c172766249dc57b36f0455b02444666543b6dfc4f58ed8965efba",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/sd_native_persist.h",
+      "original_sha256": "b4e50badecff327dcb6f49603b9f07aacad35f24208f32b499c8ad60c8337979",
+      "public_sha256": "b4e50badecff327dcb6f49603b9f07aacad35f24208f32b499c8ad60c8337979",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/sd_native_store.c",
+      "original_sha256": "61f79c53a2a8e1bbf466fa34f84ef675786625b11e1b46c9aeaa99424952bbdb",
+      "public_sha256": "61f79c53a2a8e1bbf466fa34f84ef675786625b11e1b46c9aeaa99424952bbdb",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/sd_native_store.h",
+      "original_sha256": "9d659e7585992c7bc8e068b80fed7e9475127a95d38aaae27ed65f6ff9b52139",
+      "public_sha256": "9d659e7585992c7bc8e068b80fed7e9475127a95d38aaae27ed65f6ff9b52139",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/test_grid_persist.py",
+      "original_sha256": "c039051ab5ab7c60ea192ce407e131830cd82a0e949e0be08b081797b92d1759",
+      "public_sha256": "668f365e89da7b59ed7d3bc0e28a4d96f152f36d95ab24d2baa17601051e2ad2",
+      "publication_changes": [
+        "Create generated host-test object directory in a fresh public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/test_import.py",
+      "original_sha256": "89b69a083c7494000ab1731f5a02e3a42b62c52a157955adb54decaa4f7f6b40",
+      "public_sha256": "d458913c336de38e012757a9d488360d6ae6d0b9dc04a49a29bd983a67a3f87a",
+      "publication_changes": [
+        "Create generated host-test object directory in a fresh public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/test_log420.py",
+      "original_sha256": "740e2fdeceed75a1f9f6560411342e91beaf22ce74ab1b0d9e05f176213cb064",
+      "public_sha256": "19e32309795065c0f26e42b10857e9a5add1afa9f294085fe78aaf51b5ace5f9",
+      "publication_changes": [
+        "Create generated host-test object directory in a fresh public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/names/native12_names.c",
+      "original_sha256": "5dce8f089842d7cdd430eff12a1436f869e9d09495cb68e749e8b646fa255147",
+      "public_sha256": "5dce8f089842d7cdd430eff12a1436f869e9d09495cb68e749e8b646fa255147",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/names/replay_cp_names.py",
+      "original_sha256": "00dfaa870087aebe0a1b66e4a90a8689e2df0c34464717a14ebc205144d7d2dc",
+      "public_sha256": "00dfaa870087aebe0a1b66e4a90a8689e2df0c34464717a14ebc205144d7d2dc",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/names/replay_names.py",
+      "original_sha256": "d8760eedacfc300346bfd1fd5c8c354328bf19fb35c5a59ac282f0bc7a0f41e3",
+      "public_sha256": "d8760eedacfc300346bfd1fd5c8c354328bf19fb35c5a59ac282f0bc7a0f41e3",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/names/test_names.c",
+      "original_sha256": "40221746b1d25f5e193d7f2d6bee8bfa0e92663a9afc072242db9f9acadadfc2",
+      "public_sha256": "40221746b1d25f5e193d7f2d6bee8bfa0e92663a9afc072242db9f9acadadfc2",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/names/wrap_text.py",
+      "original_sha256": "98955b202be8d78d91da223d86e1cda79d2c08a8d01a4d5af3987ad5b67f5824",
+      "public_sha256": "98955b202be8d78d91da223d86e1cda79d2c08a8d01a4d5af3987ad5b67f5824",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/package_grid420.py",
+      "original_sha256": "2817f17ed6cad19d6761631e7ad57879b85e6f170a2a20ee7e73a4171614fea9",
+      "public_sha256": "edf07f4f437f7e64bc833c71f7629037da524f39d8f97312473fa2647e6697d0",
+      "publication_changes": [
+        "Omit separate Web-export gate from firmware-only public recipe; firmware verification gates remain."
+      ]
+    },
+    {
+      "path": "research/r5_custom_lut/scripts/replay_correction_builder.py",
+      "original_sha256": "b2703779279b7353d10648f621566bc883767898ad13979da48f6ad1473cfe1a",
+      "public_sha256": "b2703779279b7353d10648f621566bc883767898ad13979da48f6ad1473cfe1a",
+      "publication_changes": []
+    },
+    {
+      "path": "research/r5_custom_lut/scripts/audit_sources.py",
+      "original_sha256": "d323aefe4ca2a2eb2c5b37d15997f70c93c0691003badec45ba3b6ee3cc69150",
+      "public_sha256": "d323aefe4ca2a2eb2c5b37d15997f70c93c0691003badec45ba3b6ee3cc69150",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_incremental413_20261021/cp/replay_loader_stage413.py",
+      "original_sha256": "26b1de89ce5ad4bb24dc35ba484ad27a694d4b82772f9928a9abedab1e95a190",
+      "public_sha256": "26b1de89ce5ad4bb24dc35ba484ad27a694d4b82772f9928a9abedab1e95a190",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/clear_all/native_config.json",
+      "original_sha256": "aa81a13d829e9cfe6f8d133aa46459d2b69328590a428c671506b1828b7c9b68",
+      "public_sha256": "aa81a13d829e9cfe6f8d133aa46459d2b69328590a428c671506b1828b7c9b68",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/clear_all/README.txt",
+      "original_sha256": "22b822c32e819e3873d426c56f41819c6f63a942c3e2152519d02467d1541dd6",
+      "public_sha256": "22b822c32e819e3873d426c56f41819c6f63a942c3e2152519d02467d1541dd6",
+      "publication_changes": []
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/components.json",
+      "original_sha256": "d0220ec45aaecc5ca9cf1275c0be3ca15e3b1d9f8fdb6b6384c5432653e534c6",
+      "public_sha256": "d0220ec45aaecc5ca9cf1275c0be3ca15e3b1d9f8fdb6b6384c5432653e534c6",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/source_provenance.json",
+      "original_sha256": "95910ffabfe88fb672a3096c1a7f13c5a8312b61ab9063e26cf0153149581a28",
+      "public_sha256": "95910ffabfe88fb672a3096c1a7f13c5a8312b61ab9063e26cf0153149581a28",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/build.json",
+      "original_sha256": "6f1dfb02841cf10bdd47a9fc023eaeeb725c41244083b3ef821a8cbe41c059bf",
+      "public_sha256": "f049ccc4dc2970c439a79e1b696e9201fb4fdac4ae119b9e63c452c5aed0c0c5",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/grid_replay.json",
+      "original_sha256": "e77a37fec6978236e70643d4470c37113ea1a39158698b52f6b8f132c6d35411",
+      "public_sha256": "e77a37fec6978236e70643d4470c37113ea1a39158698b52f6b8f132c6d35411",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/observer_abi_replay.json",
+      "original_sha256": "05f7c8a7042c7634f7a752901ffe5c5f52b543db916ebe0fc9463b1ed4d3c561",
+      "public_sha256": "05f7c8a7042c7634f7a752901ffe5c5f52b543db916ebe0fc9463b1ed4d3c561",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/loader_replay.json",
+      "original_sha256": "4deb119a7dbad8280bea7a479c8fe7c847343824b2a44ccf6cc9810b5d8dbf1f",
+      "public_sha256": "4deb119a7dbad8280bea7a479c8fe7c847343824b2a44ccf6cc9810b5d8dbf1f",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/native_color_replay.json",
+      "original_sha256": "02ac4792b6d58ca57d1fa6def4f1bc06a0cdc28d6606c4cc19317855ea07e58c",
+      "public_sha256": "02ac4792b6d58ca57d1fa6def4f1bc06a0cdc28d6606c4cc19317855ea07e58c",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/cp/native53_replay.json",
+      "original_sha256": "64b1fb619ec25e4b526c74da0f86319b565609703138fa02a78682fa38ebe483",
+      "public_sha256": "64b1fb619ec25e4b526c74da0f86319b565609703138fa02a78682fa38ebe483",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/getter_replay_dynamic.json",
+      "original_sha256": "ee820f4c1bc153deb0974dc92d12dc2bb5cae18367bb006a188cc174f815ba6b",
+      "public_sha256": "ee820f4c1bc153deb0974dc92d12dc2bb5cae18367bb006a188cc174f815ba6b",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/final_route_replay.json",
+      "original_sha256": "dc25da359f0aaa08005f3b79cf793031865e818aa322f14de800680b482b7d5c",
+      "public_sha256": "dc25da359f0aaa08005f3b79cf793031865e818aa322f14de800680b482b7d5c",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/gamma/final_request_replay.json",
+      "original_sha256": "e7a90607e9ccf0c1cc14e2e37a77ab6402ba4b3bed0a1123b2aabab3ef6e3d3c",
+      "public_sha256": "e7a90607e9ccf0c1cc14e2e37a77ab6402ba4b3bed0a1123b2aabab3ef6e3d3c",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/host_tests.json",
+      "original_sha256": "fd7106fe4fe7dcb058d5aabdbfb91d6d65498d06b5ab3d5dd8e7609661ac744a",
+      "public_sha256": "fd7106fe4fe7dcb058d5aabdbfb91d6d65498d06b5ab3d5dd8e7609661ac744a",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/grid_persist_tests.json",
+      "original_sha256": "210dddd5d7aa4a1fd307fb2198a0c81bced7a023c7cbc069bf90be6eed091bfe",
+      "public_sha256": "210dddd5d7aa4a1fd307fb2198a0c81bced7a023c7cbc069bf90be6eed091bfe",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/log420_tests.json",
+      "original_sha256": "6671203f6471efed39d19b71e544ea8e2cb4eceb7a99b758341a11fe673aa777",
+      "public_sha256": "6671203f6471efed39d19b71e544ea8e2cb4eceb7a99b758341a11fe673aa777",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/grid_status_replay.json",
+      "original_sha256": "b91c88eb8d2e54649e510e144698d16542b54eed9f143177b3bf72d947ac8572",
+      "public_sha256": "b91c88eb8d2e54649e510e144698d16542b54eed9f143177b3bf72d947ac8572",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/native_worker_replay.json",
+      "original_sha256": "4bf35983a19887742e755326bb24877685d148925c56ac9f65f0b41c47c21ba5",
+      "public_sha256": "4bf35983a19887742e755326bb24877685d148925c56ac9f65f0b41c47c21ba5",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/clear_worker_replay.json",
+      "original_sha256": "ceed0f2f34e1a6d5c78aff935e324c1a06ccfd7dd4068fd0adddb3b872b3f250",
+      "public_sha256": "ceed0f2f34e1a6d5c78aff935e324c1a06ccfd7dd4068fd0adddb3b872b3f250",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/native_transfer_replay.json",
+      "original_sha256": "5029a3496b14efe653f3fbb7521972235f5e0c332d53c4fdf6c19b58bce75199",
+      "public_sha256": "5029a3496b14efe653f3fbb7521972235f5e0c332d53c4fdf6c19b58bce75199",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/native_probe_replay.json",
+      "original_sha256": "f9877be2e3403e8422689ab0dbcb7081b57535fdcecb0550a0fea627e503c619",
+      "public_sha256": "f9877be2e3403e8422689ab0dbcb7081b57535fdcecb0550a0fea627e503c619",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/import/clear_compiler_tests.json",
+      "original_sha256": "defd501631b5d285feb4bc5fc351ea8b6e70ee6043699a38e2994b652d7a0ffb",
+      "public_sha256": "defd501631b5d285feb4bc5fc351ea8b6e70ee6043699a38e2994b652d7a0ffb",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/ap/ap_build.json",
+      "original_sha256": "05a01caa9485ca27bcfbdd9ea9356af8678c75adf90e8204e74f8b172ba30a7c",
+      "public_sha256": "05a01caa9485ca27bcfbdd9ea9356af8678c75adf90e8204e74f8b172ba30a7c",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/ap/link_audit.json",
+      "original_sha256": "3e6c4194ad7b57e14a1dce12931b55de24cd925deb35ba883a31b674a52e6619",
+      "public_sha256": "2094f4dfe1d1d67f279946d19d8d58bd0f74b7ca4fa85e815264764b6fb961a4",
+      "publication_changes": [
+        "Local offline result; absolute workspace paths redacted. Not a rerun in the public checkout."
+      ]
+    },
+    {
+      "path": "tools/example_native420_config.py",
+      "original_sha256": null,
+      "public_sha256": "893642dc35beb611274ae15cae9cd1b2153d25577037044b504f99f0062e9b53",
+      "publication_changes": [
+        "New public firmware-only documentation/tool or host verification result."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/README.md",
+      "original_sha256": null,
+      "public_sha256": "65d48a8a896e8941c8394ddb7f77075d40347f39dbaf6b3f25c0faa77c1f601b",
+      "publication_changes": [
+        "New public firmware-only documentation/tool or host verification result."
+      ]
+    },
+    {
+      "path": "analysis/r5_native_grid420_20261022/publication_checks.json",
+      "original_sha256": null,
+      "public_sha256": "1c8ebc22263de62e5d3dc58329a3a20022f25fb8cea0b9e5ebb3862177f02318",
+      "publication_changes": [
+        "New public firmware-only documentation/tool or host verification result."
+      ]
+    },
+    {
+      "path": "README.md",
+      "original_sha256": null,
+      "public_sha256": "9c7b1041154d4b16f638c7a3798a09e887743f3bcb97c9f6759b35a45f9a0569",
+      "publication_changes": [
+        "Updated public release scope for 4.20 firmware-only source export."
+      ]
+    },
+    {
+      "path": "PUBLICATION.md",
+      "original_sha256": null,
+      "public_sha256": "72b2813410837cec742813b1a3b8f92d8603a060077d58164d1072bed7a9ac98",
+      "publication_changes": [
+        "Updated public release scope for 4.20 firmware-only source export."
+      ]
     }
   ],
   "device_operations_executed_for_export": false,
@@ -1085,6 +1911,13 @@
     "binaries_distributed": false,
     "hardware_feedback": "2026-10-21 user confirmed 4.18 works; detailed measurement scope stated in sole research document",
     "public_source_is_adjusted_export": true,
+    "local_frozen_source_unchanged": true
+  },
+  "release_420": {
+    "firmware_sha256": "c6483a0a3f421251e08cb742b7dd5bfd7f2a5e65d3497dbcf8dec1b8255448be",
+    "binaries_distributed": false,
+    "hardware_feedback": "4.20 offline candidate; no new device acceptance. Latest accepted hardware version remains 4.18.",
+    "web_published": false,
     "local_frozen_source_unchanged": true
   }
 }

@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "actual_production_C": true,
+  "rows": [
+    {
+      "fault": 0,
+      "emit_result": 0,
+      "queries": 1,
+      "log": "IMPORT_REPLACED_OR_CLEARED 00000420 00000002\nGRID_STATUS 00000002 00000002 00000002 00000002 00000000 00000000 00000000 00000000 00000000\nGRID_UPLOAD_RETURNED 00000002 00000002 00000002 00000002 00000002 00000000\n"
+    },
+    {
+      "fault": 1,
+      "emit_result": -1,
+      "queries": 0,
+      "log": ""
+    },
+    {
+      "fault": 2,
+      "emit_result": -1,
+      "queries": 0,
+      "log": ""
+    },
+    {
+      "fault": 3,
+      "emit_result": -1,
+      "queries": 0,
+      "log": "IMPORT_REPLACED_OR_CLEARED 00000420 00000002\n"
+    },
+    {
+      "fault": 4,
+      "emit_result": -1,
+      "queries": 0,
+      "log": "IMPORT_REPLACED_OR_CLEARED 00000420 00000002\n"
+    },
+    {
+      "fault": 5,
+      "emit_result": -1,
+      "queries": 0,
+      "log": "IMPORT_REPLACED_OR_CLEARED 00000420 00000002\n"
+    },
+    {
+      "fault": 6,
+      "emit_result": 0,
+      "queries": 1,
+      "log": "IMPORT_REPLACED_OR_CLEARED 00000420 00000002\nGRID_QUERY_SEND_FAILED fffffffa\nGRID_NOT_OBSERVED_OR_FAILED 00000002 00000000 00000000 00000000 00000000 00000002\n"
+    },
+    {
+      "fault": 7,
+      "emit_result": 0,
+      "queries": 1,
+      "log": "IMPORT_REPLACED_OR_CLEARED 00000420 00000002\nGRID_QUERY_TIMEOUT 42000001\nGRID_NOT_OBSERVED_OR_FAILED 00000002 00000000 00000000 00000000 00000000 00000002\n"
+    },
+    {
+      "fault": 8,
+      "emit_result": 0,
+      "queries": 0,
+      "log": "IMPORT_REPLACED_OR_CLEARED 00000420 00000002\nGRID_QUERY_CLOCK_FAILED 00000001\n"
+    },
+    {
+      "fault": 9,
+      "emit_result": 0,
+      "queries": 1,
+      "log": "IMPORT_REPLACED_OR_CLEARED 00000420 00000002\nGRID_STATUS 00000002 00000002 00000002 00000002 00000000 00000000 00000000 00000000 00000000\nGRID_UPLOAD_RETURNED 00000002 00000002 00000002 00000002 00000002 00000000\n"
+    },
+    {
+      "fault": 10,
+      "emit_result": 0,
+      "queries": 30,
+      "log": "IMPORT_REPLACED_OR_CLEARED 00000420 00000002\nGRID_STATUS 00000002 00000002 00000002 00000000 00000003 00000000 00000000 00000000 00000000\nGRID_NOT_OBSERVED_OR_FAILED 00000002 00000002 00000002 00000002 00000000 00000002\n"
+    },
+    {
+      "fault": 11,
+      "emit_result": 0,
+      "queries": 1,
+      "log": "IMPORT_REPLACED_OR_CLEARED 00000420 00000002\nGRID_QUERY_TIMEOUT 42000001\nGRID_NOT_OBSERVED_OR_FAILED 00000002 00000000 00000000 00000000 00000000 00000002\n"
+    }
+  ],
+  "limits": [
+    "Fsys/card and CP reply callbacks are modeled; hardware rendering is not asserted."
+  ]
+}
