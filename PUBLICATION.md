@@ -49,3 +49,8 @@ PC拟合需要numpy/scipy。参考/对照工具另外需要colour-science、rawp
 本地冻结候选通过 152 个 SD worker 场景、独立清空/重载、网格建表/上传及其他离线回归，DAT 校验通过；这不是新实机验收，当前实机确认版本仍是4.18。公开回执来自本地候选，公开副本的 host 检查另行记录在 publication_checks.json，不宣称在干净 checkout 重建过完整固件。
 
 公开副本删除临时 `/tmp` Python 依赖路径，为 host 测试建立 objects 目录，并从固件打包门控移除未公开的 Web 导出回执。全部固件组件/分区回放门控保留；SOURCE_MANIFEST 记录原件与公开副本散列。既有签名、身份、固定基线检查不放宽。构建输入沿用4.18列出的未公开依赖，新增原厂网格/loader回放固定输入见该目录说明。
+
+
+## R5ColorLab 独立 Web
+
+按用户明确选择，在同仓库R5ColorLab目录公开Web源码及约40MB必要数值标定、合成色卡采集缓冲；原本“Web暂不提交”的限制已由本次授权替代。该目录不含固件包、真实照片、镜像、密钥、历史训练和虚拟环境。两份报告路径脱敏，数值未变，来源映射见R5ColorLab/publication_manifest.json。目录代码采用AGPL v3，QAQ材料保留MIT许可，与根目录MIT许可区分。

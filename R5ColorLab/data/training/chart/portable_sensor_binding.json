@@ -1,0 +1,5 @@
+{
+  "raw_sha256": "bb9cd388ec7917c0a53533eb1020858c8c16d417ca6c89b4608e1b619965f516",
+  "chart_sha256": "9a3dce9803aaf7b9734d024da64cea9dc1abeb2e6f6ee9b1391bf6f033ec3a65",
+  "policy": "original independent full-sensor decode attestation and measured capture; original RAW is not needed at runtime and not distributed"
+}

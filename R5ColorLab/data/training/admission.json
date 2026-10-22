@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "samples": 3700,
+  "sensor_bytes_independently_verified": true,
+  "native_frontend_bound_to_capture": true,
+  "fixed_split_verified": true,
+  "photograph_training": false,
+  "anchor_count": 284,
+  "colorchecker24_count": 24,
+  "gray_steps": 256,
+  "primaries": 4,
+  "anchors_in_training": true,
+  "anchors_in_independent_test": false,
+  "frontend_capture_sha256": "dcc07a50f9269af34c323755be3f5fb6965b4002ef24cd252e513c830abd69df",
+  "dataset_id": "balanced-chart-20261022-manual-context2",
+  "frontend_context": 2,
+  "frontend": "actual Edit post-SSCS/pre-matrix; no interpolation",
+  "scope": "new measured frontend; original verified ST color subchain",
+  "pairs_sha256": "77cbb211f63053f05a0cefaa58dc254d98c9b4c67e090845bb01b7fd23711e7f",
+  "user_settings": "User manually disabled lens correction, selected ST and exported; use final render context 2 only",
+  "full_resolution_capture": true,
+  "final_rgb_channels_unique_points": [
+    3700,
+    3700,
+    3700
+  ],
+  "geometry_correction_in_last_graph": false
+}

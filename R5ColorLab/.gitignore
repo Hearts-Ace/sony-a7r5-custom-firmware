@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+web/runs/
+*.zip
+.DS_Store
+
+# Required synthetic calibration data, overriding parent firmware exclusions
+!data/**/*.bin
+!data/**/*.npz

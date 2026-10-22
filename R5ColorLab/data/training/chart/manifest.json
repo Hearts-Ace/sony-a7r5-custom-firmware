@@ -1,0 +1,252 @@
+{
+  "sampling": {
+    "schema": "r5-stratified-RAW-chart/1",
+    "candidate_count": 254741,
+    "seed": 20261022,
+    "basis": "ST color model after flatfield ITP only; Vatr/SSCS not measured; provisional sampling coordinates",
+    "brightness_thresholds_8bit": [
+      85,
+      170
+    ],
+    "hue_cells": 16,
+    "saturation_cells": 3,
+    "missing_reachable_cells": [
+      [
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        4,
+        2
+      ]
+    ],
+    "random_counts_by_mod5_split": {
+      "0": [
+        264,
+        264,
+        263
+      ],
+      "1": [
+        264,
+        264,
+        263
+      ],
+      "2": [
+        232,
+        232,
+        232
+      ],
+      "3": [
+        232,
+        232,
+        231
+      ],
+      "4": [
+        232,
+        232,
+        231
+      ]
+    },
+    "training_admitted": false,
+    "requires": "independent sensor decode and measured new Edit frontend before training admission"
+  },
+  "schema": "synthetic-Sony-lossless-RAW-chart/1",
+  "anchor_version": 2,
+  "anchor_count": 284,
+  "anchor_split": "train",
+  "gray_steps": 256,
+  "colorchecker24": {
+    "name": "ColorChecker Classic / BabelColor Average",
+    "illuminant": "ICC D50",
+    "xyY": [
+      [
+        0.4325,
+        0.3788,
+        0.1034
+      ],
+      [
+        0.4191,
+        0.3748,
+        0.3525
+      ],
+      [
+        0.2761,
+        0.3004,
+        0.1847
+      ],
+      [
+        0.37,
+        0.4501,
+        0.1335
+      ],
+      [
+        0.302,
+        0.2877,
+        0.2324
+      ],
+      [
+        0.2856,
+        0.391,
+        0.4174
+      ],
+      [
+        0.5291,
+        0.4075,
+        0.3117
+      ],
+      [
+        0.2339,
+        0.2155,
+        0.114
+      ],
+      [
+        0.5008,
+        0.3293,
+        0.1979
+      ],
+      [
+        0.3326,
+        0.2556,
+        0.0644
+      ],
+      [
+        0.3989,
+        0.4998,
+        0.4435
+      ],
+      [
+        0.4962,
+        0.4428,
+        0.4358
+      ],
+      [
+        0.204,
+        0.1696,
+        0.0579
+      ],
+      [
+        0.327,
+        0.5033,
+        0.2307
+      ],
+      [
+        0.5709,
+        0.3298,
+        0.1268
+      ],
+      [
+        0.4694,
+        0.4732,
+        0.6081
+      ],
+      [
+        0.4177,
+        0.2704,
+        0.2007
+      ],
+      [
+        0.2151,
+        0.3037,
+        0.1903
+      ],
+      [
+        0.3488,
+        0.3628,
+        0.9129
+      ],
+      [
+        0.3451,
+        0.3596,
+        0.5885
+      ],
+      [
+        0.3446,
+        0.359,
+        0.3595
+      ],
+      [
+        0.3438,
+        0.3589,
+        0.1912
+      ],
+      [
+        0.3423,
+        0.3576,
+        0.0893
+      ],
+      [
+        0.3439,
+        0.3565,
+        0.032
+      ]
+    ],
+    "names": [
+      "\u6df1\u80a4\u8272",
+      "\u6d45\u80a4\u8272",
+      "\u84dd\u5929",
+      "\u6811\u53f6",
+      "\u84dd\u82b1",
+      "\u84dd\u7eff",
+      "\u6a59\u8272",
+      "\u7d2b\u84dd",
+      "\u4e2d\u7ea2",
+      "\u7d2b\u8272",
+      "\u9ec4\u7eff",
+      "\u6a59\u9ec4",
+      "\u84dd\u8272",
+      "\u7eff\u8272",
+      "\u7ea2\u8272",
+      "\u9ec4\u8272",
+      "\u54c1\u7ea2",
+      "\u9752\u8272",
+      "\u767d\u8272",
+      "\u4e2d\u6027\u7070\u516b",
+      "\u4e2d\u6027\u7070\u516d\u70b9\u4e94",
+      "\u4e2d\u6027\u7070\u4e94",
+      "\u4e2d\u6027\u7070\u4e09\u70b9\u4e94",
+      "\u9ed1\u8272"
+    ],
+    "source_sha256": "477b932653b2cef891f392f0161a6e9c4a2db2f3c8dd919a63bb367a24928ff6",
+    "conversion": "xyY D50 -> XYZ -> ProPhoto RGB D50 -> inverse calibrated camera_to_working -> inverse camera WB -> integer RAW",
+    "sensor_clipped": false,
+    "physical_chart_capture": false
+  },
+  "source_sha256": "8aebb1f4fa75ce7aa3e830186d838b41fd13ad9e54781cb28f553ca548b41603",
+  "source_sensor_pixels_used": false,
+  "width": 9728,
+  "height": 6656,
+  "tile": 128,
+  "seed": 20261022,
+  "compression": 7,
+  "raw_tile": [
+    512,
+    512
+  ],
+  "changes": [
+    {
+      "tag": 324,
+      "offset": 139258,
+      "count": 247
+    },
+    {
+      "tag": 325,
+      "offset": 140246,
+      "count": 247
+    }
+  ],
+  "output_sha256": "bb9cd388ec7917c0a53533eb1020858c8c16d417ca6c89b4608e1b619965f516",
+  "script_sha256": "a7d71d9e44a1a3d0304850b25278194835a202fe48bc58f21849137375360b1d",
+  "status": "Requires independent full sensor decode and native Edit export before admission"
+}

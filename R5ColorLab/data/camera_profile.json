@@ -1,0 +1,112 @@
+{
+  "schema": "camera-RAW-SLog3-reference-profile/1",
+  "source_raw_sha256": "8aebb1f4fa75ce7aa3e830186d838b41fd13ad9e54781cb28f553ca548b41603",
+  "normalized_sensor_domain": "(camera code - channel black)/(RAW white_level - channel black), before WB",
+  "black_levels": [
+    512,
+    512,
+    512,
+    512
+  ],
+  "white_level": 16383,
+  "camera_white_levels": [
+    15360,
+    15360,
+    15360,
+    15360
+  ],
+  "camera_wb_rgb": [
+    2.5556640625,
+    1.0,
+    1.779296875
+  ],
+  "xyz_to_camera": [
+    [
+      0.8199999928474426,
+      -0.29760000109672546,
+      -0.07190000265836716
+    ],
+    [
+      -0.4296000003814697,
+      1.205299973487854,
+      0.2531999945640564
+    ],
+    [
+      -0.042899999767541885,
+      0.1281999945640564,
+      0.5774000287055969
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "camera_to_working": [
+    [
+      0.7482274438537205,
+      0.30026958044888463,
+      -0.048497024302605066
+    ],
+    [
+      0.0018785421322059237,
+      1.3808268627453248,
+      -0.3827054048775308
+    ],
+    [
+      -0.005255398416899218,
+      -0.17531677995613687,
+      1.180572178373036
+    ]
+  ],
+  "working_to_log": {
+    "S-Gamut3": [
+      [
+        1.0744775012121335,
+        -0.010574118270753236,
+        -0.06401515154241098
+      ],
+      [
+        -0.02509682364960785,
+        0.9039549861147125,
+        0.12115805929484848
+      ],
+      [
+        0.011778830827397118,
+        -0.000835372346524942,
+        0.9888098502588044
+      ]
+    ],
+    "S-Gamut3.Cine": [
+      [
+        1.2555188840072864,
+        -0.17218155470952645,
+        -0.08347343549240888
+      ],
+      [
+        0.005015170349913574,
+        0.8441350434015177,
+        0.15085221415762887
+      ],
+      [
+        0.03723209073534235,
+        0.01843066834471078,
+        0.9440995503056763
+      ]
+    ]
+  },
+  "working_space": "ProPhoto RGB",
+  "exposure_ev": 0,
+  "colour_commit": "4ee3b72a2c6205c1d0cd964075621ec19290d571",
+  "colour_version": "0.4.7",
+  "camera_matrix_source_sha256": "e182938bc5c5d44939cb485d7b1b5fbee8405023295ce557d03f59b9e9d79e0f",
+  "metadata_decoder": "installed Raw Alchemy rawpy/LibRaw",
+  "native_Edit_bridge_verified": false,
+  "limits": [
+    "LibRaw metadata branch; RawSpeed matrix selection has not been established for the earlier GUI export.",
+    "Not a Sony camera S-Log3 calibration.",
+    "Spatial decode, highlight reconstruction, lens correction and noise are outside uniform-patch reference.",
+    "Neutral WB/exposure controls fixed; not automatic metering.",
+    "No arbitrary Edit RGB normalization is authorized by this profile."
+  ]
+}

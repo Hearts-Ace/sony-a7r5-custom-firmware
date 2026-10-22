@@ -1,0 +1,12 @@
+*.bin binary
+*.npz binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.py text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.command text eol=lf
+*.bat text eol=crlf

@@ -1,0 +1,16 @@
+{
+  "reports": [
+    {
+      "path": "data/model/capture/report.json",
+      "original_sha256": "a347c423c89f7e24fb348ffdbf4ddfc9cc9f717954b77b58b15037b201b88a1f",
+      "published_sha256": "9e8ebb61859515ea5d473110209ceb71e4bd212eda8f43a4eb4cdd049b376e1e",
+      "changes": "Local user and temporary paths redacted; numeric measurements and capture buffers unchanged."
+    },
+    {
+      "path": "data/training/frontend_capture/report.json",
+      "original_sha256": "dc5d3d607db4a264ade1376bd347b2b5e917d25c62077619ad92ba779541c719",
+      "published_sha256": "dcc07a50f9269af34c323755be3f5fb6965b4002ef24cd252e513c830abd69df",
+      "changes": "Local user and temporary paths redacted; numeric measurements and capture buffers unchanged."
+    }
+  ]
+}
