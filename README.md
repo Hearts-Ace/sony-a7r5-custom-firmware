@@ -1,6 +1,6 @@
 # sony-a7r5-custom-firmware
 
-Sony ILCE-7RM5（A7R V / R5）4.18自定义创意外观、FL2/FL3移植与RAW→S-Log3 LUT原生参数拟合研究。
+Sony ILCE-7RM5（A7R V / R5）自定义创意外观、FL2/FL3移植与RAW→S-Log3 LUT原生参数拟合研究。
 
 **4.18用户已确认实机结果没问题。** 支持按原生1–12序号导入名称、CC1三端点、block13三端点和129点Gamma，保存到独立内部文件，无卡启动重载。额外补偿矩阵和网格未加入。拟合器的最终LUT还原色彩精度仍未通过，不能把固件验收当作拟合精度验收。
 
@@ -11,7 +11,13 @@ Sony ILCE-7RM5（A7R V / R5）4.18自定义创意外观、FL2/FL3移植与RAW→
 - [源码来源与公开副本散列](SOURCE_MANIFEST.json)
 - [致谢与许可](THIRD_PARTY_NOTICES.md)
 
-## 参数文件
+## 4.20 固件源码候选
+
+[4.20 实现、配置格式与验证说明](analysis/r5_native_grid420_20261022/README.md)：加入原厂运行路径的 5×9×9 网格，并修复 SD 配置完整替换。有效 BIN 覆盖整个自定义集合，未列外观清除覆盖；空 BIN 清空全部，无 BIN 或损坏文件保留旧配置。SD 根目录 `R5IMPORT.LOG` 记录导入、CP 传输及网格选择/建表/上传返回状态。
+
+152 个 SD 导入场景及网格、颜色、持久化回归在本地通过，4.20 封装校验通过；**4.20 尚未实机验收，4.18 仍是最后已确认版本。** 本次仅公开固件源码、工具和离线结果，色彩拟合 Web 暂不提交，完整 DAT 不分发。
+
+## 4.18 参数文件
 
 ```sh
 python analysis/r5_native_overwrite418_20261021/import/native_overwrite_config.py pack native_config.json --output R5NATIVE.BIN

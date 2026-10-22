@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "source_export_python_syntax_files": 29,
+  "public_host_codec_transfer": {
+    "passed": true,
+    "codec_roundtrips": 4095,
+    "invalid_files": 17,
+    "transfer_masks": 4095,
+    "transfer_packets": 32766,
+    "hostile_acks": 11,
+    "full12_pretty_json_load": true,
+    "replacement_and_clear": true,
+    "utf8_valid_names": 4,
+    "utf8_invalid_names": 6,
+    "wire_bytes": 2424,
+    "record_bytes": 2392,
+    "set_bytes": 28708,
+    "limitations": [
+      "Host C ABI/state machine only. Native filesystem, queues, hardware and menu/display remain separate acceptance."
+    ]
+  },
+  "public_host_persistence": {
+    "passed": true,
+    "rows": [
+      {
+        "fault": "valid",
+        "result": 0,
+        "renamed": true
+      },
+      {
+        "fault": "read",
+        "result": 2,
+        "renamed": false
+      },
+      {
+        "fault": "rename",
+        "result": 4,
+        "renamed": false
+      },
+      {
+        "fault": "sync",
+        "result": 4,
+        "renamed": true
+      },
+      {
+        "fault": "corrupt",
+        "result": 3,
+        "renamed": false
+      }
+    ],
+    "actual_C": true,
+    "camera_filesystem_verified": false
+  },
+  "public_host_log_queries": {
+    "passed": true,
+    "fault_cases": 12
+  },
+  "public_synthetic_example_and_clear_decoded_by_C": true,
+  "full_DAT_rebuilt_in_public_checkout": false,
+  "Web_published": false,
+  "camera_operations_this_publication": false
+}
