@@ -15,18 +15,18 @@ class PortableTests(unittest.TestCase):
         np.testing.assert_array_equal(np.bincount(b[a['split']=='test'],minlength=3),[249,245,246])
         a['input']=a['input'].copy();a['input'][0,4,0]+=1
         with self.assertRaises(ValueError):anchor_dataset.validate(a)
-    def test_defaults_and_v3_grid_export(self):
+    def test_defaults_and_v4_grid_export(self):
         html=(core.HERE/'static/index.html').read_text()
         self.assertIn('id="wbTraining" type="checkbox">',html)
         self.assertIn('id="pcTraining" type="checkbox" checked>',html)
         entries,_=core.presets();self.assertEqual(len(entries),12)
-        cfg=core.config(entries[:1]);cfg['schema']='r5-native-overwrite-config/3';cfg['compensation_grid_enabled']=True
+        cfg=core.config(entries[:1]);cfg['schema']='r5-custom-filter-config/4'
         grid=np.zeros((3,5,9,9),dtype=int);grid[0,0,0,0]=-64;grid[2,4,8,8]=63
-        cfg['entries'][0]['grid_5x9x9']=dict(enabled=True,coefficients=grid.tolist())
+        cfg['entries'][0]['grid_5x9x9']=dict(coefficients=grid.tolist())
         blob,_,fw,v=core.compile_config(cfg)
-        self.assertEqual((len(blob),fw,v),(2528,'4.20',3))
-        self.assertEqual(struct.unpack_from('<I',blob,128+1176)[0],1)
-        self.assertEqual(blob[128+1180:128+2395],grid.astype('i1').tobytes())
+        self.assertEqual((len(blob),fw,v),(2580,'4.23',4))
+        self.assertEqual(blob[:8],b'R5CUST4\0')
+        self.assertEqual(blob[128+1232:128+2447],grid.astype('i1').tobytes())
     def test_no_external_symbolic_links_or_machine_paths(self):
         root=core.ROOT
         for directory in ['web','scripts','compilers','data']:

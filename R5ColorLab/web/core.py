@@ -1,4 +1,4 @@
-"""Local UI adapters. Existing fitting mathematics and v2 compiler stay intact."""
+"""Local UI adapters and R5 4.23 independent custom filter exports."""
 import copy
 import white_balance
 import hashlib
@@ -15,8 +15,8 @@ RESEARCH = HERE.parent
 ROOT = RESEARCH
 SCRIPTS = RESEARCH / 'scripts'
 sys.path.insert(0, str(SCRIPTS))
-COMPILER_PATH = ROOT / 'compilers/native_v2.py'
-spec = importlib.util.spec_from_file_location('native418_compiler', COMPILER_PATH)
+COMPILER_PATH = ROOT / 'compilers/custom_filter_v4.py'
+spec = importlib.util.spec_from_file_location('custom423_compiler', COMPILER_PATH)
 compiler = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(compiler)
 BASE = RESEARCH / 'data/model'
@@ -39,21 +39,11 @@ def gamma_endpoint(value):
 
 
 def config(entries):
-    return dict(schema=compiler.SCHEMA, model='ILCE-7RM5',
-                baseline_ap_sha256=compiler.AP_SHA, baseline_cp_sha256=compiler.CP_SHA,
-                additional_compensation_matrix_enabled=False, compensation_grid_enabled=False,
-                entries=entries)
+    return compiler.config(entries)
 
 
 def compile_config(value):
-    """Select the existing v3 firmware compiler when grids are requested."""
-    path = ROOT/'compilers/native_v3.py'
-    spec = importlib.util.spec_from_file_location('web_grid420_compiler', path)
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    if value.get('schema') == module.GRID_SCHEMA:
-        return module.pack(value), path, '4.20', 3
-    return compiler.pack(value), COMPILER_PATH, '4.18', 2
+    return compiler.pack(value), COMPILER_PATH, '4.23', 4
 
 
 def verified(path, digest):
@@ -69,9 +59,7 @@ def presets():
     return copy.deepcopy(value['entries']),copy.deepcopy(value['provenance'])
 
 
-def prepare_target(lut, gamut, output):
-    from raw_slog3_reference import Cube, RawSLog3Reference
-    from validate_synthetic_pairs import validate, validate_profile
+def measured_inputs():
     import numpy as np
     import anchor_dataset
     with np.load(anchor_dataset.PAIRS, allow_pickle=False) as archive:
@@ -83,6 +71,36 @@ def prepare_target(lut, gamut, output):
     import tonal_sampling
     arrays['baseline_tonal_index']=tonal_sampling.classify(RuntimeColor.from_capture(CAPTURE,4).color_only(arrays['input'])[:,4]/16383)
     audit['tonal_balance']=tonal_sampling.validate(arrays,RuntimeColor.from_capture(CAPTURE,4))
+    return arrays, audit
+
+
+def target_identity(job):
+    job = Path(job)
+    audit = json.loads((job/'input_audit.json').read_text())
+    kind = audit.get('target_kind','lut')
+    if kind not in ('lut','chart-image'):
+        raise ValueError('Unknown target source')
+    path = job/('target-image.bin' if kind=='chart-image' else 'input.cube')
+    digest = sha(path.read_bytes())
+    expected = audit.get('target_source_sha256') if kind=='chart-image' else audit.get('lut_sha256')
+    if digest != expected:
+        raise ValueError('Target source mismatch')
+    return dict(kind=kind, sha256=digest)
+
+
+def target_matches(value, job):
+    identity = target_identity(job)
+    if 'target_source' in value:
+        return value['target_source'] == identity
+    return identity['kind']=='lut' and value.get('lut_sha256')==identity['sha256']
+
+
+def prepare_target(lut, gamut, output):
+    from raw_slog3_reference import Cube, RawSLog3Reference
+    from validate_synthetic_pairs import validate_profile
+    import numpy as np
+    import anchor_dataset
+    arrays, audit = measured_inputs()
     profile = json.loads(PROFILE.read_text())
     validate_profile(profile, json.loads((anchor_dataset.CHART / 'manifest.json').read_text()))
     reference = RawSLog3Reference(profile, Cube(lut), gamut, mode='raw-alchemy-v0.6.2-fused')
@@ -95,7 +113,7 @@ def prepare_target(lut, gamut, output):
     (output / 'input_audit.json').write_text(json.dumps(audit, indent=2) + '\n')
 
 
-def finish_fit(output, number, name, gamma_endpoint128=None):
+def finish_fit(output, number, short_name, full_name, gamma_endpoint128=None):
     gamma_endpoint128 = gamma_endpoint(gamma_endpoint128)
     # Preserve the compiler's default verified ST endpoint. An unsupported fit
     # is reported as an error instead of silently increasing the endpoint.
@@ -109,7 +127,7 @@ def finish_fit(output, number, name, gamma_endpoint128=None):
         projected.pop('fitting', None)
         conversion_path = output / 'fit/native_conversion_recipe.json'
         conversion_path.write_text(json.dumps(projected, separators=(',', ':'))+'\n')
-    native, audit = compiler.from_fit(conversion_path, CAPTURE, number, name, gamma_endpoint128)
+    native, audit = compiler.from_fit(conversion_path, CAPTURE, number, short_name, full_name, gamma_endpoint128)
     if conversion_path != recipe_path:
         audit['compiler_input_sha256'] = audit['recipe_sha256']
         audit['recipe_sha256'] = sha(original_recipe)
@@ -119,7 +137,8 @@ def finish_fit(output, number, name, gamma_endpoint128=None):
     payload = compiler.pack(native)
     (output / 'native_config.json').write_text(json.dumps(native, indent=2, ensure_ascii=False) + '\n')
     (output / 'conversion_audit.json').write_text(json.dumps(audit, indent=2) + '\n')
-    (output / 'R5NATIVE.BIN').write_bytes(payload)
+    # A fit alone is not exportable: select a stock grid or finish compression.
+    (output / 'R5NATIVE.BIN').unlink(missing_ok=True)
     from edit_native_recipe import read
     import numpy as np
     recipe, model = read(output / 'fit/recipe.json', CAPTURE, 4, None)
@@ -272,8 +291,8 @@ def write_validation_raw(original, recipe_path, destination):
     from edit_native_recipe import read
     from write_fitted_st_raw import reader
     writer = SCRIPTS / 'write_fitted_st_raw.py'
-    verified(writer, '2ce6506c9d299977acb67bfb51a64bc61c2baba8647f227cbe6682935ca83602')
-    parser = SCRIPTS/'sony_arw_metadata.py'
+    verified(writer, '4c1f3774ac5a0e39ac8e85fc35dfeeb3dcc9011e5344729ebbe15556e4ee31c8')
+    parser = RESEARCH / 'scripts/sony_arw_metadata.py'
     verified(parser, 'e034f6a97e9ee66fc95785f1151adef58083759fc053f0a904a5d57d6c559383')
     recipe = json.loads(recipe_path.read_text())
     read(recipe_path, CAPTURE, recipe['source']['context'], None)

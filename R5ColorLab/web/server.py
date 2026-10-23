@@ -19,7 +19,9 @@ import webbrowser
 import zipfile
 
 import core
-from measured_response import default_response
+import chart_target
+import export_policy423
+from grid_models import default_response
 from residual_grid import response_json
 
 STATIC = core.HERE / 'static'
@@ -39,14 +41,15 @@ def dump(value):
     return (json.dumps(value, ensure_ascii=False, allow_nan=False, indent=2) + '\n').encode()
 
 
-def preview_work(identifier, job_id, destination, pc=False, grid_key=None, reuse_id=None):
+def preview_work(identifier, job_id, destination, pc=False, grid_key=None, reuse_id=None, grid_enabled=True):
     item = PREVIEWS[identifier]
     source = RUNS/job_id/'photo_previews'/reuse_id if reuse_id else destination/'input.ARW'
     try:
         item.update(status='running', phase='本地 RAW 解码与两套函数渲染（不采集 Edit）')
+        (destination/'preview.json').write_bytes(dump(item))
         with (destination/'preview.log').open('w') as log:
             process = subprocess.run([sys.executable, str(core.HERE/'photo_preview.py'),
-                str(source), str(RUNS/job_id), str(destination)]+(['--pc'] if pc else [])+(['--grid',grid_key] if grid_key else [])+(['--reuse'] if reuse_id else []),
+                str(source), str(RUNS/job_id), str(destination)]+(['--pc'] if pc else [])+(['--grid',grid_key] if grid_key else [])+(['--reuse'] if reuse_id else [])+([] if grid_enabled else ['--no-grid-effect']),
                 stdout=log, stderr=subprocess.STDOUT, timeout=1800,
                 env={**os.environ, 'OPENBLAS_NUM_THREADS':'1', 'VECLIB_MAXIMUM_THREADS':'1'})
         if process.returncode:
@@ -87,15 +90,23 @@ def work(identifier, body):
     output = RUNS / identifier
     try:
         output.mkdir(parents=True)
-        lut = output / 'input.cube'
-        lut.write_text(body['lut'], encoding='utf-8')
         job.update(phase='检查传感器、原生前端与训练集来源', status='running')
-        core.prepare_target(lut, body['gamut'], output)
+        if body.get('target_kind') == 'chart-image':
+            data=(core.HERE/'chart_uploads'/body['target_id']/'source.bin').read_bytes()
+            if core.sha(data)!=body['target_sha256']:
+                raise ValueError('目标图上传来源发生变化')
+            chart_target.prepare(data,output)
+            description='measured RAW frontend -> processed ST chart image / sRGB'
+        else:
+            lut = output / 'input.cube'
+            lut.write_text(body['lut'], encoding='utf-8')
+            core.prepare_target(lut, body['gamut'], output)
+            description='integer RAW -> raw-alchemy-v0.6.2-fused ' + body['gamut'] + ' S-Log3 -> uploaded cube'
         job.update(phase='原生分阶段拟合与 PC 交替优化' if body.get('pc_compensation',False) else '原生分阶段拟合：明暗、色彩、联合微调')
         cmd = [sys.executable, str(core.HERE / 'fit_anchor_native.py'), str(output / 'pairs.npz'),
                '--capture', str(core.CAPTURE), '--context', '4', '--gamut', '0',
                '--output', str(output / 'fit'), '--evaluations', str(body['evaluations']),
-               '--target-description', 'integer RAW -> raw-alchemy-v0.6.2-fused ' + body['gamut'] + ' S-Log3 -> uploaded cube']
+               '--target-description', description]
         from training_policy import group_importance
         from optimizer_policy import search_options, pc_options
         cmd += ['--pc-options',json.dumps(pc_options(body.get('pc_options'))), '--group-weights',json.dumps(group_importance(body.get('group_weights'))), '--search-options',json.dumps(search_options(body.get('search_options')))]
@@ -121,8 +132,8 @@ def work(identifier, body):
                 job.pop('process', None)
         if code:
             raise ValueError('拟合器退出码 %s，请查看完整日志' % code)
-        job.update(phase='验证配方并转换 4.18 配置')
-        result = core.finish_fit(output, body['number'], body['name'], body.get('gamma_endpoint128'))
+        job.update(phase='验证配方并转换 4.23 自定义配置')
+        result = core.finish_fit(output, body['number'], body['short_name'], body['full_name'], body.get('gamma_endpoint128'))
         if body.get('pc_compensation',False):
             job.update(phase='整体训练：从整数原生参数重建 PC 残差并验证')
             from pc_compensation import generate
@@ -174,12 +185,14 @@ class Handler(BaseHTTPRequestHandler):
             return self.respond(dict(error='Local origin required'), status=403)
         path = urlparse(self.path).path
         try:
+            if path == '/api/chart-original':
+                return self.respond(chart_target.download(), 'application/zip', filename='R5-ST-original-chart.zip')
             if path == '/api/bootstrap':
                 entries, provenance = core.presets()
                 return self.respond(dict(token=TOKEN, presets=entries, provenance=provenance,
-                                         template=core.config([]),
+                                         template=core.config([]), stock_grids=__import__("stock_grids").catalog(),
                                          fitting_baseline='ST / verified synthetic capture context 4',
-                                         grid_response=default_response(), history=[dict(id=k, status=v['status'], started=v['started'], phase=v['phase'],pc_available=(RUNS/k/'pc_compensation.json').is_file())
+                                         grid_response=default_response(), history=[dict(id=k, status=v['status'], started=v['started'], phase=v['phase'],target_kind=v.get('target_kind','lut'),pc_available=(RUNS/k/'pc_compensation.json').is_file())
                                                   for k, v in sorted(JOBS.items(), key=lambda kv: kv[1]['started'], reverse=True)][:30],
                                          jobs=[k for k, v in JOBS.items() if v['status'] in ('running', 'queued')]))
             if path.startswith('/api/previews/'):
@@ -188,7 +201,14 @@ class Handler(BaseHTTPRequestHandler):
                 if not item:
                     return self.respond(dict(error='预览不存在'), status=404)
                 if len(bits) == 4:
-                    return self.respond(item)
+                    value = dict(item)
+                    if item['status'] in ('queued','running'):
+                        progress = RUNS/item['job']/'photo_previews'/item['id']/'progress.json'
+                        try:
+                            state = json.loads(progress.read_text())
+                            value['phase'] = state['phase'] + (' · %d%%' % state['percent'])
+                        except (OSError,ValueError,KeyError): pass
+                    return self.respond(value)
                 name = bits[4]
                 if len(bits) == 5 and name in ('lut.png', 'model.png', 'result.json') and item['status'] == 'done':
                     file = RUNS/item['job']/'photo_previews'/item['id']/name
@@ -230,19 +250,21 @@ class Handler(BaseHTTPRequestHandler):
                 if len(bits)==5 and bits[4]=='grid-firmware-download':
                     from grid_distillation import firmware_config
                     key=parse_qs(urlparse(self.path).query).get('key',[''])[0]
-                    return self.respond(firmware_config(RUNS/identifier,key),'application/zip',filename='r5-grid-v3-config.zip')
+                    return self.respond(firmware_config(RUNS/identifier,key),'application/zip',filename='r5-grid-v4-config.zip')
                 if len(bits)==5 and bits[4]=='grid-firmware-config':
                     from grid_distillation import firmware_config
                     key=parse_qs(urlparse(self.path).query).get('key',[''])[0]
-                    return self.respond(firmware_config(RUNS/identifier,key,configuration_only=True))
+                    config=firmware_config(RUNS/identifier,key,configuration_only=True)
+                    config['export_sources']={str(config['entries'][0]['number']):dict(kind='compressed',job=identifier,key=key)}
+                    return self.respond(config)
                 if len(bits) == 5 and bits[4] == 'download':
                     if job['status'] not in ('done', 'error'):
                         raise ValueError('任务尚未完成')
                     memory = io.BytesIO()
                     with zipfile.ZipFile(memory, 'w', zipfile.ZIP_DEFLATED) as archive:
                         # Only files from this job, never the original capture/RAW.
-                        for name in ['native_config.json', 'R5NATIVE.BIN', 'conversion_audit.json',
-                                     'input_audit.json', 'fit/recipe.json', 'pc_compensation.json', 'fit.log', 'error.log', 'job.json']:
+                        for name in ['native_config.json', 'conversion_audit.json',
+                                     'input_audit.json', 'chart_target.json', 'target-image.bin', 'fit/recipe.json', 'pc_compensation.json', 'fit.log', 'error.log', 'job.json']:
                             source = RUNS / identifier / name
                             if source.is_file():
                                 archive.write(source, name)
@@ -280,12 +302,24 @@ class Handler(BaseHTTPRequestHandler):
             return self.respond(dict(error='Local session token required'), status=403)
         try:
             length = int(self.headers.get('Content-Length', '0'))
+            if urlparse(self.path).path == '/api/chart-target':
+                if not 0 < length <= chart_target.MAX_BYTES or self.headers.get('Content-Type')!='application/octet-stream':
+                    raise ValueError('请以二进制上传 64 MiB 内的 TIFF 或 JPG')
+                data=self.rfile.read(length)
+                if len(data)!=length:
+                    raise ValueError('目标图上传不完整')
+                _, audit=chart_target.decode(data)
+                identifier=uuid.uuid4().hex
+                destination=core.HERE/'chart_uploads'/identifier
+                destination.mkdir(parents=True)
+                (destination/'source.bin').write_bytes(data)
+                return self.respond(dict(id=identifier,audit=audit),status=201)
             if urlparse(self.path).path == '/api/preview':
                 if not 0 < length <= 512*1024*1024 or self.headers.get('Content-Type') != 'application/octet-stream':
                     raise ValueError('请上传 512 MiB 内的 R5 RAW 二进制文件')
                 job_id = parse_qs(urlparse(self.path).query).get('job', [''])[0]
                 if job_id not in JOBS or not (RUNS/job_id/'fit/recipe.json').is_file() or not (RUNS/job_id/'input.cube').is_file():
-                    raise ValueError('请先载入具有 LUT 和配方的拟合任务')
+                    raise ValueError('色卡目标仅支持色块验证；RAW 双图预览需要 LUT 目标和配方')
                 with LOCK:
                     if any(p['status'] in ('queued', 'running') for p in PREVIEWS.values()):
                         return self.respond(dict(error='已有照片预览运行，请稍候'), status=409)
@@ -301,13 +335,14 @@ class Handler(BaseHTTPRequestHandler):
                                 raise ValueError('RAW 上传不完整')
                             stream.write(chunk)
                             remaining -= len(chunk)
-                    PREVIEWS[identifier] = dict(id=identifier, job=job_id, status='queued', phase='等待渲染')
                     pc=parse_qs(urlparse(self.path).query).get('pc',['0'])[0]=='1'
                     grid_key=parse_qs(urlparse(self.path).query).get('grid',[''])[0] or None
                     if grid_key:
                         from grid_distillation import load_result
                         load_result(RUNS/job_id,grid_key)
-                    PREVIEW_POOL.submit(preview_work, identifier, job_id, destination,pc,grid_key)
+                    PREVIEWS[identifier] = dict(id=identifier, job=job_id, status='queued', phase='等待渲染')
+                    (destination/'preview.json').write_bytes(dump(PREVIEWS[identifier]))
+                    PREVIEW_POOL.submit(preview_work, identifier, job_id, destination,pc,grid_key,None,parse_qs(urlparse(self.path).query).get('grid_effect',['1'])[0]!='0')
                 return self.respond(dict(id=identifier), status=202)
             if urlparse(self.path).path == '/api/raw-export':
                 if not 0 < length <= 512*1024*1024:
@@ -351,9 +386,12 @@ class Handler(BaseHTTPRequestHandler):
                 job_id=body.get('job');reuse_id=body.get('preview');item=PREVIEWS.get(reuse_id)
                 if job_id not in JOBS or not item or item['job']!=job_id or item['status']!='done':
                     raise ValueError('RAW预览来源无效')
+                if not (RUNS/job_id/'input.cube').is_file():
+                    raise ValueError('色卡目标不提供任意 RAW 的目标照片渲染')
                 source=RUNS/job_id/'photo_previews'/reuse_id
                 if not (source/'render_inputs.npz').is_file():raise ValueError('历史预览没有缓存，请重新上传一次RAW')
                 if item['result'].get('preview_long_edge') != 3840:raise ValueError('历史预览为低分辨率，请重新上传一次 RAW 生成 4K 对照图')
+                if type(body.get('grid_effect',True)) is not bool:raise ValueError('网格效果开关必须为布尔值')
                 grid_key=body.get('grid') or None
                 if grid_key:
                     from grid_distillation import load_result
@@ -364,7 +402,8 @@ class Handler(BaseHTTPRequestHandler):
                     destination=RUNS/job_id/'photo_previews'/identifier
                     destination.mkdir(parents=True)
                     PREVIEWS[identifier]=dict(id=identifier,job=job_id,status='queued',phase='复用同一RAW采样切换算法')
-                    PREVIEW_POOL.submit(preview_work,identifier,job_id,destination,body.get('pc',False),grid_key,reuse_id)
+                    (destination/'preview.json').write_bytes(dump(PREVIEWS[identifier]))
+                    PREVIEW_POOL.submit(preview_work,identifier,job_id,destination,body.get('pc',False),grid_key,reuse_id,body.get('grid_effect',True))
                 return self.respond(dict(id=identifier),status=202)
             if path == '/api/grid-training':
                 identifier=body.get('job')
@@ -406,7 +445,8 @@ class Handler(BaseHTTPRequestHandler):
                 finally:
                     RAW_LOCK.release()
             if path == '/api/export':
-                payload,compiler_path,firmware,version = core.compile_config(body)
+                config, receipts = export_policy423.validate(body, RUNS)
+                payload,compiler_path,firmware,version = core.compile_config(config)
                 memory = io.BytesIO()
                 with zipfile.ZipFile(memory, 'w', zipfile.ZIP_DEFLATED) as archive:
                     archive.writestr('native_config.json', dump(body))
@@ -414,11 +454,15 @@ class Handler(BaseHTTPRequestHandler):
                     archive.writestr('export_audit.json', dump(dict(schema='r5-web-export/1',
                         binary_sha256=core.sha(payload), bytes=len(payload), native_numbers=[e['number'] for e in body['entries']],
                         white_balance_in_binary=False, color_accuracy_accepted=False, firmware=firmware,format_version=version,
-                        grid_enabled=body.get('compensation_grid_enabled',False),SD_import_policy='replace-entire-set; unlisted looks cleared' if version==3 else 'legacy',
+                        grid_required=True, config_numbers_are_independent=True, grid_sources=receipts,
+                        SD_import_policy='replace-entire-set; missing selected configuration turns custom filter off',
                         compiler_sha256=core.sha(compiler_path.read_bytes()))))
                 return self.respond(memory.getvalue(), 'application/zip', filename='r5-native-config.zip')
             if path == '/api/validate':
-                data,_,_,_ = core.compile_config(body)
+                value=export_policy423.configuration(body)
+                if 'export_sources' in body:
+                    value,_=export_policy423.validate(body,RUNS)
+                data,_,_,_ = core.compile_config(value)
                 return self.respond(dict(valid=True, bytes=len(data), sha256=core.sha(data)))
             if path == '/api/fit':
                 from training_policy import group_importance
@@ -436,22 +480,32 @@ class Handler(BaseHTTPRequestHandler):
                 if type(body.get('pc_compensation',False)) is not bool:
                     raise ValueError('PC 补偿开关必须为布尔值')
                 if type(body.get('number')) is not int or not 1 <= body['number'] <= 12:
-                    raise ValueError('外观序号必须为 1–12')
+                    raise ValueError('自定义配置序号必须为 1–12')
                 if type(body.get('evaluations')) is not int or not 1 <= body['evaluations'] <= 300:
                     raise ValueError('求解评估次数必须为 1–300')
-                if body.get('gamut') not in ('S-Gamut3', 'S-Gamut3.Cine'):
+                kind=body.get('target_kind','lut')
+                if kind not in ('lut','chart-image'):
+                    raise ValueError('请选择目标来源')
+                if kind=='chart-image':
+                    target_id=body.get('target_id')
+                    if not isinstance(target_id,str) or len(target_id)!=32 or any(c not in '0123456789abcdef' for c in target_id):
+                        raise ValueError('请先上传色卡目标图')
+                    data=(core.HERE/'chart_uploads'/target_id/'source.bin').read_bytes()
+                    chart_target.decode(data)
+                    body['target_sha256']=core.sha(data)
+                elif body.get('gamut') not in ('S-Gamut3', 'S-Gamut3.Cine'):
                     raise ValueError('请选择 LUT 输入色域')
                 core.gamma_endpoint(body.get('gamma_endpoint128'))
-                if not isinstance(body.get('lut'), str) or not body['lut'].strip():
+                if kind=='lut' and (not isinstance(body.get('lut'), str) or not body['lut'].strip()):
                     raise ValueError('请导入 .cube LUT')
-                # Let the existing compiler enforce exactly the same name rules.
-                sample = dict(core.presets()[0][0], number=body['number'], name=body.get('name'))
+                sample = dict(core.presets()[0][0], number=body['number'],
+                              short_name=body.get('short_name'), full_name=body.get('full_name'))
                 core.compiler.pack(core.config([sample]))
                 with LOCK:
                     if any(v['status'] in ('queued', 'running') for v in JOBS.values()):
                         return self.respond(dict(error='已有拟合任务运行，请完成或取消后再提交'), status=409)
                     identifier = uuid.uuid4().hex
-                    JOBS[identifier] = dict(id=identifier, status='queued', phase='等待开始', started=time.time())
+                    JOBS[identifier] = dict(id=identifier, target_kind=kind, status='queued', phase='等待开始', started=time.time())
                     POOL.submit(work, identifier, body)
                 return self.respond(dict(id=identifier), status=202)
             if path == '/api/cancel':
@@ -484,6 +538,8 @@ def main():
                 job = json.loads(path.read_text())
                 if job['id'] != path.parent.name:
                     continue
+                native=json.loads((path.parent/'native_config.json').read_text())
+                core.compiler.pack(native)
                 JOBS[job['id']] = job
             except (ValueError, KeyError, OSError):
                 continue
@@ -498,6 +554,9 @@ def main():
             try:
                 item = json.loads(path.read_text())
                 if item['id'] == path.parent.name and item['job'] == path.parents[2].name:
+                    if item['status'] in ('queued','running'):
+                        item.update(status='error',phase='预览被服务重启中断',error='请重新生成预览')
+                        path.write_bytes(dump(item))
                     PREVIEWS[item['id']] = item
             except (ValueError, KeyError, OSError):
                 continue

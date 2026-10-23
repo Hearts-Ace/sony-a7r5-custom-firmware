@@ -65,15 +65,61 @@ def preview_coordinates(sizes):
     return xs, ys
 
 
-def apply_rows(rgb, transform, rows=8):
+def apply_rows(rgb, transform, rows=8, progress=None):
     """Bound temporary memory for high-resolution color transformations."""
     out = np.empty_like(rgb)
     for start in range(0, len(rgb), rows):
         out[start:start+rows] = transform(rgb[start:start+rows])
+        if progress: progress(min(start+rows,len(rgb))/len(rgb))
     return out
 
 
-def render(source, job, output, pc=False, grid_key=None):
+def report_progress(output, phase, fraction=0):
+    path = output/'progress.json'
+    temporary = output/'progress.tmp'
+    temporary.write_text(json.dumps(dict(phase=phase, percent=round(fraction*100))))
+    temporary.replace(path)
+
+
+def compensation(job, output, rgb, pc, grid_key, grid_enabled=True):
+    """Load/verify a frozen transform once, apply the exact function in rows."""
+    from photo_backend import enable
+    if grid_key:
+        from grid_distillation import load_result, evaluate
+        value, grid, _ = load_result(job, grid_key)
+        response = value['identity']['response']
+        if not grid_enabled:
+            return rgb.copy()
+        enable(response)
+        def transform(a):
+            return evaluate(a.reshape(-1,3),grid,response).reshape(a.shape)
+    elif pc:
+        import pc_compensation
+        import pc_stages
+        value, grid = pc_compensation.load(job)
+        if value['schema'] == 'r5-PC-compensation/2':
+            curves = value['curves']
+            if grid_enabled:
+                enable(curves.get('response'))
+            def transform(a):
+                flat = a.reshape(-1,3)
+                if not grid_enabled:
+                    return np.clip(pc_stages.curves(flat,curves)[1],0,1).reshape(a.shape)
+                return pc_stages.render(flat,curves,grid).reshape(a.shape)
+        else:
+            if not grid_enabled:
+                return rgb.copy()
+            from residual_grid import evaluate
+            def transform(a):
+                return evaluate(a.reshape(-1,3),grid,np.eye(3)).reshape(a.shape)
+    else:
+        return rgb
+    phase = '应用压缩网格（精确计算）' if grid_key else '应用 PC 补偿' if grid_enabled else '仅应用 PC 曲线（网格关闭）'
+    report_progress(output,phase)
+    return apply_rows(rgb,transform,progress=lambda f:report_progress(output,phase,f))
+
+
+def render(source, job, output, pc=False, grid_key=None, grid_enabled=True):
     output.mkdir(parents=True, exist_ok=True)
     pc=bool(pc or grid_key)
     pc_sha=digest(job/'pc_compensation.json') if pc else None
@@ -81,6 +127,7 @@ def render(source, job, output, pc=False, grid_key=None):
     if grid_key:
         from grid_distillation import load_result
         _,_,grid_sha=load_result(job,grid_key)
+    report_progress(output,"解码 RAW")
     source_sha = digest(source)
     audit = json.loads((job/'input_audit.json').read_text())
     if digest(job/'input.cube') != audit['lut_sha256']:
@@ -123,6 +170,7 @@ def render(source, job, output, pc=False, grid_key=None):
     target = np.empty((len(ys), len(xs), 3), dtype=float)
     predicted = np.empty_like(target)
     for row, y in enumerate(ys):
+        if row % 32 == 0: report_progress(output,"计算 LUT 与原生模型",row/len(ys))
         center = camera[y, xs].astype(float)
         target[row] = reference(center/(white-black))
         # Retain real adjacent sensor pixels; sampling density does not alter the neighborhood.
@@ -133,13 +181,14 @@ def render(source, job, output, pc=False, grid_key=None):
     np.savez_compressed(output/'render_inputs.npz',native=predicted,target=target)
     if grid_key:
         from grid_distillation import apply,load_result
-        predicted=apply_rows(predicted,lambda rgb:apply(job,rgb,grid_key))
+        predicted=compensation(job,output,predicted,pc,grid_key,grid_enabled)
         if grid_sha!=load_result(job,grid_key)[2]:raise ValueError('压缩参数在渲染期间发生变化')
     elif pc:
         from pc_compensation import apply
-        predicted=apply_rows(predicted,lambda rgb:apply(job,rgb))
+        predicted=compensation(job,output,predicted,pc,None,grid_enabled)
     if pc and pc_sha!=digest(job/'pc_compensation.json'):
         raise ValueError('PC 补偿参数在渲染期间发生变化，请重新生成预览')
+    report_progress(output,'保存两张 4K 图片')
     metadata = PngImagePlugin.PngInfo()
     metadata.add_text('Color interpretation', '8-bit output RGB displayed as sRGB; no extra gamma or black subtraction')
     for name, rgb in [('lut', target), ('model', predicted)]:
@@ -151,7 +200,7 @@ def render(source, job, output, pc=False, grid_key=None):
         camera_wb=profile['camera_wb_rgb'], raw_unchanged=digest(source)==source_sha,
         edit_runtime_used=False, frontend_approximate=True, white_balance=recipe.get('white_balance'),
         grid_key=grid_key,grid_sha256=grid_sha,algorithm=('compressed' if grid_key else 'pc' if pc else 'native'),
-        pc_compensation_enabled=pc,
+        grid_effect_enabled=bool(grid_enabled),grid_effect_applied=bool(pc and grid_enabled),pc_compensation_enabled=pc,
         pc_compensation_sha256=pc_sha,
         lut_decoder='pip rawpy/LibRaw; linear bilinear demosaic, unit WB, no auto scale',
         lut_color='RawAlchemy v0.6.2 fused reference -> S-Log3 -> tetrahedral LUT',
@@ -167,7 +216,7 @@ def render(source, job, output, pc=False, grid_key=None):
     return result
 
 
-def reuse(source,job,output,pc=False,grid_key=None):
+def reuse(source,job,output,pc=False,grid_key=None,grid_enabled=True):
     """Reapply the selected color function to the same decoded RAW samples."""
     from pc_compensation import apply as pc_apply
     from grid_distillation import apply as grid_apply,load_result
@@ -180,13 +229,14 @@ def reuse(source,job,output,pc=False,grid_key=None):
     pc=bool(pc or grid_key)
     pc_sha=digest(job/'pc_compensation.json') if pc else None
     grid_sha=load_result(job,grid_key)[2] if grid_key else None
-    predicted=apply_rows(native,lambda rgb:grid_apply(job,rgb,grid_key)) if grid_key else apply_rows(native,lambda rgb:pc_apply(job,rgb)) if pc else native
+    predicted=compensation(job,output,native,pc,grid_key,grid_enabled)
     if pc and pc_sha!=digest(job/'pc_compensation.json'):raise ValueError('PC参数发生变化')
     if grid_key and grid_sha!=load_result(job,grid_key)[2]:raise ValueError('压缩参数发生变化')
     np.savez_compressed(output/'render_inputs.npz',native=native,target=target)
+    report_progress(output,'保存两张 4K 图片')
     for name,rgb in [('lut',target),('model',predicted)]:
         Image.fromarray(quantize(rgb)).save(output/(name+'.png'))
-    value.update(pc_compensation_enabled=pc,pc_compensation_sha256=pc_sha,
+    value.update(grid_effect_enabled=bool(grid_enabled),grid_effect_applied=bool(pc and grid_enabled),pc_compensation_enabled=pc,pc_compensation_sha256=pc_sha,
                  grid_key=grid_key,grid_sha256=grid_sha,
                  algorithm='compressed' if grid_key else 'pc' if pc else 'native',
                  decoded_samples_reused=True,raw_rechecked_this_render=False)
@@ -202,5 +252,6 @@ if __name__ == '__main__':
     parser.add_argument('--pc',action='store_true')
     parser.add_argument('--grid')
     parser.add_argument('--reuse',action='store_true')
+    parser.add_argument('--no-grid-effect',action='store_true')
     args = parser.parse_args()
-    (reuse if args.reuse else render)(args.source, args.job, args.output,args.pc,args.grid)
+    (reuse if args.reuse else render)(args.source, args.job, args.output,args.pc,args.grid,not args.no_grid_effect)

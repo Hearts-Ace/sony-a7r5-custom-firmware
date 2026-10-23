@@ -16,7 +16,7 @@ def load(job):
         or value.get('coordinate_model') not in ('provisional-bt601-limited','measured-inverse-bspline-forward-TPS')
         or (value.get('pipeline')!=['qaq-provisional-grid'] and not np.array_equal(value.get('response'),np.eye(3)))
         or value['recipe_sha256']!=core.sha((Path(job)/'fit/recipe.json').read_bytes())
-        or value['lut_sha256']!=core.sha((Path(job)/'input.cube').read_bytes())
+        or not core.target_matches(value,job)
         or value['pairs_sha256']!=core.sha((Path(job)/'pairs.npz').read_bytes())):
         raise ValueError('PC compensation source mismatch')
     if value['schema']=='r5-PC-compensation/2':
@@ -63,7 +63,7 @@ def generate(job):
         pipeline=(['qaq-provisional-grid'] if curve.get('mode')=='qaq-grid' else ['rgb-independent','gray-protected-color-grid'] if curve.get('mode')=='rgb-independent' else ['gray-tone','gray-tint','gray-protected-color-grid']),curves=curve,
         response=curve.get("response",np.eye(3).tolist()),payload_hex=pack(grid).hex(),grid_shape=[5,9,9],
         recipe_sha256=core.sha((job/'fit/recipe.json').read_bytes()),
-        lut_sha256=core.sha((job/'input.cube').read_bytes()),pairs_sha256=core.sha((job/'pairs.npz').read_bytes()),
+        target_source=core.target_identity(job),pairs_sha256=core.sha((job/'pairs.npz').read_bytes()),
         metrics=metrics,fitting=audit,training_only=True,
         reference='Cobalt public separation of characterization, tone and look; independent implementation, not Cobalt algorithm.',
         reference_url='https://www.cobalt-image.com/tutorials/our_technology/',

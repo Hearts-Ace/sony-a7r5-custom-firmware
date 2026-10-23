@@ -1,0 +1,125 @@
+{
+  "schema": "r5-menu424-cache-native-footprint/1",
+  "passed": true,
+  "AP_sha256": "a4c036eb4101820165748ca9819dd5afc803d11dc48f8b5eba3c9775f0c7995b",
+  "source423_sha256": "4017b746b8720b0b3c0b1b8d79b00472548361b335048656b72c71be77202717",
+  "stock_sha256": "41bd8f4cda1f44c7038912837737e1ce6a650065f2108061ada30e5c7f9ce7c7",
+  "script_sha256": "1967483bf392cb38f5025b54cd9e087f715ddabbabd17ea301a57e0059c4bdf1",
+  "private_index_in_bounds": true,
+  "bounds_meaning": "original_native_access_footprint",
+  "cache_got": "0x5928070",
+  "cache_base": "0x7532ed0",
+  "record_stride": 24,
+  "private_record": {
+    "index": "0x635",
+    "start": "0x753c3c8",
+    "end_exclusive": "0x753c3e0"
+  },
+  "native_fallback": {
+    "index": "0x636",
+    "record_start": "0x753c3e0",
+    "actual_native_reads": [
+      {
+        "pc": "0x1be0424",
+        "address": "0x753c3e2",
+        "bytes": 1
+      },
+      {
+        "pc": "0x1be052c",
+        "address": "0x753c3ec",
+        "bytes": 1
+      }
+    ],
+    "provenance": "Native primary normalization returns 636 on missing key; original cached consumers call that normalizer then access base + 636*24 + 2 or +12 without an intervening upper-bound rejection."
+  },
+  "original_alias": {
+    "table": "0x3e44de0",
+    "entries": 1589,
+    "maximum_mapped_value": "0x634",
+    "missing_key_return": "0x636"
+  },
+  "initialization": {
+    "section": ".bss",
+    "section_start": "0x5ceb100",
+    "section_end_exclusive": "0x8e832c0",
+    "loader_zero_fill": true,
+    "native_flags": "1BDFCC0 iterates registered menu records and initializes bytes +0/+1/+4 and optional +10 pointer using 24-byte indexing. No separate whole-array size/clear loop was recovered; untouched entries begin as loader-zeroed BSS."
+  },
+  "neighboring_reference": {
+    "address": "0x7545e00",
+    "distance": "0x12f30",
+    "not_used_as_array_size_proof": true
+  },
+  "ranges": [
+    {
+      "name": "native_primary_normalize",
+      "va": "0x1bd1dd4",
+      "bytes": 292,
+      "stock_sha256": "adda12204bed41db98d18047db882ab567a0fa8454154386c0319088ccd82fc3",
+      "candidate_sha256": "adda12204bed41db98d18047db882ab567a0fa8454154386c0319088ccd82fc3",
+      "stock_exact_bytes": "fd7bbca9fd030091f35301a974eb01d0f55b02a9f71b00f995ee45f9b5220091a20640f9c20700b4432040b97f00016b6a000054420c40f9fbffff17430840f98d000054f50302aae20303aaf6ffff17f30302aa440c40f9e20303aa220100b5e20304aa220200b4432040b93f00036b8a010054f50302aa420840f9faffff17432040b93f00036b8c000054f30302aa420840f9f2ffff17420c40f9f0ffff17420c40f9f0ffff17f70300aaf60313aadf0215eb60010054e00240f9c12640b9020441f9e00317aa40003fd61f1c0072e0010054c02640b91fd81871e100005494ee45f9c0c68052942200917f0214eb40000054602640b9f35341a9f55b42a9f71b40f9fd7bc4a8c0035fd6e00316aa631fec97f60300aae6ffff17f30315aaf0ffff17",
+      "candidate_exact_bytes": "fd7bbca9fd030091f35301a974eb01d0f55b02a9f71b00f995ee45f9b5220091a20640f9c20700b4432040b97f00016b6a000054420c40f9fbffff17430840f98d000054f50302aae20303aaf6ffff17f30302aa440c40f9e20303aa220100b5e20304aa220200b4432040b93f00036b8a010054f50302aa420840f9faffff17432040b93f00036b8c000054f30302aa420840f9f2ffff17420c40f9f0ffff17420c40f9f0ffff17f70300aaf60313aadf0215eb60010054e00240f9c12640b9020441f9e00317aa40003fd61f1c0072e0010054c02640b91fd81871e100005494ee45f9c0c68052942200917f0214eb40000054602640b9f35341a9f55b42a9f71b40f9fd7bc4a8c0035fd6e00316aa631fec97f60300aae6ffff17f30315aaf0ffff17",
+      "stock423424_identical": true,
+      "versions423424_identical": true,
+      "exception": null,
+      "disassembly": "01bd1dd4: fd7bbca9 stp     x29, x30, [sp, #-0x40]!\n01bd1dd8: fd030091 mov     x29, sp\n01bd1ddc: f35301a9 stp     x19, x20, [sp, #0x10]\n01bd1de0: 74eb01d0 adrp    x20, #0x593f000\n01bd1de4: f55b02a9 stp     x21, x22, [sp, #0x20]\n01bd1de8: f71b00f9 str     x23, [sp, #0x30]\n01bd1dec: 95ee45f9 ldr     x21, [x20, #0xbd8]\n01bd1df0: b5220091 add     x21, x21, #8\n01bd1df4: a20640f9 ldr     x2, [x21, #8]\n01bd1df8: c20700b4 cbz     x2, #0x1bd1ef0\n01bd1dfc: 432040b9 ldr     w3, [x2, #0x20]\n01bd1e00: 7f00016b cmp     w3, w1\n01bd1e04: 6a000054 b.ge    #0x1bd1e10\n01bd1e08: 420c40f9 ldr     x2, [x2, #0x18]\n01bd1e0c: fbffff17 b       #0x1bd1df8\n01bd1e10: 430840f9 ldr     x3, [x2, #0x10]\n01bd1e14: 8d000054 b.le    #0x1bd1e24\n01bd1e18: f50302aa mov     x21, x2\n01bd1e1c: e20303aa mov     x2, x3\n01bd1e20: f6ffff17 b       #0x1bd1df8\n01bd1e24: f30302aa mov     x19, x2\n01bd1e28: 440c40f9 ldr     x4, [x2, #0x18]\n01bd1e2c: e20303aa mov     x2, x3\n01bd1e30: 220100b5 cbnz    x2, #0x1bd1e54\n01bd1e34: e20304aa mov     x2, x4\n01bd1e38: 220200b4 cbz     x2, #0x1bd1e7c\n01bd1e3c: 432040b9 ldr     w3, [x2, #0x20]\n01bd1e40: 3f00036b cmp     w1, w3\n01bd1e44: 8a010054 b.ge    #0x1bd1e74\n01bd1e48: f50302aa mov     x21, x2\n01bd1e4c: 420840f9 ldr     x2, [x2, #0x10]\n01bd1e50: faffff17 b       #0x1bd1e38\n01bd1e54: 432040b9 ldr     w3, [x2, #0x20]\n01bd1e58: 3f00036b cmp     w1, w3\n01bd1e5c: 8c000054 b.gt    #0x1bd1e6c\n01bd1e60: f30302aa mov     x19, x2\n01bd1e64: 420840f9 ldr     x2, [x2, #0x10]\n01bd1e68: f2ffff17 b       #0x1bd1e30\n01bd1e6c: 420c40f9 ldr     x2, [x2, #0x18]\n01bd1e70: f0ffff17 b       #0x1bd1e30\n01bd1e74: 420c40f9 ldr     x2, [x2, #0x18]\n01bd1e78: f0ffff17 b       #0x1bd1e38\n01bd1e7c: f70300aa mov     x23, x0\n01bd1e80: f60313aa mov     x22, x19\n01bd1e84: df0215eb cmp     x22, x21\n01bd1e88: 60010054 b.eq    #0x1bd1eb4\n01bd1e8c: e00240f9 ldr     x0, [x23]\n01bd1e90: c12640b9 ldr     w1, [x22, #0x24]\n01bd1e94: 020441f9 ldr     x2, [x0, #0x208]\n01bd1e98: e00317aa mov     x0, x23\n01bd1e9c: 40003fd6 blr     x2\n01bd1ea0: 1f1c0072 tst     w0, #0xff\n01bd1ea4: e0010054 b.eq    #0x1bd1ee0\n01bd1ea8: c02640b9 ldr     w0, [x22, #0x24]\n01bd1eac: 1fd81871 cmp     w0, #0x636\n01bd1eb0: e1000054 b.ne    #0x1bd1ecc\n01bd1eb4: 94ee45f9 ldr     x20, [x20, #0xbd8]\n01bd1eb8: c0c68052 mov     w0, #0x636\n01bd1ebc: 94220091 add     x20, x20, #8\n01bd1ec0: 7f0214eb cmp     x19, x20\n01bd1ec4: 40000054 b.eq    #0x1bd1ecc\n01bd1ec8: 602640b9 ldr     w0, [x19, #0x24]\n01bd1ecc: f35341a9 ldp     x19, x20, [sp, #0x10]\n01bd1ed0: f55b42a9 ldp     x21, x22, [sp, #0x20]\n01bd1ed4: f71b40f9 ldr     x23, [sp, #0x30]\n01bd1ed8: fd7bc4a8 ldp     x29, x30, [sp], #0x40\n01bd1edc: c0035fd6 ret     \n01bd1ee0: e00316aa mov     x0, x22\n01bd1ee4: 631fec97 bl      #0x16d9c70\n01bd1ee8: f60300aa mov     x22, x0\n01bd1eec: e6ffff17 b       #0x1bd1e84\n01bd1ef0: f30315aa mov     x19, x21\n01bd1ef4: f0ffff17 b       #0x1bd1eb4"
+    },
+    {
+      "name": "native_public_normalize_caller",
+      "va": "0x1bd851c",
+      "bytes": 48,
+      "stock_sha256": "7163bbb35d3f7d4bceb562fa3909f020deec095a82d604f5fada8519e65f42c3",
+      "candidate_sha256": "c13a8e46786585e0f8f2c1d0f3392fe1ae630d4cb664de0c9299fca3284599a1",
+      "stock_exact_bytes": "fd7bbea921ea01f0fd030091a283009121d444f921400091418c1ff8e103002ae00302aa25e6ff97fd7bc2a8c0035fd6",
+      "candidate_exact_bytes": "fd7bbea921ea01f0fd030091a283009121d444f921400091418c1ff8e103002ae00302aa14fdca95fd7bc2a8c0035fd6",
+      "stock423424_identical": false,
+      "versions423424_identical": true,
+      "exception": "423 retains the exact private-635 normalization wrapper at BL1BD8540; all other native fallback behavior remains original",
+      "disassembly": "01bd851c: fd7bbea9 stp     x29, x30, [sp, #-0x20]!\n01bd8520: 21ea01f0 adrp    x1, #0x591f000\n01bd8524: fd030091 mov     x29, sp\n01bd8528: a2830091 add     x2, x29, #0x20\n01bd852c: 21d444f9 ldr     x1, [x1, #0x9a8]\n01bd8530: 21400091 add     x1, x1, #0x10\n01bd8534: 418c1ff8 str     x1, [x2, #-8]!\n01bd8538: e103002a mov     w1, w0\n01bd853c: e00302aa mov     x0, x2\n01bd8540: 25e6ff97 bl      #0x1bd1dd4\n01bd8544: fd7bc2a8 ldp     x29, x30, [sp], #0x20\n01bd8548: c0035fd6 ret     "
+    },
+    {
+      "name": "cached_gate_consumer",
+      "va": "0x1be03ac",
+      "bytes": 132,
+      "stock_sha256": "a17fa2ae19fed487f37e8102d7a9728483ad5cf5a72e9e9504a043eb87a8a357",
+      "candidate_sha256": "a17fa2ae19fed487f37e8102d7a9728483ad5cf5a72e9e9504a043eb87a8a357",
+      "stock_exact_bytes": "fd7bbca9fd030091f35301a9b403019173eb01b0f51300f9f50300aa81ce1fb8734642f9e10314aae00313aa4effff97200100b5a00240f9a13f40b902d045f9e00315aa40003fd6e10314aae00313aacaffff97a03f40b946e0ff97007c409341ea0190020380d2f35341a9213840f90004029bf51340f900084039fd7bc4a8c0035fd6",
+      "candidate_exact_bytes": "fd7bbca9fd030091f35301a9b403019173eb01b0f51300f9f50300aa81ce1fb8734642f9e10314aae00313aa4effff97200100b5a00240f9a13f40b902d045f9e00315aa40003fd6e10314aae00313aacaffff97a03f40b946e0ff97007c409341ea0190020380d2f35341a9213840f90004029bf51340f900084039fd7bc4a8c0035fd6",
+      "stock423424_identical": true,
+      "versions423424_identical": true,
+      "exception": null,
+      "disassembly": "01be03ac: fd7bbca9 stp     x29, x30, [sp, #-0x40]!\n01be03b0: fd030091 mov     x29, sp\n01be03b4: f35301a9 stp     x19, x20, [sp, #0x10]\n01be03b8: b4030191 add     x20, x29, #0x40\n01be03bc: 73eb01b0 adrp    x19, #0x594d000\n01be03c0: f51300f9 str     x21, [sp, #0x20]\n01be03c4: f50300aa mov     x21, x0\n01be03c8: 81ce1fb8 str     w1, [x20, #-4]!\n01be03cc: 734642f9 ldr     x19, [x19, #0x488]\n01be03d0: e10314aa mov     x1, x20\n01be03d4: e00313aa mov     x0, x19\n01be03d8: 4effff97 bl      #0x1be0110\n01be03dc: 200100b5 cbnz    x0, #0x1be0400\n01be03e0: a00240f9 ldr     x0, [x21]\n01be03e4: a13f40b9 ldr     w1, [x29, #0x3c]\n01be03e8: 02d045f9 ldr     x2, [x0, #0xba0]\n01be03ec: e00315aa mov     x0, x21\n01be03f0: 40003fd6 blr     x2\n01be03f4: e10314aa mov     x1, x20\n01be03f8: e00313aa mov     x0, x19\n01be03fc: caffff97 bl      #0x1be0324\n01be0400: a03f40b9 ldr     w0, [x29, #0x3c]\n01be0404: 46e0ff97 bl      #0x1bd851c\n01be0408: 007c4093 sxtw    x0, w0\n01be040c: 41ea0190 adrp    x1, #0x5928000\n01be0410: 020380d2 mov     x2, #0x18\n01be0414: f35341a9 ldp     x19, x20, [sp, #0x10]\n01be0418: 213840f9 ldr     x1, [x1, #0x70]\n01be041c: 0004029b madd    x0, x0, x2, x1\n01be0420: f51340f9 ldr     x21, [sp, #0x20]\n01be0424: 00084039 ldrb    w0, [x0, #2]\n01be0428: fd7bc4a8 ldp     x29, x30, [sp], #0x40\n01be042c: c0035fd6 ret     "
+    },
+    {
+      "name": "cached_profile_consumer",
+      "va": "0x1be04b4",
+      "bytes": 132,
+      "stock_sha256": "eff09da50486b1dcdce5274bd93bc369ed018252b28543083c5d5f4f58d96fa9",
+      "candidate_sha256": "eff09da50486b1dcdce5274bd93bc369ed018252b28543083c5d5f4f58d96fa9",
+      "stock_exact_bytes": "fd7bbca9fd030091f35301a9b403019173eb01b0f51300f9f50300aa81ce1fb8734642f9e10314aae00313aa0cffff97200100b5a00240f9a13f40b902d045f9e00315aa40003fd6e10314aae00313aa88ffff97a03f40b904e0ff97007c409341ea0190020380d2f35341a9213840f90004029bf51340f900304039fd7bc4a8c0035fd6",
+      "candidate_exact_bytes": "fd7bbca9fd030091f35301a9b403019173eb01b0f51300f9f50300aa81ce1fb8734642f9e10314aae00313aa0cffff97200100b5a00240f9a13f40b902d045f9e00315aa40003fd6e10314aae00313aa88ffff97a03f40b904e0ff97007c409341ea0190020380d2f35341a9213840f90004029bf51340f900304039fd7bc4a8c0035fd6",
+      "stock423424_identical": true,
+      "versions423424_identical": true,
+      "exception": null,
+      "disassembly": "01be04b4: fd7bbca9 stp     x29, x30, [sp, #-0x40]!\n01be04b8: fd030091 mov     x29, sp\n01be04bc: f35301a9 stp     x19, x20, [sp, #0x10]\n01be04c0: b4030191 add     x20, x29, #0x40\n01be04c4: 73eb01b0 adrp    x19, #0x594d000\n01be04c8: f51300f9 str     x21, [sp, #0x20]\n01be04cc: f50300aa mov     x21, x0\n01be04d0: 81ce1fb8 str     w1, [x20, #-4]!\n01be04d4: 734642f9 ldr     x19, [x19, #0x488]\n01be04d8: e10314aa mov     x1, x20\n01be04dc: e00313aa mov     x0, x19\n01be04e0: 0cffff97 bl      #0x1be0110\n01be04e4: 200100b5 cbnz    x0, #0x1be0508\n01be04e8: a00240f9 ldr     x0, [x21]\n01be04ec: a13f40b9 ldr     w1, [x29, #0x3c]\n01be04f0: 02d045f9 ldr     x2, [x0, #0xba0]\n01be04f4: e00315aa mov     x0, x21\n01be04f8: 40003fd6 blr     x2\n01be04fc: e10314aa mov     x1, x20\n01be0500: e00313aa mov     x0, x19\n01be0504: 88ffff97 bl      #0x1be0324\n01be0508: a03f40b9 ldr     w0, [x29, #0x3c]\n01be050c: 04e0ff97 bl      #0x1bd851c\n01be0510: 007c4093 sxtw    x0, w0\n01be0514: 41ea0190 adrp    x1, #0x5928000\n01be0518: 020380d2 mov     x2, #0x18\n01be051c: f35341a9 ldp     x19, x20, [sp, #0x10]\n01be0520: 213840f9 ldr     x1, [x1, #0x70]\n01be0524: 0004029b madd    x0, x0, x2, x1\n01be0528: f51340f9 ldr     x21, [sp, #0x20]\n01be052c: 00304039 ldrb    w0, [x0, #0xc]\n01be0530: fd7bc4a8 ldp     x29, x30, [sp], #0x40\n01be0534: c0035fd6 ret     "
+    },
+    {
+      "name": "cache_flag_initializer",
+      "va": "0x1bdfcc0",
+      "bytes": 536,
+      "stock_sha256": "5b30b810ef6ed3cf6f11d09a4637811a314058dc50b58be11225b56a4db0b555",
+      "candidate_sha256": "5b30b810ef6ed3cf6f11d09a4637811a314058dc50b58be11225b56a4db0b555",
+      "stock_exact_bytes": "fd7bb8a9fd030091f76303a918ec01d0f35301a953ea01b0f55b02a955eb019001ff40f9140380d2733a40f936008052b51645f937200091f96b04a9e30313aa200c40f9f90313aafb7305a9fa0313aafb0313aafc0313aae40313aa1f0017eba0040054021440f9c20200b4454040f9012080b9e50200b4455440f9a50200b4257c149b96682538455840f9850200b42570149bb6040039453c40f9650200b42568149bb6100039422c40f9a20000b4420480b9214c149b4254149b220800f9a40f06a9bbe7eb97a40f46a9e4ffff17257c149b7f682538ecffff17256c149bbf040039edffff172564149bbf100039eeffff17b7e901d054eb0190b9f301919a668552f7c245f99b1645f9f7220091f60a40f9df0217eb60060054d51640f9950d00b4c02240b940e4ff97137c40937f021a6bec0c0054c02240b906edff97fc03002ac6e1ff97a07f00b9a06240795900029400003fd6010380d202ff40f9616e019ba23700f920080039e10319aae00302aa21ffff97a23740f9010080d2432000917f0000eb81050054a0eb01b03f0000f100ac47f9000040b98013407a8a000054a0ea407927000294200500b5000380d2811645f9607e009b3f68203829000014801645f96102019b3f0400392d000014801645f96102019b3f10003931000014e1eb01b074ea019036008052214447f9948e45f933200091f50314aa200c40f91f0013ebc0060054011440f9c10000b4222840f9",
+      "candidate_exact_bytes": "fd7bb8a9fd030091f76303a918ec01d0f35301a953ea01b0f55b02a955eb019001ff40f9140380d2733a40f936008052b51645f937200091f96b04a9e30313aa200c40f9f90313aafb7305a9fa0313aafb0313aafc0313aae40313aa1f0017eba0040054021440f9c20200b4454040f9012080b9e50200b4455440f9a50200b4257c149b96682538455840f9850200b42570149bb6040039453c40f9650200b42568149bb6100039422c40f9a20000b4420480b9214c149b4254149b220800f9a40f06a9bbe7eb97a40f46a9e4ffff17257c149b7f682538ecffff17256c149bbf040039edffff172564149bbf100039eeffff17b7e901d054eb0190b9f301919a668552f7c245f99b1645f9f7220091f60a40f9df0217eb60060054d51640f9950d00b4c02240b940e4ff97137c40937f021a6bec0c0054c02240b906edff97fc03002ac6e1ff97a07f00b9a06240795900029400003fd6010380d202ff40f9616e019ba23700f920080039e10319aae00302aa21ffff97a23740f9010080d2432000917f0000eb81050054a0eb01b03f0000f100ac47f9000040b98013407a8a000054a0ea407927000294200500b5000380d2811645f9607e009b3f68203829000014801645f96102019b3f0400392d000014801645f96102019b3f10003931000014e1eb01b074ea019036008052214447f9948e45f933200091f50314aa200c40f91f0013ebc0060054011440f9c10000b4222840f9",
+      "stock423424_identical": true,
+      "versions423424_identical": true,
+      "exception": null,
+      "disassembly": "01bdfcc0: fd7bb8a9 stp     x29, x30, [sp, #-0x80]!\n01bdfcc4: fd030091 mov     x29, sp\n01bdfcc8: f76303a9 stp     x23, x24, [sp, #0x30]\n01bdfccc: 18ec01d0 adrp    x24, #0x5961000\n01bdfcd0: f35301a9 stp     x19, x20, [sp, #0x10]\n01bdfcd4: 53ea01b0 adrp    x19, #0x5928000\n01bdfcd8: f55b02a9 stp     x21, x22, [sp, #0x20]\n01bdfcdc: 55eb0190 adrp    x21, #0x5947000\n01bdfce0: 01ff40f9 ldr     x1, [x24, #0x1f8]\n01bdfce4: 140380d2 mov     x20, #0x18\n01bdfce8: 733a40f9 ldr     x19, [x19, #0x70]\n01bdfcec: 36008052 mov     w22, #1\n01bdfcf0: b51645f9 ldr     x21, [x21, #0xa28]\n01bdfcf4: 37200091 add     x23, x1, #8\n01bdfcf8: f96b04a9 stp     x25, x26, [sp, #0x40]\n01bdfcfc: e30313aa mov     x3, x19\n01bdfd00: 200c40f9 ldr     x0, [x1, #0x18]\n01bdfd04: f90313aa mov     x25, x19\n01bdfd08: fb7305a9 stp     x27, x28, [sp, #0x50]\n01bdfd0c: fa0313aa mov     x26, x19\n01bdfd10: fb0313aa mov     x27, x19\n01bdfd14: fc0313aa mov     x28, x19\n01bdfd18: e40313aa mov     x4, x19\n01bdfd1c: 1f0017eb cmp     x0, x23\n01bdfd20: a0040054 b.eq    #0x1bdfdb4\n01bdfd24: 021440f9 ldr     x2, [x0, #0x28]\n01bdfd28: c20200b4 cbz     x2, #0x1bdfd80\n01bdfd2c: 454040f9 ldr     x5, [x2, #0x80]\n01bdfd30: 012080b9 ldrsw   x1, [x0, #0x20]\n01bdfd34: e50200b4 cbz     x5, #0x1bdfd90\n01bdfd38: 455440f9 ldr     x5, [x2, #0xa8]\n01bdfd3c: a50200b4 cbz     x5, #0x1bdfd90\n01bdfd40: 257c149b mul     x5, x1, x20\n01bdfd44: 96682538 strb    w22, [x4, x5]\n01bdfd48: 455840f9 ldr     x5, [x2, #0xb0]\n01bdfd4c: 850200b4 cbz     x5, #0x1bdfd9c\n01bdfd50: 2570149b madd    x5, x1, x20, x28\n01bdfd54: b6040039 strb    w22, [x5, #1]\n01bdfd58: 453c40f9 ldr     x5, [x2, #0x78]\n01bdfd5c: 650200b4 cbz     x5, #0x1bdfda8\n01bdfd60: 2568149b madd    x5, x1, x20, x26\n01bdfd64: b6100039 strb    w22, [x5, #4]\n01bdfd68: 422c40f9 ldr     x2, [x2, #0x58]\n01bdfd6c: a20000b4 cbz     x2, #0x1bdfd80\n01bdfd70: 420480b9 ldrsw   x2, [x2, #4]\n01bdfd74: 214c149b madd    x1, x1, x20, x19\n01bdfd78: 4254149b madd    x2, x2, x20, x21\n01bdfd7c: 220800f9 str     x2, [x1, #0x10]\n01bdfd80: a40f06a9 stp     x4, x3, [x29, #0x60]\n01bdfd84: bbe7eb97 bl      #0x16d9c70\n01bdfd88: a40f46a9 ldp     x4, x3, [x29, #0x60]\n01bdfd8c: e4ffff17 b       #0x1bdfd1c\n01bdfd90: 257c149b mul     x5, x1, x20\n01bdfd94: 7f682538 strb    wzr, [x3, x5]\n01bdfd98: ecffff17 b       #0x1bdfd48\n01bdfd9c: 256c149b madd    x5, x1, x20, x27\n01bdfda0: bf040039 strb    wzr, [x5, #1]\n01bdfda4: edffff17 b       #0x1bdfd58\n01bdfda8: 2564149b madd    x5, x1, x20, x25\n01bdfdac: bf100039 strb    wzr, [x5, #4]\n01bdfdb0: eeffff17 b       #0x1bdfd68\n01bdfdb4: b7e901d0 adrp    x23, #0x5915000\n01bdfdb8: 54eb0190 adrp    x20, #0x5947000\n01bdfdbc: b9f30191 add     x25, x29, #0x7c\n01bdfdc0: 9a668552 mov     w26, #0x2b34\n01bdfdc4: f7c245f9 ldr     x23, [x23, #0xb80]\n01bdfdc8: 9b1645f9 ldr     x27, [x20, #0xa28]\n01bdfdcc: f7220091 add     x23, x23, #8\n01bdfdd0: f60a40f9 ldr     x22, [x23, #0x10]\n01bdfdd4: df0217eb cmp     x22, x23\n01bdfdd8: 60060054 b.eq    #0x1bdfea4\n01bdfddc: d51640f9 ldr     x21, [x22, #0x28]\n01bdfde0: 950d00b4 cbz     x21, #0x1bdff90\n01bdfde4: c02240b9 ldr     w0, [x22, #0x20]\n01bdfde8: 40e4ff97 bl      #0x1bd8ee8\n01bdfdec: 137c4093 sxtw    x19, w0\n01bdfdf0: 7f021a6b cmp     w19, w26\n01bdfdf4: ec0c0054 b.gt    #0x1bdff90\n01bdfdf8: c02240b9 ldr     w0, [x22, #0x20]\n01bdfdfc: 06edff97 bl      #0x1bdb214\n01bdfe00: fc03002a mov     w28, w0\n01bdfe04: c6e1ff97 bl      #0x1bd851c\n01bdfe08: a07f00b9 str     w0, [x29, #0x7c]\n01bdfe0c: a0624079 ldrh    w0, [x21, #0x30]\n01bdfe10: 59000294 bl      #0x1c5ff74\n01bdfe14: 00003fd6 blr     x0\n01bdfe18: 010380d2 mov     x1, #0x18\n01bdfe1c: 02ff40f9 ldr     x2, [x24, #0x1f8]\n01bdfe20: 616e019b madd    x1, x19, x1, x27\n01bdfe24: a23700f9 str     x2, [x29, #0x68]\n01bdfe28: 20080039 strb    w0, [x1, #2]\n01bdfe2c: e10319aa mov     x1, x25\n01bdfe30: e00302aa mov     x0, x2\n01bdfe34: 21ffff97 bl      #0x1bdfab8\n01bdfe38: a23740f9 ldr     x2, [x29, #0x68]\n01bdfe3c: 010080d2 mov     x1, #0\n01bdfe40: 43200091 add     x3, x2, #8\n01bdfe44: 7f0000eb cmp     x3, x0\n01bdfe48: 81050054 b.ne    #0x1bdfef8\n01bdfe4c: a0eb01b0 adrp    x0, #0x5954000\n01bdfe50: 3f0000f1 cmp     x1, #0\n01bdfe54: 00ac47f9 ldr     x0, [x0, #0xf58]\n01bdfe58: 000040b9 ldr     w0, [x0]\n01bdfe5c: 8013407a ccmp    w28, w0, #0, ne\n01bdfe60: 8a000054 b.ge    #0x1bdfe70\n01bdfe64: a0ea4079 ldrh    w0, [x21, #0x74]\n01bdfe68: 27000294 bl      #0x1c5ff04\n01bdfe6c: 200500b5 cbnz    x0, #0x1bdff10\n01bdfe70: 000380d2 mov     x0, #0x18\n01bdfe74: 811645f9 ldr     x1, [x20, #0xa28]\n01bdfe78: 607e009b mul     x0, x19, x0\n01bdfe7c: 3f682038 strb    wzr, [x1, x0]\n01bdfe80: 29000014 b       #0x1bdff24\n01bdfe84: 801645f9 ldr     x0, [x20, #0xa28]\n01bdfe88: 6102019b madd    x1, x19, x1, x0\n01bdfe8c: 3f040039 strb    wzr, [x1, #1]\n01bdfe90: 2d000014 b       #0x1bdff44\n01bdfe94: 801645f9 ldr     x0, [x20, #0xa28]\n01bdfe98: 6102019b madd    x1, x19, x1, x0\n01bdfe9c: 3f100039 strb    wzr, [x1, #4]\n01bdfea0: 31000014 b       #0x1bdff64\n01bdfea4: e1eb01b0 adrp    x1, #0x595c000\n01bdfea8: 74ea0190 adrp    x20, #0x592b000\n01bdfeac: 36008052 mov     w22, #1\n01bdfeb0: 214447f9 ldr     x1, [x1, #0xe88]\n01bdfeb4: 948e45f9 ldr     x20, [x20, #0xb18]\n01bdfeb8: 33200091 add     x19, x1, #8\n01bdfebc: f50314aa mov     x21, x20\n01bdfec0: 200c40f9 ldr     x0, [x1, #0x18]\n01bdfec4: 1f0013eb cmp     x0, x19\n01bdfec8: c0060054 b.eq    #0x1bdffa0\n01bdfecc: 011440f9 ldr     x1, [x0, #0x28]\n01bdfed0: c10000b4 cbz     x1, #0x1bdfee8\n01bdfed4: 222840f9 ldr     x2, [x1, #0x50]"
+    }
+  ],
+  "limitations": [
+    "Exact C object/array extent is unknown; this receipt proves only containment within the access footprint already used by original native fallback consumers, plus BSS mapping/zero-fill.",
+    "No claim that a particular original GUI event actually requests fallback 636, no complete invalid-ID caller enumeration, no heap/cache/device-runtime proof.",
+    "No firmware changes. The additional menu 635 is below the original fallback 636 access range; original normalization fallback and cache consumers are byte-identical across stock, 423 and 424."
+  ]
+}

@@ -17,3 +17,5 @@
 项目代码按 GNU AGPL v3 发布（见 LICENSE），以保留 RawAlchemy 参考实现的许可要求；QAQ 来源的代码和参数同时保留其 MIT 许可证，见 third_party 与 data/qaq/LICENSE。第三方及原生数值资料的权利不因本项目发布而改变。详细致谢见 ACKNOWLEDGEMENTS.md。
 
 公开采集报告仅脱敏本机用户名与临时路径，测量和缓冲未修改；原始与公开散列映射见 publication_manifest.json。
+
+2026-10-23：新增 web/data/stock_grids423.json，仅包含 R5 4.00 CN2 属性 02a40004/05 的1215字节数值系数及来源散列／偏移；原厂 CP 建表器33组验证见工作区 analysis/web_stock_grid423_20261023/verification.json。目录不携带固件代码；未证实的外观专属映射不标注。两项均与4.23自定义格式在全部强度档逐字一致；02a40006不满足完整等价，排除。

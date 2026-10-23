@@ -11,3 +11,6 @@
 .training-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 
 #sector16Cohort{min-width:0}#sector16Cohort canvas{width:100%;height:auto;display:block;image-rendering:pixelated;border-radius:4px;margin-top:6px}
+
+/* Keep source selectors hidden even when their components use display:flex. */
+[hidden]{display:none!important}

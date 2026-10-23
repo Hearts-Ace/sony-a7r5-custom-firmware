@@ -92,7 +92,7 @@ def generate(job, response, progress=None):
     metrics['unseen_synthetic'] = dict(samples=len(probes),
         grid_vs_combined=core.tonal_comparison(teacher(probes),evaluate(probes,grid,response)))
     identity = dict(teacher_sha256=core.sha(source), recipe_sha256=value['recipe_sha256'],
-                    lut_sha256=value['lut_sha256'], pairs_sha256=value['pairs_sha256'],
+                    target_source=core.target_identity(job), pairs_sha256=value['pairs_sha256'],
                     implementation_sha256=core.sha(Path(__file__).read_bytes()), response=response_json(response),
                     response_implementation_sha256=core.sha(Path(__file__).with_name('measured_response.py').read_bytes()) if isinstance(response,dict) else None)
     key = core.sha(json.dumps(identity, sort_keys=True).encode())
@@ -137,8 +137,10 @@ def load_result(job, key):
     path=job/'grid_distillation'/key/'result.json'
     value=json.loads(path.read_text())
     identity=value['identity']
+    if not core.target_matches(identity,job):
+        raise ValueError('压缩目标来源不一致，请重新训练')
     for field,name in [('teacher_sha256','pc_compensation.json'),('recipe_sha256','fit/recipe.json'),
-                       ('lut_sha256','input.cube'),('pairs_sha256','pairs.npz')]:
+                       ('pairs_sha256','pairs.npz')]:
         if identity[field]!=core.sha((job/name).read_bytes()):
             raise ValueError('压缩参数与当前任务来源不一致，请重新压缩训练')
     if core.sha(json.dumps(identity,sort_keys=True).encode())!=key or value['camera_apply_allowed'] is not False:
@@ -153,26 +155,20 @@ def load_result(job, key):
 def firmware_config(job, key, configuration_only=False):
     """Export the selected frozen grid with its own native look parameters."""
     import copy
-    import importlib.util
     job = Path(job)
     report, grid, report_sha = load_result(job, key)
-    path = core.ROOT/'compilers/native_v3.py'
-    spec = importlib.util.spec_from_file_location('native_grid420', path)
-    compiler = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(compiler)
     config = copy.deepcopy(json.loads((job/'native_config.json').read_text()))
     core.compiler.pack(config)
     if len(config['entries']) != 1:
         raise ValueError('压缩网格只能绑定本任务的一项原生拟合参数')
-    config['schema'] = compiler.GRID_SCHEMA
-    config['compensation_grid_enabled'] = True
-    config['entries'][0]['grid_5x9x9'] = dict(enabled=True,
+    config['entries'][0]['grid_5x9x9'] = dict(
         coefficients=grid.T.reshape(3,5,9,9).astype(int).tolist())
-    payload = compiler.pack(config)
+    payload = core.compiler.pack(config)
     if configuration_only:
         return config
-    audit = dict(schema='r5-native-grid-export/1', firmware_required='4.20 grid candidate',
-                 SD_import_policy='replace-entire-set; unlisted looks cleared',
+    audit = dict(schema='r5-custom-filter-grid-export/4', firmware_required='4.23',
+                 SD_import_policy='replace-entire-set; missing selected configuration turns custom filter off',
+        grid_required=True, config_numbers_are_independent=True,
         compatible_with_stock_418=False, camera_tested=False, grid_key=key,
         compression_report_sha256=report_sha, binary_sha256=core.sha(payload),
         pc_response=report['identity']['response'],
@@ -184,7 +180,9 @@ def firmware_config(job, key, configuration_only=False):
     memory = io.BytesIO()
     with zipfile.ZipFile(memory,'w',zipfile.ZIP_DEFLATED) as archive:
         archive.writestr('R5NATIVE.BIN',payload)
-        archive.writestr('native_config.json',json.dumps(config,indent=2,ensure_ascii=False)+'\n')
+        project=copy.deepcopy(config)
+        project['export_sources']={str(config['entries'][0]['number']):dict(kind='compressed',job=job.name,key=key)}
+        archive.writestr('native_config.json',json.dumps(project,indent=2,ensure_ascii=False)+'\n')
         archive.writestr('export_audit.json',json.dumps(audit,indent=2,ensure_ascii=False)+'\n')
     return memory.getvalue()
 

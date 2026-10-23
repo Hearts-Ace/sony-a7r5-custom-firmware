@@ -1,8 +1,21 @@
 const measuredGridResponse={"schema": "r5-measured-grid-response/1", "preset": "qaq-a7c2-2.01-c8328ad5", "sha256": "7e183f46f7acd739a12b7c2989e0ce245628a1f0d72d4f673f48945f4493b0af", "proxy_for": "ILCE-7RM5"};
+function selectedGridResponse(){
+  if($('gridResponseModel').value==='measured')return measuredGridResponse;
+  const value=JSON.parse($('legacyGridResponse').value);
+  if(!Array.isArray(value)||value.length!==3||value.some(row=>!Array.isArray(row)||row.length!==3||row.some(v=>typeof v!=='number'||!Number.isFinite(v))))throw Error('旧版响应矩阵需为 3×3 有限数字 JSON');
+  return value;
+}
+function gridResponseName(response){return Array.isArray(response)?'旧版 5×9×9 · BT.601 + 固定响应':'QAQ A7C2 实测代理';}
+function gridResponseControls(){ $('legacyGridResponseFields').hidden=$('gridResponseModel').value!=='legacy'; }
+
 'use strict';
 const $ = id => document.getElementById(id);
 const clone = value => structuredClone(value);
 let boot, draft, selected = 1, collection = [], lutText = '', jobId, timer, busy = false;
+let chartTargetId, chartUploading=false;
+const imageTarget=()=>$('targetKind').value==='chart-image';
+const chartJob=()=>diagnosticData?.dataset?.target_kind==='chart-image';
+const targetReady=()=>imageTarget()?Boolean(chartTargetId):Boolean(lutText);
 const names = ['ST','PT','NT','VV','VV2','FL','FL2','FL3','IN','SH','BW','SE'];
 const chineseNames = ['标准','人像','中性','鲜艳','鲜艳二','胶片','胶片二','胶片三','即时','柔和高调','黑白','棕褐'];
 let validationJob, rawFile, rawBusy = false, diagnosticData;
@@ -14,29 +27,31 @@ let diagnosticSerial=0,compressionTimer,compressionBusy=false;
 const selectedGrid=()=>$('resultMode').value==='compressed'?gridKeys.get(jobId):undefined;
 const algorithmName=()=>$('resultMode').value==='compressed'?'压缩后单网格':pcView()?'压缩前完整补偿':'原生参数';
 const pcJobs=new Set();
+const photoGridEffect=()=>$('photoGridEffect').checked;
+const photoGridMatches=r=>(r.grid_effect_enabled!==false)===photoGridEffect();
 function clearActual(){if(actualUrl)URL.revokeObjectURL(actualUrl);actualUrl=undefined;$('photoActual').removeAttribute('src');$('photoActual').hidden=true;$('photoActualEmpty').hidden=false;$('photoActualClear').hidden=true;$('photoActualName').textContent='此栏为实际软件输出，不由模拟函数生成。';$('photoActualInput').value='';}
-function photoReady(){ $('photoRender').disabled=photoBusy||!photoFile||!validationJob; }
+function photoReady(){ $('photoRender').disabled=photoBusy||!photoFile||!validationJob||chartJob();$('photoGridEffect').disabled=photoBusy||!pcView(); }
 function showPhoto(value){
   if(value.job!==validationJob)return;
-  if(Boolean(value.result.pc_compensation_enabled)!==pcView())return;
+  if(Boolean(value.result.pc_compensation_enabled)!==pcView()||!photoGridMatches(value.result))return;
   if((value.result.grid_key||undefined)!==selectedGrid())return;
   if(value.result.grid_key&&value.result.grid_sha256!==diagnosticData?.grid_sha256)return;
   if(value.result.pc_compensation_enabled && value.result.pc_compensation_sha256!==diagnosticData?.pc_sha256)return;
   photoSourceSha=value.result.source_sha256;
   const base='/api/previews/'+value.id+'/';
   $('photoResults').hidden=false;
-  $('photoModel').alt=algorithmName()+' RAW 预览';$('photoModelTitle').textContent='拟合结果 · '+algorithmName();
+  $('photoModel').alt=algorithmName()+' RAW 预览';$('photoModelTitle').textContent='拟合结果 · '+algorithmName()+(pcView()?(photoGridEffect()?' · 网格开启':' · 网格关闭'):'');
   for(const [key,file]of[['Lut','lut.png'],['Model','model.png']]){ $('photo'+key).src=base+file;$('photo'+key+'Download').href=base+file; }
   $('photoAudit').href=base+'result.json';
   const r=value.result;
   $('photoProvenance').textContent=`任务 ${value.job} · ${r.gamut} · ${r.width} × ${r.height} ${r.preview_long_edge===3840?'4K 对照图':'历史采样预览'} · ${r.samples} 个采样点 · 同一 RAW SHA256：${r.source_sha256.slice(0,16)}…`;
-  $('photoStatus').textContent=('当前 RAW 算法：'+algorithmName()+'；')+'RAW 前端为近似。第三栏可导入 Edit 实际导出图。';
+  $('photoStatus').textContent=('当前 RAW 算法：'+algorithmName()+'；')+(pcView()?(photoGridEffect()?'网格效果开启；':'网格效果关闭；'):'')+'RAW 前端为近似。第三栏可导入 Edit 实际导出图。';
 }
 async function pollPhoto(){
   try{const value=await(await api('/api/previews/'+photoId)).json();
     if(value.status==='done'||value.status==='error'){
       photoBusy=false;photoReady();
-      if(value.status==='done'){showPhoto(value);if(value.job===validationJob&&((value.result.grid_key||undefined)!==selectedGrid()||Boolean(value.result.pc_compensation_enabled)!==pcView()))loadDiagnostics(validationJob);}else if(value.job===validationJob)$('photoStatus').textContent='预览失败：'+value.error;
+      if(value.status==='done'){showPhoto(value);if(value.job===validationJob&&((value.result.grid_key||undefined)!==selectedGrid()||Boolean(value.result.pc_compensation_enabled)!==pcView()||!photoGridMatches(value.result)))loadDiagnostics(validationJob);}else if(value.job===validationJob)$('photoStatus').textContent='预览失败：'+value.error;
       return;
     }
     if(value.job===validationJob)$('photoStatus').textContent=value.phase;
@@ -44,6 +59,19 @@ async function pollPhoto(){
   }catch(e){photoBusy=false;photoReady();$('photoStatus').textContent='读取预览失败：'+e.message;}
 }
 const drafts = new Map();
+const draftSources=new Map(), collectionSources=new Map();
+let draftSource;
+const parameterSignature=e=>JSON.stringify([e.cc1_delta,e.block13,e.gamma_native_129,e.grid_5x9x9]);
+let compressedSignature;
+function exportProject(entries=collection,sources=collectionSources){return {...project(entries),export_sources:Object.fromEntries(entries.filter(e=>sources.has(e.number)).map(e=>[String(e.number),clone(sources.get(e.number))]))};}
+function gridSourceStatus(){
+  if(draftSource?.kind==='compressed'&&parameterSignature(draft)!==compressedSignature)draftSource=undefined;
+  if(draftSource?.kind==='stock'){const p=boot.stock_grids.find(p=>p.id===draftSource.id);if(!p||JSON.stringify(p.grid_5x9x9)!==JSON.stringify(draft.grid_5x9x9))draftSource=undefined;}
+  $('stockGrid').value=draftSource?.kind==='stock'?draftSource.id:'';
+  $('gridSourceStatus').textContent=draftSource?.kind==='stock'?'已选择原厂网格；保留当前 CC1、block13 与 Gamma。':draftSource?.kind==='compressed'?'已绑定完成的压缩网格与本任务原生参数。':'尚未选择网格：选择原厂网格或完成压缩后才能加入导出集。';
+  $('add').disabled=!draftSource;
+}
+
 let toastTimer;
 function toast(message) { $('toast').textContent = message; $('toast').hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => $('toast').hidden = true, 6500); }
 async function api(path, body) {
@@ -51,18 +79,24 @@ async function api(path, body) {
   if (!response.ok) { let value; try { value = await response.json(); } catch { value = {error:response.statusText}; } throw Error(value.error || '请求失败'); }
   return response;
 }
-function project(entries = collection) { const grid=entries.some(e=>e.grid_5x9x9?.enabled);const v3=$('exportFormat').value==='3'||grid;return {...boot.template,schema:v3?'r5-native-overwrite-config/3':boot.template.schema,compensation_grid_enabled:grid,entries:clone(entries).map(e=>{if(v3&&!e.grid_5x9x9)e.grid_5x9x9={enabled:false,coefficients:Array.from({length:3},()=>Array.from({length:5},()=>Array.from({length:9},()=>Array(9).fill(0))))};if(!v3)delete e.grid_5x9x9;return e;})}; }
-function remember() { if (draft) { draft.name = $('lookName').value; drafts.set(selected, clone(draft)); } }
-function syncRaw() { $('rawEditor').value = JSON.stringify(draft, null, 2); $('editStatus').textContent = '参数已更新；点击“加入导出集”保存本项。'; }
+function project(entries = collection) { return {...boot.template,entries:clone(entries)}; }
+function readNames() { draft.short_name=$('shortName').value;draft.full_name=$('lookName').value; }
+function showNames() { $('shortName').value=draft.short_name;$('lookName').value=draft.full_name; }
+function remember() { if (draft) { readNames();drafts.set(selected, clone(draft));if(draftSource)draftSources.set(selected,clone(draftSource));else draftSources.delete(selected); } }
+function syncRaw() { gridSourceStatus();$('rawEditor').value = JSON.stringify(draft, null, 2); $('editStatus').textContent = '参数已更新；点击“加入导出集”保存本项。'; }
+function freshConfiguration(number) { return {...clone(boot.presets[0]),number,short_name:'F'+String(number).padStart(2,'0'),full_name:'自定义滤镜 '+number}; }
+function baselineNote() {
+  const i=+$('baselineLook').value,p=boot.provenance[i];
+  $('sourceNote').textContent=`编辑基线：${chineseNames[i]}（${names[i]}）。配置编号独立；机内原厂创意外观另行选择，其附加处理仍保留。`;
+  $('sourceNote').title=JSON.stringify(p);
+}
 function selectLook(number) {
   remember(); selected = number;
-  draft = clone(drafts.get(number) || collection.find(e => e.number === number) || boot.presets[number-1]);
-  $('lookName').value = draft.name;
+  draft = clone(drafts.get(number) || collection.find(e => e.number === number) || freshConfiguration(number));
+  draftSource=clone(drafts.has(number)?draftSources.get(number):collectionSources.get(number));compressedSignature=draftSource?.kind==='compressed'?parameterSignature(draft):undefined;
+  showNames();
   document.querySelectorAll('.looks button').forEach(b => { b.classList.toggle('active', +b.dataset.number === number); b.setAttribute('aria-pressed', +b.dataset.number === number ? 'true' : 'false'); });
-  const p = boot.provenance[number-1];
-  $('sourceNote').textContent = number > 10 ? 'BW / SE 普通场景基线；矩阵以原生恒等旁路表示。黑白 / 棕褐语义与特殊场景分支仍保留。' : number === 7 || number === 8 ? '现有 FL2 / FL3 适配：FX2 完整端点与已验证 Gamma。' : 'R5 原生普通场景完整颜色参数；保留三端点差异。';
-  $('sourceNote').title = JSON.stringify(p);
-  renderEditors();
+  baselineNote();renderEditors();
 }
 function renderEditors() { renderGamma(); renderCC(); renderMatrix(); syncRaw(); }
 function cell(value, low, high, change) {
@@ -87,15 +121,14 @@ function renderGamma() {
   for(let i=0;i<=4;i++){const y=pad.t+ih*i/4;ctx.strokeStyle='#e9ede4';ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(w-pad.r,y);ctx.stroke();ctx.fillStyle='#87917f';ctx.fillText(Math.round(131071*(1-i/4)).toLocaleString(),0,y+4);}
   for(let i=0;i<=4;i++){const x=pad.l+iw*i/4;ctx.fillStyle='#87917f';ctx.fillText(String(i*32),x-7,h-5);}
   const plot=(values,color,width)=>{ctx.strokeStyle=color;ctx.lineWidth=width;ctx.beginPath();values.forEach((v,i)=>{const x=pad.l+iw*i/128,y=pad.t+ih*(1-v/131071);i?ctx.lineTo(x,y):ctx.moveTo(x,y);});ctx.stroke();};
-  plot(boot.presets[selected-1].gamma_native_129,'#ced6c6',2);plot(draft.gamma_native_129,'#31583f',2.8);
+  plot(boot.presets[+$('baselineLook').value].gamma_native_129,'#ced6c6',2);plot(draft.gamma_native_129,'#31583f',2.8);
   ctx.fillStyle='#31583f';ctx.beginPath();ctx.arc(pad.l+iw*point/128,pad.t+ih*(1-draft.gamma_native_129[point]/131071),5,0,Math.PI*2);ctx.fill();
 }
 function renderCollection() {
   const node=$('collection');node.replaceChildren();collection.sort((a,b)=>a.number-b.number);
-  if(!collection.length){const p=document.createElement('p');p.className='empty';p.textContent='尚未添加外观';node.append(p);}
-  for(const entry of collection){const row=document.createElement('div');row.className='collection-row';const n=document.createElement('span');n.className='number';n.textContent=entry.number;const info=document.createElement('div'),name=document.createElement('strong'),sub=document.createElement('small');name.textContent=entry.name;sub.textContent=`覆盖 ${chineseNames[entry.number-1]}（${names[entry.number-1]}） · 完整三端点${entry.grid_5x9x9?.enabled?' · 含 5×9×9 网格':''}`;info.append(name,sub);const edit=document.createElement('button');edit.textContent='编辑';edit.onclick=()=>selectLook(entry.number);const remove=document.createElement('button');remove.textContent='×';remove.setAttribute('aria-label','从导出集移除 '+entry.name);remove.onclick=()=>{collection=collection.filter(e=>e.number!==entry.number);renderCollection();};row.append(n,info,edit,remove);node.append(row);}
-  $('export').disabled=!collection.length;$('saveProject').disabled=!collection.length;
-  const grids=collection.filter(e=>e.grid_5x9x9?.enabled).length;if(grids)$('exportFormat').value='3';$('exportStatus').textContent=collection.length?`${collection.length} 项 · ${grids} 项含 5×9×9 网格 · ${$('exportFormat').value==='3'?'v3 / 需要 4.20，完整替换':'v2 / 4.18 原生参数'}`:'添加至少一项以导出。';
+  if(!collection.length){const p=document.createElement('p');p.className='empty';p.textContent='导出空配置可清空机内自定义滤镜';node.append(p);}
+  for(const entry of collection){const row=document.createElement('div');row.className='collection-row';const n=document.createElement('span');n.className='number';n.textContent=entry.number;const info=document.createElement('div'),name=document.createElement('strong'),sub=document.createElement('small');name.textContent=entry.full_name;sub.textContent=`${entry.short_name} · 独立配置 ${entry.number} · 5×9×9 网格`;info.append(name,sub);const edit=document.createElement('button');edit.textContent='编辑';edit.onclick=()=>selectLook(entry.number);const remove=document.createElement('button');remove.textContent='×';remove.setAttribute('aria-label','从导出集移除 '+entry.full_name);remove.onclick=()=>{collection=collection.filter(e=>e.number!==entry.number);collectionSources.delete(entry.number);renderCollection();};row.append(n,info,edit,remove);node.append(row);}
+  $('exportStatus').textContent=`${collection.length} 项 · v4 / 4.23 · 完整替换${collection.length?'':'，清空全部自定义滤镜'}`;
 }
 function download(blob,name){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 function palette(id,colors){const canvas=$(id),ctx=canvas.getContext('2d'),cols=24,rows=4;ctx.clearRect(0,0,canvas.width,canvas.height);for(let i=0;i<cols*rows;i++){const c=colors[Math.floor(i*colors.length/(cols*rows))];ctx.fillStyle=`rgb(${c.map(v=>Math.round(v*255)).join(',')})`;ctx.fillRect(i%cols*canvas.width/cols,Math.floor(i/cols)*canvas.height/rows,canvas.width/cols+1,canvas.height/rows+1);}}
@@ -104,11 +137,11 @@ function showResult(result){
   const b=result.heldout.before,a=result.heldout.after;
   $('metrics').replaceChildren();for(const [key,title]of[['mae_8bit','平均绝对误差 / 8位'],['rmse_8bit','均方根误差 / 8位'],['p95_8bit','95%误差分位 / 8位']]){const div=document.createElement('div'),label=document.createElement('span'),value=document.createElement('strong'),sub=document.createElement('small');label.textContent=title;value.textContent=a[key].toFixed(2);sub.textContent=`基线 ${b[key].toFixed(2)}`;div.append(label,value,sub);$('metrics').append(div);}
   $('previewBadge').textContent=result.white_balance?.enabled?'实验白平衡模型 · BIN 不含白平衡':'模型结果 · 实拍待验收';
-  const entry=clone(result.config.entries[0]);drafts.set(entry.number,entry);
-  if(selected===entry.number){draft=entry;$('lookName').value=draft.name;renderEditors();}else toast('拟合结果已保存到对应外观，点击该外观查看。');
+  const entry=clone(result.config.entries[0]);drafts.set(entry.number,entry);draftSources.delete(entry.number);
+  if(selected===entry.number){draftSource=undefined;draft=entry;showNames();renderEditors();}else toast('拟合结果已保存到对应外观，点击该外观查看。');
   toast('拟合完成；结果已载入编辑器，检查后加入导出集。');
 }
-function setBusy(value){busy=value;for(const id of ['endpoint','wbTraining','weightRandom','weightPrimaries','weightGray','weightCC24','weightSector16','resetWeights','parameterSmoothing','searchStarts','adaptiveRounds','perceptualWeight','quantizationSweeps','pcCurveMode','pcGridEnabled','gridResponseModel'])$(id).disabled=value;$('pcTraining').disabled=value;$('fit').disabled=value;$('distillGrid').disabled=value||compressionBusy;$('cancel').hidden=!value;if(value){validationJob=undefined;$('rawExport').disabled=true;$('rawTask').textContent='拟合运行中，等待当前任务配方。';photoReady();$('photoResults').hidden=true;$('photoStatus').textContent='拟合运行中，等待当前任务配方。';}}
+function setBusy(value){busy=value;for(const id of ['targetKind','chartTarget','lut','gamut','endpoint','wbTraining','weightRandom','weightPrimaries','weightGray','weightCC24','weightSector16','resetWeights','parameterSmoothing','searchStarts','adaptiveRounds','perceptualWeight','quantizationSweeps','pcCurveMode','pcGridEnabled','gridResponseModel','legacyGridResponse'])$(id).disabled=value;$('pcTraining').disabled=value;$('fit').disabled=value;$('distillGrid').disabled=value||compressionBusy;$('cancel').hidden=!value;if(value){validationJob=undefined;$('rawExport').disabled=true;$('rawTask').textContent='拟合运行中，等待当前任务配方。';photoReady();$('photoResults').hidden=true;$('photoStatus').textContent='拟合运行中，等待当前任务配方。';}}
 function histogram(canvas, target, after, color) {
   const ctx=canvas.getContext('2d'),w=canvas.width,h=canvas.height,left=54,top=15,bottom=h-30,iw=w-left-12,ih=bottom-top;
   const peak=Math.max(...target,...after,1e-9);
@@ -149,12 +182,12 @@ function renderPCReport(report){
   const rgbMode=report.curves?.mode==='rgb-independent';
   if(qaqMode)$('pcCurves').hidden=true;
   const table=document.createElement('table');header(table,['阶段','灰阶训练 RMSE','独立测试 RMSE','独立测试 ΔE00']);
-  for(const [key,label]of [['native','原生模型'],['tone',rgbMode?'① RGB 独立曲线':'① 灰阶明暗'],['tint',rgbMode?'RGB 曲线输出':'② 灰阶染色'],['compensated',report.curves?(report.fitting?.strategy==='none'?'最终输出（未启用网格）':(qaqMode?'实测响应代理网格':'③ 彩色网格（保护灰阶）')):'旧版单网格']]){
+  for(const [key,label]of [['native','原生模型'],['tone',rgbMode?'① RGB 独立曲线':'① 灰阶明暗'],['tint',rgbMode?'RGB 曲线输出':'② 灰阶染色'],['compensated',report.curves?(report.fitting?.strategy==='none'?'最终输出（未启用网格）':(qaqMode?gridResponseName(report.response):'③ 彩色网格（保护灰阶）')):'旧版单网格']]){
     if(qaqMode&&['tone','tint'].includes(key))continue;const gray=report.metrics.gray_training[key],test=report.metrics.test[key];if(!gray||!test)continue;
     const tr=document.createElement('tr');for(const value of [label,gray.rmse.toFixed(3),test.rmse.toFixed(3),test.perceptual?.delta_e00_mean?.toFixed(3)??'—']){const td=document.createElement('td');td.textContent=value;tr.append(td);}table.append(tr);
   }area.append(table);
   if(report.fitting?.strategy){const note=document.createElement("p");note.className="hint";note.textContent=report.fitting.strategy==='none'?'仅独立曲线／曲线阶段，未启用三维网格。':report.fitting.strategy==="dense-compressed"?"已选：17×33×33 大网格 → 密集采样压缩 → 5×9×9 / 7位。":"已选：直接拟合 5×9×9 小网格。";area.append(note);}
-  if(qaqMode){const note=document.createElement("p");note.className="hint";note.textContent="网格响应："+JSON.stringify(report.response)+"。新任务使用 A7C2 实测代理：内部坐标 → 网格偏移 → 非线性响应；非 R5 实测。";area.append(note);return;}
+  if(qaqMode){const note=document.createElement("p");note.className="hint";note.textContent="网格响应："+JSON.stringify(report.response)+"。"+(Array.isArray(report.response)?"BT.601 暂定坐标 → 三线性插值 / 256 → 固定响应 → 加回原生输出。":"内部坐标 → 网格偏移 → 非线性响应；非 R5 实测。");area.append(note);return;}
   if(!report.curves)return;
   const v=report.curves;
   function plot(id,series,low,high){
@@ -193,10 +226,10 @@ async function loadDiagnostics(identifier){
   photoReady();$('photoResults').hidden=true;$('photoStatus').textContent='正在载入任务配方…';
   $('histStatus').textContent='正在计算测试集直方图与必拟合色卡…';
   try{const data=await(await api('/api/jobs/'+identifier+'/diagnostics?pc='+(pcView()?'1':'0')+'&grid='+(selectedGrid()||''))).json();if(identifier!==jobId||request!==diagnosticSerial)return;
-    diagnosticData=data;$('datasetStatus').textContent=data.dataset?.dataset_id==='balanced-chart-20261022-manual-context2'?'本任务使用新分层色卡 · 最后一次 ST 实采（context 2） · 3700 个色块 · 镜头几何校正未进入渲染链路':'本任务使用历史色卡；重新拟合后使用新分层色卡。';renderComparison();renderNativeStages(data.training_fitting);renderPCReport(data.grid_key?null:data.pc_report);$('trainingPolicy').textContent=data.fitting_policy+(data.white_balance?.enabled?` 白平衡联合训练（实验）：冷暖 ${data.white_balance.parameters.temperature_shift} K，绿／洋红 ${data.white_balance.parameters.tint}；LUT 目标固定，前端动态响应近似。BIN 不含白平衡。`:'');$('trainingBadge').textContent=pcJobs.has(identifier)?'含 PC 补偿':'仅原生参数';
+    diagnosticData=data;$('datasetStatus').textContent=data.dataset?.dataset_id==='balanced-chart-20261022-manual-context2'?'本任务使用新分层色卡 · 最后一次 ST 实采（context 2） · 3700 个色块 · 镜头几何校正未进入渲染链路':'本任务使用历史色卡；重新拟合后使用新分层色卡。';if(chartJob())$('datasetStatus').textContent+=' · 软件处理色卡目标（'+data.dataset.bits_per_channel+' 位 '+data.dataset.file_format.toUpperCase()+'）';renderComparison();renderNativeStages(data.training_fitting);renderPCReport(data.grid_key?null:data.pc_report);$('trainingPolicy').textContent=data.fitting_policy+(data.white_balance?.enabled?` 白平衡联合训练（实验）：冷暖 ${data.white_balance.parameters.temperature_shift} K，绿／洋红 ${data.white_balance.parameters.tint}；LUT 目标固定，前端动态响应近似。BIN 不含白平衡。`:'');$('trainingBadge').textContent=pcJobs.has(identifier)?'含 PC 补偿':'仅原生参数';
     if(data.pc_enabled){palette('after',data.test_preview);$('previewBadge').textContent=algorithmName()+' · 非机内';}else{const native=await(await api('/api/jobs/'+identifier)).json();palette('after',native.result.preview.after);$('previewBadge').textContent='原生参数模型 · 实拍待验收';}
     const n=data.native_tonal.groups.all.metrics,c=data.tonal.groups.all.metrics;
-    $('pcStatus').textContent=data.pc_enabled?`${algorithmName()} · 独立测试 RMSE：原生 ${n.rmse.toFixed(2)} → 当前 ${c.rmse.toFixed(2)}；灰阶色卡已显示补偿后结果。4.18 导出不含补偿。`:'当前显示原生结果；新任务可在导入 LUT 后开启 PC 补偿整体训练。';
+    $('pcStatus').textContent=data.pc_enabled?`${algorithmName()} · 独立测试 RMSE：原生 ${n.rmse.toFixed(2)} → 当前 ${c.rmse.toFixed(2)}；灰阶色卡已显示补偿后结果。导出需选择原厂网格或完成压缩。`:'当前显示原生结果；新任务可在导入目标后开启 PC 补偿整体训练。';
     if(data.colorchecker24){
       for(const [key,title]of[['before','Before'],['target','Target'],['after','After']])chart24('cc24'+title,data.colorchecker24[key]);
       $('cc24Status').textContent='24 色全部参与优化 · 训练 RMSE / 8位：'+data.colorchecker24.metrics.after.rmse_8bit.toFixed(2)+'；顺序：'+data.colorchecker24.names.join('、');
@@ -228,17 +261,17 @@ async function loadDiagnostics(identifier){
       $('histStatus').textContent=`旧任务独立测试集 ${data.histogram.samples} 个样本；该任务未纳入新增色卡。`;
     }
     validationJob=identifier;const wbActive=data.white_balance&&Object.values(data.white_balance.parameters).some(v=>v!==0);$('rawTask').textContent=wbActive?'此任务含实验白平衡，验证 ARW 暂不能完整复现；请使用浏览器预览。':'配方任务：'+identifier+'；写入 RAW 的标准外观。';$('rawExport').disabled=wbActive||!rawFile||rawBusy;
-    photoReady();$('photoStatus').textContent='当前任务：'+identifier+'；选择 RAW 后生成两张图。';
+    photoReady();$('photoStatus').textContent=chartJob()?'本任务为色卡目标：支持色块验证及参数 ARW 导出，不提供任意 RAW 目标照片渲染。':'当前任务：'+identifier+'；选择 RAW 后生成两张图。';
     const saved=await(await api('/api/jobs/'+identifier)).json();
-    if(identifier===validationJob&&request===diagnosticSerial){
+    if(identifier===validationJob&&request===diagnosticSerial&&!chartJob()){
       const previews=saved.photo_previews|| (saved.photo_preview?[saved.photo_preview]:[]);
       const sourceSha=photoSourceSha||previews.at(-1)?.result.source_sha256;
       const currentPreviews=previews.filter(p=>p.result.source_sha256===sourceSha&&p.result.preview_long_edge===3840);
       if(!currentPreviews.length&&previews.some(p=>p.result.source_sha256===sourceSha))$('photoStatus').textContent='历史预览为低分辨率，请重新导入 RAW 生成 4K 对照图';
-      const matching=currentPreviews.filter(p=>Boolean(p.result.pc_compensation_enabled)===pcView()&&(p.result.grid_key||undefined)===selectedGrid()&&(!pcView()||p.result.pc_compensation_sha256===data.pc_sha256)&&(!selectedGrid()||p.result.grid_sha256===data.grid_sha256));
+      const matching=currentPreviews.filter(p=>Boolean(p.result.pc_compensation_enabled)===pcView()&&photoGridMatches(p.result)&&(p.result.grid_key||undefined)===selectedGrid()&&(!pcView()||p.result.pc_compensation_sha256===data.pc_sha256)&&(!selectedGrid()||p.result.grid_sha256===data.grid_sha256));
       if(matching.length)showPhoto(matching.at(-1));
       else if(currentPreviews.length&&!photoBusy){
-        try{const r=await(await api('/api/preview-reuse',{job:identifier,preview:currentPreviews.at(-1).id,pc:pcView(),grid:selectedGrid()})).json();photoBusy=true;photoReady();photoId=r.id;pollPhoto();}
+        try{const r=await(await api('/api/preview-reuse',{job:identifier,preview:currentPreviews.at(-1).id,pc:pcView(),grid:selectedGrid(),grid_effect:photoGridEffect()})).json();photoBusy=true;photoReady();photoId=r.id;pollPhoto();}
         catch(e){if(photoFile)$('photoRender').click();else $('photoStatus').textContent=e.message;}
       }
     }
@@ -253,7 +286,7 @@ function renderCompression(r,key,identifier){
         for(const [name,m]of Object.entries(r.metrics)){const row=table.insertRow();for(const text of [labels[name]||name,m.combined_vs_lut?.groups.all.metrics.rmse.toFixed(3)??'—',m.grid_vs_lut?.groups.all.metrics.rmse.toFixed(3)??'—',m.grid_vs_combined.groups.all.metrics.rmse.toFixed(3)])row.insertCell().textContent=text;}
         $('distillMetrics').replaceChildren(table);
         strip('distillTeacherGray',r.samples.gray_combined);strip('distillStudentGray',r.samples.gray_grid);$('distillGray').hidden=false;
-        $('distillStatus').textContent=`已压缩为 405×3 个7位系数（1215 字节），触及幅度边界 ${(r.fitting.limit_fraction*100).toFixed(2)}%。所有 RMSE 均为实际 8 位码值。此结果的模型来源见报告：新任务使用 A7C2 实测代理，并非 R5 实机验收。${r.white_balance?.enabled?' 白平衡仍在网格前单独运算，未压入网格；BIN 不含白平衡。':''}`;
+        $('distillStatus').textContent=`已压缩为 405×3 个7位系数（1215 字节），触及幅度边界 ${(r.fitting.limit_fraction*100).toFixed(2)}%。所有 RMSE 均为实际 8 位码值。本次网格模型：${gridResponseName(r.identity.response)}；尚非 R5 实机验收。${r.white_balance?.enabled?' 白平衡仍在网格前单独运算，未压入网格；BIN 不含白平衡。':''}`;
         $('distillDownload').href='/api/jobs/'+identifier+'/grid-distillation-download?key='+key;$('distillDownload').hidden=false;$('gridFirmwareDownload').href='/api/jobs/'+identifier+'/grid-firmware-download?key='+key;$('gridFirmwareDownload').hidden=false;$('addCompressed').hidden=false;
 
 }
@@ -292,18 +325,24 @@ async function poll(){
 async function loadLut(file){if(!file)return;if(!file.name.toLowerCase().endsWith('.cube')||file.size>64*1024*1024){toast('请选择 64 MiB 内的 .cube 文件');return;}lutText=await file.text();$('lutLabel').textContent=file.name;$('jobStatus').textContent=`已导入 ${(file.size/1024).toFixed(1)} KiB；请选择正确的输入色域。`;}
 async function init(){
   try{boot=await(await api('/api/bootstrap')).json();
-    names.forEach((name,i)=>{const b=document.createElement('button');b.textContent=chineseNames[i];b.title=name;b.dataset.number=i+1;b.onclick=()=>selectLook(i+1);$('looks').append(b);});
+    names.forEach((name,i)=>{const b=document.createElement('button');b.textContent=String(i+1);b.title='自定义配置 '+(i+1);b.dataset.number=i+1;b.onclick=()=>selectLook(i+1);$('looks').append(b);});
+    for(const preset of boot.stock_grids){const o=document.createElement('option');o.value=preset.id;o.textContent=preset.label;o.title=JSON.stringify(preset.provenance);$('stockGrid').append(o);}
+    names.forEach((name,i)=>{const o=document.createElement('option');o.value=i;o.textContent=chineseNames[i]+'（'+name+'）';$('baselineLook').append(o);});
     selectLook(1);renderCollection();
-    $('lookName').oninput=()=>{draft.name=$('lookName').value;syncRaw();};
-    $('reset').onclick=()=>{draft=clone(boot.presets[selected-1]);$('lookName').value=draft.name;drafts.set(selected,clone(draft));renderEditors();};
+    $('stockGrid').onchange=()=>{const preset=boot.stock_grids.find(p=>p.id===$('stockGrid').value);draftSource=preset?{kind:'stock',id:preset.id}:undefined;if(preset)draft.grid_5x9x9=clone(preset.grid_5x9x9);syncRaw();};
+    $('baselineLook').onchange=()=>{baselineNote();renderGamma();};
+    $('gridResponseModel').onchange=gridResponseControls;gridResponseControls();
+    for(const id of ['shortName','lookName'])$(id).oninput=()=>{readNames();syncRaw();};
+    $('reset').onclick=()=>{remember();const names={short_name:draft.short_name,full_name:draft.full_name};draftSource=undefined;draft={...clone(boot.presets[+$('baselineLook').value]),...names,number:selected};showNames();drafts.set(selected,clone(draft));renderEditors();};
     $('matrixEndpoint').onchange=renderMatrix;
     $('comparisonMode').onchange=renderComparison;
     $('resultMode').onchange=()=>{if(validationJob){$('photoResults').hidden=true;loadDiagnostics(validationJob);}};
+    $('photoGridEffect').onchange=()=>{ $('photoResults').hidden=true;if(validationJob)loadDiagnostics(validationJob); };
     $('photoInput').onchange=e=>{const file=e.target.files[0];if(!file)return;if(!/\.arw$/i.test(file.name)||file.size>512*1024*1024){toast('请选择 512 MiB 内的 R5 RAW');return;}photoFile=file;clearActual();$('photoResults').hidden=true;$('photoName').textContent=file.name+' · '+(file.size/1024/1024).toFixed(1)+' MiB';photoReady();};
     $('photoRender').onclick=async()=>{
-      if(photoBusy||!photoFile||!validationJob)return;
+      if(photoBusy||!photoFile||!validationJob||chartJob())return;
       photoBusy=true;photoReady();photoTask=validationJob;$('photoResults').hidden=true;$('photoStatus').textContent='正在上传 RAW，随后进行本地解码和渲染…';
-      try{const response=await fetch('/api/preview?job='+photoTask+'&pc='+(pcView()?'1':'0')+'&grid='+(selectedGrid()||''),{method:'POST',headers:{'Content-Type':'application/octet-stream','X-R5-Token':boot.token},body:photoFile});const value=await response.json();if(!response.ok)throw Error(value.error);photoId=value.id;clearTimeout(photoTimer);pollPhoto();}
+      try{const response=await fetch('/api/preview?job='+photoTask+'&pc='+(pcView()?'1':'0')+'&grid='+(selectedGrid()||'')+'&grid_effect='+(photoGridEffect()?'1':'0'),{method:'POST',headers:{'Content-Type':'application/octet-stream','X-R5-Token':boot.token},body:photoFile});const value=await response.json();if(!response.ok)throw Error(value.error);photoId=value.id;clearTimeout(photoTimer);pollPhoto();}
       catch(e){photoBusy=false;photoReady();$('photoStatus').textContent='预览失败：'+e.message;}
     };
     $('photoZoom').onchange=()=>{for(const id of ['photoLut','photoModel','photoActual'])$(id).style.width=(+$('photoZoom').value*100)+'%';};
@@ -314,36 +353,53 @@ async function init(){
     $('gammaLast').onclick=()=>{$('gammaIndex').value=128;renderGamma();$('gammaValue').focus();};
     $('gammaValue').onchange=()=>{const i=+$('gammaIndex').value,v=+$('gammaValue').value;if($('gammaValue').value===''||!Number.isInteger(v)||v<0||v>131071){toast('Gamma 必须为 0–131071 的整数');return;}draft.gamma_native_129[i]=v;renderGamma();syncRaw();};
     $('gammaChart').onclick=e=>{const rect=e.target.getBoundingClientRect();$('gammaIndex').value=Math.max(0,Math.min(128,Math.round(((e.clientX-rect.left)/rect.width*1000-52)/932*128)));renderGamma();};
-    $('gammaReset').onclick=()=>{draft.gamma_native_129=clone(boot.presets[selected-1].gamma_native_129);renderGamma();syncRaw();};
+    $('gammaReset').onclick=()=>{draft.gamma_native_129=clone(boot.presets[+$('baselineLook').value].gamma_native_129);renderGamma();syncRaw();};
     document.querySelectorAll('[data-tab]').forEach(button=>button.onclick=()=>{document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b===button));document.querySelectorAll('.tab-panel').forEach(panel=>panel.hidden=panel.id!==button.dataset.tab);});
-    $('applyRaw').onclick=async()=>{try{const value=JSON.parse($('rawEditor').value);if(value.number!==selected)throw Error('序号必须与当前外观一致');await api('/api/validate',project([value]));draft=value;$('lookName').value=value.name;renderEditors();toast('JSON 已应用');}catch(e){toast(e.message);}};
-    $('add').onclick=async()=>{try{remember();const response=await(await api('/api/validate',project([draft]))).json();collection=collection.filter(e=>e.number!==selected);collection.push(clone(draft));renderCollection();$('editStatus').textContent=`已加入导出集 · 文件检查通过 · 单项 ${response.bytes} 字节`;}catch(e){$('editStatus').textContent=e.message;toast(e.message);}};
-    $('exportFormat').onchange=renderCollection;
-    $('addCompressed').onclick=async()=>{try{const key=gridKeys.get(jobId);if(!jobId||!key)throw Error('请先完成压缩训练');const value=await(await api('/api/jobs/'+jobId+'/grid-firmware-config?key='+key)).json();const entry=value.entries[0];collection=collection.filter(e=>e.number!==entry.number);collection.push(clone(entry));drafts.set(entry.number,clone(entry));$('exportFormat').value='3';renderCollection();draft=undefined;selectLook(entry.number);toast('本任务原生参数与压缩网格已一起加入导出集');}catch(e){toast(e.message);}};
-    $('export').onclick=async()=>{try{const response=await api('/api/export',project());download(await response.blob(),'r5-native-config.zip');toast('已导出 BIN、JSON 与校验回执');}catch(e){toast(e.message);}};
-    $('saveProject').onclick=()=>download(new Blob([JSON.stringify(project(),null,2)],{type:'application/json'}),'native_config.json');
-    $('importProject').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;if(file.size>131072)throw Error('配置 JSON 超过 128 KiB');const value=JSON.parse(await file.text());await api('/api/validate',value);collection=clone(value.entries);$('exportFormat').value=value.schema==='r5-native-overwrite-config/3'?'3':'2';drafts.clear();draft=undefined;renderCollection();selectLook(collection[0]?.number||1);toast('配置已载入，导出集已替换');}catch(error){toast(error.message);}finally{e.target.value='';}};
+    $('applyRaw').onclick=async()=>{try{const value=JSON.parse($('rawEditor').value);if(value.number!==selected)throw Error('序号必须与当前配置一致');await api('/api/validate',project([value]));draft=value;showNames();renderEditors();toast('JSON 已应用');}catch(e){toast(e.message);}};
+    $('add').onclick=async()=>{try{remember();const response=await(await api('/api/validate',exportProject([draft],new Map(draftSource?[[selected,draftSource]]:[])))).json();collection=collection.filter(e=>e.number!==selected);collection.push(clone(draft));collectionSources.set(selected,clone(draftSource));renderCollection();$('editStatus').textContent=`已加入导出集 · 文件检查通过 · 单项 ${response.bytes} 字节`;}catch(e){$('editStatus').textContent=e.message;toast(e.message);}};
+    $('addCompressed').onclick=async()=>{try{const key=gridKeys.get(jobId);if(!jobId||!key)throw Error('请先完成压缩训练');const value=await(await api('/api/jobs/'+jobId+'/grid-firmware-config?key='+key)).json();const entry=value.entries[0];collection=collection.filter(e=>e.number!==entry.number);collection.push(clone(entry));collectionSources.set(entry.number,clone(value.export_sources[String(entry.number)]));draftSources.set(entry.number,clone(value.export_sources[String(entry.number)]));drafts.set(entry.number,clone(entry));renderCollection();draft=undefined;selectLook(entry.number);toast('本任务原生参数与压缩网格已一起加入导出集');}catch(e){toast(e.message);}};
+    $('export').onclick=async()=>{try{const response=await api('/api/export',exportProject());download(await response.blob(),'r5-native-config.zip');toast('已导出 BIN、JSON 与校验回执');}catch(e){toast(e.message);}};
+    $('saveProject').onclick=()=>download(new Blob([JSON.stringify(exportProject(),null,2)],{type:'application/json'}),'native_config.json');
+    $('importProject').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;if(file.size>131072)throw Error('配置 JSON 超过 128 KiB');const value=JSON.parse(await file.text());if(!value.export_sources)throw Error('旧配置缺少网格来源，请重新选择原厂网格或重新压缩');await api('/api/validate',value);collection=clone(value.entries);collectionSources.clear();for(const entry of collection)collectionSources.set(entry.number,clone(value.export_sources[String(entry.number)]));drafts.clear();draftSources.clear();draft=undefined;renderCollection();selectLook(collection[0]?.number||1);toast('配置已载入，导出集已替换');}catch(error){toast(error.message);}finally{e.target.value='';}};
+    $('targetKind').onchange=()=>{
+      $('chartTargetFields').hidden=!imageTarget();
+      $('dropzone').hidden=imageTarget();
+      $('gamut').closest('label').hidden=imageTarget();
+    };
+    $('chartTarget').onchange=async e=>{
+      const file=e.target.files[0];chartTargetId=undefined;
+      if(!file)return;
+      if(!/\.(tif|tiff|jpg|jpeg)$/i.test(file.name)||file.size>64*1024*1024){$('chartTargetStatus').textContent='请选择 64 MiB 内的 TIFF 或 JPG';e.target.value='';return;}
+      chartUploading=true;$('targetKind').disabled=true;$('chartTarget').disabled=true;$('fit').disabled=true;$('distillGrid').disabled=true;
+      $('chartTargetStatus').textContent='上传并检查色卡布局、位深及色域…';
+      try{
+        const response=await fetch('/api/chart-target',{method:'POST',headers:{'Content-Type':'application/octet-stream','X-R5-Token':boot.token},body:file});
+        const value=await response.json();if(!response.ok)throw Error(value.error);
+        chartTargetId=value.id;$('chartTargetStatus').textContent=file.name+' · '+value.audit.bits_per_channel+' 位 · 3700 个目标色块已就绪';
+      }catch(error){$('chartTargetStatus').textContent='导入失败：'+error.message;}
+      finally{chartUploading=false;$('targetKind').disabled=busy;$('chartTarget').disabled=busy;$('fit').disabled=busy;$('distillGrid').disabled=busy||compressionBusy;}
+    };
     $('lut').onchange=e=>loadLut(e.target.files[0]);
     $('dropzone').ondragover=e=>{e.preventDefault();$('dropzone').classList.add('drag');};$('dropzone').ondragleave=()=>$('dropzone').classList.remove('drag');$('dropzone').ondrop=e=>{e.preventDefault();$('dropzone').classList.remove('drag');loadLut(e.dataTransfer.files[0]);};
     $('distillGrid').onclick=async()=>{
-      if(busy||compressionBusy)return;
-      if(lutText){$('fit').onclick(true);return;}
+      if(busy||compressionBusy||chartUploading)return;
+      if(targetReady()){$('fit').onclick(true);return;}
       try{
         if(!jobId)throw Error('请导入LUT，或选择已完成的PC补偿任务');
-        await api('/api/grid-training',{job:jobId,response:measuredGridResponse});
+        await api('/api/grid-training',{job:jobId,response:selectedGridResponse()});
         compressionBusy=true;$('distillGrid').disabled=true;pollCompression(jobId);
       }catch(e){toast(e.message);}
     };
     $('pcCurveMode').onchange=()=>{if($('pcCurveMode').value==='qaq-grid')$('pcGridEnabled').checked=true;};
     $('resetWeights').onclick=()=>{for(const id of ['weightRandom','weightPrimaries','weightGray','weightCC24','weightSector16'])$(id).value='1';};
     $('parameterSmoothing').oninput=()=>{$('parameterSmoothingValue').textContent=$('parameterSmoothing').value;};
-    $('fit').onclick=async(compression=false)=>{compression=compression===true;try{if(!lutText)throw Error('请先导入 .cube LUT');remember();const endpoint=$('endpoint').value===''?null:Number($('endpoint').value);if(endpoint!==null&&(!Number.isInteger(endpoint)||endpoint<0||endpoint>131071))throw Error('伽马最后一点必须为 0–131071 的整数，或留空');const group_weights={random:+$('weightRandom').value,primaries:+$('weightPrimaries').value,gray:+$('weightGray').value,colorchecker24:+$('weightCC24').value,sector16:+$('weightSector16').value};if(Object.values(group_weights).some(v=>!Number.isFinite(v)||v<0.05||v>64))throw Error('训练权重需在 0.05–64 之间');const search_options={parameter_smoothing:+$('parameterSmoothing').value,starts:+$('searchStarts').value,adaptive_rounds:+$('adaptiveRounds').value,perceptual_weight:+$('perceptualWeight').value,quantization_sweeps:+$('quantizationSweeps').value};const body={white_balance:$('wbTraining').checked,compression_training:compression,pc_options:{curve_mode:$('pcCurveMode').value,grid_enabled:$('pcCurveMode').value==='qaq-grid'?true:$('pcGridEnabled').checked,response:measuredGridResponse},search_options,group_weights,pc_compensation:$('pcTraining').checked,lut:lutText,gamut:$('gamut').value,evaluations:+$('evaluations').value,number:selected,name:draft.name,gamma_endpoint128:endpoint};const response=await(await api('/api/fit',body)).json();jobId=response.id;setBusy(true);$('jobDownload').hidden=true;$('jobStatus').textContent='任务已提交';clearTimeout(timer);poll();}catch(e){toast(e.message);}};
+    $('fit').onclick=async(compression=false)=>{compression=compression===true;try{if(chartUploading)throw Error('目标图仍在上传');if(!targetReady())throw Error(imageTarget()?'请先导入处理后的色卡目标图':'请先导入 .cube LUT');remember();const endpoint=$('endpoint').value===''?null:Number($('endpoint').value);if(endpoint!==null&&(!Number.isInteger(endpoint)||endpoint<0||endpoint>131071))throw Error('伽马最后一点必须为 0–131071 的整数，或留空');const group_weights={random:+$('weightRandom').value,primaries:+$('weightPrimaries').value,gray:+$('weightGray').value,colorchecker24:+$('weightCC24').value,sector16:+$('weightSector16').value};if(Object.values(group_weights).some(v=>!Number.isFinite(v)||v<0.05||v>64))throw Error('训练权重需在 0.05–64 之间');const search_options={parameter_smoothing:+$('parameterSmoothing').value,starts:+$('searchStarts').value,adaptive_rounds:+$('adaptiveRounds').value,perceptual_weight:+$('perceptualWeight').value,quantization_sweeps:+$('quantizationSweeps').value};const body={target_kind:$('targetKind').value,target_id:chartTargetId,white_balance:$('wbTraining').checked,compression_training:compression,pc_options:{curve_mode:$('pcCurveMode').value,grid_enabled:$('pcCurveMode').value==='qaq-grid'?true:$('pcGridEnabled').checked,response:selectedGridResponse()},search_options,group_weights,pc_compensation:$('pcTraining').checked,lut:lutText,gamut:$('gamut').value,evaluations:+$('evaluations').value,number:selected,short_name:draft.short_name,full_name:draft.full_name,gamma_endpoint128:endpoint};const response=await(await api('/api/fit',body)).json();jobId=response.id;setBusy(true);$('jobDownload').hidden=true;$('jobStatus').textContent='任务已提交';clearTimeout(timer);poll();}catch(e){toast(e.message);}};
     $('cancel').onclick=async()=>{try{await api('/api/cancel',{id:jobId});$('jobStatus').textContent='正在取消…';}catch(e){toast(e.message);}};
     $('rawInput').onchange=e=>{const f=e.target.files[0];if(!f)return;if(!/\.arw$/i.test(f.name)||f.size>512*1024*1024){toast('请选择 512 MiB 内的 R5 ARW');return;}rawFile=f;$('rawName').textContent=f.name+' · '+(f.size/1024/1024).toFixed(1)+' MiB';$('rawExport').disabled=!validationJob||rawBusy||Boolean(diagnosticData?.white_balance&&Object.values(diagnosticData.white_balance.parameters).some(v=>v!==0));};
     $('rawExport').onclick=async()=>{if(!rawFile||!validationJob||rawBusy)return;const identifier=validationJob;rawBusy=true;$('rawExport').disabled=true;$('rawStatus').textContent='正在本地上传、校验并生成 ARW 副本，请稍候…';try{const response=await fetch('/api/raw-export?job='+identifier,{method:'POST',headers:{'Content-Type':'application/octet-stream','X-R5-Token':boot.token},body:rawFile});if(!response.ok){const error=await response.json();throw Error(error.error);}download(await response.blob(),rawFile.name.replace(/\.arw$/i,'')+'-Edit验证.zip');$('rawStatus').textContent='验证包已下载。打开 fitted-ST.ARW，在 Edit 显式选择“标准（ST）”。内嵌预览未重绘；请以 Edit 实际渲染为准。';}catch(e){$('rawStatus').textContent='生成失败：'+e.message;toast(e.message);}finally{rawBusy=false;$('rawExport').disabled=!rawFile||!validationJob||Boolean(diagnosticData?.white_balance&&Object.values(diagnosticData.white_balance.parameters).some(v=>v!==0));}};
-    for(const job of boot.history){if(job.pc_available)pcJobs.add(job.id);const option=document.createElement('option');option.value=job.id;option.textContent=new Date(job.started*1000).toLocaleString()+' · '+job.phase;$('history').append(option);}
+    for(const job of boot.history){if(job.pc_available)pcJobs.add(job.id);const option=document.createElement('option');option.value=job.id;option.textContent=new Date(job.started*1000).toLocaleString()+' · '+(job.target_kind==='chart-image'?'色卡目标 · ':'')+job.phase;$('history').append(option);}
     $('history').onchange=()=>{if(!$('history').value)return;if(busy){toast('当前任务运行中，请完成后查看历史');return;}jobId=$('history').value;clearTimeout(timer);poll();};
-    $('history').addEventListener('focus',async()=>{try{const value=await(await api('/api/bootstrap')).json();for(const job of value.history){if([...$('history').options].some(o=>o.value===job.id))continue;const option=document.createElement('option');option.value=job.id;option.textContent=new Date(job.started*1000).toLocaleString()+' · '+job.phase;$('history').append(option);}}catch{}});
+    $('history').addEventListener('focus',async()=>{try{const value=await(await api('/api/bootstrap')).json();for(const job of value.history){if([...$('history').options].some(o=>o.value===job.id))continue;const option=document.createElement('option');option.value=job.id;option.textContent=new Date(job.started*1000).toLocaleString()+' · '+(job.target_kind==='chart-image'?'色卡目标 · ':'')+job.phase;$('history').append(option);}}catch{}});
     document.querySelector('.brand').onclick=e=>{e.preventDefault();document.querySelector('header').scrollIntoView({behavior:'smooth'});};
     if(boot.jobs.length){jobId=boot.jobs[0];setBusy(true);poll();}
   }catch(e){$('jobStatus').textContent=e.message;toast('初始化失败：'+e.message);}

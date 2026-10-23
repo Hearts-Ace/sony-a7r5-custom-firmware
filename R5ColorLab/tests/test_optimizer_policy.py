@@ -80,7 +80,7 @@ class OptimizerPolicyTests(unittest.TestCase):
                 self.assertLess(path.stat().st_size,128*1024)
                 raise Stop()
             with patch.object(core.compiler,'from_fit',side_effect=compile):
-                with self.assertRaises(Stop):core.finish_fit(root,1,'ST')
+                with self.assertRaises(Stop):core.finish_fit(root,1,'ST','ST')
             self.assertEqual((root/'fit/recipe.json').read_bytes(),original)
 
 

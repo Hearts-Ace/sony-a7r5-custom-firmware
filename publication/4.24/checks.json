@@ -1,0 +1,20 @@
+{
+  "version": "4.24",
+  "functional_tests_rerun": false,
+  "reason": "User instructed not to check again and stated they had verified it.",
+  "firmware_prior_evidence": "Existing frozen 4.24 menu replay, final gate and independent delivery verification; no new camera acceptance claim.",
+  "remote_before": {
+    "repository": "Hearts-Ace/sony-a7r5-custom-firmware",
+    "default_branch": "main",
+    "branches": [
+      {
+        "name": "main",
+        "sha": "9834404a70fef755e8b5de342a0c9dcaab7d44b9"
+      }
+    ],
+    "releases": []
+  },
+  "firmware_sha256": "01bf5ab58609b51d78803faefd352d6f85872b4dc67b7f738159af38e198e86a",
+  "firmware_bytes": 754525608,
+  "private_material": "No first-read backups, keys, private photos, camera/SD/block-device operations."
+}

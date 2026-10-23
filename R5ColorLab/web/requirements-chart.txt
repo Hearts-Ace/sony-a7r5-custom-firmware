@@ -1,0 +1,2 @@
+# Additional TIFF RGB 8/16-bit interchange dependency.
+tifffile>=2025.5.10,<2027

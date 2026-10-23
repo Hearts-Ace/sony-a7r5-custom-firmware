@@ -4,7 +4,7 @@ from training_policy import GROUPS, group_importance
 from perceptual import to_lab, de2000
 
 def pc_options(value=None):
-    from measured_response import default_response
+    from grid_models import default_response
     result={'curve_mode':'tone-tint','grid_enabled':True,'response':default_response()}
     if value is not None:
         if not isinstance(value,dict) or set(value)-set(result):raise ValueError('未知 PC 曲线选项')

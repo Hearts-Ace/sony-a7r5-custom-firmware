@@ -27,3 +27,10 @@ Sony固件、颜色供体、校准／个人资料、Imaging Edge软件及工具�
 感谢 [QAQLeonard/a7c2-fl23-research](https://github.com/QAQLeonard/a7c2-fl23-research/tree/c8328ad5ee485efec4f6aa51314f6062d79533e1) 的原生5×9×9网格、矩阵／响应参数及实测联合拟合研究。R5ColorLab内置该提交的calibration/a7c2-2.01.virtual.npz（SHA256 7e183f46f7acd739a12b7c2989e0ce245628a1f0d72d4f673f48945f4493b0af），仅作A7C2→R5代理，不表示完成R5网格标定。来源、MIT许可证及贡献范围见R5ColorLab/ACKNOWLEDGEMENTS.md和data/qaq。
 
 R5ColorLab代码采用其目录内AGPL v3许可证，保留RawAlchemy来源声明；第三方资料保留其各自权利，不由根MIT再许可。
+
+
+## 2026-10-23 / 4.24 发布更新
+
+按用户明确授权，4.24完整BODYDATA.DAT作为候选Release附件发布，Web分享包与源码同步；旧“仅源码、不发布DAT”描述仅代表以前的发布范围。原机完整镜像、备份、签名私钥和私人照片仍排除。4.21–4.24新增源码为脱敏研究/构建配方，未移除固定输入校验，不宣称公开仓库可独立重建完整固件。
+
+菜单适配参考用户提供的A7M4离线方法；参考ZIP及其代码不重新分发。QAQ A7C2实测代理固定c8328ad5，属于跨机型模型，保留上游署名与许可；R5实测标定尚未完成。
