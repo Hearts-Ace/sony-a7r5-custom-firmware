@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "version": "4.24",
+  "AP_sha256": "a4c036eb4101820165748ca9819dd5afc803d11dc48f8b5eba3c9775f0c7995b",
+  "CP_sha256": "8b38e753f34b1667d79b69079d911b9e6595f1ce1b873cb8e014437c6b4c494d",
+  "bytes": 97452032,
+  "base_AP_sha256": "4017b746b8720b0b3c0b1b8d79b00472548361b335048656b72c71be77202717",
+  "base_partition_sha256": "5defbe93e9cb9706b1bc28cda20db7f15d2ca91ec39a284e7a51bace216082e8",
+  "partition_sha256": "ab4c53a2faa873a63dc20ec467a8013d2ed72d67a02f353d4ac9bf636655cb30",
+  "patch_only_from_423": true,
+  "reverse423_exact": true,
+  "changes": [
+    {
+      "offset": 97441472,
+      "bytes": 24,
+      "before": "000000000000000000000000000000000000000000000000",
+      "after": "3fd4187161000054e003012ac0035fd6e055fe9054d23416",
+      "purpose": "Secondary menu identity only MID635; PC-correct original fallback"
+    },
+    {
+      "offset": 29171744,
+      "bytes": 4,
+      "before": "20ec01f0",
+      "after": "a82dcb15",
+      "purpose": "Secondary resolver detour"
+    },
+    {
+      "offset": 97386864,
+      "bytes": 16,
+      "before": "c0d6000000000000c0d6000000000000",
+      "after": "d8d6000000000000d8d6000000000000",
+      "purpose": "Map appended wrapper RX bytes"
+    }
+  ],
+  "secondary_resolver": "0x1bd2020",
+  "secondary_identity_mid": "0x635",
+  "secondary_wrapper": "0x8e9d6c0",
+  "wrapper_hex": "3fd4187161000054e003012ac0035fd6e055fe9054d23416",
+  "rx_file": 97386496,
+  "rx_bytes": 55000,
+  "original_rx_bytes": 54976,
+  "only_AP_payload_changed": true,
+  "native_readonly_e2fsck_passed": true,
+  "relocations_dynamic_symbols_unchanged": true,
+  "custom_filter423_payload_preserved": true,
+  "camera_IO": false
+}

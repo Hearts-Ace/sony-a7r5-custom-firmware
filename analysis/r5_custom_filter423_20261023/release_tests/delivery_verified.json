@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "version": "4.23",
+  "output": "/Users/LOCAL_USER/Documents/ChatGPT/\u56fa\u4ef6/research/r5_custom_lut/build_r5_4.23_custom_filter_20261023/BODYDATA.DAT",
+  "output_bytes": 754525608,
+  "output_sha256": "ce2e3053fa3c4b7a5ad335b266fa10e915b50a4865e10a397e4933fc773409bb",
+  "ordinary_file": true,
+  "BCD": "2304",
+  "saved_outer_CRC_rechecked": true,
+  "sha256sum_entries": 13,
+  "frozen_source_inputs": 228,
+  "layout_bytes": 754525608,
+  "camera_io": false,
+  "device_acceptance_tested": false
+}
