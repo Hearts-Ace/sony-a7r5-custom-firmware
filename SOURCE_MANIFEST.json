@@ -38394,8 +38394,8 @@
     },
     {
       "path": "analysis/R5_FL2_FL3固件色彩与RAW参数研究总结.md",
-      "original_sha256": "bf18490dc76c332f66ad28039ca876f074c67cf141f2ee3bfb61f20009e30aad",
-      "public_sha256": "0c95786f30c0a9b7e1e18dc6c351f43c51b7de5afe55b253904ba4ebe6ee96d8",
+      "original_sha256": "031ed17e3d0926d7499d877c99f336ad2da6cbd2d0198010dab4a6b406eb56b5",
+      "public_sha256": "94d28111e0f9eb7cdb731b4161a13bb28558439754f2bdbade2824b31c704ac8",
       "publication_changes": [
         "4.28 curated publication; local paths redacted where applicable; runtime inputs excluded."
       ]

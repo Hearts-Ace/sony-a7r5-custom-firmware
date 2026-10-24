@@ -12,6 +12,16 @@
 
 源码及限制：`analysis/r5_custom_menu428_rollback425_20261024/README.md`；最终回执：`analysis/r5_custom_menu428_rollback425_20261024/release_tests/delivery_verified.json`；包：`research/r5_custom_lut/build_r5_4.28_rollback425_20261024/BODYDATA.DAT`。未操作相机、SD或GitHub，实际LCD、冷启动及拍照仍待验收。以下427及更早章节保留历史。
 
+## 2026-10-24配套发布：实拍v2、反推工作台与富士模拟滤镜
+
+当前色彩工作台新任务默认`r5-paired-20261024-v2`，原始模型SHA256 `8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45`，11对实拍，refined-smooth-s3-a3，训练颜色覆盖42/256、留出RMSE3.696（8位RGB）。训练、压缩、整数选优及RAW预览共用PairedModel，历史模型身份继续读取。旧章节“默认暂定模型”“仅A7C2代理”“尚未接入”等表述只代表当时状态。新旧采集误差不能直接比较；未覆盖颜色属于外推，仍不能声称唯一恢复原厂ISP或跨条件验收。
+
+独立`R5GridCalibrator/`支持上传BIN v4选配置、生成12探针、按文件名自然排序上传拍摄文件夹训练，支持Sony MPF/MPO主帧；多起点、颜色分层采样及坐标/响应交替优化。分享包不含workspace和私人照片。`R5ColorLab/`同步默认v2；合成ARW色卡在公开副本无损gzip保存，下载时还原并保持原散列，避免GitHub单文件限制。
+
+富士九款模拟滤镜使用该v2模型重新训练压缩：AS/ASTIA、CC/CLASSIC CHROME、EBB/ETERNA BLEACH BYPASS、ET/ETERNA、NC/CLASSIC Neg.、NH/PRO Neg. Hi、PV/PROVIA、RA/REALA ACE、VN/Velvia。BIN v4为22196字节，SHA256 `5700b9dd8c1390ac851528f01be1776034d6b8fb66287cfffb3600351af38a93`，会完整替换配置集；各740留出色块RMSE7.740–11.044，非富士官方产品，机内颜色未验收。公开成品位于`filters/FUJ_grid_v2/`，原始交付位于`exports/FUJ_filters_grid_v2_20261024/`。
+
+配套发布检查：反推器10项、响应模型3项、独立数据自检、10000颜色非零网格预测对照和零表恒等、原BIN逐字节及合成ARW下载回读通过。固件保持4.28原交付，不因发布整理重新修改。公开仓库缺少原机/签名输入，完整固件放v4.28 Release附件；原始镜像、密钥、私人照片和运行记录不发布。
+
 ## 4.27：M4接入复核与4.26重启反馈（2026-10-24）
 
 用户最新明确确认4.25进入菜单正常，4.26点击自定义菜单触发重启，要求按M4接入制作4.27。4.25进入正常与其MID/ROW离线反例分别记录，不能用反例否认用户反馈。4.26实机菜单验收失败，后文旧“实体待验收”应按时间读取。
