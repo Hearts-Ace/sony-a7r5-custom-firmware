@@ -1,0 +1,13 @@
+{
+  "version": "4.28",
+  "grid_workbench_tests": 10,
+  "response_tests": 3,
+  "portable_integrity_passed": true,
+  "predictions_compared": 10000,
+  "zero_identity": true,
+  "filter_BIN_exact": true,
+  "synthetic_ARW_roundtrip": true,
+  "firmware_verification": "firmware_delivery_verified.json",
+  "camera_io": false,
+  "device_acceptance_tested": false
+}

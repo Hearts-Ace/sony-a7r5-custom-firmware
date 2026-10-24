@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "version": "4.28",
+  "output": "/path/to/r5-workspace/research/r5_custom_lut/build_r5_4.28_rollback425_20261024/BODYDATA.DAT",
+  "output_bytes": 754525608,
+  "output_sha256": "dd64c0d26cf71d3b595dcf20cf11d39abdff8f78eadd7241a833182d28e03816",
+  "ordinary_file": true,
+  "BCD": "2804",
+  "actual_outer_crc_and_signature_rechecked": true,
+  "tampered_signature_rejected": true,
+  "AP_CP_independently_extracted": true,
+  "CP_exact_frozen423": true,
+  "exact_strict404_overlay_members": [
+    "0700_part_image/dev/nflasha15",
+    "0700_part_image/dev/nflasha8",
+    "0701_part_image_sum/part_image.sum"
+  ],
+  "plaintext_verification": {
+    "passed": true,
+    "plaintext_bytes": 751577088,
+    "decrypted_blocks": 736841,
+    "plaintext_sha256": "c83a3f4a6c3a90ac914d2deac748552a30ed874edb64ed58f0d5bd3351e4eaf2",
+    "every_plaintext_byte_matches": true,
+    "all_block_checksums_lengths_flags_and_padding_valid": true
+  },
+  "sha256sum_entries": 13,
+  "frozen_source_inputs": 384,
+  "required_receipts_rechecked": 13,
+  "synchronized_checks_rechecked": [
+    "menu_visibility_fix_preserved",
+    "menu_layout_transparent",
+    "manual_menu_reload_removed",
+    "selection_waits_for_apply",
+    "parent_selection_before_close",
+    "grid_lifecycle_422_preserved"
+  ],
+  "camera_io": false,
+  "device_acceptance_tested": false
+}
