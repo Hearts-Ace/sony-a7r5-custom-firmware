@@ -1,3 +1,4 @@
-"""Defaults for new training; saved tasks retain their own response."""
+"""New tasks default to the pinned R5 capture; saved responses stay explicit."""
 def default_response():
-    return [[1.,0.,0.],[0.,1.,0.],[0.,0.,1.]]
+    from measured_response import default_response as r5_response
+    return r5_response()

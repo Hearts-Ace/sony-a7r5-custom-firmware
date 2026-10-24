@@ -1,0 +1,19 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>R5 网格反推实验室</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><span class="mark">R5 / GRID LAB</span><span class="badge">本地独立工具 · BIN v4</span></header>
+<main><div class="hero"><p class="eyebrow">从已知探针，到实拍响应</p><h1>测出网格如何改变颜色。</h1><p>选择一套参数，生成探针。拍摄、上传，再让真实 JPG 校准网格响应。</p></div>
+<section><div class="heading"><span class="step">01</span><div><h2>生成探针 BIN</h2><p>从源配置复制 CC1、block13 和 Gamma，生成一份含 12 项探针的新 BIN。</p></div></div>
+<div class="fields"><label>原始 R5NATIVE.BIN<input id="bin" type="file" accept=".bin"></label><label>源配置<select id="entry" disabled><option>先上传 BIN</option></select></label><label>探针幅度<select id="amplitude"><option value="12">12 · 推荐起点</option><option value="8">8 · 较小变化</option><option value="20">20 · 较明显变化</option><option value="32">32 · 强变化</option></select></label></div>
+<div class="actions"><button id="generate" disabled>生成并下载探针包</button><span id="binInfo" class="muted"></span></div>
+<details><summary>12 项分别是什么？</summary><p>1 零网格；2–7 三通道正负偏移；8–10 三个坐标方向渐变；11 原配置网格；12 交叉波形。11、12 留作测试，不参与拟合与模型选择。</p><p>新 BIN 会完整替换原自定义配置集。请保留原 BIN，拍完重新导入即可恢复。已有 v4 固件无需重复刷固件。</p></details>
+</section>
+<section><div class="heading"><span class="step">02</span><div><h2>上传拍摄文件夹并训练</h2><p>文件名自然排序对应拍摄顺序：1 ZERO → 2–12探针，可附第13张重复ZERO。请先核对下方对应表。</p></div></div>
+<div class="fields"><label>对应探针组<select id="set"></select></label><label>拍摄文件夹<input id="folder" type="file" webkitdirectory directory multiple></label><label>原厂创意外观<select id="look"><option>ST</option><option>PT</option><option>NT</option><option>VV</option><option>VV2</option><option>FL</option><option>FL2</option><option>FL3</option><option>IN</option><option>SH</option><option>BW</option><option>SE</option></select></label></div>
+<p class="muted">只读取JPG/JPEG，自动忽略ARW、隐藏文件和其他文件。支持12张，或13张含末尾重复ZERO，全零的11号也请保留对应照片以保持顺序。顺序以文件名中的数字排序，不使用文件夹返回顺序。</p>
+<div class="table-wrap"><table><thead><tr><th>顺序</th><th>探针</th><th>文件</th><th>状态</th></tr></thead><tbody id="folderRows"></tbody></table></div>
+<details><summary>拍摄条件记录（可选）</summary><input id="conditions" placeholder="ISO、曝光、WB等；同一文件夹保持一致"></details>
+<fieldset><legend>反推优化设置</legend><label>每轮坐标求解评估上限<input id="maxNfev" type="number" min="10" max="1000" value="150"></label><label>搜索起点数<input id="starts" type="number" min="1" max="8" value="4"></label><label>坐标／响应交替轮数<input id="alternations" type="number" min="1" max="6" value="3"></label><label>每对图片搜索色块数<input id="searchSamples" type="number" min="40" max="2000" value="480"></label><p>按训练色块的明暗、色相、饱和度分层抽样。评估上限不是实际迭代次数；多起点、两种响应与交替轮数会叠加耗时。验证集选模，测试集不参与优化。</p></fieldset><label class="check"><input id="refine" type="checkbox" checked>尝试微调网格坐标，用验证集选择模型</label>
+<div class="actions"><button id="importTrain" disabled>上传文件夹并训练</button><a id="redownload" hidden>重新下载探针包</a><span id="fitStatus" role="status" class="muted"></span></div>
+<p class="muted small">使用1 ZERO配置作基准，保持自定义滤镜开启；固定光线、机位、曝光、ISO和WB。上传过程中请勿关闭页面。失败会显示具体文件和原因，已完成项保留，可重试。</p></section>
+<section id="results" hidden><div class="heading"><span class="step">04</span><div><h2>反推结果</h2><p id="modelName"></p></div></div><div id="metrics" class="metrics"></div><canvas id="chart" height="220"></canvas><div id="warnings" class="notices"></div><div class="table-wrap"><table><thead><tr><th>样本</th><th>用途</th><th>有效块</th><th>拟合 RMSE</th><th>零修正 RMSE</th></tr></thead><tbody id="pairMetrics"></tbody></table></div><details><summary>坐标与响应参数</summary><pre id="parameters"></pre></details><div class="actions"><a id="export" class="button">下载模型与计算代码</a></div><p class="muted small">输出是用于 PC 预测的经验响应模型，不直接改写固件或 BIN，也未自动接入原色彩工作台。较低留出误差不代表唯一恢复原厂 ISP 算法，跨外观、ISO、WB 的适用性需要另外测量。</p></section>
+<div id="notice" role="alert" hidden></div>
+<footer>图片、BIN 与结果仅保存在本机 <code>workspace/</code>。默认地址 127.0.0.1:4190。</footer></main><script src="/app.js"></script></body></html>

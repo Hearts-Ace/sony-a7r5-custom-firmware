@@ -3812,5 +3812,8 @@
   "data/training/frontend_capture/1992-synthetic-final-2-0x7226535d0-ch2.bin": "a92d95b73ade28d4c5273d90aa68959faf1a962425553da712fbcb401a1ea492",
   "data/training/frontend_capture/report.json": "dcc07a50f9269af34c323755be3f5fb6965b4002ef24cd252e513c830abd69df",
   "data/training/pairs.npz": "77cbb211f63053f05a0cefaa58dc254d98c9b4c67e090845bb01b7fd23711e7f",
-  "web/data/stock_grids423.json": "dda8140f032181e86f59124f835695426cd2b18a83461982204786dd8a2cb0a5"
+  "web/data/stock_grids423.json": "dda8140f032181e86f59124f835695426cd2b18a83461982204786dd8a2cb0a5",
+  "web/data/r5/paired-20261024.json": "6852ead83bf381215a8d721d1557cc73803f6ef60a0745971e8783144863c96b",
+  "web/data/chart/R5-training-chart.arw.gz": "1a91c2160e047ee6d610edf7d2b59ef56cb1c884cc68f20b0535ee54bae1e790",
+  "web/data/r5/paired-20261024-v2.json": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45"
 }

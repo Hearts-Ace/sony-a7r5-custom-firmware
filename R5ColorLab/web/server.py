@@ -21,6 +21,7 @@ import zipfile
 import core
 import chart_target
 import export_policy423
+import batch_training
 from grid_models import default_response
 from residual_grid import response_json
 
@@ -156,6 +157,46 @@ def work(identifier, body):
         (output / 'job.json').write_bytes(dump({k: v for k, v in job.items() if k != 'process'}))
 
 
+def validate_fit(body):
+    from training_policy import group_importance
+    body['group_weights']=group_importance(body.get('group_weights'))
+    from optimizer_policy import search_options, pc_options
+    if type(body.get('white_balance',False)) is not bool:raise ValueError('白平衡开关须为布尔值')
+    body.setdefault('white_balance',False)
+    body.setdefault('pc_compensation',True)
+    body['search_options']=search_options(body.get('search_options'))
+    body['pc_options']=pc_options(body.get('pc_options'))
+    if type(body.get('compression_training',False)) is not bool:raise ValueError('压缩训练开关无效')
+    if body.get('compression_training'):
+        body['pc_compensation']=True
+        body['pc_options']=pc_options(dict(curve_mode='tone-tint',grid_enabled=True,response=body['pc_options']['response']))
+    if type(body.get('pc_compensation',False)) is not bool:
+        raise ValueError('PC 补偿开关必须为布尔值')
+    if type(body.get('number')) is not int or not 1 <= body['number'] <= 12:
+        raise ValueError('自定义配置序号必须为 1–12')
+    if type(body.get('evaluations')) is not int or not 1 <= body['evaluations'] <= 300:
+        raise ValueError('求解评估次数必须为 1–300')
+    kind=body.get('target_kind','lut')
+    if kind not in ('lut','chart-image'):
+        raise ValueError('请选择目标来源')
+    if kind=='chart-image':
+        target_id=body.get('target_id')
+        if not isinstance(target_id,str) or len(target_id)!=32 or any(c not in '0123456789abcdef' for c in target_id):
+            raise ValueError('请先上传色卡目标图')
+        data=(core.HERE/'chart_uploads'/target_id/'source.bin').read_bytes()
+        chart_target.decode(data)
+        body['target_sha256']=core.sha(data)
+    elif body.get('gamut') not in ('S-Gamut3', 'S-Gamut3.Cine'):
+        raise ValueError('请选择 LUT 输入色域')
+    core.gamma_endpoint(body.get('gamma_endpoint128'))
+    if kind=='lut' and (not isinstance(body.get('lut'), str) or not body['lut'].strip()):
+        raise ValueError('请导入 .cube LUT')
+    sample = dict(core.presets()[0][0], number=body['number'],
+                  short_name=body.get('short_name'), full_name=body.get('full_name'))
+    core.compiler.pack(core.config([sample]))
+    return body
+
+
 class Handler(BaseHTTPRequestHandler):
     def respond(self, data, mime='application/json', status=200, filename=None):
         if not isinstance(data, bytes):
@@ -185,11 +226,14 @@ class Handler(BaseHTTPRequestHandler):
             return self.respond(dict(error='Local origin required'), status=403)
         path = urlparse(self.path).path
         try:
+            if path.startswith('/api/batches/'):
+                return batch_training.get(self, path, sys.modules[__name__])
             if path == '/api/chart-original':
                 return self.respond(chart_target.download(), 'application/zip', filename='R5-ST-original-chart.zip')
             if path == '/api/bootstrap':
                 entries, provenance = core.presets()
                 return self.respond(dict(token=TOKEN, presets=entries, provenance=provenance,
+                                         latest_batch=batch_training.latest(core.HERE),
                                          template=core.config([]), stock_grids=__import__("stock_grids").catalog(),
                                          fitting_baseline='ST / verified synthetic capture context 4',
                                          grid_response=default_response(), history=[dict(id=k, status=v['status'], started=v['started'], phase=v['phase'],target_kind=v.get('target_kind','lut'),pc_available=(RUNS/k/'pc_compensation.json').is_file())
@@ -304,7 +348,7 @@ class Handler(BaseHTTPRequestHandler):
             length = int(self.headers.get('Content-Length', '0'))
             if urlparse(self.path).path == '/api/chart-target':
                 if not 0 < length <= chart_target.MAX_BYTES or self.headers.get('Content-Type')!='application/octet-stream':
-                    raise ValueError('请以二进制上传 64 MiB 内的 TIFF 或 JPG')
+                    raise ValueError('请以二进制上传 512 MiB 内的 TIFF 或 JPG')
                 data=self.rfile.read(length)
                 if len(data)!=length:
                     raise ValueError('目标图上传不完整')
@@ -464,43 +508,10 @@ class Handler(BaseHTTPRequestHandler):
                     value,_=export_policy423.validate(body,RUNS)
                 data,_,_,_ = core.compile_config(value)
                 return self.respond(dict(valid=True, bytes=len(data), sha256=core.sha(data)))
+            if path == '/api/batches':
+                return self.respond(batch_training.submit(body, sys.modules[__name__]), status=202)
             if path == '/api/fit':
-                from training_policy import group_importance
-                body['group_weights']=group_importance(body.get('group_weights'))
-                from optimizer_policy import search_options, pc_options
-                if type(body.get('white_balance',False)) is not bool:raise ValueError('白平衡开关须为布尔值')
-                body.setdefault('white_balance',False)
-                body.setdefault('pc_compensation',True)
-                body['search_options']=search_options(body.get('search_options'))
-                body['pc_options']=pc_options(body.get('pc_options'))
-                if type(body.get('compression_training',False)) is not bool:raise ValueError('压缩训练开关无效')
-                if body.get('compression_training'):
-                    body['pc_compensation']=True
-                    body['pc_options']=pc_options(dict(curve_mode='tone-tint',grid_enabled=True,response=body['pc_options']['response']))
-                if type(body.get('pc_compensation',False)) is not bool:
-                    raise ValueError('PC 补偿开关必须为布尔值')
-                if type(body.get('number')) is not int or not 1 <= body['number'] <= 12:
-                    raise ValueError('自定义配置序号必须为 1–12')
-                if type(body.get('evaluations')) is not int or not 1 <= body['evaluations'] <= 300:
-                    raise ValueError('求解评估次数必须为 1–300')
-                kind=body.get('target_kind','lut')
-                if kind not in ('lut','chart-image'):
-                    raise ValueError('请选择目标来源')
-                if kind=='chart-image':
-                    target_id=body.get('target_id')
-                    if not isinstance(target_id,str) or len(target_id)!=32 or any(c not in '0123456789abcdef' for c in target_id):
-                        raise ValueError('请先上传色卡目标图')
-                    data=(core.HERE/'chart_uploads'/target_id/'source.bin').read_bytes()
-                    chart_target.decode(data)
-                    body['target_sha256']=core.sha(data)
-                elif body.get('gamut') not in ('S-Gamut3', 'S-Gamut3.Cine'):
-                    raise ValueError('请选择 LUT 输入色域')
-                core.gamma_endpoint(body.get('gamma_endpoint128'))
-                if kind=='lut' and (not isinstance(body.get('lut'), str) or not body['lut'].strip()):
-                    raise ValueError('请导入 .cube LUT')
-                sample = dict(core.presets()[0][0], number=body['number'],
-                              short_name=body.get('short_name'), full_name=body.get('full_name'))
-                core.compiler.pack(core.config([sample]))
+                validate_fit(body)
                 with LOCK:
                     if any(v['status'] in ('queued', 'running') for v in JOBS.values()):
                         return self.respond(dict(error='已有拟合任务运行，请完成或取消后再提交'), status=409)
@@ -540,6 +551,8 @@ def main():
                     continue
                 native=json.loads((path.parent/'native_config.json').read_text())
                 core.compiler.pack(native)
+                if job['status'] in ('running','queued'):
+                    job.update(status='error',phase='服务重启中断',error='请重新提交训练')
                 JOBS[job['id']] = job
             except (ValueError, KeyError, OSError):
                 continue

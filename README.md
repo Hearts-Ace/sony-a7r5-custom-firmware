@@ -1,14 +1,19 @@
-# Sony A7R V / R5 自定义滤镜 4.24
+# Sony A7R V / R5 自定义滤镜 4.28
 
-4.24修复4.23新增菜单占位、无名称且不能选择的问题：补齐真实主列表的第二路菜单ID转换。创意外观决定原厂基底，同级“自定义滤镜”独立选择关闭或最多12项配置，左简写、右全称，选择直接保存。原厂外观名称不变。
+按用户要求回退到4.25菜单基线，删除更新按钮及对应触摸、焦点与手动刷新操作。保留自动导入、选择同步应用保存及父级选中值校验后退出，未带入4.26/4.27菜单改动。创意外观决定原厂基底，自定义滤镜独立选择，原厂名称不变。
 
-- [4.24固件与Web分享包](https://github.com/Hearts-Ace/sony-a7r5-custom-firmware/releases/tag/v4.24)
-- [唯一研究总结：当前方案、纠错、菜单/参数/网格生命周期](analysis/R5_FL2_FL3固件色彩与RAW参数研究总结.md)
-- [独立Web工作台及启动说明](R5ColorLab/README.md)
-- [发布验证回执](publication/4.24/checks.json)
+- [4.28固件与独立工具下载](https://github.com/Hearts-Ace/sony-a7r5-custom-firmware/releases/tag/v4.28)
+- [反推网格工作台：探针生成、照片文件夹训练](R5GridCalibrator/README.md)
+- [色彩工作台：默认R5实拍v2响应，训练/压缩/预览共用](R5ColorLab/README.md)
+- [富士九款模拟滤镜：BIN、可编辑JSON与报告](filters/FUJ_grid_v2/README.md)
+- [实拍网格模型及来源](R5ColorLab/web/data/r5/PROVENANCE.md)
+- [唯一研究总结：菜单、参数和网格生命周期](analysis/R5_FL2_FL3固件色彩与RAW参数研究总结.md)
+- [固件交付校验](publication/4.28/firmware_delivery_verified.json)
 
-只支持BIN v4；CC1、block13、129点Gamma和5×9×9网格一并保存，导出前需选择原厂网格或完成压缩。保留4.22的统一网格请求、不可变表交付和清空/漏配原厂重建机制。Web支持下载原始测试色卡及导入软件调色后的TIFF/JPG目标。
+只支持BIN v4；CC1、block13、129点Gamma与5×9×9网格共同发布，保留4.22网格生命周期。富士模拟滤镜包括ASTIA、CLASSIC CHROME、ETERNA BLEACH BYPASS、ETERNA、CLASSIC Neg.、PRO Neg. Hi、PROVIA、REALA ACE、Velvia；不是富士官方滤镜。BIN会完整替换自定义配置集合。
 
-4.24菜单原指令回放、包签名/CRC及完整独立解密通过；CP逐字节继承4.23。4.23菜单已有实机失败反馈，4.24仍待机身LCD、冷启动、预览及JPG验收。软件交付和验签不代表实际JPG网格已修复。完整DAT SHA256：`01bf5ab58609b51d78803faefd352d6f85872b4dc67b7f738159af38e198e86a`。
+固件754525608字节，SHA256 `dd64c0d26cf71d3b595dcf20cf11d39abdff8f78eadd7241a833182d28e03816`；滤镜BIN22196字节，SHA256 `5700b9dd8c1390ac851528f01be1776034d6b8fb66287cfffb3600351af38a93`。
 
-源码保留固定输入/散列门控，缺少Sony原机镜像、密钥与部分本地依赖，不是干净克隆即可重建或适配任意机身的一键工具。历史源码和记录按日期阅读，不删除历史结论以掩盖失败。私人照片、首次镜像、密钥不发布。第三方来源见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+R5实拍v2模型覆盖42/256，留出RMSE3.696；未覆盖颜色属于外推，不等于完整恢复原厂ISP。固件整包签名/CRC/完整解密已通过，4.28实机菜单、冷启动及照片颜色待验收。4.25其余入口/布局/对象行为随回退保留。
+
+公开源码缺少Sony原机镜像、签名输入与部分本地依赖，不是干净克隆即可重建完整固件的一键工具。首次镜像、密钥、私人照片和训练运行目录不发布。第三方来源见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

@@ -14,8 +14,16 @@ from scipy import sparse
 SCHEMA = 'r5-measured-grid-response/1'
 PRESET_SHA256 = '7e183f46f7acd739a12b7c2989e0ce245628a1f0d72d4f673f48945f4493b0af'
 
-def default_response():
+def legacy_proxy_response():
     return dict(schema=SCHEMA,preset='qaq-a7c2-2.01-c8328ad5',sha256=PRESET_SHA256,proxy_for='ILCE-7RM5')
+
+
+def previous_r5_response():
+    return {'schema': 'r5-measured-grid-response/1', 'preset': 'r5-paired-20261024', 'sha256': '6852ead83bf381215a8d721d1557cc73803f6ef60a0745971e8783144863c96b', 'model': 'ILCE-7RM5'}
+
+
+def default_response():
+    return {'schema': 'r5-measured-grid-response/1', 'preset': 'r5-paired-20261024-v2', 'sha256': '8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45', 'model': 'ILCE-7RM5'}
 
 
 def is_measured(value):
@@ -35,9 +43,23 @@ def get(value):
 @lru_cache(maxsize=4)
 def _cached(serialized):
     value = json.loads(serialized)
+    if value.get('preset')=='r5-paired-20261024-v2':
+        if value!=default_response():raise ValueError('R5 v2 snapshot identity mismatch')
+        raw=(__import__('pathlib').Path(__file__).resolve().parent/'data/r5/paired-20261024-v2.json').read_bytes()
+        if hashlib.sha256(raw).hexdigest()!=value['sha256']:raise ValueError('R5 v2 model hash mismatch')
+        from paired_response import PairedModel
+        return PairedModel(json.loads(raw),value['sha256'])
+    if value.get('preset')=='r5-paired-20261024':
+        if value!=previous_r5_response():raise ValueError('R5 snapshot identity mismatch')
+        from pathlib import Path
+        path=Path(__file__).resolve().parent/'data/r5/paired-20261024.json'
+        raw=path.read_bytes()
+        if hashlib.sha256(raw).hexdigest()!=value['sha256']:raise ValueError('R5 measured model hash mismatch')
+        from paired_response import PairedModel
+        return PairedModel(json.loads(raw),value['sha256'])
     if value.get('preset'):
         from pathlib import Path
-        if value != default_response():raise ValueError('Unknown proxy snapshot identity')
+        if value != legacy_proxy_response():raise ValueError('Unknown proxy snapshot identity')
         folder=Path(__file__).resolve().parent
         # Both standalone and original workspaces carry the same pinned snapshot.
         candidates=(folder.parent/'data/qaq/a7c2-2.01.virtual.npz',folder/'data/qaq/a7c2-2.01.virtual.npz')

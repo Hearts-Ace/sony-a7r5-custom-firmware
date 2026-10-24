@@ -1,0 +1,5301 @@
+{
+  "name": "refined-smooth-s3-a3",
+  "coordinate_affine": [
+    [
+      0.311356272076833,
+      0.6407681634181707,
+      0.049095215680275334,
+      0.00966025653525826
+    ],
+    [
+      -0.2984852503051633,
+      -0.4037422062993849,
+      0.737631872615168,
+      -0.018895668958713325
+    ],
+    [
+      0.6626705812091713,
+      -0.547135154115865,
+      -0.16544404467765622,
+      0.07837873924018358
+    ]
+  ],
+  "smooth": true,
+  "response_weights": [
+    [
+      0.999872546392381,
+      0.9992056105283182,
+      0.9987107498648725
+    ],
+    [
+      -0.0022886211332146175,
+      -0.12900713584514625,
+      0.6416125753242861
+    ],
+    [
+      0.45826530861604353,
+      -0.2312830442768264,
+      0.001279254377362042
+    ],
+    [
+      0.005451177492512631,
+      0.015063765024057825,
+      0.011688789815094452
+    ],
+    [
+      -0.004580650933453851,
+      -0.004622536878193603,
+      -0.010469410016595128
+    ],
+    [
+      -0.016832377327718702,
+      -0.019070951039861388,
+      0.0021718691214092796
+    ],
+    [
+      0.008757777329880513,
+      -0.11260260250662998,
+      0.5660049670584025
+    ],
+    [
+      -0.008487233266485017,
+      -0.13609963416170742,
+      0.6164410591866268
+    ],
+    [
+      -0.017068974298665992,
+      0.25927590233675857,
+      -1.2755254933667852
+    ],
+    [
+      1.3595246051717018,
+      -0.7058780173659488,
+      -0.018886981228475656
+    ],
+    [
+      -0.907591189294583,
+      0.5228620779635548,
+      0.03939823564476138
+    ],
+    [
+      -0.5342430392647488,
+      0.20109064430362644,
+      -0.030332745816762006
+    ]
+  ],
+  "schema": "r5-grid-response-calibration/1",
+  "report": {
+    "optimization": {
+      "options": {
+        "max_nfev": 900,
+        "starts": 5,
+        "alternations": 5,
+        "samples_per_pair": 2000
+      },
+      "search_samples": 10159,
+      "sampling": "training-only luminance/hue/saturation stratified",
+      "runs": [
+        {
+          "candidate": "refined-matrix-s1-a1",
+          "start": 1,
+          "alternation": 1,
+          "smooth": false,
+          "nfev": 9,
+          "residual_calls": 105,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.003320739908827265,
+          "optimality": 1.8147016950027966e-09,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s1-a2",
+          "start": 1,
+          "alternation": 2,
+          "smooth": false,
+          "nfev": 3,
+          "residual_calls": 39,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0033150841338976016,
+          "optimality": 2.4734533994127516e-09,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s1-a3",
+          "start": 1,
+          "alternation": 3,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0033149551172651174,
+          "optimality": 7.3894245724841386e-09,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s1-a4",
+          "start": 1,
+          "alternation": 4,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.003314946771418401,
+          "optimality": 8.562368086533265e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s1-a5",
+          "start": 1,
+          "alternation": 5,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0033149459575155396,
+          "optimality": 9.16307108436092e-13,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s1-a1",
+          "start": 1,
+          "alternation": 1,
+          "smooth": true,
+          "nfev": 5,
+          "residual_calls": 65,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025716759528285,
+          "optimality": 1.0422062397767539e-10,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s1-a2",
+          "start": 1,
+          "alternation": 2,
+          "smooth": true,
+          "nfev": 3,
+          "residual_calls": 39,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025715653010593797,
+          "optimality": 1.895535084602427e-09,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s1-a3",
+          "start": 1,
+          "alternation": 3,
+          "smooth": true,
+          "nfev": 3,
+          "residual_calls": 39,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.002571911816054679,
+          "optimality": 1.853391036287818e-12,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s1-a4",
+          "start": 1,
+          "alternation": 4,
+          "smooth": true,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025719457938987588,
+          "optimality": 1.510666723384525e-10,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s1-a5",
+          "start": 1,
+          "alternation": 5,
+          "smooth": true,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025719488069676673,
+          "optimality": 2.8887123669895093e-12,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s2-a1",
+          "start": 2,
+          "alternation": 1,
+          "smooth": false,
+          "nfev": 9,
+          "residual_calls": 105,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0033363105439913566,
+          "optimality": 2.5981417049557987e-09,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s2-a2",
+          "start": 2,
+          "alternation": 2,
+          "smooth": false,
+          "nfev": 4,
+          "residual_calls": 52,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.003315339653748293,
+          "optimality": 1.0104640436906577e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s2-a3",
+          "start": 2,
+          "alternation": 3,
+          "smooth": false,
+          "nfev": 3,
+          "residual_calls": 39,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.00331496613590146,
+          "optimality": 5.200019097090976e-12,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s2-a4",
+          "start": 2,
+          "alternation": 4,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.003314947656597513,
+          "optimality": 2.989784101717608e-10,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s2-a5",
+          "start": 2,
+          "alternation": 5,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0033149460430904098,
+          "optimality": 5.147781434568829e-12,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s2-a1",
+          "start": 2,
+          "alternation": 1,
+          "smooth": true,
+          "nfev": 5,
+          "residual_calls": 65,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025958981062939807,
+          "optimality": 2.01714865235662e-09,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s2-a2",
+          "start": 2,
+          "alternation": 2,
+          "smooth": true,
+          "nfev": 4,
+          "residual_calls": 52,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.002572280534895499,
+          "optimality": 2.1639121285238405e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s2-a3",
+          "start": 2,
+          "alternation": 3,
+          "smooth": true,
+          "nfev": 3,
+          "residual_calls": 39,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025719581463099243,
+          "optimality": 3.3723963022748515e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s2-a4",
+          "start": 2,
+          "alternation": 4,
+          "smooth": true,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025719509710774883,
+          "optimality": 1.080506579125419e-09,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s2-a5",
+          "start": 2,
+          "alternation": 5,
+          "smooth": true,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.002571949437580903,
+          "optimality": 1.690393830995567e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s3-a1",
+          "start": 3,
+          "alternation": 1,
+          "smooth": false,
+          "nfev": 11,
+          "residual_calls": 119,
+          "status": 2,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "cost": 0.0033165180683384634,
+          "optimality": 1.7298256535467098e-07,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s3-a2",
+          "start": 3,
+          "alternation": 2,
+          "smooth": false,
+          "nfev": 3,
+          "residual_calls": 39,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.003314979774495949,
+          "optimality": 3.483690631041047e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s3-a3",
+          "start": 3,
+          "alternation": 3,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0033149486277083426,
+          "optimality": 6.988042166557023e-10,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s3-a4",
+          "start": 3,
+          "alternation": 4,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0033149461358396174,
+          "optimality": 8.003061403087157e-12,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s3-a5",
+          "start": 3,
+          "alternation": 5,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0033149458961674832,
+          "optimality": 1.5601044921716046e-12,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s3-a1",
+          "start": 3,
+          "alternation": 1,
+          "smooth": true,
+          "nfev": 5,
+          "residual_calls": 65,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025731654032588444,
+          "optimality": 7.607635293937711e-09,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s3-a2",
+          "start": 3,
+          "alternation": 2,
+          "smooth": true,
+          "nfev": 3,
+          "residual_calls": 39,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025722115642011836,
+          "optimality": 2.7312204838571e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s3-a3",
+          "start": 3,
+          "alternation": 3,
+          "smooth": true,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 2,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "cost": 0.002572038174771322,
+          "optimality": 9.856213181416273e-07,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s3-a4",
+          "start": 3,
+          "alternation": 4,
+          "smooth": true,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025720106067624515,
+          "optimality": 1.805731839608955e-09,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s3-a5",
+          "start": 3,
+          "alternation": 5,
+          "smooth": true,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.002571955191897882,
+          "optimality": 1.863328224362789e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s4-a1",
+          "start": 4,
+          "alternation": 1,
+          "smooth": false,
+          "nfev": 8,
+          "residual_calls": 104,
+          "status": 2,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "cost": 0.0033709532424760743,
+          "optimality": 2.374222588022345e-07,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s4-a2",
+          "start": 4,
+          "alternation": 2,
+          "smooth": false,
+          "nfev": 4,
+          "residual_calls": 52,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.003315854375038776,
+          "optimality": 2.449432791203273e-10,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s4-a3",
+          "start": 4,
+          "alternation": 3,
+          "smooth": false,
+          "nfev": 3,
+          "residual_calls": 39,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0033149826939261155,
+          "optimality": 5.11405164209615e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s4-a4",
+          "start": 4,
+          "alternation": 4,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.003314948935210684,
+          "optimality": 8.709985750144726e-10,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s4-a5",
+          "start": 4,
+          "alternation": 5,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.003314946167042851,
+          "optimality": 8.81061048056857e-12,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s4-a1",
+          "start": 4,
+          "alternation": 1,
+          "smooth": true,
+          "nfev": 6,
+          "residual_calls": 78,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0026363265804014227,
+          "optimality": 7.634323715452947e-12,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s4-a2",
+          "start": 4,
+          "alternation": 2,
+          "smooth": true,
+          "nfev": 4,
+          "residual_calls": 52,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.00257345199195714,
+          "optimality": 1.7202618530994312e-10,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s4-a3",
+          "start": 4,
+          "alternation": 3,
+          "smooth": true,
+          "nfev": 3,
+          "residual_calls": 39,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.002572020918180408,
+          "optimality": 2.2842680543454206e-10,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s4-a4",
+          "start": 4,
+          "alternation": 4,
+          "smooth": true,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.002571957460774718,
+          "optimality": 3.0134834302836717e-09,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s4-a5",
+          "start": 4,
+          "alternation": 5,
+          "smooth": true,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025719502214040075,
+          "optimality": 4.7543311899036445e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s5-a1",
+          "start": 5,
+          "alternation": 1,
+          "smooth": false,
+          "nfev": 10,
+          "residual_calls": 106,
+          "status": 2,
+          "success": true,
+          "message": "`ftol` termination condition is satisfied.",
+          "cost": 0.0033499529800407424,
+          "optimality": 2.0379576542876636e-07,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s5-a2",
+          "start": 5,
+          "alternation": 2,
+          "smooth": false,
+          "nfev": 4,
+          "residual_calls": 52,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.00331554128941952,
+          "optimality": 5.639873573774101e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s5-a3",
+          "start": 5,
+          "alternation": 3,
+          "smooth": false,
+          "nfev": 3,
+          "residual_calls": 39,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.003314973151194535,
+          "optimality": 2.009334287065072e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s5-a4",
+          "start": 5,
+          "alternation": 4,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.003314948213933761,
+          "optimality": 5.150096593590266e-10,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-matrix-s5-a5",
+          "start": 5,
+          "alternation": 5,
+          "smooth": false,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0033149460970759988,
+          "optimality": 4.191405377468022e-12,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s5-a1",
+          "start": 5,
+          "alternation": 1,
+          "smooth": true,
+          "nfev": 6,
+          "residual_calls": 78,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0026109341345095494,
+          "optimality": 1.7905128671093362e-12,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s5-a2",
+          "start": 5,
+          "alternation": 2,
+          "smooth": true,
+          "nfev": 4,
+          "residual_calls": 52,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025729000999807294,
+          "optimality": 1.2718234605443814e-10,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s5-a3",
+          "start": 5,
+          "alternation": 3,
+          "smooth": true,
+          "nfev": 3,
+          "residual_calls": 39,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.002572004832738925,
+          "optimality": 8.215309971256769e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s5-a4",
+          "start": 5,
+          "alternation": 4,
+          "smooth": true,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.002571955921369681,
+          "optimality": 1.7455476298383344e-09,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        },
+        {
+          "candidate": "refined-smooth-s5-a5",
+          "start": 5,
+          "alternation": 5,
+          "smooth": true,
+          "nfev": 2,
+          "residual_calls": 26,
+          "status": 1,
+          "success": true,
+          "message": "`gtol` termination condition is satisfied.",
+          "cost": 0.0025719500013976528,
+          "optimality": 2.874805554833986e-11,
+          "bound_parameters": 0,
+          "budget_exhausted": false
+        }
+      ]
+    },
+    "selected_model": "refined-smooth-s3-a3",
+    "training": {
+      "rmse": 4.142416287708069,
+      "mae": 2.1205661401396916,
+      "p95": 9.73506009758987
+    },
+    "validation": {
+      "rmse": 5.615272435436921,
+      "mae": 2.998102135257911,
+      "p95": 13.221350113625265
+    },
+    "test": {
+      "rmse": 3.6961525157879174,
+      "mae": 2.004339855539298,
+      "p95": 9.03503824804669
+    },
+    "baseline_test": {
+      "rmse": 13.03927618787563,
+      "mae": 8.97323272956216,
+      "p95": 25.96798003868013
+    },
+    "legacy_identity_test": {
+      "rmse": 11.47930172216305,
+      "mae": 7.8214397863164535,
+      "p95": 24.707268963541747
+    },
+    "counts": {
+      "train": 10159,
+      "validation": 2403,
+      "test": 4936,
+      "pairs": 11
+    },
+    "per_pair": [
+      {
+        "name": "网格推断 / RAMP1",
+        "role": "train",
+        "samples": 1485,
+        "predicted": {
+          "rmse": 4.0734421489297725,
+          "mae": 2.123420202881107,
+          "p95": 10.500575819491827
+        },
+        "baseline": {
+          "rmse": 10.18843265023169,
+          "mae": 9.225429483796209,
+          "p95": 16.069887439592506
+        }
+      },
+      {
+        "name": "网格推断 / C3+",
+        "role": "train",
+        "samples": 1598,
+        "predicted": {
+          "rmse": 4.549037560313835,
+          "mae": 2.3930523301364177,
+          "p95": 11.128845470547494
+        },
+        "baseline": {
+          "rmse": 9.103612004618242,
+          "mae": 6.348026714970528,
+          "p95": 19.837870275792373
+        }
+      },
+      {
+        "name": "网格推断 / C2+",
+        "role": "train",
+        "samples": 1528,
+        "predicted": {
+          "rmse": 4.911765614984544,
+          "mae": 2.6758082477824203,
+          "p95": 11.871983729852367
+        },
+        "baseline": {
+          "rmse": 9.823395658724829,
+          "mae": 6.737509617472742,
+          "p95": 19.54474103648932
+        }
+      },
+      {
+        "name": "网格推断 / C1+",
+        "role": "train",
+        "samples": 1496,
+        "predicted": {
+          "rmse": 2.946259273895564,
+          "mae": 1.6062548654763942,
+          "p95": 7.478297190920252
+        },
+        "baseline": {
+          "rmse": 20.459042900670006,
+          "mae": 20.241669699003776,
+          "p95": 25.603815662621788
+        }
+      },
+      {
+        "name": "网格推断 / WAVE",
+        "role": "test",
+        "samples": 1629,
+        "predicted": {
+          "rmse": 4.446600478775553,
+          "mae": 2.6806181677952856,
+          "p95": 10.692496240658578
+        },
+        "baseline": {
+          "rmse": 18.834089609692988,
+          "mae": 16.38272626337066,
+          "p95": 28.531229987047254
+        }
+      },
+      {
+        "name": "网格推断 / RAMP3",
+        "role": "train",
+        "samples": 1566,
+        "predicted": {
+          "rmse": 6.005636941798807,
+          "mae": 3.051792034472048,
+          "p95": 14.373622343938479
+        },
+        "baseline": {
+          "rmse": 7.27071652765327,
+          "mae": 3.820694360047522,
+          "p95": 18.474043681378724
+        }
+      },
+      {
+        "name": "网格推断 / ORIGINAL",
+        "role": "test",
+        "samples": 1664,
+        "predicted": {
+          "rmse": 3.2174571396203446,
+          "mae": 1.6728631321556047,
+          "p95": 7.950274873467467
+        },
+        "baseline": {
+          "rmse": 3.251126368497533,
+          "mae": 1.6983342099011827,
+          "p95": 8.11428717965075
+        }
+      },
+      {
+        "name": "网格推断 / C3-",
+        "role": "train",
+        "samples": 1614,
+        "predicted": {
+          "rmse": 5.130019962789894,
+          "mae": 2.632182854468306,
+          "p95": 12.665455217279234
+        },
+        "baseline": {
+          "rmse": 8.79176639562643,
+          "mae": 6.386424279193841,
+          "p95": 19.37642479427768
+        }
+      },
+      {
+        "name": "网格推断 / C2-",
+        "role": "train",
+        "samples": 1631,
+        "predicted": {
+          "rmse": 3.2462610916313865,
+          "mae": 1.87679430047489,
+          "p95": 7.589764608823143
+        },
+        "baseline": {
+          "rmse": 8.129986883240301,
+          "mae": 5.451492490420471,
+          "p95": 16.275995914195864
+        }
+      },
+      {
+        "name": "网格推断 / RAMP2",
+        "role": "train",
+        "samples": 1601,
+        "predicted": {
+          "rmse": 4.571241274501336,
+          "mae": 2.3410820363530487,
+          "p95": 11.512832856186394
+        },
+        "baseline": {
+          "rmse": 5.590618574566665,
+          "mae": 2.962022604076219,
+          "p95": 14.144312873728753
+        }
+      },
+      {
+        "name": "网格推断 / C1-",
+        "role": "train",
+        "samples": 1686,
+        "predicted": {
+          "rmse": 2.5465483458341236,
+          "mae": 1.2958356612271071,
+          "p95": 6.4319956031900585
+        },
+        "baseline": {
+          "rmse": 19.938810896319985,
+          "mae": 19.774121205712518,
+          "p95": 23.629181562827814
+        }
+      }
+    ],
+    "coordinate_coverage": {
+      "occupied_cells": 42,
+      "total_cells": 256,
+      "fraction": 0.1640625,
+      "coordinate_min": [
+        0.08257333756012629,
+        -0.5145366543722659,
+        -0.08705761119562695
+      ],
+      "coordinate_max": [
+        0.9795309059310225,
+        0.2603951493814296,
+        0.5709521887450056
+      ]
+    },
+    "excitation_rank": 3,
+    "singular_values": [
+      3.9138728004173937,
+      3.81313912763648,
+      3.7577520037690997
+    ],
+    "warnings": [
+      "训练颜色覆盖少于四分之一网格单元，未覆盖区域仍是外推"
+    ],
+    "coordinate_note": "多起点、训练颜色分层抽样、响应与坐标交替优化；每轮验证选模，测试不参与。局部收敛不等于唯一ISP解",
+    "observed_change_rmse": 12.401889513186138,
+    "candidates": [
+      {
+        "name": "fixed-matrix",
+        "coordinate_affine": [
+          [
+            0.3481506849315068,
+            0.6834931506849315,
+            0.13273972602739725,
+            -0.0730593607305936
+          ],
+          [
+            -0.1920877337955498,
+            -0.3771086947758787,
+            0.5691964285714286,
+            0.0
+          ],
+          [
+            0.5691964285714286,
+            -0.47663096087222334,
+            -0.09256546769920523,
+            0.0
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            0.9830755214156282,
+            0.9834399390505846,
+            0.9842100708870692
+          ],
+          [
+            -0.0027669838739854445,
+            -0.13454576204945348,
+            0.6706311228783773
+          ],
+          [
+            0.5379195603188697,
+            -0.27720550349832335,
+            -0.0022469508678411255
+          ]
+        ],
+        "validation": {
+          "rmse": 5.835144490821532,
+          "mae": 3.296482416911654,
+          "p95": 13.698694490346622
+        },
+        "training": {
+          "rmse": 4.802461480242084,
+          "mae": 2.6702754705369403,
+          "p95": 11.664209040488863
+        }
+      },
+      {
+        "name": "fixed-smooth",
+        "coordinate_affine": [
+          [
+            0.3481506849315068,
+            0.6834931506849315,
+            0.13273972602739725,
+            -0.0730593607305936
+          ],
+          [
+            -0.1920877337955498,
+            -0.3771086947758787,
+            0.5691964285714286,
+            0.0
+          ],
+          [
+            0.5691964285714286,
+            -0.47663096087222334,
+            -0.09256546769920523,
+            0.0
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9825384116058173,
+            0.9817526759615741,
+            0.9813390729456829
+          ],
+          [
+            -0.0018043845597958662,
+            -0.12869048039438852,
+            0.6434928016497051
+          ],
+          [
+            0.4614973654351254,
+            -0.23481466183062313,
+            -0.00011446242369863206
+          ],
+          [
+            0.011493432640699614,
+            0.020454614852600504,
+            0.019499390774380832
+          ],
+          [
+            0.007794885365089366,
+            0.007355318791678461,
+            0.0016498763477381714
+          ],
+          [
+            -0.050006336878907494,
+            -0.051670380214506005,
+            -0.03212578524259187
+          ],
+          [
+            0.011692892681191572,
+            -0.1121997732801541,
+            0.5912379244698244
+          ],
+          [
+            -0.00580344535518718,
+            -0.13474596887681023,
+            0.637458940191756
+          ],
+          [
+            -0.023055696911578293,
+            0.257231685594667,
+            -1.3212781638587938
+          ],
+          [
+            1.4292794904986128,
+            -0.7479917596540482,
+            -0.020074012114024674
+          ],
+          [
+            -0.9633984324098215,
+            0.5435774245528994,
+            0.03480923780057939
+          ],
+          [
+            -0.5554360860366178,
+            0.22877559880552842,
+            -0.023518722784876774
+          ]
+        ],
+        "validation": {
+          "rmse": 5.6575114991404005,
+          "mae": 3.0827420986119023,
+          "p95": 13.32993317122209
+        },
+        "training": {
+          "rmse": 4.2157384652819525,
+          "mae": 2.2486463521396582,
+          "p95": 9.90527156825556
+        }
+      },
+      {
+        "name": "refined-matrix-s1-a1",
+        "coordinate_affine": [
+          [
+            0.3156335728962048,
+            0.6487157026854504,
+            0.050841711259740116,
+            0.002608439503925052
+          ],
+          [
+            -0.35031557009719577,
+            -0.4096801805452321,
+            0.7994279239790442,
+            -0.033973668852428245
+          ],
+          [
+            0.7272606710073705,
+            -0.5682115414952537,
+            -0.25119746167813256,
+            0.11312422946784388
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0002751538041261,
+            1.0008277828097174,
+            1.0012683176951709
+          ],
+          [
+            -0.0036450221587106166,
+            -0.13614119796771967,
+            0.6712558065079592
+          ],
+          [
+            0.5405121070717359,
+            -0.27533578765623506,
+            -0.00042582155604219493
+          ]
+        ],
+        "validation": {
+          "rmse": 5.790057585906491,
+          "mae": 3.2244730871731666,
+          "p95": 13.668634191571664
+        },
+        "training": {
+          "rmse": 4.701759249528554,
+          "mae": 2.550644399210589,
+          "p95": 11.310017802906485
+        }
+      },
+      {
+        "name": "refined-matrix-s1-a2",
+        "coordinate_affine": [
+          [
+            0.31041496778909655,
+            0.6412095364060175,
+            0.04765520746653416,
+            0.01019987540429284
+          ],
+          [
+            -0.3503369249745295,
+            -0.4097697536458482,
+            0.7994960885226681,
+            -0.03394088701720898
+          ],
+          [
+            0.7274760008925166,
+            -0.5682089113875592,
+            -0.25136537506195555,
+            0.11306447274758323
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.001989973972173,
+            1.0025579801978566,
+            1.0029693083355482
+          ],
+          [
+            -0.0036450421422002514,
+            -0.13614141362796053,
+            0.6712565006861035
+          ],
+          [
+            0.5405141466819785,
+            -0.27533614330110073,
+            -0.00042585655090918346
+          ]
+        ],
+        "validation": {
+          "rmse": 5.789052010172422,
+          "mae": 3.224875519669786,
+          "p95": 13.681215611917356
+        },
+        "training": {
+          "rmse": 4.7010228432386105,
+          "mae": 2.550550452143465,
+          "p95": 11.300071410182623
+        }
+      },
+      {
+        "name": "refined-matrix-s1-a3",
+        "coordinate_affine": [
+          [
+            0.30990713572124834,
+            0.6404731791364947,
+            0.04734776909295256,
+            0.01093963415766841
+          ],
+          [
+            -0.3503369110053255,
+            -0.4097698209530042,
+            0.7994960570893702,
+            -0.0339408156419244
+          ],
+          [
+            0.7274760965520689,
+            -0.5682089384227874,
+            -0.25136530396265183,
+            0.11306416683770108
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021550144761024,
+            1.0027245240397116,
+            1.0031329919093763
+          ],
+          [
+            -0.0036450417111917968,
+            -0.1361414134151734,
+            0.6712565026722968
+          ],
+          [
+            0.5405141622602376,
+            -0.275336157430894,
+            -0.0004258615065432717
+          ]
+        ],
+        "validation": {
+          "rmse": 5.7889732357712935,
+          "mae": 3.2250605249399364,
+          "p95": 13.677108327728535
+        },
+        "training": {
+          "rmse": 4.700978885183836,
+          "mae": 2.5507124303557167,
+          "p95": 11.299892417514043
+        }
+      },
+      {
+        "name": "refined-matrix-s1-a4",
+        "coordinate_affine": [
+          [
+            0.30985297649090976,
+            0.6403881321597261,
+            0.0473240791001671,
+            0.011019382889811656
+          ],
+          [
+            -0.35033691538411393,
+            -0.40976981689120134,
+            0.7994960562722201,
+            -0.03394081475693919
+          ],
+          [
+            0.7274761042752501,
+            -0.5682089401950154,
+            -0.2513653146110938,
+            0.1130641674289362
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021719083159244,
+            1.0027415602390544,
+            1.0031497551351298
+          ],
+          [
+            -0.0036450417121521935,
+            -0.13614141341536704,
+            0.6712565026503348
+          ],
+          [
+            0.5405141623874258,
+            -0.27533615747026435,
+            -0.0004258615277181071
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788965390824266,
+          "mae": 3.225080147305553,
+          "p95": 13.676636015553974
+        },
+        "training": {
+          "rmse": 4.700974595091315,
+          "mae": 2.550730033183335,
+          "p95": 11.299892394478492
+        }
+      },
+      {
+        "name": "refined-matrix-s1-a5",
+        "coordinate_affine": [
+          [
+            0.30984789168299903,
+            0.6403806451262619,
+            0.047321161862096485,
+            0.011026802699331878
+          ],
+          [
+            -0.35033691141255513,
+            -0.40976981875076907,
+            0.7994960570625725,
+            -0.033940816952853864
+          ],
+          [
+            0.7274760988530691,
+            -0.5682089363182993,
+            -0.2513653084086669,
+            0.11306416424500487
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021735464283301,
+            1.0027432130937446,
+            1.0031513798994853
+          ],
+          [
+            -0.003645041717173663,
+            -0.13614141341696487,
+            0.6712565026347137
+          ],
+          [
+            0.5405141624336791,
+            -0.27533615756202584,
+            -0.0004258615540954502
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788964628875812,
+          "mae": 3.2250820783955954,
+          "p95": 13.67659430131636
+        },
+        "training": {
+          "rmse": 4.700974185921232,
+          "mae": 2.5507317951117363,
+          "p95": 11.299892377131725
+        }
+      },
+      {
+        "name": "refined-smooth-s1-a1",
+        "coordinate_affine": [
+          [
+            0.31710277367818035,
+            0.6465346023535676,
+            0.05551232568099656,
+            0.001811914454542913
+          ],
+          [
+            -0.2956612744460082,
+            -0.4027884249802887,
+            0.7335846119440215,
+            -0.017939822980359454
+          ],
+          [
+            0.6544290976625893,
+            -0.5407412324258997,
+            -0.1577492305358372,
+            0.0718032195109693
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9981123632888962,
+            0.9974247757106975,
+            0.9969445904851526
+          ],
+          [
+            -0.002267114751597789,
+            -0.129007841752551,
+            0.6417282344763631
+          ],
+          [
+            0.45876320489105354,
+            -0.23167459602289028,
+            0.0011819244758200127
+          ],
+          [
+            0.005778915986324821,
+            0.01541384393056793,
+            0.012174409382694939
+          ],
+          [
+            -0.005150553095297914,
+            -0.005216409560108392,
+            -0.011015362336619853
+          ],
+          [
+            -0.02005446069141481,
+            -0.02233387374125083,
+            -0.0011544936401208692
+          ],
+          [
+            0.00884463171205767,
+            -0.1126802943825771,
+            0.5672245299170413
+          ],
+          [
+            -0.008375939423588826,
+            -0.13607120357327004,
+            0.6171812556872264
+          ],
+          [
+            -0.0172911498409884,
+            0.25931433304221746,
+            -1.2776081095058514
+          ],
+          [
+            1.3667810585776563,
+            -0.7100863021153724,
+            -0.018981449606709958
+          ],
+          [
+            -0.9129612929429706,
+            0.5250649936924647,
+            0.03910675250699496
+          ],
+          [
+            -0.5372560729576654,
+            0.20390457360688383,
+            -0.02982986679062129
+          ]
+        ],
+        "validation": {
+          "rmse": 5.617052198474185,
+          "mae": 2.998266677895905,
+          "p95": 13.238294122682994
+        },
+        "training": {
+          "rmse": 4.144059113205214,
+          "mae": 2.1223514049378833,
+          "p95": 9.749764408485893
+        }
+      },
+      {
+        "name": "refined-smooth-s1-a2",
+        "coordinate_affine": [
+          [
+            0.31189047672685527,
+            0.641354319145259,
+            0.049832746958515126,
+            0.00894330874286475
+          ],
+          [
+            -0.29835817317573066,
+            -0.4037118782058377,
+            0.7374523564856467,
+            -0.018844639108219877
+          ],
+          [
+            0.6610028546848087,
+            -0.5455159860269007,
+            -0.16427689445147764,
+            0.07725316136924991
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.999690763933186,
+            0.9990209487702164,
+            0.9985285584538984
+          ],
+          [
+            -0.0022876022341474975,
+            -0.1290071726147363,
+            0.6416181235324829
+          ],
+          [
+            0.45835071189118926,
+            -0.23134895185515136,
+            0.0012640592198909753
+          ],
+          [
+            0.005426011203565594,
+            0.01504404392535812,
+            0.011678261452518313
+          ],
+          [
+            -0.0047004586501419926,
+            -0.004746031666760006,
+            -0.010586509667854791
+          ],
+          [
+            -0.017195708303975002,
+            -0.019440228750706404,
+            0.0017991200771987294
+          ],
+          [
+            0.00876173523407609,
+            -0.11260651775350866,
+            0.5660622056633735
+          ],
+          [
+            -0.00848238180124832,
+            -0.13609802509281782,
+            0.616471783182581
+          ],
+          [
+            -0.017079062142408615,
+            0.2592776703860807,
+            -1.2756201043066633
+          ],
+          [
+            1.3608636727068808,
+            -0.7066504264418737,
+            -0.018906836049884575
+          ],
+          [
+            -0.9086384591186404,
+            0.5233245350354985,
+            0.03936722694223917
+          ],
+          [
+            -0.5347439622861717,
+            0.20155006269085943,
+            -0.030258781743784508
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615473472348208,
+          "mae": 2.9978973029298706,
+          "p95": 13.221527528626197
+        },
+        "training": {
+          "rmse": 4.142547180780815,
+          "mae": 2.120531614452232,
+          "p95": 9.735991648635196
+        }
+      },
+      {
+        "name": "refined-smooth-s1-a3",
+        "coordinate_affine": [
+          [
+            0.3113941456449219,
+            0.6408187683572956,
+            0.04916709386523509,
+            0.009606474208697742
+          ],
+          [
+            -0.298486500232835,
+            -0.40374230953081236,
+            0.7376331955896749,
+            -0.018895863989442034
+          ],
+          [
+            0.6616568178345188,
+            -0.5459843638925861,
+            -0.16495683694236968,
+            0.07782375041800897
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998567373776044,
+            0.9991894886080616,
+            0.9986949258469888
+          ],
+          [
+            -0.0022886272034911403,
+            -0.12900713532877817,
+            0.6416125396428196
+          ],
+          [
+            0.458306375813912,
+            -0.231314393753024,
+            0.0012726240160639381
+          ],
+          [
+            0.0054436368496798455,
+            0.015056922082016096,
+            0.011682398195216888
+          ],
+          [
+            -0.004595300590379949,
+            -0.004637645635109011,
+            -0.010483858877588646
+          ],
+          [
+            -0.016866999529373344,
+            -0.0191061566624748,
+            0.002136545842670356
+          ],
+          [
+            0.008757741142286736,
+            -0.11260257473122877,
+            0.5660045178732216
+          ],
+          [
+            -0.008487262687662294,
+            -0.13609964551761253,
+            0.6164408445734332
+          ],
+          [
+            -0.017068904324623525,
+            0.2592758876251188,
+            -1.2755248010032043
+          ],
+          [
+            1.3602485970081628,
+            -0.7062948489060199,
+            -0.018899760782933032
+          ],
+          [
+            -0.9081929452152684,
+            0.5231460362548146,
+            0.039394759212403624
+          ],
+          [
+            -0.5344760571595784,
+            0.20130298691179196,
+            -0.030303168950370805
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615332430556015,
+          "mae": 2.9980667176702687,
+          "p95": 13.221444486322094
+        },
+        "training": {
+          "rmse": 4.142448245075744,
+          "mae": 2.120577517357855,
+          "p95": 9.735167437420385
+        }
+      },
+      {
+        "name": "refined-smooth-s1-a4",
+        "coordinate_affine": [
+          [
+            0.3113461249073896,
+            0.6407596646351791,
+            0.04908764692219972,
+            0.009672842360267836
+          ],
+          [
+            -0.2984927630568149,
+            -0.4037436297217288,
+            0.7376419690767086,
+            -0.01889844715280097
+          ],
+          [
+            0.6617248144900892,
+            -0.5460329448609079,
+            -0.16502813431243155,
+            0.07788372464634931
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998750652570607,
+            0.9992081503238578,
+            0.9987132809804709
+          ],
+          [
+            -0.002288677656834995,
+            -0.12900713359022345,
+            0.6416122645033283
+          ],
+          [
+            0.4583017048166938,
+            -0.23131075746574573,
+            0.001273524361361676
+          ],
+          [
+            0.005449867813184805,
+            0.015062443687135841,
+            0.011687238821097845
+          ],
+          [
+            -0.004580217075550888,
+            -0.004622095498250336,
+            -0.010469026917491924
+          ],
+          [
+            -0.016828332657262184,
+            -0.019066838496826433,
+            0.0021760807726838847
+          ],
+          [
+            0.00875754570704516,
+            -0.11260237895834516,
+            0.5660016849550336
+          ],
+          [
+            -0.008487498133576066,
+            -0.136099728858822,
+            0.6164393719562412
+          ],
+          [
+            -0.01706840883274169,
+            0.2592758020807718,
+            -1.2755201583315254
+          ],
+          [
+            1.3601841472114122,
+            -0.7062576085607345,
+            -0.018899030872053222
+          ],
+          [
+            -0.9081463172277926,
+            0.523127378240111,
+            0.03939766059899101
+          ],
+          [
+            -0.5344478856008867,
+            0.2012770445959235,
+            -0.030307826337961176
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615317189381334,
+          "mae": 2.998088300392111,
+          "p95": 13.22143478704366
+        },
+        "training": {
+          "rmse": 4.142438667594042,
+          "mae": 2.1205851730819782,
+          "p95": 9.735054428324526
+        }
+      },
+      {
+        "name": "refined-smooth-s1-a5",
+        "coordinate_affine": [
+          [
+            0.3113409184205103,
+            0.6407530640948744,
+            0.04907787182005407,
+            0.009680176353299402
+          ],
+          [
+            -0.29849307204740966,
+            -0.4037436884757462,
+            0.7376423927566328,
+            -0.018898572314478074
+          ],
+          [
+            0.6617320137857432,
+            -0.5460381100552187,
+            -0.16503564902645992,
+            0.07789003624155202
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998771887222853,
+            0.9992103151427632,
+            0.9987154065141404
+          ],
+          [
+            -0.0022886801084603513,
+            -0.12900713349883364,
+            0.6416122511067356
+          ],
+          [
+            0.4583012133742943,
+            -0.2313103749486223,
+            0.0012736189129247144
+          ],
+          [
+            0.005450825693596717,
+            0.015063312663136406,
+            0.01168804143842798
+          ],
+          [
+            -0.004578323322915271,
+            -0.004620141537437928,
+            -0.010467160143968328
+          ],
+          [
+            -0.016823680292266958,
+            -0.019062110446992166,
+            0.0021808285404134645
+          ],
+          [
+            0.008757536077453599,
+            -0.11260236937830519,
+            0.5660015462638673
+          ],
+          [
+            -0.008487509479444945,
+            -0.13609973302832887,
+            0.6164393013391204
+          ],
+          [
+            -0.017068384732484846,
+            0.2592757979607383,
+            -1.2755199325025413
+          ],
+          [
+            1.3601773483193542,
+            -0.7062536802361443,
+            -0.018898953442149608
+          ],
+          [
+            -0.9081413946241104,
+            0.5231254054741363,
+            0.039397964303755806
+          ],
+          [
+            -0.5344449181679198,
+            0.20127431296490453,
+            -0.03030831592535741
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615315451588232,
+          "mae": 2.9980907571246123,
+          "p95": 13.221433715612553
+        },
+        "training": {
+          "rmse": 4.142437610157897,
+          "mae": 2.120586079769473,
+          "p95": 9.735040878066938
+        }
+      },
+      {
+        "name": "refined-matrix-s2-a1",
+        "coordinate_affine": [
+          [
+            0.32166970383228427,
+            0.6573640473790238,
+            0.054631821604882995,
+            -0.006184044627807127
+          ],
+          [
+            -0.35033469579124893,
+            -0.4096486455749287,
+            0.7994755008281588,
+            -0.03402564623877997
+          ],
+          [
+            0.7271637814382425,
+            -0.5681604355317551,
+            -0.2513510498714058,
+            0.11358187676208605
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            0.998225951622258,
+            0.9987606425456108,
+            0.9992351226635917
+          ],
+          [
+            -0.003645404961119704,
+            -0.1361414474381416,
+            0.6712542842645046
+          ],
+          [
+            0.5404882779965686,
+            -0.2753138584942583,
+            -0.00041812114054228634
+          ]
+        ],
+        "validation": {
+          "rmse": 5.791654680017533,
+          "mae": 3.227872217713041,
+          "p95": 13.658279442122423
+        },
+        "training": {
+          "rmse": 4.7031719451965595,
+          "mae": 2.554917885080355,
+          "p95": 11.308565708569507
+        }
+      },
+      {
+        "name": "refined-matrix-s2-a2",
+        "coordinate_affine": [
+          [
+            0.3110298711127628,
+            0.6420871976550209,
+            0.04803130087734966,
+            0.009307771251704115
+          ],
+          [
+            -0.35033697959668497,
+            -0.4097696080212742,
+            0.7994962036150263,
+            -0.033941059966120554
+          ],
+          [
+            0.727475354443042,
+            -0.5682084514839063,
+            -0.2513677393411664,
+            0.1130702919667098
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0017909417041844,
+            1.0023571404215414,
+            1.002771905808725
+          ],
+          [
+            -0.0036450432889095974,
+            -0.1361414142962742,
+            0.6712564957048514
+          ],
+          [
+            0.5405138454721626,
+            -0.27533586144844824,
+            -0.0004257572474633644
+          ]
+        ],
+        "validation": {
+          "rmse": 5.789151274966562,
+          "mae": 3.224686755075799,
+          "p95": 13.687657565870168
+        },
+        "training": {
+          "rmse": 4.70108169219391,
+          "mae": 2.5503884156872147,
+          "p95": 11.301452553474405
+        }
+      },
+      {
+        "name": "refined-matrix-s2-a3",
+        "coordinate_affine": [
+          [
+            0.30996171194807315,
+            0.6405450929362778,
+            0.04738933094424764,
+            0.010861275883584666
+          ],
+          [
+            -0.35033691179035253,
+            -0.40976980850795064,
+            0.7994960492025645,
+            -0.03394081795339226
+          ],
+          [
+            0.7274760826813569,
+            -0.5682089238451313,
+            -0.25136533722587767,
+            0.1130642412048854
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021368176801646,
+            1.0027061506724406,
+            1.003114952599743
+          ],
+          [
+            -0.0036450417036767214,
+            -0.1361414133908599,
+            0.6712565026009311
+          ],
+          [
+            0.5405141584060636,
+            -0.27533615383646065,
+            -0.0004258602392967792
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788981821034472,
+          "mae": 3.225038635682834,
+          "p95": 13.677518040920646
+        },
+        "training": {
+          "rmse": 4.700983487934209,
+          "mae": 2.5506930583904732,
+          "p95": 11.299893449662312
+        }
+      },
+      {
+        "name": "refined-matrix-s2-a4",
+        "coordinate_affine": [
+          [
+            0.3098585731818012,
+            0.6403963545591043,
+            0.047327198487230826,
+            0.011011229875364266
+          ],
+          [
+            -0.35033691559238034,
+            -0.4097698129881897,
+            0.7994960539824867,
+            -0.03394081562093223
+          ],
+          [
+            0.727476098284453,
+            -0.5682089383209719,
+            -0.2513653087824592,
+            0.11306416687269029
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021701247995942,
+            1.0027397608306992,
+            1.0031479860306693
+          ],
+          [
+            -0.0036450417105079215,
+            -0.13614141340846955,
+            0.6712565026251209
+          ],
+          [
+            0.5405141623656837,
+            -0.2753361574989311,
+            -0.0004258615358322315
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788966221903438,
+          "mae": 3.225078042581245,
+          "p95": 13.676682336043001
+        },
+        "training": {
+          "rmse": 4.700975044586458,
+          "mae": 2.55072812083786,
+          "p95": 11.299892396372641
+        }
+      },
+      {
+        "name": "refined-matrix-s2-a5",
+        "coordinate_affine": [
+          [
+            0.3098484263074038,
+            0.6403814231611576,
+            0.04732147600432188,
+            0.011026024706349068
+          ],
+          [
+            -0.3503369024718476,
+            -0.409769827652307,
+            0.7994960586878375,
+            -0.03394081837597405
+          ],
+          [
+            0.7274761067566331,
+            -0.5682089447416699,
+            -0.2513653079617803,
+            0.11306416388443914
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.002173374139323,
+            1.0027430392456387,
+            1.003151209020479
+          ],
+          [
+            -0.0036450417141687384,
+            -0.13614141341609323,
+            0.6712565026886896
+          ],
+          [
+            0.5405141624621707,
+            -0.2753361575564362,
+            -0.0004258615527572542
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788964708928997,
+          "mae": 3.2250818748026857,
+          "p95": 13.676598655449302
+        },
+        "training": {
+          "rmse": 4.700974228684714,
+          "mae": 2.5507316094229404,
+          "p95": 11.299892361074724
+        }
+      },
+      {
+        "name": "refined-smooth-s2-a1",
+        "coordinate_affine": [
+          [
+            0.31719962686821174,
+            0.6513146655305176,
+            0.06395155345862694,
+            0.000989658854644288
+          ],
+          [
+            -0.2966102819974567,
+            -0.40362315504292595,
+            0.7354673985208976,
+            -0.018335094605241055
+          ],
+          [
+            0.6538012006264454,
+            -0.5401493556450467,
+            -0.156853318989521,
+            0.0712765197996047
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9966090291250235,
+            0.9958674770473932,
+            0.995446966444634
+          ],
+          [
+            -0.002276523785885088,
+            -0.12900772706418165,
+            0.6416800901291748
+          ],
+          [
+            0.45878798658758196,
+            -0.23169542205274857,
+            0.0011780222441191788
+          ],
+          [
+            0.0027976478538318523,
+            0.012609476334248691,
+            0.009230953121329792
+          ],
+          [
+            -0.008715017562716426,
+            -0.008872530939629572,
+            -0.014565131810980458
+          ],
+          [
+            -0.024472213624657135,
+            -0.026854632419868407,
+            -0.0055837907389972375
+          ],
+          [
+            0.008814571574746187,
+            -0.11265255326785893,
+            0.5667613613632604
+          ],
+          [
+            -0.008433415800915599,
+            -0.1360752185592509,
+            0.6167820097422474
+          ],
+          [
+            -0.017193159210439984,
+            0.25929603129200746,
+            -1.276701433860004
+          ],
+          [
+            1.3672964875696418,
+            -0.7103799576574742,
+            -0.018986574689196973
+          ],
+          [
+            -0.9133513674207289,
+            0.5252344295866157,
+            0.03909919576539334
+          ],
+          [
+            -0.5374710313812464,
+            0.20410272357142523,
+            -0.02979859367672292
+          ]
+        ],
+        "validation": {
+          "rmse": 5.619304370468786,
+          "mae": 3.0107786057773196,
+          "p95": 13.24900159185543
+        },
+        "training": {
+          "rmse": 4.146689225517259,
+          "mae": 2.136223140992755,
+          "p95": 9.753884505886589
+        }
+      },
+      {
+        "name": "refined-smooth-s2-a2",
+        "coordinate_affine": [
+          [
+            0.31215143945984936,
+            0.6420139970071423,
+            0.05106917272426733,
+            0.008473309071714176
+          ],
+          [
+            -0.29841335829831966,
+            -0.40372869859530786,
+            0.7375321979861107,
+            -0.01886569922666666
+          ],
+          [
+            0.6609498125440013,
+            -0.545475226175737,
+            -0.16421886227931307,
+            0.0772042656093693
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.999471903281503,
+            0.9987958789977895,
+            0.9983101261550639
+          ],
+          [
+            -0.0022880431746856687,
+            -0.12900715479955993,
+            0.6416157297158928
+          ],
+          [
+            0.4583543348299399,
+            -0.23135178695977945,
+            0.0012633635352024834
+          ],
+          [
+            0.005155987542033216,
+            0.01479041064983641,
+            0.011419924036726618
+          ],
+          [
+            -0.005034093327968822,
+            -0.005090143322365119,
+            -0.010918389929530998
+          ],
+          [
+            -0.017771660333195907,
+            -0.02002621400515773,
+            0.0012172049424135226
+          ],
+          [
+            0.008760022053141405,
+            -0.11260485910320359,
+            0.5660374692519142
+          ],
+          [
+            -0.008484575887727816,
+            -0.13609864560149973,
+            0.6164575353397459
+          ],
+          [
+            -0.017074624709363218,
+            0.2592768610660461,
+            -1.2755783901164393
+          ],
+          [
+            1.360914576992197,
+            -0.7066797728786847,
+            -0.0189073776312417
+          ],
+          [
+            -0.9086756853287615,
+            0.5233395921568003,
+            0.03936507971654538
+          ],
+          [
+            -0.5347659935581761,
+            0.20157039118898262,
+            -0.03025516806816682
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615638505953308,
+          "mae": 2.9978841835110246,
+          "p95": 13.221543211732685
+        },
+        "training": {
+          "rmse": 4.142667780680272,
+          "mae": 2.1206848678431918,
+          "p95": 9.742702618270664
+        }
+      },
+      {
+        "name": "refined-smooth-s2-a3",
+        "coordinate_affine": [
+          [
+            0.3114431436832301,
+            0.640905852298249,
+            0.04931691811293874,
+            0.009529400657485271
+          ],
+          [
+            -0.29848921369828,
+            -0.4037429204385997,
+            0.7376370114241211,
+            -0.01889696660864959
+          ],
+          [
+            0.6616512046219173,
+            -0.5459803113729192,
+            -0.16495094176075967,
+            0.07781877557100532
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998282248029908,
+            0.9991602691880858,
+            0.9986664356306454
+          ],
+          [
+            -0.002288648996364793,
+            -0.12900713454786114,
+            0.6416124208436698
+          ],
+          [
+            0.4583067615698028,
+            -0.23131469413653136,
+            0.0012725497050904496
+          ],
+          [
+            0.005417652853151161,
+            0.015032682305768008,
+            0.01165818023687088
+          ],
+          [
+            -0.0046312112704680304,
+            -0.004674697479959756,
+            -0.010519487672976406
+          ],
+          [
+            -0.016936907053869462,
+            -0.019177247858165103,
+            0.002065650411379549
+          ],
+          [
+            0.008757656561279047,
+            -0.1126024905116828,
+            0.5660032932324112
+          ],
+          [
+            -0.00848736546581524,
+            -0.1360996806832663,
+            0.6164401973973577
+          ],
+          [
+            -0.017068689363566085,
+            0.2592758501162196,
+            -1.2755227853192792
+          ],
+          [
+            1.3602539257326602,
+            -0.7062979271202712,
+            -0.018899820761200132
+          ],
+          [
+            -0.9081968066743731,
+            0.5231475839370517,
+            0.03939452120640007
+          ],
+          [
+            -0.5344783823087421,
+            0.20130512834791386,
+            -0.030302785022177894
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615351092724392,
+          "mae": 2.9980425985751116,
+          "p95": 13.22144575522395
+        },
+        "training": {
+          "rmse": 4.1424604833766105,
+          "mae": 2.1205725115784695,
+          "p95": 9.735370325650134
+        }
+      },
+      {
+        "name": "refined-smooth-s2-a4",
+        "coordinate_affine": [
+          [
+            0.3113534877400981,
+            0.6407700206934815,
+            0.04910701056910986,
+            0.009661577413481517
+          ],
+          [
+            -0.298492897653695,
+            -0.40374365805601625,
+            0.7376421516120045,
+            -0.0188984984343069
+          ],
+          [
+            0.6617242179128984,
+            -0.5460325158393073,
+            -0.16502751226488527,
+            0.07788320181916938
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998714029121917,
+            0.9992044060739533,
+            0.9987096196268329
+          ],
+          [
+            -0.0022886787006919573,
+            -0.1290071335434957,
+            0.6416122587952583
+          ],
+          [
+            0.45830174550531805,
+            -0.2313107891360249,
+            0.0012735165351027197
+          ],
+          [
+            0.0054472626070582175,
+            0.015060013729035166,
+            0.011684880826185575
+          ],
+          [
+            -0.004583971756914041,
+            -0.004625980971274096,
+            -0.010472747672593232
+          ],
+          [
+            -0.01683708581317566,
+            -0.019075716134146388,
+            0.0021671831763144618
+          ],
+          [
+            0.008757541529158606,
+            -0.11260237490110347,
+            0.5660016253560549
+          ],
+          [
+            -0.00848750307475646,
+            -0.13609973057084773,
+            0.6164393407748537
+          ],
+          [
+            -0.01706839843236185,
+            0.2592758002682539,
+            -1.2755200606897246
+          ],
+          [
+            1.360184710387013,
+            -0.7062579339471386,
+            -0.018899037288026048
+          ],
+          [
+            -0.9081467251523463,
+            0.5231275418014855,
+            0.03939763549958635
+          ],
+          [
+            -0.5344481312503281,
+            0.20127727072602405,
+            -0.03030778582535893
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615319542271485,
+          "mae": 2.9980848420491593,
+          "p95": 13.221434897775616
+        },
+        "training": {
+          "rmse": 4.142440213225059,
+          "mae": 2.1205839166148737,
+          "p95": 9.735078805234973
+        }
+      },
+      {
+        "name": "refined-smooth-s2-a5",
+        "coordinate_affine": [
+          [
+            0.31134186467137825,
+            0.6407544223500168,
+            0.04908006576237691,
+            0.009678783962220997
+          ],
+          [
+            -0.2984930775754961,
+            -0.4037436849063551,
+            0.7376423960324899,
+            -0.01889857559408561
+          ],
+          [
+            0.6617319439793292,
+            -0.5460380607301654,
+            -0.16503558533999346,
+            0.07788998547312881
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998767438759505,
+            0.9992098605937421,
+            0.9987149615939874
+          ],
+          [
+            -0.002288680155370628,
+            -0.1290071334945288,
+            0.6416122508489883
+          ],
+          [
+            0.45830121749943153,
+            -0.2313103781498333,
+            0.001273618134252143
+          ],
+          [
+            0.005450534812525073,
+            0.015063043926030561,
+            0.011687780939140961
+          ],
+          [
+            -0.004578788082961667,
+            -0.00462062124159413,
+            -0.01046761989898102
+          ],
+          [
+            -0.01682470891905472,
+            -0.01906315581735466,
+            0.0021797819222665405
+          ],
+          [
+            0.008757535890757383,
+            -0.11260236916934292,
+            0.5660015436705128
+          ],
+          [
+            -0.008487509590691363,
+            -0.13609973321045263,
+            0.6164393012631677
+          ],
+          [
+            -0.01706838435356347,
+            0.2592757979592507,
+            -1.2755199292742556
+          ],
+          [
+            1.360177408146161,
+            -0.7062537149239416,
+            -0.018898954267976557
+          ],
+          [
+            -0.9081414380482112,
+            0.5231254231425435,
+            0.03939796182573382
+          ],
+          [
+            -0.5344449436856301,
+            0.20127433639071277,
+            -0.030308311783007948
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615315730963998,
+          "mae": 2.9980903516929147,
+          "p95": 13.221433726264591
+        },
+        "training": {
+          "rmse": 4.142437795919794,
+          "mae": 2.120585932915274,
+          "p95": 9.735043783167084
+        }
+      },
+      {
+        "name": "refined-matrix-s3-a1",
+        "coordinate_affine": [
+          [
+            0.31164757746103616,
+            0.6429795196154107,
+            0.04840596944030866,
+            0.008408005563271032
+          ],
+          [
+            -0.35039516445254737,
+            -0.409307729060485,
+            0.7996009653397904,
+            -0.034362582830402624
+          ],
+          [
+            0.725870782502012,
+            -0.5672198993242589,
+            -0.25102740518342453,
+            0.11452784988064059
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.001589569853967,
+            1.0021539482866022,
+            1.0025721746560263
+          ],
+          [
+            -0.0036473600839341063,
+            -0.1361423553768362,
+            0.6712449306960565
+          ],
+          [
+            0.5404239534882577,
+            -0.2752625993173236,
+            -0.0003996342095369539
+          ]
+        ],
+        "validation": {
+          "rmse": 5.789374906005622,
+          "mae": 3.2249393818320238,
+          "p95": 13.683264108065764
+        },
+        "training": {
+          "rmse": 4.7012089022590455,
+          "mae": 2.5505515177927305,
+          "p95": 11.308647470152438
+        }
+      },
+      {
+        "name": "refined-matrix-s3-a2",
+        "coordinate_affine": [
+          [
+            0.31002189082395853,
+            0.6406321409739516,
+            0.047425336729519686,
+            0.010773728200235876
+          ],
+          [
+            -0.35033726443861535,
+            -0.4097687177593235,
+            0.7994968425076806,
+            -0.03394210640321512
+          ],
+          [
+            0.7274733764652327,
+            -0.568207265977825,
+            -0.25137340785546886,
+            0.11308501930254476
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.002117382988039,
+            1.0026865395335542,
+            1.0030956773054351
+          ],
+          [
+            -0.003645050061699388,
+            -0.13614141810185074,
+            0.6712564659568946
+          ],
+          [
+            0.5405130834702783,
+            -0.27533515108984524,
+            -0.0004255070756341004
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788991503896186,
+          "mae": 3.225019659980009,
+          "p95": 13.678006634910693
+        },
+        "training": {
+          "rmse": 4.700987568139836,
+          "mae": 2.5506747679378425,
+          "p95": 11.299987554831224
+        }
+      },
+      {
+        "name": "refined-matrix-s3-a3",
+        "coordinate_affine": [
+          [
+            0.30986464853281387,
+            0.6404054950072633,
+            0.047330355301295535,
+            0.011002346084455751
+          ],
+          [
+            -0.35033691743989764,
+            -0.4097698035059417,
+            0.7994960482331104,
+            -0.03394081733360946
+          ],
+          [
+            0.7274760609406642,
+            -0.5682088985206708,
+            -0.2513654256353317,
+            0.11306443048138659
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021681979723922,
+            1.0027378171089474,
+            1.0031460745775516
+          ],
+          [
+            -0.003645041711285615,
+            -0.13614141339272282,
+            0.671256502555328
+          ],
+          [
+            0.5405141486683159,
+            -0.2753361446807576,
+            -0.0004258570148994723
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788967123943846,
+          "mae": 3.2250758301067473,
+          "p95": 13.676733413440123
+        },
+        "training": {
+          "rmse": 4.70097551948178,
+          "mae": 2.5507260998714067,
+          "p95": 11.29989605235413
+        }
+      },
+      {
+        "name": "refined-matrix-s3-a4",
+        "coordinate_affine": [
+          [
+            0.3098490041010257,
+            0.6403822593109233,
+            0.04732181987140235,
+            0.011025183797257745
+          ],
+          [
+            -0.35033691203180545,
+            -0.40976982016330876,
+            0.7994960614418737,
+            -0.033940818540439066
+          ],
+          [
+            0.7274760984023314,
+            -0.5682089364617483,
+            -0.25136531321483463,
+            0.11306417031872935
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021731880338323,
+            1.0027428514525742,
+            1.0031510244401685
+          ],
+          [
+            -0.0036450417321142905,
+            -0.13614141343426112,
+            0.6712565025931193
+          ],
+          [
+            0.5405141622200108,
+            -0.2753361573474506,
+            -0.0004258614838288305
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788964795743029,
+          "mae": 3.2250816548858787,
+          "p95": 13.676603361690718
+        },
+        "training": {
+          "rmse": 4.700974274912657,
+          "mae": 2.5507314084049364,
+          "p95": 11.299892438347245
+        }
+      },
+      {
+        "name": "refined-matrix-s3-a5",
+        "coordinate_affine": [
+          [
+            0.30984750923289006,
+            0.6403800945150264,
+            0.04732093066455653,
+            0.011027359142843984
+          ],
+          [
+            -0.3503369088568398,
+            -0.4097698148715581,
+            0.7994960491904429,
+            -0.03394081569076914
+          ],
+          [
+            0.7274761039398127,
+            -0.5682089416572559,
+            -0.2513653079920306,
+            0.11306416417971932
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021736697923485,
+            1.0027433375805517,
+            1.003151502249586
+          ],
+          [
+            -0.003645041691779897,
+            -0.13614141338582256,
+            0.6712565026863493
+          ],
+          [
+            0.540514162432884,
+            -0.27533615754169644,
+            -0.00042586154677510103
+          ]
+        ],
+        "validation": {
+          "rmse": 5.7889645714155,
+          "mae": 3.2250822248521662,
+          "p95": 13.676591195113886
+        },
+        "training": {
+          "rmse": 4.700974155357803,
+          "mae": 2.550731928690289,
+          "p95": 11.299892372883367
+        }
+      },
+      {
+        "name": "refined-smooth-s3-a1",
+        "coordinate_affine": [
+          [
+            0.31259188143112,
+            0.6430510737485416,
+            0.05079585365138424,
+            0.0068453751761785595
+          ],
+          [
+            -0.2952300913518904,
+            -0.4024934794298569,
+            0.7330921321236039,
+            -0.017959271416698022
+          ],
+          [
+            0.6651289531333193,
+            -0.5487880604126418,
+            -0.1670616958534374,
+            0.08133471865064429
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9993722407676988,
+            0.9987026314140337,
+            0.998208006053928
+          ],
+          [
+            -0.002264936306148326,
+            -0.12900836278490094,
+            0.6417396865356659
+          ],
+          [
+            0.4579751713254855,
+            -0.23106423171467638,
+            0.0013397240324817725
+          ],
+          [
+            0.005781569157001558,
+            0.015378369138341964,
+            0.012084590816301585
+          ],
+          [
+            -0.0042403708701962495,
+            -0.004292361691603917,
+            -0.01013517377614328
+          ],
+          [
+            -0.017630101429342647,
+            -0.019856224070051682,
+            0.0013356388543474024
+          ],
+          [
+            0.008857251893962062,
+            -0.11268591406399368,
+            0.56736996426113
+          ],
+          [
+            -0.008358030764652854,
+            -0.13607169983922554,
+            0.6173171923065266
+          ],
+          [
+            -0.017321322812673394,
+            0.25932037409935005,
+            -1.2778935322258569
+          ],
+          [
+            1.3566285193749918,
+            -0.7041713920454119,
+            -0.01885997245570466
+          ],
+          [
+            -0.9055343689445291,
+            0.5220819421348961,
+            0.039601211687469925
+          ],
+          [
+            -0.5329271011656802,
+            0.19986201663485154,
+            -0.030573922594639556
+          ]
+        ],
+        "validation": {
+          "rmse": 5.61554192585106,
+          "mae": 2.9981218627252675,
+          "p95": 13.220448682747547
+        },
+        "training": {
+          "rmse": 4.142949077706413,
+          "mae": 2.120767823792959,
+          "p95": 9.741498319814541
+        }
+      },
+      {
+        "name": "refined-smooth-s3-a2",
+        "coordinate_affine": [
+          [
+            0.311514002410135,
+            0.6409158224365132,
+            0.04923169510762918,
+            0.009451468289477748
+          ],
+          [
+            -0.29834100351835446,
+            -0.4037059838956869,
+            0.7374277293696485,
+            -0.01883882598786858
+          ],
+          [
+            0.6629659173434244,
+            -0.5473358613405003,
+            -0.16575751475890024,
+            0.07865078922526328
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998300030292818,
+            0.9991626790245149,
+            0.9986680161284699
+          ],
+          [
+            -0.002287471120542697,
+            -0.12900717901108488,
+            0.6416188368996791
+          ],
+          [
+            0.4582434911989957,
+            -0.23126613362727927,
+            0.0012834990360853847
+          ],
+          [
+            0.005469767189631623,
+            0.015082549743119785,
+            0.01171151381322251
+          ],
+          [
+            -0.004587290606402106,
+            -0.004629488634717013,
+            -0.010475367523926681
+          ],
+          [
+            -0.016903168301066536,
+            -0.019142694919298344,
+            0.002098301634044032
+          ],
+          [
+            0.008762263073992317,
+            -0.1126070069899649,
+            0.566069704614631
+          ],
+          [
+            -0.008481702475530267,
+            -0.13609785839931615,
+            0.6164763219005678
+          ],
+          [
+            -0.017080415707509837,
+            0.2592779283121428,
+            -1.2756328995243753
+          ],
+          [
+            1.3592364781681596,
+            -0.7057111443294416,
+            -0.01888388078075122
+          ],
+          [
+            -0.9073852205534737,
+            0.5227808205025501,
+            0.03941240428449092
+          ],
+          [
+            -0.5341141641388116,
+            0.20097217996913036,
+            -0.030354277961754154
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615278065693881,
+          "mae": 2.9980854346393766,
+          "p95": 13.221281443977466
+        },
+        "training": {
+          "rmse": 4.142440442461533,
+          "mae": 2.120559028944614,
+          "p95": 9.735197300403023
+        }
+      },
+      {
+        "name": "refined-smooth-s3-a3",
+        "coordinate_affine": [
+          [
+            0.311356272076833,
+            0.6407681634181707,
+            0.049095215680275334,
+            0.00966025653525826
+          ],
+          [
+            -0.2984852503051633,
+            -0.4037422062993849,
+            0.737631872615168,
+            -0.018895668958713325
+          ],
+          [
+            0.6626705812091713,
+            -0.547135154115865,
+            -0.16544404467765622,
+            0.07837873924018358
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.999872546392381,
+            0.9992056105283182,
+            0.9987107498648725
+          ],
+          [
+            -0.0022886211332146175,
+            -0.12900713584514625,
+            0.6416125753242861
+          ],
+          [
+            0.45826530861604353,
+            -0.2312830442768264,
+            0.001279254377362042
+          ],
+          [
+            0.005451177492512631,
+            0.015063765024057825,
+            0.011688789815094452
+          ],
+          [
+            -0.004580650933453851,
+            -0.004622536878193603,
+            -0.010469410016595128
+          ],
+          [
+            -0.016832377327718702,
+            -0.019070951039861388,
+            0.0021718691214092796
+          ],
+          [
+            0.008757777329880513,
+            -0.11260260250662998,
+            0.5660049670584025
+          ],
+          [
+            -0.008487233266485017,
+            -0.13609963416170742,
+            0.6164410591866268
+          ],
+          [
+            -0.017068974298665992,
+            0.25927590233675857,
+            -1.2755254933667852
+          ],
+          [
+            1.3595246051717018,
+            -0.7058780173659488,
+            -0.018886981228475656
+          ],
+          [
+            -0.907591189294583,
+            0.5228620779635548,
+            0.03939823564476138
+          ],
+          [
+            -0.5342430392647488,
+            0.20109064430362644,
+            -0.030332745816762006
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615272435436921,
+          "mae": 2.998102135257911,
+          "p95": 13.221350113625265
+        },
+        "training": {
+          "rmse": 4.142416287708069,
+          "mae": 2.1205661401396916,
+          "p95": 9.73506009758987
+        }
+      },
+      {
+        "name": "refined-smooth-s3-a4",
+        "coordinate_affine": [
+          [
+            0.3113417505076473,
+            0.640753898405202,
+            0.04907880211723151,
+            0.009679092796157569
+          ],
+          [
+            -0.2984927171971205,
+            -0.4037436247654689,
+            0.7376419083969992,
+            -0.01889842769981947
+          ],
+          [
+            0.661805750844131,
+            -0.546097067566504,
+            -0.16510527506849623,
+            0.07795002731623356
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998769364245409,
+            0.9992100594694486,
+            0.9987151534258574
+          ],
+          [
+            -0.0022886772941677815,
+            -0.1290071336019258,
+            0.6416122664931374
+          ],
+          [
+            0.45829659935374667,
+            -0.2313067902769064,
+            0.0012744865652169989
+          ],
+          [
+            0.0054508457707267656,
+            0.015063338280456336,
+            0.011688083156742187
+          ],
+          [
+            -0.004578449995502432,
+            -0.004620271895849286,
+            -0.010467282604327229
+          ],
+          [
+            -0.01682415051783222,
+            -0.01906258852305159,
+            0.00218034402404208
+          ],
+          [
+            0.00875754714005922,
+            -0.11260238041229095,
+            0.5660017055722195
+          ],
+          [
+            -0.008487496548711773,
+            -0.13609972816475333,
+            0.6164393814748093
+          ],
+          [
+            -0.017068412333495084,
+            0.25927580264664596,
+            -1.2755201910498581
+          ],
+          [
+            1.3601110515298749,
+            -0.7062154072156172,
+            -0.018898138250537613
+          ],
+          [
+            -0.908092310958184,
+            0.5231051216640044,
+            0.03940049797861654
+          ],
+          [
+            -0.5344171196011954,
+            0.20124876838135103,
+            -0.030312766275131204
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615311113885078,
+          "mae": 2.998095244012321,
+          "p95": 13.221423142941644
+        },
+        "training": {
+          "rmse": 4.142436071348841,
+          "mae": 2.1205869156251644,
+          "p95": 9.735036578593801
+        }
+      },
+      {
+        "name": "refined-smooth-s3-a5",
+        "coordinate_affine": [
+          [
+            0.31134042227137226,
+            0.6407523666252095,
+            0.0490768323247006,
+            0.009680894833523334
+          ],
+          [
+            -0.29849307111123236,
+            -0.40374369138321214,
+            0.7376423942785791,
+            -0.01889857123834732
+          ],
+          [
+            0.6617400801657103,
+            -0.5460439848884305,
+            -0.16504404131399872,
+            0.07789713096536044
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998774092858975,
+            0.9992105403067068,
+            0.998715627203025
+          ],
+          [
+            -0.0022886800991809906,
+            -0.12900713350068094,
+            0.6416122511587438
+          ],
+          [
+            0.45830066296927385,
+            -0.23130994656676568,
+            0.0012737246693035069
+          ],
+          [
+            0.005450951249333883,
+            0.015063427736397794,
+            0.011688151443144428
+          ],
+          [
+            -0.004578104222220203,
+            -0.0046199155011375885,
+            -0.010466943687964528
+          ],
+          [
+            -0.01682318451071215,
+            -0.019061606365751174,
+            0.002181333656080699
+          ],
+          [
+            0.00875753611584735,
+            -0.1126023694325185,
+            0.5660015467560412
+          ],
+          [
+            -0.008487509507573474,
+            -0.13609973294452696,
+            0.6164393007605181
+          ],
+          [
+            -0.017068384768909373,
+            0.25927579792568617,
+            -1.2755199326377846
+          ],
+          [
+            1.3601697249608506,
+            -0.7062492769241869,
+            -0.018898866983887375
+          ],
+          [
+            -0.9081358613410123,
+            0.5231231819404258,
+            0.03939830077917275
+          ],
+          [
+            -0.5344416014468076,
+            0.20127125985795102,
+            -0.030308861900903348
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615314808720263,
+          "mae": 2.998091559447447,
+          "p95": 13.22143246097608
+        },
+        "training": {
+          "rmse": 4.142437343550978,
+          "mae": 2.1205863238089573,
+          "p95": 9.73503873529341
+        }
+      },
+      {
+        "name": "refined-matrix-s4-a1",
+        "coordinate_affine": [
+          [
+            0.32944536579806716,
+            0.6684433774005232,
+            0.059695646757557626,
+            -0.01752988930350845
+          ],
+          [
+            -0.35036996345200305,
+            -0.40954467395401517,
+            0.7995562979593085,
+            -0.034150554120096176
+          ],
+          [
+            0.7251221284501369,
+            -0.5668763279540148,
+            -0.2504745126649487,
+            0.11471841004414
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            0.9954804595225897,
+            0.9959917786891118,
+            0.9965102849783289
+          ],
+          [
+            -0.0036462193324359304,
+            -0.1361419159479629,
+            0.6712507212692461
+          ],
+          [
+            0.5404051561870867,
+            -0.2752511618034268,
+            -0.00039537630959352184
+          ]
+        ],
+        "validation": {
+          "rmse": 5.794502689579956,
+          "mae": 3.237061523549352,
+          "p95": 13.594411946392256
+        },
+        "training": {
+          "rmse": 4.706110714273143,
+          "mae": 2.5657466263209394,
+          "p95": 11.316237583759737
+        }
+      },
+      {
+        "name": "refined-matrix-s4-a2",
+        "coordinate_affine": [
+          [
+            0.31185601577002753,
+            0.6432799911648308,
+            0.04853004843939989,
+            0.008105625129739736
+          ],
+          [
+            -0.35033707878060544,
+            -0.4097692703415039,
+            0.7994964456560051,
+            -0.03394146351841096
+          ],
+          [
+            0.7274727093434074,
+            -0.56820695312176,
+            -0.2513747422452153,
+            0.11308887381434361
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.001521846640866,
+            1.0020856170787276,
+            1.0025049997889992
+          ],
+          [
+            -0.003645045873485897,
+            -0.13614141573844962,
+            0.6712564843390746
+          ],
+          [
+            0.5405128840346746,
+            -0.275334966376683,
+            -0.000425442056468122
+          ]
+        ],
+        "validation": {
+          "rmse": 5.78929262326145,
+          "mae": 3.2244804198042814,
+          "p95": 13.689440515182339
+        },
+        "training": {
+          "rmse": 4.701170957838518,
+          "mae": 2.5502404711085744,
+          "p95": 11.30206849421974
+        }
+      },
+      {
+        "name": "refined-matrix-s4-a3",
+        "coordinate_affine": [
+          [
+            0.31004213023041316,
+            0.6406614540471943,
+            0.04743742863452087,
+            0.01074427427409786
+          ],
+          [
+            -0.3503369130008925,
+            -0.409769810457376,
+            0.7994960519923743,
+            -0.033940818434153315
+          ],
+          [
+            0.7274760667459447,
+            -0.568208913477571,
+            -0.25136544219821727,
+            0.11306448181272534
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021108433688273,
+            1.0026799405696598,
+            1.0030891912980129
+          ],
+          [
+            -0.0036450417176247365,
+            -0.1361414134029974,
+            0.671256502574373
+          ],
+          [
+            0.540514146137581,
+            -0.2753361422746653,
+            -0.0004258561750246525
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788994073253609,
+          "mae": 3.2250081078640203,
+          "p95": 13.678170950075696
+        },
+        "training": {
+          "rmse": 4.700990189386137,
+          "mae": 2.5506661543748437,
+          "p95": 11.299896708383296
+        }
+      },
+      {
+        "name": "refined-matrix-s4-a4",
+        "coordinate_affine": [
+          [
+            0.3098667187961707,
+            0.6404086384199638,
+            0.04733138983363262,
+            0.010999315451740327
+          ],
+          [
+            -0.3503369108017852,
+            -0.40976981709130117,
+            0.7994960567705688,
+            -0.03394081808018681
+          ],
+          [
+            0.7274761048094893,
+            -0.5682089416462888,
+            -0.2513653157285615,
+            0.11306417139716782
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021675445260612,
+            1.0027371579876367,
+            1.0031454263054584
+          ],
+          [
+            -0.003645041718221434,
+            -0.13614141341629976,
+            0.6712565026139529
+          ],
+          [
+            0.5405141621937004,
+            -0.2753361572862198,
+            -0.0004258614636163691
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788967421595356,
+          "mae": 3.2250750169560742,
+          "p95": 13.676750969213119
+        },
+        "training": {
+          "rmse": 4.700975694157573,
+          "mae": 2.550725381401029,
+          "p95": 11.299892443346204
+        }
+      },
+      {
+        "name": "refined-matrix-s4-a5",
+        "coordinate_affine": [
+          [
+            0.3098491985648312,
+            0.6403825481104146,
+            0.04732193195953376,
+            0.011024899188870767
+          ],
+          [
+            -0.3503369104133783,
+            -0.40976982064996786,
+            0.7994960585934494,
+            -0.03394081736295319
+          ],
+          [
+            0.7274761004077549,
+            -0.5682089351301275,
+            -0.25136531235673193,
+            0.11306416510437992
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.002173124945405,
+            1.0027427877945987,
+            1.0031509618672492
+          ],
+          [
+            -0.0036450417199711442,
+            -0.13614141342170943,
+            0.6712565026361269
+          ],
+          [
+            0.5405141624171113,
+            -0.27533615752462376,
+            -0.00042586154192791924
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788964825039482,
+          "mae": 3.225081580043988,
+          "p95": 13.676604955035375
+        },
+        "training": {
+          "rmse": 4.7009742910790004,
+          "mae": 2.550731340610954,
+          "p95": 11.29989238602983
+        }
+      },
+      {
+        "name": "refined-smooth-s4-a1",
+        "coordinate_affine": [
+          [
+            0.3198890114106766,
+            0.6601769220887577,
+            0.07127495759678931,
+            -0.003908457198866536
+          ],
+          [
+            -0.2964446820737408,
+            -0.40206361551026204,
+            0.7349394338423547,
+            -0.01926630390111644
+          ],
+          [
+            0.6536083319523195,
+            -0.5391894150131797,
+            -0.15703695421174838,
+            0.07145641421827885
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9944635171078628,
+            0.9936742957422063,
+            0.9932995086651055
+          ],
+          [
+            -0.0022818336998589425,
+            -0.12900898931147545,
+            0.6416520912370255
+          ],
+          [
+            0.4587520186074383,
+            -0.2316671277517127,
+            0.0011886996226991623
+          ],
+          [
+            0.0009543588869991252,
+            0.01091803577748812,
+            0.007512078646791833
+          ],
+          [
+            -0.011759830747324026,
+            -0.011996511351080026,
+            -0.017589389866674823
+          ],
+          [
+            -0.029189550498593494,
+            -0.03167449223260046,
+            -0.010373013523501319
+          ],
+          [
+            0.008812782726444422,
+            -0.11262249544413515,
+            0.5666134628365116
+          ],
+          [
+            -0.008411210424291502,
+            -0.13611806241392393,
+            0.6171382200907857
+          ],
+          [
+            -0.017190709974384058,
+            0.25931602948079,
+            -1.2767862839387072
+          ],
+          [
+            1.3671604454808093,
+            -0.7102882701627198,
+            -0.01898762659925635
+          ],
+          [
+            -0.9133745386169233,
+            0.5253206232983892,
+            0.03916625301166868
+          ],
+          [
+            -0.5373055256029234,
+            0.2039332542704973,
+            -0.029849463993289607
+          ]
+        ],
+        "validation": {
+          "rmse": 5.623036320445432,
+          "mae": 3.0298071527089476,
+          "p95": 13.231331492638727
+        },
+        "training": {
+          "rmse": 4.151599172377928,
+          "mae": 2.157550618730554,
+          "p95": 9.762506832631882
+        }
+      },
+      {
+        "name": "refined-smooth-s4-a2",
+        "coordinate_affine": [
+          [
+            0.31267719844162745,
+            0.6428680460268215,
+            0.052379214380880695,
+            0.007684964484227919
+          ],
+          [
+            -0.2984195755042068,
+            -0.4037130482800224,
+            0.7375354683827896,
+            -0.01887678966149356
+          ],
+          [
+            0.6609719723191122,
+            -0.5454800968921698,
+            -0.16424489152112395,
+            0.07722315731425394
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9992006659334971,
+            0.9985185064222177,
+            0.9980388859163465
+          ],
+          [
+            -0.0022881376892728827,
+            -0.12900716537063897,
+            0.6416152057898624
+          ],
+          [
+            0.45835255773613814,
+            -0.23135040350496233,
+            0.0012637360700938872
+          ],
+          [
+            0.004953423264932998,
+            0.01460289433962339,
+            0.011234929036583408
+          ],
+          [
+            -0.005346297667547307,
+            -0.00541192540184126,
+            -0.01122758215362791
+          ],
+          [
+            -0.018406452239584176,
+            -0.020671965879312176,
+            0.0005721215466741023
+          ],
+          [
+            0.008759774090928178,
+            -0.11260435876466904,
+            0.5660330188290491
+          ],
+          [
+            -0.008484529772206517,
+            -0.13609917331913032,
+            0.6164599173962859
+          ],
+          [
+            -0.017074153545405344,
+            0.2592769746097169,
+            -1.2755748475046522
+          ],
+          [
+            1.360892738931127,
+            -0.7066669606309052,
+            -0.018907102932108448
+          ],
+          [
+            -0.9086615619071375,
+            0.5233347877829496,
+            0.03936669017626081
+          ],
+          [
+            -0.5347551401299618,
+            0.20156030476466405,
+            -0.03025717852419042
+          ]
+        ],
+        "validation": {
+          "rmse": 5.61584616926355,
+          "mae": 2.99805904731321,
+          "p95": 13.221544763306888
+        },
+        "training": {
+          "rmse": 4.142847772420234,
+          "mae": 2.1210682923457873,
+          "p95": 9.744400882863026
+        }
+      },
+      {
+        "name": "refined-smooth-s4-a3",
+        "coordinate_affine": [
+          [
+            0.3115117471535589,
+            0.641008510433008,
+            0.04947921848554862,
+            0.00942809159595383
+          ],
+          [
+            -0.29848958028401346,
+            -0.403742810479138,
+            0.7376374548137034,
+            -0.018897201789173666
+          ],
+          [
+            0.661653686631091,
+            -0.545981953220956,
+            -0.16495357357248214,
+            0.07782093889441705
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9997951260392863,
+            0.9991264361929592,
+            0.9986333335450036
+          ],
+          [
+            -0.0022886523300985704,
+            -0.12900713457201193,
+            0.641612402506137
+          ],
+          [
+            0.45830658949246145,
+            -0.23131456018389832,
+            0.0012725831522772885
+          ],
+          [
+            0.005394909796854686,
+            0.015011664717653875,
+            0.011637663410413817
+          ],
+          [
+            -0.004667159260342895,
+            -0.004711779416245953,
+            -0.010555059542839706
+          ],
+          [
+            -0.017013707767664893,
+            -0.019255339101151316,
+            0.0019875386957812426
+          ],
+          [
+            0.008757644606782496,
+            -0.11260247602687802,
+            0.5660031125972546
+          ],
+          [
+            -0.008487375791910851,
+            -0.1360996902436034,
+            0.6164401547412334
+          ],
+          [
+            -0.01706866129984404,
+            0.2592758473133762,
+            -1.2755225309165854
+          ],
+          [
+            1.3602515746089192,
+            -0.7062965663220643,
+            -0.018899793624247988
+          ],
+          [
+            -0.908195125955726,
+            0.5231469208937961,
+            0.039394633833293544
+          ],
+          [
+            -0.5344773392068692,
+            0.20130416727409964,
+            -0.030302959661454635
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615372006902485,
+          "mae": 2.9980207434872934,
+          "p95": 13.221445466254782
+        },
+        "training": {
+          "rmse": 4.14247511658587,
+          "mae": 2.1205683146272047,
+          "p95": 9.735588288588428
+        }
+      },
+      {
+        "name": "refined-smooth-s4-a4",
+        "coordinate_affine": [
+          [
+            0.3113629749602264,
+            0.6407812500662828,
+            0.049129486853972504,
+            0.009647355956524132
+          ],
+          [
+            -0.29849291802542355,
+            -0.403743656866191,
+            0.7376421774703609,
+            -0.018898508011390713
+          ],
+          [
+            0.6617244779195268,
+            -0.5460327010031769,
+            -0.16502778716561228,
+            0.07788343362024151
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998671650044463,
+            0.9992000812859498,
+            0.998705381172599
+          ],
+          [
+            -0.002288678859967741,
+            -0.12900713354243803,
+            0.6416122579108174
+          ],
+          [
+            0.45830172745986997,
+            -0.23131077508818196,
+            0.0012735200180906245
+          ],
+          [
+            0.005444894994954517,
+            0.015057806342838395,
+            0.011682816437754106
+          ],
+          [
+            -0.004587573054079239,
+            -0.004629719190161499,
+            -0.010476311161317147
+          ],
+          [
+            -0.016847012523041424,
+            -0.019085763414064465,
+            0.0021570740374278574
+          ],
+          [
+            0.008757540892749745,
+            -0.11260237422087159,
+            0.5660016161599191
+          ],
+          [
+            -0.008487503679992667,
+            -0.1360997309427387,
+            0.6164393373968275
+          ],
+          [
+            -0.017068396956430507,
+            0.25927580005003853,
+            -1.2755200468841346
+          ],
+          [
+            1.3601844623582835,
+            -0.7062577906501571,
+            -0.018899034512385334
+          ],
+          [
+            -0.9081465458603123,
+            0.5231274701812405,
+            0.039397646757688164
+          ],
+          [
+            -0.5344480225878413,
+            0.20127717065610548,
+            -0.030307803815702056
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615322203659013,
+          "mae": 2.998080810932432,
+          "p95": 13.221434860314027
+        },
+        "training": {
+          "rmse": 4.142442011025997,
+          "mae": 2.120582364616175,
+          "p95": 9.73510545229334
+        }
+      },
+      {
+        "name": "refined-smooth-s4-a5",
+        "coordinate_affine": [
+          [
+            0.3113430081678996,
+            0.6407559496367982,
+            0.04908252201206422,
+            0.009677125819959023
+          ],
+          [
+            -0.29849308314439493,
+            -0.4037436964171074,
+            0.7376424109419353,
+            -0.018898573408931838
+          ],
+          [
+            0.6617319775919314,
+            -0.5460380834720836,
+            -0.16503561380115786,
+            0.07789000699869338
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998762383545423,
+            0.9992093445717927,
+            0.9987144558394971
+          ],
+          [
+            -0.0022886801712336887,
+            -0.1290071334958564,
+            0.641612250755055
+          ],
+          [
+            0.45830121567407855,
+            -0.23131037673624855,
+            0.0012736184757763515
+          ],
+          [
+            0.0054502486470322685,
+            0.015062780642782587,
+            0.011687530424900859
+          ],
+          [
+            -0.004579274508152887,
+            -0.004621123582915115,
+            -0.010468100521633352
+          ],
+          [
+            -0.016825857048125104,
+            -0.019064321984290287,
+            0.0021786123322703257
+          ],
+          [
+            0.008757535763913037,
+            -0.11260236915570793,
+            0.5660015420831126
+          ],
+          [
+            -0.008487509935011362,
+            -0.13609973299812844,
+            0.6164392975287319
+          ],
+          [
+            -0.017068383936464433,
+            0.2592757977293465,
+            -1.2755199244737088
+          ],
+          [
+            1.3601773809638265,
+            -0.7062536991153215,
+            -0.018898953847711033
+          ],
+          [
+            -0.9081414184133709,
+            0.5231254151331185,
+            0.039397962935334034
+          ],
+          [
+            -0.5344449321671392,
+            0.2012743258340271,
+            -0.030308313645374476
+          ]
+        ],
+        "validation": {
+          "rmse": 5.6153160400744655,
+          "mae": 2.9980898945841274,
+          "p95": 13.221433720474108
+        },
+        "training": {
+          "rmse": 4.142438004260574,
+          "mae": 2.1205857580308156,
+          "p95": 9.735046974521826
+        }
+      },
+      {
+        "name": "refined-matrix-s5-a1",
+        "coordinate_affine": [
+          [
+            0.32512563609125883,
+            0.662284699499221,
+            0.05686330969874056,
+            -0.011221389011500849
+          ],
+          [
+            -0.35025391973209635,
+            -0.4088068292543306,
+            0.799203493433167,
+            -0.034583724474978365
+          ],
+          [
+            0.7264561693898692,
+            -0.5673998161290004,
+            -0.2509221401780085,
+            0.11393819133152486
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            0.9970211879661524,
+            0.9975455292773564,
+            0.9980395318878759
+          ],
+          [
+            -0.0036475555900314614,
+            -0.1361411457662468,
+            0.6712400295377909
+          ],
+          [
+            0.5404454637288774,
+            -0.2752802654195719,
+            -0.0004051987569568296
+          ]
+        ],
+        "validation": {
+          "rmse": 5.792885617261468,
+          "mae": 3.231566449413825,
+          "p95": 13.627248961780401
+        },
+        "training": {
+          "rmse": 4.704372283159934,
+          "mae": 2.5591728613549707,
+          "p95": 11.313234049205645
+        }
+      },
+      {
+        "name": "refined-matrix-s5-a2",
+        "coordinate_affine": [
+          [
+            0.31139204872306053,
+            0.6426099311584914,
+            0.04824975689667742,
+            0.008780884936723523
+          ],
+          [
+            -0.3503373828603369,
+            -0.4097682330616812,
+            0.7994970839123341,
+            -0.03394261714928462
+          ],
+          [
+            0.7274740430901473,
+            -0.5682076531466793,
+            -0.2513714867166387,
+            0.11308004411600447
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0016731554393978,
+            1.002238290144336,
+            1.002655079028522
+          ],
+          [
+            -0.0036450531998136293,
+            -0.1361414196973941,
+            0.6712564515788548
+          ],
+          [
+            0.5405133402460891,
+            -0.2753353905120569,
+            -0.00042559135297600336
+          ]
+        ],
+        "validation": {
+          "rmse": 5.789212280518013,
+          "mae": 3.224589767412911,
+          "p95": 13.691495714106791
+        },
+        "training": {
+          "rmse": 4.701119188820667,
+          "mae": 2.5503133034772296,
+          "p95": 11.301917331918691
+        }
+      },
+      {
+        "name": "refined-matrix-s5-a3",
+        "coordinate_affine": [
+          [
+            0.30999690971503613,
+            0.6405959944653262,
+            0.04741039697187825,
+            0.010810073021049556
+          ],
+          [
+            -0.35033691603565253,
+            -0.4097698068839509,
+            0.7994960599938682,
+            -0.03394082476506896
+          ],
+          [
+            0.7274760761948307,
+            -0.5682089208407354,
+            -0.2513653882291562,
+            0.1130643657738975
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.002125451802888,
+            1.002694681591549,
+            1.0031036799540198
+          ],
+          [
+            -0.003645041763720975,
+            -0.1361414134406241,
+            0.6712565023899134
+          ],
+          [
+            0.5405141519545966,
+            -0.275336147767347,
+            -0.0004258581006617237
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788987173931017,
+          "mae": 3.2250252775595833,
+          "p95": 13.67780376353081
+        },
+        "training": {
+          "rmse": 4.7009864050924115,
+          "mae": 2.5506811678347736,
+          "p95": 11.299895149453162
+        }
+      },
+      {
+        "name": "refined-matrix-s5-a4",
+        "coordinate_affine": [
+          [
+            0.3098621146231832,
+            0.6404016633418927,
+            0.047329059335879935,
+            0.011006055520508231
+          ],
+          [
+            -0.3503369101385721,
+            -0.40976982006031476,
+            0.7994960545365892,
+            -0.03394081520484232
+          ],
+          [
+            0.727476098016959,
+            -0.5682089344052123,
+            -0.25136531137584306,
+            0.11306416734589586
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021690005537418,
+            1.0027386267005647,
+            1.0031468707746667
+          ],
+          [
+            -0.003645041704151671,
+            -0.13614141340525163,
+            0.6712565026887736
+          ],
+          [
+            0.5405141622914662,
+            -0.27533615742365325,
+            -0.0004258615061029037
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788966744720051,
+          "mae": 3.225076722809102,
+          "p95": 13.676712019076678
+        },
+        "training": {
+          "rmse": 4.700975327816357,
+          "mae": 2.5507269265578407,
+          "p95": 11.299892418669204
+        }
+      },
+      {
+        "name": "refined-matrix-s5-a5",
+        "coordinate_affine": [
+          [
+            0.3098487643984355,
+            0.6403819112278873,
+            0.047321675111165015,
+            0.011025534097706622
+          ],
+          [
+            -0.3503369164829656,
+            -0.40976980951138037,
+            0.7994960520447298,
+            -0.03394081590951322
+          ],
+          [
+            0.7274761098936232,
+            -0.5682089469052921,
+            -0.25136530455212536,
+            0.11306416116091533
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            1.0021732656266802,
+            1.0027429297515096,
+            1.0031511013954266
+          ],
+          [
+            -0.0036450417080736864,
+            -0.13614141340274138,
+            0.6712565026081583
+          ],
+          [
+            0.5405141624857891,
+            -0.2753361575810286,
+            -0.0004258615551460496
+          ]
+        ],
+        "validation": {
+          "rmse": 5.788964759666004,
+          "mae": 3.2250817462414143,
+          "p95": 13.676601403651778
+        },
+        "training": {
+          "rmse": 4.70097425590844,
+          "mae": 2.5507314921648794,
+          "p95": 11.299892349779542
+        }
+      },
+      {
+        "name": "refined-smooth-s5-a1",
+        "coordinate_affine": [
+          [
+            0.32085493655407343,
+            0.6539556177364896,
+            0.06906926032338484,
+            -0.003873218580182779
+          ],
+          [
+            -0.2963025247144182,
+            -0.4020159041331735,
+            0.7341511964959128,
+            -0.018590080507933517
+          ],
+          [
+            0.6561235913464714,
+            -0.5412733208120128,
+            -0.15860944983497077,
+            0.07336066505019995
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9954325224948475,
+            0.9946770725260586,
+            0.99426742368789
+          ],
+          [
+            -0.002273808930618786,
+            -0.12900851035909877,
+            0.6416914427488588
+          ],
+          [
+            0.4585916510760304,
+            -0.2315418345828562,
+            0.001222132116944402
+          ],
+          [
+            0.0028568883451935913,
+            0.012676258184756092,
+            0.009383549349536516
+          ],
+          [
+            -0.009081168848574309,
+            -0.009255376714697465,
+            -0.014917757944434444
+          ],
+          [
+            -0.026895967032827203,
+            -0.02929711368639764,
+            -0.00807234182136278
+          ],
+          [
+            0.008822428505770348,
+            -0.11264789298672014,
+            0.5668781253720812
+          ],
+          [
+            -0.008382047393910911,
+            -0.1361013246240812,
+            0.6172414444547211
+          ],
+          [
+            -0.01724712750034686,
+            0.25931752791324547,
+            -1.277238179329904
+          ],
+          [
+            1.3649909878417277,
+            -0.7090176358853907,
+            -0.0189544836972991
+          ],
+          [
+            -0.9117279652181296,
+            0.5246384895074996,
+            0.039260676768586626
+          ],
+          [
+            -0.536468054979551,
+            0.20312951977147464,
+            -0.029998606045291525
+          ]
+        ],
+        "validation": {
+          "rmse": 5.6207368387305685,
+          "mae": 3.0176396431218206,
+          "p95": 13.237704438713017
+        },
+        "training": {
+          "rmse": 4.148578575703917,
+          "mae": 2.1440739144697405,
+          "p95": 9.760411337744337
+        }
+      },
+      {
+        "name": "refined-smooth-s5-a2",
+        "coordinate_affine": [
+          [
+            0.31250784453600305,
+            0.6424203525331834,
+            0.05162029441808575,
+            0.007985609873537884
+          ],
+          [
+            -0.298389526258576,
+            -0.4037092829884577,
+            0.7374926649137824,
+            -0.018861506179986314
+          ],
+          [
+            0.6612094519532956,
+            -0.5456527442212269,
+            -0.16448790823779133,
+            0.07743207181473716
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9993419392315787,
+            0.9986637269955498,
+            0.9981799245266217
+          ],
+          [
+            -0.0022878713604093373,
+            -0.12900717037465226,
+            0.6416166485546163
+          ],
+          [
+            0.4583362954640915,
+            -0.231337727891011,
+            0.001266894499352701
+          ],
+          [
+            0.005124228395973807,
+            0.014762919328714848,
+            0.011398222191869116
+          ],
+          [
+            -0.005128249111452283,
+            -0.005187270925980868,
+            -0.011010770105301352
+          ],
+          [
+            -0.018041068741515103,
+            -0.020299846520370715,
+            0.0009413844790410216
+          ],
+          [
+            0.008760733109536187,
+            -0.11260539890985312,
+            0.5660473733281944
+          ],
+          [
+            -0.008483383414252397,
+            -0.1360986680328194,
+            0.6164665711456991
+          ],
+          [
+            -0.01707664165102081,
+            0.2592773544194835,
+            -1.2755978399269792
+          ],
+          [
+            1.3606684464480365,
+            -0.7065372560980473,
+            -0.018904523670837604
+          ],
+          [
+            -0.9084985668560976,
+            0.5232693827041789,
+            0.03937674901184758
+          ],
+          [
+            -0.5346579859218131,
+            0.2014705218884183,
+            -0.030273341826307348
+          ]
+        ],
+        "validation": {
+          "rmse": 5.6157138759640715,
+          "mae": 2.997924132160013,
+          "p95": 13.221501906746582
+        },
+        "training": {
+          "rmse": 4.142741178073124,
+          "mae": 2.1207972034199063,
+          "p95": 9.742682440781667
+        }
+      },
+      {
+        "name": "refined-smooth-s5-a3",
+        "coordinate_affine": [
+          [
+            0.3114798933125771,
+            0.6409525594550889,
+            0.04938285953000406,
+            0.009477956260415634
+          ],
+          [
+            -0.29848804406285895,
+            -0.40374252749861195,
+            0.7376353114318436,
+            -0.01889654305142404
+          ],
+          [
+            0.661678497883645,
+            -0.5459997083101188,
+            -0.16497955662524835,
+            0.07784282968323956
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998135076323539,
+            0.9991452712424539,
+            0.9986517013481349
+          ],
+          [
+            -0.0022886397972855512,
+            -0.1290071349652689,
+            0.6416124708448714
+          ],
+          [
+            0.45830488481823667,
+            -0.23131323307397478,
+            0.001272911839031996
+          ],
+          [
+            0.0054115058930271,
+            0.015027144108492712,
+            0.011653120184752844
+          ],
+          [
+            -0.004644127429536363,
+            -0.004688017160209228,
+            -0.010532210887051849
+          ],
+          [
+            -0.016968707393278118,
+            -0.019209578021574792,
+            0.0020331787051127027
+          ],
+          [
+            0.008757692712586102,
+            -0.1126025249476925,
+            0.5660038129322289
+          ],
+          [
+            -0.008487318545170824,
+            -0.13609966862093212,
+            0.6164405071891681
+          ],
+          [
+            -0.01706878311421516,
+            0.25927586782520845,
+            -1.2755236696984937
+          ],
+          [
+            1.3602280564183944,
+            -0.706282976801966,
+            -0.018899527210293397
+          ],
+          [
+            -0.9081781053957734,
+            0.5231401085232831,
+            0.039395691963532924
+          ],
+          [
+            -0.5344670649485297,
+            0.20129470448056652,
+            -0.0303046585848708
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615358448964924,
+          "mae": 2.9980344959509253,
+          "p95": 13.221441353000985
+        },
+        "training": {
+          "rmse": 4.142466393274013,
+          "mae": 2.1205701615052974,
+          "p95": 9.735455786780205
+        }
+      },
+      {
+        "name": "refined-smooth-s5-a4",
+        "coordinate_affine": [
+          [
+            0.3113579605543745,
+            0.6407750272738385,
+            0.04911592021893743,
+            0.009655190355431359
+          ],
+          [
+            -0.2984928434336864,
+            -0.4037436471469264,
+            0.7376420781397973,
+            -0.018898476148050458
+          ],
+          [
+            0.6617271261571352,
+            -0.5460346060860046,
+            -0.16503053218345398,
+            0.07788573598253168
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998696021399445,
+            0.9992025710471645,
+            0.9987078174615075
+          ],
+          [
+            -0.0022886782599996175,
+            -0.12900713356471363,
+            0.6416122611899218
+          ],
+          [
+            0.458301548050623,
+            -0.23131063545900787,
+            0.0012735544927025882
+          ],
+          [
+            0.0054464982738896064,
+            0.015059312385895238,
+            0.011684249985752862
+          ],
+          [
+            -0.004585390172077215,
+            -0.004627450368124723,
+            -0.01047414625934826
+          ],
+          [
+            -0.01684111849787522,
+            -0.019079802406360587,
+            0.002163068011727568
+          ],
+          [
+            0.008757543232760108,
+            -0.11260237659282668,
+            0.5660016499278973
+          ],
+          [
+            -0.008487501017811388,
+            -0.1360997298232839,
+            0.6164393533666809
+          ],
+          [
+            -0.017068402752992765,
+            0.2592758009818974,
+            -1.27552010090247
+          ],
+          [
+            1.360181973481755,
+            -0.7062563524789622,
+            -0.01889900590754587
+          ],
+          [
+            -0.9081447426089898,
+            0.5231267465158483,
+            0.039397757204334895
+          ],
+          [
+            -0.5344469382461711,
+            0.20127617261765926,
+            -0.03030798247769151
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615320472506846,
+          "mae": 2.998083372814917,
+          "p95": 13.221434441402284
+        },
+        "training": {
+          "rmse": 4.142440913537584,
+          "mae": 2.12058330537723,
+          "p95": 9.735089334083236
+        }
+      },
+      {
+        "name": "refined-smooth-s5-a5",
+        "coordinate_affine": [
+          [
+            0.31134236391902365,
+            0.6407550666977019,
+            0.04908106058460295,
+            0.009678071897196886
+          ],
+          [
+            -0.2984930739320922,
+            -0.40374369317120123,
+            0.7376424008935981,
+            -0.01889857476403606
+          ],
+          [
+            0.6617322554011095,
+            -0.5460382891576483,
+            -0.1650359006898215,
+            0.07789025175612334
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            0.9998765333188415,
+            0.9992096458212212,
+            0.9987147508797594
+          ],
+          [
+            -0.0022886801529868267,
+            -0.12900713349956697,
+            0.6416122508871368
+          ],
+          [
+            0.45830119673499486,
+            -0.23131036199873933,
+            0.0012736221110357976
+          ],
+          [
+            0.00545042956191431,
+            0.015062947753549105,
+            0.011687690854994963
+          ],
+          [
+            -0.0045789815650293395,
+            -0.00462082097784651,
+            -0.010467810828434794
+          ],
+          [
+            -0.016825177854087475,
+            -0.019063632221566644,
+            0.002179303746379719
+          ],
+          [
+            0.00875753600383819,
+            -0.11260236926127808,
+            0.5660015445961767
+          ],
+          [
+            -0.008487509753515669,
+            -0.13609973302589065,
+            0.6164392995100832
+          ],
+          [
+            -0.017068384318160077,
+            0.25927579787477917,
+            -1.275519928755962
+          ],
+          [
+            1.3601771184240807,
+            -0.706253547506625,
+            -0.018898950874305726
+          ],
+          [
+            -0.9081412272956492,
+            0.5231253380936713,
+            0.03939797437447646
+          ],
+          [
+            -0.5344448184182665,
+            0.20127422111270524,
+            -0.03030833232989576
+          ]
+        ],
+        "validation": {
+          "rmse": 5.615315840096288,
+          "mae": 2.9980901842120975,
+          "p95": 13.221433678238336
+        },
+        "training": {
+          "rmse": 4.142437876145746,
+          "mae": 2.1205858647879983,
+          "p95": 9.735045054143239
+        }
+      }
+    ],
+    "acceptance": "empirical fit only; held-out image errors do not establish unique ISP recovery",
+    "repeat_zero_checks": []
+  },
+  "provenance": [
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 1485,
+      "rejected": 1267,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "36321f7117b88582d8ad12d0c552efec606b899a214bbce8a29a9ff0f7d2ef0e",
+        "851a0bd6028cfdff42c1c15f9be9d2f940b7d94b369aca32025172fe08151107"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "19f0ad58a61947fe8429cb3138087a5e",
+      "name": "网格推断 / RAMP1",
+      "role": "train",
+      "entry_number": 8,
+      "short_name": "RAMP1",
+      "full_name": "坐标方向1渐变",
+      "bin_sha256": "255e58f144fa57c53b321cf0f4c338318a9588e3938fd254cb03ea08a39af6a1",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "0ce71ba0e51fbf685cb4683f5ffd976f55cd922038e5dc17b18db354ab416181",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "2ab40c64373546579cbbddd04484483e",
+      "set_id": "2974fc5268744a5697ef9b0eacf23ce5",
+      "probe_number": 8
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 1598,
+      "rejected": 1154,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "36321f7117b88582d8ad12d0c552efec606b899a214bbce8a29a9ff0f7d2ef0e",
+        "b5bd0b3c7f3b38e107f606c79d4b53357846258452c0e463a171c54d160eb048"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "3b5ad231671144f781b2a62cf609e9a7",
+      "name": "网格推断 / C3+",
+      "role": "train",
+      "entry_number": 6,
+      "short_name": "C3+",
+      "full_name": "通道3 正偏移",
+      "bin_sha256": "255e58f144fa57c53b321cf0f4c338318a9588e3938fd254cb03ea08a39af6a1",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "0ce71ba0e51fbf685cb4683f5ffd976f55cd922038e5dc17b18db354ab416181",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "2ab40c64373546579cbbddd04484483e",
+      "set_id": "2974fc5268744a5697ef9b0eacf23ce5",
+      "probe_number": 6
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 1528,
+      "rejected": 1224,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "36321f7117b88582d8ad12d0c552efec606b899a214bbce8a29a9ff0f7d2ef0e",
+        "c82f77746280cd0fa98069b92332e7a12b38528bd76acb16594eb258e853c2d5"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "44d458e94cd5403c9e4ea1a1f65a0034",
+      "name": "网格推断 / C2+",
+      "role": "train",
+      "entry_number": 4,
+      "short_name": "C2+",
+      "full_name": "通道2 正偏移",
+      "bin_sha256": "255e58f144fa57c53b321cf0f4c338318a9588e3938fd254cb03ea08a39af6a1",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "0ce71ba0e51fbf685cb4683f5ffd976f55cd922038e5dc17b18db354ab416181",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "2ab40c64373546579cbbddd04484483e",
+      "set_id": "2974fc5268744a5697ef9b0eacf23ce5",
+      "probe_number": 4
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 1496,
+      "rejected": 1256,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "36321f7117b88582d8ad12d0c552efec606b899a214bbce8a29a9ff0f7d2ef0e",
+        "c3c89e7e10898453569f446c121e4952c21e175f3d39b4021b802d8e61191b6e"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "49430e125f3b4c35999de3bc36e24621",
+      "name": "网格推断 / C1+",
+      "role": "train",
+      "entry_number": 2,
+      "short_name": "C1+",
+      "full_name": "通道1 正偏移",
+      "bin_sha256": "255e58f144fa57c53b321cf0f4c338318a9588e3938fd254cb03ea08a39af6a1",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "0ce71ba0e51fbf685cb4683f5ffd976f55cd922038e5dc17b18db354ab416181",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "2ab40c64373546579cbbddd04484483e",
+      "set_id": "2974fc5268744a5697ef9b0eacf23ce5",
+      "probe_number": 2
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 1629,
+      "rejected": 1123,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "36321f7117b88582d8ad12d0c552efec606b899a214bbce8a29a9ff0f7d2ef0e",
+        "926a18a59002e55c9ed81c4bb0550e52bb89b77b3fdcb9efc05f39a9cfdc82f5"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "56e30a3d48764e62972c8f7c0a9df9cc",
+      "name": "网格推断 / WAVE",
+      "role": "test",
+      "entry_number": 12,
+      "short_name": "WAVE",
+      "full_name": "交叉波形（留出测试）",
+      "bin_sha256": "255e58f144fa57c53b321cf0f4c338318a9588e3938fd254cb03ea08a39af6a1",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "0ce71ba0e51fbf685cb4683f5ffd976f55cd922038e5dc17b18db354ab416181",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "2ab40c64373546579cbbddd04484483e",
+      "set_id": "2974fc5268744a5697ef9b0eacf23ce5",
+      "probe_number": 12
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 1566,
+      "rejected": 1186,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "36321f7117b88582d8ad12d0c552efec606b899a214bbce8a29a9ff0f7d2ef0e",
+        "05247e922e997422cdaa968c8da735884bf470535765fba605602cffca42c16c"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "5d01c65ed48f4e2c8f976ee24b6e7a85",
+      "name": "网格推断 / RAMP3",
+      "role": "train",
+      "entry_number": 10,
+      "short_name": "RAMP3",
+      "full_name": "坐标方向3渐变",
+      "bin_sha256": "255e58f144fa57c53b321cf0f4c338318a9588e3938fd254cb03ea08a39af6a1",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "0ce71ba0e51fbf685cb4683f5ffd976f55cd922038e5dc17b18db354ab416181",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "2ab40c64373546579cbbddd04484483e",
+      "set_id": "2974fc5268744a5697ef9b0eacf23ce5",
+      "probe_number": 10
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 1664,
+      "rejected": 1088,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "36321f7117b88582d8ad12d0c552efec606b899a214bbce8a29a9ff0f7d2ef0e",
+        "9c65a5ee49252cae520895e649495390d7694259ffa04e588f2d63d8b966656d"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "9362ea9d6f1d44a6a257edce85b395b6",
+      "name": "网格推断 / ORIGINAL",
+      "role": "test",
+      "entry_number": 11,
+      "short_name": "ORIGINAL",
+      "full_name": "原配置网格（留出测试）",
+      "bin_sha256": "255e58f144fa57c53b321cf0f4c338318a9588e3938fd254cb03ea08a39af6a1",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "0ce71ba0e51fbf685cb4683f5ffd976f55cd922038e5dc17b18db354ab416181",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "2ab40c64373546579cbbddd04484483e",
+      "set_id": "2974fc5268744a5697ef9b0eacf23ce5",
+      "probe_number": 11
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 1614,
+      "rejected": 1138,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "36321f7117b88582d8ad12d0c552efec606b899a214bbce8a29a9ff0f7d2ef0e",
+        "3f1443371d25429eb5ef8fa4ed1e43808d5b82c5cc9d13b6685518eaab07b0c6"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "9c2e26118f554b48ad83ff04e21abdd8",
+      "name": "网格推断 / C3-",
+      "role": "train",
+      "entry_number": 7,
+      "short_name": "C3-",
+      "full_name": "通道3 负偏移",
+      "bin_sha256": "255e58f144fa57c53b321cf0f4c338318a9588e3938fd254cb03ea08a39af6a1",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "0ce71ba0e51fbf685cb4683f5ffd976f55cd922038e5dc17b18db354ab416181",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "2ab40c64373546579cbbddd04484483e",
+      "set_id": "2974fc5268744a5697ef9b0eacf23ce5",
+      "probe_number": 7
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 1631,
+      "rejected": 1121,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "36321f7117b88582d8ad12d0c552efec606b899a214bbce8a29a9ff0f7d2ef0e",
+        "f125f59fe8d495057eaa538165966b23ab2b2636d5b3b6330a1f00a00ef66824"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "a1f0c8a3334e4475b9e7584db0644344",
+      "name": "网格推断 / C2-",
+      "role": "train",
+      "entry_number": 5,
+      "short_name": "C2-",
+      "full_name": "通道2 负偏移",
+      "bin_sha256": "255e58f144fa57c53b321cf0f4c338318a9588e3938fd254cb03ea08a39af6a1",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "0ce71ba0e51fbf685cb4683f5ffd976f55cd922038e5dc17b18db354ab416181",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "2ab40c64373546579cbbddd04484483e",
+      "set_id": "2974fc5268744a5697ef9b0eacf23ce5",
+      "probe_number": 5
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 1601,
+      "rejected": 1151,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "36321f7117b88582d8ad12d0c552efec606b899a214bbce8a29a9ff0f7d2ef0e",
+        "a9de7cd881169fb6b7807dce26a1c6c7246b68b6843f11ed0fdadafee55e2641"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "ee571605c6a6499eae3d440ecabec714",
+      "name": "网格推断 / RAMP2",
+      "role": "train",
+      "entry_number": 9,
+      "short_name": "RAMP2",
+      "full_name": "坐标方向2渐变",
+      "bin_sha256": "255e58f144fa57c53b321cf0f4c338318a9588e3938fd254cb03ea08a39af6a1",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "0ce71ba0e51fbf685cb4683f5ffd976f55cd922038e5dc17b18db354ab416181",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "2ab40c64373546579cbbddd04484483e",
+      "set_id": "2974fc5268744a5697ef9b0eacf23ce5",
+      "probe_number": 9
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 1686,
+      "rejected": 1066,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "36321f7117b88582d8ad12d0c552efec606b899a214bbce8a29a9ff0f7d2ef0e",
+        "c20e8fa11a536ceb5cef835d713e93d72b505ead348840af155ebdfcfdd3ba22"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "f025b07752fe4ee08dc50d191ebb3a88",
+      "name": "网格推断 / C1-",
+      "role": "train",
+      "entry_number": 3,
+      "short_name": "C1-",
+      "full_name": "通道1 负偏移",
+      "bin_sha256": "255e58f144fa57c53b321cf0f4c338318a9588e3938fd254cb03ea08a39af6a1",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "0ce71ba0e51fbf685cb4683f5ffd976f55cd922038e5dc17b18db354ab416181",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "2ab40c64373546579cbbddd04484483e",
+      "set_id": "2974fc5268744a5697ef9b0eacf23ce5",
+      "probe_number": 3
+    }
+  ],
+  "scope": "sRGB encoded paired-image empirical model, baseline=identical non-grid parameters plus zero grid; no unique ISP identification"
+}

@@ -1,0 +1,1011 @@
+{
+  "name": "refined-smooth",
+  "coordinate_affine": [
+    [
+      0.32799029739522506,
+      0.6622838709500606,
+      0.11132055650053563,
+      -0.051688595406754176
+    ],
+    [
+      -0.18996201456208098,
+      -0.37342185951426093,
+      0.573248423435036,
+      0.006393282925137921
+    ],
+    [
+      0.565709569283369,
+      -0.4835131256485794,
+      -0.10048591744021906,
+      -0.009538698771521114
+    ]
+  ],
+  "smooth": true,
+  "response_weights": [
+    [
+      1.0243505164278237,
+      1.0067624099282024,
+      1.0014702978755161
+    ],
+    [
+      0.014152236416891775,
+      -0.08851582548240242,
+      0.5520817695958534
+    ],
+    [
+      0.43265831093315593,
+      -0.2057363285909879,
+      0.004700124098466876
+    ],
+    [
+      0.042780904437216015,
+      -0.028537449259632332,
+      -0.09563445016854444
+    ],
+    [
+      0.06811351815624064,
+      0.03552006039270279,
+      0.06850763961840226
+    ],
+    [
+      0.05808462266258806,
+      0.07868832467084248,
+      0.12987984241906075
+    ],
+    [
+      0.03825348074250173,
+      -0.013957726051215784,
+      0.13666399410119495
+    ],
+    [
+      -0.004931052014325464,
+      0.01893508973398101,
+      -0.02083824081102029
+    ],
+    [
+      -0.0404427363494163,
+      0.016284117933991878,
+      -0.0876223930424622
+    ],
+    [
+      0.48254682634778917,
+      -0.21201090737269862,
+      -0.0004966659033176092
+    ],
+    [
+      -0.16874602572703412,
+      0.0973431197058504,
+      0.003964020772892693
+    ],
+    [
+      -0.36359173198892947,
+      0.17009185914428931,
+      0.0003590921424801265
+    ]
+  ],
+  "schema": "r5-grid-response-calibration/1",
+  "report": {
+    "selected_model": "refined-smooth",
+    "training": {
+      "rmse": 1.9640275310179764,
+      "mae": 1.0894645507073921,
+      "p95": 3.9680495167110825
+    },
+    "validation": {
+      "rmse": 2.3254650921769713,
+      "mae": 1.2042074123134792,
+      "p95": 4.276166415122252
+    },
+    "test": {
+      "rmse": 1.9158062958451314,
+      "mae": 1.4197526716023847,
+      "p95": 3.3541622774786837
+    },
+    "baseline_test": {
+      "rmse": 9.22816896659821,
+      "mae": 7.1674287000752965,
+      "p95": 20.193521321346882
+    },
+    "legacy_identity_test": {
+      "rmse": 15.217058974815924,
+      "mae": 11.318315825232448,
+      "p95": 28.790068701463156
+    },
+    "counts": {
+      "train": 15405,
+      "validation": 4578,
+      "test": 7088,
+      "pairs": 11
+    },
+    "per_pair": [
+      {
+        "name": "网格推断 / C1+",
+        "role": "train",
+        "samples": 2479,
+        "predicted": {
+          "rmse": 1.849426559270447,
+          "mae": 0.8684546899075269,
+          "p95": 4.592203967357052
+        },
+        "baseline": {
+          "rmse": 19.66203250355274,
+          "mae": 19.57669213681484,
+          "p95": 20.83328780801917
+        }
+      },
+      {
+        "name": "网格推断 / WAVE",
+        "role": "test",
+        "samples": 2503,
+        "predicted": {
+          "rmse": 2.497031499576075,
+          "mae": 2.0397183598577104,
+          "p95": 3.780474390496576
+        },
+        "baseline": {
+          "rmse": 10.660480178613115,
+          "mae": 8.701252760117127,
+          "p95": 21.405643513794264
+        }
+      },
+      {
+        "name": "网格推断 / C3-",
+        "role": "train",
+        "samples": 2474,
+        "predicted": {
+          "rmse": 1.7997028593588285,
+          "mae": 1.1092911773511704,
+          "p95": 3.719829093550693
+        },
+        "baseline": {
+          "rmse": 6.330946241795194,
+          "mae": 4.885339104232971,
+          "p95": 10.43194105714692
+        }
+      },
+      {
+        "name": "网格推断 / C2+",
+        "role": "train",
+        "samples": 2497,
+        "predicted": {
+          "rmse": 1.1096090389868563,
+          "mae": 0.7954567205878463,
+          "p95": 1.7254047404082347
+        },
+        "baseline": {
+          "rmse": 6.753760464973039,
+          "mae": 4.783074773492834,
+          "p95": 11.708561677253538
+        }
+      },
+      {
+        "name": "网格推断 / C3+",
+        "role": "train",
+        "samples": 2469,
+        "predicted": {
+          "rmse": 2.3210556099912725,
+          "mae": 1.4122492141367113,
+          "p95": 4.769690519547025
+        },
+        "baseline": {
+          "rmse": 5.543631904038342,
+          "mae": 4.336239817862127,
+          "p95": 8.996527068429547
+        }
+      },
+      {
+        "name": "网格推断 / RAMP2",
+        "role": "train",
+        "samples": 2448,
+        "predicted": {
+          "rmse": 3.576855428105812,
+          "mae": 1.8205674342168436,
+          "p95": 7.425551234883629
+        },
+        "baseline": {
+          "rmse": 3.6166028935985457,
+          "mae": 1.855579874068943,
+          "p95": 7.501088734208506
+        }
+      },
+      {
+        "name": "网格推断 / RAMP3",
+        "role": "train",
+        "samples": 2485,
+        "predicted": {
+          "rmse": 1.8318851158090534,
+          "mae": 1.2569599920331358,
+          "p95": 3.9029017343985686
+        },
+        "baseline": {
+          "rmse": 2.0444947795716564,
+          "mae": 1.3696241022822173,
+          "p95": 4.067463072843574
+        }
+      },
+      {
+        "name": "网格推断 / ORIGINAL",
+        "role": "test",
+        "samples": 2483,
+        "predicted": {
+          "rmse": 1.5325266559815347,
+          "mae": 1.2542291569593726,
+          "p95": 2.7191699436609698
+        },
+        "baseline": {
+          "rmse": 5.668326152503543,
+          "mae": 5.249228009197938,
+          "p95": 8.13152379750313
+        }
+      },
+      {
+        "name": "网格推断 / RAMP1",
+        "role": "train",
+        "samples": 2394,
+        "predicted": {
+          "rmse": 1.8166237881439813,
+          "mae": 0.9538123856829798,
+          "p95": 4.146478304495166
+        },
+        "baseline": {
+          "rmse": 9.906320753688332,
+          "mae": 9.29366348851328,
+          "p95": 15.59126925261781
+        }
+      },
+      {
+        "name": "网格推断 / C1-",
+        "role": "train",
+        "samples": 2403,
+        "predicted": {
+          "rmse": 0.730739910501466,
+          "mae": 0.5611452598424239,
+          "p95": 1.0251394373282658
+        },
+        "baseline": {
+          "rmse": 20.085120594238678,
+          "mae": 20.053729242275384,
+          "p95": 20.51054647599839
+        }
+      },
+      {
+        "name": "网格推断 / C2-",
+        "role": "train",
+        "samples": 2436,
+        "predicted": {
+          "rmse": 1.7008310476133273,
+          "mae": 1.049698670825817,
+          "p95": 3.908969684413078
+        },
+        "baseline": {
+          "rmse": 6.290179286355588,
+          "mae": 4.367184435676391,
+          "p95": 10.62555541369581
+        }
+      }
+    ],
+    "coordinate_coverage": {
+      "occupied_cells": 14,
+      "total_cells": 256,
+      "fraction": 0.0546875,
+      "coordinate_min": [
+        -0.016425929508312807,
+        -0.17946869090959022,
+        -0.10541198073710761
+      ],
+      "coordinate_max": [
+        0.6956278760538677,
+        0.10251356351940846,
+        0.19563561542640992
+      ]
+    },
+    "excitation_rank": 3,
+    "singular_values": [
+      4.839509386154836,
+      4.596133781641063,
+      4.5879605131765215
+    ],
+    "warnings": [
+      "训练颜色覆盖少于四分之一网格单元，未覆盖区域仍是外推"
+    ],
+    "coordinate_note": "有界仿射局部拟合，不证明ISP内部坐标；可能存在等价解",
+    "observed_change_rmse": 10.447246000324064,
+    "candidates": [
+      {
+        "name": "fixed-matrix",
+        "coordinate_affine": [
+          [
+            0.3481506849315068,
+            0.6834931506849315,
+            0.13273972602739725,
+            -0.0730593607305936
+          ],
+          [
+            -0.1920877337955498,
+            -0.3771086947758787,
+            0.5691964285714286,
+            0.0
+          ],
+          [
+            0.5691964285714286,
+            -0.47663096087222334,
+            -0.09256546769920523,
+            0.0
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            0.9874235614377617,
+            0.98944271384529,
+            0.9818126344519574
+          ],
+          [
+            0.015133090061879802,
+            -0.0927221654171076,
+            0.5451152439304526
+          ],
+          [
+            0.4346689875556244,
+            -0.21476668155738116,
+            0.0036192659446447153
+          ]
+        ],
+        "validation": {
+          "rmse": 2.361105287683563,
+          "mae": 1.2302716641481921,
+          "p95": 4.348296601250452
+        },
+        "training": {
+          "rmse": 2.0191493243731906,
+          "mae": 1.120990152810073,
+          "p95": 4.064804905755983
+        }
+      },
+      {
+        "name": "fixed-smooth",
+        "coordinate_affine": [
+          [
+            0.3481506849315068,
+            0.6834931506849315,
+            0.13273972602739725,
+            -0.0730593607305936
+          ],
+          [
+            -0.1920877337955498,
+            -0.3771086947758787,
+            0.5691964285714286,
+            0.0
+          ],
+          [
+            0.5691964285714286,
+            -0.47663096087222334,
+            -0.09256546769920523,
+            0.0
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            1.0284556950527455,
+            1.0109242253314161,
+            1.0056727548865476
+          ],
+          [
+            0.015109458571917011,
+            -0.08779935808144472,
+            0.5524656593054421
+          ],
+          [
+            0.4313812273738381,
+            -0.20695817147350518,
+            0.004131147029515268
+          ],
+          [
+            0.05335620560336659,
+            -0.01826652555652609,
+            -0.08562018450897069
+          ],
+          [
+            0.07765002476376652,
+            0.04518841913784248,
+            0.07842548660388027
+          ],
+          [
+            0.06766089134036254,
+            0.08890841364798636,
+            0.14034288480499577
+          ],
+          [
+            0.03813469062910281,
+            -0.014522924323256959,
+            0.13677381078868509
+          ],
+          [
+            -0.0039236578513618114,
+            0.01989012179458228,
+            -0.020182347725542324
+          ],
+          [
+            -0.03852365207655902,
+            0.017999133486649315,
+            -0.08707365711205653
+          ],
+          [
+            0.483431205176326,
+            -0.21302107516559105,
+            -0.0002785399356140404
+          ],
+          [
+            -0.17042035500684413,
+            0.09656608589871728,
+            0.0033161758589597195
+          ],
+          [
+            -0.3662793160293044,
+            0.1693986491666256,
+            -0.0006213533340100263
+          ]
+        ],
+        "validation": {
+          "rmse": 2.3369313527826816,
+          "mae": 1.226122821705196,
+          "p95": 4.287456392726276
+        },
+        "training": {
+          "rmse": 1.975809898764882,
+          "mae": 1.1076188598661232,
+          "p95": 3.985119744571997
+        }
+      },
+      {
+        "name": "refined-matrix",
+        "coordinate_affine": [
+          [
+            0.32799029739522506,
+            0.6622838709500606,
+            0.11132055650053563,
+            -0.051688595406754176
+          ],
+          [
+            -0.18996201456208098,
+            -0.37342185951426093,
+            0.573248423435036,
+            0.006393282925137921
+          ],
+          [
+            0.565709569283369,
+            -0.4835131256485794,
+            -0.10048591744021906,
+            -0.009538698771521114
+          ]
+        ],
+        "smooth": false,
+        "response_weights": [
+          [
+            0.9900627831607367,
+            0.9920684115140088,
+            0.9844580390038582
+          ],
+          [
+            0.014752416135345439,
+            -0.0930136398188749,
+            0.5450032044874638
+          ],
+          [
+            0.43518251803211344,
+            -0.21405809348409166,
+            0.0038975526497639634
+          ]
+        ],
+        "validation": {
+          "rmse": 2.347106885375218,
+          "mae": 1.206484146837834,
+          "p95": 4.352469596357561
+        },
+        "training": {
+          "rmse": 2.0053484606378427,
+          "mae": 1.1000391638124398,
+          "p95": 4.03490198725822
+        }
+      },
+      {
+        "name": "refined-smooth",
+        "coordinate_affine": [
+          [
+            0.32799029739522506,
+            0.6622838709500606,
+            0.11132055650053563,
+            -0.051688595406754176
+          ],
+          [
+            -0.18996201456208098,
+            -0.37342185951426093,
+            0.573248423435036,
+            0.006393282925137921
+          ],
+          [
+            0.565709569283369,
+            -0.4835131256485794,
+            -0.10048591744021906,
+            -0.009538698771521114
+          ]
+        ],
+        "smooth": true,
+        "response_weights": [
+          [
+            1.0243505164278237,
+            1.0067624099282024,
+            1.0014702978755161
+          ],
+          [
+            0.014152236416891775,
+            -0.08851582548240242,
+            0.5520817695958534
+          ],
+          [
+            0.43265831093315593,
+            -0.2057363285909879,
+            0.004700124098466876
+          ],
+          [
+            0.042780904437216015,
+            -0.028537449259632332,
+            -0.09563445016854444
+          ],
+          [
+            0.06811351815624064,
+            0.03552006039270279,
+            0.06850763961840226
+          ],
+          [
+            0.05808462266258806,
+            0.07868832467084248,
+            0.12987984241906075
+          ],
+          [
+            0.03825348074250173,
+            -0.013957726051215784,
+            0.13666399410119495
+          ],
+          [
+            -0.004931052014325464,
+            0.01893508973398101,
+            -0.02083824081102029
+          ],
+          [
+            -0.0404427363494163,
+            0.016284117933991878,
+            -0.0876223930424622
+          ],
+          [
+            0.48254682634778917,
+            -0.21201090737269862,
+            -0.0004966659033176092
+          ],
+          [
+            -0.16874602572703412,
+            0.0973431197058504,
+            0.003964020772892693
+          ],
+          [
+            -0.36359173198892947,
+            0.17009185914428931,
+            0.0003590921424801265
+          ]
+        ],
+        "validation": {
+          "rmse": 2.3254650921769713,
+          "mae": 1.2042074123134792,
+          "p95": 4.276166415122252
+        },
+        "training": {
+          "rmse": 1.9640275310179764,
+          "mae": 1.0894645507073921,
+          "p95": 3.9680495167110825
+        }
+      }
+    ],
+    "acceptance": "empirical fit only; held-out image errors do not establish unique ISP recovery",
+    "repeat_zero_checks": []
+  },
+  "provenance": [
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 2479,
+      "rejected": 273,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "ec6a4230243d596ef69f93998e2f550d9ef9538d070ab4e222a2a327d49fa370",
+        "9f09881ed8502aa9a0009a8fef716c59659e45f5c4754bb6508987a3193a09bc"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "04ab20d66ef54f46a7c77658da2b5487",
+      "name": "网格推断 / C1+",
+      "role": "train",
+      "entry_number": 2,
+      "short_name": "C1+",
+      "full_name": "通道1 正偏移",
+      "bin_sha256": "66b3c4504eaeed553002708b130add89032bc3d5474af8ab2ca1b966ea1689e7",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "c26cb2cc68fc708eb8fa2ee8648137b665f7cd891e3d22ca545d4004d50689e3",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "92d895c08fa549b389ea69558c3f078d",
+      "set_id": "876ed563f2114bb6b154047b2b55f920",
+      "probe_number": 2
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 2503,
+      "rejected": 249,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "ec6a4230243d596ef69f93998e2f550d9ef9538d070ab4e222a2a327d49fa370",
+        "c69f0bc37cae7e79ce14c3a73c93f54b7bd523d7abac3a9a5e10dd898dcd1d46"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "134954133de74f729dd61918baba6a9d",
+      "name": "网格推断 / WAVE",
+      "role": "test",
+      "entry_number": 12,
+      "short_name": "WAVE",
+      "full_name": "交叉波形（留出测试）",
+      "bin_sha256": "66b3c4504eaeed553002708b130add89032bc3d5474af8ab2ca1b966ea1689e7",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "c26cb2cc68fc708eb8fa2ee8648137b665f7cd891e3d22ca545d4004d50689e3",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "92d895c08fa549b389ea69558c3f078d",
+      "set_id": "876ed563f2114bb6b154047b2b55f920",
+      "probe_number": 12
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 2474,
+      "rejected": 278,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "ec6a4230243d596ef69f93998e2f550d9ef9538d070ab4e222a2a327d49fa370",
+        "c1227e46dfe548f2f7397b242bf4874fc02bef9960099531b93a5295396a46bd"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "219260455e3943c79bc2de92e05afeee",
+      "name": "网格推断 / C3-",
+      "role": "train",
+      "entry_number": 7,
+      "short_name": "C3-",
+      "full_name": "通道3 负偏移",
+      "bin_sha256": "66b3c4504eaeed553002708b130add89032bc3d5474af8ab2ca1b966ea1689e7",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "c26cb2cc68fc708eb8fa2ee8648137b665f7cd891e3d22ca545d4004d50689e3",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "92d895c08fa549b389ea69558c3f078d",
+      "set_id": "876ed563f2114bb6b154047b2b55f920",
+      "probe_number": 7
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 2497,
+      "rejected": 255,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "ec6a4230243d596ef69f93998e2f550d9ef9538d070ab4e222a2a327d49fa370",
+        "506c167f830bab4d42adbb4ec2f78d8fed325a663e16b8e2e5ce7ac3c192bf1e"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "23a6051c0ab64fe3a61612b0e19e9cb2",
+      "name": "网格推断 / C2+",
+      "role": "train",
+      "entry_number": 4,
+      "short_name": "C2+",
+      "full_name": "通道2 正偏移",
+      "bin_sha256": "66b3c4504eaeed553002708b130add89032bc3d5474af8ab2ca1b966ea1689e7",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "c26cb2cc68fc708eb8fa2ee8648137b665f7cd891e3d22ca545d4004d50689e3",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "92d895c08fa549b389ea69558c3f078d",
+      "set_id": "876ed563f2114bb6b154047b2b55f920",
+      "probe_number": 4
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 2469,
+      "rejected": 283,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "ec6a4230243d596ef69f93998e2f550d9ef9538d070ab4e222a2a327d49fa370",
+        "16c5110bc966ece09d0162d2a288d5912ce75c880c1d2b6db895eb7535b642ed"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "6dbcf3ba899f4132bc1e3e508f7f3179",
+      "name": "网格推断 / C3+",
+      "role": "train",
+      "entry_number": 6,
+      "short_name": "C3+",
+      "full_name": "通道3 正偏移",
+      "bin_sha256": "66b3c4504eaeed553002708b130add89032bc3d5474af8ab2ca1b966ea1689e7",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "c26cb2cc68fc708eb8fa2ee8648137b665f7cd891e3d22ca545d4004d50689e3",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "92d895c08fa549b389ea69558c3f078d",
+      "set_id": "876ed563f2114bb6b154047b2b55f920",
+      "probe_number": 6
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 2448,
+      "rejected": 304,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "ec6a4230243d596ef69f93998e2f550d9ef9538d070ab4e222a2a327d49fa370",
+        "ee7643adf22ee17af9fbc0c2c3f3390a2c7f635c7a98e5df8d4567edaf5690b5"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "8c306690ef72475cb5fc1270cd2fdb75",
+      "name": "网格推断 / RAMP2",
+      "role": "train",
+      "entry_number": 9,
+      "short_name": "RAMP2",
+      "full_name": "坐标方向2渐变",
+      "bin_sha256": "66b3c4504eaeed553002708b130add89032bc3d5474af8ab2ca1b966ea1689e7",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "c26cb2cc68fc708eb8fa2ee8648137b665f7cd891e3d22ca545d4004d50689e3",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "92d895c08fa549b389ea69558c3f078d",
+      "set_id": "876ed563f2114bb6b154047b2b55f920",
+      "probe_number": 9
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 2485,
+      "rejected": 267,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "ec6a4230243d596ef69f93998e2f550d9ef9538d070ab4e222a2a327d49fa370",
+        "47b26e4c4701fa717db897ef2c744a6c773afe02dd0b2f3d620e123703648210"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "90558267e9134a8095d87f4f78f5031c",
+      "name": "网格推断 / RAMP3",
+      "role": "train",
+      "entry_number": 10,
+      "short_name": "RAMP3",
+      "full_name": "坐标方向3渐变",
+      "bin_sha256": "66b3c4504eaeed553002708b130add89032bc3d5474af8ab2ca1b966ea1689e7",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "c26cb2cc68fc708eb8fa2ee8648137b665f7cd891e3d22ca545d4004d50689e3",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "92d895c08fa549b389ea69558c3f078d",
+      "set_id": "876ed563f2114bb6b154047b2b55f920",
+      "probe_number": 10
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 2483,
+      "rejected": 269,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "ec6a4230243d596ef69f93998e2f550d9ef9538d070ab4e222a2a327d49fa370",
+        "75191356cbf47eeedc70faeefab472e64fac6b535b66a82bf5c95131cc4dc623"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "b73a72a355be4abe913ea2cfe28c1df8",
+      "name": "网格推断 / ORIGINAL",
+      "role": "test",
+      "entry_number": 11,
+      "short_name": "ORIGINAL",
+      "full_name": "原配置网格（留出测试）",
+      "bin_sha256": "66b3c4504eaeed553002708b130add89032bc3d5474af8ab2ca1b966ea1689e7",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "c26cb2cc68fc708eb8fa2ee8648137b665f7cd891e3d22ca545d4004d50689e3",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "92d895c08fa549b389ea69558c3f078d",
+      "set_id": "876ed563f2114bb6b154047b2b55f920",
+      "probe_number": 11
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 2394,
+      "rejected": 358,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "ec6a4230243d596ef69f93998e2f550d9ef9538d070ab4e222a2a327d49fa370",
+        "5668f7d021a972565346b5fb00dabfb3c69fd1f73147233bd8bfaa3615a958e0"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "bd56e3b294964a11bf69533371c32a93",
+      "name": "网格推断 / RAMP1",
+      "role": "train",
+      "entry_number": 8,
+      "short_name": "RAMP1",
+      "full_name": "坐标方向1渐变",
+      "bin_sha256": "66b3c4504eaeed553002708b130add89032bc3d5474af8ab2ca1b966ea1689e7",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "c26cb2cc68fc708eb8fa2ee8648137b665f7cd891e3d22ca545d4004d50689e3",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "92d895c08fa549b389ea69558c3f078d",
+      "set_id": "876ed563f2114bb6b154047b2b55f920",
+      "probe_number": 8
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 2403,
+      "rejected": 349,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "ec6a4230243d596ef69f93998e2f550d9ef9538d070ab4e222a2a327d49fa370",
+        "923b8cdd6d595462bb30c414d0c7403983eda3aadea021bd70df2eb758ff2c76"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "e6a8cf408c48412fb0228e4c1c87ae5a",
+      "name": "网格推断 / C1-",
+      "role": "train",
+      "entry_number": 3,
+      "short_name": "C1-",
+      "full_name": "通道1 负偏移",
+      "bin_sha256": "66b3c4504eaeed553002708b130add89032bc3d5474af8ab2ca1b966ea1689e7",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "c26cb2cc68fc708eb8fa2ee8648137b665f7cd891e3d22ca545d4004d50689e3",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "92d895c08fa549b389ea69558c3f078d",
+      "set_id": "876ed563f2114bb6b154047b2b55f920",
+      "probe_number": 3
+    },
+    {
+      "width": 9504,
+      "height": 6336,
+      "bits": [
+        8,
+        8
+      ],
+      "profiles": [
+        "untagged-assumed-sRGB; EXIF-normalized",
+        "untagged-assumed-sRGB; EXIF-normalized"
+      ],
+      "blocks": 2436,
+      "rejected": 316,
+      "columns": 64,
+      "rows": 43,
+      "source_sha256": [
+        "ec6a4230243d596ef69f93998e2f550d9ef9538d070ab4e222a2a327d49fa370",
+        "9cc9a309840e891e1de0c0ad5c56fbc1a629f42e3ed531dff8f7c7a7747f878f"
+      ],
+      "sampling": "central 60% tile mean; reject std>.10 or clipped means; 4x4-block spatial split",
+      "alignment": "User-aligned same dimensions; no automatic exposure/WB/geometry correction",
+      "id": "f2de7ef8e17a46c3828a071994a9fbbb",
+      "name": "网格推断 / C2-",
+      "role": "train",
+      "entry_number": 5,
+      "short_name": "C2-",
+      "full_name": "通道2 负偏移",
+      "bin_sha256": "66b3c4504eaeed553002708b130add89032bc3d5474af8ab2ca1b966ea1689e7",
+      "baseline_bin_verified": true,
+      "parameter_sha256": "c26cb2cc68fc708eb8fa2ee8648137b665f7cd891e3d22ca545d4004d50689e3",
+      "base_look": "PT",
+      "notes": "",
+      "capture_id": "92d895c08fa549b389ea69558c3f078d",
+      "set_id": "876ed563f2114bb6b154047b2b55f920",
+      "probe_number": 5
+    }
+  ],
+  "scope": "sRGB encoded paired-image empirical model, baseline=identical non-grid parameters plus zero grid; no unique ISP identification"
+}

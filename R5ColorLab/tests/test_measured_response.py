@@ -1,15 +1,16 @@
 import unittest
 import numpy as np
-from measured_response import default_response,get
+from measured_response import default_response,get,legacy_proxy_response
 from residual_grid import evaluate
 import pc_stages
 from optimizer_policy import pc_options,refine_grid
 
 class MeasuredResponseTests(unittest.TestCase):
-    def test_pinned_proxy_and_zero_anchor(self):
+    def test_pinned_r5_and_zero_anchor(self):
         response=default_response();model=get(response)
-        self.assertTrue(model.proxy)
-        self.assertFalse(model.validation['R5_calibrated'])
+        self.assertFalse(model.proxy)
+        self.assertEqual(response['preset'],'r5-paired-20261024-v2')
+        self.assertTrue(get(legacy_proxy_response()).proxy)
         x=model.probes(30)
         np.testing.assert_allclose(evaluate(x,np.zeros((405,3),np.int8),response),x,atol=2e-15)
         self.assertEqual(pc_options()['response'],response)
@@ -20,7 +21,7 @@ class MeasuredResponseTests(unittest.TestCase):
         response=default_response();model=get(response);x=model.probes(30)
         table=np.zeros((405,3),np.int8);table[:,0]=12
         q,ids,w=model.stencil(x)
-        expected=np.clip(x+np.clip(model.forward(q+(table[ids]*w[...,None]).sum(1)*model.scale),0,1)-np.clip(model.forward(q),0,1),0,1)
+        expected=np.clip(x+np.einsum('nc,nco->no',(table[ids]*w[...,None]).sum(1),model.response(x)),0,1)
         curve=dict(mode='qaq-grid',response=response)
         np.testing.assert_array_equal(pc_stages.render(x,curve,table),evaluate(x,table,response))
         np.testing.assert_allclose(evaluate(x,table,response),expected,atol=1e-14)
@@ -37,5 +38,5 @@ class MeasuredResponseTests(unittest.TestCase):
         table=np.zeros((405,3),np.int8);table[:,0]=6
         teacher=lambda colors:evaluate(colors,table,response)
         grid,audit=compress(x,np.ones(len(x)),teacher,response,probe_side=2,sweeps=0)
-        self.assertIn('F(q',audit['runtime'])
+        self.assertEqual(model.sha256,response['sha256'])
         self.assertLess(np.mean((evaluate(x,grid,response)-teacher(x))**2),np.mean((x-teacher(x))**2))

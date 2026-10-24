@@ -21,7 +21,7 @@ def fit_training(base, target, gray_mask, weights, strategy="direct", quantizati
     if curve_mode == 'qaq-grid':
         from residual_grid import response_matrix
         response=response_matrix(np.eye(3) if response is None else response)
-        curve=dict(mode='qaq-grid',response=(response if isinstance(response,dict) else response.tolist()),reference=('QAQ c8328ad5 measured A7C2 proxy; not R5 calibration' if isinstance(response,dict) else 'legacy provisional predictor'))
+        curve=dict(mode='qaq-grid',response=(response if isinstance(response,dict) else response.tolist()),reference=('Pinned empirical grid response; see saved response identity and scope' if isinstance(response,dict) else 'legacy provisional predictor'))
     elif curve_mode != 'tone-tint':
         raise ValueError('Unknown PC curve mode')
     validate(curve)

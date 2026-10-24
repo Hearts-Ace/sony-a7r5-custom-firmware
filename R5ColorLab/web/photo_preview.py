@@ -15,6 +15,30 @@ import white_balance
 from edit_native_recipe import read
 from raw_slog3_reference import RawSLog3Reference, Cube
 
+def raw_camera_identity(source):
+    """Read TIFF Make/Model rather than use a version-dependent LibRaw matrix as ID."""
+    import struct
+    with Path(source).open('rb') as f:
+        header=f.read(8)
+        if header[:2] not in (b'II',b'MM'):raise ValueError('RAW不是受支持的TIFF/ARW容器')
+        endian='<' if header[:2]==b'II' else '>'
+        if struct.unpack(endian+'H',header[2:4])[0]!=42:raise ValueError('不支持的RAW容器')
+        f.seek(struct.unpack(endian+'I',header[4:])[0]);count=struct.unpack(endian+'H',f.read(2))[0]
+        if count>4096:raise ValueError('RAW IFD过大')
+        entries=f.read(count*12);result={}
+        for i in range(count):
+            record=entries[i*12:i*12+12];tag,kind,n=struct.unpack(endian+'HHI',record[:8])
+            if tag not in (271,272) or kind!=2:continue
+            if not 1<=n<=256:raise ValueError('RAW机型字段无效')
+            if n<=4:value=record[8:8+n]
+            else:
+                f.seek(struct.unpack(endian+'I',record[8:])[0]);value=f.read(n)
+            result[tag]=value.rstrip(b'\0').decode('ascii',errors='strict').strip()
+        if result.get(271)!='SONY' or result.get(272)!='ILCE-7RM5':
+            raise ValueError('当前RAW预览需要SONY ILCE-7RM5，实际：'+str(result))
+        return dict(make=result[271],model=result[272])
+
+
 def digest(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
@@ -81,6 +105,19 @@ def report_progress(output, phase, fraction=0):
     temporary.replace(path)
 
 
+def response_identity(job, pc=False, grid_key=None):
+    """Record the exact saved response, including R5 calibration source hash."""
+    if grid_key:
+        from grid_distillation import load_result
+        value,_,_=load_result(job,grid_key)
+        return value['identity']['response']
+    if pc:
+        import pc_compensation
+        value,_=pc_compensation.load(job)
+        return value.get('curves',{}).get('response')
+    return None
+
+
 def compensation(job, output, rgb, pc, grid_key, grid_enabled=True):
     """Load/verify a frozen transform once, apply the exact function in rows."""
     from photo_backend import enable
@@ -138,13 +175,15 @@ def render(source, job, output, pc=False, grid_key=None, grid_enabled=True):
     raw.unpack()
     try:
         profile = json.loads(core.PROFILE.read_text())
+        camera_identity=raw_camera_identity(source)
+        decoder_matrix_matches_reference=bool(np.allclose(raw.rgb_xyz_matrix,profile['xyz_to_camera'],atol=1e-6))
         sizes = raw.sizes
         if ((sizes.raw_width, sizes.raw_height) != (9728, 6656) or
                 (sizes.crop_left_margin, sizes.crop_top_margin,
                  sizes.crop_width, sizes.crop_height) != (32, 20, 9504, 6336) or
-                not np.array_equal(raw.raw_pattern, [[0, 1], [3, 2]]) or
-                not np.allclose(raw.rgb_xyz_matrix, profile['xyz_to_camera'], atol=1e-6)):
-            raise ValueError('当前预览仅支持已验证几何与相机矩阵的全尺寸 R5 RGGB RAW')
+                not np.array_equal(raw.raw_pattern, [[0, 1], [3, 2]])):
+            details=dict(raw_size=[sizes.raw_width,sizes.raw_height],crop=[sizes.crop_left_margin,sizes.crop_top_margin,sizes.crop_width,sizes.crop_height],pattern=np.asarray(raw.raw_pattern).tolist(),matrix_matches=bool(np.allclose(raw.rgb_xyz_matrix,profile['xyz_to_camera'],atol=1e-6)))
+            raise ValueError('RAW解码信息与已验证格式不匹配：'+json.dumps(details,ensure_ascii=False))
         black = np.array(raw.black_level_per_channel)[[0, 1, 2]]
         white = raw.white_level
         if len(set(raw.black_level_per_channel)) != 1 or not np.all(white > black):
@@ -201,7 +240,9 @@ def render(source, job, output, pc=False, grid_key=None, grid_enabled=True):
         edit_runtime_used=False, frontend_approximate=True, white_balance=recipe.get('white_balance'),
         grid_key=grid_key,grid_sha256=grid_sha,algorithm=('compressed' if grid_key else 'pc' if pc else 'native'),
         grid_effect_enabled=bool(grid_enabled),grid_effect_applied=bool(pc and grid_enabled),pc_compensation_enabled=pc,
+        raw_camera_identity=camera_identity,decoder_matrix_matches_reference=decoder_matrix_matches_reference,
         pc_compensation_sha256=pc_sha,
+        grid_response=response_identity(job,pc,grid_key),
         lut_decoder='pip rawpy/LibRaw; linear bilinear demosaic, unit WB, no auto scale',
         lut_color='RawAlchemy v0.6.2 fused reference -> S-Log3 -> tetrahedral LUT',
         model_input='approximate RAW front: LibRaw camera RGB * reference green gain * as-shot WB; clipped/truncated native codes',
@@ -237,6 +278,7 @@ def reuse(source,job,output,pc=False,grid_key=None,grid_enabled=True):
     for name,rgb in [('lut',target),('model',predicted)]:
         Image.fromarray(quantize(rgb)).save(output/(name+'.png'))
     value.update(grid_effect_enabled=bool(grid_enabled),grid_effect_applied=bool(pc and grid_enabled),pc_compensation_enabled=pc,pc_compensation_sha256=pc_sha,
+        grid_response=response_identity(job,pc,grid_key),
                  grid_key=grid_key,grid_sha256=grid_sha,
                  algorithm='compressed' if grid_key else 'pc' if pc else 'native',
                  decoded_samples_reused=True,raw_rechecked_this_render=False)

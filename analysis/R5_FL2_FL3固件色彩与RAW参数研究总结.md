@@ -1,8 +1,40 @@
-# R5 4.24 自定义滤镜、色彩参数与网格生命周期研究
+# R5 4.28 自定义滤镜、色彩参数与网格生命周期研究
 
-更新：2026-10-23。本文件为唯一研究总结。以下首先给出当前实现、纠错及验收状态；后面的4.18及更早章节为带时间的历史记录，不能据其“当前”“未加入”等措辞判断4.24。原始采集、历史源码和测试回执不改写。
+更新：2026-10-24。本文件为唯一研究总结。以下首先给出当前实现、纠错及验收状态；后面的旧版本章节为带时间的历史记录，不能据其“当前”“未加入”等措辞判断4.28。原始采集、历史源码和测试回执不改写。
 
-## 当前版本与验收状态
+## 4.28：按用户要求回退4.25并移除更新操作（2026-10-24）
+
+当前交付改为4.28。以最终4.25 sync_exit为菜单基线，先重建精确复现AP11cd8005，再仅删除更新按钮、触摸入口、更新焦点/导航及手动刷新提交分支。页面不再引用reload_request；共享底层worker和自动开机/媒体导入保持。保留425选择同步应用、持久保存、父级选中值核对后退出及失败留页；BIN v4、CC1/block13/129点Gamma及422网格生命周期不改。
+
+这次是用户指定回退，未纳入426/427菜单改动，425旧MID getter、pvt[8]布局接管及动态对象行为随基线保留。历史ABI调查和实机反馈仍保留，不能把回退写成对427修复方案的验收，也不能声称4.28已实机验证。
+
+完整包754525608字节，BCD2804，DAT SHA256 `dd64c0d26cf71d3b595dcf20cf11d39abdff8f78eadd7241a833182d28e03816`；AP `85c0f93da51276c89419b6fd7415bbe41589045fd7fe79a4bf81c3aa1d0987da`，RX61784/BSS112536，原AP文件长度不变；CP精确保持423的8b38e753。页面22项、worker11项、原请求76项、wrapper10项、跨核28次选择通过；SD162项按完整闭包身份继承。13份必需回执、6检查、384冻结输入和13项SUMS，最终实际DAT独立签名/CRC/篡改拒绝、AP/CP提取和751577088明文字节/736841块逐字校验通过。
+
+源码及限制：`analysis/r5_custom_menu428_rollback425_20261024/README.md`；最终回执：`analysis/r5_custom_menu428_rollback425_20261024/release_tests/delivery_verified.json`；包：`research/r5_custom_lut/build_r5_4.28_rollback425_20261024/BODYDATA.DAT`。未操作相机、SD或GitHub，实际LCD、冷启动及拍照仍待验收。以下427及更早章节保留历史。
+
+## 4.27：M4接入复核与4.26重启反馈（2026-10-24）
+
+用户最新明确确认4.25进入菜单正常，4.26点击自定义菜单触发重启，要求按M4接入制作4.27。4.25进入正常与其MID/ROW离线反例分别记录，不能用反例否认用户反馈。4.26实机菜单验收失败，后文旧“实体待验收”应按时间读取。
+
+必须撤回“真正relayout在VT+30”的旧结论。R5 presenter原表header+10为addresspoint：数组pvt[8]即VT+30是边界查询，pvt[10]即VT+40才是layout setter。M4原0802.c覆盖[10]。冻结426真实manager1ec4908调用+40后会进入原1d0a970，重新创建原厂34控件并执行220844c；真实query consumer调用错误+30会把函数地址写成layout。旧测试和错误实现共用+30假设，未覆盖真实manager。这是已证实ABI缺陷，但未捕获机身重启PC，不能单独声称唯一直接原因。
+
+4.27恢复原query、正确接管+40；first update按M4传0；区分对象所有权与可交互状态，关闭/MID变化后输入不进原Look setter、原生系统生命周期仍保留。原D9/父2d7工厂共享池，因此改用专用静态对象池、完整原ctor及原生清理，避免进入时堆分配失败被manager直接解引用，不能机械套用M4对象池覆盖父页。真实完整controller ctor/dtor、两个helper、真实manager与query双地址回放均通过；首次update第二参数写param+2d模式字节，0不是跳过绘制。低层UX/字体和真实GUI时序仍需实机反馈。
+
+真实helper无边界越界；34节点静态arena需求45184B，小于原生最小池131072B。原native owner销毁后清指针，尚未发现double-free证据。未将这些未证实方向列为重启根因。
+
+427构建与最终门控位于`analysis/r5_custom_menu427_20261024/`，旧版反例及M4对照在`analysis/r5_custom_menu427_crash_20261024/`。顶部更新、右侧仅名称、选择/更新同步提交与父值核对后退出保持；CP精确继承423、422网格生命周期及BIN v4不改。固件包身份以最终交付回执为准；本轮仅本地文件，无设备/GitHub操作。
+
+## 版本与验收状态（4.28见前节，以下为历史）
+
+当前本地交付4.27：754525608字节，BCD2704，DAT SHA256 `38806225e92b82514634283ef856a52fb5c1cf74a088c680c624accf5641116c`；AP `44aaa92ce274de716e93f0d235f5afe869cdd73c9c236b69564d2ea60cd789a8`。专用静态对象令BSS136376字节、RX62040字节，文件长度不增，RW无段重叠；未实测设备loader。18回执、13检查、390源输入与13项SUMS独立重核，最终实际DAT签名/CRC/篡改拒绝、AP/CP提取及751577088明文字节/736841块逐字对照通过。CP精确保持423的8b38e753，422网格生命周期不改。独立交付检查使用`verify_delivery427_final.py`，其自身散列绑定于`release_tests/delivery_verified.json`；冻结初版检查脚本曾保留0x26版本断言而拒绝2704，已另留说明，DAT未因此变化。没有机身/GitHub操作，实际进入、字体/LCD与成像等待用户验收。
+
+以下4.26及更早交付为历史：
+
+历史4.26菜单修正版：754,525,608字节，BCD `2604`，SHA256 `93d39f40071f1fcf69a2fbeabb051c9ddf9a71679f04aabdd56280bdc1f921ec`；AP `b44ebcdbf2fff8376c8c4dc3c21177cc87d3e74460fe19541832e4539f06f353`。15份必需回执/148输入绑定，修正菜单MID/ROW混用，移除自定义页右侧原生调整控件。完整包校验以 `analysis/r5_custom_menu426_20261024/release_tests/delivery_verified.json` 为准；实体字体/LCD与成像待验收，没有设备或GitHub操作。4.25用户已反馈按钮缺失及右侧异常，后文离线通过不代表实机通过。
+
+历史4.25最终sync_exit交付：754,525,608字节，BCD `2504`，SHA256 `7dc3c3abf6f27e700b6e140de5e80af10bcf80867ef44ede2367e1928e264fb6`；AP `11cd80055a7781eee61663dbc9ef0a8fff74fdeeeb9a6c3a59b8a7de379ac95c`，CP精确继承4.23。选择和手动更新均经同步提交、保存与父值校验后退出。26项页面及固定11份回执门控通过；最终DAT签名/CRC/篡改拒绝、AP/CP独立提取和751,577,088明文字节逐字验证通过。尚未实机验收，本次不推送GitHub。前一sync_menu版的手动更新留页方案已按用户最新要求接续为sync_exit，旧包、源码保持。
+
+以下4.24交付记录为历史及GitHub现状：
 
 4.24在4.23独立自定义滤镜方案上修复真实主列表的第二路菜单ID转换，CP逐字节继承4.23。完整包754,525,608字节，BCD `2404`，SHA256 `01bf5ab58609b51d78803faefd352d6f85872b4dc67b7f738159af38e198e86a`。AP `a4c036eb4101820165748ca9819dd5afc803d11dc48f8b5eba3c9775f0c7995b`；CP `8b38e753f34b1667d79b69079d911b9e6595f1ce1b873cb8e014437c6b4c494d`。
 
@@ -15,6 +47,30 @@
 | 4.24实机 | 尚未取得安装、LCD菜单、冷启动保持、预览及JPG验收；不能写成已解决实机成像 |
 
 GitHub以main发布源码和Web，完整DAT单独放在[v4.24候选Release](https://github.com/Hearts-Ace/sony-a7r5-custom-firmware/releases/tag/v4.24)。公开源码缺少原厂镜像、密钥和部分本地依赖，不是可在干净仓库一键重建/刷任意机身的工具。首次备份、首次采集和签名私钥继续本地保护；本轮没有设备操作。
+
+## 4.26：菜单身份纠错与右侧调整移除（2026-10-24）
+
+用户反馈4.25自定义菜单没有“更新滤镜”，且右侧参数调整异常。该反馈纠正了先前仅靠控件声明及简化页面fixture即可判断入口/按钮完整的结论。没有取得此次机身AP回读；以下根因由冻结本地425及新426实际指令对照建立，不能据此声称本地散列就是机身安装散列。
+
+4.25私有controller/presenter的mid()错误调用`0x28a87e8`，这是行属性PID`0x3b7`的地址；实际菜单MID由`0x28a8720`指向PID`0x3b2`。真实主菜单Enter写后者，行属性仍可为`0x1607`。旧页面fixture把错误getter直接返回635，掩盖了factory误回退原厂D9的路径。4.26改用真实菜单属性：菜单635/行1607进入私有页，原厂菜单/行635仍走原厂；冻结425在这两组输入下行为相反。此差异能解释按钮缺失及出现原厂右侧调整区。
+
+自定义页另外改为明确控件白名单：仅保留实时取景壳、自定义文字及其触摸入口，排除原生右侧bitmap、箭头、footer/help和CloseScreen等控件；不再投影原生footer参数。右侧保留滤镜全称，原生调整操作不会进入原厂Look setter。原厂“创意外观”页面本身保持。原资源names/offset表只是节点名称，原生create_screen按style.w0分派类型；这不是“没有同步资源类型表”导致按钮消失。
+
+新增原指令验证：真实菜单/行getter和425→426工厂对照，真实1004 Enter→MID写入→D9入队→实际factory表到私有分配gate；原生`view::create_screen`执行type/mask分派、names偏移和param map/style初始化，再以该map执行编译project及更新文字UTF8桥接。低层Widget/param分配、字体及UX后端仍是fixture，实体LCD、触摸命中与完整GUI调度待验收。旧425记录保留，不能把其26项fixture通过当作物理菜单已通过。
+
+426只改变私有UI，worker/SD导入源码、代码常量及BSS地址逐项继承最终425；CP逐字节继承423，422整套网格/颜色生命周期保持。手动更新仍等待所有配置传输封存和当前选择应用保存；真实父菜单选中值核对成功才退出。失败留页；超时持有原sequence，不自动发新请求。同步边界仍为控制面及原厂提交，不新增LCD/ISP/JPG完成证明。实现与最终回执见`analysis/r5_custom_menu426_20261024/`。
+
+## 4.25透明菜单与同步提交（2026-10-24）
+
+本次按用户给定M4方法，改用R5原生D9创意外观页面壳，保留背景参数但不创建Background2 Widget。mask0意味着创建真实控件，不能解释为透明；物理LCD透明度、字体及刷新节奏仍待机身确认。左侧最多7行滚动简写，右侧全称，顶部“更新滤镜”，仅MID635走私有页面，原厂创意外观工厂、名称及私有颜色处理保持。
+
+4.23／4.24原行为是先关闭页面、后台先保存再发送SELECT。4.25改为单worker串行事务：准确CP SELECT ACK、本次私有原厂E4执行体返回、下一序号CP SELECT ACK、原子保存、发布selected与成功。UI等待同一sequence；成功后调用真实父页更新链 `1d90de8→1bc4190→1bc3f64→1bd55fc→1bc8eb8→1bc50ec→descriptor getter`，并核对真实5B参数值已等于当前简写资源，才pop。失败、父值不符不退出；20秒仍未完成则保留pending、禁重复提交和返回，下一次操作只查询同一事务。
+
+“更新滤镜”由同一worker重新读SD根目录R5NATIVE.BIN，沿用v4完整校验、全量替换/清空、原子机内保存、整套CP封存与名称发布。所有配置完成封存/加载且当前选择应用成功后，核对父值再退出；没有/损坏文件失败并保留旧配置；合法空BIN/零字节明确清空，移除当前选择后转关闭。私有页面对象独立OSAL分配并成对析构，避免D9与父1004的原生同index池覆盖。CP逐字节继承4.23，4.22网格恢复/不可变代际、CC1/block13/129点Gamma及实际原厂base尾部不改。
+
+本版“同步”证据边界必须收窄：E4的九条native发送本身异步；E4返回加精确CP状态再确认不能独立证明FIFO/下游ISP完成或LCD新帧已显示。UI线程ID3与E4线程ID4独立；UI loop锁及前置model-snapshot guard已核对分发前释放，但不是全局所有锁的证明。实体媒体延迟、heap/cache、冷启动、预览和JPG仍需机身验收。
+
+最终修订离线覆盖页面26项（含手动更新成功退出/失败留页/父值失败/超时后完成）、worker11项、原生请求链76项、包装器10项、主菜单六组/标题16项、跨核28次选择。SD162项实际执行AP448c4416，最终AP11cd8005的相关机器码、BSS地址、源/编译选项和原生入口逐项等同，显式继承测试而非冒称最终AP又运行162项。11份固定回执和包内签名/CRC/逐字独立解密由发布门控绑定。实现及边界见 `analysis/r5_custom_menu425_refresh_exit_20261024/README.md`；本次只本地交付，无相机或GitHub操作。
 
 ## 需要撤回或收窄的旧结论
 
@@ -33,7 +89,7 @@ GitHub以main发布源码和Web，完整DAT单独放在[v4.24候选Release](http
 
 此前“已完成”“全路径”等表述只在其具体离线回放范围内成立。原厂源并发复制、整帧参数原子切换、设备heap/cache及最终像素不由模拟或验签推出。
 
-## 4.24菜单：独立选择原厂基底和自定义配置
+## 4.23／4.24菜单历史：独立选择原厂基底和自定义配置
 
 原“创意外观”继续决定ST/PT/FL2等原厂基底；同级“自定义滤镜”MID `0x635` 单独选择关闭或配置1–12。左侧简写，右侧全称；名称只在自定义菜单使用，不覆盖原厂创意外观名称。按确认直接入队并走原生关闭返回，无额外保存按钮；工作器完成持久保存、SELECT及匹配ACK后才更新getter/刷新，不能说UI点击等于同步落盘成功。
 
@@ -305,15 +361,15 @@ Gamma文件支持129点完整导入，不因RAW只有128点而缩减格式；原
 
 1. 使用供电稳定、达到原厂更新电量要求的本机电池；确认没有正在进行SD更新，记录当前版本及电源状态。同一电脑只连接这台待处理机身。
 2. 改装线连接相机Multi口，负责复位和串行引导；另用USB-C数据线连接相机与电脑，负责fastboot数据传输。已有成功记录不能证明ON或OFF是进入的必要条件，操作前须记录实际状态。
-3. 使用现有RP2040 `uart_boot 1`固件：GPIO28→相机RX、GPIO29→相机TX、GPIO27→复位，`OPEN_DRAIN`构建，链路48000波特。构建和UF2身份见魔改线构建记录（本地证据：`../build_uart_boot_20261013/README.md`）。已正常工作的改装线不需重新刷写UF2。
+3. 使用现有RP2040 `uart_boot 1`固件：GPIO28→相机RX、GPIO29→相机TX、GPIO27→复位，`OPEN_DRAIN`构建，链路48000波特。构建和UF2身份见[魔改线构建记录](../build_uart_boot_20261013/README.md)。已正常工作的改装线不需重新刷写UF2。
 4. 主机使用本工作区`.venv/bin/python`；USB工具在`analysis/r5_live_system_20261014/host_tools/`；部署过程中用macOS的`/usr/bin/clang`、IOKit、CoreFoundation编译限定写入程序。先准备好依赖再进入，不能在fastboot内等待安装工具。
-5. 原工具包位于`/Users/zhaoyunpeng/Downloads/bootloader脚本.zip`。已执行源码副本保存在D会话的`execution_source_snapshot/`，但当前脚本仍读取原工具包路径；不可仅移动工具包而不检查依赖。
+5. 原工具包位于`/Users/LOCAL_USER/Downloads/bootloader脚本.zip`。已执行源码副本保存在D会话的`execution_source_snapshot/`，但当前脚本仍读取原工具包路径；不可仅移动工具包而不检查依赖。
 6. 首次备份、源DAT、R5／FX2原始解包、严格4.03构建源、本机公私钥、4.04构建及执行脚本保持原样。历史失败4.03和旧两槽脚本不作为入口。
 
 以下命令从工作区根目录执行。先用只读文件枚举确认本次串口，再填写`R5_PORT`；示例`/dev/cu.usbmodem101`不是永久端口。所有会话目录必须是新的、尚不存在的路径：
 
 ```sh
-cd /Users/zhaoyunpeng/Documents/ChatGPT/固件
+cd /path/to/r5-workspace
 python3 -c 'from pathlib import Path; print("\n".join(str(p) for p in Path("/dev").glob("cu.usbmodem*")))'
 R5_PORT=/dev/cu.usbmodem101
 R5_SESSION_TAG=$(date +%Y%m%d_%H%M%S)
@@ -357,7 +413,7 @@ analysis/r5_live_system_20261014/host_tools/read_fastboot_usb reboot
 
 #### 1.2 首次完整采集的范围
 
-本机首次资料固定保留在原机备份目录（本地证据：`../backups/R5_4.00_20261014_full/`）和[首次采集目录](r5_live_system_20261014/)，禁止覆盖、删除、移动或改写。已采集内容包括：
+本机首次资料固定保留在[原机备份目录](../backups/R5_4.00_20261014_full/)和[首次采集目录](r5_live_system_20261014/)，禁止覆盖、删除、移动或改写。已采集内容包括：
 
 | 对象 | 保存与核验要求 |
 |---|---|
@@ -397,7 +453,7 @@ R5_FULL_RUN="backups/R5_new_acquisition_${R5_SESSION_TAG}"
 
 #### 2.2 候选、写入与回读
 
-已有候选位于一号分区构建目录（本地证据：`../build_r5_partition1_verifykey_skip_20261014/`），logical镜像为`nflasha1.R5_4.00.custom-key.verifykey-skip.logical.img`，25,100,288字节，SHA-256：`0ec7813c78f121f5abced7fc24350e34ac4cffa4ec8be4d1ecccee22f3d4922d`。公钥身份SHA-256为`4cb3cf8cc7a847a5b6108863c2defa327ceb06280c1dda468cd57c3dd3cae859`；不在本文复制私钥。
+已有候选位于[一号分区构建目录](../build_r5_partition1_verifykey_skip_20261014/)，logical镜像为`nflasha1.R5_4.00.custom-key.verifykey-skip.logical.img`，25,100,288字节，SHA-256：`0ec7813c78f121f5abced7fc24350e34ac4cffa4ec8be4d1ecccee22f3d4922d`。公钥身份SHA-256为`4cb3cf8cc7a847a5b6108863c2defa327ceb06280c1dda468cd57c3dd3cae859`；不在本文复制私钥。
 
 实际已执行的流程是：
 
@@ -410,7 +466,7 @@ R5_FULL_RUN="backups/R5_new_acquisition_${R5_SESSION_TAG}"
 
 历史入口为[flash_r5_verifykey_skip.py](../tools/flash_r5_verifykey_skip.py)，其`--prepare-only`与`--flash --port …`分别对应准备和写入。但它固定旧基线、旧候选、旧会话目录，并拒绝已有记录；**不能作为当前新会话的可直接重跑命令**。旧稀疏文件与`restore`同样绑定当时前置状态，不能覆盖当前机身。新机身／不同基线需要另行制作适配的新会话入口，不通过删除历史目录或改固定散列来重用它。
 
-本机该步骤已实际完成，原始部署报告（本地证据：`r5_verifykey_skip_flash_20261014/report.json`）、flash日志（本地证据：`r5_verifykey_skip_flash_20261014/flash.log`）及独立回读核验（本地证据：`r5_verifykey_skip_flash_20261014/independent-readback-verification.json`）均保留。已具备匹配信任环境时跳过重复写入；若怀疑当前环境变化，先新读判断，不能据历史记录断言当前仍相同。
+本机该步骤已实际完成，原始[部署报告](r5_verifykey_skip_flash_20261014/report.json)、[flash日志](r5_verifykey_skip_flash_20261014/flash.log)及[独立回读核验](r5_verifykey_skip_flash_20261014/independent-readback-verification.json)均保留。已具备匹配信任环境时跳过重复写入；若怀疑当前环境变化，先新读判断，不能据历史记录断言当前仍相同。
 
 为保留完整历史顺序：本机先通过`build_r5_partition1.py`／`flash_r5_partition1.py`部署仅换公钥的中间镜像，再完成上述verifyKey修正。该中间态SHA-256为`7d17697fb83a26bbcd53f49f7c791fea7cdd9e372ad6f4510d1f079e643a0b05`；它不是最终信任环境，不能只刷中间态就认为全部完成。已有两个历史写入入口均绑定当时状态；新部署应先新读并生成从当前状态到最终候选的已核验差异，不要求机械重走两次历史写入。
 
@@ -418,13 +474,13 @@ R5_FULL_RUN="backups/R5_new_acquisition_${R5_SESSION_TAG}"
 
 #### 3.1 交付文件和离线检查
 
-使用当前4.04 DAT（本地证据：`../build_r5_m4strict_4.04_20261015/BODYDATA.DAT`），754,525,608字节；不要使用工作区根目录同名原始包或失败旧4.03。核对文件身份：
+使用[当前4.04 DAT](../build_r5_m4strict_4.04_20261015/BODYDATA.DAT)，754,525,608字节；不要使用工作区根目录同名原始包或失败旧4.03。核对文件身份：
 
 ```sh
 shasum -a 256 build_r5_m4strict_4.04_20261015/BODYDATA.DAT
 ```
 
-预期`370cd17d50b086e466b987918a95297213eee5dc9f962c77a88f65afdc117dd1`。本次构建的verification.json（本地证据：`../build_r5_m4strict_4.04_20261015/verification.json`）记录736,841块完整独立解密、751,577,088字节明文逐字节匹配，RSA／OpenSSL验签、篡改拒绝、外层CRC及组件一致性全部通过。这里只证明封装与输入一致，不能替代实机安装结果。
+预期`370cd17d50b086e466b987918a95297213eee5dc9f962c77a88f65afdc117dd1`。本次构建的[verification.json](../build_r5_m4strict_4.04_20261015/verification.json)记录736,841块完整独立解密、751,577,088字节明文逐字节匹配，RSA／OpenSSL验签、篡改拒绝、外层CRC及组件一致性全部通过。这里只证明封装与输入一致，不能替代实机安装结果。
 
 已有交付包无需重新构建。开发时如需复现，两种离线入口任选其一，输出目录必须新建：
 
@@ -465,7 +521,7 @@ TAR只改AP／CP／WBI三个镜像成员及分区校验成员；原厂默认模�
 
 **用户已明确决定：保留我们现有FX2原始B／A1／A2参数，不采用作者最新默认的block13固定A1。** CC1继续转换为B／(A1−B)／(A2−B)，block13继续保留各外观、照片／视频自己的三套原始矩阵。SD颜色保持修复与矩阵端点策略是两项独立选择；参考前者不代表接受后者。本节仅为以后固件升级的适配记录，未加入现有4.04，也未改变历史固定上游`086df3b`。
 
-参考Erlla固定提交[`a15a0cb70b628b94bbd147b6aa53def2b57ed479`](https://github.com/Erlla/sony-a7m4-custom-firmware/tree/a15a0cb70b628b94bbd147b6aa53def2b57ed479)，具体修复提交为`afe335a218be0ad635b6c042cae97e26d14cfa76`。作者的方法是在电脑打包阶段补全SD包内的通用BK4颜色模板，修复模板自身BK4 byte sum及`0111_backup_sum/backup.sum`对应CRC，然后沿原封装／签名／迁移链处理。**不是额外添加机内迁移脚本、服务调用、显式Backup同步或更新收尾动作。** 作者说明见[SD颜色保持](https://github.com/Erlla/sony-a7m4-custom-firmware/blob/a15a0cb70b628b94bbd147b6aa53def2b57ed479/methods/03-fl2-fl3/sd-colour-preservation.md)；相关源码、测试、说明与MIT许可证已本地归档，文件清单及散列（本地证据：`../references/erlla_sd_colour_preservation_20261019/manifest.json`）。归档仅供审查，不作为构建或刷写入口。
+参考Erlla固定提交[`a15a0cb70b628b94bbd147b6aa53def2b57ed479`](https://github.com/Erlla/sony-a7m4-custom-firmware/tree/a15a0cb70b628b94bbd147b6aa53def2b57ed479)，具体修复提交为`afe335a218be0ad635b6c042cae97e26d14cfa76`。作者的方法是在电脑打包阶段补全SD包内的通用BK4颜色模板，修复模板自身BK4 byte sum及`0111_backup_sum/backup.sum`对应CRC，然后沿原封装／签名／迁移链处理。**不是额外添加机内迁移脚本、服务调用、显式Backup同步或更新收尾动作。** 作者说明见[SD颜色保持](https://github.com/Erlla/sony-a7m4-custom-firmware/blob/a15a0cb70b628b94bbd147b6aa53def2b57ed479/methods/03-fl2-fl3/sd-colour-preservation.md)；相关源码、测试、说明与MIT许可证已本地归档，[文件清单及散列](../references/erlla_sd_colour_preservation_20261019/manifest.json)。归档仅供审查，不作为构建或刷写入口。
 
 作者在M4官方6.02基线处理LS／LS_GLEE各16份，共32份模板。每份十处颜色字段、2504字节：CC1映射4字节、四bank有效系数各48字节、block13映射4字节、四bank三组矩阵各576字节；另重算校验。其SD模板修复保留各bank尾部、LOOK默认槽、reset数据及其他校准；这与历史个人设置部署复制四个完整768字节bank的范围不同，不应将两者的字节数混用。
 
@@ -777,7 +833,7 @@ block13每bank起点为`0x1E0 + bank×0x300`，共768字节：B为`+0x000..+0x0B
 | FL2照片 | `[113,-141,-68,88,128,103]` | `[-17,-47,-46,113,406,184]` | `[225,-242,-80,77,371,-5]` |
 | FL3照片 | `[57,-231,81,-255,200,214]` | `[138,-221,-42,-128,253,-17]` | `[225,-265,104,-238,366,-47]` |
 
-三套不是相同数据：FL2照片的B对A1、A1对A2分别有94／96、95／96个int16不同；FL3照片分别95／96、95／96个不同。各套完整16槽数据、视频bank及散列见本次字节复核（本地证据：`r5_fx2_b_a1_a2_audit_20261019/comparison.json`），脚本为compare.py（本地证据：`r5_fx2_b_a1_a2_audit_20261019/compare.py`）。
+三套不是相同数据：FL2照片的B对A1、A1对A2分别有94／96、95／96个int16不同；FL3照片分别95／96、95／96个不同。各套完整16槽数据、视频bank及散列见[本次字节复核](r5_fx2_b_a1_a2_audit_20261019/comparison.json)，脚本为[compare.py](r5_fx2_b_a1_a2_audit_20261019/compare.py)。
 
 CC1同样包含B／A1／A2，但每套是8个int16。FX2以绝对值保存；R5格式为B、A1−B、A2−B。将T快照的差分重新还原后，四个bank的全部24项都等于FX2原厂值；各行尾16字节保留R5，符合当前格式适配边界。block13头部的坐标轴`0x100..0x123`与三个通道基准`0x190..0x195`也已确认R5与FX2相等，未发现这两项共用数据漏搬。
 
@@ -869,7 +925,7 @@ FL、FL2、FL3共用上述数值；ST的780C=4096、780D=14848、780E首项=1728
 
 | RAW字节范围（零基，右端不含） | 来源 | 当前处理 |
 |---|---|---|
-| `0,24)` | 16段色相分区坐标、模式／控制位 | 沿用R5公共block13及原厂代码 |
+| `[0,24)` | 16段色相分区坐标、模式／控制位 | 沿用R5公共block13及原厂代码 |
 | `[24,216)` | group1的16槽×6系数，按列重排×4 | 已复制FL2／FL3供体系数 |
 | `[216,248)` | 16个分区间隔换算系数，配对打包 | 原厂读取函数生成 |
 | `[248,276)` | 三通道基准、分区控制字节、末尾控制值等，存在混合字节／位打包 | 沿用原厂配置和默认分支 |
@@ -962,11 +1018,11 @@ CC1差异经过第三节公式精确反映在RAW中。因此“新三机型的�
 
 ### A1 II样本与R6的FL2／FL3比较边界（2026-10-19）
 
-用户提供`/Users/zhaoyunpeng/Downloads/Sony - ILCE-1M2 - 14bit lossless (4_3).ARW`。元数据型号为ILCE-1M2、版本2.00，拍摄时间2025-05-09。格式解析SR2外观指针表共10项，仅有Standard、Vivid、Neutral、Portrait、FL、VV2、IN、SH、BW、Sepia，每项114字段；没有FL2或FL3参数组。ExifTool独立解码的外观列表与结构解析完全一致。
+用户提供`/Users/LOCAL_USER/Downloads/Sony - ILCE-1M2 - 14bit lossless (4_3).ARW`。元数据型号为ILCE-1M2、版本2.00，拍摄时间2025-05-09。格式解析SR2外观指针表共10项，仅有Standard、Vivid、Neutral、Portrait、FL、VV2、IN、SH、BW、Sepia，每项114字段；没有FL2或FL3参数组。ExifTool独立解码的外观列表与结构解析完全一致。
 
 R6参考`DG707670.ARW`则为ILCE-7RM6 v1.01，共12项，含FL2、FL3。因此**这份A1 II样片不足以判断其FL2／FL3是否与R6一致**，不能用已有供体注入后的一致来冒充原生比较，也不能由旧样片缺项推断所有后续A1 II固件均无此功能。要做原生参数比较，需要来自已支持FL2／FL3版本的A1 II原始ARW，并确认其自身带有对应参数组；拍摄时不必选中FL2／FL3，只要原生文件的目录包含它们。
 
-原文件均保持不变，未执行解锁、注入、显影或相机操作。完整文件散列、目录、独立元数据及比较状态见[comparison.json（本地证据：`a1ii_r6_fl23_20261019/comparison.json`），只读复现脚本为同目录compare.py（本地证据：`a1ii_r6_fl23_20261019/compare.py`）。
+原文件均保持不变，未执行解锁、注入、显影或相机操作。完整文件散列、目录、独立元数据及比较状态见[comparison.json](a1ii_r6_fl23_20261019/comparison.json)，只读复现脚本为同目录[compare.py](a1ii_r6_fl23_20261019/compare.py)。
 
 ### 跨代ST／FL的参数关系
 
@@ -997,7 +1053,7 @@ IED项目已生成同一R5 RAW的A／B对照副本，将Standard组的十个目�
 
 ### R5 ST与替换R6 ST参数的JPG量化
 
-用户指定`/Users/zhaoyunpeng/Documents/fl对比/DSC00430_ST.JPG`和`DSC00430_ST替换为R6.JPG`。两张均为9504×6336、sRGB、`Edit 4.1.00.03062`导出，同一拍摄时间及曝光／白平衡记录（1/125秒、F2.8、ISO320、5300K）。Sony CreativeStyle／ColorMode仍为原拍FL标签，因此不以这些标签认证Edit重新显影时选择的ST；对照身份以用户确认和保存的参数替换实验为依据。
+用户指定`/Users/LOCAL_USER/Documents/fl对比/DSC00430_ST.JPG`和`DSC00430_ST替换为R6.JPG`。两张均为9504×6336、sRGB、`Edit 4.1.00.03062`导出，同一拍摄时间及曝光／白平衡记录（1/125秒、F2.8、ISO320、5300K）。Sony CreativeStyle／ColorMode仍为原拍FL标签，因此不以这些标签认证Edit重新显影时选择的ST；对照身份以用户确认和保存的参数替换实验为依据。
 
 全分辨率RGB直方图交集均值为**98.948%**、BC分布亲和度均值为**99.985%**，其中R／G／B交集分别98.269%、99.451%、99.125%。亮度码值Y′交集99.299%。RGB全分辨率PSNR为45.17dB；平均绝对误差分别为0.984、0.556、0.705个8位码值。直方图高度相似不能排除局部色彩变化，BC也不是还原准确率。
 
@@ -1018,7 +1074,7 @@ IED项目已生成同一R5 RAW的A／B对照副本，将Standard组的十个目�
 
 来源复核发现：原始430 ARW仍匹配实验记录的散列；当前R6参数副本比生成时增加1630字节，整文件散列已变化。只在内存重建最初预期副本，散列精确匹配原实验记录，再解析当前副本，确认全部十个ST负载仍匹配R6，各外观负载相对生成时均无变化，保存记录中的RAW像素区域散列全部一致；预览区域及其他私有元数据已有变化。本次未认证这些变化的写入者，也未恢复完整Edit历史，因此JPG测量是当前两张导出的输出差异，不能把所有残差无条件归因于唯一一个参数块。
 
-证据：直方图（本地证据：`r5_r6_st_comparison_20261017/histograms.png`）、脸部裁切对照（本地证据：`r5_r6_st_comparison_20261017/face_comparison.jpg`）、区域选择（本地证据：`r5_r6_st_comparison_20261017/ROI_selection.jpg`）、[完整指标](r5_r6_st_comparison_20261017/metrics.json)、原尺寸脸部复核（本地证据：`r5_r6_st_comparison_20261017/native_face_verification.json`）、RAW来源复核（本地证据：`r5_r6_st_comparison_20261017/raw_provenance.json`）。脚本为同目录`compare.py`、`verify_native_faces.py`、`verify_raw_provenance.py`，使用桌面内置Python及此前保存的色差函数。输入JPG／ARW均仅只读，没有相机操作。
+证据：[直方图](r5_r6_st_comparison_20261017/histograms.png)、[脸部裁切对照](r5_r6_st_comparison_20261017/face_comparison.jpg)、[区域选择](r5_r6_st_comparison_20261017/ROI_selection.jpg)、[完整指标](r5_r6_st_comparison_20261017/metrics.json)、[原尺寸脸部复核](r5_r6_st_comparison_20261017/native_face_verification.json)、[RAW来源复核](r5_r6_st_comparison_20261017/raw_provenance.json)。脚本为同目录`compare.py`、`verify_native_faces.py`、`verify_raw_provenance.py`，使用桌面内置Python及此前保存的色差函数。输入JPG／ARW均仅只读，没有相机操作。
 
 ## 六、画面对照与实机验收边界
 
@@ -1030,7 +1086,7 @@ IED项目已生成同一R5 RAW的A／B对照副本，将Standard组的十个目�
 
 ### 430／431／432与Edit导出的直方图及色差实测
 
-输入为`/Users/zhaoyunpeng/Documents/fl对比/`中的`DSC00430.JPG`、`DSC00431.JPG`、`DSC00432.JPG`，分别配对同编号`后期导出.JPG`，用户指定外观依次为FL／FL2／FL3。未使用另两张430的ST实验图。六文件的尺寸均为9504×6336，EXIF均声明sRGB，无内嵌ICC。机内图软件标记为`ILCE-7RM5 v4.04`，导出图为`Edit 4.1.00.03062`；保存的CreativeStyle／ColorMode均对应FL、FL2、FL3。每对曝光记录均为1/125秒、F2.8、ISO320、5300K、曝光补偿0，拍摄时间匹配；这些记录不能代替完整Edit调整历史认证。
+输入为`/Users/LOCAL_USER/Documents/fl对比/`中的`DSC00430.JPG`、`DSC00431.JPG`、`DSC00432.JPG`，分别配对同编号`后期导出.JPG`，用户指定外观依次为FL／FL2／FL3。未使用另两张430的ST实验图。六文件的尺寸均为9504×6336，EXIF均声明sRGB，无内嵌ICC。机内图软件标记为`ILCE-7RM5 v4.04`，导出图为`Edit 4.1.00.03062`；保存的CreativeStyle／ColorMode均对应FL、FL2、FL3。每对曝光记录均为1/125秒、F2.8、ISO320、5300K、曝光补偿0，拍摄时间匹配；这些记录不能代替完整Edit调整历史认证。
 
 全分辨率计算每通道256档归一化直方图及RGB逐像素误差。色差计算先以同样的LANCZOS算法缩为1584×1056，再按sRGB→XYZ D65→Lab D65计算CIEDE2000，参数均为1；实现对照四组公开Sharma参考值通过，误差小于0.0001。没有曝光修正、直方图匹配或几何变换。792×528的边缘位移诊断在横纵±3像素搜索范围内，三对均以零位移最优，相关系数0.9967～0.9976；这不等于证明亚像素完全对齐。
 
@@ -1051,10 +1107,10 @@ Edit相对机内图的全图平均ΔL*分别为−0.332、−0.258、−0.225，
 复现脚本：[compare.py](r5_fl_edit_comparison_20261017/compare.py)。运行使用桌面内置Python（包含Pillow及NumPy）：
 
 ```sh
-/Users/zhaoyunpeng/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B analysis/r5_fl_edit_comparison_20261017/compare.py
+/Users/LOCAL_USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B analysis/r5_fl_edit_comparison_20261017/compare.py
 ```
 
-原始输入未修改，无相机操作。六文件散列、完整直方图、全图及局部指标见[metrics.json](r5_fl_edit_comparison_20261017/metrics.json)，元数据见metadata.json（本地证据：`r5_fl_edit_comparison_20261017/metadata.json`）。另保存直方图叠加（本地证据：`r5_fl_edit_comparison_20261017/histograms.png`）、配对缩略图（本地证据：`r5_fl_edit_comparison_20261017/contact_sheet.jpg`）、主体矩形（本地证据：`r5_fl_edit_comparison_20261017/subject_region.jpg`）及逐对ΔE00热图（固定0～5，蓝→黄→红），后者不能按显示颜色当作原图色彩。
+原始输入未修改，无相机操作。六文件散列、完整直方图、全图及局部指标见[metrics.json](r5_fl_edit_comparison_20261017/metrics.json)，元数据见[metadata.json](r5_fl_edit_comparison_20261017/metadata.json)。另保存[直方图叠加](r5_fl_edit_comparison_20261017/histograms.png)、[配对缩略图](r5_fl_edit_comparison_20261017/contact_sheet.jpg)、[主体矩形](r5_fl_edit_comparison_20261017/subject_region.jpg)及逐对ΔE00热图（固定0～5，蓝→黄→红），后者不能按显示颜色当作原图色彩。
 
 ### 实机状态按时间区分
 
@@ -1069,15 +1125,15 @@ Edit相对机内图的全图平均ΔL*分别为−0.332、−0.258、−0.225，
 
 | 内容 | 脚本／结果 |
 |---|---|
-| CC1与RAW | compare_raw_and_cc1.py（本地证据：`r5_fl23_arw10_vs_firmware_20261016/compare_raw_and_cc1.py`）／raw_vs_cc1_correspondence.json（本地证据：`r5_fl23_arw10_vs_firmware_20261016/raw_vs_cc1_correspondence.json`） |
-| 矩阵与Gamma | map_matrix_gamma.py（本地证据：`r5_fl23_arw10_vs_firmware_20261016/map_matrix_gamma.py`）／matrix_gamma_correspondence.json（本地证据：`r5_fl23_arw10_vs_firmware_20261016/matrix_gamma_correspondence.json`）／matrix_gamma_probes.json（本地证据：`r5_fl23_arw10_vs_firmware_20261016/matrix_gamma_probes.json`） |
-| 同机型外观差异 | compare_look_banks.py（本地证据：`r5_fl23_arw10_vs_firmware_20261016/compare_look_banks.py`）／look_bank_comparison.json（本地证据：`r5_fl23_arw10_vs_firmware_20261016/look_bank_comparison.json`） |
-| R5／FX2与数学距离 | compare_r5_fx2_st_fl.py（本地证据：`r5_fl23_arw10_vs_firmware_20261016/compare_r5_fx2_st_fl.py`）／r5_fx2_st_fl_comparison.json（本地证据：`r5_fl23_arw10_vs_firmware_20261016/r5_fx2_st_fl_comparison.json`）；measure_st_fl_distance.py（本地证据：`r5_fl23_arw10_vs_firmware_20261016/measure_st_fl_distance.py`）／st_fl_numerical_distance.json（本地证据：`r5_fl23_arw10_vs_firmware_20261016/st_fl_numerical_distance.json`） |
-| 共用字段、原厂指令回放 | audit_common.py（本地证据：`r5_fl23_common_fields_20261017/audit_common.py`）／audit_results.json（本地证据：`r5_fl23_common_fields_20261017/audit_results.json`）／native_ranges.txt（本地证据：`r5_fl23_common_fields_20261017/native_ranges.txt`） |
-| REA及代码摘录 | Knee／Gamma bundle（本地证据：`r5_fl23_common_fields_20261017/rea_knee_gamma_bundle.json`）／block13 bundle（本地证据：`r5_fl23_common_fields_20261017/rea_block13_bundle.json`）；同目录保留`make_excerpt.py`、ELF摘录及`excerpt_manifest*.json` |
-| 实机设置与回读 | 会话D（本地证据：`r5_m4strict_personal_flash_20261015_D/README.md`）／会话I（本地证据：`r5_fl23_post404_readback_20261016_I_poweron/README.md`）／会话T（本地证据：`r5_fl23_post404_redeploy_20261016_T/README.md`）／会话U（本地证据：`r5_fl23_post404_persistence_20261016_U/README.md`） |
-| 430／431／432机内与Edit量化 | [compare.py](r5_fl_edit_comparison_20261017/compare.py)／[metrics.json](r5_fl_edit_comparison_20261017/metrics.json)／直方图（本地证据：`r5_fl_edit_comparison_20261017/histograms.png`） |
-| 430 R5 ST／R6 ST参数导出量化 | [compare.py](r5_r6_st_comparison_20261017/compare.py)／[metrics.json](r5_r6_st_comparison_20261017/metrics.json)／RAW复核（本地证据：`r5_r6_st_comparison_20261017/raw_provenance.json`） |
+| CC1与RAW | [compare_raw_and_cc1.py](r5_fl23_arw10_vs_firmware_20261016/compare_raw_and_cc1.py)／[raw_vs_cc1_correspondence.json](r5_fl23_arw10_vs_firmware_20261016/raw_vs_cc1_correspondence.json) |
+| 矩阵与Gamma | [map_matrix_gamma.py](r5_fl23_arw10_vs_firmware_20261016/map_matrix_gamma.py)／[matrix_gamma_correspondence.json](r5_fl23_arw10_vs_firmware_20261016/matrix_gamma_correspondence.json)／[matrix_gamma_probes.json](r5_fl23_arw10_vs_firmware_20261016/matrix_gamma_probes.json) |
+| 同机型外观差异 | [compare_look_banks.py](r5_fl23_arw10_vs_firmware_20261016/compare_look_banks.py)／[look_bank_comparison.json](r5_fl23_arw10_vs_firmware_20261016/look_bank_comparison.json) |
+| R5／FX2与数学距离 | [compare_r5_fx2_st_fl.py](r5_fl23_arw10_vs_firmware_20261016/compare_r5_fx2_st_fl.py)／[r5_fx2_st_fl_comparison.json](r5_fl23_arw10_vs_firmware_20261016/r5_fx2_st_fl_comparison.json)；[measure_st_fl_distance.py](r5_fl23_arw10_vs_firmware_20261016/measure_st_fl_distance.py)／[st_fl_numerical_distance.json](r5_fl23_arw10_vs_firmware_20261016/st_fl_numerical_distance.json) |
+| 共用字段、原厂指令回放 | [audit_common.py](r5_fl23_common_fields_20261017/audit_common.py)／[audit_results.json](r5_fl23_common_fields_20261017/audit_results.json)／[native_ranges.txt](r5_fl23_common_fields_20261017/native_ranges.txt) |
+| REA及代码摘录 | [Knee／Gamma bundle](r5_fl23_common_fields_20261017/rea_knee_gamma_bundle.json)／[block13 bundle](r5_fl23_common_fields_20261017/rea_block13_bundle.json)；同目录保留`make_excerpt.py`、ELF摘录及`excerpt_manifest*.json` |
+| 实机设置与回读 | [会话D](r5_m4strict_personal_flash_20261015_D/README.md)／[会话I](r5_fl23_post404_readback_20261016_I_poweron/README.md)／[会话T](r5_fl23_post404_redeploy_20261016_T/README.md)／[会话U](r5_fl23_post404_persistence_20261016_U/README.md) |
+| 430／431／432机内与Edit量化 | [compare.py](r5_fl_edit_comparison_20261017/compare.py)／[metrics.json](r5_fl_edit_comparison_20261017/metrics.json)／[直方图](r5_fl_edit_comparison_20261017/histograms.png) |
+| 430 R5 ST／R6 ST参数导出量化 | [compare.py](r5_r6_st_comparison_20261017/compare.py)／[metrics.json](r5_r6_st_comparison_20261017/metrics.json)／[RAW复核](r5_r6_st_comparison_20261017/raw_provenance.json) |
 
 主要输入SHA-256：
 
@@ -1122,10 +1178,10 @@ Edit相对机内图的全图平均ΔL*分别为−0.332、−0.258、−0.225，
 
 ### IED研究与实拍观察来源
 
-- [独立RAW创意外观工具说明](/Users/zhaoyunpeng/Documents/ChatGPT/ied软件/RAW创意外观解锁/使用说明.md)。
-- [FX2／M5／R6外观参数对照](/Users/zhaoyunpeng/Documents/ChatGPT/ied软件/研究记录/20261016_FX2_M5_R6外观参数对照/对照说明.md)。
-- [FX2／M5／R5／R6的ST／FL对照](/Users/zhaoyunpeng/Documents/ChatGPT/ied软件/研究记录/20261016_FX2_M5_R5_R6_ST_FL对照/对照说明.md)。
-- [R5替换R6 ST十项的测试说明](/Users/zhaoyunpeng/Documents/ChatGPT/ied软件/研究记录/20261016_R5替换R6_ST十项/测试说明.md)与[逐字段校验记录](/Users/zhaoyunpeng/Documents/ChatGPT/ied软件/研究记录/20261016_R5替换R6_ST十项/替换与校验记录.json)。
+- [独立RAW创意外观工具说明](/Users/LOCAL_USER/Documents/ChatGPT/ied软件/RAW创意外观解锁/使用说明.md)。
+- [FX2／M5／R6外观参数对照](/Users/LOCAL_USER/Documents/ChatGPT/ied软件/研究记录/20261016_FX2_M5_R6外观参数对照/对照说明.md)。
+- [FX2／M5／R5／R6的ST／FL对照](/Users/LOCAL_USER/Documents/ChatGPT/ied软件/研究记录/20261016_FX2_M5_R5_R6_ST_FL对照/对照说明.md)。
+- [R5替换R6 ST十项的测试说明](/Users/LOCAL_USER/Documents/ChatGPT/ied软件/研究记录/20261016_R5替换R6_ST十项/测试说明.md)与[逐字段校验记录](/Users/LOCAL_USER/Documents/ChatGPT/ied软件/研究记录/20261016_R5替换R6_ST十项/替换与校验记录.json)。
 
 
 
@@ -1250,7 +1306,7 @@ QAQ训练以稀疏Kronecker联合三平面受限最小二乘求解实际A*C*resp
 另感谢本地IED／RAW创意外观解锁项目提供十字段对照与Edit实验资料；当前没有核实其公开GitHub地址，因此不编造外部链接。Sony Imaging Edge Desktop为Sony官方软件，不属于本项目开源源码。
 
 本研究公开的是主机脚本、补丁配方与研究说明；Sony原始或修改固件、供体完整色彩数据、机身备份、个人设置、签名私钥及第三方载荷不随源码发布。各工具保留原有许可证，致谢不替代再分发许可。
-- 初始校验环境修改（本地证据：`../build_r5_partition1_verifykey_skip_20261014/README.md`）。
+- [初始校验环境修改](../build_r5_partition1_verifykey_skip_20261014/README.md)。
 - 图像视觉反馈来源为用户2026-10-17消息；后续430／431／432配对量化及430两张ST导出量化已分别记录于第五、六部分。ST玩偶脸部黄红减弱但明度略降，与最初“更明亮”的主观描述分开报告。
 ### 2026-10-21：R5原厂网格存在性核查与总效果单网格压缩
 
@@ -1283,3 +1339,20 @@ QAQ训练以稀疏Kronecker联合三平面受限最小二乘求解实际A*C*resp
 ### 2026-10-22：4.20 SD 完整替换与网格诊断候选
 
 见 [新增实现与证据](r5_native_grid420_20261022/README.md)。有效 SD BIN 全量替换，未列外观清除自定义覆盖，零字节/有效空 v3 清空全部，无文件或损坏保留旧配置；增加 R5IMPORT.LOG 和原厂网格选择/建表/上传返回诊断。152 场景、组件回归及4.20 DAT封装验签/全包独立解密通过，尚无实机验收。DAT SHA256 c6483a0a3f421251e08cb742b7dd5bfd7f2a5e65d3497dbcf8dec1b8255448be。当前已确认机身版本仍为4.18，无相机操作。
+
+## 2026-10-23新增：独立探针采集与网格响应反推工具
+
+`R5GridCalibrator/`现为独立Web，默认本机4190，不修改固件或原色彩工作台。上传BIN v4并选一项，生成一份包含12配置的新BIN，非网格颜色参数相同：ZERO、三通道正负、三坐标渐变、原表及交叉波形。原表和波形只作留出测试。探针包完整替换配置集，用户需保留源BIN以恢复；已支持v4的固件无需反复刷固件。
+
+下面按批次上传ZERO与各探针JPG，可补重复ZERO检查漂移。工具保存BIN身份、配置/照片对应和样本来源，拟合暂定坐标通道矩阵/颜色交互与可选有界仿射坐标调整，训练/验证/测试严格分离，报告三类误差、原暂定/零修正对照、激励秩和坐标覆盖。输出为PC响应模型和预测代码，不是颜色BIN或新固件，尚未自动接入R5ColorLab。拟合只能约束已拍条件和探针覆盖，不唯一证明ISP内部算法；自然图像错位、曝光/WB/光线漂移及空间处理仍会混入差异。
+
+6项合成/HTTP回归与JS语法通过，包含保参、已知响应恢复、测试投毒隔离、低秩/无效果、16位TIFF和完整上传导出流程。无真实R5标定样本，不能声称R5颜色已校准。见`analysis/r5_grid_calibrator_20261023/verification.json`及工具README。本次独立开发未自动发布GitHub。
+
+
+### 2026-10-24：接入用户R5实拍网格响应
+
+按用户要求以R5-grid-response.zip的refined-smooth模型替换新任务实测选项中的C2代理；原始JSON固定SHA256 6852ead83bf381215a8d721d1557cc73803f6ef60a0745971e8783144863c96b。11对探针，三通道秩3，留出RMSE1.9158、原暂定15.2171、零修正9.2282；颜色覆盖14/256单元，无重复ZERO漂移回执。没有C2直接对比，不宣称全色域/跨外观ISO/WB验证。原C2模型及数据保留供旧配方，不覆盖历史任务；旧压缩实现散列门控保留，必要时重压缩。
+
+R5ColorLab和research工作台同步paired_response：本次仿射坐标、三线性系数/256、RGB相关通道响应，零表恒等；直接拟合、压缩、整数选优及照片预测统一get接口。新响应不走TPS照片加速器。与反推工具逐点/零表/照片render一致，合成已知表求解误差0，旧C2加载仍通过，验证脚本analysis/r5_measured_response_20261024/verify.py。未改固件/设备，未自动发布GitHub。
+
+2026-10-24补充：已按用户要求使用IED项目v2.2转换链生成GFX100S II合成RAF色卡，见`exports/GFX100SII_chart_20261024/`。完整目标RAW阵列与3700点训练数值独立验证通过；合成预览替换历史照片预览。仅固定合成源的tile填充截取有本地适配，IED源未改。RAF是容器转换的合成色卡，不代表富士传感器实拍；Adobe/LibRaw裁切分别顶移1/2行，LibRaw建议6335行输出尚未加入Web目标导入适配。实际显影软件打开仍待用户验证。

@@ -30,6 +30,6 @@ def enable(response):
     if not measured_response.is_measured(response):
         return
     model = measured_response.get(response)
-    if not hasattr(model, '_photo_original_forward'):
+    if hasattr(model, 'forward') and not hasattr(model, '_photo_original_forward'):
         model._photo_original_forward = model.forward
         model.forward = types.MethodType(fast_forward, model)

@@ -1,11 +1,11 @@
-const measuredGridResponse={"schema": "r5-measured-grid-response/1", "preset": "qaq-a7c2-2.01-c8328ad5", "sha256": "7e183f46f7acd739a12b7c2989e0ce245628a1f0d72d4f673f48945f4493b0af", "proxy_for": "ILCE-7RM5"};
+const measuredGridResponse={"schema": "r5-measured-grid-response/1", "preset": "r5-paired-20261024-v2", "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45", "model": "ILCE-7RM5"};
 function selectedGridResponse(){
   if($('gridResponseModel').value==='measured')return measuredGridResponse;
   const value=JSON.parse($('legacyGridResponse').value);
   if(!Array.isArray(value)||value.length!==3||value.some(row=>!Array.isArray(row)||row.length!==3||row.some(v=>typeof v!=='number'||!Number.isFinite(v))))throw Error('旧版响应矩阵需为 3×3 有限数字 JSON');
   return value;
 }
-function gridResponseName(response){return Array.isArray(response)?'旧版 5×9×9 · BT.601 + 固定响应':'QAQ A7C2 实测代理';}
+function gridResponseName(response){return Array.isArray(response)?'旧版 5×9×9 · BT.601 + 固定响应':(response?.preset==='r5-paired-20261024-v2'?'R5 实拍响应 v2 · 2026-10-24':'历史实测代理');}
 function gridResponseControls(){ $('legacyGridResponseFields').hidden=$('gridResponseModel').value!=='legacy'; }
 
 'use strict';
@@ -187,7 +187,7 @@ function renderPCReport(report){
     const tr=document.createElement('tr');for(const value of [label,gray.rmse.toFixed(3),test.rmse.toFixed(3),test.perceptual?.delta_e00_mean?.toFixed(3)??'—']){const td=document.createElement('td');td.textContent=value;tr.append(td);}table.append(tr);
   }area.append(table);
   if(report.fitting?.strategy){const note=document.createElement("p");note.className="hint";note.textContent=report.fitting.strategy==='none'?'仅独立曲线／曲线阶段，未启用三维网格。':report.fitting.strategy==="dense-compressed"?"已选：17×33×33 大网格 → 密集采样压缩 → 5×9×9 / 7位。":"已选：直接拟合 5×9×9 小网格。";area.append(note);}
-  if(qaqMode){const note=document.createElement("p");note.className="hint";note.textContent="网格响应："+JSON.stringify(report.response)+"。"+(Array.isArray(report.response)?"BT.601 暂定坐标 → 三线性插值 / 256 → 固定响应 → 加回原生输出。":"内部坐标 → 网格偏移 → 非线性响应；非 R5 实测。");area.append(note);return;}
+  if(qaqMode){const note=document.createElement("p");note.className="hint";note.textContent="网格响应："+JSON.stringify(report.response)+"。"+(Array.isArray(report.response)?"BT.601 暂定坐标 → 三线性插值 / 256 → 固定响应 → 加回原生输出。":"按任务保存的实测坐标与响应预测；覆盖范围以任务绑定模型报告为准，未覆盖区域为外推。");area.append(note);return;}
   if(!report.curves)return;
   const v=report.curves;
   function plot(id,series,low,high){
@@ -323,12 +323,14 @@ async function poll(){
   }catch(e){setBusy(false);$('jobStatus').textContent='连接中断：'+e.message+'。重载页面可重新连接运行中任务。';}
 }
 async function loadLut(file){if(!file)return;if(!file.name.toLowerCase().endsWith('.cube')||file.size>64*1024*1024){toast('请选择 64 MiB 内的 .cube 文件');return;}lutText=await file.text();$('lutLabel').textContent=file.name;$('jobStatus').textContent=`已导入 ${(file.size/1024).toFixed(1)} KiB；请选择正确的输入色域。`;}
+function fitOptions(compression){const endpoint=$('endpoint').value===''?null:Number($('endpoint').value);if(endpoint!==null&&(!Number.isInteger(endpoint)||endpoint<0||endpoint>131071))throw Error('伽马最后一点必须为 0–131071 的整数，或留空');const group_weights={random:+$('weightRandom').value,primaries:+$('weightPrimaries').value,gray:+$('weightGray').value,colorchecker24:+$('weightCC24').value,sector16:+$('weightSector16').value};if(Object.values(group_weights).some(v=>!Number.isFinite(v)||v<0.05||v>64))throw Error('训练权重需在 0.05–64 之间');const search_options={parameter_smoothing:+$('parameterSmoothing').value,starts:+$('searchStarts').value,adaptive_rounds:+$('adaptiveRounds').value,perceptual_weight:+$('perceptualWeight').value,quantization_sweeps:+$('quantizationSweeps').value};const body={target_kind:$('targetKind').value,target_id:chartTargetId,white_balance:$('wbTraining').checked,compression_training:compression,pc_options:{curve_mode:$('pcCurveMode').value,grid_enabled:$('pcCurveMode').value==='qaq-grid'?true:$('pcGridEnabled').checked,response:selectedGridResponse()},search_options,group_weights,pc_compensation:$('pcTraining').checked,lut:lutText,gamut:$('gamut').value,evaluations:+$('evaluations').value,number:selected,short_name:draft.short_name,full_name:draft.full_name,gamma_endpoint128:endpoint};return body;}
 async function init(){
   try{boot=await(await api('/api/bootstrap')).json();
     names.forEach((name,i)=>{const b=document.createElement('button');b.textContent=String(i+1);b.title='自定义配置 '+(i+1);b.dataset.number=i+1;b.onclick=()=>selectLook(i+1);$('looks').append(b);});
     for(const preset of boot.stock_grids){const o=document.createElement('option');o.value=preset.id;o.textContent=preset.label;o.title=JSON.stringify(preset.provenance);$('stockGrid').append(o);}
     names.forEach((name,i)=>{const o=document.createElement('option');o.value=i;o.textContent=chineseNames[i]+'（'+name+'）';$('baselineLook').append(o);});
     selectLook(1);renderCollection();
+    initFolderTraining();
     $('stockGrid').onchange=()=>{const preset=boot.stock_grids.find(p=>p.id===$('stockGrid').value);draftSource=preset?{kind:'stock',id:preset.id}:undefined;if(preset)draft.grid_5x9x9=clone(preset.grid_5x9x9);syncRaw();};
     $('baselineLook').onchange=()=>{baselineNote();renderGamma();};
     $('gridResponseModel').onchange=gridResponseControls;gridResponseControls();
@@ -369,13 +371,13 @@ async function init(){
     $('chartTarget').onchange=async e=>{
       const file=e.target.files[0];chartTargetId=undefined;
       if(!file)return;
-      if(!/\.(tif|tiff|jpg|jpeg)$/i.test(file.name)||file.size>64*1024*1024){$('chartTargetStatus').textContent='请选择 64 MiB 内的 TIFF 或 JPG';e.target.value='';return;}
+      if(!/\.(tif|tiff|jpg|jpeg)$/i.test(file.name)||file.size>512*1024*1024){$('chartTargetStatus').textContent='请选择 512 MiB 内的 TIFF 或 JPG';e.target.value='';return;}
       chartUploading=true;$('targetKind').disabled=true;$('chartTarget').disabled=true;$('fit').disabled=true;$('distillGrid').disabled=true;
       $('chartTargetStatus').textContent='上传并检查色卡布局、位深及色域…';
       try{
         const response=await fetch('/api/chart-target',{method:'POST',headers:{'Content-Type':'application/octet-stream','X-R5-Token':boot.token},body:file});
         const value=await response.json();if(!response.ok)throw Error(value.error);
-        chartTargetId=value.id;$('chartTargetStatus').textContent=file.name+' · '+value.audit.bits_per_channel+' 位 · 3700 个目标色块已就绪';
+        chartTargetId=value.id;const name=file.name.replace(/\.[^.]+$/,'');$('shortName').value=name;$('lookName').value=name;readNames();syncRaw();$('chartTargetStatus').textContent=file.name+' · '+value.audit.bits_per_channel+' 位 · 3700 个目标色块已就绪';
       }catch(error){$('chartTargetStatus').textContent='导入失败：'+error.message;}
       finally{chartUploading=false;$('targetKind').disabled=busy;$('chartTarget').disabled=busy;$('fit').disabled=busy;$('distillGrid').disabled=busy||compressionBusy;}
     };
@@ -393,7 +395,7 @@ async function init(){
     $('pcCurveMode').onchange=()=>{if($('pcCurveMode').value==='qaq-grid')$('pcGridEnabled').checked=true;};
     $('resetWeights').onclick=()=>{for(const id of ['weightRandom','weightPrimaries','weightGray','weightCC24','weightSector16'])$(id).value='1';};
     $('parameterSmoothing').oninput=()=>{$('parameterSmoothingValue').textContent=$('parameterSmoothing').value;};
-    $('fit').onclick=async(compression=false)=>{compression=compression===true;try{if(chartUploading)throw Error('目标图仍在上传');if(!targetReady())throw Error(imageTarget()?'请先导入处理后的色卡目标图':'请先导入 .cube LUT');remember();const endpoint=$('endpoint').value===''?null:Number($('endpoint').value);if(endpoint!==null&&(!Number.isInteger(endpoint)||endpoint<0||endpoint>131071))throw Error('伽马最后一点必须为 0–131071 的整数，或留空');const group_weights={random:+$('weightRandom').value,primaries:+$('weightPrimaries').value,gray:+$('weightGray').value,colorchecker24:+$('weightCC24').value,sector16:+$('weightSector16').value};if(Object.values(group_weights).some(v=>!Number.isFinite(v)||v<0.05||v>64))throw Error('训练权重需在 0.05–64 之间');const search_options={parameter_smoothing:+$('parameterSmoothing').value,starts:+$('searchStarts').value,adaptive_rounds:+$('adaptiveRounds').value,perceptual_weight:+$('perceptualWeight').value,quantization_sweeps:+$('quantizationSweeps').value};const body={target_kind:$('targetKind').value,target_id:chartTargetId,white_balance:$('wbTraining').checked,compression_training:compression,pc_options:{curve_mode:$('pcCurveMode').value,grid_enabled:$('pcCurveMode').value==='qaq-grid'?true:$('pcGridEnabled').checked,response:selectedGridResponse()},search_options,group_weights,pc_compensation:$('pcTraining').checked,lut:lutText,gamut:$('gamut').value,evaluations:+$('evaluations').value,number:selected,short_name:draft.short_name,full_name:draft.full_name,gamma_endpoint128:endpoint};const response=await(await api('/api/fit',body)).json();jobId=response.id;setBusy(true);$('jobDownload').hidden=true;$('jobStatus').textContent='任务已提交';clearTimeout(timer);poll();}catch(e){toast(e.message);}};
+    $('fit').onclick=async(compression=false)=>{compression=compression===true;try{if(chartUploading)throw Error('目标图仍在上传');if(!targetReady())throw Error(imageTarget()?'请先导入处理后的色卡目标图':'请先导入 .cube LUT');remember();const body=fitOptions(compression);const response=await(await api('/api/fit',body)).json();jobId=response.id;setBusy(true);$('jobDownload').hidden=true;$('jobStatus').textContent='任务已提交';clearTimeout(timer);poll();}catch(e){toast(e.message);}};
     $('cancel').onclick=async()=>{try{await api('/api/cancel',{id:jobId});$('jobStatus').textContent='正在取消…';}catch(e){toast(e.message);}};
     $('rawInput').onchange=e=>{const f=e.target.files[0];if(!f)return;if(!/\.arw$/i.test(f.name)||f.size>512*1024*1024){toast('请选择 512 MiB 内的 R5 ARW');return;}rawFile=f;$('rawName').textContent=f.name+' · '+(f.size/1024/1024).toFixed(1)+' MiB';$('rawExport').disabled=!validationJob||rawBusy||Boolean(diagnosticData?.white_balance&&Object.values(diagnosticData.white_balance.parameters).some(v=>v!==0));};
     $('rawExport').onclick=async()=>{if(!rawFile||!validationJob||rawBusy)return;const identifier=validationJob;rawBusy=true;$('rawExport').disabled=true;$('rawStatus').textContent='正在本地上传、校验并生成 ARW 副本，请稍候…';try{const response=await fetch('/api/raw-export?job='+identifier,{method:'POST',headers:{'Content-Type':'application/octet-stream','X-R5-Token':boot.token},body:rawFile});if(!response.ok){const error=await response.json();throw Error(error.error);}download(await response.blob(),rawFile.name.replace(/\.arw$/i,'')+'-Edit验证.zip');$('rawStatus').textContent='验证包已下载。打开 fitted-ST.ARW，在 Edit 显式选择“标准（ST）”。内嵌预览未重绘；请以 Edit 实际渲染为准。';}catch(e){$('rawStatus').textContent='生成失败：'+e.message;toast(e.message);}finally{rawBusy=false;$('rawExport').disabled=!rawFile||!validationJob||Boolean(diagnosticData?.white_balance&&Object.values(diagnosticData.white_balance.parameters).some(v=>v!==0));}};
@@ -405,3 +407,55 @@ async function init(){
   }catch(e){$('jobStatus').textContent=e.message;toast('初始化失败：'+e.message);}
 }
 init();
+
+function folderTargets(files){
+  const selected=[...files].filter(f=>/\.(jpe?g|tiff?)$/i.test(f.name)).sort((a,b)=>a.name.localeCompare(b.name,'en',{numeric:true}) || (a.webkitRelativePath||a.name).localeCompare(b.webkitRelativePath||b.name));
+  if(!selected.length||selected.length>12)throw Error('需要 1–12 张 JPG／TIFF，当前 '+selected.length+' 张；请分文件夹处理。');
+  const seen=new Set();
+  return selected.map((file,i)=>{
+    const name=file.name.replace(/\.[^.]+$/,'');
+    if(!name.trim()||new TextEncoder().encode(name).length>23)throw Error(file.name+'：简称超过 23 个 UTF-8 字节或为空，请先重命名。');
+    if(seen.has(name.toLowerCase()))throw Error('名称重复：'+name+'；请先重命名。');
+    if(file.size>512*1024*1024)throw Error(file.name+' 超过 512 MiB');
+    seen.add(name.toLowerCase());return {file,name,number:i+1};
+  });
+}
+function initFolderTraining(){
+  let targets=[],active=false;
+  const storage='r5-folder-batch';
+  async function pollBatch(id){
+    try{
+      const state=await(await api('/api/batches/'+id)).json();
+      $('batchStatus').textContent=state.jobs.map(j=>j.name+'：'+j.phase+trainingProgressText(j.training_progress)).join('\n')+(state.error?'\n'+state.error:'');
+      $('batchStatus').style.whiteSpace='pre-line';
+      if(state.status==='done'){
+        $('batchStatus').textContent='全部 '+state.jobs.length+' 项已训练、压缩并合并（'+state.bytes+' 字节）。实际颜色仍需验证。';
+        for(const [element,file]of [['batchBin','R5NATIVE.BIN'],['batchConfig','native_config.json'],['batchAudit','export_audit.json']])$(element).href='/api/batches/'+id+'/'+file;
+        $('batchDownloads').hidden=false;active=false;
+      }else if(state.status==='error'){active=false;}
+      else{setTimeout(()=>pollBatch(id),2000);return;}
+      $('targetFolder').disabled=false;$('batchStart').disabled=!targets.length;
+    }catch(e){$('batchStatus').textContent='连接中断：'+e.message+'；刷新可重连后台批量任务。';$('targetFolder').disabled=false;}
+  }
+  $('targetFolder').onchange=e=>{
+    targets=[];$('batchStart').disabled=true;$('batchDownloads').hidden=true;
+    try{targets=folderTargets(e.target.files);$('folderFiles').textContent=targets.map(t=>t.number+' · '+t.name+' / '+t.name+' ← '+(t.file.webkitRelativePath||t.file.name)).join('\n');$('batchStart').disabled=active;}
+    catch(error){$('folderFiles').textContent=error.message;}
+  };
+  $('batchStart').onclick=async()=>{
+    if(active||!targets.length)return;
+    active=true;$('batchStart').disabled=true;$('targetFolder').disabled=true;$('batchDownloads').hidden=true;
+    try{
+      const options=fitOptions(true),files=[];
+      for(const t of targets){
+        $('batchStatus').textContent='上传并检查 '+t.number+'/'+targets.length+'：'+t.file.name;
+        const response=await fetch('/api/chart-target',{method:'POST',headers:{'Content-Type':'application/octet-stream','X-R5-Token':boot.token},body:t.file});
+        const value=await response.json();if(!response.ok)throw Error(t.file.name+'：'+value.error);
+        files.push({filename:t.file.name,target_id:value.id});
+      }
+      const state=await(await api('/api/batches',{files,options})).json();
+      localStorage.setItem(storage,state.id);pollBatch(state.id);
+    }catch(error){active=false;$('batchStatus').textContent='批量未启动：'+error.message;$('batchStart').disabled=false;$('targetFolder').disabled=false;}
+  };
+  const id=localStorage.getItem(storage)||boot.latest_batch;if(id){active=true;$('targetFolder').disabled=true;pollBatch(id);}
+}

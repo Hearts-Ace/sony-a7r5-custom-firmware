@@ -1,0 +1,94 @@
+{
+  "batch": "b51d6ee51c5a4ffc878b1c8340805824",
+  "bytes": 22196,
+  "sha256": "5700b9dd8c1390ac851528f01be1776034d6b8fb66287cfffb3600351af38a93",
+  "names": {
+    "AS": "ASTIA",
+    "CC": "CLASSIC CHROME",
+    "EBB": "ETERNA BLEACH BYPASS",
+    "ET": "ETERNA",
+    "NC": "CLASSIC Neg.",
+    "NH": "PRO Neg. Hi",
+    "PV": "PROVIA",
+    "RA": "REALA ACE",
+    "VN": "Velvia"
+  },
+  "source_images_unchanged": true,
+  "codec_roundtrip": true,
+  "export_provenance_valid": true,
+  "metrics": [
+    {
+      "name": "AS",
+      "job": "742985e532f44bc09dd0ad641de9b10b",
+      "test_samples": 740,
+      "rmse_8bit": 9.248691166229321,
+      "mae_8bit": 4.72927927927928,
+      "delta_e00_mean": 2.398182906757862
+    },
+    {
+      "name": "CC",
+      "job": "21599998f5e2440288617ee50cdee116",
+      "test_samples": 740,
+      "rmse_8bit": 7.90506736784008,
+      "mae_8bit": 4.079279279279279,
+      "delta_e00_mean": 2.238750732907621
+    },
+    {
+      "name": "EBB",
+      "job": "3f2698487b164e32bb00541fa51ec89f",
+      "test_samples": 740,
+      "rmse_8bit": 8.22416785680697,
+      "mae_8bit": 4.079279279279279,
+      "delta_e00_mean": 2.2992670892293323
+    },
+    {
+      "name": "ET",
+      "job": "c78a267235524c8bb65d9c3ef9506c3d",
+      "test_samples": 740,
+      "rmse_8bit": 8.495043599992043,
+      "mae_8bit": 4.4972972972972975,
+      "delta_e00_mean": 2.391488439545493
+    },
+    {
+      "name": "NC",
+      "job": "3d3412472db948a198d553b9c8bc43ce",
+      "test_samples": 740,
+      "rmse_8bit": 11.044361816235826,
+      "mae_8bit": 5.175225225225225,
+      "delta_e00_mean": 2.560771184872515
+    },
+    {
+      "name": "NH",
+      "job": "8ec4d29365054b9d9add375f88c61631",
+      "test_samples": 740,
+      "rmse_8bit": 7.740003724653992,
+      "mae_8bit": 3.925675675675676,
+      "delta_e00_mean": 2.1126464361225894
+    },
+    {
+      "name": "PV",
+      "job": "a12f6dc8742248a08e1c67118afc8582",
+      "test_samples": 740,
+      "rmse_8bit": 8.559331875921284,
+      "mae_8bit": 4.3882882882882885,
+      "delta_e00_mean": 2.1673536323492204
+    },
+    {
+      "name": "RA",
+      "job": "56e22aba2f4d4ad19c2fb9d6251e3398",
+      "test_samples": 740,
+      "rmse_8bit": 10.882852865241103,
+      "mae_8bit": 5.6572072072072075,
+      "delta_e00_mean": 2.5359759477435158
+    },
+    {
+      "name": "VN",
+      "job": "617cc12a1bd24c989c752d91862e4ff2",
+      "test_samples": 740,
+      "rmse_8bit": 10.781051946868686,
+      "mae_8bit": 5.353603603603603,
+      "delta_e00_mean": 2.651971220605989
+    }
+  ],
+  "camera_tested": false
+}

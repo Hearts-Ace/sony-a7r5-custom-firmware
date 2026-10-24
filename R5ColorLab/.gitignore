@@ -1,7 +1,14 @@
+.venv/
 __pycache__/
 *.pyc
-.venv/
 web/runs/
+*.zip
+.DS_Store
+
+web/batches/
 web/chart_uploads/
 web/previews/
-.DS_Store
+
+web/batches/
+web/chart_uploads/
+web/previews/
