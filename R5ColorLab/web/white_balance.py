@@ -1,3 +1,5 @@
+from compute_backend import render_native
+from patch_sampling import center_mean
 """Experimental pre-ITP WB; measured downstream frontend residual is frozen.
 
 Gain math is Edit-derived. Dynamic Vatr/SSCS response is NOT reconstructed.
@@ -57,9 +59,9 @@ def from_recipe(recipe):
 
 def render_pairs(model, pairs, recipe, index=slice(None)):
     if not active(from_recipe(recipe)):
-        return model.color_only(pairs['input'][index])[:, 4]
-    return model.color_only(inputs(model, pairs['input'][index],
-                                   pairs['sensor_codes'][index], from_recipe(recipe)))[:, 4]
+        return center_mean(render_native(model,pairs['input'][index]))
+    return center_mean(model.color_only(inputs(model, pairs['input'][index],
+                                   pairs['sensor_codes'][index], from_recipe(recipe))))
 
 
 def photo_gains(model, wb, value):

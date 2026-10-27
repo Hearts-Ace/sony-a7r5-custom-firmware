@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "frozen428_manifest_sha256": "98d68092f4006b716f072ee95684ae57848e25f77b82d45a43a6539f1780648f",
+  "dependency_remaps": [
+    {
+      "original": "research/r5_custom_lut/build_r5_4.13_stage5c_20261021/evidence/native_bindings.json",
+      "source": "sony-a7r5-custom-firmware/research/r5_custom_lut/build_r5_4.13_stage5c_20261021/evidence/native_bindings.json",
+      "current": "analysis/r5_custom_menu429_20261027/dependencies/native_bindings.json",
+      "sha256": "ed826b7d7e1b32c77dfb197bc70b04253097e5c20f9ae7d4acb708d3893adbfd"
+    },
+    {
+      "original": "research/r5_custom_lut/build_r5_4.16_bcd_fixed_20261021/source/pack_bcd.py",
+      "source": "sony-a7r5-custom-firmware/research/r5_custom_lut/build_r5_4.16_bcd_fixed_20261021/source/pack_bcd.py",
+      "current": "analysis/r5_custom_menu429_20261027/dependencies/pack_bcd.py",
+      "sha256": "fef067ae05d81dc52bcc879a30978ffa471ba0bd9755ba6ed06e07bd27d676a5"
+    }
+  ]
+}

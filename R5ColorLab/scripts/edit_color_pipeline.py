@@ -11,6 +11,7 @@ import struct
 from functools import lru_cache
 from edit_native_model import np, _integer_array, rgb_to_ycc, ycc_to_rgb
 
+EVIDENCE = Path(__file__).resolve().parents[1]/'evidence/edit_renderer_20261019'
 THIN_SHA = 'c250f466835c5380d244de33a6824e9930fe3f250ce9b1d948d5e379cc4c8133'
 
 

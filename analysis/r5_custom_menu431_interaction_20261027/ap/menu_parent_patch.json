@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "menu_id": "0x635",
+  "group": "0x5053628",
+  "descriptor_symbol": "r5_filter_menu_descriptor",
+  "descriptor": "0x8eb9e08",
+  "count_before": 7,
+  "count_after": 8,
+  "new_index": 2,
+  "moved_relocations": [
+    {
+      "before": "0x5053670",
+      "after": "0x5053688",
+      "addend": "0x5845f28"
+    },
+    {
+      "before": "0x5053688",
+      "after": "0x50536a0",
+      "addend": "0x5849978"
+    },
+    {
+      "before": "0x50536a0",
+      "after": "0x50536b8",
+      "addend": "0x583c2f0"
+    },
+    {
+      "before": "0x50536c0",
+      "after": "0x50536d8",
+      "addend": "0x585da50"
+    },
+    {
+      "before": "0x50536d0",
+      "after": "0x50536e8",
+      "addend": "0x584c608"
+    }
+  ],
+  "new_relative_target": "0x5053670",
+  "new_relative_addend": "0x8eb9e08",
+  "plt_bytes": 22464,
+  "plt_sha256": "861474b66563e3f75564641970bbf55d1ed702b3e775405d895828521d148bb2",
+  "plt_old_va": "0x16d3b58",
+  "plt_va": "0x8e99fc8",
+  "plt_file": 97427400,
+  "original_relative_fast_count_unchanged": true,
+  "dynamic_changes": [
+    {
+      "tag": 23,
+      "before": "0x16d3b58",
+      "after": "0x8e99fc8"
+    },
+    {
+      "tag": 8,
+      "before": "0x16c38c0",
+      "after": "0x16c38d8"
+    }
+  ],
+  "runtime_source_bytes": 40900,
+  "final_rx_bytes": 63368,
+  "all_old_parent_entries_in_order": true,
+  "all_PLT_relocations_exact": true,
+  "original_prefix_reverse_via_changes": true
+}

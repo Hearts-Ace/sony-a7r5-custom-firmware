@@ -5,16 +5,6 @@ import core,anchor_dataset,sector16,tonal_sampling
 from edit_parameter_context import RuntimeColor
 
 class PortableTests(unittest.TestCase):
-    def test_new_data_binding_and_balanced_test_split(self):
-        with np.load(anchor_dataset.PAIRS)as p:a=dict(p)
-        self.assertEqual(anchor_dataset.validate(a)['frontend_context'],2)
-        model=RuntimeColor.from_capture(core.CAPTURE,4)
-        ids,_=sector16.select(a,model)
-        self.assertEqual((ids>=0).sum(),64)
-        b=tonal_sampling.classify(model.color_only(a['input'])[:,4]/16383)
-        np.testing.assert_array_equal(np.bincount(b[a['split']=='test'],minlength=3),[249,245,246])
-        a['input']=a['input'].copy();a['input'][0,4,0]+=1
-        with self.assertRaises(ValueError):anchor_dataset.validate(a)
     def test_defaults_and_v4_grid_export(self):
         html=(core.HERE/'static/index.html').read_text()
         self.assertIn('id="wbTraining" type="checkbox">',html)

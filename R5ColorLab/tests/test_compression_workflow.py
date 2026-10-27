@@ -56,6 +56,7 @@ class CompressionWorkflowTests(unittest.TestCase):
         job=root/'job';job.mkdir();(job/'fit').mkdir()
         for name in ['pc_compensation.json','fit/recipe.json','input.cube','pairs.npz']:
             (job/name).write_text(name)
+        (job/'input_audit.json').write_text(json.dumps(dict(target_kind='lut',lut_sha256=core.sha((job/'input.cube').read_bytes()))))
         identity={k:core.sha((job/n).read_bytes()) for k,n in [
             ('teacher_sha256','pc_compensation.json'),('recipe_sha256','fit/recipe.json'),
             ('lut_sha256','input.cube'),('pairs_sha256','pairs.npz')]}
@@ -84,7 +85,7 @@ class CompressionWorkflowTests(unittest.TestCase):
             rgb=np.random.default_rng(1022).uniform(.1,.8,(2,3,3))
             target=rgb*.8
             np.savez_compressed(source/'render_inputs.npz',native=rgb,target=target)
-            (source/'result.json').write_text(json.dumps(dict(source_sha256='same-RAW',
+            (source/'result.json').write_text(json.dumps(dict(source_sha256='same-RAW',frontend_revision=photo_preview.FRONTEND_REVISION,
                 recipe_sha256=core.sha((job/'fit/recipe.json').read_bytes()),lut_sha256=core.sha((job/'input.cube').read_bytes()))))
             compressed=root/'compressed'
             r=photo_preview.reuse(source,job,compressed,True,key)
@@ -107,7 +108,7 @@ class CompressionWorkflowTests(unittest.TestCase):
             source=root/'source';source.mkdir()
             rgb=np.random.default_rng(1023).uniform(.1,.8,(2,3,3));target=rgb*.8
             np.savez_compressed(source/'render_inputs.npz',native=rgb,target=target)
-            (source/'result.json').write_text(json.dumps(dict(source_sha256='same-RAW',
+            (source/'result.json').write_text(json.dumps(dict(source_sha256='same-RAW',frontend_revision=photo_preview.FRONTEND_REVISION,
                 recipe_sha256=core.sha((job/'fit/recipe.json').read_bytes()),lut_sha256=core.sha((job/'input.cube').read_bytes()))))
             before=(source/'render_inputs.npz').read_bytes()
             on=root/'on';off=root/'off';again=root/'again'

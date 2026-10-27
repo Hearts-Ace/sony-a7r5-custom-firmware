@@ -1,3 +1,5 @@
+from compute_backend import render_native
+from patch_sampling import center_mean
 """Fixed baseline luminance strata; targets and fitted parameters never set bins."""
 import numpy as np
 
@@ -8,7 +10,7 @@ def classify(rgb):
     rgb = np.asarray(rgb, dtype=float)
     if rgb.ndim != 2 or rgb.shape[1] != 3 or not np.isfinite(rgb).all():
         raise ValueError('Expected finite Nx3 baseline RGB')
-    # Match the displayed 8-bit luminance convention, with a fixed ST baseline.
+    # Match displayed luminance using the job's immutable source baseline.
     encoded = np.floor(np.clip(rgb, 0, 1)*255+.5)
     return np.minimum((encoded @ np.array([.2126,.7152,.0722])/85).astype(int),2)
 
@@ -32,7 +34,7 @@ def audit(bins, split, anchor_ids, sector_ids):
     bins=np.asarray(bins)
     groups={'random':(anchor_ids<0)&(sector_ids<0),'primaries':(anchor_ids>=0)&(anchor_ids<4),
             'gray':(anchor_ids>=4)&(anchor_ids<260),'colorchecker24':anchor_ids>=260,'sector16':sector_ids>=0}
-    result={'schema':'r5-fixed-baseline-tonal-balance/1','basis':'fixed ST integer color output before fitted WB; quantized sRGB display Y prime',
+    result={'schema':'r5-fixed-baseline-tonal-balance/1','basis':'job-bound baseline integer color output before fitted WB; quantized sRGB display Y prime',
             'thresholds_8bit':[85,170],'target_independent':True,'policy':'equal nonempty luminance strata within each cohort; preserve user cohort total mass',
             'counts':{},'missing_train_strata':{}}
     for name,mask in groups.items():
@@ -43,7 +45,7 @@ def audit(bins, split, anchor_ids, sector_ids):
 
 def validate(arrays, model):
     if 'baseline_tonal_index' not in arrays:return None
-    expected=classify(model.color_only(arrays['input'])[:,4]/16383)
+    expected=classify(center_mean(render_native(model,arrays['input']))/16383)
     if not np.array_equal(expected,arrays['baseline_tonal_index']):
         raise ValueError('固定基线亮度分区来源发生变化')
     return audit(expected,arrays['split'],arrays['anchor_index'],arrays.get('sector16_index',np.full(len(expected),-1)))

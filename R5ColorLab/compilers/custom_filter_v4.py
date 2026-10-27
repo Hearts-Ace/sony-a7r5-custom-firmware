@@ -165,7 +165,7 @@ def from_fit(path, capture, slot, short_name, full_name, gamma_endpoint128=None)
     payload = bytes.fromhex(parameters['matrix_780f_hex'])
     matrix = [[struct.unpack_from('<h', payload, 24+2*(16*k+(s^1)))[0] >> 2
                for k in range(6)] for s in range(16)]
-    preset=json.loads((ROOT/'data/presets.json').read_text())
+    preset=json.loads((ROOT/'data/presets.json').read_text(encoding='utf-8'))
     if preset['source_cp_sha256']!=CP_SHA:raise ValueError('CP provenance mismatch')
     curve=preset['native_ST_gamma_file_offset'];native_endpoint=preset['ST_gamma'][128]
     endpoint = native_endpoint if gamma_endpoint128 is None else gamma_endpoint128

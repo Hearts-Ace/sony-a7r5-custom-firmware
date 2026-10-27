@@ -1,3 +1,5 @@
+2026-10-28：当前默认、色卡及算法以README.md和web/data/chart/sony100mp_unity_center5/manifest.json为准；下文早期默认值及3700点色卡描述仅作历史来源。
+
 # 数据与算法来源
 
 - 相机：Sony ILCE-7RM5；12外观数值表由已固定原厂R5与既有FX2 FL2/FL3适配抽取；固定上游086df3b1e33dfa0206553ac2bb003535c58ddb80。data/presets.json仅数值，无固件代码。

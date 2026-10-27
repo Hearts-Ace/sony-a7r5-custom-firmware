@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "version": "4.29",
+  "verifier_source_sha256": "b7abc09eb66fb7dd9c8c4bd6f6916a255b0d451790c8867e589293e97227fdc3",
+  "verifier": "analysis/r5_custom_menu429_20261027/verify_delivery429.py",
+  "output": "/path/to/r5-workspace/research/r5_custom_lut/build_r5_4.29_name_only_20261027/BODYDATA.DAT",
+  "output_bytes": 754525608,
+  "output_sha256": "5d3f92fd5a6a8f71d542f281a546762e72a0bf7c971540600a41782ac89dcb8d",
+  "ordinary_file": true,
+  "BCD": "2904",
+  "actual_outer_crc_and_signature_rechecked": true,
+  "tampered_signature_rejected": true,
+  "AP_CP_independently_extracted": true,
+  "CP_exact_frozen423": true,
+  "exact_strict404_overlay_members": [
+    "0700_part_image/dev/nflasha15",
+    "0700_part_image/dev/nflasha8",
+    "0701_part_image_sum/part_image.sum"
+  ],
+  "plaintext_verification": {
+    "passed": true,
+    "plaintext_bytes": 751577088,
+    "decrypted_blocks": 736841,
+    "plaintext_sha256": "a394ab4d70252f3964390c98919244e2dc53b7ef298dd3c444174296409bcb35",
+    "every_plaintext_byte_matches": true,
+    "all_block_checksums_lengths_flags_and_padding_valid": true
+  },
+  "sha256sum_entries": 13,
+  "frozen_source_inputs": 544,
+  "required_receipts_rechecked": 20,
+  "synchronized_checks_rechecked": [
+    "menu_visibility_fix_preserved",
+    "menu_layout_transparent",
+    "menu_update_operation_absent",
+    "selection_waits_for_apply",
+    "parent_selection_before_close",
+    "grid_lifecycle_422_preserved",
+    "update_widgets_absent",
+    "right_pane_name_only",
+    "private_inputs_isolated",
+    "original_creative_look_preserved",
+    "full_and_short_names_verified",
+    "native_presenter_vtable_ABI",
+    "full_native_controller_lifecycle",
+    "first_view_update_mode_zero",
+    "native_view_arena_checked"
+  ],
+  "camera_io": false,
+  "device_acceptance_tested": false
+}

@@ -42,9 +42,10 @@ class PCCompensationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             job=Path(directory);(job/'fit').mkdir()
             (job/'fit/recipe.json').write_text('{}');(job/'input.cube').write_text('fixture')
+            (job/'input_audit.json').write_text(json.dumps(dict(lut_sha256=core.sha(b'fixture'))))
             target=.85*base+.04
             def save():np.savez(job/'pairs.npz',input=x,split=split,anchor_index=ids,**{'0_target':target*16383})
-            with patch.object(pc_compensation,'read',return_value=({},Model())):
+            with patch('baseline.read_job',return_value=({},Model())):
                 save();a=pc_compensation.generate(job)
                 target[split!='train']=rng.random((16,3))
                 save();b=pc_compensation.generate(job)
@@ -68,6 +69,7 @@ class PCCompensationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             job=Path(directory);(job/'fit').mkdir()
             for name in ['fit/recipe.json','input.cube','pairs.npz']:(job/name).write_bytes(b'fixture')
+            (job/'input_audit.json').write_text(json.dumps(dict(lut_sha256=core.sha(b'fixture'))))
             grid=np.full((405,3),[8,4,12],dtype=np.int8)
             value=dict(schema='r5-PC-compensation/1',camera_apply_allowed=False,
                 stage='after-color-subchain-PC-only',coordinate_model='provisional-bt601-limited',response=np.eye(3).tolist(),

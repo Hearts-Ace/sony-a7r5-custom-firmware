@@ -116,6 +116,10 @@ def curves(base, value):
 
 def fit_grid(base, target, gate, weights, strength=.01):
     """Fit the exact gated runtime model with bounded, smooth RGB residuals."""
+    from gpu_runtime import available
+    if available():
+        from gpu_grid import fit
+        return fit(base,target,weights,strength,gate=gate)
     ids, w = stencil(coordinates(base))
     rows = np.repeat(np.arange(len(base)), 8)
     a = sparse.coo_matrix(((w*gate[:, None]).ravel(), (rows, ids.ravel())), shape=(len(base), 405)).tocsr()
@@ -150,6 +154,10 @@ def fit_response_grid(base,target,weights,response,strength=.01):
     if isinstance(response,dict):
         from measured_response import get
         return get(response).fit(base,target,weights,strength)
+    from gpu_runtime import available
+    if available():
+        from gpu_grid import fit
+        return fit(base,target,weights,strength,response=response)
     a=grid_design(base,(5,9,9))
     scale=np.sqrt(weights/np.sum(weights))
     # Node-major coefficients: vec(A C R) = (A kron R.T) vec(C).
@@ -167,6 +175,10 @@ def fit_response_grid(base,target,weights,response,strength=.01):
 
 def render(base, value, grid, stages=False):
     a = np.asarray(base, dtype=float)
+    from gpu_runtime import available
+    if available() and not stages and len(a)>=512:
+        from gpu_color import pc_numpy
+        return pc_numpy(a,value,grid)
     tone, tinted, gate = curves(a, value)
     if value.get('mode')=='qaq-grid' and isinstance(value['response'],dict):
         from residual_grid import evaluate
@@ -238,6 +250,26 @@ def fit_compressed(base, target, curve, weights, smooth_factor=1):
     Uniform RGB probes are synthetic queries of the teacher, never target/test data.
     Equal mass for measured train and synthetic probes; final runtime stays 7 bit.
     """
+    from gpu_runtime import available
+    if available():
+        from gpu_grid import fit
+        from gpu_tensor import TensorTools,stencil_tensor,provisional_coordinates
+        _,tinted,gate=curves(base,curve)
+        teacher,solver=fit(tinted,target,weights,.001*smooth_factor,gate=gate,
+            shape=TEACHER_SHAPE,iterations=1200,continuous=True)
+        axis=np.linspace(0,1,25)
+        probes=np.stack(np.meshgrid(axis,axis,axis,indexing='ij'),axis=-1).reshape(-1,3)
+        samples=np.concatenate([base,probes])
+        _,staged,gates=curves(samples,curve)
+        tools=TensorTools();values=tools.tensor(staged)
+        ids,w=stencil_tensor(tools,provisional_coordinates(tools,values),TEACHER_SHAPE)
+        desired=(values+(tools.tensor(teacher)[ids]*w[:,:,None]).sum(dim=1)*tools.tensor(gates)[:,None]).cpu().numpy()
+        mass=np.r_[weights/np.sum(weights),np.full(len(probes),1/len(probes))]
+        grid,audit=fit(staged,desired,mass,.001*smooth_factor,gate=gates)
+        audit.update(teacher_shape=list(TEACHER_SHAPE),teacher_nodes=int(np.prod(TEACHER_SHAPE)),
+            teacher_regularization=.001*smooth_factor,teacher_solver=[solver],synthetic_probes=len(probes),
+            compression='GPU bounded dense teacher -> gated 5x9x9; equal train/probe mass',output_shape=[5,9,9])
+        return grid,audit
     from scipy.sparse.linalg import lsmr
     _, tinted, gate = curves(base, curve)
     nodes = int(np.prod(TEACHER_SHAPE)); strength = .001*smooth_factor

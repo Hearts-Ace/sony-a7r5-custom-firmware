@@ -5,6 +5,7 @@ import re
 import time
 import uuid
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
 
 
 def folder_names(files):
@@ -31,11 +32,14 @@ def save(path,value,server):
 
 def submit(body,server):
     files=body.get('files');names=folder_names(files)
+    concurrency=body.get('concurrency',2)
+    if type(concurrency) is not int or not 1 <= concurrency <= 3:
+        raise ValueError('批量并发数必须为1–3')
     jobs=[]
     for number,(item,name) in enumerate(zip(files,names),1):
         options=copy.deepcopy(body.get('options',{}))
         options.update(target_kind='chart-image',target_id=item['target_id'],number=number,
-                       short_name=name,full_name=name,compression_training=True,white_balance=False)
+                       short_name=name,full_name=item.get('full_name',name),compression_training=True,white_balance=False,post_gray_refinement=False)
         # The 129th point is an export-only endpoint, outside the fitted 128-point model.
         if options.get('gamma_endpoint128') is None:options['gamma_endpoint128']=131071
         server.validate_fit(options)
@@ -45,7 +49,7 @@ def submit(body,server):
             raise ValueError('已有训练运行，请完成后提交批量任务')
         identifier=uuid.uuid4().hex
         destination=server.core.HERE/'batches'/identifier;destination.mkdir(parents=True)
-        state=dict(id=identifier,status='queued',started=time.time(),jobs=jobs)
+        state=dict(id=identifier,status='queued',started=time.time(),jobs=jobs,concurrency=concurrency)
         save(destination/'batch.json',state,server)
         for item in jobs:
             server.JOBS[item['id']]=dict(id=item['id'],target_kind='chart-image',status='queued',phase='批量等待：'+item['name'],started=time.time())
@@ -58,8 +62,11 @@ def run(state,destination,server):
     try:
         entries=[];sources={}
         from grid_distillation import firmware_config
+        # Independent job directories and fitter subprocesses; merge in filename order.
+        with ThreadPoolExecutor(max_workers=state.get('concurrency',1)) as pool:
+            futures=[pool.submit(server.work,item['id'],item['options']) for item in state['jobs']]
+            for future in futures:future.result()
         for item in state['jobs']:
-            server.work(item['id'],item['options'])
             job=server.JOBS[item['id']]
             if job['status']!='done':
                 raise ValueError(item['filename']+'：'+job.get('error','训练失败'))

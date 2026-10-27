@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "AP_sha256": "3c832336b73fc5d8b5a902faebd07249821888a17d3609831def42d4419ba941",
+  "cases": 10,
+  "rows": [
+    {
+      "bias": "0x0",
+      "case": "exact",
+      "done": 7
+    },
+    {
+      "bias": "0x0",
+      "case": "foreign_constructor",
+      "done": 0
+    },
+    {
+      "bias": "0x0",
+      "case": "foreign_executor",
+      "done": 0
+    },
+    {
+      "bias": "0x0",
+      "case": "stale_during_execute",
+      "done": 0
+    },
+    {
+      "bias": "0x0",
+      "case": "inactive_late",
+      "done": 0
+    },
+    {
+      "bias": "0x40000000",
+      "case": "exact",
+      "done": 7
+    },
+    {
+      "bias": "0x40000000",
+      "case": "foreign_constructor",
+      "done": 0
+    },
+    {
+      "bias": "0x40000000",
+      "case": "foreign_executor",
+      "done": 0
+    },
+    {
+      "bias": "0x40000000",
+      "case": "stale_during_execute",
+      "done": 0
+    },
+    {
+      "bias": "0x40000000",
+      "case": "inactive_late",
+      "done": 0
+    }
+  ],
+  "limits": [
+    "Actual final AArch64 wrapper bodies execute; native constructor/executor are call-clobbering fixtures. No native scheduling, hardware or display.",
+    "Separate exact_request replay executes actual native facade/factory/constructor/queue path."
+  ]
+}

@@ -43,11 +43,12 @@ def apply(job,rgb):
 
 def generate(job):
     job=Path(job)
-    recipe,model=read(job/'fit/recipe.json',core.CAPTURE,4,None)
+    recipe,model=__import__('baseline').read_job(job)
     with np.load(job/'pairs.npz',allow_pickle=False) as p:
         split=p['split'];ids=p['anchor_index'];x=p['input'];target=p['0_target']/16383
         from fit_anchor_native import training_plan
-        train,_,_,weights=training_plan(split,ids,recipe.get("fitting",{}).get("selected_training_weights",recipe.get("fitting",{}).get("group_total_weights")),p["sector16_index"] if "sector16_index" in p else None,p["baseline_tonal_index"] if recipe.get("fitting",{}).get("tonal_balance") else None)
+        random_selection=np.flatnonzero((split=='train')&(ids<0)&(p['sector16_index']<0)) if 'design_srgb' in p else None
+        train,_,_,weights=training_plan(split,ids,recipe.get("fitting",{}).get("selected_training_weights",recipe.get("fitting",{}).get("group_total_weights")),p["sector16_index"] if "sector16_index" in p else None,p["baseline_tonal_index"] if recipe.get("fitting",{}).get("tonal_balance") else None,random_selection,p.get('sample_kind'),recipe.get('fitting',{}).get('search_options',{}))
         base=white_balance.render_pairs(model,p,recipe)/16383
         gray=(ids>=4)&(ids<260)&(split=='train')
         if gray.sum()!=256:raise ValueError('需要完整256级实采灰阶训练色卡，请重新拟合原生任务')
@@ -67,7 +68,7 @@ def generate(job):
         metrics=metrics,fitting=audit,training_only=True,
         reference='Cobalt public separation of characterization, tone and look; independent implementation, not Cobalt algorithm.',
         reference_url='https://www.cobalt-image.com/tutorials/our_technology/',
-        limits=[('QAQ measured A7C2 proxy when response is a snapshot; legacy fixed response otherwise. Not R5 calibration.' if curve.get('mode')=='qaq-grid' else 'PC provisional coordinates and identity RGB response; not R5 ISP calibration.'),
+        limits=[('Pinned measured response snapshot when selected; default R5 v2 is a partial empirical fit. Legacy fixed response is provisional; camera colors still await validation.' if curve.get('mode')=='qaq-grid' else 'PC provisional coordinates and identity RGB response; not R5 ISP calibration.'),
                 'Post-color correction cannot recover differences already lost by native clipping.',
                 'Not included in 4.18 BIN or fitted-ST.ARW.',
                 'No dual-illuminant measurement or new RAW frontend calibration; output RGB correction only.'])

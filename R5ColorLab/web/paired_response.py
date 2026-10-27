@@ -22,6 +22,14 @@ class PairedModel:
         if self.smooth:r+=np.einsum('nj,cjo->nco',x-.5,self.weights[3:].reshape(3,3,3))
         return r/256
     def predict(self,rgb,table,clip=True):
+        from gpu_runtime import available
+        if available() and clip and len(rgb)>=512:
+            from gpu_color import paired_numpy
+            from measured_response import default_response,previous_r5_response
+            identity=default_response() if self.sha256==default_response()['sha256'] else previous_r5_response()
+            return paired_numpy(rgb,table,identity)
+        return self.predict_cpu(rgb,table,clip)
+    def predict_cpu(self,rgb,table,clip=True):
         x=np.asarray(rgb,float);_,ids,w=self.stencil(x)
         d=(np.asarray(table)[ids]*w[...,None]).sum(1)
         out=x+np.einsum('nc,nco->no',d,self.response(x))
@@ -30,6 +38,15 @@ class PairedModel:
         # Compression also needs extrapolation colors: explicitly not additional camera evidence.
         return np.random.default_rng(seed).uniform(.015,.985,(count,3))
     def fit(self,base,target,weights,strength=.01):
+        from gpu_runtime import available
+        if available():
+            from gpu_grid import fit
+            from measured_response import default_response,previous_r5_response
+            identity=default_response() if self.sha256==default_response()['sha256'] else previous_r5_response()
+            result,audit=fit(base,target,weights,strength,response=identity)
+            audit.update(model_sha256=self.sha256,physical_scope=self.value['metadata']['physical_scope'],
+                calibration_validation=self.validation,new_scene_camera_verified=False)
+            return result,audit
         from pc_stages import neighbor_design
         x=np.asarray(base,float);target=np.asarray(target,float);weights=np.asarray(weights,float)
         if x.shape!=target.shape or weights.shape!=(len(x),) or np.any(weights<=0):raise ValueError('Invalid paired training samples')

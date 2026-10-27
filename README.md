@@ -1,19 +1,20 @@
-# Sony A7R V / R5 自定义滤镜 4.28
+# Sony A7R V / R5 自定义滤镜 4.32
 
-按用户要求回退到4.25菜单基线，删除更新按钮及对应触摸、焦点与手动刷新操作。保留自动导入、选择同步应用保存及父级选中值校验后退出，未带入4.26/4.27菜单改动。创意外观决定原厂基底，自定义滤镜独立选择，原厂名称不变。
+4.32修复控制轮只切换滤镜、菜单焦点和全称不更新的问题。旋转、上下键和触摸共用选择通路，移动即应用保存；确认或返回等待应用完成，再由原生菜单重建父页。保留4.31原生列表与错误分类、4.30启动/SD加载优化及4.22参数和网格生命周期。
 
-- [4.28固件与独立工具下载](https://github.com/Hearts-Ace/sony-a7r5-custom-firmware/releases/tag/v4.28)
-- [反推网格工作台：探针生成、照片文件夹训练](R5GridCalibrator/README.md)
-- [色彩工作台：默认R5实拍v2响应，训练/压缩/预览共用](R5ColorLab/README.md)
-- [富士九款模拟滤镜：BIN、可编辑JSON与报告](filters/FUJ_grid_v2/README.md)
-- [实拍网格模型及来源](R5ColorLab/web/data/r5/PROVENANCE.md)
-- [唯一研究总结：菜单、参数和网格生命周期](analysis/R5_FL2_FL3固件色彩与RAW参数研究总结.md)
-- [固件交付校验](publication/4.28/firmware_delivery_verified.json)
+- [4.32固件、最新版工作台和100MP色卡下载](https://github.com/Hearts-Ace/sony-a7r5-custom-firmware/releases/tag/v4.32)
+- [色彩工作台：直接目标网格拟合、100MP色卡、批量训练](R5ColorLab/README.md)
+- [反推网格工作台：探针生成与JPG文件夹训练](R5GridCalibrator/README.md)
+- [最新12款模拟滤镜：BIN及可编辑配置](filters/FUJ_12_direct_target/README.md)
+- [R5实拍网格标定参数与来源](R5ColorLab/web/data/r5/PROVENANCE.md)
+- [4.32实现与证据边界](analysis/r5_custom_menu432_wheel_20261028/README.md)
+- [唯一研究总结](analysis/R5_FL2_FL3固件色彩与RAW参数研究总结.md)
+- [独立交付校验](publication/4.32/firmware_delivery_verified.json)
 
-只支持BIN v4；CC1、block13、129点Gamma与5×9×9网格共同发布，保留4.22网格生命周期。富士模拟滤镜包括ASTIA、CLASSIC CHROME、ETERNA BLEACH BYPASS、ETERNA、CLASSIC Neg.、PRO Neg. Hi、PROVIA、REALA ACE、Velvia；不是富士官方滤镜。BIN会完整替换自定义配置集合。
+固件仅用于ILCE-7RM5；754525608字节，SHA256 `f75f4a6efa286e3a6af0ed60cda6b92824d5ab18a8866cd167b9d2ec2b910e8b`。仅支持BIN v4，CC1、block13、129点Gamma及5×9×9网格统一导入/切换/关闭/原厂恢复。自定义编号与创意外观独立，原厂外观名称保持。SD有效BIN会完整替换配置集合。
 
-固件754525608字节，SHA256 `dd64c0d26cf71d3b595dcf20cf11d39abdff8f78eadd7241a833182d28e03816`；滤镜BIN22196字节，SHA256 `5700b9dd8c1390ac851528f01be1776034d6b8fb66287cfffb3600351af38a93`。
+当前工作台使用unity-WB 100MP合成输入、PT基线、中心5点均值；自动训练默认最终405节点整数网格直接拟合目标图，压缩后交替和灰阶微调关闭。R5实拍v2响应用于训练、网格压缩及预览，覆盖42/256颜色单元，未覆盖部分外推。下载色卡是GFX100S II RAF，非R5机身实拍；用于软件调色后导出同尺寸TIFF/JPG。
 
-R5实拍v2模型覆盖42/256，留出RMSE3.696；未覆盖颜色属于外推，不等于完整恢复原厂ISP。固件整包签名/CRC/完整解密已通过，4.28实机菜单、冷启动及照片颜色待验收。4.25其余入口/布局/对象行为随回退保留。
+4.32的24份回执、30项检查及签名/CRC/全包逐字独立解密通过。用户确认4.31上下键正常，控制轮UI失败；4.32真实滚轮时序、LCD、冷启动及拍摄仍待机身验收。模拟与离线误差不代表机内成像通过。公开源码缺少Sony原机镜像、签名输入和部分研究依赖，不能从干净克隆一键重建完整固件。
 
-公开源码缺少Sony原机镜像、签名输入与部分本地依赖，不是干净克隆即可重建完整固件的一键工具。首次镜像、密钥、私人照片和训练运行目录不发布。第三方来源见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+旧问题升级包已撤下，历史源码/散列/日志保留。首次备份、原始DAT、密钥和私人照片不发布。第三方来源见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

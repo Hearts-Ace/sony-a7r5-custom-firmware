@@ -1,3 +1,5 @@
+from compute_backend import render_native
+from patch_sampling import center_mean
 """Reproducible search policy; adaptation never consumes validation/test arrays."""
 import numpy as np
 from training_policy import GROUPS, group_importance
@@ -19,12 +21,15 @@ def pc_options(value=None):
 
 
 def search_options(value=None):
-    defaults=dict(starts=4, adaptive_rounds=3, perceptual_weight=.35, quantization_sweeps=1, parameter_smoothing=0)
+    defaults=dict(starts=4, adaptive_rounds=3, perceptual_weight=.35, quantization_sweeps=1, parameter_smoothing=0, gamma_color_rounds=0, primary_tonal_weight=1.0, hue24_tonal_weight=1.0)
     if value is None:return defaults
     if not isinstance(value,dict) or set(value)-set(defaults):raise ValueError('未知优化器选项')
     result={**defaults,**value}
-    for name,low,high in [('starts',2,12),('adaptive_rounds',0,8),('quantization_sweeps',0,3)]:
+    for name,low,high in [('starts',2,12),('adaptive_rounds',0,8),('quantization_sweeps',0,3),('gamma_color_rounds',0,12)]:
         if type(result[name]) is not int or not low<=result[name]<=high:raise ValueError(name+' 超出允许范围')
+    for name in ('primary_tonal_weight','hue24_tonal_weight'):
+        if type(result[name]) not in (int,float) or not np.isfinite(result[name]) or not .05<=result[name]<=8:
+            raise ValueError(name+' must be between 0.05 and 8')
     from parameter_smoothing import strength
     result['parameter_smoothing']=strength(result['parameter_smoothing'])
     v=result['perceptual_weight']
@@ -43,8 +48,16 @@ def adaptive_importance(base, errors):
 
 
 def display_cost_rows(predicted, target, perceptual_weight=0):
-    """Actual uint8 RGB MSE + scaled CIEDE2000 squared; display sRGB/D65."""
-    p,t=[np.floor(np.clip(v,0,1)*255+.5) for v in (predicted,target)]
+    """Floating encoded RGB MSE plus continuous DE00; no 8-bit pre-rounding.
+
+    Native candidates still come from the actual integer parameter renderer.
+    Explicit uint8 display metrics remain in report_metrics.
+    """
+    from gpu_runtime import available
+    if available() and len(predicted)>=1024:
+        from gpu_color import display_cost_rows as gpu_cost
+        return gpu_cost(predicted,target,perceptual_weight)
+    p,t=[np.clip(np.asarray(v,dtype=float),0,1)*255 for v in (predicted,target)]
     cost=np.mean((p-t)**2,axis=1)
     if perceptual_weight:
         cost+=perceptual_weight*(2.55*de2000(to_lab(p),to_lab(t)))**2
@@ -76,6 +89,10 @@ def perturbed_starts(seed, count, lower, upper):
 
 def refine_grid(grid, base, target, gate, weights, sweeps=1, perceptual_weight=0, response=None, progress=None, parameter_smoothing=0):
     """Signed-7-bit coordinate descent, train-only actual quantized display loss."""
+    from gpu_runtime import available
+    if available():
+        from gpu_grid_refine import refine
+        return refine(grid,base,target,gate,weights,sweeps,perceptual_weight,response,progress,parameter_smoothing)
     if isinstance(response,dict):
         from measured_response import get
         from parameter_smoothing import grid_cost
@@ -150,7 +167,7 @@ def refine_native(ctx, parameters, inputs, target, weights, pc_bundle, sweeps=1,
     from edit_parameter_context import quantize_matrix_coefficients
     def copy(p):return {k:(v.copy() if isinstance(v,np.ndarray) else v) for k,v in p.items()}
     def cost(p):
-        rgb=ctx.build(**p).color_only(inputs)[:,4]/16383
+        rgb=center_mean(render_native(ctx.build(**p),inputs))/16383
         if pc_bundle is not None:rgb=pc_stages.render(rgb,pc_bundle[0],pc_bundle[1])
         from parameter_smoothing import native_cost
         return float(display_cost_rows(rgb,target,perceptual_weight)@weights/np.sum(weights))+(native_cost(p,ctx.axis,parameter_smoothing) if parameter_smoothing else 0)
@@ -187,5 +204,5 @@ def refine_native(ctx, parameters, inputs, target, weights, pc_bundle, sweeps=1,
                 if winner is not None:current=winner;best=score;accepted+=1;changed=True
         if not changed:break
     return current,dict(original_before_export_roundtrip=original_cost,before=before,after=best,accepted=accepted,evaluations=calls,sweeps=sweeps,
-                        objective='train weighted actual uint8 RGB MSE + perceptual DE00 squared; frozen PC',
+                        objective='train weighted floating RGB MSE + continuous DE00 squared on integer native outputs; frozen PC',
                         gamma_zero_fixed=True,gamma_monotone=True,export_roundtrip='4.18 half-unit Gamma and CC1 gains')

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "startup",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.11,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu430_startup_20261027/verify_startup430.py"
+      ]
+    }
+  ],
+  "AP_sha256": "81fa2ea3ee89d30715d7ab69f9eca92da837139a0ab1a32bed1f3799067d7c6e",
+  "device_io": false
+}

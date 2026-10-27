@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "regression_tests": 75,
+  "skipped_tests": 1,
+  "synthetic_full_pipeline": true,
+  "input_samples": 99372,
+  "dataset_id": "v4-sony100mp-unity-sim-center5-20261027",
+  "backend": "CPU",
+  "target": "Bundled synthetic sRGB16 reference, not a user photograph",
+  "final_grid_objective": "fuji-target",
+  "bin_roundtrip": true,
+  "bin_bytes": 2580,
+  "gamma_endpoint128": 131071,
+  "elapsed_seconds": 69.89281779099838,
+  "camera_accuracy_verified": false,
+  "active_service_modified": false
+}

@@ -4,6 +4,7 @@ The packed format is native-sized; pixel coordinates/response are provisional.
 No camera or firmware output is generated here.
 """
 import io
+import copy
 import json
 from pathlib import Path
 import zipfile
@@ -55,8 +56,53 @@ def compress(base, weights, teacher, response, probe_side=33, sweeps=1, progress
                      limit_fraction=float(np.mean((grid==-64)|(grid==63))))
 
 
-def generate(job, response, progress=None):
+def fit_target(base, target, weights, response, progress=None, parameter_smoothing=0):
+    """Fit the exported single grid to actual targets, using training rows only.
+
+    No PC teacher or synthetic teacher targets contribute to this objective.
+    Candidate selection uses the same training loss and smoothness policy as
+    historical compression; holdout metrics are computed only afterwards.
+    """
+    from optimizer_policy import display_cost_rows, refine_grid
+    from parameter_smoothing import multiplier, grid_cost
+    base, target, weights = [np.asarray(v, dtype=float) for v in (base, target, weights)]
+    if (base.ndim != 2 or base.shape[1] != 3 or target.shape != base.shape
+            or len(base) < 2 or weights.shape != (len(base),)
+            or not all(np.isfinite(v).all() for v in (base, target, weights))
+            or np.any(weights <= 0)):
+        raise ValueError('Expected matching finite training RGB targets and positive weights')
+    response = response_matrix(response)
+    mass = weights / weights.sum()
+    candidates = []
+    for index, strength in enumerate(np.array((.0001, .001, .01))*multiplier(parameter_smoothing), 1):
+        if progress: progress(stage='富士目标直接拟合网格', round=index, total_rounds=3, state='running', sweep=None, point=None)
+        grid, solver = pc_stages.fit_response_grid(base, target, mass, response, strength=strength)
+        grid, refinement = refine_grid(grid, base, target, np.ones(len(base)), mass,
+            sweeps=1, perceptual_weight=.35, response=response,
+            progress=(lambda **v: progress(stage='目标网格整数量化微调', **v)) if progress else None,
+            parameter_smoothing=parameter_smoothing)
+        # Score exactly the signed-7-bit coefficients that will be exported.
+        grid = unpack(pack(grid))
+        prediction = evaluate(base, grid, response)
+        score = float(display_cost_rows(prediction, target, .35)@mass)+grid_cost(grid, parameter_smoothing)
+        candidates.append((score, grid, dict(smoothness=float(strength), score=score,
+            solver=solver, quantization_refinement=refinement)))
+    best = min(candidates, key=lambda value: value[0])
+    grid = best[1]
+    return grid, dict(objective='fuji-target', training_inputs=len(base), synthetic_probes=0,
+        train_probe_mass=[1.0, 0.0], selected_smoothness=best[2]['smoothness'],
+        candidates=[value[2] for value in candidates], training_only=True,
+        parameter_smoothing=parameter_smoothing, teacher=None,
+        selection='training target loss plus unchanged grid smoothness; no validation or test fitting',
+        limit_fraction=float(np.mean((grid == -64) | (grid == 63))))
+
+
+def generate(job, response, progress=None, post_gray_refinement=False, objective='pc-teacher', fitted_target=None):
+    # Removed from the training pipeline, including requests from older browser tabs.
+    post_gray_refinement=False
     job = Path(job)
+    if objective not in ('pc-teacher', 'fuji-target'):
+        raise ValueError('Unknown grid training objective')
     source = (job/'pc_compensation.json').read_bytes()
     value, source_grid = load(job)
     if value['schema'] != 'r5-PC-compensation/2' or value['curves'].get('mode','tone-tint') != 'tone-tint':
@@ -65,13 +111,24 @@ def generate(job, response, progress=None):
     teacher = lambda rgb: pc_stages.render(rgb, value['curves'], source_grid)
     from edit_native_recipe import read
     from fit_anchor_native import training_plan
-    recipe, model = read(job/'fit/recipe.json', core.CAPTURE, 4, None)
+    recipe, model = __import__('baseline').read_job(job)
     with np.load(job/'pairs.npz', allow_pickle=False) as p:
         split, ids = p['split'], p['anchor_index']
         target = p['0_target']/16383
         base = white_balance.render_pairs(model,p,recipe)/16383
-        train, _, _, weights = training_plan(split, ids, recipe.get('fitting',{}).get('group_total_weights'),p['sector16_index'] if 'sector16_index' in p else None,p['baseline_tonal_index'] if recipe.get('fitting',{}).get('tonal_balance') else None)
-    grid, audit = compress(base[train], weights, teacher, response, progress=progress,parameter_smoothing=recipe.get("fitting",{}).get("search_options",{}).get("parameter_smoothing",0))
+        random_selection=np.flatnonzero((split=='train')&(ids<0)&(p['sector16_index']<0)) if 'design_srgb' in p else None
+        train, _, _, weights = training_plan(split, ids, recipe.get('fitting',{}).get('group_total_weights'),p['sector16_index'] if 'sector16_index' in p else None,p['baseline_tonal_index'] if recipe.get('fitting',{}).get('tonal_balance') else None,random_selection,p.get('sample_kind'),recipe.get('fitting',{}).get('search_options',{}))
+    smoothing = recipe.get('fitting',{}).get('search_options',{}).get('parameter_smoothing',0)
+    if fitted_target is not None:
+        if objective != 'fuji-target' or fitted_target[1].get('training_only') is not True:
+            raise ValueError('Prefitted grid requires training-only direct-target provenance')
+        grid, audit = unpack(pack(fitted_target[0])), copy.deepcopy(fitted_target[1])
+    elif objective == 'fuji-target':
+        grid, audit = fit_target(base[train], target[train], weights, response,
+            progress=progress, parameter_smoothing=smoothing)
+    else:
+        grid, audit = compress(base[train], weights, teacher, response, progress=progress, parameter_smoothing=smoothing)
+    audit['post_gray_refinement']=dict(enabled=False)
     if progress:progress(stage='压缩效果验证',round=3,total_rounds=3,state='round_done',sweep=None,point=None)
     combined = teacher(base)
     student = evaluate(base, grid, response)
@@ -95,6 +152,8 @@ def generate(job, response, progress=None):
                     target_source=core.target_identity(job), pairs_sha256=value['pairs_sha256'],
                     implementation_sha256=core.sha(Path(__file__).read_bytes()), response=response_json(response),
                     response_implementation_sha256=core.sha(Path(__file__).with_name('measured_response.py').read_bytes()) if isinstance(response,dict) else None)
+    identity['post_gray_refinement']=post_gray_refinement
+    if objective != 'pc-teacher': identity['objective'] = objective
     key = core.sha(json.dumps(identity, sort_keys=True).encode())
     report = dict(schema='r5-native-sized-grid-distillation/1', camera_apply_allowed=False,
                   coordinate_model=('measured-inverse-bspline-forward-TPS' if isinstance(response,dict) else 'provisional-bt601-limited'), stage='after-color-subchain-PC-only',
@@ -102,7 +161,7 @@ def generate(job, response, progress=None):
                   payload_hex=pack(grid).hex(), identity=identity, fitting=audit, metrics=metrics,
                   samples=dict(gray_combined=combined[(ids>=4)&(ids<260)&(split=='train')].tolist(),
                                gray_grid=student[(ids>=4)&(ids<260)&(split=='train')].tolist()),
-                  limits=[('Author A7C2 measured proxy applied to R5; R5 response and physical colors not calibrated.' if isinstance(response,dict) else 'Legacy provisional R5 coordinates/response; uncalibrated.'),
+                  limits=[('Pinned measured response snapshot; inspect its source identity. Default R5 v2 covers42/256 cells; physical colors and extrapolation await camera validation.' if isinstance(response,dict) else 'Legacy provisional R5 coordinates/response; uncalibrated.'),
                           'This approximates the entire frozen PC effect in one grid; errors and bound clipping remain.',
                           'No separate tone/tint curves or gray gate at runtime.',
                           'Not a R5NATIVE.BIN; no firmware or camera changes.'])

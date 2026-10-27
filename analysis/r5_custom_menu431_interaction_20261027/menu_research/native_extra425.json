@@ -1,0 +1,23 @@
+{
+  "native_symbols": {
+    "r5_filter_page_anchor": 150994944,
+    "usleep": 23965536
+  },
+  "relocation_addend_remaps": [
+    {
+      "va": "0x5071080",
+      "before_addend": "0x1e1e1a4",
+      "symbol": "r5_filter_presenter425"
+    },
+    {
+      "va": "0x5071088",
+      "before_addend": "0x1d2e488",
+      "symbol": "r5_filter_controller425"
+    },
+    {
+      "va": "0x507cfc0",
+      "before_addend": "0x1d90c7c",
+      "symbol": "r5_filter_parent_presenter425"
+    }
+  ]
+}

@@ -15,6 +15,8 @@ import white_balance
 from edit_native_recipe import read
 from raw_slog3_reference import RawSLog3Reference, Cube
 
+FRONTEND_REVISION = 'itp-native-sscs-v2'
+
 def raw_camera_identity(source):
     """Read TIFF Make/Model rather than use a version-dependent LibRaw matrix as ID."""
     import struct
@@ -47,7 +49,9 @@ def approximate_front(camera_rgb, wb, reference_model):
     """Approximate photograph front, not the verified flatfield ITP branch.
 
     Reference-context green gain sets native units; this RAW supplies WB.
-    Demosaic/Vatr/SSCS/lens/noise behavior of Edit is not reconstructed.
+    Apply native SSCS after ITP gains: the color model expects post-SSCS
+    input, matching the measured training samples. Demosaic/Vatr/lens/noise
+    behavior of textured photographs remains approximate.
     """
     import struct
     from edit_raw_front import as_shot_wb
@@ -59,7 +63,8 @@ def approximate_front(camera_rgb, wb, reference_model):
         raise ValueError('Invalid approximate frontend gains')
     native_wb = np.trunc(gains[1]*(wb/wb[1]))
     channel_gains = np.float32(scale)*np.float32(1/32768)*native_wb.astype(np.float32)*np.float32(1/16)
-    return np.trunc(np.clip(np.asarray(camera_rgb,dtype=np.float32)*channel_gains, 0, 16383)).astype('<u2')
+    itp = np.trunc(np.clip(np.asarray(camera_rgb,dtype=np.float32)*channel_gains, 0, 16383)).astype('<u2')
+    return reference_model.sscs(itp.reshape(-1,3)).reshape(itp.shape)
 
 
 def quantize(rgb):
@@ -129,6 +134,10 @@ def compensation(job, output, rgb, pc, grid_key, grid_enabled=True):
             return rgb.copy()
         enable(response)
         def transform(a):
+            from gpu_runtime import available
+            if available() and isinstance(response,dict) and response.get('preset','').startswith('r5-paired-'):
+                from gpu_color import paired_numpy
+                return paired_numpy(a.reshape(-1,3),grid,response,exact_display=True).reshape(a.shape)
             return evaluate(a.reshape(-1,3),grid,response).reshape(a.shape)
     elif pc:
         import pc_compensation
@@ -199,7 +208,7 @@ def render(source, job, output, pc=False, grid_key=None, grid_enabled=True):
             output_bps=16, user_flip=0, demosaic_algorithm=rawpy.DemosaicAlgorithm.LINEAR)
     finally:
         raw.close()
-    recipe, model = read(job/'fit/recipe.json', core.CAPTURE, 4, None)
+    recipe, model = __import__('baseline').read_job(job)
     # Both chains use the same decoded RAW and same regular preview grid.
     wb_shift=white_balance.from_recipe(recipe)
     wb_ratio=white_balance.photo_gains(model,wb,wb_shift)
@@ -215,7 +224,8 @@ def render(source, job, output, pc=False, grid_key=None, grid_enabled=True):
         # Retain real adjacent sensor pixels; sampling density does not alter the neighborhood.
         neighborhoods = camera[y, xs[:, None]+np.arange(-4, 5)[None, :]]
         inputs = approximate_front(neighborhoods*wb_ratio, wb, model)
-        predicted[row] = model.color_only(inputs)[:, 4]/16383
+        from compute_backend import render_native
+        predicted[row] = render_native(model,inputs)[:, 4]/16383
     del camera
     np.savez_compressed(output/'render_inputs.npz',native=predicted,target=target)
     if grid_key:
@@ -233,6 +243,7 @@ def render(source, job, output, pc=False, grid_key=None, grid_enabled=True):
     for name, rgb in [('lut', target), ('model', predicted)]:
         Image.fromarray(quantize(rgb)).save(output/(name+'.png'), pnginfo=metadata)
     result = dict(schema='r5-RAW-photo-preview/2', source_sha256=source_sha,
+        frontend_revision=FRONTEND_REVISION,
         lut_sha256=digest(job/'input.cube'), recipe_sha256=digest(job/'fit/recipe.json'),
         gamut=audit['gamut'], samples=int(len(xs)*len(ys)),
         width=len(xs), height=len(ys), coverage=1.0,
@@ -243,13 +254,13 @@ def render(source, job, output, pc=False, grid_key=None, grid_enabled=True):
         raw_camera_identity=camera_identity,decoder_matrix_matches_reference=decoder_matrix_matches_reference,
         pc_compensation_sha256=pc_sha,
         grid_response=response_identity(job,pc,grid_key),
-        lut_decoder='pip rawpy/LibRaw; linear bilinear demosaic, unit WB, no auto scale',
+        lut_decoder='installed RawAlchemy LibRaw; linear bilinear demosaic, unit WB, no auto scale',
         lut_color='RawAlchemy v0.6.2 fused reference -> S-Log3 -> tetrahedral LUT',
-        model_input='approximate RAW front: LibRaw camera RGB * reference green gain * as-shot WB; clipped/truncated native codes',
-        model_color='selected fit recipe; measured ST context 4 color_only',
+        model_input='approximate RAW front: LibRaw camera RGB * reference green gain * as-shot WB -> native SSCS -> post-SSCS matrix input',
+        model_color='selected fit recipe and source-bound measured baseline; color_only',
         step=None, sampling='rounded-uniform-sensor-coordinates', preview_long_edge=PREVIEW_LONG_EDGE, orientation='sensor landscape; EXIF rotation not applied',
         limits=['LUT demosaic is LibRaw bilinear, not RawAlchemy RCD: not a full app reproduction.',
-                'Approximate model frontend omits Edit ITP/Vatr/SSCS, lens/noise processing and scene-dependent scaling.',
+                'Approximate model frontend uses ITP flatfield gains and native SSCS; Vatr, lens/noise processing and scene-dependent scaling remain outside this model.',
                 'Reference-context green gain is retained; per-photo Edit native gain is not measured.',
                 'Fitted color subchain has fixed reference context; full JPEG stages are not reproduced.',
                 'Preview differences include approximate frontend error, not just fitting error.'])
@@ -262,6 +273,8 @@ def reuse(source,job,output,pc=False,grid_key=None,grid_enabled=True):
     from pc_compensation import apply as pc_apply
     from grid_distillation import apply as grid_apply,load_result
     value=json.loads((source/'result.json').read_text())
+    if value.get('frontend_revision') != FRONTEND_REVISION:
+        raise ValueError('历史 RAW 预览使用旧版前端，请重新上传 RAW 生成包含 SSCS 的预览')
     if value['recipe_sha256']!=digest(job/'fit/recipe.json') or value['lut_sha256']!=digest(job/'input.cube'):
         raise ValueError('RAW缓存与当前任务不一致')
     with np.load(source/'render_inputs.npz',allow_pickle=False) as data:

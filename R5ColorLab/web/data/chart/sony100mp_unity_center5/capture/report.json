@@ -1,0 +1,150 @@
+{
+  "manifest": {
+    "source_app": "/Applications/Imaging Edge/Edit.app",
+    "source_sha256": "43ae5e1cb4bc18a52183b430e02b16a4506b89a907a6fd0feed359fa85a82ce9",
+    "copy_app": "/private/tmp/r5-edit-debug-cvn3kj3u/Edit.app",
+    "copy_sha256": "5fa17f7ec6724764242185e59a2424f96956aa0793026828885401c356137305",
+    "arm64_text": {
+      "va": "0x10000344c",
+      "bytes": 2207716,
+      "sha256": "af273484047501f8d10efddaf2fd97f299bc5b351947f76c8024b20ee570360b"
+    },
+    "entitlements": {
+      "com.apple.security.get-task-allow": true,
+      "com.apple.security.cs.disable-library-validation": true,
+      "com.apple.security.cs.allow-unsigned-executable-memory": true
+    },
+    "raw_source": "/path/to/r5-workspace/analysis/sony_chart_100mp_20261027/SONY-v4-standard-100MP-unityWB.ARW",
+    "raw_copy": "/path/to/r5-workspace/analysis/sony_chart_100mp_20261027/SONY-v4-standard-100MP-unityWB.ARW",
+    "raw_sha256": "af2ae9560192739ad994142d33ba14b04b579e6fe397da8c19dfd4c20653c0ab",
+    "original_unchanged": true,
+    "synthetic_sensor": true,
+    "role": "synthetic mathematical oracle",
+    "active_size": [
+      11648,
+      8736
+    ],
+    "patch_size": 32,
+    "patch_grid": [
+      364,
+      273
+    ],
+    "samples": 99372,
+    "wb": [
+      1024,
+      1024,
+      1024,
+      1024
+    ],
+    "look": "PT",
+    "hook_sha256": "4b40b9c0382573abe57eac7dc7de2ca4657cf128238bcc11bb87bf5c9bcab6c7"
+  },
+  "source_report_sha256": "46c3ae3ec43c8a2e40d9252331c1ef6126fc717fa9113c56212d5319656555e4",
+  "selected_context": 16,
+  "messages": [
+    {
+      "message": {
+        "type": "send",
+        "payload": {
+          "context": 16,
+          "holder": "0x9d8f00000",
+          "runtime": "0x9dbb40000",
+          "trigger": "color-build",
+          "kind": "buffer",
+          "label": "color-build-runtime-16",
+          "pointer": "0x9dbb40000",
+          "bytes": 670656
+        }
+      },
+      "data": {
+        "file": "07623-color-build-runtime-16.bin",
+        "bytes": 670656,
+        "sha256": "f34cfa7d867c797f08c211be4cb2fb27264148f1c3747043dcc9f7b4b6c95b1f"
+      }
+    },
+    {
+      "message": {
+        "type": "send",
+        "payload": {
+          "context": 16,
+          "holder": "0x9d8f00000",
+          "runtime": "0x9dbb40000",
+          "trigger": "color-build",
+          "kind": "buffer",
+          "label": "color-build-raw-16",
+          "pointer": "0x9d6571000",
+          "bytes": 5120
+        }
+      },
+      "data": {
+        "file": "07624-color-build-raw-16.bin",
+        "bytes": 5120,
+        "sha256": "c303961ff55895d23fa99db964ec3d527b1a8daa26599f1a6369f271ab6aea1b"
+      }
+    },
+    {
+      "message": {
+        "type": "send",
+        "payload": {
+          "context": 16,
+          "holder": "0x9d8f00000",
+          "runtime": "0x9dbb40000",
+          "trigger": "color-build",
+          "kind": "buffer",
+          "label": "color-build-settings-16",
+          "pointer": "0x9d5fac600",
+          "bytes": 768
+        }
+      },
+      "data": {
+        "file": "07625-color-build-settings-16.bin",
+        "bytes": 768,
+        "sha256": "d45c8470ee64287de9c7fa855c5787b91c0cb15f05f454d10c055b8bf9fe21ab"
+      }
+    },
+    {
+      "message": {
+        "type": "send",
+        "payload": {
+          "label": "area-comp-267-controls",
+          "context": 16,
+          "holder": "0x9d8f00000",
+          "runtime": "0x9dbb40000",
+          "thread": 84531,
+          "task": "0x9d79e18f0",
+          "image": "0x9d5aec5d0",
+          "kind": "buffer",
+          "pointer": "0x16e04eeec",
+          "bytes": 65
+        }
+      },
+      "data": {
+        "file": "07740-area-comp-267-controls.bin",
+        "bytes": 65,
+        "sha256": "fc4d700d5a21ebf627dcba3030aee4668748d33b492517e516215f89ddf65227"
+      }
+    },
+    {
+      "message": {
+        "type": "send",
+        "payload": {
+          "label": "area-comp-266-controls",
+          "context": 16,
+          "holder": "0x9d8f00000",
+          "runtime": "0x9dbb40000",
+          "thread": 58659,
+          "task": "0x9d79e2a70",
+          "image": "0x9d5aec8a0",
+          "kind": "buffer",
+          "pointer": "0x16df36eec",
+          "bytes": 65
+        }
+      },
+      "data": {
+        "file": "07741-area-comp-266-controls.bin",
+        "bytes": 65,
+        "sha256": "fc4d700d5a21ebf627dcba3030aee4668748d33b492517e516215f89ddf65227"
+      }
+    }
+  ]
+}

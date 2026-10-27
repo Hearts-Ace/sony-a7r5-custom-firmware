@@ -1,0 +1,16 @@
+{
+  "r5_ap_posix_open": 23959360,
+  "r5_ap_posix_openat": 23972720,
+  "r5_ap_posix_read": 23959616,
+  "r5_ap_posix_write": 23964080,
+  "r5_ap_posix_close": 23968256,
+  "r5_ap_posix_fsync": 23968704,
+  "r5_ap_posix_unlinkat": 23965168,
+  "r5_ap_posix_errno": 23967104,
+  "r5_ap_dlsym": 23964816,
+  "r5_osal_alloc": 23971648,
+  "r5_osal_send": 23965632,
+  "r5_osal_free": 23972448,
+  "r5_osal_set_src": 23960000,
+  "r5_osal_msg_size": 23964640
+}

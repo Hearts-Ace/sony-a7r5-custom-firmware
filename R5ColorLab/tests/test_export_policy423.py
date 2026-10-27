@@ -52,6 +52,7 @@ class ExportPolicyTests(unittest.TestCase):
             fixture, key, _, _ = fixtures.CompressionWorkflowTests().fixture(root)
             job = root / ('a'*32)
             fixture.rename(job)
+            (job/'input_audit.json').write_text(json.dumps(dict(target_kind='lut',lut_sha256=core.sha((job/'input.cube').read_bytes()))))
             (job/'native_config.json').write_text(json.dumps(self.project()))
             p = gd.firmware_config(job, key, configuration_only=True)
             p['entries'][0].update(number=12, short_name='RENAME', full_name='New name')

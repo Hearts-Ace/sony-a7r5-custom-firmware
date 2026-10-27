@@ -12,10 +12,7 @@ def validate(arrays,chart,capture,context):
  chart,capture=Path(chart),Path(capture)
  manifest=json.load(open(chart/'manifest.json'));verified=json.load(open(chart/'libraw_verification.json'))
  if manifest.get('source_sensor_pixels_used') is not False or verified.get('mismatched')!=0 or verified.get('decoded_pixels')!=9728*6656:raise ValueError('Synthetic pixels not independently verified')
- # Portable distribution ships measured samples, sensor code grid and the
- # independent decoder attestation, rather than a RAW with a stale thumbnail.
- binding=json.loads((chart/'portable_sensor_binding.json').read_text())
- if binding['raw_sha256']!=manifest['output_sha256'] or hashlib.sha256((chart/'chart.npz').read_bytes()).hexdigest()!=binding['chart_sha256']:raise ValueError('Synthetic grid identity mismatch')
+ if hashlib.sha256((chart/'synthetic.ARW').read_bytes()).hexdigest()!=manifest['output_sha256']:raise ValueError('Synthetic RAW identity mismatch')
  r=json.load(open(capture/'report.json'))
  if not r.get('complete') or r.get('truncated') or r['manifest'].get('synthetic_sensor') is not True or r['manifest']['raw_sha256']!=manifest['output_sha256']:raise ValueError('Capture is not the complete verified synthetic scene')
  if any(x['message'].get('type')=='error' or x['message'].get('payload',{}).get('kind')=='capture_error' for x in r['messages']):raise ValueError('Capture contains errors')

@@ -26,13 +26,13 @@ from grid_models import default_response
 from residual_grid import response_json
 
 STATIC = core.HERE / 'static'
-RUNS = core.HERE / 'runs'
+RUNS = Path(os.environ.get('R5_RUNS_DIR', str(core.HERE / 'runs'))).resolve()
 TOKEN = secrets.token_urlsafe(32)
 JOBS = {}
 LOCK = threading.Lock()
 POOL = ThreadPoolExecutor(max_workers=1)
 DIAGNOSTICS = {}
-RAW_LOCK = threading.Lock()
+RAW_LOCK = threading.RLock()
 PREVIEWS = {}
 PREVIEW_POOL = ThreadPoolExecutor(max_workers=1)
 MAX_BODY = 65 * 1024 * 1024
@@ -65,7 +65,7 @@ def preview_work(identifier, job_id, destination, pc=False, grid_key=None, reuse
         (destination/'preview.json').write_bytes(dump(item))
 
 
-def compression_work(identifier,response):
+def compression_work(identifier,response,post_gray_refinement=False,objective='fuji-target'):
     output=RUNS/identifier
     state=dict(status='running',phase='压缩训练：采样总效果、求解与量化微调',started=time.time())
     path=output/'grid_training.json'
@@ -76,7 +76,7 @@ def compression_work(identifier,response):
             from training_progress import TrainingProgress
             tracker=TrainingProgress(output/'grid_progress.json',3)
             tracker.update(stage='压缩训练准备',state='running')
-            report=generate(output,response,progress=tracker.update)
+            report=generate(output,response,progress=tracker.update,post_gray_refinement=post_gray_refinement,objective=objective)
             tracker.update(stage='压缩训练完成',state='done')
         state.update(status='done',phase='压缩训练完成',key=report['key'])
     except Exception as error:
@@ -86,67 +86,35 @@ def compression_work(identifier,response):
     return state
 
 
-def work(identifier, body):
+def work(identifier, body, resume=False):
     job = JOBS[identifier]
     output = RUNS / identifier
     try:
-        output.mkdir(parents=True)
+        output.mkdir(parents=True,exist_ok=resume)
         job.update(phase='检查传感器、原生前端与训练集来源', status='running')
-        if body.get('target_kind') == 'chart-image':
-            data=(core.HERE/'chart_uploads'/body['target_id']/'source.bin').read_bytes()
-            if core.sha(data)!=body['target_sha256']:
-                raise ValueError('目标图上传来源发生变化')
-            chart_target.prepare(data,output)
-            description='measured RAW frontend -> processed ST chart image / sRGB'
+        recipe_path=output/'fit/recipe.json'
+        reuse_fit=resume and recipe_path.is_file()
+        if reuse_fit:
+            saved=json.loads(recipe_path.read_text())
+            audit=json.loads((output/'chart_target.json').read_text())
+            if audit['source_sha256']!=body.get('target_sha256') or saved['source']['pairs_sha256']!=core.sha((output/'pairs.npz').read_bytes()):
+                raise ValueError('已有拟合的目标或训练数据身份不符，拒绝接续')
+            if saved['source']['dataset_id']!='v4-sony100mp-unity-sim-center5-20261027':
+                raise ValueError('已有拟合色卡版本不符')
+            job.update(phase='复用已完成的原生拟合，接续补偿与压缩')
         else:
-            lut = output / 'input.cube'
-            lut.write_text(body['lut'], encoding='utf-8')
-            core.prepare_target(lut, body['gamut'], output)
-            description='integer RAW -> raw-alchemy-v0.6.2-fused ' + body['gamut'] + ' S-Log3 -> uploaded cube'
-        job.update(phase='原生分阶段拟合与 PC 交替优化' if body.get('pc_compensation',False) else '原生分阶段拟合：明暗、色彩、联合微调')
-        cmd = [sys.executable, str(core.HERE / 'fit_anchor_native.py'), str(output / 'pairs.npz'),
-               '--capture', str(core.CAPTURE), '--context', '4', '--gamut', '0',
-               '--output', str(output / 'fit'), '--evaluations', str(body['evaluations']),
-               '--target-description', description]
-        from training_policy import group_importance
-        from optimizer_policy import search_options, pc_options
-        cmd += ['--pc-options',json.dumps(pc_options(body.get('pc_options'))), '--group-weights',json.dumps(group_importance(body.get('group_weights'))), '--search-options',json.dumps(search_options(body.get('search_options')))]
-        if body.get('white_balance',False):
-            cmd.append('--white-balance')
-        if body.get('pc_compensation',False):
-            cmd.append('--pc-compensation')
-        with (output / 'fit.log').open('w') as log:
-            process = subprocess.Popen(cmd, stdout=log, stderr=subprocess.STDOUT,
-                                       env={**os.environ, 'OPENBLAS_NUM_THREADS': '1', 'VECLIB_MAXIMUM_THREADS': '1'})
-            job['process'] = process
+            fit_native(identifier,body,output,job)
+        # Metal command encoders in one service process must not be entered
+        # from concurrent batch/HTTP threads. Native fit subprocesses remain
+        # independent and retain the requested batch concurrency.
+        with RAW_LOCK:
             try:
-                code = process.wait(timeout=7200)
-            except subprocess.TimeoutExpired:
-                process.terminate()
-                try:
-                    process.wait(timeout=5)
-                except subprocess.TimeoutExpired:
-                    process.kill()
-                    process.wait()
-                raise ValueError('拟合超过两小时，已终止；日志已保留')
+                result=finish_native(identifier,body,output,job)
             finally:
-                job.pop('process', None)
-        if code:
-            raise ValueError('拟合器退出码 %s，请查看完整日志' % code)
-        job.update(phase='验证配方并转换 4.23 自定义配置')
-        result = core.finish_fit(output, body['number'], body['short_name'], body['full_name'], body.get('gamma_endpoint128'))
-        if body.get('pc_compensation',False):
-            job.update(phase='整体训练：从整数原生参数重建 PC 残差并验证')
-            from pc_compensation import generate
-            value=generate(output)
-            result['pc_compensation']=dict(enabled=True,sha256=core.sha((output/'pc_compensation.json').read_bytes()),metrics=value['metrics'])
-        else:
-            result['pc_compensation']=dict(enabled=False)
-        if body.get('compression_training'):
-            job.update(phase='压缩训练：总补偿蒸馏为单网格')
-            state=compression_work(identifier,body['pc_options']['response'])
-            if state['status']!='done':raise ValueError(state.get('error','压缩训练失败'))
-            result['grid_key']=state['key']
+                from gpu_runtime import available
+                if available():
+                    import torch
+                    torch.mps.synchronize()
         job.update(status='done', phase='拟合与配置转换完成；待实际颜色验收', result=result)
     except Exception as error:
         output.mkdir(parents=True, exist_ok=True)
@@ -157,7 +125,71 @@ def work(identifier, body):
         (output / 'job.json').write_bytes(dump({k: v for k, v in job.items() if k != 'process'}))
 
 
+def fit_native(identifier,body,output,job):
+        if body.get('target_kind') == 'chart-image':
+            source_path=core.HERE/'chart_uploads'/body['target_id']/'source.bin'
+            data=source_path.read_bytes()
+            if core.sha(data)!=body['target_sha256']:
+                raise ValueError('目标图上传来源发生变化')
+            chart_target.prepare(data,output,source_path=source_path)
+            description='source-bound measured RAW frontend -> processed chart image / sRGB'
+        else:
+            lut = output / 'input.cube'
+            lut.write_text(body['lut'], encoding='utf-8')
+            core.prepare_target(lut, body['gamut'], output)
+            description='integer RAW -> raw-alchemy-v0.6.2-fused ' + body['gamut'] + ' S-Log3 -> uploaded cube'
+        job.update(phase='原生分阶段拟合与 PC 交替优化' if body.get('pc_compensation',False) else '原生分阶段拟合：明暗、色彩、联合微调')
+        cmd = [sys.executable, str(core.HERE / 'fit_anchor_native.py'), str(output / 'pairs.npz'),
+               '--capture', str(__import__('baseline').for_job(output)[0]), '--context', str(__import__('baseline').for_job(output)[1]), '--gamut', '0',
+               '--output', str(output / 'fit'), '--evaluations', str(body['evaluations']),
+               '--target-description', description]
+        from training_policy import group_importance
+        from optimizer_policy import search_options, pc_options
+        cmd += ['--pc-options',json.dumps(pc_options(body.get('pc_options'))), '--group-weights',json.dumps(group_importance(body.get('group_weights'))), '--search-options',json.dumps(search_options(body.get('search_options')))]
+        if body.get('white_balance',False):
+            cmd.append('--white-balance')
+        if body.get('speed_priority',False):
+            cmd.append('--fast')
+        elif body.get('pc_compensation',False):
+            cmd.append('--pc-compensation')
+        with (output / 'fit.log').open('w') as log:
+            process = subprocess.Popen(cmd, stdout=log, stderr=subprocess.STDOUT,
+                                       env={**os.environ, 'OPENBLAS_NUM_THREADS': '1', 'VECLIB_MAXIMUM_THREADS': '1'})
+            job['process'] = process
+            try:
+                code = process.wait()
+            finally:
+                job.pop('process', None)
+        if code:
+            raise ValueError('拟合器退出码 %s，请查看完整日志' % code)
+
+
+def finish_native(identifier,body,output,job):
+        job.update(phase='验证配方并转换 4.23 自定义配置')
+        result = core.finish_fit(output, body['number'], body['short_name'], body['full_name'], body.get('gamma_endpoint128'))
+        if body.get('pc_compensation',False):
+            job.update(phase='整体训练：从整数原生参数重建 PC 残差并验证')
+            from pc_compensation import generate
+            value=generate(output)
+            result['pc_compensation']=dict(enabled=True,sha256=core.sha((output/'pc_compensation.json').read_bytes()),metrics=value['metrics'])
+        else:
+            result['pc_compensation']=dict(enabled=False)
+        if body.get('compression_training'):
+            job.update(phase='压缩训练：最终网格直接拟合富士目标')
+            state=compression_work(identifier,body['pc_options']['response'],body.get('post_gray_refinement',False),objective=body.get('compression_objective','fuji-target'))
+            if state['status']!='done':raise ValueError(state.get('error','压缩训练失败'))
+            result['grid_key']=state['key']
+        return result
+
+
 def validate_fit(body):
+    body['post_gray_refinement']=False
+    body['compressed_alternation_rounds']=0
+    body.setdefault('compression_objective','fuji-target')
+    if body['compression_objective'] not in ('fuji-target','pc-teacher'):
+        raise ValueError('无效最终网格训练目标')
+    if type(body.get('speed_priority',False)) is not bool:raise ValueError('速度优先开关须为布尔值')
+    body.setdefault('speed_priority',False)
     from training_policy import group_importance
     body['group_weights']=group_importance(body.get('group_weights'))
     from optimizer_policy import search_options, pc_options
@@ -174,8 +206,8 @@ def validate_fit(body):
         raise ValueError('PC 补偿开关必须为布尔值')
     if type(body.get('number')) is not int or not 1 <= body['number'] <= 12:
         raise ValueError('自定义配置序号必须为 1–12')
-    if type(body.get('evaluations')) is not int or not 1 <= body['evaluations'] <= 300:
-        raise ValueError('求解评估次数必须为 1–300')
+    if type(body.get('evaluations')) is not int or not 1 <= body['evaluations'] <= 2000:
+        raise ValueError('每阶段求解评估上限必须为 1–2000')
     kind=body.get('target_kind','lut')
     if kind not in ('lut','chart-image'):
         raise ValueError('请选择目标来源')
@@ -229,13 +261,15 @@ class Handler(BaseHTTPRequestHandler):
             if path.startswith('/api/batches/'):
                 return batch_training.get(self, path, sys.modules[__name__])
             if path == '/api/chart-original':
-                return self.respond(chart_target.download(), 'application/zip', filename='R5-ST-original-chart.zip')
+                return self.respond(chart_target.download(), 'application/zip', filename='GFX-unityWB-100MP-chart.zip')
             if path == '/api/bootstrap':
                 entries, provenance = core.presets()
                 return self.respond(dict(token=TOKEN, presets=entries, provenance=provenance,
+                                         default_chart=chart_target.manifest(),
+                                         compute_backend=__import__('gpu_runtime').policy(),
                                          latest_batch=batch_training.latest(core.HERE),
                                          template=core.config([]), stock_grids=__import__("stock_grids").catalog(),
-                                         fitting_baseline='ST / verified synthetic capture context 4',
+                                         fitting_baseline='PT / Sony unity-WB simulated ITP+SSCS · 99,372 patches; Edit verified',
                                          grid_response=default_response(), history=[dict(id=k, status=v['status'], started=v['started'], phase=v['phase'],target_kind=v.get('target_kind','lut'),pc_available=(RUNS/k/'pc_compensation.json').is_file())
                                                   for k, v in sorted(JOBS.items(), key=lambda kv: kv[1]['started'], reverse=True)][:30],
                                          jobs=[k for k, v in JOBS.items() if v['status'] in ('running', 'queued')]))
@@ -271,8 +305,9 @@ class Handler(BaseHTTPRequestHandler):
                     grid_key=parse_qs(urlparse(self.path).query).get('grid',[''])[0] or None
                     pc=bool(pc or grid_key)
                     key=(identifier,pc,grid_key)
-                    if key not in DIAGNOSTICS:
-                        DIAGNOSTICS[key] = core.diagnostics(RUNS / identifier,pc,grid_key)
+                    with RAW_LOCK:
+                        if key not in DIAGNOSTICS:
+                            DIAGNOSTICS[key] = core.diagnostics(RUNS / identifier,pc,grid_key)
                     return self.respond(DIAGNOSTICS[key])
                 if len(bits)==5 and bits[4]=='grid-training':
                     from grid_distillation import latest,load_result
@@ -280,7 +315,8 @@ class Handler(BaseHTTPRequestHandler):
                     state=json.loads(state_path.read_text()) if state_path.exists() else dict(status='idle')
                     from training_progress import read_progress
                     state['training_progress']=read_progress(RUNS/identifier/'grid_progress.json') if state['status']=='running' else None
-                    grid_key=latest(RUNS/identifier)
+                    requested_key=parse_qs(urlparse(self.path).query).get('key',[''])[0]
+                    grid_key=requested_key or latest(RUNS/identifier)
                     if grid_key:
                         state['key']=grid_key
                         state['report']=load_result(RUNS/identifier,grid_key)[0]
@@ -348,7 +384,7 @@ class Handler(BaseHTTPRequestHandler):
             length = int(self.headers.get('Content-Length', '0'))
             if urlparse(self.path).path == '/api/chart-target':
                 if not 0 < length <= chart_target.MAX_BYTES or self.headers.get('Content-Type')!='application/octet-stream':
-                    raise ValueError('请以二进制上传 512 MiB 内的 TIFF 或 JPG')
+                    raise ValueError('请以二进制上传 1 GiB 内的 TIFF 或 JPG')
                 data=self.rfile.read(length)
                 if len(data)!=length:
                     raise ValueError('目标图上传不完整')
@@ -410,11 +446,13 @@ class Handler(BaseHTTPRequestHandler):
                     audit = core.write_validation_raw(original, recipe, destination)
                     memory = io.BytesIO()
                     with zipfile.ZipFile(memory, 'w', zipfile.ZIP_STORED) as archive:
-                        archive.write(destination / 'fitted-ST.ARW', 'fitted-ST.ARW')
-                        archive.write(destination / 'fitted-ST.audit.json', 'fitted-ST.audit.json')
+                        filename=audit.get('file','fitted-ST.ARW')
+                        archive.write(destination / filename, filename)
+                        audit_name=Path(filename).with_suffix('.audit.json').name
+                        archive.write(destination / audit_name, audit_name)
                         archive.writestr('Edit验证说明.txt',
                             '本文件使用所选拟合任务的原始配方，非编辑器后续手动参数。\n'
-                            '在 Imaging Edge Edit 中显式选择 标准（ST / Standard）。\n'
+                            '在 Imaging Edge Edit 中显式选择 '+audit.get('look','ST')+'。\n'
                             '关闭镜头补偿，保持白平衡、曝光、锐度和降噪等设置与对照一致后导出。\n'
                             'RAW 嵌入预览未重绘，不代表实际滤镜结果。传感器数据和其他外观参数保持。\n'
                             '任务ID：' + identifier + '\n配方SHA256：' + audit['recipe_sha256'] + '\n')
@@ -457,11 +495,12 @@ class Handler(BaseHTTPRequestHandler):
                 value,_=load(RUNS/identifier)
                 if value.get('curves',{}).get('mode','tone-tint')!='tone-tint':raise ValueError('压缩训练需要明暗＋灰阶染色方案')
                 response=response_json(body.get('response',default_response()))
+                gray_refinement=False
                 with LOCK:
                     state_path=RUNS/identifier/'grid_training.json'
                     if state_path.exists() and json.loads(state_path.read_text()).get('status') in ('running','queued'):raise ValueError('该任务压缩训练仍在运行')
                     state_path.write_bytes(dump(dict(status='queued',phase='等待压缩训练',started=time.time())))
-                    POOL.submit(compression_work,identifier,response)
+                    POOL.submit(compression_work,identifier,response,gray_refinement)
                 return self.respond(dict(job=identifier,status='queued'),status=202)
             if path == '/api/grid-distillation':
                 identifier=body.get('job')
@@ -471,7 +510,7 @@ class Handler(BaseHTTPRequestHandler):
                     raise ValueError('已有文件处理任务，请稍候')
                 try:
                     from grid_distillation import generate
-                    return self.respond(generate(RUNS/identifier,body.get('response',default_response())))
+                    return self.respond(generate(RUNS/identifier,body.get('response',default_response()),post_gray_refinement=body.get('post_gray_refinement',False)))
                 finally:
                     RAW_LOCK.release()
             if path == '/api/pc-compensation':
@@ -516,7 +555,7 @@ class Handler(BaseHTTPRequestHandler):
                     if any(v['status'] in ('queued', 'running') for v in JOBS.values()):
                         return self.respond(dict(error='已有拟合任务运行，请完成或取消后再提交'), status=409)
                     identifier = uuid.uuid4().hex
-                    JOBS[identifier] = dict(id=identifier, target_kind=kind, status='queued', phase='等待开始', started=time.time())
+                    JOBS[identifier] = dict(id=identifier, target_kind=body.get('target_kind','lut'), status='queued', phase='等待开始', started=time.time())
                     POOL.submit(work, identifier, body)
                 return self.respond(dict(id=identifier), status=202)
             if path == '/api/cancel':
@@ -535,6 +574,7 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def main():
+    os.environ.setdefault('R5_GPU_TRAINING','1')
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--port', type=int, default=4180)
     parser.add_argument('--no-open', action='store_true')

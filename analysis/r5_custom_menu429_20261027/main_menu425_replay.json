@@ -1,0 +1,968 @@
+{
+  "passed": true,
+  "AP_sha256": "74a8923e208790d4794a4790e9d8abf8c324795529ef6bcbc544b48af4728315",
+  "script_sha256": "4796ed885be9666b25b1d1e655cec1d37c4dd2168e2ccbc118f2d3e86ea0abff",
+  "source423_sha256": "4017b746b8720b0b3c0b1b8d79b00472548361b335048656b72c71be77202717",
+  "rows": [
+    {
+      "label": "source423",
+      "path": "analysis/r5_custom_filter423_20261023/ap/appFw.so",
+      "sha256": "4017b746b8720b0b3c0b1b8d79b00472548361b335048656b72c71be77202717",
+      "bias": "0x0",
+      "old_alias_keys_checked": 1589,
+      "secondary_source_sha256": "3639393fa248cd983a63a9d220cfd7056f2d6374daec9d88e1b459755c462904",
+      "private_key_absent_from_fixture": true,
+      "views": [
+        {
+          "facade": "0x582ca68",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582ca68",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        }
+      ]
+    },
+    {
+      "label": "source423",
+      "path": "analysis/r5_custom_filter423_20261023/ap/appFw.so",
+      "sha256": "4017b746b8720b0b3c0b1b8d79b00472548361b335048656b72c71be77202717",
+      "bias": "0x40000000",
+      "old_alias_keys_checked": 1589,
+      "secondary_source_sha256": "3639393fa248cd983a63a9d220cfd7056f2d6374daec9d88e1b459755c462904",
+      "private_key_absent_from_fixture": true,
+      "views": [
+        {
+          "facade": "0x582ca68",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582ca68",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        }
+      ]
+    },
+    {
+      "label": "source423",
+      "path": "analysis/r5_custom_filter423_20261023/ap/appFw.so",
+      "sha256": "4017b746b8720b0b3c0b1b8d79b00472548361b335048656b72c71be77202717",
+      "bias": "0x7000000000",
+      "old_alias_keys_checked": 1589,
+      "secondary_source_sha256": "3639393fa248cd983a63a9d220cfd7056f2d6374daec9d88e1b459755c462904",
+      "private_key_absent_from_fixture": true,
+      "views": [
+        {
+          "facade": "0x582ca68",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582ca68",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              3236
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x200a1ed",
+              "text_dispatch": [
+                [
+                  "name_id",
+                  33595885
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 0,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        }
+      ]
+    },
+    {
+      "label": "candidate425",
+      "path": "analysis/r5_custom_menu429_20261027/ap/appFw.so",
+      "sha256": "74a8923e208790d4794a4790e9d8abf8c324795529ef6bcbc544b48af4728315",
+      "bias": "0x0",
+      "old_alias_keys_checked": 1589,
+      "secondary_source_sha256": "3639393fa248cd983a63a9d220cfd7056f2d6374daec9d88e1b459755c462904",
+      "private_key_absent_from_fixture": true,
+      "views": [
+        {
+          "facade": "0x582ca68",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582ca68",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        }
+      ]
+    },
+    {
+      "label": "candidate425",
+      "path": "analysis/r5_custom_menu429_20261027/ap/appFw.so",
+      "sha256": "74a8923e208790d4794a4790e9d8abf8c324795529ef6bcbc544b48af4728315",
+      "bias": "0x40000000",
+      "old_alias_keys_checked": 1589,
+      "secondary_source_sha256": "3639393fa248cd983a63a9d220cfd7056f2d6374daec9d88e1b459755c462904",
+      "private_key_absent_from_fixture": true,
+      "views": [
+        {
+          "facade": "0x582ca68",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582ca68",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        }
+      ]
+    },
+    {
+      "label": "candidate425",
+      "path": "analysis/r5_custom_menu429_20261027/ap/appFw.so",
+      "sha256": "74a8923e208790d4794a4790e9d8abf8c324795529ef6bcbc544b48af4728315",
+      "bias": "0x7000000000",
+      "old_alias_keys_checked": 1589,
+      "secondary_source_sha256": "3639393fa248cd983a63a9d220cfd7056f2d6374daec9d88e1b459755c462904",
+      "private_key_absent_from_fixture": true,
+      "views": [
+        {
+          "facade": "0x582ca68",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582ca68",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": null
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 0,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        },
+        {
+          "facade": "0x582d618",
+          "mode": 1,
+          "rows": [
+            [
+              0,
+              1589
+            ]
+          ],
+          "titles": [
+            {
+              "producer": "0x2218cc8",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            },
+            {
+              "producer": "0x221eee0",
+              "resource": "0x2ff4230",
+              "text_dispatch": [
+                [
+                  "name_char",
+                  "自定义滤镜"
+                ]
+              ]
+            }
+          ],
+          "concrete_private_record": 0,
+          "present": 1,
+          "available": 1,
+          "produced_mid_present": 1,
+          "private_cache_record": "000001000000000000000000010000000000000000000000"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Exact A64 visible-loop and title/cache-gate methods execute. Full original secondary alias table is represented as a balanced tree, not by executing allocation/constructors.",
+    "Only the actual inserted custom parent slot is exposed by an isolated category fixture. Profile index, model node storage, special-menu/category services and model visibility mapping remain fixtures.",
+    "Cached facade executes native 1BDFB0C cache producer and 1BE03AC consumer against the original GOT5928070 memory; hash membership lookup/insert functions 1BE0110/1BE0324 are explicit container fixtures. Cache capacity is a separate static acceptance check.",
+    "name_draw routes actual title ID to actual private UTF-8 string; no font rasterizer, physical LCD, UI event loop, boot or device execution."
+  ]
+}

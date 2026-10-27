@@ -23,10 +23,13 @@ def source(arrays):
         if identity != DATASET_ID:
             raise ValueError('Unknown measured dataset identity')
         return BUNDLE, CONTEXT
-    raise ValueError('独立项目仅包含新色卡；历史任务需在原工作区打开')
+    raise ValueError('独立项目不包含更早期的训练任务数据')
 
 
 def validate(arrays):
+    import v4_dataset
+    if v4_dataset.identity(arrays):
+        return v4_dataset.validate(arrays)
     # Historical 260-anchor datasets retain their original capture binding.
     version=284 if np.sum(arrays["anchor_index"]>=0)==284 else 260
     bundle,context=source(arrays)

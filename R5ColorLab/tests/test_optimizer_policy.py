@@ -13,8 +13,11 @@ from optimizer_policy import (search_options, adaptive_importance, perturbed_sta
 class OptimizerPolicyTests(unittest.TestCase):
     def test_options_and_bounded_train_adaptation(self):
         self.assertEqual(search_options()['starts'],4)
+        self.assertEqual(search_options()['gamma_color_rounds'],0)
+        self.assertEqual(search_options(dict(gamma_color_rounds=3))['gamma_color_rounds'],3)
         for value in [dict(starts=True),dict(starts=13),dict(adaptive_rounds=-1),
-                      dict(perceptual_weight=float('nan')),dict(quantization_sweeps=4),dict(unknown=1)]:
+                      dict(perceptual_weight=float('nan')),dict(quantization_sweeps=4),dict(unknown=1),
+                      dict(gamma_color_rounds=True),dict(gamma_color_rounds=-1),dict(gamma_color_rounds=13)]:
             with self.assertRaises(ValueError):search_options(value)
         base=dict(random=1,primaries=2,gray=3,colorchecker24=4)
         errors=dict(random=1e6,primaries=2,gray=1,colorchecker24=0)
@@ -71,7 +74,7 @@ class OptimizerPolicyTests(unittest.TestCase):
         class Stop(Exception):pass
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder);(root/'fit').mkdir()
-            recipe=dict(source={'context':4},parameters={'example':123},fitting={'history':'x'*150000})
+            recipe=dict(source={'context':4,'capture_report_sha256':core.sha((core.CAPTURE/'report.json').read_bytes())},parameters={'example':123},fitting={'history':'x'*150000})
             original=json.dumps(recipe).encode();(root/'fit/recipe.json').write_bytes(original)
             def compile(path,*args):
                 projected=json.loads(path.read_text())

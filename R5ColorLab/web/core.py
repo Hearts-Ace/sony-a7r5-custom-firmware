@@ -1,6 +1,9 @@
+from compute_backend import render_native
+from patch_sampling import center_mean
 """Local UI adapters and R5 4.23 independent custom filter exports."""
 import copy
 import white_balance
+import baseline
 import hashlib
 import importlib.util
 import json
@@ -19,11 +22,11 @@ COMPILER_PATH = ROOT / 'compilers/custom_filter_v4.py'
 spec = importlib.util.spec_from_file_location('custom423_compiler', COMPILER_PATH)
 compiler = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(compiler)
-BASE = RESEARCH / 'data/model'
+BASE = ROOT / 'data/model'
 CAPTURE = BASE / 'capture'
 CHART = BASE / 'synthetic_C'
 PAIRS = BASE / 'pairs_C/pairs.npz'
-PROFILE = RESEARCH / 'data/camera_profile.json'
+PROFILE = ROOT / 'data/camera_profile.json'
 WIRES = [0, 3, 2, 1, 16, 15, 19, 20, 17, 18, 5, 13]
 PROFILES = [0, 6, 2, 1, 42, 41, 54, 55, 43, 44, 53, 53]
 
@@ -59,18 +62,24 @@ def presets():
     return copy.deepcopy(value['entries']),copy.deepcopy(value['provenance'])
 
 
-def measured_inputs():
+def measured_inputs(dataset_id=None):
     import numpy as np
     import anchor_dataset
-    with np.load(anchor_dataset.PAIRS, allow_pickle=False) as archive:
-        arrays = {key: archive[key].copy() for key in archive.files}
-    audit = anchor_dataset.validate(arrays)
+    if dataset_id == 'legacy':
+        with np.load(anchor_dataset.PAIRS, allow_pickle=False) as archive:
+            arrays = {key: archive[key].copy() for key in archive.files}
+        audit = anchor_dataset.validate(arrays)
+    else:
+        import v4_dataset
+        arrays,audit = v4_dataset.load()
     import sector16
     from edit_color_pipeline import RuntimeColor
-    arrays['sector16_index'],audit['sector16']=sector16.select(arrays,RuntimeColor.from_capture(CAPTURE,4))
+    capture,context=baseline.resolve(audit.get('dataset_id'))
+    model=RuntimeColor.from_capture(capture,context)
+    arrays['sector16_index'],audit['sector16']=sector16.select(arrays,model)
     import tonal_sampling
-    arrays['baseline_tonal_index']=tonal_sampling.classify(RuntimeColor.from_capture(CAPTURE,4).color_only(arrays['input'])[:,4]/16383)
-    audit['tonal_balance']=tonal_sampling.validate(arrays,RuntimeColor.from_capture(CAPTURE,4))
+    arrays['baseline_tonal_index']=tonal_sampling.classify(center_mean(render_native(model,arrays['input']))/16383)
+    audit['tonal_balance']=tonal_sampling.validate(arrays,model)
     return arrays, audit
 
 
@@ -108,7 +117,7 @@ def prepare_target(lut, gamut, output):
     arrays.pop('1_target', None)
     np.savez_compressed(output / 'pairs.npz', **arrays)
     audit.update(lut_sha256=sha(lut.read_bytes()), gamut=gamut, profile_sha256=sha(PROFILE.read_bytes()),
-                 original_pairs_sha256=sha(anchor_dataset.PAIRS.read_bytes()), context=4,
+                 original_pairs_sha256=__import__('v4_dataset').metadata()['pairs_sha256'], context=baseline.resolve(audit.get('dataset_id'))[1],
                  reference_mode=reference.mode, photo_training=False)
     (output / 'input_audit.json').write_text(json.dumps(audit, indent=2) + '\n')
 
@@ -127,7 +136,8 @@ def finish_fit(output, number, short_name, full_name, gamma_endpoint128=None):
         projected.pop('fitting', None)
         conversion_path = output / 'fit/native_conversion_recipe.json'
         conversion_path.write_text(json.dumps(projected, separators=(',', ':'))+'\n')
-    native, audit = compiler.from_fit(conversion_path, CAPTURE, number, short_name, full_name, gamma_endpoint128)
+    capture,context=baseline.for_job(output)
+    native, audit = compiler.from_fit(conversion_path, capture, number, short_name, full_name, gamma_endpoint128)
     if conversion_path != recipe_path:
         audit['compiler_input_sha256'] = audit['recipe_sha256']
         audit['recipe_sha256'] = sha(original_recipe)
@@ -141,14 +151,14 @@ def finish_fit(output, number, short_name, full_name, gamma_endpoint128=None):
     (output / 'R5NATIVE.BIN').unlink(missing_ok=True)
     from edit_native_recipe import read
     import numpy as np
-    recipe, model = read(output / 'fit/recipe.json', CAPTURE, 4, None)
+    recipe, model = baseline.read_job(output)
     with np.load(output / 'pairs.npz', allow_pickle=False) as pairs:
         mask = pairs['split'] == 'test'
         inputs = pairs['input'][mask]
         target = pairs['0_target'][mask]
         pairs_data={key:pairs[key][mask] for key in ('input','sensor_codes')}
     from edit_color_pipeline import RuntimeColor
-    before = RuntimeColor.from_capture(CAPTURE, 4).color_only(inputs)[:, 4]
+    before = center_mean(render_native(RuntimeColor.from_capture(capture,context),inputs))
     after = white_balance.render_pairs(model, pairs_data, recipe)
     preview = dict(before=np.clip(before/16383, 0, 1).tolist(),
                    target=np.clip(target/16383, 0, 1).tolist(),
@@ -183,8 +193,8 @@ def diagnostics(output, pc=False, grid_key=None):
     def report_metrics(predicted,target):
         m=tonal_comparison(target/16383,predicted/16383)['groups']['all']['metrics']
         return dict(mae_8bit=m['mae'],rmse_8bit=m['rmse'],p95_8bit=m['p95'])
-    recipe, model = read(output / 'fit/recipe.json', CAPTURE, 4, None)
-    baseline = RuntimeColor.from_capture(CAPTURE, 4)
+    recipe, model = __import__('baseline').read_job(output)
+    baseline = RuntimeColor.from_capture(*__import__('baseline').for_job(output))
     with np.load(output / 'pairs.npz', allow_pickle=False) as pairs:
         measured, split = pairs['input'], pairs['split']
         test = split == 'test'
@@ -208,13 +218,13 @@ def diagnostics(output, pc=False, grid_key=None):
             ids=pairs['anchor_index']; selected=np.flatnonzero(ids>=0)
             order=selected[np.argsort(ids[selected])]
             x=measured[order]; t=pairs['0_target'][order]
-            before=baseline.color_only(x)[:,4]; predicted=white_balance.render_pairs(model,pairs,recipe,order)
+            before=center_mean(render_native(baseline,x)); predicted=white_balance.render_pairs(model,pairs,recipe,order)
             if pc or grid_key: predicted=apply(output,predicted/16383)*16383
             fields=dict(input=pairs['sensor'][order].tolist(),
                         target=np.clip(t/16383,0,1).tolist(),
                         before=np.clip(before/16383,0,1).tolist(),
                         after=np.clip(predicted/16383,0,1).tolist(),
-                        frontend=('experimental WB: flatfield ITP + frozen measured frontend residual' if white_balance.active(white_balance.from_recipe(recipe)) else 'actual measured Edit post-SSCS; no interpolation'),
+                        frontend=('experimental WB: flatfield ITP + frozen measured frontend residual' if white_balance.active(white_balance.from_recipe(recipe)) else anchor_dataset.validate(arrays)['frontend']),
                         included_in_training=True,gray_steps=256,
                         names=['正红','正黄','正绿','正蓝'],
                         metrics={label:dict(before=report_metrics(before[sl],t[sl]),
@@ -227,7 +237,7 @@ def diagnostics(output, pc=False, grid_key=None):
             sector_audit=sector16.validate(pairs,baseline)
             selected=np.flatnonzero(pairs['sector16_index']>=0)
             order=selected[np.argsort(pairs['sector16_index'][selected])]
-            before=baseline.color_only(pairs['input'][order])[:,4]
+            before=center_mean(render_native(baseline,pairs['input'][order]))
             predicted=white_balance.render_pairs(model,pairs,recipe,order)
             current_inputs=white_balance.inputs(model,pairs['input'][order],pairs['sensor_codes'][order],white_balance.from_recipe(recipe))
             current_sectors=model.sectors(current_inputs)[:,4].tolist()
@@ -286,36 +296,5 @@ def tonal_comparison(target, predicted):
 
 
 def write_validation_raw(original, recipe_path, destination):
-    """Reuse unchanged historical writer with validated recipe in a new folder."""
-    import numpy as np  # Load the Python 3.12 runtime build before legacy paths.
-    from edit_native_recipe import read
-    from write_fitted_st_raw import reader
-    writer = SCRIPTS / 'write_fitted_st_raw.py'
-    verified(writer, '4c1f3774ac5a0e39ac8e85fc35dfeeb3dcc9011e5344729ebbe15556e4ee31c8')
-    parser = RESEARCH / 'scripts/sony_arw_metadata.py'
-    verified(parser, 'e034f6a97e9ee66fc95785f1151adef58083759fc053f0a904a5d57d6c559383')
-    recipe = json.loads(recipe_path.read_text())
-    read(recipe_path, CAPTURE, recipe['source']['context'], None)
-    if white_balance.active(white_balance.from_recipe(recipe)):
-        raise ValueError('此任务包含实验 PC 白平衡，当前 ARW 导出不能复现；请关闭白平衡重新训练或使用浏览器预览')
-    if recipe.get('compensation_grid_enabled') is not False:
-        raise ValueError('不支持含残差网格的配方')
-    parsed = reader().parse(original)
-    if parsed['model'] != 'ILCE-7RM5':
-        raise ValueError('当前仅接受 Sony ILCE-7RM5 的兼容 ARW')
-    destination.mkdir(parents=True, exist_ok=False)
-    # Original upload is temporary; the browser's source file is never opened
-    # for writing. Only the derived ARW and audit remain in the new directory.
-    with tempfile.TemporaryDirectory(prefix='r5-raw-') as temp:
-        source = Path(temp) / 'input.ARW'
-        source.write_bytes(original)
-        bootstrap = 'import numpy,sys,runpy;sys.path.insert(0,sys.argv[1]);sys.argv=sys.argv[2:];runpy.run_path(sys.argv[0],run_name="__main__")'
-        run = subprocess.run([sys.executable, '-c', bootstrap, str(SCRIPTS), str(writer), str(source), str(recipe_path),
-                              '--capture', str(CAPTURE), '--output', str(destination / 'fitted-ST.ARW')],
-                             capture_output=True, text=True, timeout=180)
-        if run.returncode:
-            raise ValueError('RAW 参数写入被拒绝：' + run.stderr.strip().splitlines()[-1])
-    audit = json.loads((destination / 'fitted-ST.audit.json').read_text())
-    if not audit['sensor_data_unchanged'] or not audit['other_looks_unchanged']:
-        raise ValueError('RAW 保留校验失败')
-    return audit
+    import validation_raw
+    return validation_raw.write(original, recipe_path, destination)
