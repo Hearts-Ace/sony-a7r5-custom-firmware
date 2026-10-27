@@ -6,6 +6,6 @@
 - R5实拍v2标定参数及独立网格反推工作台继续提供；模型覆盖42/256，外推未完成跨场景验收。
 - 最新12款模拟滤镜随包提供BIN及可编辑配置，不含用户目标图。
 
-固件24回执、30项检查及签名/CRC/全部751577088明文字节独立核对通过。4.32实际滚轮时序、LCD、冷启动及拍摄待机身验收；工作台离线指标不代表机内颜色通过。原机镜像、密钥、私人照片不发布。
+固件构建24回执、30项检查及签名/CRC/全部751577088明文字节独立核对通过。4.32实际滚轮时序、LCD、冷启动及拍摄待机身验收；工作台离线指标不代表机内颜色通过。原机镜像、密钥、私人照片不发布。
 
-BODYDATA.DAT是固件；R5ColorLab.zip是独立色彩工作台；GFX100SII-100MP-chart.zip是原色卡；R5GridCalibrator.zip是反推工具；FUJ_filters_12.zip是最新12款模拟配置；R5-grid-response-v2.json是当前网格标定参数。SHA256SUMS覆盖全部下载。
+固件仅发布源码、构建与打包脚本，不分发BODYDATA.DAT；R5ColorLab.zip是独立色彩工作台；GFX100SII-100MP-chart.zip是原色卡；R5GridCalibrator.zip是反推工具；FUJ_filters_12.zip是最新12款模拟配置；R5-grid-response-v2.json是当前网格标定参数。SHA256SUMS覆盖全部下载。
