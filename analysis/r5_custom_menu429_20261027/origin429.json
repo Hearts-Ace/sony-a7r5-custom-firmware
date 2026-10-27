@@ -1,0 +1,7 @@
+{
+  "production_baseline": "analysis/r5_custom_menu427_20261024",
+  "preserves_frozen_428": true,
+  "reason": "428 user feedback: full name missing and stock adjustment widget visible; original Creative Look works",
+  "changed_production_source": "menu_research/r5_filter_page425.c",
+  "no_device_io": true
+}

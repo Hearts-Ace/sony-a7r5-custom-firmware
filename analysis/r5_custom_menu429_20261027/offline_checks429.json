@@ -1,0 +1,242 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "native_widgets",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 45.43,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/menu_research/replay_native_view426.py"
+      ]
+    },
+    {
+      "name": "names_inputs",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 46.31,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/menu_research/replay_name_input429.py"
+      ]
+    },
+    {
+      "name": "native_lifecycle",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 66.67,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/menu_research/replay_lifecycle429.py"
+      ]
+    },
+    {
+      "name": "native_allocator",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 70.75,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/menu_research/replay_allocator429.py"
+      ]
+    },
+    {
+      "name": "identity",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 40.32,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/menu_research/replay_identity426.py"
+      ]
+    },
+    {
+      "name": "native_manager",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 70.89,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/menu_research/replay_review429.py"
+      ]
+    },
+    {
+      "name": "main_enter",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 35.39,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/menu_research/replay_main_open426.py"
+      ]
+    },
+    {
+      "name": "titles",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 39.0,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/replay_title425.py",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/ap/appFw.so"
+      ]
+    },
+    {
+      "name": "worker",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 2.92,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/sync_tests/run_worker425.py"
+      ]
+    },
+    {
+      "name": "requests0",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.55,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/sync_tests/replay_exact_request425.py",
+        "--bias",
+        "0",
+        "--output",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/sync_tests/exact_request_bias0.json"
+      ]
+    },
+    {
+      "name": "main_list",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 53.07,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/replay_main_menu425.py",
+        "--candidate",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/ap/appFw.so",
+        "--output",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/main_menu425_replay.json"
+      ]
+    },
+    {
+      "name": "requests_pie",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.6,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/sync_tests/replay_exact_request425.py",
+        "--bias",
+        "0x40000000",
+        "--output",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/sync_tests/exact_request_bias40000000.json"
+      ]
+    },
+    {
+      "name": "refresh",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.48,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/sync_tests/replay_refresh_wrapper425.py"
+      ]
+    },
+    {
+      "name": "threads",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.1,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/sync_tests/collect_thread_ownership425.py"
+      ]
+    },
+    {
+      "name": "inheritance",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.05,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/verify_inherited425.py"
+      ]
+    },
+    {
+      "name": "sync_identity",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.91,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/sync_tests/verify_sync_inheritance426.py"
+      ]
+    },
+    {
+      "name": "sd_identity",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 5.02,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/sync_tests/bind_sd429_final.py"
+      ]
+    },
+    {
+      "name": "crosscore",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 324.73,
+      "command": [
+        "/path/to/r5-workspace/.venv/bin/python",
+        "-X",
+        "faulthandler",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/crosscore/replay_select425.py",
+        "--candidate",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027",
+        "--cp",
+        "/path/to/r5-workspace/analysis/r5_custom_filter423_20261023/cp/cp423.NONINSTALLABLE.bin",
+        "--output",
+        "/path/to/r5-workspace/analysis/r5_custom_menu429_20261027/crosscore/ap_cp425.json"
+      ]
+    }
+  ],
+  "AP_sha256": "74a8923e208790d4794a4790e9d8abf8c324795529ef6bcbc544b48af4728315",
+  "device_io": false
+}

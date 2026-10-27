@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "AP_sha256": "81fa2ea3ee89d30715d7ab69f9eca92da837139a0ab1a32bed1f3799067d7c6e",
+  "cases": 2,
+  "rows": [
+    {
+      "bias": "0x0",
+      "native_1004_enter": "0x21deab8",
+      "menu": "0x635",
+      "from_screen": "0x2d7",
+      "target_screen": "0xd9",
+      "queue_records": 1,
+      "queue_record_bytes": 20,
+      "descriptor_and_native_route": true,
+      "events": [
+        [
+          "open_screen_validate_fixture",
+          727,
+          217
+        ],
+        [
+          "native_log_fixture"
+        ]
+      ],
+      "callee_saved": true,
+      "native_menu_pid": "0x3b2",
+      "menu_pid_after_enter": "0x635",
+      "row_pid_unchanged": "0x1607",
+      "native_controller_factory_reached": true,
+      "exact_factory_slot": "0x5071080"
+    },
+    {
+      "bias": "0x40000000",
+      "native_1004_enter": "0x21deab8",
+      "menu": "0x635",
+      "from_screen": "0x2d7",
+      "target_screen": "0xd9",
+      "queue_records": 1,
+      "queue_record_bytes": 20,
+      "descriptor_and_native_route": true,
+      "events": [
+        [
+          "open_screen_validate_fixture",
+          727,
+          217
+        ],
+        [
+          "native_log_fixture"
+        ]
+      ],
+      "callee_saved": true,
+      "native_menu_pid": "0x3b2",
+      "menu_pid_after_enter": "0x635",
+      "row_pid_unchanged": "0x1607",
+      "native_controller_factory_reached": true,
+      "exact_factory_slot": "0x5071080"
+    }
+  ],
+  "limits": [
+    "Actual compiled menu/rows registration, native1004 Enter, descriptor lookup, MID property write, open queue, exact native screen factory table lookup and private controller guard/reserved object gate run at two PIE bases.",
+    "Native accessors28a8720/MID3b2 and28a87e8/ROW3b7 execute without stubs. Category input, memory copying/logging/locks and controller ctor body and selected service are explicit fixtures.",
+    "The controller reaches its own reserved-object ctor gate; native ctor/render/LCD execution is covered separately, not claimed by this route proof."
+  ]
+}
