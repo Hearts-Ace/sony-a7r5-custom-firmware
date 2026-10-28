@@ -1,0 +1,242 @@
+{
+  "reference": {
+    "path": "/Users/LOCAL_USER/Desktop/DSC00566富士后期.jpg",
+    "sha256": "1f0f727e96aa2d6b5b8893805fbaf0dd616637b7216d1706cff95ae528440b20",
+    "profile": "IEC 61966-2.1 Default RGB colour space - sRGB"
+  },
+  "comparisons": {
+    "formal_grid": {
+      "all_pixels": {
+        "samples": 25958400,
+        "delta_e00_mean": 3.012453943081435,
+        "delta_e00_p95": 7.075254440307617,
+        "rgb_mae": 3.4160523247452335,
+        "rgb_rmse": 5.250315677537731,
+        "lightness_rmse": 1.7603528642423987,
+        "ab_rmse": 3.434640021628152,
+        "fraction_delta_e00_le_3": 0.6111473357371795
+      },
+      "regions": {
+        "bottom_8_percent": {
+          "samples": 2077920,
+          "delta_e00_mean": 3.905534117475535,
+          "delta_e00_p95": 8.259764671325684,
+          "rgb_mae": 2.6019681540514874,
+          "rgb_rmse": 3.3877616048819057,
+          "lightness_rmse": 0.7608950820912144,
+          "ab_rmse": 3.9206563372370837,
+          "fraction_delta_e00_le_3": 0.4273605336105336
+        },
+        "target_shadows_L_lt_25": {
+          "samples": 9077154,
+          "delta_e00_mean": 3.5811166681898445,
+          "delta_e00_p95": null,
+          "rgb_mae": 3.0857596628488033,
+          "rgb_rmse": 4.419672398915369,
+          "lightness_rmse": 1.5037953263180326,
+          "ab_rmse": 3.735096569213576,
+          "fraction_delta_e00_le_3": 0.48969776209591687
+        },
+        "target_colored_C_ge_10": {
+          "samples": 4746286,
+          "delta_e00_mean": 3.77392253999702,
+          "delta_e00_p95": null,
+          "rgb_mae": 5.441595316141224,
+          "rgb_rmse": 8.13301454179235,
+          "lightness_rmse": 2.72981832894686,
+          "ab_rmse": 4.858613932202565,
+          "fraction_delta_e00_le_3": 0.41336952724719916
+        }
+      },
+      "linear_32x32": {
+        "samples": 25350,
+        "delta_e00_mean": 1.5222659618348595,
+        "delta_e00_p95": 3.0858520958882343,
+        "rgb_mae": 1.781582495026416,
+        "rgb_rmse": 2.451179207244061,
+        "lightness_rmse": 0.7596889904230706,
+        "ab_rmse": 1.7911299464014319,
+        "fraction_delta_e00_le_3": 0.9431163708086785
+      }
+    },
+    "new_grid": {
+      "all_pixels": {
+        "samples": 25958400,
+        "delta_e00_mean": 2.7360274590153355,
+        "delta_e00_p95": 6.160296440124512,
+        "rgb_mae": 3.1911716567020054,
+        "rgb_rmse": 4.990381261269314,
+        "lightness_rmse": 1.694453256868194,
+        "ab_rmse": 3.0371873334456736,
+        "fraction_delta_e00_le_3": 0.6604235237919133
+      },
+      "regions": {
+        "bottom_8_percent": {
+          "samples": 2077920,
+          "delta_e00_mean": 3.5499907615473862,
+          "delta_e00_p95": 6.929162502288818,
+          "rgb_mae": 2.7084246105079437,
+          "rgb_rmse": 3.5028680173777142,
+          "lightness_rmse": 0.6864442578553013,
+          "ab_rmse": 3.8564932819998554,
+          "fraction_delta_e00_le_3": 0.46092919842919844
+        },
+        "target_shadows_L_lt_25": {
+          "samples": 9077154,
+          "delta_e00_mean": 3.069661688609019,
+          "delta_e00_p95": null,
+          "rgb_mae": 2.774254132958414,
+          "rgb_rmse": 4.047550505583471,
+          "lightness_rmse": 1.3889590439843211,
+          "ab_rmse": 3.2207576382803347,
+          "fraction_delta_e00_le_3": 0.5688910863471084
+        },
+        "target_colored_C_ge_10": {
+          "samples": 4746286,
+          "delta_e00_mean": 3.320687603361388,
+          "delta_e00_p95": null,
+          "rgb_mae": 5.137484059466005,
+          "rgb_rmse": 7.807750639210143,
+          "lightness_rmse": 2.6941764736673295,
+          "ab_rmse": 4.22258921469181,
+          "fraction_delta_e00_le_3": 0.5199122008239706
+        }
+      },
+      "linear_32x32": {
+        "samples": 25350,
+        "delta_e00_mean": 1.298845048375148,
+        "delta_e00_p95": 2.6896598458357723,
+        "rgb_mae": 1.5685655308292563,
+        "rgb_rmse": 2.1587685382098614,
+        "lightness_rmse": 0.6780864340908359,
+        "ab_rmse": 1.4773502777261238,
+        "fraction_delta_e00_le_3": 0.9805917159763313
+      }
+    },
+    "formal_native": {
+      "all_pixels": {
+        "samples": 25958400,
+        "delta_e00_mean": 5.666100235031007,
+        "delta_e00_p95": 9.679080963134766,
+        "rgb_mae": 9.491725337463018,
+        "rgb_rmse": 12.203098890104748,
+        "lightness_rmse": 4.018746746071917,
+        "ab_rmse": 5.111041215338416,
+        "fraction_delta_e00_le_3": 0.15894300110946746
+      },
+      "regions": {
+        "bottom_8_percent": {
+          "samples": 2077920,
+          "delta_e00_mean": 5.0552346661550835,
+          "delta_e00_p95": 10.104434967041016,
+          "rgb_mae": 4.925751071584405,
+          "rgb_rmse": 6.410325101657058,
+          "lightness_rmse": 2.1033966479265906,
+          "ab_rmse": 5.243036100282815,
+          "fraction_delta_e00_le_3": 0.24970354970354972
+        },
+        "target_shadows_L_lt_25": {
+          "samples": 9077154,
+          "delta_e00_mean": 4.9972761944565285,
+          "delta_e00_p95": null,
+          "rgb_mae": 5.400862098406615,
+          "rgb_rmse": 7.139747437176941,
+          "lightness_rmse": 2.40209966809846,
+          "ab_rmse": 5.0714644667706965,
+          "fraction_delta_e00_le_3": 0.25960339551361583
+        },
+        "target_colored_C_ge_10": {
+          "samples": 4746286,
+          "delta_e00_mean": 5.428295919338908,
+          "delta_e00_p95": null,
+          "rgb_mae": 8.658172165211564,
+          "rgb_rmse": 11.970372587007903,
+          "lightness_rmse": 4.088043301531087,
+          "ab_rmse": 6.694535273251978,
+          "fraction_delta_e00_le_3": 0.18116270279540678
+        }
+      },
+      "linear_32x32": {
+        "samples": 25350,
+        "delta_e00_mean": 4.907499099462182,
+        "delta_e00_p95": 7.412916003746586,
+        "rgb_mae": 8.734178138588982,
+        "rgb_rmse": 11.186889533571195,
+        "lightness_rmse": 3.684420892160847,
+        "ab_rmse": 4.002271679328958,
+        "fraction_delta_e00_le_3": 0.1785404339250493
+      }
+    },
+    "new_native": {
+      "all_pixels": {
+        "samples": 25958400,
+        "delta_e00_mean": 5.856861302270429,
+        "delta_e00_p95": 9.958796501159668,
+        "rgb_mae": 9.117520866720085,
+        "rgb_rmse": 12.440224133434109,
+        "lightness_rmse": 4.083047636732126,
+        "ab_rmse": 5.172636419087546,
+        "fraction_delta_e00_le_3": 0.165751278969428
+      },
+      "regions": {
+        "bottom_8_percent": {
+          "samples": 2077920,
+          "delta_e00_mean": 6.882340768470867,
+          "delta_e00_p95": 11.296223640441895,
+          "rgb_mae": 4.325199879366546,
+          "rgb_rmse": 6.0104777538902425,
+          "lightness_rmse": 1.006769116642215,
+          "ab_rmse": 6.595402850275277,
+          "fraction_delta_e00_le_3": 0.102745533995534
+        },
+        "target_shadows_L_lt_25": {
+          "samples": 9077154,
+          "delta_e00_mean": 5.386523388001091,
+          "delta_e00_p95": null,
+          "rgb_mae": 3.995433260248752,
+          "rgb_rmse": 5.719105649735984,
+          "lightness_rmse": 1.5374038946469712,
+          "ab_rmse": 5.277713149502693,
+          "fraction_delta_e00_le_3": 0.250693223889338
+        },
+        "target_colored_C_ge_10": {
+          "samples": 4746286,
+          "delta_e00_mean": 6.103723153185068,
+          "delta_e00_p95": null,
+          "rgb_mae": 8.790681176819096,
+          "rgb_rmse": 12.526225679640685,
+          "lightness_rmse": 4.306458777855363,
+          "ab_rmse": 6.959440210909972,
+          "fraction_delta_e00_le_3": 0.1066553932906698
+        }
+      },
+      "linear_32x32": {
+        "samples": 25350,
+        "delta_e00_mean": 5.377890673870701,
+        "delta_e00_p95": 7.533909524342448,
+        "rgb_mae": 8.328036624236795,
+        "rgb_rmse": 11.561150086067778,
+        "lightness_rmse": 3.7930753920992903,
+        "ab_rmse": 4.342152899789794,
+        "fraction_delta_e00_le_3": 0.17092702169625246
+      }
+    }
+  },
+  "method": {
+    "width": 6240,
+    "height": 4160,
+    "pixels": 25958400,
+    "tiles": 25350,
+    "bottom_rows": [
+      3827,
+      4160
+    ],
+    "delta_e": "CIEDE2000 in sRGB/D65 Lab, decoded delivered JPEG",
+    "percentile": "all-pixel float32 storage, linear percentile",
+    "area_mean": "nonoverlapping 32x32, linear-light sRGB mean then encode",
+    "registration": false,
+    "exposure_or_white_balance_fit": false,
+    "photo_target_used_for_training": false,
+    "no_calibrated_similarity_percentage": true
+  }
+}

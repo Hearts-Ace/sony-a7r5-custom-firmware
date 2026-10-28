@@ -42,13 +42,13 @@ class IntegratedTrainingTests(unittest.TestCase):
                 with patch.object(server,'RUNS',root),patch.dict(server.JOBS,{identifier:job},clear=True), \
                      patch.object(server.core,'prepare_target',side_effect=prepare),patch.object(server.core,'finish_fit',side_effect=finish), \
                      patch.object(server.subprocess,'Popen',Process),patch('pc_compensation.generate',side_effect=pc) as generate:
-                    server.work(identifier,dict(lut='fixture',gamut='S-Gamut3',evaluations=1,number=1,short_name='ST',full_name='ST',white_balance=enabled,pc_compensation=enabled,pc_options=dict(curve_mode='qaq-grid',grid_enabled=True,response=[[1,0,0],[0,1,0],[0,0,1]]),group_weights=dict(random=1,primaries=2,gray=3,colorchecker24=4),search_options=dict(starts=3,adaptive_rounds=1,perceptual_weight=.4,quantization_sweeps=2,parameter_smoothing=0,gamma_color_rounds=0,primary_tonal_weight=1.0,hue24_tonal_weight=1.0)))
+                    server.work(identifier,dict(lut='fixture',gamut='S-Gamut3',evaluations=1,number=1,short_name='ST',full_name='ST',white_balance=enabled,pc_compensation=enabled,pc_options=dict(curve_mode='qaq-grid',grid_enabled=True,response=[[1,0,0],[0,1,0],[0,0,1]]),group_weights=dict(random=1,primaries=2,gray=3,colorchecker24=4),search_options=dict(starts=3,adaptive_rounds=1,perceptual_weight=.4,quantization_sweeps=2,parameter_smoothing=0,gamma_color_rounds=0)))
                     self.assertEqual(job['status'],'done',job.get('error'))
                     self.assertEqual('--pc-compensation' in commands[0],enabled)
                     self.assertEqual('--white-balance' in commands[0],enabled)
                     self.assertEqual(json.loads(commands[0][commands[0].index('--pc-options')+1]),dict(curve_mode='qaq-grid',grid_enabled=True,response=[[1,0,0],[0,1,0],[0,0,1]]))
                     self.assertEqual(json.loads(commands[0][commands[0].index('--group-weights')+1]),dict(random=1,primaries=2,gray=3,colorchecker24=4))
-                    self.assertEqual(json.loads(commands[0][commands[0].index('--search-options')+1]),dict(starts=3,adaptive_rounds=1,perceptual_weight=.4,quantization_sweeps=2,parameter_smoothing=0,gamma_color_rounds=0,primary_tonal_weight=1.0,hue24_tonal_weight=1.0))
+                    self.assertEqual(json.loads(commands[0][commands[0].index('--search-options')+1]),dict(starts=3,adaptive_rounds=1,perceptual_weight=.4,quantization_sweeps=2,parameter_smoothing=0,gamma_color_rounds=0,output_continuity=0,primary_tonal_weight=1.0,hue24_tonal_weight=1.0))
                     self.assertEqual(generate.call_count,int(enabled))
                     saved=json.loads((root/identifier/'job.json').read_text())
                     self.assertEqual(saved['result']['pc_compensation']['enabled'],enabled)

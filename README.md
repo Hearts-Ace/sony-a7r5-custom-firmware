@@ -1,20 +1,27 @@
-# Sony A7R V / R5 自定义滤镜 4.32
+# Sony A7R V / R5 自定义滤镜 4.34
 
-4.32修复控制轮只切换滤镜、菜单焦点和全称不更新的问题。旋转、上下键和触摸共用选择通路，移动即应用保存；确认或返回等待应用完成，再由原生菜单重建父页。保留4.31原生列表与错误分类、4.30启动/SD加载优化及4.22参数和网格生命周期。
+4.34修正自定义滤镜动态图标：沿用原厂Creative Look当前状态，ST时显示ST、切换其它外观时同步取图。4.33误将帮助文字资源当图片的问题已纠正。白色优先改为97，氛围优先保持−1；12地区通用Backup模板与backup.sum同步，保留R6可恢复ST参数、FL2/FL3和原有参数／网格生命周期。
 
-- [4.32源码、最新版工作台和100MP色卡下载](https://github.com/Hearts-Ace/sony-a7r5-custom-firmware/releases/tag/v4.32)
-- [色彩工作台：直接目标网格拟合、100MP色卡、批量训练](R5ColorLab/README.md)
-- [反推网格工作台：探针生成与JPG文件夹训练](R5GridCalibrator/README.md)
-- [最新12款模拟滤镜：BIN及可编辑配置](filters/FUJ_12_direct_target/README.md)
-- [R5实拍网格标定参数与来源](R5ColorLab/web/data/r5/PROVENANCE.md)
-- [4.32实现与证据边界](analysis/r5_custom_menu432_wheel_20261028/README.md)
+- [4.34源码、最新工具和滤镜下载](https://github.com/Hearts-Ace/sony-a7r5-custom-firmware/releases/tag/v4.34)
+- [色彩工作台](R5ColorLab/README.md) · [最新高精度训练方案](R5ColorLab/TRAINING.md)
+- [新版12款滤镜：BIN、可编辑配置与完整训练设置](filters/FUJ_12_continuity30/README.md)
+- [反推网格工作台](R5GridCalibrator/README.md) · [R5实拍v2响应及来源](R5ColorLab/web/data/r5/PROVENANCE.md)
+- [4.34源码与证据边界](analysis/r5_firmware434_20261028/README.md)
+- [固件本地交付回执](publication/4.34/firmware_delivery_verified.json) · [训练完成回执](publication/4.34/training_completion_verified.json)
 - [唯一研究总结](analysis/R5_FL2_FL3固件色彩与RAW参数研究总结.md)
-- [独立交付校验](publication/4.32/firmware_delivery_verified.json)
 
-固件仅用于ILCE-7RM5；本地构建产物754525608字节（不分发），SHA256 `f75f4a6efa286e3a6af0ed60cda6b92824d5ab18a8866cd167b9d2ec2b910e8b`。仅支持BIN v4，CC1、block13、129点Gamma及5×9×9网格统一导入/切换/关闭/原厂恢复。自定义编号与创意外观独立，原厂外观名称保持。SD有效BIN会完整替换配置集合。
+## 当前训练方案
 
-当前工作台使用unity-WB 100MP合成输入、PT基线、中心5点均值；自动训练默认最终405节点整数网格直接拟合目标图，压缩后交替和灰阶微调关闭。R5实拍v2响应用于训练、网格压缩及预览，覆盖42/256颜色单元，未覆盖部分外推。下载色卡是GFX100S II RAF，非R5机身实拍；用于软件调色后导出同尺寸TIFF/JPG。
+正式默认：参数平滑30、输出连续性30、每阶段2000评估、12起点、8动态轮、3轮Gamma/色彩交替、3轮原生整数量化微调。最终5×9×9整数网格直接拟合目标，压缩后原生/网格交替和灰阶专项微调关闭。支持Apple Metal/MPS可选训练、文件夹批量和独立简称／全称。
 
-4.32的24份回执、30项检查及签名/CRC/全包逐字独立解密通过。用户确认4.31上下键正常，控制轮UI失败；4.32真实滚轮时序、LCD、冷启动及拍摄仍待机身验收。模拟与离线误差不代表机内成像通过。公开源码缺少Sony原机镜像、签名输入和部分研究依赖，不能从干净克隆一键重建完整固件。
+输入采用unity-WB 100MP合成色卡、PT前端、中心横向5点均值；R5实拍v2响应用于训练、压缩及预览，覆盖42/256颜色单元，其他区域外推。输出连续性在训练阶段约束明暗／色相／饱和度轨迹上的色度折返和过度放大，同时约束原生整数参数与最终整数网格；不增加照片处理步骤或BIN格式。
 
-旧问题升级包已撤下，历史源码/散列/日志保留。首次备份、原始DAT、密钥和私人照片不发布。第三方来源见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+新版12项已全部完成，BIN v4共29,552字节，SHA256 `e3375e9f5fb8e32ae4dce5edab42c6024f1bc7d969abf7c2e01ded2b53419bc2`。下载的配置会完整替换自定义集合；名称用于说明模拟目标，非品牌官方产品。
+
+## 固件发布范围
+
+沿用用户指定的源码发布方式：公开4.34生产源码、构建／打包脚本与脱敏回执，不上传BODYDATA.DAT。完整固件的本地身份为754525608字节／BCD3404，SHA256 `1aeccd8f7fd6c1672b8fcd60ee1389c9b85a40a8aef51d6a720d898ecf9a1da9`。公开源码需要自行提供散列匹配的原始镜像、签名输入及部分研究依赖，不是干净克隆即可重建的一键工具。
+
+动态图标12状态对照、Fn注册／激活／返回、25项现有离线回归和最终DAT独立签名／CRC／全量解密已通过。实际LCD／刷新、升级／冷启动、AWB与新批滤镜机内成像仍待实机验收。Fn只增加手动可注册项，不自动分配槽位。主菜单左侧小logo按用户要求未继续研究。
+
+旧Release和旧滤镜交付入口由本版替代；历史提交、必要构建依赖及历史回执保留。原机备份、密钥、私人照片和训练运行目录不发布。第三方来源见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

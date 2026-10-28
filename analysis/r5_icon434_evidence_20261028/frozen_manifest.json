@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "AP_sha256": "65bd99095f626f990890156c0e536d56394c75313452caa451322e1148c1faec",
+  "artifacts": [
+    {
+      "path": "analysis/r5_icon434_evidence_20261028/LICENSE.LZ77.txt",
+      "sha256": "187870270d7c392899fe3d90ff2a61aa82000d96e24febf9414cac1ab702837a"
+    },
+    {
+      "path": "analysis/r5_icon434_evidence_20261028/README.md",
+      "sha256": "3b2974614226f1315f7937ac854f095658dc5a11ae79541b28dcbe0d0ab6ce55"
+    },
+    {
+      "path": "analysis/r5_icon434_evidence_20261028/finalize_evidence.py",
+      "sha256": "877869c0968008533f74c70f420fe3b50fe83921950f41389bc3fe91872500a7"
+    },
+    {
+      "path": "analysis/r5_icon434_evidence_20261028/image_resources.json",
+      "sha256": "254c73e290390a5cc94e59645366052d1ef428c908760f0090f360534ca1887a"
+    },
+    {
+      "path": "analysis/r5_icon434_evidence_20261028/look_mapping.json",
+      "sha256": "5a34bbaa2a9d330835f697abe94f76927939bd48e5ef5c0f3fdf7e58b412b2f8"
+    },
+    {
+      "path": "analysis/r5_icon434_evidence_20261028/native_functions.txt",
+      "sha256": "6e8d973ceaf09a6df1fe0668e710b110f424206e95c68c741f258b720b82cf02"
+    },
+    {
+      "path": "analysis/r5_icon434_evidence_20261028/replay_stock_icons.py",
+      "sha256": "ff1bea397374acfdd14580f49de5256e7f60140c66e95797ba5381e9e53d70f8"
+    },
+    {
+      "path": "analysis/r5_icon434_evidence_20261028/stock_icon_resources.png",
+      "sha256": "6107c78daa9f6a1879fa35e364b35944464d33e11f65663cdbfcadfebca377e5"
+    },
+    {
+      "path": "analysis/r5_icon434_evidence_20261028/stock_icons.json",
+      "sha256": "170fdbd464fa49061f8dd56452f8cc0031f7dc6b6fa7c2ceb0251fef3e54bed0"
+    },
+    {
+      "path": "analysis/r5_icon434_evidence_20261028/verification.json",
+      "sha256": "b2e4ca1eab58d7d46a42a1286c6ca944da8842d593f1e6112cc2f19edc7d0862"
+    },
+    {
+      "path": "analysis/r5_icon434_evidence_20261028/verify_image_resources.py",
+      "sha256": "f46eb96d46105179b9a70e4b84fe1ddabe5c14312d9996b81de3f99cbcc2b082"
+    }
+  ],
+  "sources": [
+    {
+      "path": "analysis/a7c2_vm_review_20261020/upstream/report/2026-10-17-qemu-native-camera/runtime/analysis/sony-lz77.c",
+      "sha256": "cad2ac49979f08dd93cf7bd498ef66691dce35b924eccf5986eda03824328bbf"
+    },
+    {
+      "path": "analysis/r5_custom_filter423_20261023/menu_research/read_menu.py",
+      "sha256": "f573a2c7d4fe6a80269266a22beea7cc9b497769574804435300069dafd2febf"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/ap/appFw.so",
+      "sha256": "65bd99095f626f990890156c0e536d56394c75313452caa451322e1148c1faec"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/patch_fn433.py",
+      "sha256": "2252b95936116b8e18810d5c6e7577fae7d0b3a87f20adc8fc12ebfb1a122a42"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/replay_fn433.py",
+      "sha256": "9e7b49f2d047d724ef29892a7f93b475ed1622054bf7053639717a0cd7eb7f30"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/replay_fn_save433.py",
+      "sha256": "d024ddabcf8c9a30fc193c919f1ba47e609206f52a49059b5d773fb59d074598"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/module_audit.json",
+      "sha256": "9708393e25e84246a6918a7d60427645606fcde200d73aea0d60de92f4f48edb"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/replay_main_menu425.py",
+      "sha256": "4796ed885be9666b25b1d1e655cec1d37c4dd2168e2ccbc118f2d3e86ea0abff"
+    },
+    {
+      "path": "unpacked/r5/usr_complete/lib/libObj.so",
+      "sha256": "0d0be8f1e48b3c74330f9afab698ac352b3c2a922f7231ffc836591529a9fdf9"
+    },
+    {
+      "path": "unpacked/r5/usr_complete/share/app/image_00_23_IPSX.uxc",
+      "sha256": "80637a7bb69ccf2ddc6308a148847d1f14a88aa2001e4fc7de04b3e4c83ef061"
+    },
+    {
+      "path": "unpacked/r5/usr_complete/share/app/image_00_32_IPSX.uxc",
+      "sha256": "d5ec718d642fa8b813cf05c45bb0bc53f68b9bc4152fe003f01cdc39efc8a9db"
+    },
+    {
+      "path": "unpacked/r5/usr_complete/share/app/image_01_23_IPSX.uxc",
+      "sha256": "98c8b7f5018778a84b62ec65822244c7ffb937349089abb7af85ac8dc77228e9"
+    },
+    {
+      "path": "unpacked/r5/usr_complete/share/app/image_01_32_IPSX.uxc",
+      "sha256": "4507cc10f423d934cad87c272db9e44fb20958f538fb2cc837f1e9a141e9e72b"
+    },
+    {
+      "path": "unpacked/r5/usr_complete/share/app/image_02_23_IPSX.uxc",
+      "sha256": "cd42de6a2fbf97905e1ec226a55117aae639f76d4d122aa0b5fcb7d2e7a7e3c6"
+    },
+    {
+      "path": "unpacked/r5/usr_complete/share/app/image_02_32_IPSX.uxc",
+      "sha256": "941c8cf15ea7c37c33c22d2a58c73f1918d6613fc0cf8234172a062dc7783164"
+    },
+    {
+      "path": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704"
+    }
+  ]
+}

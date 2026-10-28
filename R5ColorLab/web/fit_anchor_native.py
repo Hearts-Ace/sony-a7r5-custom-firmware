@@ -174,12 +174,27 @@ def main():
   return pc_stages.render(rgb/16383,bundle[0],bundle[1])*16383 if bundle is not None else rgb
  gray_indices=train[len(random_train)+4:len(random_train)+260]
  gray_model=SmoothNative(ctx,x[gray_indices])
+ continuity_bank=None;continuity_model=None
+ if options['output_continuity']:
+  from output_continuity import ProbeBank
+  continuity_bank=ProbeBank()
+  continuity_model=SmoothNative(ctx,continuity_bank.inputs(ctx.base))
+  smooth.output_continuity=(continuity_bank,continuity_model,options['output_continuity'])
  def set_wb(value):
-  nonlocal wb_value,current_x,smooth,gray_model,models
+  nonlocal wb_value,current_x,smooth,gray_model,models,continuity_model
   wb_value=wb.validate(value)
   current_x=wb.inputs(ctx.base,x,p['sensor_codes'],wb_value)
   models={k:SmoothNative(ctx,current_x[v]) for k,v in [('train',train),('valid',valid),('test',test)]}
   smooth=models['train'];gray_model=SmoothNative(ctx,current_x[gray_indices])
+  if continuity_bank is not None:
+   continuity_model=SmoothNative(ctx,continuity_bank.inputs(ctx.base,wb_value))
+   smooth.output_continuity=(continuity_bank,continuity_model,options['output_continuity'])
+
+ def exact_continuity(params,report=False):
+  if continuity_bank is None:return None if report else 0.
+  prediction=center_mean(render_native(ctx.build(**params),continuity_model.x))/16383
+  return (continuity_bank.report(prediction,options['output_continuity']) if report
+          else continuity_bank.cost(prediction,options['output_continuity']))
 
  def assess(v,label,params_override=None,quantize=False):
   progress.update(stage='整数候选评估与 PC 重建' if a.pc_compensation else '整数候选评估',candidate=label)
@@ -215,7 +230,10 @@ def main():
     perceptual_groups.append(float(np.sqrt(tonal_sampling.mean_cost(display_cost_rows(anchor_pred[sl]/16383,anchor_target[sl]/16383,options['perceptual_weight']),tonal_ids[train[len(random_train):]][sl] if tonal_ids is not None else None))))
    selection=composite_score(perceptual_groups,importance)
    smoothing_cost=native_cost(params,ctx.axis,options['parameter_smoothing'])+pc_cost(bundle,options['parameter_smoothing'])
-   selection=float(np.sqrt(selection**2+smoothing_cost))
+   continuity_report=exact_continuity(params,report=True)
+   continuity_cost=continuity_report['objective_cost_8bit_squared'] if continuity_report else 0.
+   selection=float(np.sqrt(selection**2+smoothing_cost+continuity_cost))
+   if continuity_report is not None:history[-1]['output_continuity']=continuity_report
    history[-1]['parameter_smoothing_cost_8bit_squared']=smoothing_cost
    history[-1].update(selection_rgb_score=selection_rgb,perceptual_validation=compare(t[valid]/16383,native/16383),training_group_weights=current_importance.copy())
    history[-1].update(primary_training=primary,gray_training=gray,selection_score=selection,candidate_domain='combined-PC' if a.pc_compensation else 'native')
@@ -223,7 +241,10 @@ def main():
    native_gray=report_metrics(center_mean(render_native(exact,current_x[gray_indices])),t[gray_indices])['rmse_8bit']
    candidates.append(dict(gray=gray['rmse_8bit'],native_gray=native_gray,color=selection,vector=v.copy(),label=candidate_label,pc=bundle,params=params,importance=current_importance.copy(),wb=wb_value.copy()))
  def regularization(v):
-  return native_rows(v[8:104],smooth.gamma(v)*16,ctx.axis,options['parameter_smoothing'])*np.sqrt(len(train))
+  rows=native_rows(v[8:104],smooth.gamma(v)*16,ctx.axis,options['parameter_smoothing'])
+  if continuity_bank is not None:
+   rows=np.r_[rows,continuity_bank.rows(continuity_model.render(v)/16383,options['output_continuity'])]
+  return rows*np.sqrt(len(train))
  def residual(v):
   nonlocal calls;calls+=1
   data=(smooth_loss_rows(corrected(smooth.render(v),active_pc)/16383,t[train]/16383,options["perceptual_weight"])*np.sqrt(group_weights)[:,None]).ravel()
@@ -395,7 +416,11 @@ def main():
     costs=display_cost_rows(prediction,t[train]/16383,options['perceptual_weight'])
     wb_calls[0]+=1
     if wb_calls[0]%5==0:progress.update(evaluations=wb_calls[0])
-    return float(costs@group_weights/group_weights.sum())+0.01*((value['temperature_shift']/1000)**2+(value['tint']/50)**2)
+    penalty=0.
+    if continuity_bank is not None:
+     probes=continuity_bank.inputs(ctx.base,value)
+     penalty=continuity_bank.cost(center_mean(render_native(exact,probes))/16383,options['output_continuity'])
+    return float(costs@group_weights/group_weights.sum())+penalty+0.01*((value['temperature_shift']/1000)**2+(value['tint']/50)**2)
    solved=minimize(wb_cost,[wb_value['temperature_shift'],wb_value['tint']],method='Powell',bounds=[(-1000,1000),(-50,50)],options=dict(maxiter=max(2,a.evaluations),maxfev=max(60,a.evaluations*12),xtol=.5,ftol=1e-5))
    set_wb(dict(temperature_shift=solved.x[0],tint=solved.x[1]));assess(chosen['vector'],'WB-search-'+str(wb_round+1),params_override=chosen['params'])
    chosen=select_balanced(candidates);set_wb(chosen['wb']);active_pc=chosen['pc']
@@ -418,7 +443,7 @@ def main():
  if options['quantization_sweeps']:
   chosen=select_balanced(candidates);set_wb(chosen['wb']);current_importance=chosen['importance'].copy()
   _,_,_,group_weights=training_plan(split,p['anchor_index'],current_importance,sector_ids,tonal_ids,random_selection,p.get('sample_kind'),options)
-  refined,quantization_audit=refine_native(ctx,chosen['params'],current_x[train],t[train]/16383,group_weights,chosen['pc'],options['quantization_sweeps'],options['perceptual_weight'],progress=lambda **v:progress.update(stage='量化后原生参数微调',**v),parameter_smoothing=options['parameter_smoothing'])
+  refined,quantization_audit=refine_native(ctx,chosen['params'],current_x[train],t[train]/16383,group_weights,chosen['pc'],options['quantization_sweeps'],options['perceptual_weight'],progress=lambda **v:progress.update(stage='量化后原生参数微调',**v),parameter_smoothing=options['parameter_smoothing'],output_penalty=exact_continuity if continuity_bank is not None else None)
   assess(chosen['vector'],'integer-refinement',params_override=refined)
   if a.pc_compensation:
    assess(chosen['vector'],'integer-refinement-PC',params_override=refined,quantize=True)
@@ -437,6 +462,9 @@ def main():
   full_chain_status=('Experimental WB uses flatfield ITP plus frozen measured frontend residual; Vatr/SSCS WB response is approximate.' if a.white_balance else 'New synthetic RAW frontend measured before matrix; verified original ST color subchain reused; new chart full JPEG not verified.'),
   limitations=['Continuous model only initializes; heldout results use integer model.','New capture contributes only pre-matrix input, never its current-look output.','New chart full JPEG and photographs require independent Edit validation.','No global optimum or arbitrary LUT exact-representation claim.'])
  result['fitting']['gamma_color_alternation']=alternation_history
+ if continuity_bank is not None:
+  result['fitting']['output_continuity']=exact_continuity(params,report=True)
+  result['fitting']['training_pipeline'].append('native-output-continuity')
  if a.refine_from:
   result['fitting']['continued_from']=dict(job=str(a.refine_from),recipe_sha256=sha(a.refine_from/'fit/recipe.json'))
   result['fitting']['training_pipeline']=['previous-exact-native-seed','gamma-cc1-block13-alternation','exact-integer-refinement']
@@ -452,6 +480,7 @@ def main():
  result['source']['patch_sampling']=__import__('patch_sampling').POLICY
  result['full_chain_status']='Source-bound native integer color subchain. New unity-WB chart uses simulated ITP/SSCS inputs verified against independent Edit PT capture. Spatial processing and photograph frontend remain outside this validation.'
  result['fitting']['selection']='Fixed weighted floating RGB MSE + continuous DE00 on integer native outputs; full validation; full independent test excluded from all optimization and selection'
+ if continuity_bank is not None:result['fitting']['selection']+='; output-space continuity penalty on fixed target-independent probes'
  (a.output/'recipe.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n');np.savez(a.output/'fit_state.npz',vector=fitted,start=start,test_prediction=exact_after)
  progress.update(stage='原生拟合完成',state='done')
  print(json.dumps(result['heldout'],indent=2),flush=True)

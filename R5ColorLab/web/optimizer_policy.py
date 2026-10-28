@@ -21,7 +21,7 @@ def pc_options(value=None):
 
 
 def search_options(value=None):
-    defaults=dict(starts=4, adaptive_rounds=3, perceptual_weight=.35, quantization_sweeps=1, parameter_smoothing=0, gamma_color_rounds=0, primary_tonal_weight=1.0, hue24_tonal_weight=1.0)
+    defaults=dict(starts=4, adaptive_rounds=3, perceptual_weight=.35, quantization_sweeps=1, parameter_smoothing=0, output_continuity=0, gamma_color_rounds=0, primary_tonal_weight=1.0, hue24_tonal_weight=1.0)
     if value is None:return defaults
     if not isinstance(value,dict) or set(value)-set(defaults):raise ValueError('未知优化器选项')
     result={**defaults,**value}
@@ -32,6 +32,7 @@ def search_options(value=None):
             raise ValueError(name+' must be between 0.05 and 8')
     from parameter_smoothing import strength
     result['parameter_smoothing']=strength(result['parameter_smoothing'])
+    result['output_continuity']=strength(result['output_continuity'])
     v=result['perceptual_weight']
     if type(v) not in (int,float) or not np.isfinite(v) or not 0<=v<=2:raise ValueError('感知权重需在0–2之间')
     return result
@@ -155,7 +156,7 @@ def refine_grid(grid, base, target, gate, weights, sweeps=1, perceptual_weight=0
                                       objective='train weighted uint8 RGB MSE + perceptual_weight*(2.55*DE00)^2',perceptual_weight=perceptual_weight)
 
 
-def refine_native(ctx, parameters, inputs, target, weights, pc_bundle, sweeps=1, perceptual_weight=0, progress=None, parameter_smoothing=0):
+def refine_native(ctx, parameters, inputs, target, weights, pc_bundle, sweeps=1, perceptual_weight=0, progress=None, parameter_smoothing=0, output_penalty=None):
     """Exact integer CC1, all 96 block13 coefficients and 127 nonzero Gamma nodes.
 
     PC is frozen during moves and rebuilt when the resulting candidate is assessed.
@@ -170,7 +171,9 @@ def refine_native(ctx, parameters, inputs, target, weights, pc_bundle, sweeps=1,
         rgb=center_mean(render_native(ctx.build(**p),inputs))/16383
         if pc_bundle is not None:rgb=pc_stages.render(rgb,pc_bundle[0],pc_bundle[1])
         from parameter_smoothing import native_cost
-        return float(display_cost_rows(rgb,target,perceptual_weight)@weights/np.sum(weights))+(native_cost(p,ctx.axis,parameter_smoothing) if parameter_smoothing else 0)
+        return (float(display_cost_rows(rgb,target,perceptual_weight)@weights/np.sum(weights))
+            +(native_cost(p,ctx.axis,parameter_smoothing) if parameter_smoothing else 0)
+            +(output_penalty(p) if output_penalty is not None else 0))
     current=copy(parameters)
     original_cost=cost(current)
     # 4.18 serializes Gamma ordinates and the last four CC1 values at half
@@ -205,4 +208,5 @@ def refine_native(ctx, parameters, inputs, target, weights, pc_bundle, sweeps=1,
         if not changed:break
     return current,dict(original_before_export_roundtrip=original_cost,before=before,after=best,accepted=accepted,evaluations=calls,sweeps=sweeps,
                         objective='train weighted floating RGB MSE + continuous DE00 squared on integer native outputs; frozen PC',
+                        output_continuity=output_penalty is not None,
                         gamma_zero_fixed=True,gamma_monotone=True,export_roundtrip='4.18 half-unit Gamma and CC1 gains')

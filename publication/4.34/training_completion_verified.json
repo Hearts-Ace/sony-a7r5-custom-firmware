@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "batch": "dbd6a094691141ed8eb66a6d40fe58fc",
+  "jobs": [
+    {
+      "name": "AS",
+      "job": "b5ce8966197840868666792f2bb0b968",
+      "status": "done"
+    },
+    {
+      "name": "CC",
+      "job": "9476eba4840f4ba6bd2f42352d4eacae",
+      "status": "done"
+    },
+    {
+      "name": "EBB",
+      "job": "3cfc7217e9ce465a8927dc2679b689d1",
+      "status": "done"
+    },
+    {
+      "name": "ET",
+      "job": "5e1460fd4e744caab71b2fe562f18977",
+      "status": "done"
+    },
+    {
+      "name": "NC",
+      "job": "8803a00724b64b0e990009880ef7ad04",
+      "status": "done"
+    },
+    {
+      "name": "NH",
+      "job": "e4efe0c4065b4b68a6b9ed18d379421e",
+      "status": "done"
+    },
+    {
+      "name": "PV",
+      "job": "6b0a10bb63454f19a59b64ce5fc8fb58",
+      "status": "done"
+    },
+    {
+      "name": "RA",
+      "job": "b9dc463202d84ef38b767f63821c3d62",
+      "status": "done"
+    },
+    {
+      "name": "VN",
+      "job": "cb3ab887b36e4fb68037e71eac812469",
+      "status": "done"
+    },
+    {
+      "name": "正片",
+      "job": "7890de23237944c48ae280df917cad20",
+      "status": "done"
+    },
+    {
+      "name": "负片",
+      "job": "0b57a44ac2dd47d19c17901628855aa8",
+      "status": "done"
+    },
+    {
+      "name": "Portra400NB",
+      "job": "d2b4349bca574de4b438ca971e84ff26",
+      "status": "done"
+    }
+  ],
+  "count": 12,
+  "output": "research/r5_custom_lut/web/batches/dbd6a094691141ed8eb66a6d40fe58fc/R5NATIVE.BIN",
+  "bytes": 29552,
+  "sha256": "e3375e9f5fb8e32ae4dce5edab42c6024f1bc7d969abf7c2e01ded2b53419bc2",
+  "finished_Asia_Shanghai": "2026-10-28T20:58:59.233500+08:00",
+  "all_jobs_done": true,
+  "all_high_precision_continuity30": true,
+  "config_recompiled_byte_identical": true,
+  "previous_BIN_unchanged": true,
+  "camera_io": false,
+  "color_accuracy_accepted": false
+}

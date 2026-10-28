@@ -1,0 +1,1551 @@
+{
+  "passed": true,
+  "version": "4.34",
+  "AP_sha256": "c61d151fd7da84896d675dd7be26a8319156598206556e6e5d50ea2da11406b3",
+  "cases": [
+    {
+      "bias": "0x0",
+      "layout": 0,
+      "mask": "0xfff",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 1,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4401"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 3,
+          "native_list_focus": 3,
+          "full_name_resource": "0x2ff4403"
+        },
+        {
+          "selected": 4,
+          "native_list_focus": 4,
+          "full_name_resource": "0x2ff4404"
+        },
+        {
+          "selected": 5,
+          "native_list_focus": 5,
+          "full_name_resource": "0x2ff4405"
+        },
+        {
+          "selected": 6,
+          "native_list_focus": 6,
+          "full_name_resource": "0x2ff4406"
+        },
+        {
+          "selected": 7,
+          "native_list_focus": 7,
+          "full_name_resource": "0x2ff4407"
+        },
+        {
+          "selected": 8,
+          "native_list_focus": 8,
+          "full_name_resource": "0x2ff4408"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 9,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 10,
+          "native_list_focus": 10,
+          "full_name_resource": "0x2ff440a"
+        },
+        {
+          "selected": 11,
+          "native_list_focus": 11,
+          "full_name_resource": "0x2ff440b"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 11,
+          "native_list_focus": 11,
+          "full_name_resource": "0x2ff440b"
+        },
+        {
+          "selected": 10,
+          "native_list_focus": 10,
+          "full_name_resource": "0x2ff440a"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 9,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 8,
+          "native_list_focus": 8,
+          "full_name_resource": "0x2ff4408"
+        },
+        {
+          "selected": 7,
+          "native_list_focus": 7,
+          "full_name_resource": "0x2ff4407"
+        },
+        {
+          "selected": 6,
+          "native_list_focus": 6,
+          "full_name_resource": "0x2ff4406"
+        },
+        {
+          "selected": 5,
+          "native_list_focus": 5,
+          "full_name_resource": "0x2ff4405"
+        },
+        {
+          "selected": 4,
+          "native_list_focus": 4,
+          "full_name_resource": "0x2ff4404"
+        },
+        {
+          "selected": 3,
+          "native_list_focus": 3,
+          "full_name_resource": "0x2ff4403"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 1,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4401"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 26,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "layout": 0,
+      "mask": "0x102",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 2,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 6,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "layout": 0,
+      "mask": "0x0",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 1,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "layout": 0,
+      "mask": "0x800",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 4,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "layout": 1,
+      "mask": "0xfff",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 1,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4401"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 3,
+          "native_list_focus": 3,
+          "full_name_resource": "0x2ff4403"
+        },
+        {
+          "selected": 4,
+          "native_list_focus": 4,
+          "full_name_resource": "0x2ff4404"
+        },
+        {
+          "selected": 5,
+          "native_list_focus": 5,
+          "full_name_resource": "0x2ff4405"
+        },
+        {
+          "selected": 6,
+          "native_list_focus": 6,
+          "full_name_resource": "0x2ff4406"
+        },
+        {
+          "selected": 7,
+          "native_list_focus": 7,
+          "full_name_resource": "0x2ff4407"
+        },
+        {
+          "selected": 8,
+          "native_list_focus": 8,
+          "full_name_resource": "0x2ff4408"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 9,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 10,
+          "native_list_focus": 10,
+          "full_name_resource": "0x2ff440a"
+        },
+        {
+          "selected": 11,
+          "native_list_focus": 11,
+          "full_name_resource": "0x2ff440b"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 11,
+          "native_list_focus": 11,
+          "full_name_resource": "0x2ff440b"
+        },
+        {
+          "selected": 10,
+          "native_list_focus": 10,
+          "full_name_resource": "0x2ff440a"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 9,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 8,
+          "native_list_focus": 8,
+          "full_name_resource": "0x2ff4408"
+        },
+        {
+          "selected": 7,
+          "native_list_focus": 7,
+          "full_name_resource": "0x2ff4407"
+        },
+        {
+          "selected": 6,
+          "native_list_focus": 6,
+          "full_name_resource": "0x2ff4406"
+        },
+        {
+          "selected": 5,
+          "native_list_focus": 5,
+          "full_name_resource": "0x2ff4405"
+        },
+        {
+          "selected": 4,
+          "native_list_focus": 4,
+          "full_name_resource": "0x2ff4404"
+        },
+        {
+          "selected": 3,
+          "native_list_focus": 3,
+          "full_name_resource": "0x2ff4403"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 1,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4401"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 26,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "layout": 1,
+      "mask": "0x102",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 2,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 6,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "layout": 1,
+      "mask": "0x0",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 1,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "layout": 1,
+      "mask": "0x800",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 4,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "pending",
+      "selected": 2,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "failure",
+      "selected": 0,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "stale_serial",
+      "selected": 0,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "wrong_mid",
+      "selected": 0,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "stock",
+      "selected": 0,
+      "no_original_look_setter": false
+    },
+    {
+      "bias": "0x40000000",
+      "layout": 0,
+      "mask": "0xfff",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 1,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4401"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 3,
+          "native_list_focus": 3,
+          "full_name_resource": "0x2ff4403"
+        },
+        {
+          "selected": 4,
+          "native_list_focus": 4,
+          "full_name_resource": "0x2ff4404"
+        },
+        {
+          "selected": 5,
+          "native_list_focus": 5,
+          "full_name_resource": "0x2ff4405"
+        },
+        {
+          "selected": 6,
+          "native_list_focus": 6,
+          "full_name_resource": "0x2ff4406"
+        },
+        {
+          "selected": 7,
+          "native_list_focus": 7,
+          "full_name_resource": "0x2ff4407"
+        },
+        {
+          "selected": 8,
+          "native_list_focus": 8,
+          "full_name_resource": "0x2ff4408"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 9,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 10,
+          "native_list_focus": 10,
+          "full_name_resource": "0x2ff440a"
+        },
+        {
+          "selected": 11,
+          "native_list_focus": 11,
+          "full_name_resource": "0x2ff440b"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 11,
+          "native_list_focus": 11,
+          "full_name_resource": "0x2ff440b"
+        },
+        {
+          "selected": 10,
+          "native_list_focus": 10,
+          "full_name_resource": "0x2ff440a"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 9,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 8,
+          "native_list_focus": 8,
+          "full_name_resource": "0x2ff4408"
+        },
+        {
+          "selected": 7,
+          "native_list_focus": 7,
+          "full_name_resource": "0x2ff4407"
+        },
+        {
+          "selected": 6,
+          "native_list_focus": 6,
+          "full_name_resource": "0x2ff4406"
+        },
+        {
+          "selected": 5,
+          "native_list_focus": 5,
+          "full_name_resource": "0x2ff4405"
+        },
+        {
+          "selected": 4,
+          "native_list_focus": 4,
+          "full_name_resource": "0x2ff4404"
+        },
+        {
+          "selected": 3,
+          "native_list_focus": 3,
+          "full_name_resource": "0x2ff4403"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 1,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4401"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 26,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "layout": 0,
+      "mask": "0x102",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 2,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 6,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "layout": 0,
+      "mask": "0x0",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 1,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "layout": 0,
+      "mask": "0x800",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 4,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "layout": 1,
+      "mask": "0xfff",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 1,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4401"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 3,
+          "native_list_focus": 3,
+          "full_name_resource": "0x2ff4403"
+        },
+        {
+          "selected": 4,
+          "native_list_focus": 4,
+          "full_name_resource": "0x2ff4404"
+        },
+        {
+          "selected": 5,
+          "native_list_focus": 5,
+          "full_name_resource": "0x2ff4405"
+        },
+        {
+          "selected": 6,
+          "native_list_focus": 6,
+          "full_name_resource": "0x2ff4406"
+        },
+        {
+          "selected": 7,
+          "native_list_focus": 7,
+          "full_name_resource": "0x2ff4407"
+        },
+        {
+          "selected": 8,
+          "native_list_focus": 8,
+          "full_name_resource": "0x2ff4408"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 9,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 10,
+          "native_list_focus": 10,
+          "full_name_resource": "0x2ff440a"
+        },
+        {
+          "selected": 11,
+          "native_list_focus": 11,
+          "full_name_resource": "0x2ff440b"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 12,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 11,
+          "native_list_focus": 11,
+          "full_name_resource": "0x2ff440b"
+        },
+        {
+          "selected": 10,
+          "native_list_focus": 10,
+          "full_name_resource": "0x2ff440a"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 9,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 8,
+          "native_list_focus": 8,
+          "full_name_resource": "0x2ff4408"
+        },
+        {
+          "selected": 7,
+          "native_list_focus": 7,
+          "full_name_resource": "0x2ff4407"
+        },
+        {
+          "selected": 6,
+          "native_list_focus": 6,
+          "full_name_resource": "0x2ff4406"
+        },
+        {
+          "selected": 5,
+          "native_list_focus": 5,
+          "full_name_resource": "0x2ff4405"
+        },
+        {
+          "selected": 4,
+          "native_list_focus": 4,
+          "full_name_resource": "0x2ff4404"
+        },
+        {
+          "selected": 3,
+          "native_list_focus": 3,
+          "full_name_resource": "0x2ff4403"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 1,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4401"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 26,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "layout": 1,
+      "mask": "0x102",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 2,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 9,
+          "native_list_focus": 2,
+          "full_name_resource": "0x2ff4409"
+        },
+        {
+          "selected": 2,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff4402"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 6,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "layout": 1,
+      "mask": "0x0",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 1,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "layout": 1,
+      "mask": "0x800",
+      "mode": "bidirectional_burst_boundary_mixed_closing",
+      "states": [
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 12,
+          "native_list_focus": 1,
+          "full_name_resource": "0x2ff440c"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        },
+        {
+          "selected": 0,
+          "native_list_focus": 0,
+          "full_name_resource": "0x2ff4400"
+        }
+      ],
+      "private_requests": 4,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "pending",
+      "selected": 2,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "failure",
+      "selected": 0,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "stale_serial",
+      "selected": 0,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "wrong_mid",
+      "selected": 0,
+      "no_original_look_setter": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "stock",
+      "selected": 0,
+      "no_original_look_setter": false
+    }
+  ],
+  "baseline431": [
+    {
+      "bias": "0x0",
+      "event": "0x2050000",
+      "native_escape": [
+        "0x1a6d8cc",
+        "0x2207fe0"
+      ],
+      "private_projection_unchanged": true
+    },
+    {
+      "bias": "0x0",
+      "event": "0x2050001",
+      "native_escape": [
+        "0x1a6d8cc",
+        "0x2207fe0"
+      ],
+      "private_projection_unchanged": true
+    },
+    {
+      "bias": "0x0",
+      "event": "0x2050004",
+      "native_escape": [
+        "0x1a6d8cc",
+        "0x1b2bffc"
+      ],
+      "private_projection_unchanged": true
+    },
+    {
+      "bias": "0x0",
+      "event": "0x2050005",
+      "native_escape": [
+        "0x1a6d8cc",
+        "0x1b2bffc"
+      ],
+      "private_projection_unchanged": true
+    },
+    {
+      "bias": "0x40000000",
+      "event": "0x2050000",
+      "native_escape": [
+        "0x1a6d8cc",
+        "0x2207fe0"
+      ],
+      "private_projection_unchanged": true
+    },
+    {
+      "bias": "0x40000000",
+      "event": "0x2050001",
+      "native_escape": [
+        "0x1a6d8cc",
+        "0x2207fe0"
+      ],
+      "private_projection_unchanged": true
+    },
+    {
+      "bias": "0x40000000",
+      "event": "0x2050004",
+      "native_escape": [
+        "0x1a6d8cc",
+        "0x1b2bffc"
+      ],
+      "private_projection_unchanged": true
+    },
+    {
+      "bias": "0x40000000",
+      "event": "0x2050005",
+      "native_escape": [
+        "0x1a6d8cc",
+        "0x1b2bffc"
+      ],
+      "private_projection_unchanged": true
+    }
+  ],
+  "wheel_updates_focus_and_preview": true,
+  "same_request_path": true,
+  "no_original_look_setter": true,
+  "batched_steps_verified": true,
+  "batch_contract": "Repeated native wheel events each advance one available item, clamped at boundaries. No unverified message count is interpreted.",
+  "limits": [
+    "Worker completion and view painting are explicit fixtures; preview flag denotes submission to the existing worker, not a physical preview-frame observation.",
+    "Native normalization and old D9 dispatch/handlers execute. Input hardware, LCD rendering, camera timing and frame/JPG await user acceptance."
+  ],
+  "camera_io": false
+}

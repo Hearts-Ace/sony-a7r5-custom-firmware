@@ -14,6 +14,12 @@ class BlockObjective:
         import torch
         self.torch = torch
         self.gpu = SmoothGPU(smooth, device=device, dtype=dtype)
+        self.continuity = None
+        if getattr(smooth, 'output_continuity', None) is not None:
+            from output_continuity import TensorPenalty
+            bank, probe_model, amount = smooth.output_continuity
+            self.continuity_gpu = SmoothGPU(probe_model, device=device, dtype=dtype)
+            self.continuity = TensorPenalty(bank, self.continuity_gpu, amount)
         tensor = self.gpu.tensor
         self.target = tensor(np.asarray(target) / 16383)
         self.weights = tensor(weights)
@@ -95,7 +101,10 @@ class BlockObjective:
         dx = torch.diff(axis)
         gamma = self.gpu.gamma(vector) * 16 / 262143
         curvature = torch.diff(torch.diff(gamma) / dx) * (dx[:-1] + dx[1:]) / 2
-        return (hue.square().mean() * .02**2 + curvature.square().mean() * 16**2) * self.smoothing
+        loss = (hue.square().mean() * .02**2 + curvature.square().mean() * 16**2) * self.smoothing
+        if self.continuity is not None:
+            loss = loss + self.continuity.loss(self.continuity_gpu.render(vector) / 16383)
+        return loss
 
     def value_gradient(self, vector, indices):
         v = self.gpu.tensor(vector).requires_grad_(True)

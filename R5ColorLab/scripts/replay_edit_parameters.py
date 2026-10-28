@@ -130,7 +130,7 @@ class Replay:
 
 
 def read_styles(path):
-    reader=Path(__file__).with_name('sony_arw_metadata.py')
+    reader=Path('/Users/zhaoyunpeng/Documents/ChatGPT/ied软件/RAW创意外观解锁/add_fl2_fl3.py')
     spec=importlib.util.spec_from_file_location('readonly_raw',reader)
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
     original=path.read_bytes(); parsed=module.parse(original)
@@ -147,7 +147,7 @@ def read_styles(path):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--raw',type=Path,required=True)
+    parser.add_argument('--raw',type=Path,default=Path('/Users/zhaoyunpeng/Documents/fl对比/DSC00430.ARW'))
     parser.add_argument('--output',type=Path,required=True)
     args=parser.parse_args()
     if args.output.exists():raise ValueError('Refuse to replace retained evidence')

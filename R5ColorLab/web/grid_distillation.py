@@ -16,7 +16,7 @@ from pc_compensation import load
 from residual_grid import evaluate, pack, unpack, response_matrix, response_json
 
 
-def compress(base, weights, teacher, response, probe_side=33, sweeps=1, progress=None, parameter_smoothing=0):
+def compress(base, weights, teacher, response, probe_side=33, sweeps=1, progress=None, parameter_smoothing=0, continuity=None):
     """Only training inputs and synthetic teacher queries enter the solve."""
     base = np.asarray(base, dtype=float)
     weights = np.asarray(weights, dtype=float)
@@ -42,10 +42,17 @@ def compress(base, weights, teacher, response, probe_side=33, sweeps=1, progress
         grid, refinement = refine_grid(grid, inputs, desired, np.ones(len(inputs)), mass,
                                        sweeps=sweeps, perceptual_weight=.35, response=response,
                                        progress=(lambda **v:progress(stage='压缩网格量化微调',**v)) if progress else None,parameter_smoothing=parameter_smoothing)
+        continuity_audit=None
+        if continuity is not None:
+            from continuity_grid import constrain
+            grid,continuity_audit=constrain(grid,inputs,desired,mass,response,parameter_smoothing,continuity,progress)
         predicted = evaluate(inputs, grid, response)
         score = float(display_cost_rows(predicted, desired, .35)@mass)+grid_cost(grid,parameter_smoothing)
+        if continuity is not None:
+            from continuity_grid import penalty
+            score+=penalty(grid,response,continuity)
         candidates.append((score, grid, dict(smoothness=strength, score=score,
-                                            solver=audit, quantization_refinement=refinement)))
+                                            solver=audit, quantization_refinement=refinement,output_continuity=continuity_audit)))
     best = min(candidates, key=lambda item: item[0])
     grid = unpack(pack(best[1]))  # Report the bytes users actually download.
     return grid, dict(probe_side=probe_side, synthetic_probes=len(probes), training_inputs=len(base),
@@ -56,7 +63,7 @@ def compress(base, weights, teacher, response, probe_side=33, sweeps=1, progress
                      limit_fraction=float(np.mean((grid==-64)|(grid==63))))
 
 
-def fit_target(base, target, weights, response, progress=None, parameter_smoothing=0):
+def fit_target(base, target, weights, response, progress=None, parameter_smoothing=0, continuity=None):
     """Fit the exported single grid to actual targets, using training rows only.
 
     No PC teacher or synthetic teacher targets contribute to this objective.
@@ -81,12 +88,19 @@ def fit_target(base, target, weights, response, progress=None, parameter_smoothi
             sweeps=1, perceptual_weight=.35, response=response,
             progress=(lambda **v: progress(stage='目标网格整数量化微调', **v)) if progress else None,
             parameter_smoothing=parameter_smoothing)
+        continuity_audit=None
+        if continuity is not None:
+            from continuity_grid import constrain
+            grid,continuity_audit=constrain(grid,base,target,weights,response,parameter_smoothing,continuity,progress)
         # Score exactly the signed-7-bit coefficients that will be exported.
         grid = unpack(pack(grid))
         prediction = evaluate(base, grid, response)
         score = float(display_cost_rows(prediction, target, .35)@mass)+grid_cost(grid, parameter_smoothing)
+        if continuity is not None:
+            from continuity_grid import penalty
+            score+=penalty(grid,response,continuity)
         candidates.append((score, grid, dict(smoothness=float(strength), score=score,
-            solver=solver, quantization_refinement=refinement)))
+            solver=solver, quantization_refinement=refinement,output_continuity=continuity_audit)))
     best = min(candidates, key=lambda value: value[0])
     grid = best[1]
     return grid, dict(objective='fuji-target', training_inputs=len(base), synthetic_probes=0,
@@ -119,15 +133,31 @@ def generate(job, response, progress=None, post_gray_refinement=False, objective
         random_selection=np.flatnonzero((split=='train')&(ids<0)&(p['sector16_index']<0)) if 'design_srgb' in p else None
         train, _, _, weights = training_plan(split, ids, recipe.get('fitting',{}).get('group_total_weights'),p['sector16_index'] if 'sector16_index' in p else None,p['baseline_tonal_index'] if recipe.get('fitting',{}).get('tonal_balance') else None,random_selection,p.get('sample_kind'),recipe.get('fitting',{}).get('search_options',{}))
     smoothing = recipe.get('fitting',{}).get('search_options',{}).get('parameter_smoothing',0)
+    amount = recipe.get('fitting',{}).get('search_options',{}).get('output_continuity',0)
+    continuity=None
+    if amount:
+        from output_continuity import ProbeBank
+        from patch_sampling import center_mean
+        from compute_backend import render_native
+        bank=ProbeBank()
+        # Fitting changes CC1/block13/Gamma only; RAW/ITP/SSCS stay source-bound.
+        front=bank.inputs(model,white_balance.from_recipe(recipe))
+        continuity=(bank,center_mean(render_native(model,front))/16383,amount)
     if fitted_target is not None:
         if objective != 'fuji-target' or fitted_target[1].get('training_only') is not True:
             raise ValueError('Prefitted grid requires training-only direct-target provenance')
+        if continuity is not None and not fitted_target[1].get('output_continuity'):
+            raise ValueError('Prefitted grid is missing the requested output continuity constraint')
         grid, audit = unpack(pack(fitted_target[0])), copy.deepcopy(fitted_target[1])
     elif objective == 'fuji-target':
         grid, audit = fit_target(base[train], target[train], weights, response,
-            progress=progress, parameter_smoothing=smoothing)
+            progress=progress, parameter_smoothing=smoothing,continuity=continuity)
     else:
-        grid, audit = compress(base[train], weights, teacher, response, progress=progress, parameter_smoothing=smoothing)
+        grid, audit = compress(base[train], weights, teacher, response, progress=progress, parameter_smoothing=smoothing,continuity=continuity)
+    if continuity is not None:
+        bank,probe_base,amount=continuity
+        audit['output_continuity']=dict(native=bank.report(probe_base,amount),
+            final_grid=bank.report(evaluate(probe_base,grid,response),amount))
     audit['post_gray_refinement']=dict(enabled=False)
     if progress:progress(stage='压缩效果验证',round=3,total_rounds=3,state='round_done',sweep=None,point=None)
     combined = teacher(base)
@@ -161,7 +191,7 @@ def generate(job, response, progress=None, post_gray_refinement=False, objective
                   payload_hex=pack(grid).hex(), identity=identity, fitting=audit, metrics=metrics,
                   samples=dict(gray_combined=combined[(ids>=4)&(ids<260)&(split=='train')].tolist(),
                                gray_grid=student[(ids>=4)&(ids<260)&(split=='train')].tolist()),
-                  limits=[('Pinned measured response snapshot; inspect its source identity. Default R5 v2 covers42/256 cells; physical colors and extrapolation await camera validation.' if isinstance(response,dict) else 'Legacy provisional R5 coordinates/response; uncalibrated.'),
+                  limits=[('Author A7C2 measured proxy applied to R5; R5 response and physical colors not calibrated.' if isinstance(response,dict) else 'Legacy provisional R5 coordinates/response; uncalibrated.'),
                           'This approximates the entire frozen PC effect in one grid; errors and bound clipping remain.',
                           'No separate tone/tint curves or gray gate at runtime.',
                           'Not a R5NATIVE.BIN; no firmware or camera changes.'])

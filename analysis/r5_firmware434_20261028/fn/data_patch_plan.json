@@ -1,0 +1,35 @@
+{
+  "source_sha256": "2cf965bf5c4a2db62dcefc3054cd85bdbc06a6180fdc1cb64c3ffd81e992f225",
+  "patched_sha256": "c61d151fd7da84896d675dd7be26a8319156598206556e6e5d50ea2da11406b3",
+  "added_rx_bytes": 0,
+  "added_bss_bytes": 0,
+  "changed_bytes": 41,
+  "native_builder": "0x1bdd6f8",
+  "native_valid": "0x1bd8d9c",
+  "group_va": "0x3e6f218",
+  "original_ids": [
+    "0x1f1",
+    "0x1f2",
+    "0x1f3",
+    "0x1f4",
+    "0x1f5",
+    "0x1f9"
+  ],
+  "appended_mid": "0x635",
+  "still_movie_flags_from": "0x1f2",
+  "play_enabled": false,
+  "patches": [
+    {
+      "va": "0x3e6f220",
+      "file_offset": 65466912,
+      "before": "06000000",
+      "after": "07000000"
+    },
+    {
+      "va": "0x3e6f3a4",
+      "file_offset": 65467300,
+      "before": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "after": "35060000010100010100010100010100010100010100010100010100000000010100010100010100010100010100010100010100010100010100010100010100"
+    }
+  ]
+}

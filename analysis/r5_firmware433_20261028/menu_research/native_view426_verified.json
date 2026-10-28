@@ -1,0 +1,1352 @@
+{
+  "passed": true,
+  "version": "4.33",
+  "AP_sha256": "65bd99095f626f990890156c0e536d56394c75313452caa451322e1148c1faec",
+  "cases": [
+    {
+      "bias": "0x0",
+      "layout": 0,
+      "actual_constructed_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "native_dispatch_entries": [
+        {
+          "index": 0,
+          "type": 106,
+          "parameter_only": false,
+          "name": "No44_FocusMap",
+          "param": 809567232
+        },
+        {
+          "index": 1,
+          "type": 107,
+          "parameter_only": false,
+          "name": "No45_EframingFrame",
+          "param": 809575424
+        },
+        {
+          "index": 2,
+          "type": 1,
+          "parameter_only": true,
+          "name": "No41_Background",
+          "param": 809583616
+        },
+        {
+          "index": 3,
+          "type": 66,
+          "parameter_only": true,
+          "name": "No80_CloseScreen",
+          "param": 809591808
+        },
+        {
+          "index": 4,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No42_footergudearea",
+          "param": 809600000
+        },
+        {
+          "index": 5,
+          "type": 24,
+          "parameter_only": true,
+          "name": "No38_footerguide",
+          "param": 809608192
+        },
+        {
+          "index": 6,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No39_Emphasizedisplayframe",
+          "param": 809616384
+        },
+        {
+          "index": 7,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No46_LiveStreamingEmphasizeDisplayIcon",
+          "param": 809624576
+        },
+        {
+          "index": 8,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No3_Backgroundforiconlist",
+          "param": 809632768
+        },
+        {
+          "index": 9,
+          "type": 28,
+          "parameter_only": false,
+          "name": "No4_Verticallist",
+          "param": 809640960
+        },
+        {
+          "index": 10,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No12_Background",
+          "param": 809649152
+        },
+        {
+          "index": 11,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No2_Settingvaluename",
+          "param": 809657344
+        },
+        {
+          "index": 12,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No1_Functionname",
+          "param": 809665536
+        },
+        {
+          "index": 13,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No40_creativelookoption",
+          "param": 809673728
+        },
+        {
+          "index": 14,
+          "type": 2,
+          "parameter_only": true,
+          "name": "No37_movierecdisplayarea",
+          "param": 809681920
+        },
+        {
+          "index": 15,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No13_Parameter1BackgroundPresshighlight",
+          "param": 809690112
+        },
+        {
+          "index": 16,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No17_Parameter5BackgroundPresshighlight",
+          "param": 809698304
+        },
+        {
+          "index": 17,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No16_Parameter4BackgroundPresshighlight",
+          "param": 809706496
+        },
+        {
+          "index": 18,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No15_Parameter3BackgroundPresshighlight",
+          "param": 809714688
+        },
+        {
+          "index": 19,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No14_Parameter2BackgroundPresshighlight",
+          "param": 809722880
+        },
+        {
+          "index": 20,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No20_Parameter8BackgroundPresshighlight",
+          "param": 809731072
+        },
+        {
+          "index": 21,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No19_Parameter7BackgroundPresshighlight",
+          "param": 809739264
+        },
+        {
+          "index": 22,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No18_Parameter6BackgroundPresshighlight",
+          "param": 809747456
+        },
+        {
+          "index": 23,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No51_Parameter7BackgroundDisplayItem7",
+          "param": 809755648
+        },
+        {
+          "index": 24,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No50_Parameter6BackgroundDisplayItem7",
+          "param": 809763840
+        },
+        {
+          "index": 25,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No49_Parameter5BackgroundDisplayItem7",
+          "param": 809772032
+        },
+        {
+          "index": 26,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No48_Parameter4BackgroundDisplayItem7",
+          "param": 809780224
+        },
+        {
+          "index": 27,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No47_Parameter3BackgroundDisplayItem7",
+          "param": 809788416
+        },
+        {
+          "index": 28,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No46_Parameter2BackgroundDisplayItem7",
+          "param": 809796608
+        },
+        {
+          "index": 29,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No45_Parameter1BackgroundDisplayItem7",
+          "param": 809804800
+        },
+        {
+          "index": 30,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No9_UPArrow_H",
+          "param": 809812992
+        },
+        {
+          "index": 31,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No10_DOWNArrow_H",
+          "param": 809821184
+        },
+        {
+          "index": 32,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No48_RIGHTArrow_V",
+          "param": 809829376
+        },
+        {
+          "index": 33,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No47_LEFTArrow_V",
+          "param": 809837568
+        }
+      ],
+      "update_resource": "0x0",
+      "update_visible_param": false,
+      "update_widgets_absent": true,
+      "full_resource": "0x02ff4400",
+      "full_text_bridge": "关闭",
+      "right_adjustment_widgets_absent": true,
+      "native_create_executed": true,
+      "compiled_project_accepted_native_param_map": true,
+      "name_offsets_resolved": [
+        "No44_FocusMap",
+        "No45_EframingFrame",
+        "No41_Background",
+        "No80_CloseScreen",
+        "No42_footergudearea",
+        "No38_footerguide",
+        "No39_Emphasizedisplayframe",
+        "No46_LiveStreamingEmphasizeDisplayIcon",
+        "No3_Backgroundforiconlist",
+        "No4_Verticallist",
+        "No12_Background",
+        "No2_Settingvaluename",
+        "No1_Functionname",
+        "No40_creativelookoption",
+        "No37_movierecdisplayarea",
+        "No13_Parameter1BackgroundPresshighlight",
+        "No17_Parameter5BackgroundPresshighlight",
+        "No16_Parameter4BackgroundPresshighlight",
+        "No15_Parameter3BackgroundPresshighlight",
+        "No14_Parameter2BackgroundPresshighlight",
+        "No20_Parameter8BackgroundPresshighlight",
+        "No19_Parameter7BackgroundPresshighlight",
+        "No18_Parameter6BackgroundPresshighlight",
+        "No51_Parameter7BackgroundDisplayItem7",
+        "No50_Parameter6BackgroundDisplayItem7",
+        "No49_Parameter5BackgroundDisplayItem7",
+        "No48_Parameter4BackgroundDisplayItem7",
+        "No47_Parameter3BackgroundDisplayItem7",
+        "No46_Parameter2BackgroundDisplayItem7",
+        "No45_Parameter1BackgroundDisplayItem7",
+        "No9_UPArrow_H",
+        "No10_DOWNArrow_H",
+        "No48_RIGHTArrow_V",
+        "No47_LEFTArrow_V"
+      ]
+    },
+    {
+      "bias": "0x0",
+      "layout": 1,
+      "actual_constructed_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "native_dispatch_entries": [
+        {
+          "index": 0,
+          "type": 106,
+          "parameter_only": false,
+          "name": "No44_FocusMap",
+          "param": 809567232
+        },
+        {
+          "index": 1,
+          "type": 107,
+          "parameter_only": false,
+          "name": "No45_EframingFrame",
+          "param": 809575424
+        },
+        {
+          "index": 2,
+          "type": 1,
+          "parameter_only": true,
+          "name": "No41_Background",
+          "param": 809583616
+        },
+        {
+          "index": 3,
+          "type": 66,
+          "parameter_only": true,
+          "name": "No80_CloseScreen",
+          "param": 809591808
+        },
+        {
+          "index": 4,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No42_footergudearea",
+          "param": 809600000
+        },
+        {
+          "index": 5,
+          "type": 24,
+          "parameter_only": true,
+          "name": "No38_footerguide",
+          "param": 809608192
+        },
+        {
+          "index": 6,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No39_Emphasizedisplayframe",
+          "param": 809616384
+        },
+        {
+          "index": 7,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No46_LiveStreamingEmphasizeDisplayIcon",
+          "param": 809624576
+        },
+        {
+          "index": 8,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No3_Backgroundforiconlist",
+          "param": 809632768
+        },
+        {
+          "index": 9,
+          "type": 28,
+          "parameter_only": false,
+          "name": "No4_Verticallist",
+          "param": 809640960
+        },
+        {
+          "index": 10,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No12_Background",
+          "param": 809649152
+        },
+        {
+          "index": 11,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No2_Settingvaluename",
+          "param": 809657344
+        },
+        {
+          "index": 12,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No1_Functionname",
+          "param": 809665536
+        },
+        {
+          "index": 13,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No40_creativelookoption",
+          "param": 809673728
+        },
+        {
+          "index": 14,
+          "type": 2,
+          "parameter_only": true,
+          "name": "No37_movierecdisplayarea",
+          "param": 809681920
+        },
+        {
+          "index": 15,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No13_Parameter1BackgroundPresshighlight",
+          "param": 809690112
+        },
+        {
+          "index": 16,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No17_Parameter5BackgroundPresshighlight",
+          "param": 809698304
+        },
+        {
+          "index": 17,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No16_Parameter4BackgroundPresshighlight",
+          "param": 809706496
+        },
+        {
+          "index": 18,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No15_Parameter3BackgroundPresshighlight",
+          "param": 809714688
+        },
+        {
+          "index": 19,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No14_Parameter2BackgroundPresshighlight",
+          "param": 809722880
+        },
+        {
+          "index": 20,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No20_Parameter8BackgroundPresshighlight",
+          "param": 809731072
+        },
+        {
+          "index": 21,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No19_Parameter7BackgroundPresshighlight",
+          "param": 809739264
+        },
+        {
+          "index": 22,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No18_Parameter6BackgroundPresshighlight",
+          "param": 809747456
+        },
+        {
+          "index": 23,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No51_Parameter7BackgroundDisplayItem7",
+          "param": 809755648
+        },
+        {
+          "index": 24,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No50_Parameter6BackgroundDisplayItem7",
+          "param": 809763840
+        },
+        {
+          "index": 25,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No49_Parameter5BackgroundDisplayItem7",
+          "param": 809772032
+        },
+        {
+          "index": 26,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No48_Parameter4BackgroundDisplayItem7",
+          "param": 809780224
+        },
+        {
+          "index": 27,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No47_Parameter3BackgroundDisplayItem7",
+          "param": 809788416
+        },
+        {
+          "index": 28,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No46_Parameter2BackgroundDisplayItem7",
+          "param": 809796608
+        },
+        {
+          "index": 29,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No45_Parameter1BackgroundDisplayItem7",
+          "param": 809804800
+        },
+        {
+          "index": 30,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No9_UPArrow_H",
+          "param": 809812992
+        },
+        {
+          "index": 31,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No10_DOWNArrow_H",
+          "param": 809821184
+        },
+        {
+          "index": 32,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No48_RIGHTArrow_V",
+          "param": 809829376
+        },
+        {
+          "index": 33,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No47_LEFTArrow_V",
+          "param": 809837568
+        }
+      ],
+      "update_resource": "0x0",
+      "update_visible_param": false,
+      "update_widgets_absent": true,
+      "full_resource": "0x02ff4400",
+      "full_text_bridge": "关闭",
+      "right_adjustment_widgets_absent": true,
+      "native_create_executed": true,
+      "compiled_project_accepted_native_param_map": true,
+      "name_offsets_resolved": [
+        "No44_FocusMap",
+        "No45_EframingFrame",
+        "No41_Background",
+        "No80_CloseScreen",
+        "No42_footergudearea",
+        "No38_footerguide",
+        "No39_Emphasizedisplayframe",
+        "No46_LiveStreamingEmphasizeDisplayIcon",
+        "No3_Backgroundforiconlist",
+        "No4_Verticallist",
+        "No12_Background",
+        "No2_Settingvaluename",
+        "No1_Functionname",
+        "No40_creativelookoption",
+        "No37_movierecdisplayarea",
+        "No13_Parameter1BackgroundPresshighlight",
+        "No17_Parameter5BackgroundPresshighlight",
+        "No16_Parameter4BackgroundPresshighlight",
+        "No15_Parameter3BackgroundPresshighlight",
+        "No14_Parameter2BackgroundPresshighlight",
+        "No20_Parameter8BackgroundPresshighlight",
+        "No19_Parameter7BackgroundPresshighlight",
+        "No18_Parameter6BackgroundPresshighlight",
+        "No51_Parameter7BackgroundDisplayItem7",
+        "No50_Parameter6BackgroundDisplayItem7",
+        "No49_Parameter5BackgroundDisplayItem7",
+        "No48_Parameter4BackgroundDisplayItem7",
+        "No47_Parameter3BackgroundDisplayItem7",
+        "No46_Parameter2BackgroundDisplayItem7",
+        "No45_Parameter1BackgroundDisplayItem7",
+        "No9_UPArrow_H",
+        "No10_DOWNArrow_H",
+        "No48_RIGHTArrow_V",
+        "No47_LEFTArrow_V"
+      ]
+    },
+    {
+      "bias": "0x40000000",
+      "layout": 0,
+      "actual_constructed_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "native_dispatch_entries": [
+        {
+          "index": 0,
+          "type": 106,
+          "parameter_only": false,
+          "name": "No44_FocusMap",
+          "param": 809567232
+        },
+        {
+          "index": 1,
+          "type": 107,
+          "parameter_only": false,
+          "name": "No45_EframingFrame",
+          "param": 809575424
+        },
+        {
+          "index": 2,
+          "type": 1,
+          "parameter_only": true,
+          "name": "No41_Background",
+          "param": 809583616
+        },
+        {
+          "index": 3,
+          "type": 66,
+          "parameter_only": true,
+          "name": "No80_CloseScreen",
+          "param": 809591808
+        },
+        {
+          "index": 4,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No42_footergudearea",
+          "param": 809600000
+        },
+        {
+          "index": 5,
+          "type": 24,
+          "parameter_only": true,
+          "name": "No38_footerguide",
+          "param": 809608192
+        },
+        {
+          "index": 6,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No39_Emphasizedisplayframe",
+          "param": 809616384
+        },
+        {
+          "index": 7,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No46_LiveStreamingEmphasizeDisplayIcon",
+          "param": 809624576
+        },
+        {
+          "index": 8,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No3_Backgroundforiconlist",
+          "param": 809632768
+        },
+        {
+          "index": 9,
+          "type": 28,
+          "parameter_only": false,
+          "name": "No4_Verticallist",
+          "param": 809640960
+        },
+        {
+          "index": 10,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No12_Background",
+          "param": 809649152
+        },
+        {
+          "index": 11,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No2_Settingvaluename",
+          "param": 809657344
+        },
+        {
+          "index": 12,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No1_Functionname",
+          "param": 809665536
+        },
+        {
+          "index": 13,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No40_creativelookoption",
+          "param": 809673728
+        },
+        {
+          "index": 14,
+          "type": 2,
+          "parameter_only": true,
+          "name": "No37_movierecdisplayarea",
+          "param": 809681920
+        },
+        {
+          "index": 15,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No13_Parameter1BackgroundPresshighlight",
+          "param": 809690112
+        },
+        {
+          "index": 16,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No17_Parameter5BackgroundPresshighlight",
+          "param": 809698304
+        },
+        {
+          "index": 17,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No16_Parameter4BackgroundPresshighlight",
+          "param": 809706496
+        },
+        {
+          "index": 18,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No15_Parameter3BackgroundPresshighlight",
+          "param": 809714688
+        },
+        {
+          "index": 19,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No14_Parameter2BackgroundPresshighlight",
+          "param": 809722880
+        },
+        {
+          "index": 20,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No20_Parameter8BackgroundPresshighlight",
+          "param": 809731072
+        },
+        {
+          "index": 21,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No19_Parameter7BackgroundPresshighlight",
+          "param": 809739264
+        },
+        {
+          "index": 22,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No18_Parameter6BackgroundPresshighlight",
+          "param": 809747456
+        },
+        {
+          "index": 23,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No51_Parameter7BackgroundDisplayItem7",
+          "param": 809755648
+        },
+        {
+          "index": 24,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No50_Parameter6BackgroundDisplayItem7",
+          "param": 809763840
+        },
+        {
+          "index": 25,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No49_Parameter5BackgroundDisplayItem7",
+          "param": 809772032
+        },
+        {
+          "index": 26,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No48_Parameter4BackgroundDisplayItem7",
+          "param": 809780224
+        },
+        {
+          "index": 27,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No47_Parameter3BackgroundDisplayItem7",
+          "param": 809788416
+        },
+        {
+          "index": 28,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No46_Parameter2BackgroundDisplayItem7",
+          "param": 809796608
+        },
+        {
+          "index": 29,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No45_Parameter1BackgroundDisplayItem7",
+          "param": 809804800
+        },
+        {
+          "index": 30,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No9_UPArrow_H",
+          "param": 809812992
+        },
+        {
+          "index": 31,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No10_DOWNArrow_H",
+          "param": 809821184
+        },
+        {
+          "index": 32,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No48_RIGHTArrow_V",
+          "param": 809829376
+        },
+        {
+          "index": 33,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No47_LEFTArrow_V",
+          "param": 809837568
+        }
+      ],
+      "update_resource": "0x0",
+      "update_visible_param": false,
+      "update_widgets_absent": true,
+      "full_resource": "0x02ff4400",
+      "full_text_bridge": "关闭",
+      "right_adjustment_widgets_absent": true,
+      "native_create_executed": true,
+      "compiled_project_accepted_native_param_map": true,
+      "name_offsets_resolved": [
+        "No44_FocusMap",
+        "No45_EframingFrame",
+        "No41_Background",
+        "No80_CloseScreen",
+        "No42_footergudearea",
+        "No38_footerguide",
+        "No39_Emphasizedisplayframe",
+        "No46_LiveStreamingEmphasizeDisplayIcon",
+        "No3_Backgroundforiconlist",
+        "No4_Verticallist",
+        "No12_Background",
+        "No2_Settingvaluename",
+        "No1_Functionname",
+        "No40_creativelookoption",
+        "No37_movierecdisplayarea",
+        "No13_Parameter1BackgroundPresshighlight",
+        "No17_Parameter5BackgroundPresshighlight",
+        "No16_Parameter4BackgroundPresshighlight",
+        "No15_Parameter3BackgroundPresshighlight",
+        "No14_Parameter2BackgroundPresshighlight",
+        "No20_Parameter8BackgroundPresshighlight",
+        "No19_Parameter7BackgroundPresshighlight",
+        "No18_Parameter6BackgroundPresshighlight",
+        "No51_Parameter7BackgroundDisplayItem7",
+        "No50_Parameter6BackgroundDisplayItem7",
+        "No49_Parameter5BackgroundDisplayItem7",
+        "No48_Parameter4BackgroundDisplayItem7",
+        "No47_Parameter3BackgroundDisplayItem7",
+        "No46_Parameter2BackgroundDisplayItem7",
+        "No45_Parameter1BackgroundDisplayItem7",
+        "No9_UPArrow_H",
+        "No10_DOWNArrow_H",
+        "No48_RIGHTArrow_V",
+        "No47_LEFTArrow_V"
+      ]
+    },
+    {
+      "bias": "0x40000000",
+      "layout": 1,
+      "actual_constructed_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "native_dispatch_entries": [
+        {
+          "index": 0,
+          "type": 106,
+          "parameter_only": false,
+          "name": "No44_FocusMap",
+          "param": 809567232
+        },
+        {
+          "index": 1,
+          "type": 107,
+          "parameter_only": false,
+          "name": "No45_EframingFrame",
+          "param": 809575424
+        },
+        {
+          "index": 2,
+          "type": 1,
+          "parameter_only": true,
+          "name": "No41_Background",
+          "param": 809583616
+        },
+        {
+          "index": 3,
+          "type": 66,
+          "parameter_only": true,
+          "name": "No80_CloseScreen",
+          "param": 809591808
+        },
+        {
+          "index": 4,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No42_footergudearea",
+          "param": 809600000
+        },
+        {
+          "index": 5,
+          "type": 24,
+          "parameter_only": true,
+          "name": "No38_footerguide",
+          "param": 809608192
+        },
+        {
+          "index": 6,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No39_Emphasizedisplayframe",
+          "param": 809616384
+        },
+        {
+          "index": 7,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No46_LiveStreamingEmphasizeDisplayIcon",
+          "param": 809624576
+        },
+        {
+          "index": 8,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No3_Backgroundforiconlist",
+          "param": 809632768
+        },
+        {
+          "index": 9,
+          "type": 28,
+          "parameter_only": false,
+          "name": "No4_Verticallist",
+          "param": 809640960
+        },
+        {
+          "index": 10,
+          "type": 0,
+          "parameter_only": true,
+          "name": "No12_Background",
+          "param": 809649152
+        },
+        {
+          "index": 11,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No2_Settingvaluename",
+          "param": 809657344
+        },
+        {
+          "index": 12,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No1_Functionname",
+          "param": 809665536
+        },
+        {
+          "index": 13,
+          "type": 2,
+          "parameter_only": false,
+          "name": "No40_creativelookoption",
+          "param": 809673728
+        },
+        {
+          "index": 14,
+          "type": 2,
+          "parameter_only": true,
+          "name": "No37_movierecdisplayarea",
+          "param": 809681920
+        },
+        {
+          "index": 15,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No13_Parameter1BackgroundPresshighlight",
+          "param": 809690112
+        },
+        {
+          "index": 16,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No17_Parameter5BackgroundPresshighlight",
+          "param": 809698304
+        },
+        {
+          "index": 17,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No16_Parameter4BackgroundPresshighlight",
+          "param": 809706496
+        },
+        {
+          "index": 18,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No15_Parameter3BackgroundPresshighlight",
+          "param": 809714688
+        },
+        {
+          "index": 19,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No14_Parameter2BackgroundPresshighlight",
+          "param": 809722880
+        },
+        {
+          "index": 20,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No20_Parameter8BackgroundPresshighlight",
+          "param": 809731072
+        },
+        {
+          "index": 21,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No19_Parameter7BackgroundPresshighlight",
+          "param": 809739264
+        },
+        {
+          "index": 22,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No18_Parameter6BackgroundPresshighlight",
+          "param": 809747456
+        },
+        {
+          "index": 23,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No51_Parameter7BackgroundDisplayItem7",
+          "param": 809755648
+        },
+        {
+          "index": 24,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No50_Parameter6BackgroundDisplayItem7",
+          "param": 809763840
+        },
+        {
+          "index": 25,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No49_Parameter5BackgroundDisplayItem7",
+          "param": 809772032
+        },
+        {
+          "index": 26,
+          "type": 20,
+          "parameter_only": false,
+          "name": "No48_Parameter4BackgroundDisplayItem7",
+          "param": 809780224
+        },
+        {
+          "index": 27,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No47_Parameter3BackgroundDisplayItem7",
+          "param": 809788416
+        },
+        {
+          "index": 28,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No46_Parameter2BackgroundDisplayItem7",
+          "param": 809796608
+        },
+        {
+          "index": 29,
+          "type": 20,
+          "parameter_only": true,
+          "name": "No45_Parameter1BackgroundDisplayItem7",
+          "param": 809804800
+        },
+        {
+          "index": 30,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No9_UPArrow_H",
+          "param": 809812992
+        },
+        {
+          "index": 31,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No10_DOWNArrow_H",
+          "param": 809821184
+        },
+        {
+          "index": 32,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No48_RIGHTArrow_V",
+          "param": 809829376
+        },
+        {
+          "index": 33,
+          "type": 15,
+          "parameter_only": true,
+          "name": "No47_LEFTArrow_V",
+          "param": 809837568
+        }
+      ],
+      "update_resource": "0x0",
+      "update_visible_param": false,
+      "update_widgets_absent": true,
+      "full_resource": "0x02ff4400",
+      "full_text_bridge": "关闭",
+      "right_adjustment_widgets_absent": true,
+      "native_create_executed": true,
+      "compiled_project_accepted_native_param_map": true,
+      "name_offsets_resolved": [
+        "No44_FocusMap",
+        "No45_EframingFrame",
+        "No41_Background",
+        "No80_CloseScreen",
+        "No42_footergudearea",
+        "No38_footerguide",
+        "No39_Emphasizedisplayframe",
+        "No46_LiveStreamingEmphasizeDisplayIcon",
+        "No3_Backgroundforiconlist",
+        "No4_Verticallist",
+        "No12_Background",
+        "No2_Settingvaluename",
+        "No1_Functionname",
+        "No40_creativelookoption",
+        "No37_movierecdisplayarea",
+        "No13_Parameter1BackgroundPresshighlight",
+        "No17_Parameter5BackgroundPresshighlight",
+        "No16_Parameter4BackgroundPresshighlight",
+        "No15_Parameter3BackgroundPresshighlight",
+        "No14_Parameter2BackgroundPresshighlight",
+        "No20_Parameter8BackgroundPresshighlight",
+        "No19_Parameter7BackgroundPresshighlight",
+        "No18_Parameter6BackgroundPresshighlight",
+        "No51_Parameter7BackgroundDisplayItem7",
+        "No50_Parameter6BackgroundDisplayItem7",
+        "No49_Parameter5BackgroundDisplayItem7",
+        "No48_Parameter4BackgroundDisplayItem7",
+        "No47_Parameter3BackgroundDisplayItem7",
+        "No46_Parameter2BackgroundDisplayItem7",
+        "No45_Parameter1BackgroundDisplayItem7",
+        "No9_UPArrow_H",
+        "No10_DOWNArrow_H",
+        "No48_RIGHTArrow_V",
+        "No47_LEFTArrow_V"
+      ]
+    }
+  ],
+  "native_create_entry": "0x182b41c",
+  "native_create_vtable_slot": "0x57830a8",
+  "source_sha256": "c1dd6f80a8c549a742fb2829fd421764d746e458093b5f4010eb361204a09ec0",
+  "limitations": [
+    "Native widget and parameter allocator calls are fixtures; native create_screen dispatch/map/style initialization executes.",
+    "Private page entry services/controller ctor and UX backend remain fixtures in the imported page VM.",
+    "Text bridge executes compiled custom resource to UTF8 setter; no actual font rasterization, LCD geometry/occlusion, touch hit testing or GUI event scheduling."
+  ],
+  "camera_io": false
+}

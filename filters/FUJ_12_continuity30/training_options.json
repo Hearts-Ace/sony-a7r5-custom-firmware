@@ -1,0 +1,134 @@
+{
+  "schema": "r5-public-training-scheme/1",
+  "dataset_id": "v4-sony100mp-unity-sim-center5-20261027",
+  "common_options": {
+    "speed_priority": false,
+    "evaluations": 2000,
+    "white_balance": false,
+    "pc_compensation": true,
+    "compression_training": true,
+    "post_gray_refinement": false,
+    "gamma_endpoint128": 131071,
+    "pc_options": {
+      "curve_mode": "tone-tint",
+      "grid_enabled": true,
+      "response": {
+        "schema": "r5-measured-grid-response/1",
+        "preset": "r5-paired-20261024-v2",
+        "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+        "model": "ILCE-7RM5"
+      }
+    },
+    "search_options": {
+      "starts": 12,
+      "adaptive_rounds": 8,
+      "perceptual_weight": 0.35,
+      "quantization_sweeps": 3,
+      "parameter_smoothing": 30.0,
+      "output_continuity": 30.0,
+      "gamma_color_rounds": 3,
+      "primary_tonal_weight": 1.0,
+      "hue24_tonal_weight": 1.0
+    },
+    "compression_objective": "fuji-target",
+    "compressed_alternation_rounds": 0,
+    "group_weights": {
+      "random": 1.0,
+      "primaries": 1.0,
+      "gray": 1.0,
+      "colorchecker24": 1.0
+    },
+    "target_kind": "chart-image"
+  },
+  "backend": "Apple Metal/MPS",
+  "concurrency": 2,
+  "source_batch": "dbd6a094691141ed8eb66a6d40fe58fc",
+  "all_jobs_start_from_factory": true,
+  "source_targets": [
+    {
+      "number": 1,
+      "short_name": "AS",
+      "full_name": "ASTIA",
+      "filename": "AS.tif",
+      "target_sha256": "d71ff8dfb5cefe91d8fe1c109c51bbb8a3db4799606dd757d71e91fafc78f2ec"
+    },
+    {
+      "number": 2,
+      "short_name": "CC",
+      "full_name": "CLASSIC CHROME",
+      "filename": "CC.tif",
+      "target_sha256": "0e5e25b757a3b230711febb107b28d81da04c8a21032ceb9773dadad9f5ac190"
+    },
+    {
+      "number": 3,
+      "short_name": "EBB",
+      "full_name": "ETERNA BLEACH BYPASS",
+      "filename": "EBB.tif",
+      "target_sha256": "89650b397b02e64e047a25911e80dbda8c5119add4bb4cec851c79dff8b0bc30"
+    },
+    {
+      "number": 4,
+      "short_name": "ET",
+      "full_name": "ETERNA",
+      "filename": "ET.tif",
+      "target_sha256": "5799a93403b60d5de2e906eff29b864db282cbcb2b337c1cfa78c14806e6a2db"
+    },
+    {
+      "number": 5,
+      "short_name": "NC",
+      "full_name": "CLASSIC Neg.",
+      "filename": "NC.tif",
+      "target_sha256": "23cf88035d153bc87127e33715d9c219657eb276b030acc709fb1c4d2d04fa0c"
+    },
+    {
+      "number": 6,
+      "short_name": "NH",
+      "full_name": "PRO Neg. Hi",
+      "filename": "NH.tif",
+      "target_sha256": "e4da5f4566ef7db455c9a4ebe446f3881b80561981854307e2f6e38e0ce7f1e2"
+    },
+    {
+      "number": 7,
+      "short_name": "PV",
+      "full_name": "PROVIA",
+      "filename": "PV.tif",
+      "target_sha256": "b76d774548265633de6173a77609a61adb1a4ce4ce81922fc45c5a17424c0807"
+    },
+    {
+      "number": 8,
+      "short_name": "RA",
+      "full_name": "REALA ACE",
+      "filename": "RA.tif",
+      "target_sha256": "4d9e28a29d97a7aa88e672a854e85a556c43814c85356111afacffa68f6e8df6"
+    },
+    {
+      "number": 9,
+      "short_name": "VN",
+      "full_name": "Velvia",
+      "filename": "VN.tif",
+      "target_sha256": "395bac691061d32fb6d09067583f72090b6e3b12ce3303b07e3eb0f729cb93ef"
+    },
+    {
+      "number": 10,
+      "short_name": "正片",
+      "full_name": "理光正片",
+      "filename": "正片.tif",
+      "target_sha256": "6d23e798c5c07a6fdcc15ee1bcde3fc406660dea0a7077f6cbf155adb1b80a94"
+    },
+    {
+      "number": 11,
+      "short_name": "负片",
+      "full_name": "理光负片",
+      "filename": "负片.tif",
+      "target_sha256": "4d5895f7524129d4d6810e004ac05d1abfc94db25e65a64eb0ed531fd3fc3c77"
+    },
+    {
+      "number": 12,
+      "short_name": "Portra400NB",
+      "full_name": "Portra400NB",
+      "filename": "Portra400NB.tif",
+      "target_sha256": "5ead4b1012768a90b8b50fa444f63fa4cd1974902280045679ff942c4e6ae61a"
+    }
+  ],
+  "target_images_included": false
+}

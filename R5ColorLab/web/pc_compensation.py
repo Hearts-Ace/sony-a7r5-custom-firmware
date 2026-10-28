@@ -68,7 +68,7 @@ def generate(job):
         metrics=metrics,fitting=audit,training_only=True,
         reference='Cobalt public separation of characterization, tone and look; independent implementation, not Cobalt algorithm.',
         reference_url='https://www.cobalt-image.com/tutorials/our_technology/',
-        limits=[('Pinned measured response snapshot when selected; default R5 v2 is a partial empirical fit. Legacy fixed response is provisional; camera colors still await validation.' if curve.get('mode')=='qaq-grid' else 'PC provisional coordinates and identity RGB response; not R5 ISP calibration.'),
+        limits=[('QAQ measured A7C2 proxy when response is a snapshot; legacy fixed response otherwise. Not R5 calibration.' if curve.get('mode')=='qaq-grid' else 'PC provisional coordinates and identity RGB response; not R5 ISP calibration.'),
                 'Post-color correction cannot recover differences already lost by native clipping.',
                 'Not included in 4.18 BIN or fitted-ST.ARW.',
                 'No dual-illuminant measurement or new RAW frontend calibration; output RGB correction only.'])

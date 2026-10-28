@@ -1,0 +1,303 @@
+{
+  "formal_bin_sha256": "a67c9e7dd6b4e44292c8182cae3dc3891c179721f170e0737cd16bbd955559e8",
+  "probe_samples": 58920,
+  "training_samples": 64637,
+  "formal": {
+    "validation_native": {
+      "delta_e00_mean": 4.652687875568202,
+      "delta_e00_p95": 11.248430037426122,
+      "lightness_rmse": 3.597313925416021,
+      "ab_rmse": 9.420014811892083,
+      "interpretation": "display sRGB, D65 Lab, quantized uint8; not calibrated scene colorimetry"
+    },
+    "validation_frozen_pc": {
+      "delta_e00_mean": 2.5042409056083623,
+      "delta_e00_p95": 6.367114959866165,
+      "lightness_rmse": 1.839060923718879,
+      "ab_rmse": 5.583385291258294,
+      "interpretation": "display sRGB, D65 Lab, quantized uint8; not calibrated scene colorimetry"
+    },
+    "output_continuity": {
+      "enabled": true,
+      "strength": 30,
+      "probes": 58920,
+      "triplets": 48096,
+      "input_sha256": "22a7922bbfc45aaf3c579253c73d20851699eed66c31c7c53724a64e541fd9d9",
+      "input_domains": [
+        "sensor + ITP + SSCS",
+        "direct post-SSCS/pre-matrix"
+      ],
+      "objective_cost_8bit_squared": 27.24008681433358,
+      "axes": {
+        "dark-exposure": {
+          "chroma_second_difference_p95": 0.34719251010267554,
+          "chroma_second_difference_max": 0.9764043678087047,
+          "over_allowance": 802
+        },
+        "full-exposure": {
+          "chroma_second_difference_p95": 0.41204113392323444,
+          "chroma_second_difference_max": 1.4999007195662064,
+          "over_allowance": 131
+        },
+        "hue": {
+          "chroma_second_difference_p95": 0.6858311446763153,
+          "chroma_second_difference_max": 7.892178085325746,
+          "over_allowance": 206
+        },
+        "saturation": {
+          "chroma_second_difference_p95": 0.697856999519203,
+          "chroma_second_difference_max": 5.831571035617863,
+          "over_allowance": 216
+        },
+        "native-dark-exposure": {
+          "chroma_second_difference_p95": 1.3843930164098954,
+          "chroma_second_difference_max": 5.3284927106031,
+          "over_allowance": 4463
+        },
+        "native-full-exposure": {
+          "chroma_second_difference_p95": 0.10276143872283768,
+          "chroma_second_difference_max": 0.2774670053920742,
+          "over_allowance": 0
+        },
+        "native-hue": {
+          "chroma_second_difference_p95": 0.7700439733153285,
+          "chroma_second_difference_max": 17.931626760712216,
+          "over_allowance": 275
+        },
+        "native-saturation": {
+          "chroma_second_difference_p95": 0.5945805568968118,
+          "chroma_second_difference_max": 4.651788638487876,
+          "over_allowance": 225
+        }
+      },
+      "rgb_gain_p95": 11.439930837945154,
+      "rgb_gain_max": 73.4914961066924
+    }
+  },
+  "scope": "160-evaluation warm-start A/B; same frozen PC, data, seed and bounds; not a full retraining",
+  "trials": {
+    "0": {
+      "validation_native": {
+        "delta_e00_mean": 4.652661525815413,
+        "delta_e00_p95": 11.248430037426122,
+        "lightness_rmse": 3.597381089758439,
+        "ab_rmse": 9.419993650915945,
+        "interpretation": "display sRGB, D65 Lab, quantized uint8; not calibrated scene colorimetry"
+      },
+      "validation_frozen_pc": {
+        "delta_e00_mean": 2.50428073786261,
+        "delta_e00_p95": 6.367114959866165,
+        "lightness_rmse": 1.8391011427377042,
+        "ab_rmse": 5.583331323493291,
+        "interpretation": "display sRGB, D65 Lab, quantized uint8; not calibrated scene colorimetry"
+      },
+      "output_continuity": {
+        "enabled": true,
+        "strength": 30,
+        "probes": 58920,
+        "triplets": 48096,
+        "input_sha256": "22a7922bbfc45aaf3c579253c73d20851699eed66c31c7c53724a64e541fd9d9",
+        "input_domains": [
+          "sensor + ITP + SSCS",
+          "direct post-SSCS/pre-matrix"
+        ],
+        "objective_cost_8bit_squared": 27.240179279885716,
+        "axes": {
+          "dark-exposure": {
+            "chroma_second_difference_p95": 0.34719251010267554,
+            "chroma_second_difference_max": 0.9764043678087047,
+            "over_allowance": 802
+          },
+          "full-exposure": {
+            "chroma_second_difference_p95": 0.41204113392323444,
+            "chroma_second_difference_max": 1.4999007195662064,
+            "over_allowance": 131
+          },
+          "hue": {
+            "chroma_second_difference_p95": 0.6855159750495328,
+            "chroma_second_difference_max": 7.892178085325746,
+            "over_allowance": 206
+          },
+          "saturation": {
+            "chroma_second_difference_p95": 0.7044158868578315,
+            "chroma_second_difference_max": 5.831571035617863,
+            "over_allowance": 217
+          },
+          "native-dark-exposure": {
+            "chroma_second_difference_p95": 1.3843930164098954,
+            "chroma_second_difference_max": 5.3284927106031,
+            "over_allowance": 4468
+          },
+          "native-full-exposure": {
+            "chroma_second_difference_p95": 0.10276143872283768,
+            "chroma_second_difference_max": 0.2774670053920742,
+            "over_allowance": 0
+          },
+          "native-hue": {
+            "chroma_second_difference_p95": 0.7700439733153285,
+            "chroma_second_difference_max": 17.931626760712216,
+            "over_allowance": 275
+          },
+          "native-saturation": {
+            "chroma_second_difference_p95": 0.5945805568968118,
+            "chroma_second_difference_max": 4.651788638487876,
+            "over_allowance": 225
+          }
+        },
+        "rgb_gain_p95": 11.439930837945154,
+        "rgb_gain_max": 73.4914961066924
+      },
+      "seconds": 1.1559708330023568,
+      "evaluations": 9,
+      "cpu_before": 50.0780888801805,
+      "cpu_after": 50.03646331234357,
+      "cpu_acceptance": true
+    },
+    "30": {
+      "validation_native": {
+        "delta_e00_mean": 4.677656808057154,
+        "delta_e00_p95": 11.297097314493481,
+        "lightness_rmse": 3.6127218567253117,
+        "ab_rmse": 9.484998361314476,
+        "interpretation": "display sRGB, D65 Lab, quantized uint8; not calibrated scene colorimetry"
+      },
+      "validation_frozen_pc": {
+        "delta_e00_mean": 2.5127765525411982,
+        "delta_e00_p95": 6.385799001168047,
+        "lightness_rmse": 1.8456588933448532,
+        "ab_rmse": 5.62064439467414,
+        "interpretation": "display sRGB, D65 Lab, quantized uint8; not calibrated scene colorimetry"
+      },
+      "output_continuity": {
+        "enabled": true,
+        "strength": 30,
+        "probes": 58920,
+        "triplets": 48096,
+        "input_sha256": "22a7922bbfc45aaf3c579253c73d20851699eed66c31c7c53724a64e541fd9d9",
+        "input_domains": [
+          "sensor + ITP + SSCS",
+          "direct post-SSCS/pre-matrix"
+        ],
+        "objective_cost_8bit_squared": 13.323223805468988,
+        "axes": {
+          "dark-exposure": {
+            "chroma_second_difference_p95": 0.3486316193805403,
+            "chroma_second_difference_max": 0.9833902942215129,
+            "over_allowance": 824
+          },
+          "full-exposure": {
+            "chroma_second_difference_p95": 0.4317964361824763,
+            "chroma_second_difference_max": 1.3974914850910258,
+            "over_allowance": 144
+          },
+          "hue": {
+            "chroma_second_difference_p95": 0.7210881542468591,
+            "chroma_second_difference_max": 7.634033713975804,
+            "over_allowance": 221
+          },
+          "saturation": {
+            "chroma_second_difference_p95": 0.6920849480177114,
+            "chroma_second_difference_max": 4.828248871722725,
+            "over_allowance": 222
+          },
+          "native-dark-exposure": {
+            "chroma_second_difference_p95": 1.3799248598090392,
+            "chroma_second_difference_max": 5.305757417950497,
+            "over_allowance": 4428
+          },
+          "native-full-exposure": {
+            "chroma_second_difference_p95": 0.10462519755739519,
+            "chroma_second_difference_max": 0.28931129740145456,
+            "over_allowance": 0
+          },
+          "native-hue": {
+            "chroma_second_difference_p95": 0.7324291375252798,
+            "chroma_second_difference_max": 12.878780766588271,
+            "over_allowance": 284
+          },
+          "native-saturation": {
+            "chroma_second_difference_p95": 0.589900398034345,
+            "chroma_second_difference_max": 5.606482596533433,
+            "over_allowance": 233
+          }
+        },
+        "rgb_gain_p95": 11.43240014377158,
+        "rgb_gain_max": 74.31016081263708
+      },
+      "seconds": 4.702677958004642,
+      "evaluations": 34,
+      "cpu_before": 76.56191472703503,
+      "cpu_after": 65.37954656401725,
+      "cpu_acceptance": true
+    }
+  },
+  "real_grid_smoke": {
+    "enabled": true,
+    "backend": "mps",
+    "evaluations": 13,
+    "before": 97.06087725902115,
+    "after": 97.06087725902115,
+    "accepted": false,
+    "training_only": true,
+    "integer_output_acceptance": true,
+    "native_parameters_frozen": true,
+    "target": "actual training target; no photo target",
+    "output": {
+      "enabled": true,
+      "strength": 30,
+      "probes": 58920,
+      "triplets": 48096,
+      "input_sha256": "22a7922bbfc45aaf3c579253c73d20851699eed66c31c7c53724a64e541fd9d9",
+      "input_domains": [
+        "sensor + ITP + SSCS",
+        "direct post-SSCS/pre-matrix"
+      ],
+      "objective_cost_8bit_squared": 21.021373460685325,
+      "axes": {
+        "dark-exposure": {
+          "chroma_second_difference_p95": 0.3125071764819917,
+          "chroma_second_difference_max": 0.896202530343274,
+          "over_allowance": 541
+        },
+        "full-exposure": {
+          "chroma_second_difference_p95": 0.3884730055328913,
+          "chroma_second_difference_max": 0.9294481895393009,
+          "over_allowance": 111
+        },
+        "hue": {
+          "chroma_second_difference_p95": 0.7332488869666213,
+          "chroma_second_difference_max": 10.708826972382722,
+          "over_allowance": 219
+        },
+        "saturation": {
+          "chroma_second_difference_p95": 0.8683939853126151,
+          "chroma_second_difference_max": 6.332640647677098,
+          "over_allowance": 266
+        },
+        "native-dark-exposure": {
+          "chroma_second_difference_p95": 1.2469497643607748,
+          "chroma_second_difference_max": 5.640085679586283,
+          "over_allowance": 4450
+        },
+        "native-full-exposure": {
+          "chroma_second_difference_p95": 0.1210955458895012,
+          "chroma_second_difference_max": 0.4332462889741915,
+          "over_allowance": 4
+        },
+        "native-hue": {
+          "chroma_second_difference_p95": 0.8320218033289905,
+          "chroma_second_difference_max": 15.464354099305613,
+          "over_allowance": 269
+        },
+        "native-saturation": {
+          "chroma_second_difference_p95": 0.7388258132190029,
+          "chroma_second_difference_max": 6.0716588851855615,
+          "over_allowance": 250
+        }
+      },
+      "rgb_gain_p95": 10.871542193954898,
+      "rgb_gain_max": 66.2444092339026
+    }
+  },
+  "formal_bin_unchanged": true
+}

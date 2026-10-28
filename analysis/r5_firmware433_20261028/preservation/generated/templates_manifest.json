@@ -1,0 +1,2632 @@
+{
+  "schema": "r5-sd-colour-preservation433/1",
+  "passed": true,
+  "camera_io": false,
+  "upstream_commit": "d4649e21f72e9074031c0c95c9ec2dc23ecb6807",
+  "source_archive": "assets/firmware/36c899f32fd3-firmware.tar",
+  "source_archive_sha256": "36c899f32fd37e643b252d1825d28392ec7545a0bed30634d16f12192c975c6a",
+  "matrix_mode": "dynamic",
+  "why_not_upstream_default_fixed_a1": "Preserve authorized 4.32 / 086df3b dynamic B/A1/A2 baseline; only adopt the template-preservation mechanism.",
+  "count": 12,
+  "FL23_fields_each": 10,
+  "FL23_field_bytes_each": 2504,
+  "additional_ST_AWB_ranges_each": 3,
+  "additional_ST_AWB_field_bytes_each": 242,
+  "total_ranges_each": 13,
+  "total_field_bytes_each": 2746,
+  "templates": [
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin",
+      "bytes": 2372469,
+      "source_sha256": "a3b036d3e1dbeeb7c6e2fc7f02d41e5fc2731b8ba8165c3ee9927d9b504a876c",
+      "target_sha256": "3d7c0d8e887fa94731c4fe7edc6f2c7722d093238ea47826b231b48d0f403c58",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "bdf5f9a8",
+      "target_crc32": "a842b922",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 8192,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7508,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_E38.bin",
+      "bytes": 2372469,
+      "source_sha256": "e6909b4e0df661a1b53621873904ecfaa9af18f1b43f5a278d1d3dc450e42c65",
+      "target_sha256": "3ddee5a424378d8bd0e9ad553a7db6fb13b47b2ff130c86378b917e6a7f803de",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "88c5478d",
+      "target_crc32": "c27eac4a",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 2381312,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89200_E38.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7177,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_J1.bin",
+      "bytes": 2372469,
+      "source_sha256": "b59bf5066f438263bed0c38a594209bc70494953e244cff063224f0333181826",
+      "target_sha256": "bda9d0184aae48bd940d80f89b6d6cf673b4461af25a0c8d3bd725cd6e748b25",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "e821c963",
+      "target_crc32": "f7b06d5c",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 4754432,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89200_J1.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7124,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_KR2.bin",
+      "bytes": 2372469,
+      "source_sha256": "fdee34087520675bbfe705bfb8b37cfc871f1143202a73c01b9fbe6bc1d05748",
+      "target_sha256": "213846f5fdc7abf6646d1c2b4223ab02e912ee93bcaeb12bbabcd95541f13b85",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "69831281",
+      "target_crc32": "3fbf9bde",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 7127552,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89200_KR2.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7208,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_UC2.bin",
+      "bytes": 2372469,
+      "source_sha256": "0fa2005692fdc7ca76f5148696efca30559b7043f568412b9c1cec971753f335",
+      "target_sha256": "d7e024298c7a38fd5a578de8208de0770fc509263c1d9655192c60d1ced0babe",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "8a710997",
+      "target_crc32": "c0cae250",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 9500672,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89200_UC2.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7203,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_AF1.bin",
+      "bytes": 2372469,
+      "source_sha256": "b9244f5ea4c48b04bf2ca8107900c9b7c168128b15df5858c6d4f0ff2ffb6370",
+      "target_sha256": "c878405b03f873ba985f5f83094ca13a5ac4bc7bc41b65a31a11090fa7940cbc",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "f02c3f79",
+      "target_crc32": "ac365293",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 11873792,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89201_AF1.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7186,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_ALLLANG.bin",
+      "bytes": 2372469,
+      "source_sha256": "92697b50f6e3e25f5560a8c3eee357ea30b54e4e15cf29cd13bc30295759e3ce",
+      "target_sha256": "63641873e3b976ad466d6973a64a83a19f842031b2b5b0b75ddd690cfe80e953",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "09a852aa",
+      "target_crc32": "55b23f40",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 14246912,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89201_ALLLANG.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7509,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_AP2.bin",
+      "bytes": 2372469,
+      "source_sha256": "0f072fc81a3148472bd22357af96af081502dc9721345ffc0d87d4f217ce54f1",
+      "target_sha256": "1c991b296130afa8276cec1c180e555a0ccf8d3c58d64f65f1de32f2e31cf70d",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "b3430d34",
+      "target_crc32": "ef5960de",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 16620032,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89201_AP2.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7197,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_CEC.bin",
+      "bytes": 2372469,
+      "source_sha256": "ce5110035e7429b88ef5261ed6b9d9895d29588b2072bdf7997e9516b6797bdc",
+      "target_sha256": "d7ba61c751ff588da5879b8a95e01d89ef99edfaf7342fcb7d6a79752c408b57",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "0a86cb0f",
+      "target_crc32": "1d739dde",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 18993152,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89201_CEC.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7205,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_CN2.bin",
+      "bytes": 2372469,
+      "source_sha256": "84406c970097c6ceb46f2001528a08d3f1d5aad6cc926b0dbf5850e68a8901ec",
+      "target_sha256": "6a6952347c8a8729a4b56a2bf1bf5aa25feb2dc94ef1e83675c7b53365e56097",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "1e1bd64e",
+      "target_crc32": "98f6cc04",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 21366272,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89201_CN2.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7197,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_IN5.bin",
+      "bytes": 2372469,
+      "source_sha256": "124c4d7e6f6282675952db0b5a827d3123ba01f8aaf2f24376764ba5b7d1dc71",
+      "target_sha256": "04b8bce774a50f632a1d86fcc2b3fdcbfd2f1ff0560044cc3de0a92fbae3b09e",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "8705773d",
+      "target_crc32": "bff13bed",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 23739392,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89201_IN5.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7206,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_JE3.bin",
+      "bytes": 2372469,
+      "source_sha256": "b39366f9f5ae5704edc7f504afef485d526292a6619377a85e1243400b52e66b",
+      "target_sha256": "44c23bbb69d22474315ae5b5c981d1ab3864a93376673b8aed07ee4c6f7ae669",
+      "changed_bytes": 1976,
+      "fields": [
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1236",
+          "file_offset": 1804374,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x1cc",
+          "file_offset": 1818396,
+          "bytes": 4,
+          "purpose": "FL23 routing",
+          "source_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "target_sha256": "ebd64e00abf3947909002c3094efc05740a3f9e5cec828e13ee4d6b18dfd4c69"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x17d0",
+          "file_offset": 1805808,
+          "bytes": 48,
+          "purpose": "FL23 bank22 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "6f0aff42a2407f8090681bfd32ba235b5e60d8f5b73d1b4ef187f1615defddca"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x43e0",
+          "file_offset": 1835312,
+          "bytes": 576,
+          "purpose": "FL23 bank22 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "753e57f9c4edaf26dd957987a2f8f23c33504ee50dab9eb65fa413cd2c25ead4"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1810",
+          "file_offset": 1805872,
+          "bytes": 48,
+          "purpose": "FL23 bank23 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "26cd9bb8debb064f8e0c2c7142f23bea978948ca2911c6626d4f9395337b0ea0"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x46e0",
+          "file_offset": 1836080,
+          "bytes": 576,
+          "purpose": "FL23 bank23 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "4439403fc579a98baf312d0f600efacf524d030b87438b3572eeaf8356064aee"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1850",
+          "file_offset": 1805936,
+          "bytes": 48,
+          "purpose": "FL23 bank24 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "83d306b09823b144009d5473af5eb6cf03a0059a448dbcdbddc37c71efa20358"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x49e0",
+          "file_offset": 1836848,
+          "bytes": 576,
+          "purpose": "FL23 bank24 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "a5b7d763d95fc0061124f18765337d1e4683e83f11a25bd5c186afa75f271cc3"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1890",
+          "file_offset": 1806000,
+          "bytes": 48,
+          "purpose": "FL23 bank25 dynamic CC1",
+          "source_sha256": "17b0761f87b081d5cf10757ccc89f12be355c70e2e29df288b65b30710dcbcd1",
+          "target_sha256": "5b5591d5cb17e6ee597a57f8b216ffac90d0a2f1b72837ff1d0a58e7651383bd"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x4ce0",
+          "file_offset": 1837616,
+          "bytes": 576,
+          "purpose": "FL23 bank25 dynamic B/A1/A2",
+          "source_sha256": "1a0295f4bf5986c5f74eca9153a6a4cb10b073a01a76ba4a457fd862c78966a4",
+          "target_sha256": "6aae64b1c40d96388dd24ee7272fdbcfdc4114f08480a95d9d6eb2cad056a66f"
+        },
+        {
+          "property": "0x02A40000",
+          "relative_offset": "0x930",
+          "file_offset": 1797452,
+          "bytes": 2,
+          "purpose": "AWB priority",
+          "source_sha256": "6b4b74205c0da9051de1c9502d3c321ea3b71d22661679d222dee8ce2f31f3c3",
+          "target_sha256": "6d42e76c2b2f82aff4f6458fd32e78f3d8f1ebd3c4e621890a3444bd7a5b2bb7"
+        },
+        {
+          "property": "0x02A40001",
+          "relative_offset": "0x1250",
+          "file_offset": 1804400,
+          "bytes": 48,
+          "purpose": "R6 ST",
+          "source_sha256": "17948b0016048d0405910e86f78696b0dc6ba4466c0b6d119b0903873709fa30",
+          "target_sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+        },
+        {
+          "property": "0x02A4000D",
+          "relative_offset": "0x2a0",
+          "file_offset": 1818608,
+          "bytes": 192,
+          "purpose": "R6 ST",
+          "source_sha256": "5573fde3f4f760a574b19d0e1f2f8a0ed4911257d2f4f28b11a7d1cad6e97636",
+          "target_sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+        }
+      ],
+      "allowed_file_ranges": [
+        [
+          1804374,
+          1804378
+        ],
+        [
+          1818396,
+          1818400
+        ],
+        [
+          1805808,
+          1805856
+        ],
+        [
+          1835312,
+          1835888
+        ],
+        [
+          1805872,
+          1805920
+        ],
+        [
+          1836080,
+          1836656
+        ],
+        [
+          1805936,
+          1805984
+        ],
+        [
+          1836848,
+          1837424
+        ],
+        [
+          1806000,
+          1806048
+        ],
+        [
+          1837616,
+          1838192
+        ],
+        [
+          1797452,
+          1797454
+        ],
+        [
+          1804400,
+          1804448
+        ],
+        [
+          1818608,
+          1818800
+        ],
+        [
+          978976,
+          978980
+        ]
+      ],
+      "source_crc32": "1f759dd3",
+      "target_crc32": "436ff039",
+      "all_other_bytes_unchanged": true,
+      "bk4_checksums_valid": true,
+      "idempotent": true,
+      "FL23_four_full768_banks_equal_dynamic_donor": true,
+      "tar_offset_data": 26112512,
+      "tar_metadata": {
+        "name": "0110_backup/SYSIPSX-DSLR/GL/CX89201_JE3.bin",
+        "mode": 420,
+        "uid": 0,
+        "gid": 0,
+        "size": 2372469,
+        "mtime": 1761895655,
+        "chksum": 7196,
+        "type": "30",
+        "linkname": "",
+        "uname": "root",
+        "gname": "root",
+        "devmajor": 0,
+        "devminor": 0
+      }
+    }
+  ],
+  "backup_sum": {
+    "member": "0111_backup_sum/backup.sum",
+    "source_sha256": "a5af7c6be7bf05edb982aa268a7d1d1206a517cdbd412085985f89dca137324f",
+    "target_sha256": "c07f54543ff928d713fbc3d3c541cf9ecb5f3da14864dd2e0c7382fbea41c2a0",
+    "updated_template_CRC_rows": 12,
+    "bytes": 1393
+  },
+  "preserved": [
+    "LOOK six default slots",
+    "BK4 property attributes/indexes/geometry",
+    "all unrelated calibration and defaults",
+    "CC1 row tail16",
+    "block13 bank tail192",
+    "R5 ST block13 B/A2",
+    "MainDest and TAR headers/layout",
+    "native updater migration and save implementation"
+  ],
+  "personalized_partition_embedded": false,
+  "AP_hooks_added": false,
+  "build_script_sha256": "036816e0de5ef79e6418bfc27af421e025913a73e397fa7696d9ef30952804d2",
+  "replacements": {
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_E38.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89200_E38.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_J1.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89200_J1.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_KR2.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89200_KR2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_UC2.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89200_UC2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_AF1.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_AF1.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_ALLLANG.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_ALLLANG.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_AP2.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_AP2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_CEC.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_CEC.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_CN2.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_CN2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_IN5.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_IN5.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_JE3.bin": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_JE3.bin",
+    "0111_backup_sum/backup.sum": "analysis/r5_firmware433_20261028/preservation/generated/0111_backup_sum/backup.sum"
+  },
+  "replacement_files": [
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin",
+      "sha256": "3d7c0d8e887fa94731c4fe7edc6f2c7722d093238ea47826b231b48d0f403c58",
+      "source_sha256": "a3b036d3e1dbeeb7c6e2fc7f02d41e5fc2731b8ba8165c3ee9927d9b504a876c",
+      "bytes": 2372469,
+      "tar_offset_data": 8192
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_E38.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89200_E38.bin",
+      "sha256": "3ddee5a424378d8bd0e9ad553a7db6fb13b47b2ff130c86378b917e6a7f803de",
+      "source_sha256": "e6909b4e0df661a1b53621873904ecfaa9af18f1b43f5a278d1d3dc450e42c65",
+      "bytes": 2372469,
+      "tar_offset_data": 2381312
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_J1.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89200_J1.bin",
+      "sha256": "bda9d0184aae48bd940d80f89b6d6cf673b4461af25a0c8d3bd725cd6e748b25",
+      "source_sha256": "b59bf5066f438263bed0c38a594209bc70494953e244cff063224f0333181826",
+      "bytes": 2372469,
+      "tar_offset_data": 4754432
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_KR2.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89200_KR2.bin",
+      "sha256": "213846f5fdc7abf6646d1c2b4223ab02e912ee93bcaeb12bbabcd95541f13b85",
+      "source_sha256": "fdee34087520675bbfe705bfb8b37cfc871f1143202a73c01b9fbe6bc1d05748",
+      "bytes": 2372469,
+      "tar_offset_data": 7127552
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_UC2.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89200_UC2.bin",
+      "sha256": "d7e024298c7a38fd5a578de8208de0770fc509263c1d9655192c60d1ced0babe",
+      "source_sha256": "0fa2005692fdc7ca76f5148696efca30559b7043f568412b9c1cec971753f335",
+      "bytes": 2372469,
+      "tar_offset_data": 9500672
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_AF1.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_AF1.bin",
+      "sha256": "c878405b03f873ba985f5f83094ca13a5ac4bc7bc41b65a31a11090fa7940cbc",
+      "source_sha256": "b9244f5ea4c48b04bf2ca8107900c9b7c168128b15df5858c6d4f0ff2ffb6370",
+      "bytes": 2372469,
+      "tar_offset_data": 11873792
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_ALLLANG.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_ALLLANG.bin",
+      "sha256": "63641873e3b976ad466d6973a64a83a19f842031b2b5b0b75ddd690cfe80e953",
+      "source_sha256": "92697b50f6e3e25f5560a8c3eee357ea30b54e4e15cf29cd13bc30295759e3ce",
+      "bytes": 2372469,
+      "tar_offset_data": 14246912
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_AP2.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_AP2.bin",
+      "sha256": "1c991b296130afa8276cec1c180e555a0ccf8d3c58d64f65f1de32f2e31cf70d",
+      "source_sha256": "0f072fc81a3148472bd22357af96af081502dc9721345ffc0d87d4f217ce54f1",
+      "bytes": 2372469,
+      "tar_offset_data": 16620032
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_CEC.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_CEC.bin",
+      "sha256": "d7ba61c751ff588da5879b8a95e01d89ef99edfaf7342fcb7d6a79752c408b57",
+      "source_sha256": "ce5110035e7429b88ef5261ed6b9d9895d29588b2072bdf7997e9516b6797bdc",
+      "bytes": 2372469,
+      "tar_offset_data": 18993152
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_CN2.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_CN2.bin",
+      "sha256": "6a6952347c8a8729a4b56a2bf1bf5aa25feb2dc94ef1e83675c7b53365e56097",
+      "source_sha256": "84406c970097c6ceb46f2001528a08d3f1d5aad6cc926b0dbf5850e68a8901ec",
+      "bytes": 2372469,
+      "tar_offset_data": 21366272
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_IN5.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_IN5.bin",
+      "sha256": "04b8bce774a50f632a1d86fcc2b3fdcbfd2f1ff0560044cc3de0a92fbae3b09e",
+      "source_sha256": "124c4d7e6f6282675952db0b5a827d3123ba01f8aaf2f24376764ba5b7d1dc71",
+      "bytes": 2372469,
+      "tar_offset_data": 23739392
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_JE3.bin",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0110_backup/SYSIPSX-DSLR/GL/CX89201_JE3.bin",
+      "sha256": "44c23bbb69d22474315ae5b5c981d1ab3864a93376673b8aed07ee4c6f7ae669",
+      "source_sha256": "b39366f9f5ae5704edc7f504afef485d526292a6619377a85e1243400b52e66b",
+      "bytes": 2372469,
+      "tar_offset_data": 26112512
+    },
+    {
+      "member": "0111_backup_sum/backup.sum",
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/0111_backup_sum/backup.sum",
+      "sha256": "c07f54543ff928d713fbc3d3c541cf9ecb5f3da14864dd2e0c7382fbea41c2a0",
+      "source_sha256": "a5af7c6be7bf05edb982aa268a7d1d1206a517cdbd412085985f89dca137324f",
+      "bytes": 1393,
+      "tar_offset_data": 28486144
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "passed": true,
+  "AP_sha256": "c61d151fd7da84896d675dd7be26a8319156598206556e6e5d50ea2da11406b3",
+  "cases": [
+    {
+      "bias": "0x0",
+      "compiled_custom_gates": true,
+      "full_native_controller_ctor": true,
+      "real_helpers": [
+        {
+          "offset": "0x4d30",
+          "count648": 1,
+          "count64c": 16,
+          "field650": 0
+        },
+        {
+          "offset": "0x5388",
+          "count648": 34,
+          "count64c": 0,
+          "field650": 0
+        }
+      ],
+      "context_field_getter_service": true,
+      "first_view_update_argument": "0x0",
+      "native_query_preserves_layout": true,
+      "native_query_full_widget_loop_count": 34,
+      "native_manager_layouts": [
+        {
+          "target": 1,
+          "kind": "recreate",
+          "native_manager_returned": 1,
+          "view_calls": [
+            [
+              "view",
+              24
+            ],
+            [
+              "view",
+              16
+            ],
+            [
+              "view",
+              80
+            ]
+          ]
+        },
+        {
+          "target": 2,
+          "kind": "same_class",
+          "native_manager_returned": 1,
+          "view_calls": [
+            [
+              "view",
+              96
+            ]
+          ]
+        },
+        {
+          "target": 0,
+          "kind": "recreate",
+          "native_manager_returned": 1,
+          "view_calls": [
+            [
+              "view",
+              24
+            ],
+            [
+              "view",
+              16
+            ],
+            [
+              "view",
+              80
+            ]
+          ]
+        }
+      ],
+      "native_original_layout_and_param9_not_reached": true,
+      "mid_change_and_closing_inputs_isolated": true,
+      "full_native_dtor": true,
+      "allocations": [],
+      "frees": [],
+      "static_objects_reused": true,
+      "each_object_cleaned_once_per_lifetime": true,
+      "no_OSAL_allocation_or_free": true
+    },
+    {
+      "bias": "0x40000000",
+      "compiled_custom_gates": true,
+      "full_native_controller_ctor": true,
+      "real_helpers": [
+        {
+          "offset": "0x4d30",
+          "count648": 1,
+          "count64c": 16,
+          "field650": 0
+        },
+        {
+          "offset": "0x5388",
+          "count648": 34,
+          "count64c": 0,
+          "field650": 0
+        }
+      ],
+      "context_field_getter_service": true,
+      "first_view_update_argument": "0x0",
+      "native_query_preserves_layout": true,
+      "native_query_full_widget_loop_count": 34,
+      "native_manager_layouts": [
+        {
+          "target": 1,
+          "kind": "recreate",
+          "native_manager_returned": 1,
+          "view_calls": [
+            [
+              "view",
+              24
+            ],
+            [
+              "view",
+              16
+            ],
+            [
+              "view",
+              80
+            ]
+          ]
+        },
+        {
+          "target": 2,
+          "kind": "same_class",
+          "native_manager_returned": 1,
+          "view_calls": [
+            [
+              "view",
+              96
+            ]
+          ]
+        },
+        {
+          "target": 0,
+          "kind": "recreate",
+          "native_manager_returned": 1,
+          "view_calls": [
+            [
+              "view",
+              24
+            ],
+            [
+              "view",
+              16
+            ],
+            [
+              "view",
+              80
+            ]
+          ]
+        }
+      ],
+      "native_original_layout_and_param9_not_reached": true,
+      "mid_change_and_closing_inputs_isolated": true,
+      "full_native_dtor": true,
+      "allocations": [],
+      "frees": [],
+      "static_objects_reused": true,
+      "each_object_cleaned_once_per_lifetime": true,
+      "no_OSAL_allocation_or_free": true
+    }
+  ],
+  "limits": [
+    "Compiled427 custom controller/presenter gates execute with complete original controller constructor/base/control helper/profile setter, both presenter helpers, and original controller/presenter destructors; none are fixture-substituted.",
+    "Native scene-manager loop/getters/VT+40 dispatch and real original bounds consumer/VT+30 query execute. Product orientation resolver and preparation helper are bounded fixtures.",
+    "Native graphics view/widget creation, display backend, OSAL heap, mutex/model/IO command services and parent presentation capture remain explicit PageVM fixtures. Parent selected-value path is covered separately by page425_replay.json.",
+    "UI context VT+38 uses actual native field getter1cbfc9c on a bounded context object; the concrete camera context class has not been identified. No camera crash dump, physical LCD/SD/ISP or hardware acceptance."
+  ]
+}

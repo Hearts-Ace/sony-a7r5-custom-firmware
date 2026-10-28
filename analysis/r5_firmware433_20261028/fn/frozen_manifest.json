@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "AP_sha256": "65bd99095f626f990890156c0e536d56394c75313452caa451322e1148c1faec",
+  "scope": "Fn source, evidence and final receipt frozen after final feature gate verification",
+  "files": [
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/README.md",
+      "sha256": "119d7616f7aa508b9184127cf20fc089d8957b1f67b9c02c7a34048988763d16",
+      "bytes": 4412
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/data_patch_plan.json",
+      "sha256": "521019b8d6178dde4c4f1584b924a29df10af6bbd23a0b31caa65deab22af0d1",
+      "bytes": 1035
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/finalize_fn433.py",
+      "sha256": "05b6f7a49d5a6add69df0637b658ee4c9dffedeb8f74ce89601b949fca2d21d0",
+      "bytes": 11650
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/fn433_candidates.json",
+      "sha256": "d5ba13caa10afa67365f83489f9882c07d6b6cb556f123937a8aaf0e48c40c37",
+      "bytes": 40906
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/fn433_registration_labels.json",
+      "sha256": "d9eabc310aac402f2f3b08c44fe3faa7010a206d95d1d4c44bb0fb2f4b7459a4",
+      "bytes": 5493
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/fn433_save_roundtrip.json",
+      "sha256": "4111cab10c2cdebacfbb158752b425580a5f343e3d6cb399a6392f327a304ec9",
+      "bytes": 71060
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/fn433_verified.json",
+      "sha256": "9d267a3c4b0e5c1217616aa16a9885f6eece15eeaf5a4f1f8dc0d122dfa14162",
+      "bytes": 17367
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/patch_fn433.py",
+      "sha256": "2252b95936116b8e18810d5c6e7577fae7d0b3a87f20adc8fc12ebfb1a122a42",
+      "bytes": 3117
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/replay_fn433.py",
+      "sha256": "9e7b49f2d047d724ef29892a7f93b475ed1622054bf7053639717a0cd7eb7f30",
+      "bytes": 6160
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/replay_fn_labels433.py",
+      "sha256": "debf83f1ac15ed626b776152b5475949ad0316e0b2c7b45854ca060f2f9f14b4",
+      "bytes": 8325
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/replay_fn_save433.py",
+      "sha256": "d024ddabcf8c9a30fc193c919f1ba47e609206f52a49059b5d773fb59d074598",
+      "bytes": 7688
+    }
+  ]
+}

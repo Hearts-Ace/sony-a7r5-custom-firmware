@@ -84,6 +84,12 @@ def initialize(smooth,seed,target,weights,lower,upper,*,steps=600,
     torch.set_num_threads(8)
     try:
         gpu=SmoothGPU(smooth);tensor=gpu.tensor
+        continuity=None
+        if getattr(smooth,'output_continuity',None) is not None:
+            from output_continuity import TensorPenalty
+            bank,probe_model,amount=smooth.output_continuity
+            probe_gpu=SmoothGPU(probe_model)
+            continuity=TensorPenalty(bank,probe_gpu,amount)
         # Verify the full coarse training batch before permitting any GPU start.
         initial=gpu.render(tensor(seed)).detach().cpu().numpy()
         error=float(np.max(np.abs(initial-smooth.render(seed))))
@@ -103,7 +109,9 @@ def initialize(smooth,seed,target,weights,lower,upper,*,steps=600,
             curvature=torch.roll(coeff,1,1)-2*coeff+torch.roll(coeff,-1,1)
             dx=torch.diff(gpu.axis/gpu.axis[-1]);gy=gpu.gamma(v)/16383
             gc=torch.diff(torch.diff(gy)/dx)*(dx[:-1]+dx[1:])/2
-            return loss+(curvature.square().mean()*.02**2+gc.square().mean()*16**2)*(parameter_smoothing/100)
+            loss=loss+(curvature.square().mean()*.02**2+gc.square().mean()*16**2)*(parameter_smoothing/100)
+            if continuity is not None:loss=loss+continuity.loss(probe_gpu.render(v)/16383)
+            return loss
         for step in range(steps):
             optimizer.zero_grad(set_to_none=True);loss=objective()
             value=float(loss.detach().cpu())

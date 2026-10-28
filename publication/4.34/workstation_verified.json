@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "version": "4.34",
+  "syntax_files": 969,
+  "numeric_data_files": 3830,
+  "portable_data_and_model_selfcheck": true,
+  "integration_contract_tests": 2,
+  "new_UI_defaults_verified": true,
+  "workstation_zip_matches_tree": true,
+  "exact_latest_filter_SHA256": "e3375e9f5fb8e32ae4dce5edab42c6024f1bc7d969abf7c2e01ded2b53419bc2",
+  "old_current_filter_exports_removed": true,
+  "training_rerun": false,
+  "full_regression_rerun": false,
+  "camera_io": false,
+  "device_acceptance_tested": false
+}

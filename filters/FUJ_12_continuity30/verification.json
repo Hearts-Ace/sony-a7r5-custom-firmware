@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "configurations": 12,
+  "bytes": 29552,
+  "sha256": "e3375e9f5fb8e32ae4dce5edab42c6024f1bc7d969abf7c2e01ded2b53419bc2",
+  "config_recompile_byte_identical": true,
+  "bin_roundtrip": true,
+  "output_continuity": 30,
+  "parameter_smoothing": 30,
+  "private_target_images_included": false,
+  "camera_accuracy_accepted": false
+}

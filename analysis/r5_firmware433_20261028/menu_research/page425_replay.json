@@ -1,0 +1,2663 @@
+{
+  "passed": true,
+  "version": "4.33",
+  "AP_sha256": "65bd99095f626f990890156c0e536d56394c75313452caa451322e1148c1faec",
+  "cases": [
+    {
+      "bias": "0x0",
+      "mode": "move_confirm",
+      "selected": 1,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          1
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "held_sparse",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          2
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          9
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          2
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          0
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          0
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 8,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "touch_stays",
+      "selected": 1,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          1
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "true_failure",
+      "selected": 1,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          1
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "pending_recovery",
+      "selected": 1,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          1
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2000,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "parent_projection_retry",
+      "selected": 1,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          1
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "stale_sequence",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ]
+      ],
+      "yield_count": 2000,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "back_after_failure",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          0
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "empty_confirm",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          0
+        ],
+        [
+          "committed_before_pop",
+          0
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "removed_update",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ]
+      ],
+      "yield_count": 0,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "navigation_boundary",
+      "selected": 12,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          2
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          3
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          4
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          5
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          6
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          7
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          8
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          9
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          10
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          11
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          12
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ]
+      ],
+      "yield_count": 24,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "stock",
+      "stock_factory_delegated": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "reenter",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "committed_before_pop",
+          0
+        ],
+        [
+          "pop",
+          217
+        ],
+        [
+          "base_destroy",
+          30145408
+        ],
+        [
+          "base_destroy",
+          35685356
+        ],
+        [
+          "view",
+          16
+        ],
+        [
+          "view",
+          80
+        ],
+        [
+          "view",
+          32
+        ]
+      ],
+      "yield_count": 0,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "oom",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [],
+      "yield_count": 0,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x0",
+      "mode": "layout",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          24
+        ],
+        [
+          "view",
+          16
+        ],
+        [
+          "view",
+          80
+        ],
+        [
+          "view",
+          96
+        ],
+        [
+          "view",
+          24
+        ],
+        [
+          "view",
+          16
+        ],
+        [
+          "view",
+          80
+        ]
+      ],
+      "yield_count": 0,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "move_confirm",
+      "selected": 1,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          1
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "held_sparse",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          2
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          9
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          2
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          0
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          0
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 8,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "touch_stays",
+      "selected": 1,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          1
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "true_failure",
+      "selected": 1,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          1
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "pending_recovery",
+      "selected": 1,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          1
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2000,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "parent_projection_retry",
+      "selected": 1,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          1
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "stale_sequence",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ]
+      ],
+      "yield_count": 2000,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "back_after_failure",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "committed_before_pop",
+          0
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "empty_confirm",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          0
+        ],
+        [
+          "committed_before_pop",
+          0
+        ],
+        [
+          "pop",
+          217
+        ]
+      ],
+      "yield_count": 2,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "removed_update",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ]
+      ],
+      "yield_count": 0,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "navigation_boundary",
+      "selected": 12,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          1
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          2
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          3
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          4
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          5
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          6
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          7
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          8
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          9
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          10
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          11
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "request",
+          12
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ],
+        [
+          "view",
+          32
+        ]
+      ],
+      "yield_count": 24,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "stock",
+      "stock_factory_delegated": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "reenter",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "committed_before_pop",
+          0
+        ],
+        [
+          "pop",
+          217
+        ],
+        [
+          "base_destroy",
+          30145408
+        ],
+        [
+          "base_destroy",
+          35685356
+        ],
+        [
+          "view",
+          16
+        ],
+        [
+          "view",
+          80
+        ],
+        [
+          "view",
+          32
+        ]
+      ],
+      "yield_count": 0,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "oom",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [],
+      "yield_count": 0,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    },
+    {
+      "bias": "0x40000000",
+      "mode": "layout",
+      "selected": 0,
+      "created_widgets": [
+        [
+          0,
+          106
+        ],
+        [
+          1,
+          107
+        ],
+        [
+          9,
+          28
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          22,
+          20
+        ],
+        [
+          23,
+          20
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      "event_order": [
+        [
+          "view",
+          24
+        ],
+        [
+          "view",
+          16
+        ],
+        [
+          "view",
+          80
+        ],
+        [
+          "view",
+          96
+        ],
+        [
+          "view",
+          24
+        ],
+        [
+          "view",
+          16
+        ],
+        [
+          "view",
+          80
+        ]
+      ],
+      "yield_count": 0,
+      "background2_not_constructed": true,
+      "native_adjustment_widgets_absent": true,
+      "update_text_resource": "0x0",
+      "menu_mid": "0x635",
+      "independent_row_pid": "0x1607",
+      "update_widgets_not_constructed": true,
+      "no_reload_requests": true
+    }
+  ],
+  "movement_applies_and_saves": true,
+  "successful_movement_keeps_page": true,
+  "confirm_no_duplicate_request": true,
+  "parent_error_distinct": true,
+  "true_apply_failure_retains_page": true,
+  "exact_pending_sequence": true,
+  "limits": [
+    "Worker responses and UX are bounded fixtures; durable save semantics execute in separate worker/crosscore tests.",
+    "Original native descriptor value resolver executes. Parent native teardown/recreation is covered separately.",
+    "No physical LCD, timing, SD or camera observation."
+  ],
+  "camera_io": false
+}

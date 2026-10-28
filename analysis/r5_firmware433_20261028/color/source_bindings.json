@@ -1,0 +1,106 @@
+{
+  "schema": "r5-color433-source-bindings/1",
+  "camera_io": false,
+  "rows": [
+    {
+      "path": "analysis/r5_firmware433_20261028/color/color433.py",
+      "sha256": "898235bd44e507ff85d93b531a997c9fc21a73259b38a7ce0e628f3bf0e7431e",
+      "bytes": 5707
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/color/verify_color433.py",
+      "sha256": "9fb082ca73885e0aa4f3329e3c5db1bf0756cc63b61e535d845ebac377200dff",
+      "bytes": 9164
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/color/color433_verified.json",
+      "sha256": "54954921127866fe67df80e864f113e9bccf60e207ff4e690abca8acf489450a",
+      "bytes": 235605
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/color/color433_ranges.json",
+      "sha256": "3a0f54d1ab77cf93d99cc227fd15bb739bb4687422cb7ac2170df175d36b1782",
+      "bytes": 2321
+    },
+    {
+      "path": "analysis/r6_st_reverse_20261028/r6_st_cc1_R5_delta48.bin",
+      "sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485",
+      "bytes": 48
+    },
+    {
+      "path": "analysis/r6_st_reverse_20261028/r6_st_block13_A1_192.bin",
+      "sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e",
+      "bytes": 192
+    },
+    {
+      "path": "analysis/r6_st_reverse_20261028/comparison.json",
+      "sha256": "f24f3df0eb5f4bd5dfb6f28239787d449373a6f61ad5d15cc4b1a39293bf52eb",
+      "bytes": 136245
+    },
+    {
+      "path": "analysis/r5_custom_filter423_20261023/cp/cp423.NONINSTALLABLE.bin",
+      "sha256": "8b38e753f34b1667d79b69079d911b9e6595f1ce1b873cb8e014437c6b4c494d",
+      "bytes": 17617008
+    },
+    {
+      "path": "unpacked/r5/cp_data/cpapp-b.bin",
+      "sha256": "3269bf62426339791fcfbe8529698cd4accbe6c3d2ea61cd7c368a90ab7ee7c8",
+      "bytes": 17617008
+    },
+    {
+      "path": "unpacked/r5/firmware/0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin",
+      "sha256": "a3b036d3e1dbeeb7c6e2fc7f02d41e5fc2731b8ba8165c3ee9927d9b504a876c",
+      "bytes": 2372469
+    },
+    {
+      "path": "analysis/r5_awb_white_priority_20261028/replay_adjustment.py",
+      "sha256": "2d54547a3168b939268777d42d57cd04056445d52a230b767006f3eb66060c47",
+      "bytes": 4004
+    },
+    {
+      "path": "analysis/r5_awb_white_priority_20261028/original_awb_property_02a40000.bin",
+      "sha256": "4fd01e7ccfd55c17f00b60321b3c98ca2de5081530b970db3e715d49ca766ade",
+      "bytes": 4608
+    },
+    {
+      "path": "tools/verify_r5_m4strict_cp_cpu.py",
+      "sha256": "35e128f922715fe9af84468a5127066744e72f56e9e684b8d887f64fdb7414d6",
+      "bytes": 3284
+    },
+    {
+      "path": "tools/sony_bk4.py",
+      "sha256": "da9a920d767eeaa8ba8965cc106397e7d1de409fff34c39c73c9debbc631c717",
+      "bytes": 4348
+    },
+    {
+      "path": "tools/build_r5_m4strict_personal.py",
+      "sha256": "a95187c2d6dcb5633f74c35f10ab5a687216b624f542a7af56a5dd79763132ce",
+      "bytes": 10161
+    },
+    {
+      "path": "unpacked/fx2/firmware/0110_backup/SYSIPSX-DSLR/DOC/CX96900_ALLLANG.bin",
+      "sha256": "fdee302d240ec1534349e6c9a688a12c883c2cbb7be3ffd97376b419592dc331",
+      "bytes": 2509712
+    },
+    {
+      "path": "analysis/erlla_a7m4_comparison_20261015/upstream/Erlla-sony-a7m4-custom-firmware-086df3b/a7m4/fl23.py",
+      "sha256": "da06220bbf4a3064f189f102c0cef17783d3a5e75a4d4bc58e12ac6ce65732cf",
+      "bytes": 12527
+    },
+    {
+      "path": "analysis/erlla_a7m4_comparison_20261015/upstream/Erlla-sony-a7m4-custom-firmware-086df3b/a7m4/fat.py",
+      "sha256": "574d1aeee03f2b20fe2424591fe6caf25680610909a029b9da76fc4c608f873d",
+      "bytes": 6364
+    },
+    {
+      "path": "analysis/erlla_a7m4_comparison_20261015/upstream/Erlla-sony-a7m4-custom-firmware-086df3b/a7m4/common.py",
+      "sha256": "a09cf0f404d31989cf2269a4ea9108efc6832e05408a4b888860ad1d6f5303bc",
+      "bytes": 3843
+    },
+    {
+      "path": "analysis/erlla_a7m4_comparison_20261015/upstream/Erlla-sony-a7m4-custom-firmware-086df3b/a7m4/offline.py",
+      "sha256": "60ff6f49d2ff72f40ab134e677750bb12408e8e790342ce393bfd52d52ce5320",
+      "bytes": 7177
+    }
+  ]
+}
