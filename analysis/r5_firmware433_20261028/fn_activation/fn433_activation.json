@@ -1,0 +1,1488 @@
+{
+  "passed": true,
+  "AP_sha256": "65bd99095f626f990890156c0e536d56394c75313452caa451322e1148c1faec",
+  "script_sha256": "811c1ed7a28c3f16b7de9ca71e0d9a6d7417e4a8f9a426f5a0d1d64934072e89",
+  "native_activation_cases": 48,
+  "native_icon_consumer_cases": 8,
+  "native_private_return_cases": 2,
+  "rows": [
+    {
+      "bias": "0x0",
+      "activations": [
+        {
+          "kind": "still",
+          "slot": 0,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 1,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 2,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 3,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 4,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 5,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 6,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 7,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 8,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 9,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 10,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 11,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 0,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 1,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 2,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 3,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 4,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 5,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 6,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 7,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 8,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 9,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 10,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 11,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        }
+      ],
+      "icons": {
+        "normal_icon_getter": "0x1bd5630",
+        "fn_icon_getter": "0x1bd642c",
+        "normal_menu_producer": "0x20d34f8",
+        "common_list_producer": "0x20d1e54",
+        "stock_creative_descriptor": "0x5858b08",
+        "icon": "0x21c6410",
+        "title_resource": "0x2ff4230",
+        "title": "自定义滤镜"
+      },
+      "private_return": {
+        "private_factory": "0x8e989f8",
+        "controller_ctor_body_fixture": "0x1d2e2f0",
+        "close_event": "0x0201000f",
+        "native_value_helper": "0x1bd55fc",
+        "native_close_screen": "0x1d15798",
+        "close_request": "0xd9",
+        "no_parent_presenter_fixture": true
+      },
+      "fn_projection": [
+        {
+          "phase": "entry",
+          "title_producer": "0x2170734",
+          "title_resource": "0x2ff4230",
+          "title_text": "自定义滤镜",
+          "tile_producer": "0x21705a8",
+          "tile_type": 6,
+          "tile_resource": "0x21c6410",
+          "tile_renderer": "0x183c85c",
+          "native_sprite_writer": "0x183c138",
+          "sprite_resource": "0x21c6410",
+          "sprite_resource_enabled": true
+        }
+      ]
+    },
+    {
+      "bias": "0x40000000",
+      "activations": [
+        {
+          "kind": "still",
+          "slot": 0,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 1,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 2,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 3,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 4,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 5,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 6,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 7,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 8,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 9,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 10,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 11,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 0,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 1,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 2,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 3,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 4,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 5,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 6,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 7,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 8,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 9,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 10,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 11,
+          "reader_mid": "0x635",
+          "event": "0x0201000c",
+          "queue_record": [
+            194,
+            217,
+            194,
+            0,
+            1,
+            0
+          ],
+          "selected_pid_3b2": "0x635",
+          "row_pid_3b7": "0x1607",
+          "native_required": [
+            "0x1a5de30",
+            "0x216f2d8",
+            "0x216e9ac",
+            "0x28a8720",
+            "0x1bd70d8",
+            "0x1bdc3d0",
+            "0x1bd5780",
+            "0x1bd59f0",
+            "0x216ea14",
+            "0x1d15b50",
+            "0x1d15cfc"
+          ]
+        }
+      ],
+      "icons": {
+        "normal_icon_getter": "0x1bd5630",
+        "fn_icon_getter": "0x1bd642c",
+        "normal_menu_producer": "0x20d34f8",
+        "common_list_producer": "0x20d1e54",
+        "stock_creative_descriptor": "0x5858b08",
+        "icon": "0x21c6410",
+        "title_resource": "0x2ff4230",
+        "title": "自定义滤镜"
+      },
+      "private_return": {
+        "private_factory": "0x8e989f8",
+        "controller_ctor_body_fixture": "0x1d2e2f0",
+        "close_event": "0x0201000f",
+        "native_value_helper": "0x1bd55fc",
+        "native_close_screen": "0x1d15798",
+        "close_request": "0xd9",
+        "no_parent_presenter_fixture": true
+      },
+      "fn_projection": [
+        {
+          "phase": "entry",
+          "title_producer": "0x2170734",
+          "title_resource": "0x2ff4230",
+          "title_text": "自定义滤镜",
+          "tile_producer": "0x21705a8",
+          "tile_type": 6,
+          "tile_resource": "0x21c6410",
+          "tile_renderer": "0x183c85c",
+          "native_sprite_writer": "0x183c138",
+          "sprite_resource": "0x21c6410",
+          "sprite_resource_enabled": true
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Actual final AP A64 executes at two PIE bases. Native Fn first-slot reader, real Enter dispatcher, descriptor route and open queue execute for all 24 still/movie slots.",
+    "Fn current selection is set through genuine PID3B2 storage after the real slot reader; focus navigation and physical button events are outside this replay.",
+    "Original menu/row registries are balanced-tree fixtures retaining all immutable pairs and initialized private descriptors; OS locks/logs/validation, memcpy/memset and selected-filter service=0 are explicit fixtures.",
+    "Private controller runs its compiled reserved-object factory and close dispatcher; original ctor body is an object fixture. Native committed-name lookup and manager close request execute; lower stack restoration is a separate replay.",
+    "Normal menu/common list producers and native normal/Fn icon getters execute; actual Fn title/tile producers and tile renderer/native sprite writer execute. Map objects, view-param binding copy, sprite storage/submission and adjacent value/highlight methods are fixtures; no GPU or physical LCD is executed.",
+    "Fn title projection suppresses its independent tile-refresh calls21704ac/21706d0, then actual21705a8 tile population is replayed separately. After native stack restore in fn433_stack_restore.json, native projection is replayed against reconstructed presenter storage; the actual factory/UI event loop is not run."
+  ]
+}

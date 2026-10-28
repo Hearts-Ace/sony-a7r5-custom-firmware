@@ -1,0 +1,2625 @@
+{
+  "passed": true,
+  "AP_sha256": "c61d151fd7da84896d675dd7be26a8319156598206556e6e5d50ea2da11406b3",
+  "script_sha256": "b63037b555ef9ed4576d86b8e10c78f59d2d569e48b086736850fce84f96a55e",
+  "native_save_handler": "0x21e45c8",
+  "native_first_screen_reader": "0x216eb9c",
+  "native_registration_cases": 96,
+  "native_shadow_roundtrips": 96,
+  "rows": [
+    {
+      "bias": "0x0",
+      "cases": [
+        {
+          "kind": "still",
+          "slot": 0,
+          "target_id": "0x38f",
+          "model_pid": "0x7ad",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7ad",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac984c",
+          "native_shadow_restore": "0x2ac982c",
+          "shadow_address": "0x84166b0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ad",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 0,
+          "target_id": "0x38f",
+          "model_pid": "0x7ad",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7ad",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac984c",
+          "native_shadow_restore": "0x2ac982c",
+          "shadow_address": "0x84166b0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ad",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 1,
+          "target_id": "0x390",
+          "model_pid": "0x7ae",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7ae",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac97f8",
+          "native_shadow_restore": "0x2ac97d8",
+          "shadow_address": "0x84166b4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ae",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 1,
+          "target_id": "0x390",
+          "model_pid": "0x7ae",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7ae",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac97f8",
+          "native_shadow_restore": "0x2ac97d8",
+          "shadow_address": "0x84166b4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ae",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 2,
+          "target_id": "0x391",
+          "model_pid": "0x7af",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7af",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac97a0",
+          "native_shadow_restore": "0x2ac9780",
+          "shadow_address": "0x84166b8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7af",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 2,
+          "target_id": "0x391",
+          "model_pid": "0x7af",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7af",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac97a0",
+          "native_shadow_restore": "0x2ac9780",
+          "shadow_address": "0x84166b8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7af",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 3,
+          "target_id": "0x392",
+          "model_pid": "0x7b0",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b0",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9748",
+          "native_shadow_restore": "0x2ac9728",
+          "shadow_address": "0x84166bc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b0",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 3,
+          "target_id": "0x392",
+          "model_pid": "0x7b0",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b0",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9748",
+          "native_shadow_restore": "0x2ac9728",
+          "shadow_address": "0x84166bc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b0",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 4,
+          "target_id": "0x393",
+          "model_pid": "0x7b1",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b1",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac96f0",
+          "native_shadow_restore": "0x2ac96d0",
+          "shadow_address": "0x84166c0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b1",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 4,
+          "target_id": "0x393",
+          "model_pid": "0x7b1",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b1",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac96f0",
+          "native_shadow_restore": "0x2ac96d0",
+          "shadow_address": "0x84166c0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b1",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 5,
+          "target_id": "0x394",
+          "model_pid": "0x7b2",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b2",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9698",
+          "native_shadow_restore": "0x2ac9678",
+          "shadow_address": "0x84166c4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b2",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 5,
+          "target_id": "0x394",
+          "model_pid": "0x7b2",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b2",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9698",
+          "native_shadow_restore": "0x2ac9678",
+          "shadow_address": "0x84166c4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b2",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 6,
+          "target_id": "0x395",
+          "model_pid": "0x7b3",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b3",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9640",
+          "native_shadow_restore": "0x2ac9620",
+          "shadow_address": "0x84166c8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b3",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 6,
+          "target_id": "0x395",
+          "model_pid": "0x7b3",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b3",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9640",
+          "native_shadow_restore": "0x2ac9620",
+          "shadow_address": "0x84166c8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b3",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 7,
+          "target_id": "0x396",
+          "model_pid": "0x7b4",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b4",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac95e8",
+          "native_shadow_restore": "0x2ac95c8",
+          "shadow_address": "0x84166cc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b4",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 7,
+          "target_id": "0x396",
+          "model_pid": "0x7b4",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b4",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac95e8",
+          "native_shadow_restore": "0x2ac95c8",
+          "shadow_address": "0x84166cc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b4",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 8,
+          "target_id": "0x397",
+          "model_pid": "0x7b5",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b5",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9590",
+          "native_shadow_restore": "0x2ac9570",
+          "shadow_address": "0x84166d0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b5",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 8,
+          "target_id": "0x397",
+          "model_pid": "0x7b5",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b5",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9590",
+          "native_shadow_restore": "0x2ac9570",
+          "shadow_address": "0x84166d0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b5",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 9,
+          "target_id": "0x398",
+          "model_pid": "0x7b6",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b6",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9538",
+          "native_shadow_restore": "0x2ac9518",
+          "shadow_address": "0x84166d4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b6",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 9,
+          "target_id": "0x398",
+          "model_pid": "0x7b6",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b6",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9538",
+          "native_shadow_restore": "0x2ac9518",
+          "shadow_address": "0x84166d4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b6",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 10,
+          "target_id": "0x399",
+          "model_pid": "0x7b7",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b7",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac94e0",
+          "native_shadow_restore": "0x2ac94c0",
+          "shadow_address": "0x84166d8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b7",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 10,
+          "target_id": "0x399",
+          "model_pid": "0x7b7",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b7",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac94e0",
+          "native_shadow_restore": "0x2ac94c0",
+          "shadow_address": "0x84166d8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b7",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 11,
+          "target_id": "0x39a",
+          "model_pid": "0x7b8",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b8",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9488",
+          "native_shadow_restore": "0x2ac9468",
+          "shadow_address": "0x84166dc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b8",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 11,
+          "target_id": "0x39a",
+          "model_pid": "0x7b8",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b8",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9488",
+          "native_shadow_restore": "0x2ac9468",
+          "shadow_address": "0x84166dc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b8",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 0,
+          "target_id": "0x39b",
+          "model_pid": "0x7b9",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b9",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9310",
+          "native_shadow_restore": "0x2ac92f0",
+          "shadow_address": "0x84167a0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b9",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 0,
+          "target_id": "0x39b",
+          "model_pid": "0x7b9",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b9",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9310",
+          "native_shadow_restore": "0x2ac92f0",
+          "shadow_address": "0x84167a0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b9",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 1,
+          "target_id": "0x39c",
+          "model_pid": "0x7ba",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7ba",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac92bc",
+          "native_shadow_restore": "0x2ac929c",
+          "shadow_address": "0x84167a4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ba",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 1,
+          "target_id": "0x39c",
+          "model_pid": "0x7ba",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7ba",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac92bc",
+          "native_shadow_restore": "0x2ac929c",
+          "shadow_address": "0x84167a4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ba",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 2,
+          "target_id": "0x39d",
+          "model_pid": "0x7bb",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7bb",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9264",
+          "native_shadow_restore": "0x2ac9244",
+          "shadow_address": "0x84167a8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bb",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 2,
+          "target_id": "0x39d",
+          "model_pid": "0x7bb",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7bb",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9264",
+          "native_shadow_restore": "0x2ac9244",
+          "shadow_address": "0x84167a8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bb",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 3,
+          "target_id": "0x39e",
+          "model_pid": "0x7bc",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7bc",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac920c",
+          "native_shadow_restore": "0x2ac91ec",
+          "shadow_address": "0x84167ac",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bc",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 3,
+          "target_id": "0x39e",
+          "model_pid": "0x7bc",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7bc",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac920c",
+          "native_shadow_restore": "0x2ac91ec",
+          "shadow_address": "0x84167ac",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bc",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 4,
+          "target_id": "0x39f",
+          "model_pid": "0x7bd",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7bd",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac91b4",
+          "native_shadow_restore": "0x2ac9194",
+          "shadow_address": "0x84167b0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bd",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 4,
+          "target_id": "0x39f",
+          "model_pid": "0x7bd",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7bd",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac91b4",
+          "native_shadow_restore": "0x2ac9194",
+          "shadow_address": "0x84167b0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bd",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 5,
+          "target_id": "0x3a0",
+          "model_pid": "0x7be",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7be",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac915c",
+          "native_shadow_restore": "0x2ac913c",
+          "shadow_address": "0x84167b4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7be",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 5,
+          "target_id": "0x3a0",
+          "model_pid": "0x7be",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7be",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac915c",
+          "native_shadow_restore": "0x2ac913c",
+          "shadow_address": "0x84167b4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7be",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 6,
+          "target_id": "0x3a1",
+          "model_pid": "0x7bf",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7bf",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9104",
+          "native_shadow_restore": "0x2ac90e4",
+          "shadow_address": "0x84167b8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bf",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 6,
+          "target_id": "0x3a1",
+          "model_pid": "0x7bf",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7bf",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9104",
+          "native_shadow_restore": "0x2ac90e4",
+          "shadow_address": "0x84167b8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bf",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 7,
+          "target_id": "0x3a2",
+          "model_pid": "0x7c0",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7c0",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac90ac",
+          "native_shadow_restore": "0x2ac908c",
+          "shadow_address": "0x84167bc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c0",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 7,
+          "target_id": "0x3a2",
+          "model_pid": "0x7c0",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7c0",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac90ac",
+          "native_shadow_restore": "0x2ac908c",
+          "shadow_address": "0x84167bc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c0",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 8,
+          "target_id": "0x3a3",
+          "model_pid": "0x7c1",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7c1",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9054",
+          "native_shadow_restore": "0x2ac9034",
+          "shadow_address": "0x84167c0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c1",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 8,
+          "target_id": "0x3a3",
+          "model_pid": "0x7c1",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7c1",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9054",
+          "native_shadow_restore": "0x2ac9034",
+          "shadow_address": "0x84167c0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c1",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 9,
+          "target_id": "0x3a4",
+          "model_pid": "0x7c2",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7c2",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8ffc",
+          "native_shadow_restore": "0x2ac8fdc",
+          "shadow_address": "0x84167c4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c2",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 9,
+          "target_id": "0x3a4",
+          "model_pid": "0x7c2",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7c2",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8ffc",
+          "native_shadow_restore": "0x2ac8fdc",
+          "shadow_address": "0x84167c4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c2",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 10,
+          "target_id": "0x3a5",
+          "model_pid": "0x7c3",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7c3",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8fa4",
+          "native_shadow_restore": "0x2ac8f84",
+          "shadow_address": "0x84167c8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c3",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 10,
+          "target_id": "0x3a5",
+          "model_pid": "0x7c3",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7c3",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8fa4",
+          "native_shadow_restore": "0x2ac8f84",
+          "shadow_address": "0x84167c8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c3",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 11,
+          "target_id": "0x3a6",
+          "model_pid": "0x7c4",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7c4",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8f4c",
+          "native_shadow_restore": "0x2ac8f2c",
+          "shadow_address": "0x84167cc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c4",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 11,
+          "target_id": "0x3a6",
+          "model_pid": "0x7c4",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7c4",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8f4c",
+          "native_shadow_restore": "0x2ac8f2c",
+          "shadow_address": "0x84167cc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c4",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bias": "0x40000000",
+      "cases": [
+        {
+          "kind": "still",
+          "slot": 0,
+          "target_id": "0x38f",
+          "model_pid": "0x7ad",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7ad",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac984c",
+          "native_shadow_restore": "0x2ac982c",
+          "shadow_address": "0x84166b0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ad",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 0,
+          "target_id": "0x38f",
+          "model_pid": "0x7ad",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7ad",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac984c",
+          "native_shadow_restore": "0x2ac982c",
+          "shadow_address": "0x84166b0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ad",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 1,
+          "target_id": "0x390",
+          "model_pid": "0x7ae",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7ae",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac97f8",
+          "native_shadow_restore": "0x2ac97d8",
+          "shadow_address": "0x84166b4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ae",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 1,
+          "target_id": "0x390",
+          "model_pid": "0x7ae",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7ae",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac97f8",
+          "native_shadow_restore": "0x2ac97d8",
+          "shadow_address": "0x84166b4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ae",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 2,
+          "target_id": "0x391",
+          "model_pid": "0x7af",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7af",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac97a0",
+          "native_shadow_restore": "0x2ac9780",
+          "shadow_address": "0x84166b8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7af",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 2,
+          "target_id": "0x391",
+          "model_pid": "0x7af",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7af",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac97a0",
+          "native_shadow_restore": "0x2ac9780",
+          "shadow_address": "0x84166b8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7af",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 3,
+          "target_id": "0x392",
+          "model_pid": "0x7b0",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b0",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9748",
+          "native_shadow_restore": "0x2ac9728",
+          "shadow_address": "0x84166bc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b0",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 3,
+          "target_id": "0x392",
+          "model_pid": "0x7b0",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b0",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9748",
+          "native_shadow_restore": "0x2ac9728",
+          "shadow_address": "0x84166bc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b0",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 4,
+          "target_id": "0x393",
+          "model_pid": "0x7b1",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b1",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac96f0",
+          "native_shadow_restore": "0x2ac96d0",
+          "shadow_address": "0x84166c0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b1",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 4,
+          "target_id": "0x393",
+          "model_pid": "0x7b1",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b1",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac96f0",
+          "native_shadow_restore": "0x2ac96d0",
+          "shadow_address": "0x84166c0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b1",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 5,
+          "target_id": "0x394",
+          "model_pid": "0x7b2",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b2",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9698",
+          "native_shadow_restore": "0x2ac9678",
+          "shadow_address": "0x84166c4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b2",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 5,
+          "target_id": "0x394",
+          "model_pid": "0x7b2",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b2",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9698",
+          "native_shadow_restore": "0x2ac9678",
+          "shadow_address": "0x84166c4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b2",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 6,
+          "target_id": "0x395",
+          "model_pid": "0x7b3",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b3",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9640",
+          "native_shadow_restore": "0x2ac9620",
+          "shadow_address": "0x84166c8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b3",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 6,
+          "target_id": "0x395",
+          "model_pid": "0x7b3",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b3",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9640",
+          "native_shadow_restore": "0x2ac9620",
+          "shadow_address": "0x84166c8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b3",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 7,
+          "target_id": "0x396",
+          "model_pid": "0x7b4",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b4",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac95e8",
+          "native_shadow_restore": "0x2ac95c8",
+          "shadow_address": "0x84166cc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b4",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 7,
+          "target_id": "0x396",
+          "model_pid": "0x7b4",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b4",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac95e8",
+          "native_shadow_restore": "0x2ac95c8",
+          "shadow_address": "0x84166cc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b4",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 8,
+          "target_id": "0x397",
+          "model_pid": "0x7b5",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b5",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9590",
+          "native_shadow_restore": "0x2ac9570",
+          "shadow_address": "0x84166d0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b5",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 8,
+          "target_id": "0x397",
+          "model_pid": "0x7b5",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b5",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9590",
+          "native_shadow_restore": "0x2ac9570",
+          "shadow_address": "0x84166d0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b5",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 9,
+          "target_id": "0x398",
+          "model_pid": "0x7b6",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b6",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9538",
+          "native_shadow_restore": "0x2ac9518",
+          "shadow_address": "0x84166d4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b6",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 9,
+          "target_id": "0x398",
+          "model_pid": "0x7b6",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b6",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9538",
+          "native_shadow_restore": "0x2ac9518",
+          "shadow_address": "0x84166d4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b6",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 10,
+          "target_id": "0x399",
+          "model_pid": "0x7b7",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b7",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac94e0",
+          "native_shadow_restore": "0x2ac94c0",
+          "shadow_address": "0x84166d8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b7",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 10,
+          "target_id": "0x399",
+          "model_pid": "0x7b7",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b7",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac94e0",
+          "native_shadow_restore": "0x2ac94c0",
+          "shadow_address": "0x84166d8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b7",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 11,
+          "target_id": "0x39a",
+          "model_pid": "0x7b8",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b8",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9488",
+          "native_shadow_restore": "0x2ac9468",
+          "shadow_address": "0x84166dc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b8",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "still",
+          "slot": 11,
+          "target_id": "0x39a",
+          "model_pid": "0x7b8",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b8",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9488",
+          "native_shadow_restore": "0x2ac9468",
+          "shadow_address": "0x84166dc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b8",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 0,
+          "target_id": "0x39b",
+          "model_pid": "0x7b9",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7b9",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9310",
+          "native_shadow_restore": "0x2ac92f0",
+          "shadow_address": "0x84167a0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b9",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 0,
+          "target_id": "0x39b",
+          "model_pid": "0x7b9",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7b9",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9310",
+          "native_shadow_restore": "0x2ac92f0",
+          "shadow_address": "0x84167a0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7b9",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 1,
+          "target_id": "0x39c",
+          "model_pid": "0x7ba",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7ba",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac92bc",
+          "native_shadow_restore": "0x2ac929c",
+          "shadow_address": "0x84167a4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ba",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 1,
+          "target_id": "0x39c",
+          "model_pid": "0x7ba",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7ba",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac92bc",
+          "native_shadow_restore": "0x2ac929c",
+          "shadow_address": "0x84167a4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7ba",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 2,
+          "target_id": "0x39d",
+          "model_pid": "0x7bb",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7bb",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9264",
+          "native_shadow_restore": "0x2ac9244",
+          "shadow_address": "0x84167a8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bb",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 2,
+          "target_id": "0x39d",
+          "model_pid": "0x7bb",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7bb",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9264",
+          "native_shadow_restore": "0x2ac9244",
+          "shadow_address": "0x84167a8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bb",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 3,
+          "target_id": "0x39e",
+          "model_pid": "0x7bc",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7bc",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac920c",
+          "native_shadow_restore": "0x2ac91ec",
+          "shadow_address": "0x84167ac",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bc",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 3,
+          "target_id": "0x39e",
+          "model_pid": "0x7bc",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7bc",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac920c",
+          "native_shadow_restore": "0x2ac91ec",
+          "shadow_address": "0x84167ac",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bc",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 4,
+          "target_id": "0x39f",
+          "model_pid": "0x7bd",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7bd",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac91b4",
+          "native_shadow_restore": "0x2ac9194",
+          "shadow_address": "0x84167b0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bd",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 4,
+          "target_id": "0x39f",
+          "model_pid": "0x7bd",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7bd",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac91b4",
+          "native_shadow_restore": "0x2ac9194",
+          "shadow_address": "0x84167b0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bd",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 5,
+          "target_id": "0x3a0",
+          "model_pid": "0x7be",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7be",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac915c",
+          "native_shadow_restore": "0x2ac913c",
+          "shadow_address": "0x84167b4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7be",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 5,
+          "target_id": "0x3a0",
+          "model_pid": "0x7be",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7be",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac915c",
+          "native_shadow_restore": "0x2ac913c",
+          "shadow_address": "0x84167b4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7be",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 6,
+          "target_id": "0x3a1",
+          "model_pid": "0x7bf",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7bf",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9104",
+          "native_shadow_restore": "0x2ac90e4",
+          "shadow_address": "0x84167b8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bf",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 6,
+          "target_id": "0x3a1",
+          "model_pid": "0x7bf",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7bf",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9104",
+          "native_shadow_restore": "0x2ac90e4",
+          "shadow_address": "0x84167b8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7bf",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 7,
+          "target_id": "0x3a2",
+          "model_pid": "0x7c0",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7c0",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac90ac",
+          "native_shadow_restore": "0x2ac908c",
+          "shadow_address": "0x84167bc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c0",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 7,
+          "target_id": "0x3a2",
+          "model_pid": "0x7c0",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7c0",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac90ac",
+          "native_shadow_restore": "0x2ac908c",
+          "shadow_address": "0x84167bc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c0",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 8,
+          "target_id": "0x3a3",
+          "model_pid": "0x7c1",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7c1",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9054",
+          "native_shadow_restore": "0x2ac9034",
+          "shadow_address": "0x84167c0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c1",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 8,
+          "target_id": "0x3a3",
+          "model_pid": "0x7c1",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7c1",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac9054",
+          "native_shadow_restore": "0x2ac9034",
+          "shadow_address": "0x84167c0",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c1",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 9,
+          "target_id": "0x3a4",
+          "model_pid": "0x7c2",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7c2",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8ffc",
+          "native_shadow_restore": "0x2ac8fdc",
+          "shadow_address": "0x84167c4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c2",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 9,
+          "target_id": "0x3a4",
+          "model_pid": "0x7c2",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7c2",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8ffc",
+          "native_shadow_restore": "0x2ac8fdc",
+          "shadow_address": "0x84167c4",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c2",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 10,
+          "target_id": "0x3a5",
+          "model_pid": "0x7c3",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7c3",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8fa4",
+          "native_shadow_restore": "0x2ac8f84",
+          "shadow_address": "0x84167c8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c3",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 10,
+          "target_id": "0x3a5",
+          "model_pid": "0x7c3",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7c3",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8fa4",
+          "native_shadow_restore": "0x2ac8f84",
+          "shadow_address": "0x84167c8",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c3",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 11,
+          "target_id": "0x3a6",
+          "model_pid": "0x7c4",
+          "function_id": "0x635",
+          "default_target_present": false,
+          "notification_pids": [
+            "0x7c4",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8f4c",
+          "native_shadow_restore": "0x2ac8f2c",
+          "shadow_address": "0x84167cc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c4",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "kind": "movie",
+          "slot": 11,
+          "target_id": "0x3a6",
+          "model_pid": "0x7c4",
+          "function_id": "0x635",
+          "default_target_present": true,
+          "notification_pids": [
+            "0x7c4",
+            "0x389"
+          ],
+          "native_shadow_save": "0x2ac8f4c",
+          "native_shadow_restore": "0x2ac8f2c",
+          "shadow_address": "0x84167cc",
+          "first_screen_reader_mid": "0x635",
+          "other_slots_unchanged": true,
+          "service_copies": [
+            {
+              "pid": "0x7c4",
+              "size": 4
+            },
+            {
+              "pid": "0x389",
+              "size": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "service_fixtures": [
+    "2e7d208/2e7cee4 and 2542a30/2542a40: lock/context services return without host OS work.",
+    "3694f64: per-property logging/copy service performs only its declared byte copy.",
+    "252d80c: capture property notification PID; its observer/container/backend dispatch is not run.",
+    "269700c: external update/refresh service returns; its observers are not run.",
+    "Registration manager virtual slot +0x20 is captured as a pop; native 21e2fb0 dispatch executes."
+  ],
+  "limits": [
+    "FunctionID 635 is selected by environment setup; the actual handler selects its target slot through the original switch table.",
+    "Native shadow-copy helpers establish model-to-backup-shadow preservation of all 24 Fn slots. Physical BKID commit, eMMC, reboot and cold-start reload are not executed.",
+    "The real Fn first-screen reader reobtains MID 635 after native shadow restore; UI activation, rendering and private-page return are covered by the separate activation replay."
+  ]
+}

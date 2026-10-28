@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "AP_sha256": "65bd99095f626f990890156c0e536d56394c75313452caa451322e1148c1faec",
+  "native_selector_cases": 24,
+  "native_resource_cases": 48,
+  "independent_record_payload_rechecks": 48,
+  "original_image_files": 6,
+  "help_string_negative": true,
+  "final_434_private_forwarding_out_of_scope": true
+}

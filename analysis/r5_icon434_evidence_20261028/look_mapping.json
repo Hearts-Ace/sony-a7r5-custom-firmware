@@ -1,0 +1,158 @@
+[
+  {
+    "value": 0,
+    "row": "0x84c",
+    "icon": "0x2000713",
+    "label_resource": "0x21c6e0d",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20de8",
+      "text": "ST(Standard)"
+    },
+    "short_name": "ST"
+  },
+  {
+    "value": 1,
+    "row": "0x84d",
+    "icon": "0x2000719",
+    "label_resource": "0x21c6e10",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20e50",
+      "text": "PT(Portrait)"
+    },
+    "short_name": "PT"
+  },
+  {
+    "value": 2,
+    "row": "0x84e",
+    "icon": "0x2000715",
+    "label_resource": "0x21c6e14",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20e9c",
+      "text": "NT(Neutral)"
+    },
+    "short_name": "NT"
+  },
+  {
+    "value": 3,
+    "row": "0x84f",
+    "icon": "0x2000714",
+    "label_resource": "0x21c6e19",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20fd0",
+      "text": "VV(Vivid)"
+    },
+    "short_name": "VV"
+  },
+  {
+    "value": 4,
+    "row": "0x850",
+    "icon": "0x2002261",
+    "label_resource": "0x21c6e0e",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20dfc",
+      "text": "VV2(Vivid 2)"
+    },
+    "short_name": "VV2"
+  },
+  {
+    "value": 5,
+    "row": "0x851",
+    "icon": "0x2002262",
+    "label_resource": "0x21c6e0c",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20dd8",
+      "text": "FL(Film)"
+    },
+    "short_name": "FL"
+  },
+  {
+    "value": 17,
+    "row": "0x852",
+    "icon": "0x2004aaf",
+    "label_resource": "0x21c6e0b",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20dc8",
+      "text": "FL2(Film 2)"
+    },
+    "short_name": "FL2"
+  },
+  {
+    "value": 18,
+    "row": "0x853",
+    "icon": "0x2004ac7",
+    "label_resource": "0x21c6e0a",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20db8",
+      "text": "FL3(Film 3)"
+    },
+    "short_name": "FL3"
+  },
+  {
+    "value": 6,
+    "row": "0x854",
+    "icon": "0x2002263",
+    "label_resource": "0x21c6e11",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20e64",
+      "text": "IN(Instant)"
+    },
+    "short_name": "IN"
+  },
+  {
+    "value": 7,
+    "row": "0x855",
+    "icon": "0x2002260",
+    "label_resource": "0x21c6e12",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20e74",
+      "text": "SH(Soft Highkey)"
+    },
+    "short_name": "SH"
+  },
+  {
+    "value": 8,
+    "row": "0x856",
+    "icon": "0x200071e",
+    "label_resource": "0x21c6e15",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20eac",
+      "text": "BW(Black & White)"
+    },
+    "short_name": "BW"
+  },
+  {
+    "value": 9,
+    "row": "0x857",
+    "icon": "0x200071f",
+    "label_resource": "0x21c6e13",
+    "source": {
+      "file": "unpacked/r5/usr_complete/share/app/string_english_f.uxc",
+      "sha256": "59968705ec43702294fdce83b6c04486d3878b482d4553a7f59cdd899ef89704",
+      "offset": "0x20e8c",
+      "text": "SE(Sepia)"
+    },
+    "short_name": "SE"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "source": "analysis/r5_custom_menu432_wheel_20261028/package432.py",
+    "source_sha256": "02c37cd87eedc3461b12f7e8ee02f755fe69abc505eaf95db0d2f057071e66da",
+    "target": "analysis/r5_firmware433_20261028/package433.py",
+    "initial_sha256": "c7c14e63ad147f7d11d37baa03412b73b0194452b3055860a121e747342841e7"
+  },
+  {
+    "source": "analysis/r5_custom_menu432_wheel_20261028/release_gate432.py",
+    "source_sha256": "b0945f6556d880650a68555d5af5cd0fefded86f8c0f560e92a93efddcd83120",
+    "target": "analysis/r5_firmware433_20261028/release_gate433.py",
+    "initial_sha256": "6e613a4a625abd5150b0466655d26972e600899ba710fb4017f26dc9c0dadbc0"
+  },
+  {
+    "source": "analysis/r5_custom_menu432_wheel_20261028/verify_delivery432.py",
+    "source_sha256": "89c71c118c081f1ec166ea7e370d2c422198f92fb879b551cc60486b08d07dab",
+    "target": "analysis/r5_firmware433_20261028/verify_delivery433.py",
+    "initial_sha256": "f23337fec8438df5bd00f5b174da7191f08dcda78af700d44f65e015b72af490"
+  },
+  {
+    "source": "analysis/r5_custom_menu432_wheel_20261028/run_offline432.py",
+    "source_sha256": "a9e6e7f9dd9a3a5d9ba9251d4b25b2bbf6a96814c33453d4a85f87df30bad436",
+    "target": "analysis/r5_firmware433_20261028/run_offline433.py",
+    "initial_sha256": "8a0f699df989df4919498ef8cee00da8b106c1c849ff4bfee83032b8acb7d2cf"
+  },
+  {
+    "source": "analysis/r5_custom_menu432_wheel_20261028/finalize432.py",
+    "source_sha256": "fa0ba0c0ec94d24b2e2fd0c28ea3975301a6ef51f86a859276825a55a17cacab",
+    "target": "analysis/r5_firmware433_20261028/finalize433.py",
+    "initial_sha256": "6e3ab9f6e982896f0227401fb9a7e118fb4064bf23c6770ec9a201c6da72c16c"
+  }
+]

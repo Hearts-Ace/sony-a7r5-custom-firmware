@@ -1,0 +1,307 @@
+{
+  "schema": "r5-fn433-final-native-evidence/1",
+  "passed": true,
+  "AP_sha256": "65bd99095f626f990890156c0e536d56394c75313452caa451322e1148c1faec",
+  "checks": {
+    "registration_candidate": {
+      "passed": true,
+      "evidence": [
+        "analysis/r5_firmware433_20261028/fn/fn433_candidates.json",
+        "analysis/r5_firmware433_20261028/delta433_verified.json"
+      ],
+      "native_executed": [
+        "1bc8c58 generic dispatcher; 1bdd6f8 native Fn builder; 1bd8d9c mode gate; 1bd912c private descriptor lookup: 156 validity + 20 builder cases"
+      ],
+      "fixtures": [
+        "Other native menus' model/product availability and current camera shooting mode are explicit environment fixtures.",
+        "Still/movie builder does not consume the playback tab-order hash; its ctor/dtor are fixtures."
+      ],
+      "limits": [
+        "Physical Fn customization LCD and shooting mode timing remain untested."
+      ]
+    },
+    "native_registration_setter": {
+      "passed": true,
+      "evidence": [
+        "analysis/r5_firmware433_20261028/fn/fn433_save_roundtrip.json"
+      ],
+      "native_executed": [
+        "21e45c8 complete native save handler and original target switch; 21e40f0/21e41dc setters; 21e40bc/21e41a8 notification destructors: 96 cases"
+      ],
+      "fixtures": [
+        "2e7d208/2e7cee4 and 2542a30/2542a40: lock/context services return without host OS work.",
+        "3694f64: per-property logging/copy service performs only its declared byte copy.",
+        "252d80c: capture property notification PID; its observer/container/backend dispatch is not run.",
+        "269700c: external update/refresh service returns; its observers are not run.",
+        "Registration manager virtual slot +0x20 is captured as a pop; native 21e2fb0 dispatch executes."
+      ],
+      "limits": [
+        "Property observer/backend and physical nonvolatile commit are fixtures."
+      ]
+    },
+    "saved_slot_roundtrip": {
+      "passed": true,
+      "evidence": [
+        "analysis/r5_firmware433_20261028/fn/fn433_save_roundtrip.json"
+      ],
+      "native_executed": [
+        "All 24 native per-slot shadow save/restore helpers and 216eb9c first-screen reader: 96 roundtrips; all values restore MID635 and unrelated slots stay intact"
+      ],
+      "fixtures": [
+        "2e7d208/2e7cee4 and 2542a30/2542a40: lock/context services return without host OS work.",
+        "3694f64: per-property logging/copy service performs only its declared byte copy.",
+        "252d80c: capture property notification PID; its observer/container/backend dispatch is not run.",
+        "269700c: external update/refresh service returns; its observers are not run.",
+        "Registration manager virtual slot +0x20 is captured as a pop; native 21e2fb0 dispatch executes."
+      ],
+      "limits": [
+        "RAM backup shadow is verified; physical BKID commit, eMMC and cold boot are not executed."
+      ]
+    },
+    "still_movie_activation": {
+      "passed": true,
+      "evidence": [
+        "analysis/r5_firmware433_20261028/fn_activation/fn433_activation.json"
+      ],
+      "native_executed": [
+        "216eb9c reads all 12 still and 12 movie slots at two PIE bases; 1a5de30 Enter dispatcher and 216f2d8 run: 48 cases"
+      ],
+      "fixtures": [
+        "Fn current selection is set through genuine PID3B2 storage after the real slot reader; focus navigation and physical button events are outside this replay.",
+        "Original menu/row registries are balanced-tree fixtures retaining all immutable pairs and initialized private descriptors; OS locks/logs/validation, memcpy/memset and selected-filter service=0 are explicit fixtures."
+      ],
+      "limits": [
+        "Focused current selection is copied to genuine PID3B2 after reading the slot; focus navigation/button hardware is outside this replay."
+      ]
+    },
+    "fn_invocation_enters_private_page": {
+      "passed": true,
+      "evidence": [
+        "analysis/r5_firmware433_20261028/fn_activation/fn433_activation.json"
+      ],
+      "native_executed": [
+        "1a5de30 ->216f2d8 ->1bd70d8/1bdc3d0 ->1bd5780/1bd59f0 ->216ea14 ->1d15b50/1d15cfc queues C2/D9; compiled private controller factory is selected"
+      ],
+      "fixtures": [
+        "Original menu/row registries are balanced-tree fixtures retaining all immutable pairs and initialized private descriptors; OS locks/logs/validation, memcpy/memset and selected-filter service=0 are explicit fixtures.",
+        "Private controller runs its compiled reserved-object factory and close dispatcher; original ctor body is an object fixture. Native committed-name lookup and manager close request execute; lower stack restoration is a separate replay."
+      ],
+      "limits": [
+        "Native queue write and compiled factory dispatch are exercised separately; actual UI event-loop dispatch and original constructor body are not executed."
+      ]
+    },
+    "fn_name_bridge": {
+      "passed": true,
+      "evidence": [
+        "analysis/r5_firmware433_20261028/fn/fn433_registration_labels.json",
+        "analysis/r5_firmware433_20261028/fn_activation/fn433_activation.json",
+        "analysis/r5_firmware433_20261028/fn_activation/fn433_stack_restore.json"
+      ],
+      "native_executed": [
+        "Fn generic candidate dispatcher and builder",
+        "1bc69a0 current candidate column and descriptor label resolution, then 21e77c0 complete registration presenter row filling",
+        "185b9d8..185ba40 actual type6 label-to-view_string model movement",
+        "1885b20..1885b3c native view_string resource path and exact existing private name bridge",
+        "2170734 Fn first-screen title producer and existing resource bridge; same-VM restored presenter title projection after native pop"
+      ],
+      "fixtures": [
+        "Candidate position and view map are fixtures; the candidate dataset and column context execute native builders.",
+        "Selection-location query 1bd6b10 returns the first column; it does not replace a title lookup.",
+        "List geometry/animation and other widgets are not executed in the bounded type6 update window.",
+        "A fresh child string model has no borrowed char pointer; native renderer uses its resource branch.",
+        "Camera shoot/profile flags 1800924/180093c return zero; FnVM fixtures also apply.",
+        "Other candidate items' runtime-dependent titles are fixtures; private 635 and original Creative Look 1e6 execute the real title resolver.",
+        "Lock/context services 2e7d208/2e7cee4 are fixtures.",
+        "TextSprite resource/UTF-8 entry points are captured; no rasterizer or framebuffer executes.",
+        "Normal menu/common list producers and native normal/Fn icon getters execute; actual Fn title/tile producers and tile renderer/native sprite writer execute. Map objects, view-param binding copy, sprite storage/submission and adjacent value/highlight methods are fixtures; no GPU or physical LCD is executed.",
+        "Fn title projection suppresses its independent tile-refresh calls21704ac/21706d0, then actual21705a8 tile population is replayed separately. After native stack restore in fn433_stack_restore.json, native projection is replayed against reconstructed presenter storage; the actual factory/UI event loop is not run."
+      ],
+      "limits": [
+        "The Fn registration list is verified separately from the Fn first-screen selected title.",
+        "Native label propagation and actual UTF-8 dispatch do not establish physical glyphs, truncation, layout or timing.",
+        "Physical LCD glyphs, truncation and GUI timing remain untested."
+      ]
+    },
+    "native_return_path": {
+      "passed": true,
+      "evidence": [
+        "analysis/r5_firmware433_20261028/fn_activation/fn433_activation.json",
+        "analysis/r5_firmware433_20261028/fn_activation/fn433_stack_restore.json"
+      ],
+      "native_executed": [
+        "Compiled private close dispatcher ->1bd55fc committed-value lookup ->1d15798 close request; 1ec5304/1ec51f4/1ec557c native push/pop restores C2, 6 lower-stack cases; restored presenter pointer then executes native title/tile projection in same VM"
+      ],
+      "fixtures": [
+        "Private controller runs its compiled reserved-object factory and close dispatcher; original ctor body is an object fixture. Native committed-name lookup and manager close request execute; lower stack restoration is a separate replay.",
+        "Objects, initial deque, factories, destruction, orientation and open/close notifications are synthetic fixtures. Current-ID store represents native caller1ec6604.",
+        "Native C2 presenter reconstruction is a factory fixture; after real native pop installs its pointer, actual Fn title/tile projection and renderer/sprite resource writer execute in the same VM against that pointer. View-map/sprite storage and adjacent value/highlight rendering remain explicit fixtures."
+      ],
+      "limits": [
+        "This does not execute queued open/close event-loop dispatch, actual display or camera. Real Fn Enter and private close request are separately exercised in fn433_activation.json."
+      ]
+    },
+    "original_creative_look_preserved": {
+      "passed": true,
+      "evidence": [
+        "analysis/r5_firmware433_20261028/fn/fn433_candidates.json",
+        "analysis/r5_firmware433_20261028/delta433_verified.json",
+        "analysis/r5_firmware433_20261028/fn/fn433_registration_labels.json"
+      ],
+      "native_executed": [
+        "Native Fn candidate builder preserves every original item/order/auxiliary word; ID1f2 still maps to MID1e6; real original Creative Look title resolver returns0200a2fd"
+      ],
+      "fixtures": [
+        "Other menus' product availability and runtime-dependent titles are fixtures; original Creative Look and private title resolvers execute."
+      ],
+      "limits": [
+        "No replacement of the original Creative Look menu or automatic Fn assignment is introduced."
+      ]
+    },
+    "fn_icon_reuses_creative_look": {
+      "passed": true,
+      "evidence": [
+        "analysis/r5_firmware433_20261028/fn_activation/fn433_activation.json",
+        "analysis/r5_firmware433_20261028/fn_activation/fn433_stack_restore.json",
+        "analysis/r5_firmware433_20261028/delta433_verified.json"
+      ],
+      "native_executed": [
+        "Private descriptor+0c/+60 and original Creative Look descriptor+0c equal021c6410; native 1bd5630/1bd642c getters; 20d34f8/20d1e54 consumers; 21705a8 Fn tile ->183c85c renderer ->183c138 sprite resource writer"
+      ],
+      "fixtures": [
+        "Normal menu/common list producers and native normal/Fn icon getters execute; actual Fn title/tile producers and tile renderer/native sprite writer execute. Map objects, view-param binding copy, sprite storage/submission and adjacent value/highlight methods are fixtures; no GPU or physical LCD is executed.",
+        "Fn title projection suppresses its independent tile-refresh calls21704ac/21706d0, then actual21705a8 tile population is replayed separately. After native stack restore in fn433_stack_restore.json, native projection is replayed against reconstructed presenter storage; the actual factory/UI event loop is not run.",
+        "Native C2 presenter reconstruction is a factory fixture; after real native pop installs its pointer, actual Fn title/tile projection and renderer/sprite resource writer execute in the same VM against that pointer. View-map/sprite storage and adjacent value/highlight rendering remain explicit fixtures."
+      ],
+      "limits": [
+        "Sprite resource ID/enable bit are verified; physical icon rendering is untested."
+      ]
+    }
+  },
+  "receipts": [
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/fn433_candidates.json",
+      "sha256": "d5ba13caa10afa67365f83489f9882c07d6b6cb556f123937a8aaf0e48c40c37"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/fn433_save_roundtrip.json",
+      "sha256": "4111cab10c2cdebacfbb158752b425580a5f343e3d6cb399a6392f327a304ec9"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/fn433_registration_labels.json",
+      "sha256": "d9eabc310aac402f2f3b08c44fe3faa7010a206d95d1d4c44bb0fb2f4b7459a4"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn_activation/fn433_activation.json",
+      "sha256": "ad6083829b22eb7eb490ed887ebf644bc065845d6abb55bacc4dc7b45b0d2e86"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn_activation/fn433_stack_restore.json",
+      "sha256": "1781ce29e095ecca228d4fefff1109178a078f410e4db0934d85fd4bc5346eb0"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/delta433_verified.json",
+      "sha256": "2805b55407afdf240f86dbceb0f054a05d3e058a6d337028ee85c2053ef88bd8"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/preservation/verification.json",
+      "sha256": "6cd6e3d9a184990527cc24a1aa7104c51f2f330f3cc217bfd44925714fc5d7dd"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/preservation/generated/templates_manifest.json",
+      "sha256": "ec79fa206d201fd1ea8ac77292e74c3b1a376a55479566c7867470a64f27023d"
+    }
+  ],
+  "source_bindings": [
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/patch_fn433.py",
+      "sha256": "2252b95936116b8e18810d5c6e7577fae7d0b3a87f20adc8fc12ebfb1a122a42"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/replay_fn433.py",
+      "sha256": "9e7b49f2d047d724ef29892a7f93b475ed1622054bf7053639717a0cd7eb7f30"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/replay_fn_save433.py",
+      "sha256": "d024ddabcf8c9a30fc193c919f1ba47e609206f52a49059b5d773fb59d074598"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/replay_fn_labels433.py",
+      "sha256": "debf83f1ac15ed626b776152b5475949ad0316e0b2c7b45854ca060f2f9f14b4"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/finalize_fn433.py",
+      "sha256": "05b6f7a49d5a6add69df0637b658ee4c9dffedeb8f74ce89601b949fca2d21d0"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/README.md",
+      "sha256": "119d7616f7aa508b9184127cf20fc089d8957b1f67b9c02c7a34048988763d16"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn/data_patch_plan.json",
+      "sha256": "521019b8d6178dde4c4f1584b924a29df10af6bbd23a0b31caa65deab22af0d1"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn_activation/replay_activation433.py",
+      "sha256": "811c1ed7a28c3f16b7de9ca71e0d9a6d7417e4a8f9a426f5a0d1d64934072e89"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn_activation/replay_stack433.py",
+      "sha256": "6076cf7ca77f57fdcd71e1e2850fa04085a9103bb18ce072427c79258ce3a70c"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn_activation/README.md",
+      "sha256": "04103d5c8a064ec6ef4b9f66e2a0eaa90d93a86d5b0132f65a03bf66091e0f90"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/fn_activation/frozen_manifest.json",
+      "sha256": "1fd730e85616f8c3a799d931232e6833b4ffc6541fdd22dd4efd72a3545340f5"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/replay_main_menu425.py",
+      "sha256": "4796ed885be9666b25b1d1e655cec1d37c4dd2168e2ccbc118f2d3e86ea0abff"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/module_audit.json",
+      "sha256": "9708393e25e84246a6918a7d60427645606fcde200d73aea0d60de92f4f48edb"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/menu_research/r5_filter_menu423.c",
+      "sha256": "bc9c5ca955c2ef7f7c723ae74055d54d9c3bef2d197f7adcbb3d28b4f4adb846"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/menu_research/r5_filter_menu423.h",
+      "sha256": "f24dc35ed16e4b682407eaaf7d8eb59cf7fd9a8731bfd9045d6c7c317a497c47"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/menu_research/r5_filter_renderer423.c",
+      "sha256": "01d0c2034f0930abcff705d1a551ffd0f2279c5ce436a8e4881f8af72ac7690d"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/menu_research/r5_filter_renderer423.S",
+      "sha256": "07072985be98bdc75abd4a8e2ce77dcfc0aa0eea108abc1870831468ad7994e2"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_filter_names423.c",
+      "sha256": "801bde8843b1c8ac35a49bc53f57c337c58dbdd35938c9752d15fcc3aaeeab7d"
+    },
+    {
+      "path": "analysis/r5_custom_filter423_20261023/menu_research/read_menu.py",
+      "sha256": "f573a2c7d4fe6a80269266a22beea7cc9b497769574804435300069dafd2febf"
+    },
+    {
+      "path": "analysis/r5_custom_filter423_20261023/import/module_audit.json",
+      "sha256": "a62d36c5a94b50de5d7d7e669edc7a8b7d9c0fc2bdbb9c7a80558dc34ea9bff8"
+    }
+  ],
+  "manual_assignment_required": true,
+  "default_fn_slots_modified": false,
+  "assignment_path": "Fn菜单设置 → 颜色/色调 → 自定义滤镜",
+  "default_slot_evidence": "AP delta is confined to the candidate table and two icon initializer constants; all other compiled objects match4.32. All12 templates are independently confined to13 color ranges plus BK4 checksums, without personalized settings.",
+  "camera_io": false,
+  "physical_display_tested": false,
+  "cold_boot_tested": false,
+  "limits": [
+    "Host A64 replay establishes the declared native instruction/data paths with named fixtures.",
+    "Camera Fn registration persistence, actual UI timing/fonts/icons, cold boot and photography remain for physical acceptance."
+  ]
+}

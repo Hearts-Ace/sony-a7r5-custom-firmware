@@ -1,0 +1,5518 @@
+{
+  "camera_io": false,
+  "scope": "R6 and stock R5 Standard / ST photo metadata; no video inference",
+  "raw_sources": {
+    "R5": {
+      "path": "/Users/LOCAL_USER/Documents/fl对比/DSC00430.ARW",
+      "sha256": "8aebb1f4fa75ce7aa3e830186d838b41fd13ad9e54781cb28f553ca548b41603",
+      "model": "ILCE-7RM5",
+      "software": "ILCE-7RM5 v4.04",
+      "sr2_offset": 72204288,
+      "sr2_length": 41800,
+      "look_count": 12,
+      "ST_tag_count": 114
+    },
+    "R6": {
+      "path": "/Users/LOCAL_USER/Documents/DG707670.ARW",
+      "sha256": "3167b87fba9301b3dec6822c6c7cd3898b42df2ef6563bc4229989d9f39b3a52",
+      "model": "ILCE-7RM6",
+      "software": "ILCE-7RM6 v1.01",
+      "sr2_offset": 65926,
+      "sr2_length": 42478,
+      "look_count": 12,
+      "ST_tag_count": 114
+    }
+  },
+  "sources": {
+    "r6_raw": {
+      "path": "/Users/LOCAL_USER/Documents/DG707670.ARW",
+      "sha256": "3167b87fba9301b3dec6822c6c7cd3898b42df2ef6563bc4229989d9f39b3a52",
+      "bytes": 99127296
+    },
+    "r5_raw": {
+      "path": "/Users/LOCAL_USER/Documents/fl对比/DSC00430.ARW",
+      "sha256": "8aebb1f4fa75ce7aa3e830186d838b41fd13ad9e54781cb28f553ca548b41603",
+      "bytes": 72246088
+    },
+    "reader": {
+      "path": "/path/to/r5-workspace/R5ColorLab/scripts/sony_arw_metadata.py",
+      "sha256": "e034f6a97e9ee66fc95785f1151adef58083759fc053f0a904a5d57d6c559383",
+      "bytes": 18354
+    },
+    "bk4_reader": {
+      "path": "/path/to/r5-workspace/tools/sony_bk4.py",
+      "sha256": "da9a920d767eeaa8ba8965cc106397e7d1de409fff34c39c73c9debbc631c717",
+      "bytes": 4348
+    },
+    "r5_bk4": {
+      "path": "/path/to/r5-workspace/unpacked/r5/firmware/0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin",
+      "sha256": "a3b036d3e1dbeeb7c6e2fc7f02d41e5fc2731b8ba8165c3ee9927d9b504a876c",
+      "bytes": 2372469
+    },
+    "fx2_bk4": {
+      "path": "/path/to/r5-workspace/unpacked/fx2/firmware/0110_backup/SYSIPSX-DSLR/DOC/CX96900_ALLLANG.bin",
+      "sha256": "fdee302d240ec1534349e6c9a688a12c883c2cbb7be3ffd97376b419592dc331",
+      "bytes": 2509712
+    },
+    "r5_cp": {
+      "path": "/path/to/r5-workspace/unpacked/r5/cp_data/cpapp-b.bin",
+      "sha256": "3269bf62426339791fcfbe8529698cd4accbe6c3d2ea61cd7c368a90ab7ee7c8",
+      "bytes": 17617008
+    },
+    "fx2_cp": {
+      "path": "/path/to/r5-workspace/unpacked/fx2/cp_data/cpapp-b.bin",
+      "sha256": "eba723db657117a36d9593dacf640840aca893c0d6ee5d728de9d1996b8c5e29",
+      "bytes": 19173488
+    },
+    "saved_raw_report": {
+      "path": "/Users/LOCAL_USER/Documents/ChatGPT/ied软件/研究记录/20261016_FX2_M5_R6外观参数对照/完整比较结果.json",
+      "sha256": "3454696bdbed26d82b710ec993a0a032bfb3cadff3b4b501c793c2e4e6a266e7",
+      "bytes": 2735866
+    },
+    "saved_r5_report": {
+      "path": "/path/to/r5-workspace/analysis/r5_fl23_arw10_vs_firmware_20261016/raw_vs_cc1_correspondence.json",
+      "sha256": "1265bcfaf2cbb3b55e8b8ca2830d42369fad9f73038195548ba66082c25e150e",
+      "bytes": 35590
+    },
+    "saved_gamma_report": {
+      "path": "/path/to/r5-workspace/analysis/r5_fl23_arw10_vs_firmware_20261016/matrix_gamma_correspondence.json",
+      "sha256": "ec07bbd0402eed142f8a55dc226abd8fb0da5ed13e5e42b030c2bf810870b047",
+      "bytes": 64164
+    },
+    "saved_header_replay": {
+      "path": "/path/to/r5-workspace/analysis/r5_fl23_common_fields_20261017/audit_results.json",
+      "sha256": "2ed0b0fc964ec2fef4b5f795238e09a5cccae8740bd4f4dfad31ff10b346ced7",
+      "bytes": 11298
+    }
+  },
+  "script_sha256": "f8afe9b7b08098213576f319d387f8a6b5bf42efb06c825bfe65b4e7af429c1d",
+  "validation": {
+    "original_sources_hash_unchanged_after_read": true,
+    "r6_all114_match_historical_report": true,
+    "native_reference_checks": [
+      {
+        "camera": "R5",
+        "bk4_bank_offset": 978944,
+        "bk4_checksum_valid": true,
+        "cc1_property": "0x02A40001",
+        "block13_property": "0x02A4000D",
+        "gamma_id": 0,
+        "slot": 6,
+        "file_offset": "0xcc4a0c",
+        "cc1_24_native_exact": true,
+        "block13_A1_96_native_exact": true,
+        "gamma_128_native_exact": true
+      },
+      {
+        "camera": "FX2",
+        "bk4_bank_offset": 942080,
+        "bk4_checksum_valid": true,
+        "cc1_property": "0x02A40001",
+        "block13_property": "0x02A4000D",
+        "gamma_id": 0,
+        "slot": 6,
+        "file_offset": "0xdac3b8",
+        "cc1_24_native_exact": true,
+        "block13_A1_96_native_exact": true,
+        "gamma_128_native_exact": true
+      }
+    ],
+    "all_inverted_values_forward_match": true,
+    "independent_7800_match": true,
+    "runtime_header_matches_retained_R5_native_replay": true
+  },
+  "cc1": {
+    "r6_R5_delta_encoding_groups_B_A1minusB_A2minusB": [
+      [
+        -207,
+        -269,
+        -184,
+        -51,
+        374,
+        526,
+        563,
+        563
+      ],
+      [
+        16,
+        0,
+        -141,
+        0,
+        13,
+        -40,
+        0,
+        -93
+      ],
+      [
+        -137,
+        10,
+        0,
+        0,
+        2,
+        -185,
+        0,
+        -177
+      ]
+    ],
+    "r5_stock_delta_groups": [
+      [
+        -193,
+        -269,
+        -251,
+        -51,
+        408,
+        554,
+        563,
+        563
+      ],
+      [
+        9,
+        17,
+        -145,
+        0,
+        12,
+        -87,
+        0,
+        -154
+      ],
+      [
+        -60,
+        38,
+        67,
+        0,
+        3,
+        -197,
+        0,
+        -197
+      ]
+    ],
+    "delta_encoding_comparison": {
+      "total": 24,
+      "different": 16,
+      "max_absolute_delta": 77,
+      "delta_r6_minus_r5": [
+        -14,
+        0,
+        67,
+        0,
+        -34,
+        -28,
+        0,
+        0,
+        7,
+        -17,
+        4,
+        0,
+        1,
+        47,
+        0,
+        61,
+        -77,
+        -28,
+        -67,
+        0,
+        -1,
+        12,
+        0,
+        20
+      ]
+    },
+    "r6_absolute_groups_B_A1_A2": [
+      [
+        -207,
+        -269,
+        -184,
+        -51,
+        374,
+        526,
+        563,
+        563
+      ],
+      [
+        -191,
+        -269,
+        -325,
+        -51,
+        387,
+        486,
+        563,
+        470
+      ],
+      [
+        -344,
+        -259,
+        -184,
+        -51,
+        376,
+        341,
+        563,
+        386
+      ]
+    ],
+    "r5_stock_absolute_groups_B_A1_A2": [
+      [
+        -193,
+        -269,
+        -251,
+        -51,
+        408,
+        554,
+        563,
+        563
+      ],
+      [
+        -184,
+        -252,
+        -396,
+        -51,
+        420,
+        467,
+        563,
+        409
+      ],
+      [
+        -253,
+        -231,
+        -184,
+        -51,
+        411,
+        357,
+        563,
+        366
+      ]
+    ],
+    "absolute_comparison": {
+      "total": 24,
+      "different": 15,
+      "max_absolute_delta": 91,
+      "delta_r6_minus_r5": [
+        -14,
+        0,
+        67,
+        0,
+        -34,
+        -28,
+        0,
+        0,
+        -7,
+        -17,
+        71,
+        0,
+        -33,
+        19,
+        0,
+        61,
+        -91,
+        -28,
+        0,
+        0,
+        -35,
+        -16,
+        0,
+        20
+      ]
+    },
+    "R5_property_offset": "0x1250",
+    "coefficient_bytes": 48,
+    "unknown_row_tail_bytes": 16,
+    "limit": "Converted to verified R5 representation; R6 native BK4 layout is not independently available."
+  },
+  "block13": {
+    "r6_A1_slots16x6": [
+      [
+        65,
+        -35,
+        -186,
+        121,
+        -214,
+        -46
+      ],
+      [
+        157,
+        -105,
+        -174,
+        136,
+        -12,
+        -59
+      ],
+      [
+        111,
+        -152,
+        -70,
+        66,
+        153,
+        -137
+      ],
+      [
+        63,
+        -163,
+        18,
+        102,
+        134,
+        -202
+      ],
+      [
+        120,
+        -263,
+        100,
+        -42,
+        -1,
+        -98
+      ],
+      [
+        123,
+        -175,
+        26,
+        -22,
+        -38,
+        112
+      ],
+      [
+        136,
+        -140,
+        48,
+        -41,
+        -22,
+        130
+      ],
+      [
+        108,
+        -189,
+        -48,
+        41,
+        21,
+        118
+      ],
+      [
+        183,
+        -312,
+        -52,
+        74,
+        9,
+        168
+      ],
+      [
+        225,
+        -334,
+        -34,
+        -66,
+        -12,
+        170
+      ],
+      [
+        205,
+        -292,
+        -46,
+        -61,
+        -45,
+        205
+      ],
+      [
+        208,
+        -252,
+        -25,
+        -39,
+        -49,
+        210
+      ],
+      [
+        139,
+        -164,
+        -21,
+        104,
+        -81,
+        125
+      ],
+      [
+        178,
+        -200,
+        -132,
+        165,
+        -168,
+        45
+      ],
+      [
+        160,
+        -53,
+        -118,
+        127,
+        -216,
+        -40
+      ],
+      [
+        61,
+        86,
+        -273,
+        154,
+        -191,
+        7
+      ]
+    ],
+    "r5_stock_A1_slots16x6": [
+      [
+        194,
+        -29,
+        -143,
+        154,
+        -61,
+        56
+      ],
+      [
+        190,
+        -43,
+        -75,
+        154,
+        20,
+        -94
+      ],
+      [
+        158,
+        -64,
+        -73,
+        135,
+        59,
+        -73
+      ],
+      [
+        141,
+        -75,
+        -75,
+        99,
+        101,
+        -101
+      ],
+      [
+        74,
+        -127,
+        2,
+        57,
+        -62,
+        56
+      ],
+      [
+        82,
+        -90,
+        -18,
+        117,
+        -40,
+        174
+      ],
+      [
+        194,
+        -84,
+        31,
+        78,
+        -44,
+        113
+      ],
+      [
+        182,
+        -94,
+        -34,
+        112,
+        -20,
+        140
+      ],
+      [
+        225,
+        -310,
+        -75,
+        32,
+        5,
+        217
+      ],
+      [
+        225,
+        -372,
+        -67,
+        -67,
+        -49,
+        225
+      ],
+      [
+        225,
+        -392,
+        -49,
+        28,
+        -29,
+        225
+      ],
+      [
+        225,
+        -304,
+        -71,
+        70,
+        -59,
+        218
+      ],
+      [
+        225,
+        -188,
+        -136,
+        115,
+        -137,
+        225
+      ],
+      [
+        217,
+        -89,
+        -185,
+        150,
+        -212,
+        225
+      ],
+      [
+        210,
+        22,
+        -210,
+        152,
+        -295,
+        212
+      ],
+      [
+        225,
+        84,
+        -342,
+        154,
+        -173,
+        101
+      ]
+    ],
+    "comparison": {
+      "total": 96,
+      "different": 94,
+      "max_absolute_delta": 252,
+      "delta_r6_minus_r5": [
+        -129,
+        -6,
+        -43,
+        -33,
+        -153,
+        -102,
+        -33,
+        -62,
+        -99,
+        -18,
+        -32,
+        35,
+        -47,
+        -88,
+        3,
+        -69,
+        94,
+        -64,
+        -78,
+        -88,
+        93,
+        3,
+        33,
+        -101,
+        46,
+        -136,
+        98,
+        -99,
+        61,
+        -154,
+        41,
+        -85,
+        44,
+        -139,
+        2,
+        -62,
+        -58,
+        -56,
+        17,
+        -119,
+        22,
+        17,
+        -74,
+        -95,
+        -14,
+        -71,
+        41,
+        -22,
+        -42,
+        -2,
+        23,
+        42,
+        4,
+        -49,
+        0,
+        38,
+        33,
+        1,
+        37,
+        -55,
+        -20,
+        100,
+        3,
+        -89,
+        -16,
+        -20,
+        -17,
+        52,
+        46,
+        -109,
+        10,
+        -8,
+        -86,
+        24,
+        115,
+        -11,
+        56,
+        -100,
+        -39,
+        -111,
+        53,
+        15,
+        44,
+        -180,
+        -50,
+        -75,
+        92,
+        -25,
+        79,
+        -252,
+        -164,
+        2,
+        69,
+        0,
+        -18,
+        -94
+      ]
+    },
+    "R5_property_A1_offset": "0x2A0",
+    "r6_slot0_matrix": [
+      1054,
+      -65,
+      35,
+      186,
+      959,
+      -121,
+      214,
+      46,
+      764
+    ],
+    "r5_slot0_matrix": [
+      1189,
+      -194,
+      29,
+      143,
+      1035,
+      -154,
+      61,
+      -56,
+      1019
+    ],
+    "r6_B": null,
+    "r6_A2": null,
+    "r6_bank_tail192": null,
+    "limit": "Only A1 is uniquely represented; 7800 duplicates A1 slot0, not a second endpoint."
+  },
+  "gamma": {
+    "r6_exact_first128": [
+      0,
+      1049,
+      2097,
+      3146,
+      4195,
+      5243,
+      6292,
+      7341,
+      8390,
+      9438,
+      10487,
+      11536,
+      12584,
+      13633,
+      14674,
+      15690,
+      16682,
+      17651,
+      18600,
+      19530,
+      20443,
+      21339,
+      22220,
+      23086,
+      23938,
+      24778,
+      25604,
+      26419,
+      27222,
+      28015,
+      28796,
+      29568,
+      30329,
+      31081,
+      31824,
+      32557,
+      33282,
+      33998,
+      34706,
+      35406,
+      36098,
+      36782,
+      37459,
+      38128,
+      38790,
+      39445,
+      40093,
+      40734,
+      41369,
+      41996,
+      42618,
+      43233,
+      43842,
+      44445,
+      45042,
+      45633,
+      46218,
+      46797,
+      47371,
+      47939,
+      48502,
+      49059,
+      49611,
+      50158,
+      50700,
+      52816,
+      54855,
+      56821,
+      58717,
+      60548,
+      62315,
+      64022,
+      65672,
+      67267,
+      68809,
+      70302,
+      71746,
+      73144,
+      74498,
+      75810,
+      77081,
+      81791,
+      85969,
+      89692,
+      93021,
+      96010,
+      98704,
+      101138,
+      103346,
+      105355,
+      107186,
+      108861,
+      110397,
+      111808,
+      113107,
+      114306,
+      115414,
+      116441,
+      117394,
+      118279,
+      119104,
+      119873,
+      120591,
+      121262,
+      121891,
+      123034,
+      124043,
+      124938,
+      125735,
+      126448,
+      127087,
+      127661,
+      128180,
+      128649,
+      129074,
+      129461,
+      129813,
+      130135,
+      130429,
+      130699,
+      130946,
+      130946,
+      130946,
+      130946,
+      130946,
+      130946,
+      130946,
+      130946
+    ],
+    "r5_stock_first128": [
+      0,
+      1049,
+      2097,
+      3146,
+      4195,
+      5243,
+      6292,
+      7341,
+      8390,
+      9438,
+      10487,
+      11536,
+      12584,
+      13633,
+      14674,
+      15690,
+      16682,
+      17651,
+      18600,
+      19530,
+      20443,
+      21339,
+      22220,
+      23086,
+      23938,
+      24778,
+      25604,
+      26419,
+      27222,
+      28015,
+      28796,
+      29568,
+      30329,
+      31081,
+      31824,
+      32557,
+      33282,
+      33998,
+      34706,
+      35406,
+      36098,
+      36782,
+      37459,
+      38128,
+      38790,
+      39445,
+      40093,
+      40734,
+      41369,
+      41996,
+      42618,
+      43233,
+      43842,
+      44445,
+      45042,
+      45633,
+      46218,
+      46797,
+      47371,
+      47939,
+      48502,
+      49059,
+      49611,
+      50158,
+      50700,
+      52816,
+      54855,
+      56821,
+      58717,
+      60548,
+      62315,
+      64022,
+      65672,
+      67267,
+      68809,
+      70302,
+      71746,
+      73144,
+      74498,
+      75810,
+      77081,
+      81791,
+      85969,
+      89692,
+      93021,
+      96010,
+      98704,
+      101138,
+      103346,
+      105355,
+      107186,
+      108861,
+      110397,
+      111808,
+      113107,
+      114306,
+      115414,
+      116441,
+      117394,
+      118279,
+      119104,
+      119873,
+      120591,
+      121262,
+      121891,
+      123034,
+      124043,
+      124938,
+      125735,
+      126448,
+      127087,
+      127661,
+      128180,
+      128649,
+      129074,
+      129461,
+      129813,
+      130135,
+      130429,
+      130699,
+      130946,
+      130946,
+      130946,
+      130946,
+      130946,
+      130946,
+      130946,
+      130946
+    ],
+    "comparison": {
+      "total": 128,
+      "different": 0,
+      "max_absolute_delta": 0,
+      "delta_r6_minus_r5": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "r6_point128_of129": null,
+    "r5_native_point128": 130946,
+    "fx2_native_point128": 130946,
+    "r5_and_fx2_full129_equal": true,
+    "limit": "RAW has no 129th point or full ancillary record/pointers; no R6 record reconstruction claimed."
+  },
+  "auxiliary_effective_values": {
+    "R6": {
+      "knee_point": {
+        "canonical_values": [
+          2048
+        ],
+        "input_modulus": 32768,
+        "raw_values": [
+          4096
+        ],
+        "tag": "0x780C"
+      },
+      "knee_slope": {
+        "canonical_values": [
+          928
+        ],
+        "input_modulus": 4096,
+        "raw_values": [
+          14848
+        ],
+        "tag": "0x780D"
+      },
+      "ygain": {
+        "canonical_values": [
+          540,
+          488,
+          468,
+          444,
+          424,
+          404,
+          380,
+          360,
+          336,
+          316
+        ],
+        "input_modulus": 2048,
+        "raw_values": [
+          17280,
+          15616,
+          14976,
+          14208,
+          13568,
+          12928,
+          12160,
+          11520,
+          10752,
+          10112
+        ],
+        "tag": "0x780E"
+      },
+      "limit": "Canonical effective values in normal range. uint16 output wraps: original inputs are known modulo the given modulus; pointer identity/default/override is not recoverable."
+    },
+    "R5_saved_RAW": {
+      "knee_point": {
+        "canonical_values": [
+          2048
+        ],
+        "input_modulus": 32768,
+        "raw_values": [
+          4096
+        ],
+        "tag": "0x780C"
+      },
+      "knee_slope": {
+        "canonical_values": [
+          928
+        ],
+        "input_modulus": 4096,
+        "raw_values": [
+          14848
+        ],
+        "tag": "0x780D"
+      },
+      "ygain": {
+        "canonical_values": [
+          540,
+          488,
+          468,
+          444,
+          424,
+          404,
+          380,
+          360,
+          336,
+          316
+        ],
+        "input_modulus": 2048,
+        "raw_values": [
+          17280,
+          15616,
+          14976,
+          14208,
+          13568,
+          12928,
+          12160,
+          11520,
+          10752,
+          10112
+        ],
+        "tag": "0x780E"
+      },
+      "limit": "Canonical effective values in normal range. uint16 output wraps: original inputs are known modulo the given modulus; pointer identity/default/override is not recoverable."
+    },
+    "equal": true,
+    "r5_native_base_ygain": [
+      512,
+      488,
+      468,
+      444,
+      424,
+      404,
+      380,
+      360,
+      336,
+      316
+    ],
+    "limit": "R5 comparison uses saved RAW effective output; ST override RAM initialization has not been replayed."
+  },
+  "block13_packed_runtime": {
+    "R6": {
+      "axes": [
+        0,
+        64,
+        128,
+        192,
+        256,
+        320,
+        384,
+        448,
+        512,
+        576,
+        640,
+        704,
+        768,
+        832,
+        896,
+        960
+      ],
+      "inverse_interval": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "channel_base": [
+        1024,
+        1024,
+        1024
+      ],
+      "flags": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "controls": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "terminal_control": 0,
+      "full_84_byte_forward_match": true,
+      "limit": "Packed runtime values only; no unique original BK4 header, source branch or discarded high bits."
+    },
+    "R5": {
+      "axes": [
+        0,
+        64,
+        128,
+        192,
+        256,
+        320,
+        384,
+        448,
+        512,
+        576,
+        640,
+        704,
+        768,
+        832,
+        896,
+        960
+      ],
+      "inverse_interval": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "channel_base": [
+        1024,
+        1024,
+        1024
+      ],
+      "flags": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "controls": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "terminal_control": 0,
+      "full_84_byte_forward_match": true,
+      "limit": "Packed runtime values only; no unique original BK4 header, source branch or discarded high bits."
+    },
+    "equal": true
+  },
+  "all114_raw_comparison": {
+    "total": 114,
+    "same": 90,
+    "different": 24,
+    "different_tags": [
+      "0x7312",
+      "0x7313",
+      "0x7800",
+      "0x780F",
+      "0x7842",
+      "0x7844",
+      "0x7845",
+      "0x78C6",
+      "0x78C7",
+      "0x78C8",
+      "0x78C9",
+      "0x78CA",
+      "0x78CB",
+      "0x78CC",
+      "0x78CD",
+      "0x78CE",
+      "0x794C",
+      "0x794D",
+      "0x794E",
+      "0x794F",
+      "0x7950",
+      "0x7951",
+      "0x7952",
+      "0x7953"
+    ],
+    "different_but_shared_by_all_looks_within_each_sample": [
+      "0x7312",
+      "0x7313",
+      "0x78C6",
+      "0x78C7",
+      "0x78C8",
+      "0x78C9",
+      "0x78CA",
+      "0x78CB",
+      "0x78CC",
+      "0x78CD",
+      "0x78CE",
+      "0x794C",
+      "0x794D",
+      "0x794E",
+      "0x794F",
+      "0x7950",
+      "0x7951",
+      "0x7952",
+      "0x7953"
+    ],
+    "rows": [
+      {
+        "tag": "0x7312",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 4,
+          "values": [
+            2589,
+            1024,
+            1024,
+            1745
+          ],
+          "hex": "1d0a00040004d106",
+          "sha256": "b495cfbe1465e26a9b1ce2fb5c47bbb742713bb12fa2c54eafc04222a49521e7",
+          "entry_offset": 72208836,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 4,
+          "values": [
+            2456,
+            1024,
+            1024,
+            1776
+          ],
+          "hex": "980900040004f006",
+          "sha256": "9674eb059045e452762bee7a0f9b3cf63813b02ca75c5d1efd9f1d9d0b0a9bb3",
+          "entry_offset": 71206,
+          "same_across_all_looks_in_sample": true
+        },
+        "interpretation": "WB_RGGBLevelsAuto"
+      },
+      {
+        "tag": "0x7313",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 4,
+          "values": [
+            2617,
+            1024,
+            1024,
+            1822
+          ],
+          "hex": "390a000400041e07",
+          "sha256": "9be2f4ba687d755b8e0929a91783a6ea8400c6548c0ae7ae909878645099d201",
+          "entry_offset": 72208848,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 4,
+          "values": [
+            2292,
+            1024,
+            1024,
+            1913
+          ],
+          "hex": "f408000400047907",
+          "sha256": "b85f9e078ef7155920beec8bb9269049a578f98313a2c20a5fe221f3b0bda7f9",
+          "entry_offset": 71218,
+          "same_across_all_looks_in_sample": true
+        },
+        "interpretation": "WB_RGGBLevels"
+      },
+      {
+        "tag": "0x7314",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 3,
+          "values": [
+            1024,
+            1024,
+            1024
+          ],
+          "hex": "000400040004",
+          "sha256": "74dd4c261e1c9b68f604ddbf9c7c5ee68087847983638d109802f43bf5e3645d",
+          "entry_offset": 72208860,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 3,
+          "values": [
+            1024,
+            1024,
+            1024
+          ],
+          "hex": "000400040004",
+          "sha256": "74dd4c261e1c9b68f604ddbf9c7c5ee68087847983638d109802f43bf5e3645d",
+          "entry_offset": 71230,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7315",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 3,
+          "values": [
+            1024,
+            1024,
+            1024
+          ],
+          "hex": "000400040004",
+          "sha256": "74dd4c261e1c9b68f604ddbf9c7c5ee68087847983638d109802f43bf5e3645d",
+          "entry_offset": 72208872,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 3,
+          "values": [
+            1024,
+            1024,
+            1024
+          ],
+          "hex": "000400040004",
+          "sha256": "74dd4c261e1c9b68f604ddbf9c7c5ee68087847983638d109802f43bf5e3645d",
+          "entry_offset": 71242,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7770",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 2,
+          "count": 16,
+          "values": "Standard",
+          "hex": "5374616e646172640000000000000000",
+          "sha256": "63fd158a072b03b845d37e8d98791450827c212265ed39f046f89d233c5d495c",
+          "entry_offset": 72209808,
+          "same_across_all_looks_in_sample": false
+        },
+        "R6": {
+          "type": 2,
+          "count": 16,
+          "values": "Standard",
+          "hex": "5374616e646172640000000000000000",
+          "sha256": "63fd158a072b03b845d37e8d98791450827c212265ed39f046f89d233c5d495c",
+          "entry_offset": 72178,
+          "same_across_all_looks_in_sample": false
+        }
+      },
+      {
+        "tag": "0x7771",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209820,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72190,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7800",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": true,
+        "R5": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            1189,
+            -194,
+            29,
+            143,
+            1035,
+            -154,
+            61,
+            -56,
+            1019
+          ],
+          "hex": "a5043eff1d008f000b0466ff3d00c8fffb03",
+          "sha256": "50230ec4543a49d4b9a68c0422625eff80abe978db76ab5ba4781840366e0b31",
+          "entry_offset": 72208884,
+          "same_across_all_looks_in_sample": false
+        },
+        "R6": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            1054,
+            -65,
+            35,
+            186,
+            959,
+            -121,
+            214,
+            46,
+            764
+          ],
+          "hex": "1e04bfff2300ba00bf0387ffd6002e00fc02",
+          "sha256": "44330115e10eb04a78dab552970938cde2cb24aa3bc992ec6dee11ea935de294",
+          "entry_offset": 71254,
+          "same_across_all_looks_in_sample": false
+        }
+      },
+      {
+        "tag": "0x7801",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 3,
+          "values": [
+            19,
+            38,
+            7
+          ],
+          "hex": "130026000700",
+          "sha256": "14c700c1281fc78744cd5c4ba8a3cf5660d9e98ea75e2d2810e8f128e1394ee5",
+          "entry_offset": 72208896,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 3,
+          "values": [
+            19,
+            38,
+            7
+          ],
+          "hex": "130026000700",
+          "sha256": "14c700c1281fc78744cd5c4ba8a3cf5660d9e98ea75e2d2810e8f128e1394ee5",
+          "entry_offset": 71266,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7804",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 3,
+          "values": [
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000",
+          "sha256": "b0f66adc83641586656866813fd9dd0b8ebb63796075661ba45d1aa8089e1d44",
+          "entry_offset": 72208908,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 3,
+          "values": [
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000",
+          "sha256": "b0f66adc83641586656866813fd9dd0b8ebb63796075661ba45d1aa8089e1d44",
+          "entry_offset": 71278,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7805",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 9,
+          "count": 128,
+          "values": [
+            0,
+            1024,
+            2048,
+            3072,
+            4096,
+            5120,
+            6144,
+            7168,
+            8192,
+            9216,
+            10240,
+            11264,
+            12288,
+            13312,
+            14336,
+            15360,
+            16384,
+            17408,
+            18432,
+            19456,
+            20480,
+            21504,
+            22528,
+            23552,
+            24576,
+            25600,
+            26624,
+            27648,
+            28672,
+            29696,
+            30720,
+            31744,
+            32768,
+            33792,
+            34816,
+            35840,
+            36864,
+            37888,
+            38912,
+            39936,
+            40960,
+            41984,
+            43008,
+            44032,
+            45056,
+            46080,
+            47104,
+            48128,
+            49152,
+            50176,
+            51200,
+            52224,
+            53248,
+            54272,
+            55296,
+            56320,
+            57344,
+            58368,
+            59392,
+            60416,
+            61440,
+            62464,
+            63488,
+            64512,
+            65536,
+            69632,
+            73728,
+            77824,
+            81920,
+            86016,
+            90112,
+            94208,
+            98304,
+            102400,
+            106496,
+            110592,
+            114688,
+            118784,
+            122880,
+            126976,
+            131072,
+            147456,
+            163840,
+            180224,
+            196608,
+            212992,
+            229376,
+            245760,
+            262144,
+            278528,
+            294912,
+            311296,
+            327680,
+            344064,
+            360448,
+            376832,
+            393216,
+            409600,
+            425984,
+            442368,
+            458752,
+            475136,
+            491520,
+            507904,
+            524288,
+            557056,
+            589824,
+            622592,
+            655360,
+            688128,
+            720896,
+            753664,
+            786432,
+            819200,
+            851968,
+            884736,
+            917504,
+            950272,
+            983040,
+            1015808,
+            1048576,
+            1179648,
+            1310720,
+            1441792,
+            1572864,
+            1703936,
+            1835008,
+            2097120
+          ],
+          "hex": "000000000004000000080000000c0000001000000014000000180000001c0000002000000024000000280000002c0000003000000034000000380000003c0000004000000044000000480000004c0000005000000054000000580000005c0000006000000064000000680000006c0000007000000074000000780000007c0000008000000084000000880000008c0000009000000094000000980000009c000000a0000000a4000000a8000000ac000000b0000000b4000000b8000000bc000000c0000000c4000000c8000000cc000000d0000000d4000000d8000000dc000000e0000000e4000000e8000000ec000000f0000000f4000000f8000000fc00000000010000100100002001000030010000400100005001000060010000700100008001000090010000a0010000b0010000c0010000d0010000e0010000f0010000000200004002000080020000c0020000000300004003000080030000c0030000000400004004000080040000c0040000000500004005000080050000c0050000000600004006000080060000c0060000000700004007000080070000c007000000080000800800000009000080090000000a0000800a0000000b0000800b0000000c0000800c0000000d0000800d0000000e0000800e0000000f0000800f00000010000000120000001400000016000000180000001a0000001c00e0ff1f00",
+          "sha256": "f1eefbfa90e5c0b5322512b83a70a892ef8514ac3c880eda13a12354c2e3c0fa",
+          "entry_offset": 72208932,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 9,
+          "count": 128,
+          "values": [
+            0,
+            1024,
+            2048,
+            3072,
+            4096,
+            5120,
+            6144,
+            7168,
+            8192,
+            9216,
+            10240,
+            11264,
+            12288,
+            13312,
+            14336,
+            15360,
+            16384,
+            17408,
+            18432,
+            19456,
+            20480,
+            21504,
+            22528,
+            23552,
+            24576,
+            25600,
+            26624,
+            27648,
+            28672,
+            29696,
+            30720,
+            31744,
+            32768,
+            33792,
+            34816,
+            35840,
+            36864,
+            37888,
+            38912,
+            39936,
+            40960,
+            41984,
+            43008,
+            44032,
+            45056,
+            46080,
+            47104,
+            48128,
+            49152,
+            50176,
+            51200,
+            52224,
+            53248,
+            54272,
+            55296,
+            56320,
+            57344,
+            58368,
+            59392,
+            60416,
+            61440,
+            62464,
+            63488,
+            64512,
+            65536,
+            69632,
+            73728,
+            77824,
+            81920,
+            86016,
+            90112,
+            94208,
+            98304,
+            102400,
+            106496,
+            110592,
+            114688,
+            118784,
+            122880,
+            126976,
+            131072,
+            147456,
+            163840,
+            180224,
+            196608,
+            212992,
+            229376,
+            245760,
+            262144,
+            278528,
+            294912,
+            311296,
+            327680,
+            344064,
+            360448,
+            376832,
+            393216,
+            409600,
+            425984,
+            442368,
+            458752,
+            475136,
+            491520,
+            507904,
+            524288,
+            557056,
+            589824,
+            622592,
+            655360,
+            688128,
+            720896,
+            753664,
+            786432,
+            819200,
+            851968,
+            884736,
+            917504,
+            950272,
+            983040,
+            1015808,
+            1048576,
+            1179648,
+            1310720,
+            1441792,
+            1572864,
+            1703936,
+            1835008,
+            2097120
+          ],
+          "hex": "000000000004000000080000000c0000001000000014000000180000001c0000002000000024000000280000002c0000003000000034000000380000003c0000004000000044000000480000004c0000005000000054000000580000005c0000006000000064000000680000006c0000007000000074000000780000007c0000008000000084000000880000008c0000009000000094000000980000009c000000a0000000a4000000a8000000ac000000b0000000b4000000b8000000bc000000c0000000c4000000c8000000cc000000d0000000d4000000d8000000dc000000e0000000e4000000e8000000ec000000f0000000f4000000f8000000fc00000000010000100100002001000030010000400100005001000060010000700100008001000090010000a0010000b0010000c0010000d0010000e0010000f0010000000200004002000080020000c0020000000300004003000080030000c0030000000400004004000080040000c0040000000500004005000080050000c0050000000600004006000080060000c0060000000700004007000080070000c007000000080000800800000009000080090000000a0000800a0000000b0000800b0000000c0000800c0000000d0000800d0000000e0000800e0000000f0000800f00000010000000120000001400000016000000180000001a0000001c00e0ff1f00",
+          "sha256": "f1eefbfa90e5c0b5322512b83a70a892ef8514ac3c880eda13a12354c2e3c0fa",
+          "entry_offset": 71302,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7806",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": true,
+        "R5": {
+          "type": 9,
+          "count": 128,
+          "values": [
+            0,
+            2098,
+            4194,
+            6292,
+            8390,
+            10486,
+            12584,
+            14682,
+            16780,
+            18876,
+            20974,
+            23072,
+            25168,
+            27266,
+            29348,
+            31380,
+            33364,
+            35302,
+            37200,
+            39060,
+            40886,
+            42678,
+            44440,
+            46172,
+            47876,
+            49556,
+            51208,
+            52838,
+            54444,
+            56030,
+            57592,
+            59136,
+            60658,
+            62162,
+            63648,
+            65114,
+            66564,
+            67996,
+            69412,
+            70812,
+            72196,
+            73564,
+            74918,
+            76256,
+            77580,
+            78890,
+            80186,
+            81468,
+            82738,
+            83992,
+            85236,
+            86466,
+            87684,
+            88890,
+            90084,
+            91266,
+            92436,
+            93594,
+            94742,
+            95878,
+            97004,
+            98118,
+            99222,
+            100316,
+            101400,
+            105632,
+            109710,
+            113642,
+            117434,
+            121096,
+            124630,
+            128044,
+            131344,
+            134534,
+            137618,
+            140604,
+            143492,
+            146288,
+            148996,
+            151620,
+            154162,
+            163582,
+            171938,
+            179384,
+            186042,
+            192020,
+            197408,
+            202276,
+            206692,
+            210710,
+            214372,
+            217722,
+            220794,
+            223616,
+            226214,
+            228612,
+            230828,
+            232882,
+            234788,
+            236558,
+            238208,
+            239746,
+            241182,
+            242524,
+            243782,
+            246068,
+            248086,
+            249876,
+            251470,
+            252896,
+            254174,
+            255322,
+            256360,
+            257298,
+            258148,
+            258922,
+            259626,
+            260270,
+            260858,
+            261398,
+            261892,
+            261892,
+            261892,
+            261892,
+            261892,
+            261892,
+            261892,
+            261892
+          ],
+          "hex": "00000000320800006210000094180000c6200000f6280000283100005a3900008c410000bc490000ee510000205a000050620000826a0000a4720000947a000054820000e68900005091000094980000b69f0000b6a6000098ad00005cb4000004bb000094c1000008c8000066ce0000acd40000deda0000f8e0000000e70000f2ec0000d2f20000a0f800005afe0000040401009c090100240f01009c140100041a01005c1f0100a6240100e02901000c2f01002a3401003a3901003c3e01003243010018480100f44c0100c2510100845601003a5b0100e45f010082640100146901009a6d01001672010086760100ec7a0100467f010096830100dc870100188c0100a09c01008eac0100eabb0100baca010008d90100d6e601002cf4010010010200860d0200921902003c25020084300200703b02000446020044500200325a0200fe7e0200a29f0200b8bc0200bad6020014ee020020030300241603006427030016370300644503007a5203007a5e030080690300a6730300047d0300ac850300b28d0300249503000e9c030080a2030082a803001eae03005cb3030046b8030034c1030016c9030014d003004ed60300e0db0300dee003005ae5030068e9030012ed030064f003006af303002af60300aef80300fafa030016fd030004ff030004ff030004ff030004ff030004ff030004ff030004ff030004ff0300",
+          "sha256": "07611c5edeb6869dd3f5dd83a75934657290e9db874820af9ca60ee8dc50a449",
+          "entry_offset": 72208944,
+          "same_across_all_looks_in_sample": false
+        },
+        "R6": {
+          "type": 9,
+          "count": 128,
+          "values": [
+            0,
+            2098,
+            4194,
+            6292,
+            8390,
+            10486,
+            12584,
+            14682,
+            16780,
+            18876,
+            20974,
+            23072,
+            25168,
+            27266,
+            29348,
+            31380,
+            33364,
+            35302,
+            37200,
+            39060,
+            40886,
+            42678,
+            44440,
+            46172,
+            47876,
+            49556,
+            51208,
+            52838,
+            54444,
+            56030,
+            57592,
+            59136,
+            60658,
+            62162,
+            63648,
+            65114,
+            66564,
+            67996,
+            69412,
+            70812,
+            72196,
+            73564,
+            74918,
+            76256,
+            77580,
+            78890,
+            80186,
+            81468,
+            82738,
+            83992,
+            85236,
+            86466,
+            87684,
+            88890,
+            90084,
+            91266,
+            92436,
+            93594,
+            94742,
+            95878,
+            97004,
+            98118,
+            99222,
+            100316,
+            101400,
+            105632,
+            109710,
+            113642,
+            117434,
+            121096,
+            124630,
+            128044,
+            131344,
+            134534,
+            137618,
+            140604,
+            143492,
+            146288,
+            148996,
+            151620,
+            154162,
+            163582,
+            171938,
+            179384,
+            186042,
+            192020,
+            197408,
+            202276,
+            206692,
+            210710,
+            214372,
+            217722,
+            220794,
+            223616,
+            226214,
+            228612,
+            230828,
+            232882,
+            234788,
+            236558,
+            238208,
+            239746,
+            241182,
+            242524,
+            243782,
+            246068,
+            248086,
+            249876,
+            251470,
+            252896,
+            254174,
+            255322,
+            256360,
+            257298,
+            258148,
+            258922,
+            259626,
+            260270,
+            260858,
+            261398,
+            261892,
+            261892,
+            261892,
+            261892,
+            261892,
+            261892,
+            261892,
+            261892
+          ],
+          "hex": "00000000320800006210000094180000c6200000f6280000283100005a3900008c410000bc490000ee510000205a000050620000826a0000a4720000947a000054820000e68900005091000094980000b69f0000b6a6000098ad00005cb4000004bb000094c1000008c8000066ce0000acd40000deda0000f8e0000000e70000f2ec0000d2f20000a0f800005afe0000040401009c090100240f01009c140100041a01005c1f0100a6240100e02901000c2f01002a3401003a3901003c3e01003243010018480100f44c0100c2510100845601003a5b0100e45f010082640100146901009a6d01001672010086760100ec7a0100467f010096830100dc870100188c0100a09c01008eac0100eabb0100baca010008d90100d6e601002cf4010010010200860d0200921902003c25020084300200703b02000446020044500200325a0200fe7e0200a29f0200b8bc0200bad6020014ee020020030300241603006427030016370300644503007a5203007a5e030080690300a6730300047d0300ac850300b28d0300249503000e9c030080a2030082a803001eae03005cb3030046b8030034c1030016c9030014d003004ed60300e0db0300dee003005ae5030068e9030012ed030064f003006af303002af60300aef80300fafa030016fd030004ff030004ff030004ff030004ff030004ff030004ff030004ff030004ff0300",
+          "sha256": "07611c5edeb6869dd3f5dd83a75934657290e9db874820af9ca60ee8dc50a449",
+          "entry_offset": 71314,
+          "same_across_all_looks_in_sample": false
+        }
+      },
+      {
+        "tag": "0x7808",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 1,
+          "count": 1,
+          "values": [
+            1
+          ],
+          "hex": "01",
+          "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+          "entry_offset": 72208956,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 1,
+          "count": 1,
+          "values": [
+            1
+          ],
+          "hex": "01",
+          "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+          "entry_offset": 71326,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x780C",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": true,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            4096
+          ],
+          "hex": "0010",
+          "sha256": "0298d122906dcfc10892cb53a73992fc5b9f493ea4c9badb27b791b4127a7fe7",
+          "entry_offset": 72208968,
+          "same_across_all_looks_in_sample": false
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            4096
+          ],
+          "hex": "0010",
+          "sha256": "0298d122906dcfc10892cb53a73992fc5b9f493ea4c9badb27b791b4127a7fe7",
+          "entry_offset": 71338,
+          "same_across_all_looks_in_sample": false
+        }
+      },
+      {
+        "tag": "0x780D",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": true,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            14848
+          ],
+          "hex": "003a",
+          "sha256": "1e3ecb32659377fbd1dfcf173c903f8bd855ad4af0de82a2942b047a50beb9c2",
+          "entry_offset": 72208980,
+          "same_across_all_looks_in_sample": false
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            14848
+          ],
+          "hex": "003a",
+          "sha256": "1e3ecb32659377fbd1dfcf173c903f8bd855ad4af0de82a2942b047a50beb9c2",
+          "entry_offset": 71350,
+          "same_across_all_looks_in_sample": false
+        }
+      },
+      {
+        "tag": "0x780E",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": true,
+        "R5": {
+          "type": 3,
+          "count": 10,
+          "values": [
+            17280,
+            15616,
+            14976,
+            14208,
+            13568,
+            12928,
+            12160,
+            11520,
+            10752,
+            10112
+          ],
+          "hex": "8043003d803a803700358032802f002d002a8027",
+          "sha256": "a154892cda790c5fa1b9b89fb6c0d8a8dc975991c3ed1fbea6fd27f9f473d3eb",
+          "entry_offset": 72208992,
+          "same_across_all_looks_in_sample": false
+        },
+        "R6": {
+          "type": 3,
+          "count": 10,
+          "values": [
+            17280,
+            15616,
+            14976,
+            14208,
+            13568,
+            12928,
+            12160,
+            11520,
+            10752,
+            10112
+          ],
+          "hex": "8043003d803a803700358032802f002d002a8027",
+          "sha256": "a154892cda790c5fa1b9b89fb6c0d8a8dc975991c3ed1fbea6fd27f9f473d3eb",
+          "entry_offset": 71362,
+          "same_across_all_looks_in_sample": false
+        }
+      },
+      {
+        "tag": "0x780F",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": true,
+        "R5": {
+          "type": 7,
+          "count": 276,
+          "values": null,
+          "hex": "400000e700010620c0010c5080021280400318b000001ee0f80208033402780248012801d80208038403840384038403640384038403480354ff8cffd4fe00ff98fe04fe88feb0fe30fa28fb40fbe0f99cfe10fd50015800d4fec4fdd4fedcfeb8ff080078ff7c00f4fed4fee4fe3cff1cfde0fda8fab8fc680268028c011c02d401e400c0013801f4fe8000180170005802cc016802600250000cff9401ec0060ff08ffb0ff50ff3cff140014ff8cffb0fcdcfd4cfd64fb88fee0006cfedcfeb802e0003002c40184036403680384038403840394015003000400040004000400040004000400040004000400040004000400040004000400100010808000108080808080808080808080800000808000000000",
+          "sha256": "9a3811fea413b06b23d0dbd25cdd99b8901b869a475464a124fdcdd48d23f5ab",
+          "entry_offset": 72208920,
+          "same_across_all_looks_in_sample": false
+        },
+        "R6": {
+          "type": 7,
+          "count": 276,
+          "values": null,
+          "hex": "400000e700010620c0010c5080021280400318b000001ee074020401fc00bc01ec01e001b00120028403dc0240033403c8022c02f40080025cfe74ff74fda0fd44fde4fb0cfdd0fdc8fa20fb10fc70fbe0fc70fd58012cff48fd18fd4800e8fe6800900140ffc00078ff30ff9cff48fff0fdacffbcfb28fe2002e40198010801a8ff58ffa4005cfff8fe280164ff0cff9402a0016802fc01d0ffa8fc1802640268fffcff5400a8ffd0ff24003cff4cff60fdbcfe04fda0fc14ff48ffd8fcdcfdc00178fed8010802a802a00248033403b400f4011c0060ff000400040004000400040004000400040004000400040004000400040004000400100010808000108080808080808080808080800000808000000000",
+          "sha256": "cc1e5161e46ab6731675fd1d99e8d654a1d9f3959f4ec9989de19f89fd227bdb",
+          "entry_offset": 71290,
+          "same_across_all_looks_in_sample": false
+        }
+      },
+      {
+        "tag": "0x7842",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": true,
+        "R5": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            -51,
+            -193,
+            -269,
+            -251,
+            1126,
+            816,
+            1108,
+            1126
+          ],
+          "hex": "cdff3ffff3fe05ff6604300354046604",
+          "sha256": "4e2eb172ffd9b98ccb5260858027f4144fe2fd7cc23c74c8b74db08078d45ebe",
+          "entry_offset": 72208716,
+          "same_across_all_looks_in_sample": false
+        },
+        "R6": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            -51,
+            -207,
+            -269,
+            -184,
+            1126,
+            748,
+            1052,
+            1126
+          ],
+          "hex": "cdff31fff3fe48ff6604ec021c046604",
+          "sha256": "54f2260605a783c1d42dcbdb0b914c995c05c0f7b3aab877ab7f22791f499de9",
+          "entry_offset": 71086,
+          "same_across_all_looks_in_sample": false
+        }
+      },
+      {
+        "tag": "0x7843",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "00000000000000000000000000000000",
+          "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb",
+          "entry_offset": 72208728,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "00000000000000000000000000000000",
+          "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb",
+          "entry_offset": 71098,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7844",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": true,
+        "R5": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            0,
+            9,
+            17,
+            -145,
+            -308,
+            24,
+            -174,
+            0
+          ],
+          "hex": "0000090011006fffccfe180052ff0000",
+          "sha256": "2ce47f3fc8d22ea9923f0848787ef5202614125bbcae2f71c4d47c903c43a24d",
+          "entry_offset": 72208740,
+          "same_across_all_looks_in_sample": false
+        },
+        "R6": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            0,
+            16,
+            0,
+            -141,
+            -186,
+            26,
+            -80,
+            0
+          ],
+          "hex": "00001000000073ff46ff1a00b0ff0000",
+          "sha256": "9d340bd75a9a3b575d00555b45522734178ddedd427ff63c370fb5bd13d558a3",
+          "entry_offset": 71110,
+          "same_across_all_looks_in_sample": false
+        }
+      },
+      {
+        "tag": "0x7845",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": true,
+        "R5": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            0,
+            -60,
+            38,
+            67,
+            -394,
+            6,
+            -394,
+            0
+          ],
+          "hex": "0000c4ff2600430076fe060076fe0000",
+          "sha256": "a904572d21caec2bfc8b499646c605a174a64f9c0623ea333d9a85daaaf06c6b",
+          "entry_offset": 72208752,
+          "same_across_all_looks_in_sample": false
+        },
+        "R6": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            0,
+            -137,
+            10,
+            0,
+            -354,
+            4,
+            -370,
+            0
+          ],
+          "hex": "000077ff0a0000009efe04008efe0000",
+          "sha256": "45faadf1038353ed507da8c8c9847c0add4c9b9ed127bc9d8aa5dd3c853d81f5",
+          "entry_offset": 71122,
+          "same_across_all_looks_in_sample": false
+        }
+      },
+      {
+        "tag": "0x7846",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "00000000000000000000000000000000",
+          "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb",
+          "entry_offset": 72208764,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "00000000000000000000000000000000",
+          "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb",
+          "entry_offset": 71134,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7849",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 72209424,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 71794,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x784A",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            1024
+          ],
+          "hex": "0004",
+          "sha256": "4f35212d12f9ad2036492c95f1fe79baf4ec7bd9bef3dffa7579f2293ff546a4",
+          "entry_offset": 72209436,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            1024
+          ],
+          "hex": "0004",
+          "sha256": "4f35212d12f9ad2036492c95f1fe79baf4ec7bd9bef3dffa7579f2293ff546a4",
+          "entry_offset": 71806,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x784B",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            2048
+          ],
+          "hex": "0008",
+          "sha256": "b4c43b50bf245bd727623e3c775a8fcfb8d823d00b57dd65f7f79dd33f126315",
+          "entry_offset": 72209448,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            2048
+          ],
+          "hex": "0008",
+          "sha256": "b4c43b50bf245bd727623e3c775a8fcfb8d823d00b57dd65f7f79dd33f126315",
+          "entry_offset": 71818,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x784C",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 4,
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "0000000000000000",
+          "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+          "entry_offset": 72209460,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 4,
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "0000000000000000",
+          "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+          "entry_offset": 71830,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x784D",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 4,
+          "values": [
+            8160,
+            2720,
+            2560,
+            3424
+          ],
+          "hex": "e01fa00a000a600d",
+          "sha256": "5e423fb287b9ddf2d9df7716d12a7f2004736597da627d0e0e39b40742a55e87",
+          "entry_offset": 72209472,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 4,
+          "values": [
+            8160,
+            2720,
+            2560,
+            3424
+          ],
+          "hex": "e01fa00a000a600d",
+          "sha256": "5e423fb287b9ddf2d9df7716d12a7f2004736597da627d0e0e39b40742a55e87",
+          "entry_offset": 71842,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x784E",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            0,
+            0,
+            -1280,
+            1536,
+            1920,
+            -1600,
+            -2240,
+            -1152
+          ],
+          "hex": "0000000000fb00068007c0f940f780fb",
+          "sha256": "f4f3ccf0c20102e17c9aca2d0842b3f9a956bd76fc2d67a89a8000e105cd581d",
+          "entry_offset": 72209484,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 8,
+          "values": [
+            0,
+            0,
+            -1280,
+            1536,
+            1920,
+            -1600,
+            -2240,
+            -1152
+          ],
+          "hex": "0000000000fb00068007c0f940f780fb",
+          "sha256": "f4f3ccf0c20102e17c9aca2d0842b3f9a956bd76fc2d67a89a8000e105cd581d",
+          "entry_offset": 71854,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x784F",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 2,
+          "values": [
+            5681,
+            33
+          ],
+          "hex": "31162100",
+          "sha256": "f8635c8bd38b61d3adf0c62f2802eb8c7a6082b2c36cb8e64abadb198a2a7bd7",
+          "entry_offset": 72209496,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 2,
+          "values": [
+            5681,
+            33
+          ],
+          "hex": "31162100",
+          "sha256": "f8635c8bd38b61d3adf0c62f2802eb8c7a6082b2c36cb8e64abadb198a2a7bd7",
+          "entry_offset": 71866,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7850",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209508,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71878,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7862",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000000000000000000000000000",
+          "sha256": "60daa3a5f7dbfa200f8c82840ecf5b42640b70f3b7218a4c6bbd67db542e75a4",
+          "entry_offset": 72208776,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000000000000000000000000000",
+          "sha256": "60daa3a5f7dbfa200f8c82840ecf5b42640b70f3b7218a4c6bbd67db542e75a4",
+          "entry_offset": 71146,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7863",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000000000000000000000000000",
+          "sha256": "60daa3a5f7dbfa200f8c82840ecf5b42640b70f3b7218a4c6bbd67db542e75a4",
+          "entry_offset": 72208788,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000000000000000000000000000",
+          "sha256": "60daa3a5f7dbfa200f8c82840ecf5b42640b70f3b7218a4c6bbd67db542e75a4",
+          "entry_offset": 71158,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7864",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000000000000000000000000000",
+          "sha256": "60daa3a5f7dbfa200f8c82840ecf5b42640b70f3b7218a4c6bbd67db542e75a4",
+          "entry_offset": 72208800,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000000000000000000000000000",
+          "sha256": "60daa3a5f7dbfa200f8c82840ecf5b42640b70f3b7218a4c6bbd67db542e75a4",
+          "entry_offset": 71170,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7865",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000000000000000000000000000",
+          "sha256": "60daa3a5f7dbfa200f8c82840ecf5b42640b70f3b7218a4c6bbd67db542e75a4",
+          "entry_offset": 72208812,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000000000000000000000000000",
+          "sha256": "60daa3a5f7dbfa200f8c82840ecf5b42640b70f3b7218a4c6bbd67db542e75a4",
+          "entry_offset": 71182,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7866",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000000000000000000000000000",
+          "sha256": "60daa3a5f7dbfa200f8c82840ecf5b42640b70f3b7218a4c6bbd67db542e75a4",
+          "entry_offset": 72208824,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 9,
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hex": "000000000000000000000000000000000000",
+          "sha256": "60daa3a5f7dbfa200f8c82840ecf5b42640b70f3b7218a4c6bbd67db542e75a4",
+          "entry_offset": 71194,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7870",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            166
+          ],
+          "hex": "a600",
+          "sha256": "39d7194a6d368c09a60c7fc92a3c44ad3a79dc84d0a461d974c5bd0d895fca12",
+          "entry_offset": 72209520,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            166
+          ],
+          "hex": "a600",
+          "sha256": "39d7194a6d368c09a60c7fc92a3c44ad3a79dc84d0a461d974c5bd0d895fca12",
+          "entry_offset": 71890,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7871",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            9600
+          ],
+          "hex": "8025",
+          "sha256": "3d3ef84ce763cef676ef981a4eed784958eed03efe2c7ed50c1f517c60a177d1",
+          "entry_offset": 72209532,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            9600
+          ],
+          "hex": "8025",
+          "sha256": "3d3ef84ce763cef676ef981a4eed784958eed03efe2c7ed50c1f517c60a177d1",
+          "entry_offset": 71902,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x787A",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            25600
+          ],
+          "hex": "0064",
+          "sha256": "d070dc5b8da9aea7dc0f5ad4c29d89965200059c9a0ceca3abd5da2492dcb71d",
+          "entry_offset": 72209544,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            25600
+          ],
+          "hex": "0064",
+          "sha256": "d070dc5b8da9aea7dc0f5ad4c29d89965200059c9a0ceca3abd5da2492dcb71d",
+          "entry_offset": 71914,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x787B",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            32704
+          ],
+          "hex": "c07f",
+          "sha256": "8885df4b050b6fd7c23bc77259f243f1dd81f757254c02fe432f3b1bf66338a5",
+          "entry_offset": 72209556,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            32704
+          ],
+          "hex": "c07f",
+          "sha256": "8885df4b050b6fd7c23bc77259f243f1dd81f757254c02fe432f3b1bf66338a5",
+          "entry_offset": 71926,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x787D",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209568,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71938,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x787E",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 3,
+          "values": [
+            512,
+            112,
+            128
+          ],
+          "hex": "000270008000",
+          "sha256": "e5e419e23a4e5eb7f8be6d2b4fefca464cd6fc423849e668f5089eb4dfc76d63",
+          "entry_offset": 72209580,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 3,
+          "values": [
+            512,
+            112,
+            128
+          ],
+          "hex": "000270008000",
+          "sha256": "e5e419e23a4e5eb7f8be6d2b4fefca464cd6fc423849e668f5089eb4dfc76d63",
+          "entry_offset": 71950,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x787F",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 3,
+          "values": [
+            15360,
+            15360,
+            15360
+          ],
+          "hex": "003c003c003c",
+          "sha256": "d07c8d92e51dcfc08f44da20fca2553a7ea0fd3608f23dd2f9450b3976a59fdf",
+          "entry_offset": 72209592,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 3,
+          "values": [
+            15360,
+            15360,
+            15360
+          ],
+          "hex": "003c003c003c",
+          "sha256": "d07c8d92e51dcfc08f44da20fca2553a7ea0fd3608f23dd2f9450b3976a59fdf",
+          "entry_offset": 71962,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7880",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 72209604,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 71974,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7881",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209616,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71986,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7882",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            7934
+          ],
+          "hex": "fe1e",
+          "sha256": "4fe24fb92f01cb205694ee7743df5bdbfc3a3102ab72d1d3bf94605c8f695c47",
+          "entry_offset": 72209628,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            7934
+          ],
+          "hex": "fe1e",
+          "sha256": "4fe24fb92f01cb205694ee7743df5bdbfc3a3102ab72d1d3bf94605c8f695c47",
+          "entry_offset": 71998,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7883",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            2380
+          ],
+          "hex": "4c09",
+          "sha256": "e5e3fdac8973294714222796923aa4761c0c381a540e2d4a14287713abddd4ec",
+          "entry_offset": 72209640,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            2380
+          ],
+          "hex": "4c09",
+          "sha256": "e5e3fdac8973294714222796923aa4761c0c381a540e2d4a14287713abddd4ec",
+          "entry_offset": 72010,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7884",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            2380
+          ],
+          "hex": "4c09",
+          "sha256": "e5e3fdac8973294714222796923aa4761c0c381a540e2d4a14287713abddd4ec",
+          "entry_offset": 72209652,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            2380
+          ],
+          "hex": "4c09",
+          "sha256": "e5e3fdac8973294714222796923aa4761c0c381a540e2d4a14287713abddd4ec",
+          "entry_offset": 72022,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7885",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            2380
+          ],
+          "hex": "4c09",
+          "sha256": "e5e3fdac8973294714222796923aa4761c0c381a540e2d4a14287713abddd4ec",
+          "entry_offset": 72209664,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            2380
+          ],
+          "hex": "4c09",
+          "sha256": "e5e3fdac8973294714222796923aa4761c0c381a540e2d4a14287713abddd4ec",
+          "entry_offset": 72034,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7886",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            10880
+          ],
+          "hex": "802a",
+          "sha256": "5c4dd93036aed3f394d32fe73439576e531300cf5a8ef2bdbad07442e39ea65a",
+          "entry_offset": 72209676,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            10880
+          ],
+          "hex": "802a",
+          "sha256": "5c4dd93036aed3f394d32fe73439576e531300cf5a8ef2bdbad07442e39ea65a",
+          "entry_offset": 72046,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7887",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            19200
+          ],
+          "hex": "004b",
+          "sha256": "e916f3568f5f422b77334ed032cb53b37f6286b6ddfdf824bfc304c7d14aaa68",
+          "entry_offset": 72209688,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            19200
+          ],
+          "hex": "004b",
+          "sha256": "e916f3568f5f422b77334ed032cb53b37f6286b6ddfdf824bfc304c7d14aaa68",
+          "entry_offset": 72058,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7888",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            20480
+          ],
+          "hex": "0050",
+          "sha256": "99d024a68d4d9728c47928d959ebd3bc621782c9d5fb3a1f7db35c4423fb97e7",
+          "entry_offset": 72209700,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            20480
+          ],
+          "hex": "0050",
+          "sha256": "99d024a68d4d9728c47928d959ebd3bc621782c9d5fb3a1f7db35c4423fb97e7",
+          "entry_offset": 72070,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7889",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            128
+          ],
+          "hex": "8000",
+          "sha256": "8509b81230019d2ad970d970f791dfbdc8caf54f5c594fcd327cef9feed206c1",
+          "entry_offset": 72209712,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            128
+          ],
+          "hex": "8000",
+          "sha256": "8509b81230019d2ad970d970f791dfbdc8caf54f5c594fcd327cef9feed206c1",
+          "entry_offset": 72082,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x788A",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 8,
+          "values": [
+            0,
+            15,
+            31,
+            37,
+            39,
+            40,
+            41,
+            41
+          ],
+          "hex": "00000f001f0025002700280029002900",
+          "sha256": "ae209d1830f177a7d3c279ef5c4e57add0b3f787c2e64721b137e66ab9388307",
+          "entry_offset": 72209724,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 8,
+          "values": [
+            0,
+            15,
+            31,
+            37,
+            39,
+            40,
+            41,
+            41
+          ],
+          "hex": "00000f001f0025002700280029002900",
+          "sha256": "ae209d1830f177a7d3c279ef5c4e57add0b3f787c2e64721b137e66ab9388307",
+          "entry_offset": 72094,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x788B",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 29,
+          "values": [
+            0,
+            12,
+            19,
+            24,
+            27,
+            30,
+            33,
+            35,
+            37,
+            39,
+            41,
+            42,
+            44,
+            45,
+            47,
+            48,
+            50,
+            54,
+            59,
+            62,
+            66,
+            72,
+            78,
+            83,
+            86,
+            86,
+            86,
+            86,
+            86
+          ],
+          "hex": "00000c00130018001b001e00210023002500270029002a002c002d002f003000320036003b003e00420048004e00530056005600560056005600",
+          "sha256": "41a3e0cc7df33c863995b055e814cb252670fee92a22cc4af454eb3d4d696e3b",
+          "entry_offset": 72209736,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 29,
+          "values": [
+            0,
+            12,
+            19,
+            24,
+            27,
+            30,
+            33,
+            35,
+            37,
+            39,
+            41,
+            42,
+            44,
+            45,
+            47,
+            48,
+            50,
+            54,
+            59,
+            62,
+            66,
+            72,
+            78,
+            83,
+            86,
+            86,
+            86,
+            86,
+            86
+          ],
+          "hex": "00000c00130018001b001e00210023002500270029002a002c002d002f003000320036003b003e00420048004e00530056005600560056005600",
+          "sha256": "41a3e0cc7df33c863995b055e814cb252670fee92a22cc4af454eb3d4d696e3b",
+          "entry_offset": 72106,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x788C",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 29,
+          "values": [
+            0,
+            15,
+            20,
+            24,
+            27,
+            29,
+            31,
+            33,
+            35,
+            37,
+            39,
+            40,
+            42,
+            43,
+            44,
+            46,
+            47,
+            51,
+            55,
+            59,
+            62,
+            68,
+            73,
+            78,
+            83,
+            83,
+            83,
+            83,
+            83
+          ],
+          "hex": "00000f00140018001b001d001f00210023002500270028002a002b002c002e002f00330037003b003e00440049004e0053005300530053005300",
+          "sha256": "5ab050bac1ffc71b7d2f486cd2160a0abdacded0244ad0f8824ef0f48126a2e5",
+          "entry_offset": 72209748,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 29,
+          "values": [
+            0,
+            15,
+            20,
+            24,
+            27,
+            29,
+            31,
+            33,
+            35,
+            37,
+            39,
+            40,
+            42,
+            43,
+            44,
+            46,
+            47,
+            51,
+            55,
+            59,
+            62,
+            68,
+            73,
+            78,
+            83,
+            83,
+            83,
+            83,
+            83
+          ],
+          "hex": "00000f00140018001b001d001f00210023002500270028002a002b002c002e002f00330037003b003e00440049004e0053005300530053005300",
+          "sha256": "5ab050bac1ffc71b7d2f486cd2160a0abdacded0244ad0f8824ef0f48126a2e5",
+          "entry_offset": 72118,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x788D",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            9600
+          ],
+          "hex": "8025",
+          "sha256": "3d3ef84ce763cef676ef981a4eed784958eed03efe2c7ed50c1f517c60a177d1",
+          "entry_offset": 72209760,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            9600
+          ],
+          "hex": "8025",
+          "sha256": "3d3ef84ce763cef676ef981a4eed784958eed03efe2c7ed50c1f517c60a177d1",
+          "entry_offset": 72130,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x788E",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            19200
+          ],
+          "hex": "004b",
+          "sha256": "e916f3568f5f422b77334ed032cb53b37f6286b6ddfdf824bfc304c7d14aaa68",
+          "entry_offset": 72209772,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            19200
+          ],
+          "hex": "004b",
+          "sha256": "e916f3568f5f422b77334ed032cb53b37f6286b6ddfdf824bfc304c7d14aaa68",
+          "entry_offset": 72142,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x788F",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            6400
+          ],
+          "hex": "0019",
+          "sha256": "b35d9708f364a8e3b09f1ef3af3f2c36be29f3007e28cca15ab51a5161d276a0",
+          "entry_offset": 72209784,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            6400
+          ],
+          "hex": "0019",
+          "sha256": "b35d9708f364a8e3b09f1ef3af3f2c36be29f3007e28cca15ab51a5161d276a0",
+          "entry_offset": 72154,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7890",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            16320
+          ],
+          "hex": "c03f",
+          "sha256": "a0c1c13894ba37fc4262de301cecff957435587f82ffc8683729588ef0d86339",
+          "entry_offset": 72209796,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            16320
+          ],
+          "hex": "c03f",
+          "sha256": "a0c1c13894ba37fc4262de301cecff957435587f82ffc8683729588ef0d86339",
+          "entry_offset": 72166,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78A0",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1
+          ],
+          "hex": "0100",
+          "sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+          "entry_offset": 72209016,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1
+          ],
+          "hex": "0100",
+          "sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+          "entry_offset": 71386,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78A1",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1
+          ],
+          "hex": "0100",
+          "sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+          "entry_offset": 72209028,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1
+          ],
+          "hex": "0100",
+          "sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+          "entry_offset": 71398,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78B0",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            65535
+          ],
+          "hex": "ffff",
+          "sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+          "entry_offset": 72209004,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            65535
+          ],
+          "hex": "ffff",
+          "sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+          "entry_offset": 71374,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78C0",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 72209040,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 71410,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78C1",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 72209052,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 71422,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78C2",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 72209064,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 71434,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78C3",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 72209076,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 71446,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78C4",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 72209088,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            512
+          ],
+          "hex": "0002",
+          "sha256": "fcf0a6c700dd13e274b6fba8deea8dd9b26e4eedde3495717cac8408c9c5177f",
+          "entry_offset": 71458,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78C5",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209100,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71470,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78C6",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            3072
+          ],
+          "hex": "000c",
+          "sha256": "fe251e4dd034dcf589c84794120c85d6015d65ca7d9a2c2ec73c9ecb5e33d83b",
+          "entry_offset": 72209112,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            2304
+          ],
+          "hex": "0009",
+          "sha256": "c87479cd656e7e3ad6bd8db402e8027df454b2b0c42ff29e093458beb98a23d4",
+          "entry_offset": 71482,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78C7",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            8
+          ],
+          "hex": "0800",
+          "sha256": "e545d395bb3fd971f91bf9a2b6722831df704efae6c1aa9da0989ed0970b77bb",
+          "entry_offset": 72209124,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            102
+          ],
+          "hex": "6600",
+          "sha256": "887a0529fd9d76eb33c0ec808c05daaf32fa9f5e21e4c32224fb4bfaaa0af385",
+          "entry_offset": 71494,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78C8",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            58
+          ],
+          "hex": "3a00",
+          "sha256": "7648eb81c4e9fef7b51879c6fcd6fb4b8863eea0cb2a978c508711dc52c80041",
+          "entry_offset": 72209136,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            371
+          ],
+          "hex": "7301",
+          "sha256": "b191abbb01bc810e9c873fc9753047d7f910ab0513811fdbc06ede61aacf170b",
+          "entry_offset": 71506,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78C9",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            32
+          ],
+          "hex": "2000",
+          "sha256": "869f1dfb999a452f497a4cf7f44db2d6ee661f74a9e7e05251bc1420e50672d4",
+          "entry_offset": 72209148,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            48
+          ],
+          "hex": "3000",
+          "sha256": "e4f60d0aa6d7f3d3b6a6494b1c861b99f649c6f9ec51abaf201b20f297327c95",
+          "entry_offset": 71518,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78CA",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            32
+          ],
+          "hex": "2000",
+          "sha256": "869f1dfb999a452f497a4cf7f44db2d6ee661f74a9e7e05251bc1420e50672d4",
+          "entry_offset": 72209160,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            48
+          ],
+          "hex": "3000",
+          "sha256": "e4f60d0aa6d7f3d3b6a6494b1c861b99f649c6f9ec51abaf201b20f297327c95",
+          "entry_offset": 71530,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78CB",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            32
+          ],
+          "hex": "2000",
+          "sha256": "869f1dfb999a452f497a4cf7f44db2d6ee661f74a9e7e05251bc1420e50672d4",
+          "entry_offset": 72209172,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            48
+          ],
+          "hex": "3000",
+          "sha256": "e4f60d0aa6d7f3d3b6a6494b1c861b99f649c6f9ec51abaf201b20f297327c95",
+          "entry_offset": 71542,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78CC",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            299
+          ],
+          "hex": "2b01",
+          "sha256": "26eab3ff86cd372176af888295f9a99aa62e92ae233a741c5e26aeed365ad5b3",
+          "entry_offset": 72209184,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            160
+          ],
+          "hex": "a000",
+          "sha256": "20b64b56f584ec6c5184846cbeb974347b5e4c25cb49628ce1426fd0d2128ae7",
+          "entry_offset": 71554,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78CD",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            299
+          ],
+          "hex": "2b01",
+          "sha256": "26eab3ff86cd372176af888295f9a99aa62e92ae233a741c5e26aeed365ad5b3",
+          "entry_offset": 72209196,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            160
+          ],
+          "hex": "a000",
+          "sha256": "20b64b56f584ec6c5184846cbeb974347b5e4c25cb49628ce1426fd0d2128ae7",
+          "entry_offset": 71566,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78CE",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            299
+          ],
+          "hex": "2b01",
+          "sha256": "26eab3ff86cd372176af888295f9a99aa62e92ae233a741c5e26aeed365ad5b3",
+          "entry_offset": 72209208,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            160
+          ],
+          "hex": "a000",
+          "sha256": "20b64b56f584ec6c5184846cbeb974347b5e4c25cb49628ce1426fd0d2128ae7",
+          "entry_offset": 71578,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78CF",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1023
+          ],
+          "hex": "ff03",
+          "sha256": "5b9f13720f7a45875e7095b41e43a15ec699bb298bc7b811495911d683a1b1f0",
+          "entry_offset": 72209220,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1023
+          ],
+          "hex": "ff03",
+          "sha256": "5b9f13720f7a45875e7095b41e43a15ec699bb298bc7b811495911d683a1b1f0",
+          "entry_offset": 71590,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78D0",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1023
+          ],
+          "hex": "ff03",
+          "sha256": "5b9f13720f7a45875e7095b41e43a15ec699bb298bc7b811495911d683a1b1f0",
+          "entry_offset": 72209232,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1023
+          ],
+          "hex": "ff03",
+          "sha256": "5b9f13720f7a45875e7095b41e43a15ec699bb298bc7b811495911d683a1b1f0",
+          "entry_offset": 71602,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78D1",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1023
+          ],
+          "hex": "ff03",
+          "sha256": "5b9f13720f7a45875e7095b41e43a15ec699bb298bc7b811495911d683a1b1f0",
+          "entry_offset": 72209244,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1023
+          ],
+          "hex": "ff03",
+          "sha256": "5b9f13720f7a45875e7095b41e43a15ec699bb298bc7b811495911d683a1b1f0",
+          "entry_offset": 71614,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78D2",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209256,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71626,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78D3",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209268,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71638,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78D4",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209280,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71650,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78D5",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209292,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71662,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78D6",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209304,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71674,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78D7",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209316,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71686,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78D8",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209328,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71698,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78D9",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209340,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71710,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78DA",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209352,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71722,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78DB",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209364,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71734,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78DC",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209376,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71746,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78DD",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209388,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71758,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78DE",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209400,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71770,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x78DF",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209412,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 71782,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x794A",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1
+          ],
+          "hex": "0100",
+          "sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+          "entry_offset": 72209832,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1
+          ],
+          "hex": "0100",
+          "sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+          "entry_offset": 72202,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x794B",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            8192
+          ],
+          "hex": "0020",
+          "sha256": "474f2af47544e9c7ce4338cabd43c5ca1c26432b7300ce387406157ea433891f",
+          "entry_offset": 72209844,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            8192
+          ],
+          "hex": "0020",
+          "sha256": "474f2af47544e9c7ce4338cabd43c5ca1c26432b7300ce387406157ea433891f",
+          "entry_offset": 72214,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x794C",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            -2
+          ],
+          "hex": "feff",
+          "sha256": "f197692810d457e297fce9c5653b02581ff99a50852370f29d7e5fe47d9d37e6",
+          "entry_offset": 72209856,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            -7
+          ],
+          "hex": "f9ff",
+          "sha256": "2656c615fa7cec4a439a7f880fbdc496b59e70882a07be5d3da6e74da1fe5631",
+          "entry_offset": 72226,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x794D",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            831
+          ],
+          "hex": "3f03",
+          "sha256": "f1307c82389886935b45c5f2b6d298d19f99017393fb603edc3a79c59d422252",
+          "entry_offset": 72209868,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            2222
+          ],
+          "hex": "ae08",
+          "sha256": "7070e7b15b603c0cdaae3b757d105cefb30dca229852a1b8db53c23add151c5d",
+          "entry_offset": 72238,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x794E",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209880,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            -1
+          ],
+          "hex": "ffff",
+          "sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+          "entry_offset": 72250,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x794F",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            102
+          ],
+          "hex": "6600",
+          "sha256": "887a0529fd9d76eb33c0ec808c05daaf32fa9f5e21e4c32224fb4bfaaa0af385",
+          "entry_offset": 72209892,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            179
+          ],
+          "hex": "b300",
+          "sha256": "474e37ee6bf0255bad6193ce78069a91ce93a8d1adcd7ee50e45208881cfabd4",
+          "entry_offset": 72262,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7950",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72209904,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 8,
+          "count": 1,
+          "values": [
+            -1
+          ],
+          "hex": "ffff",
+          "sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+          "entry_offset": 72274,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7951",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            120
+          ],
+          "hex": "7800",
+          "sha256": "14f825b2bbc32dd8d196367fa8776873069c12a8954d8da7513aa7704ddd09eb",
+          "entry_offset": 72209916,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            231
+          ],
+          "hex": "e700",
+          "sha256": "5e47a90a060a509cffd8bd78028e9b7fc179d9a30af296aac3989fce226e3c11",
+          "entry_offset": 72286,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7952",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            341
+          ],
+          "hex": "5501",
+          "sha256": "c12ca660361e98c88f281d41d282ffdbf3d45d8747caddbd15c07146dbe7cf9e",
+          "entry_offset": 72209928,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            640
+          ],
+          "hex": "8002",
+          "sha256": "d404b24986b2963deb3378e98664bfe617910d92095df1f0bdb40d7c2d813e21",
+          "entry_offset": 72298,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7953",
+        "same_schema": true,
+        "same_payload": false,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            341
+          ],
+          "hex": "5501",
+          "sha256": "c12ca660361e98c88f281d41d282ffdbf3d45d8747caddbd15c07146dbe7cf9e",
+          "entry_offset": 72209940,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            640
+          ],
+          "hex": "8002",
+          "sha256": "d404b24986b2963deb3378e98664bfe617910d92095df1f0bdb40d7c2d813e21",
+          "entry_offset": 72310,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7954",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            128
+          ],
+          "hex": "8000",
+          "sha256": "8509b81230019d2ad970d970f791dfbdc8caf54f5c594fcd327cef9feed206c1",
+          "entry_offset": 72209952,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            128
+          ],
+          "hex": "8000",
+          "sha256": "8509b81230019d2ad970d970f791dfbdc8caf54f5c594fcd327cef9feed206c1",
+          "entry_offset": 72322,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7955",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            128
+          ],
+          "hex": "8000",
+          "sha256": "8509b81230019d2ad970d970f791dfbdc8caf54f5c594fcd327cef9feed206c1",
+          "entry_offset": 72209964,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            128
+          ],
+          "hex": "8000",
+          "sha256": "8509b81230019d2ad970d970f791dfbdc8caf54f5c594fcd327cef9feed206c1",
+          "entry_offset": 72334,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7956",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            256
+          ],
+          "hex": "0001",
+          "sha256": "b413f47d13ee2fe6c845b2ee141af81de858df4ec549a58b7970bb96645bc8d2",
+          "entry_offset": 72209976,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            256
+          ],
+          "hex": "0001",
+          "sha256": "b413f47d13ee2fe6c845b2ee141af81de858df4ec549a58b7970bb96645bc8d2",
+          "entry_offset": 72346,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7957",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            256
+          ],
+          "hex": "0001",
+          "sha256": "b413f47d13ee2fe6c845b2ee141af81de858df4ec549a58b7970bb96645bc8d2",
+          "entry_offset": 72209988,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            256
+          ],
+          "hex": "0001",
+          "sha256": "b413f47d13ee2fe6c845b2ee141af81de858df4ec549a58b7970bb96645bc8d2",
+          "entry_offset": 72358,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7958",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1280
+          ],
+          "hex": "0005",
+          "sha256": "9f1afa4dc124cba73134e82ff50f17c8f7164257c79fed9a13f5943a6acb8e3d",
+          "entry_offset": 72210000,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            1280
+          ],
+          "hex": "0005",
+          "sha256": "9f1afa4dc124cba73134e82ff50f17c8f7164257c79fed9a13f5943a6acb8e3d",
+          "entry_offset": 72370,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x7959",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            30
+          ],
+          "hex": "1e00",
+          "sha256": "a408e4962b09eeb917c2bcea0d94ddaedfa8207c3bf70fd90fd52bb579d13b4a",
+          "entry_offset": 72210012,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            30
+          ],
+          "hex": "1e00",
+          "sha256": "a408e4962b09eeb917c2bcea0d94ddaedfa8207c3bf70fd90fd52bb579d13b4a",
+          "entry_offset": 72382,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x795A",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            40
+          ],
+          "hex": "2800",
+          "sha256": "e4ab5012eff32a5171b3672b59d29950fe8b3dcb4d2dadf971ebbcbc2fbb0d41",
+          "entry_offset": 72210024,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            40
+          ],
+          "hex": "2800",
+          "sha256": "e4ab5012eff32a5171b3672b59d29950fe8b3dcb4d2dadf971ebbcbc2fbb0d41",
+          "entry_offset": 72394,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x795B",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            30
+          ],
+          "hex": "1e00",
+          "sha256": "a408e4962b09eeb917c2bcea0d94ddaedfa8207c3bf70fd90fd52bb579d13b4a",
+          "entry_offset": 72210036,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            30
+          ],
+          "hex": "1e00",
+          "sha256": "a408e4962b09eeb917c2bcea0d94ddaedfa8207c3bf70fd90fd52bb579d13b4a",
+          "entry_offset": 72406,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x795C",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            40
+          ],
+          "hex": "2800",
+          "sha256": "e4ab5012eff32a5171b3672b59d29950fe8b3dcb4d2dadf971ebbcbc2fbb0d41",
+          "entry_offset": 72210048,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            40
+          ],
+          "hex": "2800",
+          "sha256": "e4ab5012eff32a5171b3672b59d29950fe8b3dcb4d2dadf971ebbcbc2fbb0d41",
+          "entry_offset": 72418,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x795D",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            205
+          ],
+          "hex": "cd00",
+          "sha256": "78d602e1d667308b8cbe8c9b59e541a0c9abcecf8f3fc14d8f49281e159b7da2",
+          "entry_offset": 72210060,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            205
+          ],
+          "hex": "cd00",
+          "sha256": "78d602e1d667308b8cbe8c9b59e541a0c9abcecf8f3fc14d8f49281e159b7da2",
+          "entry_offset": 72430,
+          "same_across_all_looks_in_sample": true
+        }
+      },
+      {
+        "tag": "0x795E",
+        "same_schema": true,
+        "same_payload": true,
+        "documented_firmware_mapping": false,
+        "R5": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72210072,
+          "same_across_all_looks_in_sample": true
+        },
+        "R6": {
+          "type": 3,
+          "count": 1,
+          "values": [
+            0
+          ],
+          "hex": "0000",
+          "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+          "entry_offset": 72442,
+          "same_across_all_looks_in_sample": true
+        }
+      }
+    ]
+  },
+  "limits": [
+    "Exact parameter arithmetic, not a sensor-to-JPEG equivalence or camera operation test.",
+    "R5 native reference is original 4.00 BK4 and CP; saved R5 RAW provenance/edit history is not independently certified.",
+    "Unsupported RAW tags are fully exported and compared, but their unknown firmware mappings are not invented.",
+    "Sample-shared differences cannot be attributed uniquely to ST; scene, WB, calibration and other sources may differ.",
+    "No complete CC1 property, block13 bank, Gamma record, import BIN or firmware image is generated."
+  ],
+  "binary_fragments": {
+    "r6_st_cc1_R5_delta48.bin": {
+      "bytes": 48,
+      "sha256": "e578cd18c4736c404f62049a2e00e0cb59dcd9b3c69ebd4096c6fff8ea419485"
+    },
+    "r6_st_block13_A1_192.bin": {
+      "bytes": 192,
+      "sha256": "fe5a1f5c1636cd146a5f1bfa32def49cac06a58ac5004355b96f546d0f67ef4e"
+    },
+    "r6_st_gamma_first128_u32.bin": {
+      "bytes": 512,
+      "sha256": "3d28111931b29d8795546e3b127d356a09a0ac943b9c816e1445fef9539763e5"
+    }
+  }
+}

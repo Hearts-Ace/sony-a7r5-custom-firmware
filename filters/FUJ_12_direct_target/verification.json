@@ -1,9 +1,0 @@
-{
-  "passed": true,
-  "bin_bytes": 29552,
-  "sha256": "a67c9e7dd6b4e44292c8182cae3dc3891c179721f170e0737cd16bbd955559e8",
-  "configurations": 12,
-  "independent_bin_roundtrip": true,
-  "color_accuracy_accepted": false,
-  "private_target_images_included": false
-}

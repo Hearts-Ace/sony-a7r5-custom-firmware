@@ -1,0 +1,518 @@
+{
+  "passed": true,
+  "version": "4.33",
+  "AP_sha256": "65bd99095f626f990890156c0e536d56394c75313452caa451322e1148c1faec",
+  "CP_sha256": "8b38e753f34b1667d79b69079d911b9e6595f1ce1b873cb8e014437c6b4c494d",
+  "baseline432_AP_sha256": "a68bdc37ad95c1254e0d70bbab9531f686ed9436fbb303fe5541dcaa6ee1d89a",
+  "native_Fn_candidate_delta_verified": true,
+  "other_compiler_objects_exact432": true,
+  "only_initializer_object_changed": true,
+  "other_production_sources_exact432": true,
+  "menu_source_only_two_icon_constants": true,
+  "reverse_original_native_prefix_exact": true,
+  "compiler_objects": [
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_filter_menu423.o",
+      "sha256": "f1c1a99f842c0756ab3e6029fe595f6e06224e01614cdabf2ee4daad9ce069b1"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_filter_menu423.o",
+      "sha256": "6cd9d77765ed48bc094d8c69771ac9dd3f3ffa3bd7cbd43c3e0d9aed6851d436"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_filter_names423.o",
+      "sha256": "f2153d63657d96b9ef71b38b949f6eebaf003371a6eb7e1d6a27278f8cb2cbca"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_filter_names423.o",
+      "sha256": "f2153d63657d96b9ef71b38b949f6eebaf003371a6eb7e1d6a27278f8cb2cbca"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_filter_page425.o",
+      "sha256": "42ff5541d27f4846a08f085657bf1173c857d1b753444ac0016d02a31fa016d3"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_filter_page425.o",
+      "sha256": "42ff5541d27f4846a08f085657bf1173c857d1b753444ac0016d02a31fa016d3"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_filter_renderer423.o",
+      "sha256": "fb1a3763fe636ed010d6a7d25fdc63d75f51ff91b2435cc40fc23a9bb4bb528a"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_filter_renderer423.o",
+      "sha256": "fb1a3763fe636ed010d6a7d25fdc63d75f51ff91b2435cc40fc23a9bb4bb528a"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_filter_renderer423_asm.o",
+      "sha256": "4b33d926c9af678de05e3b0d53567d9720742d5dd25ee0b8d51d252ff82f4db1"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_filter_renderer423_asm.o",
+      "sha256": "4b33d926c9af678de05e3b0d53567d9720742d5dd25ee0b8d51d252ff82f4db1"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_filter_runtime423.o",
+      "sha256": "b7cf6badfc739b1c50e354dac322e9615fa27562acace271ce503b8bc9a49565"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_filter_runtime423.o",
+      "sha256": "b7cf6badfc739b1c50e354dac322e9615fa27562acace271ce503b8bc9a49565"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_filter_selection423.o",
+      "sha256": "5c2b3fad6aae98e8698c4afb6ca388754bcba8ce08f1751b2219618f4c3a59fa"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_filter_selection423.o",
+      "sha256": "5c2b3fad6aae98e8698c4afb6ca388754bcba8ce08f1751b2219618f4c3a59fa"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_fsys_adapter.o",
+      "sha256": "1cfeeae521a5e6e24f602b80bf99aa0650305cf0a72577dee9930e63f64f280d"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_fsys_adapter.o",
+      "sha256": "1cfeeae521a5e6e24f602b80bf99aa0650305cf0a72577dee9930e63f64f280d"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_grid420_log.o",
+      "sha256": "3e5e47b38b11c143dada564ea2be95f856d3a9eb2b6dac8a126f2895d3ceb51e"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_grid420_log.o",
+      "sha256": "3e5e47b38b11c143dada564ea2be95f856d3a9eb2b6dac8a126f2895d3ceb51e"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_lut_directory.o",
+      "sha256": "48e9522bf0c3a01ccd911119f877037e123a0795ae77c72e1cfd3347c436a9e9"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_lut_directory.o",
+      "sha256": "48e9522bf0c3a01ccd911119f877037e123a0795ae77c72e1cfd3347c436a9e9"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_lut_mount_guard.o",
+      "sha256": "aed9f29a47ab0a4f41107f21cee8a367cce9b607b2f7048c690efb479f8374a6"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_lut_mount_guard.o",
+      "sha256": "aed9f29a47ab0a4f41107f21cee8a367cce9b607b2f7048c690efb479f8374a6"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_native_lut_directory.o",
+      "sha256": "aa273f3fa1f2ae27abbe1cd0510ac91a79d1fce9b351231be88ec27226939efe"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_native_lut_directory.o",
+      "sha256": "aa273f3fa1f2ae27abbe1cd0510ac91a79d1fce9b351231be88ec27226939efe"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_native_transport_pie.o",
+      "sha256": "cfed8af011679203247d499e356addebaed5813c9e591f9bb422b9a97cd7b924"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_native_transport_pie.o",
+      "sha256": "cfed8af011679203247d499e356addebaed5813c9e591f9bb422b9a97cd7b924"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_runtime_session.o",
+      "sha256": "8851fa320716a173d525b610335c1ce601974a386d6b40e2124784cc3cb7fa8f"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_runtime_session.o",
+      "sha256": "8851fa320716a173d525b610335c1ce601974a386d6b40e2124784cc3cb7fa8f"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_scan_gate.o",
+      "sha256": "1dee772d665b65744d5ef0392289b068f8192b1744231d02216f056f17652b8c"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_scan_gate.o",
+      "sha256": "1dee772d665b65744d5ef0392289b068f8192b1744231d02216f056f17652b8c"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_stage410_codec.o",
+      "sha256": "06d002fec9cf2e9924c41875b94786141f6ed2f4794830fa0b83c339adb23b35"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_stage410_codec.o",
+      "sha256": "06d002fec9cf2e9924c41875b94786141f6ed2f4794830fa0b83c339adb23b35"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_stage411_hooks.o",
+      "sha256": "1c6591aae41175eb7d1e6708d01058812cd37d8448d9dd9bd6f891bec9a7631a"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_stage411_hooks.o",
+      "sha256": "1c6591aae41175eb7d1e6708d01058812cd37d8448d9dd9bd6f891bec9a7631a"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_stage413_probe.o",
+      "sha256": "ae42573da1278a4874085f078d7ea3ca1947e2ac6960a5fe7e9ba083647b85d6"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_stage413_probe.o",
+      "sha256": "ae42573da1278a4874085f078d7ea3ca1947e2ac6960a5fe7e9ba083647b85d6"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_stage413_thread.o",
+      "sha256": "c88a4bcc86ef68f823240820a82b202fb07a398a2ec695cb7f9bc4d9e5fb72f8"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_stage413_thread.o",
+      "sha256": "c88a4bcc86ef68f823240820a82b202fb07a398a2ec695cb7f9bc4d9e5fb72f8"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_stage413_transfer.o",
+      "sha256": "439e4b71b2f9fe4bfee99536fc6d09df630991bf47f02f5adba393c385d9f2c0"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_stage413_transfer.o",
+      "sha256": "439e4b71b2f9fe4bfee99536fc6d09df630991bf47f02f5adba393c385d9f2c0"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/r5_stage413_transfer_core.o",
+      "sha256": "0becf3c8e5b62f4754d61ebf93dc1ad0fb3dffcb0931e32accb545e602d1c55f"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/r5_stage413_transfer_core.o",
+      "sha256": "0becf3c8e5b62f4754d61ebf93dc1ad0fb3dffcb0931e32accb545e602d1c55f"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/sd_native_persist.o",
+      "sha256": "39da0ed4a93dac3b628f15d2dc9f611b52743ee5dceb1efed98b234907e59788"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/sd_native_persist.o",
+      "sha256": "39da0ed4a93dac3b628f15d2dc9f611b52743ee5dceb1efed98b234907e59788"
+    },
+    {
+      "path": "analysis/r5_custom_menu432_wheel_20261028/import/objects/sd_native_store.o",
+      "sha256": "9648d201e3d0973f6db5aa24ab3a499564271e44aa8e072ca694a2638dfe048e"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/objects/sd_native_store.o",
+      "sha256": "9648d201e3d0973f6db5aa24ab3a499564271e44aa8e072ca694a2638dfe048e"
+    }
+  ],
+  "unchanged_production_sources": [
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_aa_snapshot.h",
+      "sha256": "5e5ee6593234c2e35dc7b483ccb20a503db0a4079330d622e4f8867980705905"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_ap_activation.h",
+      "sha256": "b12245559e6dad1bbe05651f6b7b334df1bb33fcdd299ffcd8033a275fbc3292"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_ap_terminal.h",
+      "sha256": "d040c23ab4c8a9c28c6707fee0760bc782d295daa0cea24628db265140805e12"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_async_import.h",
+      "sha256": "2d7cee5b8d61bb8660038f8f402066b9bcc04b27f5017ff05c363d765ae5946f"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_boot_bank.h",
+      "sha256": "b04fcb762993329b2e6f0e44504af95ec87eeaed0dd7d2cdc6708109bbc09e8e"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_boot_coordinator.h",
+      "sha256": "9ca01f71c88b7cb1fece3ddf6863318011501987a222fb69a7a7bec9e52279e3"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_boot_media_bridge.h",
+      "sha256": "320df3f42dcb8ab9dc2f9ad33783861b1837f058e1a09816ddedcc2fdac64c0c"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_boot_runtime.h",
+      "sha256": "8ac1a1b1c0a939cfed43f0310b8641c342ef9edb71febe81b7bf543ae6b66840"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_boot_services.h",
+      "sha256": "436c0bed03856009409e7dca97bd405e13f3dc895664ce7076f029c2d7ba7b54"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_boot_transaction.h",
+      "sha256": "e5ee3dd11f1109eff2ff6bfa6dba93c4f9d5933ced135b25241dd926821f5b44"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_boot_transfer_adapter.h",
+      "sha256": "bc3bdc8207ab492b9afd3062252354a08bdede505d3d1f94019740682bdc293d"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_color_consumer.h",
+      "sha256": "be94d154620ea1a0648148d7c92f0a434f59078c8fe69abd597edbe5b4481db8"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_color_q_carrier.h",
+      "sha256": "46408fed44e198819597afe22b5189f70a548d6e5ce32eb8760a8602e1e17870"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_color_shadow.h",
+      "sha256": "99d9558c962030f32553fe264b5f29db28d2c9892dcf13d6cfe8661cdc54d5b8"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_custom_filter423.h",
+      "sha256": "4459e5ba65d5bbbf4615a39139e8e225976342a6c70f327ae0ce87cb824f3909"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_dedicated_worker.h",
+      "sha256": "0fdb68688ef5b14349f9837fdd66940085b23c26caf69433516e3a4f6be2e109"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_direct_pthread.h",
+      "sha256": "6ee7d46003ad6af6817cfdbd21b44445e0e018c96b2734279f140fc9529daabc"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_filter423.h",
+      "sha256": "f306f8621547cc44a4ebe82c2a5377e9788e154604eae34662eec9810ea2ff0a"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_filter_names423.c",
+      "sha256": "801bde8843b1c8ac35a49bc53f57c337c58dbdd35938c9752d15fcc3aaeeab7d"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_filter_runtime423.c",
+      "sha256": "b90a305620c5bf9c5e615d2f3ff8cda26c70f47b0516ed0f4256a6b687026855"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_filter_runtime423.h",
+      "sha256": "47eb53ce63d3c226cf1cb7cfc66ac99d4548f0aaa1f99e32592dfc64227254b8"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_filter_selection423.c",
+      "sha256": "8aea5b711f39c7ad67b85dd6c216af5f9f221fb23c6a61695d489797ca9e5bcc"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_filter_selection423.h",
+      "sha256": "5bdd8079e562ce996384b180da5cc789759af839be2b9446e7dc464abbed54f0"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_fsys_adapter.c",
+      "sha256": "02016da2f9e50c6d04947fd0e570c2b004e8689c2a89e50bf1a05163d77baa3b"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_fsys_adapter.h",
+      "sha256": "b6038bbd5422fb559f4305801215087b378f2453e89d63ca9b1a1682768f5fae"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_gamma_identity.h",
+      "sha256": "09190d689af74f307f333b97369fd022e80774b1c9e20bf7d7aaa05e537acca3"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_gamma_qualification.h",
+      "sha256": "ae24eddf783c8a75f59262fbb224c96cdc9ba55578b3f6518ee1e9135b7b1980"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_grid420_log.c",
+      "sha256": "135eee41d89c8cda07fe11cbd60b9087388f3f96de24f50ee5a97eec34053896"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_grid422.h",
+      "sha256": "aa570b921b7d890d7abbd169a6756e0f7168e577d17438534f23db03ee46a5f0"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_grid_diagnostics.h",
+      "sha256": "cbdcc091835fdacd16d3938667b39697af864b3fe17576be410c706942232078"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_isp_carrier.h",
+      "sha256": "11127dfc7c3644ff62af46a556f74c7d0265ca1bcf01725a86c0c2744c4a2de9"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_lifecycle.h",
+      "sha256": "ec75906fd92038114f6d691c89ae78bbeb04cdf878daa171104927cfe6d45fb6"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_look_transfer.h",
+      "sha256": "ec6cdbdca8e6789bd0fce188e7866933f87f01fb763272af83e1649b364eb805"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_lut_directory.c",
+      "sha256": "6becb278134c984b98d514d3a11c92b333646a42b6bb578836fd08e91ce6d41f"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_lut_directory.h",
+      "sha256": "e8ed9746378b768179bff63c8e91e3fe658cf313e2e08f5cbd38ed32b482c188"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_lut_mount_guard.c",
+      "sha256": "f2a2934e12e7f6e7108eba40d5ab74c7f044fffeaf6e8f81977b2ae5d26c09ac"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_lut_mount_guard.h",
+      "sha256": "ec7f65e67edb817cff953cd48b5b03165d3b10f92822b9c9702f80a7f17c1fea"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_lut_mount_reader.h",
+      "sha256": "f7f70f3948c42a79b685bfea8bc00e3ffb33cd0123248c8d12a3041611a350b7"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_native_lut_directory.c",
+      "sha256": "376b8c200c28f5d9f86ac434e46ba136dfce68adcf08ba0d996a4cf3f90fd691"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_native_lut_directory.h",
+      "sha256": "0ca38d1291541852bc25175abe55cfdc0ae01b512f3a19d27e6758c813840408"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_native_readonly_services.h",
+      "sha256": "b22a7cf70e563ea4312e1c00ccd7b571c20378c42a7db1d73307cbafa4e8aeea"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_native_transport.h",
+      "sha256": "4f55864941aa28bbe3054224ee90fd381b28df81e5387905fb5e5e81d2079e35"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_native_transport_pie.c",
+      "sha256": "ecd7dddd3b57afb99f892ff24cd31a3f2a675af412ed9547b5e0ae3a0081cbe1"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_posix_persist.h",
+      "sha256": "ce341a9e792a5fdbbd3ddd5bf3f5051aabf9ec99cdef6c3b3c34ed65071abbce"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_posix_stage.h",
+      "sha256": "51495add0df53ad22088c489cf2764763b950cfa6cb73819725111c78eb5b7c2"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_preview.h",
+      "sha256": "25c62139aa472af6b77e03cf8b346213de58d865c56ef74d950bea205f36fb61"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_render_binding.h",
+      "sha256": "fb3d6b5e2b892703e7abf86607c0126b44348d281652d52bc83ca6e17f6ef589"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_runtime_session.c",
+      "sha256": "c960780cfa9b653b7adcf966fd9e1f7c7403dc6a1416b91a9b377de87798a683"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_runtime_session.h",
+      "sha256": "b5461c3442cf9af94caee1c39d2c5a93a4f6ac5c133b56a4235883f7a4ba9e8b"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_scan_gate.c",
+      "sha256": "7c1964fede43354e7bae3a85e64f40fd779a439858ba07600c29897c5afb5bf3"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_scan_gate.h",
+      "sha256": "d65b0030bed4350b68b946c1acaeab9c582e83e3e3348be0e444adc92678f524"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_stage410_codec.c",
+      "sha256": "305f6f2037b649c4d5453ae2882ef8616cce9f52de543b6373299e7b8e95ea64"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_stage411_hooks.c",
+      "sha256": "bfdcbcecf85e774754d29171dd7c2adaa1a6048be721e222a3f463cafd5fd728"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_stage413_probe.c",
+      "sha256": "92b8f9b44edb352af79141eb0deda2f936c27191e1b6f964fd70e017608687eb"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_stage413_thread.c",
+      "sha256": "f64f9fb9ba0b0537d2f4e6633fc8fc84ee3931c8e1188ad3a3831c1f271a3a1b"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_stage413_transfer.c",
+      "sha256": "6a971be6d68c90eb52b9a3b39ee0b1e9d6f96882a1cd80519fea132a58c8c4f0"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_stage413_transfer_core.c",
+      "sha256": "e952a53c46e0854ae7e97af412f11fdaf39f0e6dc2b692578752d63f73d22569"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/r5_stage423_codec.c",
+      "sha256": "305f6f2037b649c4d5453ae2882ef8616cce9f52de543b6373299e7b8e95ea64"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/sd_native_look.h",
+      "sha256": "56201f26cc28dc60629391d9aaa6f7d82eb8fda0089710d3b8d5e09ae4c1e72f"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/sd_native_persist.c",
+      "sha256": "18cba48ec86c172766249dc57b36f0455b02444666543b6dfc4f58ed8965efba"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/sd_native_persist.h",
+      "sha256": "b4e50badecff327dcb6f49603b9f07aacad35f24208f32b499c8ad60c8337979"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/sd_native_store.c",
+      "sha256": "61f79c53a2a8e1bbf466fa34f84ef675786625b11e1b46c9aeaa99424952bbdb"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/import/sd_native_store.h",
+      "sha256": "9d659e7585992c7bc8e068b80fed7e9475127a95d38aaae27ed65f6ff9b52139"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/menu_research/r5_filter_menu423.h",
+      "sha256": "f24dc35ed16e4b682407eaaf7d8eb59cf7fd9a8731bfd9045d6c7c317a497c47"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/menu_research/r5_filter_page425.c",
+      "sha256": "315cf3226f13bf1b8eb73bb89a0476e0f3f155c33079a8b4d71416289dafa440"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/menu_research/r5_filter_renderer423.S",
+      "sha256": "07072985be98bdc75abd4a8e2ce77dcfc0aa0eea108abc1870831468ad7994e2"
+    },
+    {
+      "path": "analysis/r5_firmware433_20261028/menu_research/r5_filter_renderer423.c",
+      "sha256": "01d0c2034f0930abcff705d1a551ffd0f2279c5ce436a8e4881f8af72ac7690d"
+    }
+  ],
+  "Fn_patch": {
+    "source_sha256": "314266e9ab797d240784664da68db3f4037dcc8a7068d71fc75ef8d146633bed",
+    "patched_sha256": "65bd99095f626f990890156c0e536d56394c75313452caa451322e1148c1faec",
+    "added_rx_bytes": 0,
+    "added_bss_bytes": 0,
+    "changed_bytes": 41,
+    "native_builder": "0x1bdd6f8",
+    "native_valid": "0x1bd8d9c",
+    "group_va": "0x3e6f218",
+    "original_ids": [
+      "0x1f1",
+      "0x1f2",
+      "0x1f3",
+      "0x1f4",
+      "0x1f5",
+      "0x1f9"
+    ],
+    "appended_mid": "0x635",
+    "still_movie_flags_from": "0x1f2",
+    "play_enabled": false,
+    "patches": [
+      {
+        "va": "0x3e6f220",
+        "file_offset": 65466912,
+        "before": "06000000",
+        "after": "07000000"
+      },
+      {
+        "va": "0x3e6f3a4",
+        "file_offset": 65467300,
+        "before": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "after": "35060000010100010100010100010100010100010100010100010100000000010100010100010100010100010100010100010100010100010100010100010100"
+      }
+    ]
+  },
+  "startup_production_sources_exact430": true,
+  "actual_final_AP_SD_cases": 180,
+  "worker_cases": 15,
+  "grid_wait_cases": 7,
+  "full_content_deduplication": true,
+  "same_boot_bank_retry": true,
+  "ready_slot_not_blocked_by_other_slot": true,
+  "CP_grid_lifecycle_exact423": true,
+  "camera_io": false,
+  "limitations": [
+    "The only source change is two menu descriptor icon constants; all other compiler objects match4.32. Relinking adjusts affected addresses.",
+    "New BK4 defaults and native migration are validated by separate feature receipts.",
+    "No physical Fn/LCD, camera event timing, actual upgrade, cold boot or JPG acceptance."
+  ]
+}

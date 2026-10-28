@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "AP_sha256": "c61d151fd7da84896d675dd7be26a8319156598206556e6e5d50ea2da11406b3",
+  "cases": [
+    {
+      "mode": 0,
+      "queries": 1,
+      "selection_completed_ms": 4294967295,
+      "service_calls": 2,
+      "elapsed_fixture_ms": 0
+    },
+    {
+      "mode": 1,
+      "queries": 2,
+      "selection_completed_ms": 100,
+      "service_calls": 11,
+      "elapsed_fixture_ms": 700
+    },
+    {
+      "mode": 2,
+      "queries": 1,
+      "selection_completed_ms": 100,
+      "service_calls": 11,
+      "elapsed_fixture_ms": 1000
+    },
+    {
+      "mode": 3,
+      "queries": 1,
+      "selection_completed_ms": 100,
+      "service_calls": 3,
+      "elapsed_fixture_ms": 100
+    },
+    {
+      "mode": 4,
+      "queries": 1,
+      "selection_completed_ms": 100,
+      "service_calls": 3,
+      "elapsed_fixture_ms": 100
+    },
+    {
+      "mode": 5,
+      "queries": 30,
+      "selection_completed_ms": 100,
+      "service_calls": 240,
+      "elapsed_fixture_ms": 18000
+    },
+    {
+      "mode": 6,
+      "queries": 0,
+      "selection_completed_ms": 4294967295,
+      "service_calls": 0,
+      "elapsed_fixture_ms": 0
+    }
+  ],
+  "source_sha256": {
+    "sync_tests/grid_wait430_test.c": "14693d0784d75324df685d69f1aaf8517aac6aab877479be7b4022ec56e9dfb8",
+    "sync_tests/run_grid430.py": "88e0ce0145c0d620b5c5d3e274c169d148171ee9451e8ab58fccb7316ffc4ff2",
+    "import/r5_grid420_log.c": "135eee41d89c8cda07fe11cbd60b9087388f3f96de24f50ee5a97eec34053896"
+  },
+  "boundary": "Actual production diagnostic C on host ISA; clocks, native Fsys, CP reply and selection-service boundary are fixtures. Timings are synthetic, not camera measurements.",
+  "device_io": false
+}

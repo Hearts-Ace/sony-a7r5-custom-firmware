@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "templates": 12,
+  "backup_sum_CRC_rows": 12,
+  "template_rows": [
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin",
+      "sha256": "f0281f9513fd247d1b32f2c7b6c6e6122788b097db41cad0bb61ed6b05495f37",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_E38.bin",
+      "sha256": "f025b3725d3824e4d851d3df0d234f224bf389bd92a8fb59818276347aebdff9",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_J1.bin",
+      "sha256": "fa27745f8b8694651df6bc55bffde4b8809ad7305b3a2851faecbac13cc99c75",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_KR2.bin",
+      "sha256": "cb0c7062f6ec1c7a2c0c2a604727d397f2a356e03abe912b11f2f1923db739a3",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_UC2.bin",
+      "sha256": "acc379d7f78603d30377d1fc47c25ecb4e6f74e5d211dd579906f3602d51826a",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_AF1.bin",
+      "sha256": "fc3619283668c15590eda179b72eee4e13c5c2aaf4f6971a187dc80ad2398203",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_ALLLANG.bin",
+      "sha256": "5de3b79bf557e749679b3c019a45ca81e7f236e250cf4428fbaca435f2be88be",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_AP2.bin",
+      "sha256": "bd008c2be586c3ca3d95d834e41ab77ed70504b2ad22c7bbfc18e2ff768a9668",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_CEC.bin",
+      "sha256": "6c6f98ca3060841955a06a1ac256636be7ece9bf39012485ed9ed339c441abcb",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_CN2.bin",
+      "sha256": "62161d753b7a2169357fab1a1a891b3e25f15d6a2e8a33ac7855617320010d8b",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_IN5.bin",
+      "sha256": "a0a2844f1aef419b501069f0602181fc42ecd17111204acbc589a954169d095c",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_JE3.bin",
+      "sha256": "900961d01664b17bf25fb2d399563fde9da6646b7a0a6dd0c58fd716654eabee",
+      "changed_bytes": 1976,
+      "only_13_parameter_ranges_and_BK4_checksum_changed": true,
+      "full_dynamic_FL23_banks_equal": true,
+      "ST_and_AWB_exact": true
+    }
+  ],
+  "all_unrelated_defaults_and_personal_partition_excluded": true,
+  "R6_ST_CC1_24_and_A1_96_verified": true,
+  "AWB_bytes": "61ff0006",
+  "matrix_mode": "dynamic",
+  "camera_io": false,
+  "schema": "r5-color434-integrated-templates/1",
+  "only_awb_white_differs_from433": true,
+  "comparison_receipt_sha256": "d73d7f3f77d64a1c050c3da6106555acae0cc64e2c829802debe890d7e8cc41d"
+}
