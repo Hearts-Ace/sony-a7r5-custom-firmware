@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "firmware_version": "4.35",
+  "source_lock_entries": 188,
+  "source_lock_all_matched": true,
+  "python_syntax": true,
+  "workbench_version": "0.2.1",
+  "swift_compiled": true,
+  "card_cli_tests_passed": 12,
+  "offline_usb_tests_passed": 8,
+  "packaged_selfcheck_skipped": 1,
+  "full_firmware_rebuild_repeated_for_publication": false,
+  "prior_local_verification": {
+    "loader_scenarios": 72,
+    "crosscore_heap_scenarios": 6,
+    "unique_entry_full_rebuild": true,
+    "signature_crc_all_plaintext_verified": true
+  },
+  "firmware": {
+    "bytes": 754525608,
+    "sha256": "76b06194aacd7b78553ad524e6d6fe0d7fc73edfae671e5ebc1e54bafe17ff74",
+    "ap_sha256": "631701ceb9286423e47280db1e6103547072c81de462202ce17295bfed2e66f8",
+    "cp_sha256": "8b38e753f34b1667d79b69079d911b9e6595f1ce1b873cb8e014437c6b4c494d"
+  },
+  "filter_sha256": "19e020fa48c79643aaf9526e9c720d38ec5a92c3df11d0852b0a93a25ee880b6",
+  "camera_io": false,
+  "hardware_validation": "pending",
+  "new_app_archive_published": false
+}

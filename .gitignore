@@ -36,3 +36,8 @@ analysis/sony_write_path_20261008/reference/
 *.onnx
 *.tar
 *.tar.gz
+
+# Required, source-built MSC templates and small licensed PMCA sources
+!R5FlashWorkbench/engine/templates/*.so
+!R5FlashWorkbench/engine/vendor/
+!R5FlashWorkbench/engine/vendor/**

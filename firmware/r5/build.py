@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Only supported R5 4.34 build entry. Offline, no camera access."""
+"""Only supported R5 4.35 build entry. Offline, no camera access."""
 from pathlib import Path
 import argparse, hashlib, json, os, shutil, subprocess, sys, tarfile
 
 HERE=Path(__file__).resolve().parent
-VERSION='4.34'
+VERSION='4.35'
 
 def sha(path):
     h=hashlib.sha256()
@@ -131,11 +131,12 @@ def main():
             facts.append(dict(member=m.name,sha256=after,changed=before!=after))
     archive=dict(passed=True,output_sha256=archive_sha,changed_members=list(replacements),members=facts,
                  original_headers_padding_trailer_preserved=True)
-    save(evidence/'archive_verification_434.json',archive)
+    save(evidence/'archive_verification_435.json',archive)
     expected=json.loads((HERE/'expected_outputs.json').read_text())
     actual={'AP':sha(patched/'appFw.so'),'CP':sha(patched/'cpapp-b.bin'),
             'nflasha15':sha(patched/'nflasha15'),'nflasha8':sha(patched/'nflasha8'),
             'nflasha5':sha(patched/'nflasha5'),'archive':archive_sha}
+    save(evidence/'computed_outputs.json',actual)
     for key,value in actual.items():
         assert value==expected[key],('Reproduction differs',key,value,expected[key])
     save(evidence/'components.json',dict(passed=True,version=VERSION,actual=actual,partitions=partitions,
@@ -148,7 +149,7 @@ def main():
         original_digest=package.digest_file
         package.digest_file=lambda path:archive_sha if path is overlay else original_digest(path)
         package.build_package()
-        assert sha(out/'BODYDATA.DAT')==expected['DAT'],'DAT differs from frozen 4.34'
+        assert sha(out/'BODYDATA.DAT')==expected['DAT'],'DAT differs from frozen 4.35'
         receipt=json.loads((out/'verification.json').read_text())
         receipt.update(exact_four_member_scope_verified=False,factory_defaults_and_backup_sum_unchanged=False,
             consolidated_source_build=True,source_input='original R5 4.00',
@@ -158,6 +159,6 @@ def main():
     save(out/'build-result.json',dict(passed=True,version=VERSION,stage=a.stage,outputs=actual,
          DAT_sha256=sha(out/'BODYDATA.DAT') if a.stage=='all' else None,
          previous_version_scripts_required=False,previous_version_outputs_required=False,camera_io=False))
-    print('R5 4.34 reproduced exactly:',out,flush=True)
+    print('R5 4.35 reproduced exactly:',out,flush=True)
 
 if __name__=='__main__':main()

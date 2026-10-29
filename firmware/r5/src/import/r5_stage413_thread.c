@@ -1,5 +1,6 @@
-/* 4.30: one owner for storage and transport. Service selection at descriptor-free
- * wait points; a successful import is applied in this boot, with bounded retry.
+/* 4.35: cold startup chooses SD/internal data before the first CP activation.
+ * Resume loads internal data only; it never scans SD or replaces a live bank.
+ * One owner services selection at descriptor-free wait points.
  * Synchronous native Fsys duration is not bounded by polling deadlines. */
 #include <stdint.h>
 #include <stddef.h>
@@ -37,10 +38,7 @@ struct r5_stage411_diagnostics {
     uint32_t loaded_mask, saved_mask, unchanged, mount_attempts;
 };
 __attribute__((aligned(16))) struct r5_stage411_diagnostics r5_stage411_state;
-static uint64_t media_snapshot[2];
-static uint32_t manual_reload425;
 static int activation425;
-static uint32_t retained_slot430,retained_epoch430,retained_pending430;
 _Static_assert(offsetof(struct r5_stage411_diagnostics, result)==40,"408 prefix");
 void *memset(void *dst,int value,size_t n) {
     uint8_t *p=dst;size_t i;for(i=0;i<n;i++)p[i]=(uint8_t)value;return dst;
@@ -77,7 +75,6 @@ void r5_stage411_media(uint32_t slot,uint32_t status,uint32_t drive) {
     if(slot>1)return;
     if(!status&&drive>='A'&&drive<='Z')value|=0x40000000u|drive;
     STORE(&r5_stage411_state.media[slot],value);
-    STORE(&media_snapshot[slot],((uint64_t)r5_session_event_epoch()<<32)|value);
 }
 /* Only after SD scan/close: no retained directory fd across event waits.
  * Cold startup only. Native unmount/suspend concurrency remains unproven. */
@@ -114,6 +111,10 @@ static int r5_stage411_persist(struct r5_stage411_diagnostics *s,clock_fn clock,
         goto release;
     }
     s->decoded_mask=s->parsed.valid_mask;
+    /* Compare only after a complete SD candidate was validated. Loading the
+     * old file here does not publish names or allocate a CP bank. */
+    s->load_status=r5_load_persisted_look(&persist,&s->current,s->scratch,sizeof(s->scratch));
+    s->loaded_mask=s->current.valid_mask;
     if(s->load_status==R5_IMPORTED && same_set(&s->current,&s->parsed)){
         s->unchanged=1;s->saved_mask=s->current.valid_mask;goto release;
     }
@@ -141,7 +142,7 @@ release:
 
 /* Both startup and SD replacement use the same complete parameter publication.
  * A failed storage read is never treated as an intentional empty configuration. */
-static void activate(struct r5_stage411_diagnostics *s,int watch){
+static void activate(struct r5_stage411_diagnostics *s,int log_sd){
  activation425=-1;
  if(s->load_status!=R5_IMPORTED&&s->load_status!=R5_ABSENT&&
     s->publish_status!=R5_PUBLISHED&&s->publish_status!=R5_PUBLISHED_CLOSE_ERROR)return;
@@ -161,36 +162,33 @@ static void activate(struct r5_stage411_diagnostics *s,int watch){
          if(r5_session_current()&&r5_stage421_transfer_matched()){
           int names=r5_stage421_parameters_ready();
           if(names>=0)activation425=0;
-          if(names<0){uint32_t error=16;r5_log420_emit(s->selected_drive,"NAME_GENERATION_LIMIT",&error,1);}
+          if(names<0&&log_sd){uint32_t error=16;r5_log420_emit(s->selected_drive,"NAME_GENERATION_LIMIT",&error,1);}
           uint32_t v[2]={r5_session_epoch(),mask};
-          r5_log420_emit(s->selected_drive,"CUSTOM_FILTER_SELECTION_QUEUED",v,2);
+          if(log_sd)r5_log420_emit(s->selected_drive,"CUSTOM_FILTER_SELECTION_QUEUED",v,2);
          }}
         /* Disk diagnostics follow application, so they cannot delay the first
          * CP selection / original E4 execution of a freshly imported bank. */
-        r5_probe420_log(s->selected_drive);
-        r5_transfer420_log(s->selected_drive);
-        {uint32_t grid=0;for(unsigned i=0;i<12;i++)if(mask&(1u<<i))grid|=1u<<i;
-         if(watch&&grid)r5_grid420_watch(s->selected_drive,grid);}
+        if(log_sd){r5_probe420_log(s->selected_drive);r5_transfer420_log(s->selected_drive);}
 
     }
 }
 
 void *r5_stage411_child(void *argument) {
     struct r5_stage411_diagnostics *s=argument;
-    uint32_t slot,media[2],epochs[2],required,selected=2,tried=0;
+    uint32_t slot,media[2],required,selected=2,tried=0;
     clock_fn clock=0;sleep_fn sleep=0;
     int (*schedule)(int,int,const void *);int priority=0;
     uint64_t start,last,discovery;unsigned poll;
     struct r5_fsys_reader reader={0};
     struct r5_fsys_api api;
-    uintptr_t handle=0;size_t used=0,got;int result=R5_IO_ERROR,restored=0,active=0;
+    uintptr_t handle=0;size_t used=0,got;int result=R5_IO_ERROR,cold;
     const struct timespec64 delay={0,100000000};
     if(s!=&r5_stage411_state||!r5_session_current())return 0;
-    if(!manual_reload425)retained_pending430=0;
+    cold=r5_session_cold_start();
     STORE(&s->entered,1);STORE(&s->terminal,0);STORE(&s->exited,0);
     memset(&s->parsed,0,sizeof(s->parsed));memset(&s->current,0,sizeof(s->current));
     s->bytes_read=s->read_calls=s->decoded_mask=s->loaded_mask=s->saved_mask=0;
-    s->unchanged=0;
+    s->unchanged=0;s->attempts=0;
     s->selected_drive=0;
     STORE(&s->child_phase,1);s->selected_slot=UINT32_MAX;
     s->directory_status=s->load_status=s->stage_status=s->publish_status=s->release_status=-99;
@@ -199,12 +197,11 @@ void *r5_stage411_child(void *argument) {
     clock=(clock_fn)r5_stage411_dlsym(0,"clock_gettime");
     sleep=(sleep_fn)r5_stage411_dlsym(0,"nanosleep");
     if(!clock||!sleep||now_ms(clock,&start))goto done;
-    /* Load/refresh saved parameters before waiting for SD discovery. The SD
-     * candidate then fully replaces this generation, including a valid clear. */
-    if(!manual_reload425){(void)r5_stage411_persist(s,clock,sleep,R5_ABSENT);
-    restored=s->directory_status==0 && s->release_status==0 &&
-        (s->load_status==R5_IMPORTED || s->load_status==R5_ABSENT);
-    activate(s,0);active=activation425==0;}
+    /* Resume bypasses every SD entry, diagnostic write and grid watch. A
+     * matching CP bank is reused by BEGIN, without another heap allocation. */
+    if(!cold){result=R5_ABSENT;goto done;}
+    /* Cold startup must not activate the old internal file before SD choice:
+     * one immutable bank already consumes about half the native 1MiB heap. */
     if(!r5_session_current()||now_ms(clock,&start))goto done;
     last=start;discovery=start;
 scan:
@@ -212,23 +209,19 @@ scan:
         s->attempts=poll+1;
         r5_filter_service();
         if(!within(clock,start,&last,30000u))goto done;
-        /* Prefer fresh media callbacks on resume; if native emits no repeat,
-         * reopen the retained drive after one second, validating the full file. */
         if(LOAD(&s->scan.initial_phase)==2) {
             required=0;
             for(slot=0;slot<2;slot++) {
                 uint32_t state=LOAD(&s->scan.initial_status[slot]);
                 if(state-1u<2u)required|=1u<<slot;
-                uint64_t snapshot=LOAD(&media_snapshot[slot]);
-                media[slot]=(uint32_t)snapshot;epochs[slot]=(uint32_t)(snapshot>>32);
+                media[slot]=LOAD(&s->media[slot]);
             }
             {
                 /* A slow/failed second slot must not hold a ready first slot.
                  * Each candidate still requires its own scan completion. */
                 for(slot=0;slot<2;slot++)if((required&(1u<<slot))&&!(tried&(1u<<slot))&&LOAD(&s->scan.completed[slot])&&
-                     (media[slot]&0x40000000u)&&
-                     (epochs[slot]==r5_session_epoch()||poll>=10)){selected=slot;break;}
-                if(selected==2){if(poll>=299 && r5_scan_gate_ready(&s->scan) &&
+                     (media[slot]&0x40000000u)){selected=slot;break;}
+                if(selected==2){if((!required||poll>=299) && r5_scan_gate_ready(&s->scan) &&
                     (!(required&1u)||(media[0]&0x80000000u)) &&
                     (!(required&2u)||(media[1]&0x80000000u))){result=R5_ABSENT;goto done;}}
                 else break;
@@ -238,9 +231,6 @@ scan:
     }
     if(selected==2)goto done;
     s->selected_slot=selected;s->selected_drive=media[selected]&255u;
-    if(!manual_reload425 && epochs[selected]!=r5_session_epoch()){
-        retained_slot430=selected;retained_epoch430=r5_session_epoch();retained_pending430=1;
-    }
     {uint32_t v[2]={0x421,selected};r5_log420_emit(s->selected_drive,"BOOT421_SD_SELECTED",v,2);}
     /* Runtime ADRP/ADD callback pointers; no absolute PIE relocations. */
     api.open=r5_native_fsys_open;api.read=r5_native_fsys_read;api.close=r5_native_fsys_close;
@@ -291,28 +281,27 @@ other_card:
         }
     }
 done:
-    /* Missing/bad SD retains the already validated internal snapshot. Do not
-     * read/save/re-upload it for a second time merely because scan completed. */
-    if(clock&&sleep&&r5_session_current()&&(result==R5_IMPORTED||!restored))
+    /* Select exactly one durable set before any CP parameter activation.
+     * Valid SD atomically replaces the old file; missing/bad SD loads it.
+     * No live bank is freed or overwritten, including on a resume. */
+    if(clock&&sleep&&r5_session_current())
         result=r5_stage411_persist(s,clock,sleep,result);
     s->result=(uint32_t)result;
     {uint32_t v[13]={(uint32_t)result,s->bytes_read,s->decoded_mask,s->current.valid_mask,(uint32_t)s->last_native_status,(uint32_t)s->close_status,(uint32_t)s->directory_status,(uint32_t)s->load_status,(uint32_t)s->stage_status,(uint32_t)s->publish_status,(uint32_t)s->release_status,s->saved_mask,s->selected_slot};
-     r5_log420_emit(s->selected_drive,result==R5_IMPORTED?"IMPORT_REPLACED_OR_CLEARED":"IMPORT_KEPT_OR_FAILED",v,13);}
-    if(clock&&sleep&&r5_session_current()&&(!manual_reload425||result==R5_IMPORTED)){
-        if(!active || (result==R5_IMPORTED&&!s->unchanged)){
+     if(cold)r5_log420_emit(s->selected_drive,result==R5_IMPORTED?"IMPORT_REPLACED_OR_CLEARED":"IMPORT_KEPT_OR_FAILED",v,13);}
+    if(clock&&sleep&&r5_session_current()){
             for(poll=0;poll<3&&r5_session_current();poll++){
-                activate(s,0);
+                activate(s,cold);
                 if(activation425==0)break;
                 {uint32_t v[2]={r5_session_epoch(),poll+1};
-                 r5_log420_emit(s->selected_drive,"CP_BANK_RETRY_THIS_BOOT",v,2);}
+                 if(cold)r5_log420_emit(s->selected_drive,"CP_BANK_RETRY_THIS_BOOT",v,2);}
                 for(slot=0;slot<10;slot++){
                     r5_filter_service();if(!r5_session_current()||sleep(&delay,0))goto complete;
                 }
             }
-        }
         /* Diagnostic observation is limited to the selected filter; waiting
          * for every configured filter cannot complete without user switching. */
-        if(!manual_reload425 && activation425==0 && s->current.valid_mask)
+        if(cold && activation425==0 && s->current.valid_mask)
             r5_grid420_watch(s->selected_drive,s->current.valid_mask);
     }
 complete:
@@ -321,31 +310,8 @@ complete:
     return 0;
 }
 
-/* Called only by the existing sole worker. Retains original bounded read,
- * validation, atomic store, complete transfer and 4.22 publication paths.
- * An absent/bad SD candidate is a visible failure and keeps current runtime. */
-int r5_stage425_reload(void){
-    struct r5_stage411_diagnostics *s=&r5_stage411_state;
-    extern int r5_stage421_transfer_matched(void);
-    if(!r5_session_current() || manual_reload425)return -1;
-    manual_reload425=1;activation425=-1;r5_stage411_child(s);manual_reload425=0;
-    return s->terminal && s->result==R5_IMPORTED && activation425==0 && r5_stage421_transfer_matched()?0:-1;
-}
-
-/* Resume may reopen a retained drive before native media initialization emits
- * its fresh callback. Revalidate that same slot once the current-epoch READY
- * arrives, even if the finite boot scan has already returned. No callback IO,
- * no new thread, and no second power cycle. Called only by the sole worker. */
-void r5_stage430_media_service(void){
-    uint64_t snapshot;
-    if(!retained_pending430 || manual_reload425 || !r5_session_current())return;
-    if(retained_epoch430!=r5_session_epoch()){retained_pending430=0;return;}
-    snapshot=LOAD(&media_snapshot[retained_slot430]);
-    if((uint32_t)(snapshot>>32)!=retained_epoch430 || !((uint32_t)snapshot&0x40000000u))return;
-    retained_pending430=0;
-    (void)r5_stage425_reload();
-    r5_session_finish();
-}
+/* Retained private ABI; SD updates are now exclusively a cold-start action. */
+int r5_stage425_reload(void){return -1;}
 
 int r5_stage411_startup(void) {
     struct r5_stage411_diagnostics *s = &r5_stage411_state;

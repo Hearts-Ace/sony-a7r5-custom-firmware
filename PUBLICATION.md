@@ -1,3 +1,13 @@
+# 当前发布：4.35与macOS刷写工作台（2026-10-30）
+
+当前唯一固件入口为 firmware/r5/build.py，188项冻结源码独立构建，不依赖旧版脚本或产物。4.35冷启动先校验SD再激活单份配置，恢复只读内部；公开检查及本地既有验证摘要见 publication/4.35/。实机尚未验收。
+
+R5FlashWorkbench/公开完整0.2.1源码：native、scripts、engine、相机端源码、离线测试、协议模板及第三方许可。模板为本项目从对应源码编译的固定RAM维护载荷；不包含完整固件、原机镜像、外部PEM或私钥。工作台打包需外部匹配公钥、运行时和依赖；不声称Git源码本身为开箱即用应用。参考Liwenru88/a7r5-rea的个人非商业研究限制见目录署名，不由根MIT覆盖。
+
+附带正式十二款v4.5 BIN，九款更新测试BIN不作为正式配置发布。原有0.2应用ZIP及v4.34 Release保持历史版本，本次只提交源码及正式BIN，没有新应用Release附件。
+
+以下旧版本发布说明按时间阅读，其旧路径及未公开依赖不适用于当前唯一构建入口。
+
 # 当前固件源码布局（2026-10-29）
 
 唯一入口为 [firmware/r5/build.py](firmware/r5/build.py)。旧版tools/research及逐版analysis构建树已从当前分支移除；下方旧版路径仅为历史发布说明，请按Git历史读取。当前固件源身份见 firmware/r5/sources.lock.json；完整DAT复现身份见 firmware/r5/REPRODUCTION.json。色彩工作台、训练、滤镜和Release附件本轮不改。

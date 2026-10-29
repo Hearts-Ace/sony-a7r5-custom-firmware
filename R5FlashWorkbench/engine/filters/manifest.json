@@ -1,0 +1,73 @@
+{
+  "schema": "r5-bundled-filters/1",
+  "file": "R5NATIVE.BIN",
+  "bytes": 29552,
+  "sha256": "19e020fa48c79643aaf9526e9c720d38ec5a92c3df11d0852b0a93a25ee880b6",
+  "source_batch": "69de0c2733f24d9689423b51ac5119da",
+  "training_status": "done",
+  "dataset": "v4.5-sony100mp-5300k-sim-center5-20261029",
+  "description": "12 filters, continuity30, completed 2026-10-29T08:17:18.532240+00:00",
+  "filters": [
+    {
+      "number": 1,
+      "short_name": "AS",
+      "full_name": "ASTIA"
+    },
+    {
+      "number": 2,
+      "short_name": "CC",
+      "full_name": "CLASSIC CHROME"
+    },
+    {
+      "number": 3,
+      "short_name": "EBB",
+      "full_name": "ETERNA BLEACH BYPASS"
+    },
+    {
+      "number": 4,
+      "short_name": "ET",
+      "full_name": "ETERNA"
+    },
+    {
+      "number": 5,
+      "short_name": "NC",
+      "full_name": "CLASSIC Neg."
+    },
+    {
+      "number": 6,
+      "short_name": "NH",
+      "full_name": "PRO Neg. Hi"
+    },
+    {
+      "number": 7,
+      "short_name": "PV",
+      "full_name": "PROVIA"
+    },
+    {
+      "number": 8,
+      "short_name": "RA",
+      "full_name": "REALA ACE"
+    },
+    {
+      "number": 9,
+      "short_name": "VN",
+      "full_name": "Velvia"
+    },
+    {
+      "number": 10,
+      "short_name": "正片",
+      "full_name": "理光正片"
+    },
+    {
+      "number": 11,
+      "short_name": "负片",
+      "full_name": "理光负片"
+    },
+    {
+      "number": 12,
+      "short_name": "Portra400",
+      "full_name": "Portra400NB"
+    }
+  ],
+  "includes_training_workbench": false
+}
