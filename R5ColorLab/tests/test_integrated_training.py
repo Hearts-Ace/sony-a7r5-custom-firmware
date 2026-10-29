@@ -35,9 +35,9 @@ class IntegratedTrainingTests(unittest.TestCase):
                 def pc(output):
                     (output/'pc_compensation.json').write_text('{"schema":"fixture"}')
                     return {'metrics':{'test':{'compensated':{'rmse':1}}}}
-                def prepare(lut,gamut,output):
-                    import v4_dataset
-                    (output/'input_audit.json').write_text(json.dumps(dict(dataset_id=v4_dataset.DATASET_ID)))
+                def prepare(lut,gamut,output,dataset_id=None):
+                    import chart_datasets
+                    (output/'input_audit.json').write_text(json.dumps(dict(dataset_id=chart_datasets.get(dataset_id).DATASET_ID)))
                 job={'id':identifier,'status':'queued'}
                 with patch.object(server,'RUNS',root),patch.dict(server.JOBS,{identifier:job},clear=True), \
                      patch.object(server.core,'prepare_target',side_effect=prepare),patch.object(server.core,'finish_fit',side_effect=finish), \

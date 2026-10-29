@@ -1,0 +1,186 @@
+{
+  "capture_complete": true,
+  "all_buffer_hashes_verified": true,
+  "buffers": 2439,
+  "capture_errors": 0,
+  "capture_report_sha256": "76a23e21daee5bff868293528d87d85a324edc74e9ca33adf54cda1e74783a9c",
+  "selected_context": 0,
+  "matching_complete_contexts": [
+    0
+  ],
+  "contexts": [
+    {
+      "context": 0,
+      "coverage": {
+        "synthetic-input": 99372,
+        "diagnostic-sharpness-input": 99372,
+        "diagnostic-sharpness-output": 99372,
+        "diagnostic-spica-input": 99372,
+        "diagnostic-spica-output": 99372,
+        "diagnostic-ycc-input": 99372,
+        "diagnostic-ycc-output": 99372
+      },
+      "tiff_comparison": {
+        "exact": true,
+        "differing_patches": 0,
+        "max_abs": 0,
+        "mae": 0.0,
+        "first_differing_indices": []
+      }
+    }
+  ],
+  "samples": 99372,
+  "probes_per_patch": 9,
+  "sampling": "all 9 x=12..20/y=16 retained; training/evaluation mean x=14..18, original patch IDs",
+  "tiff": "/path/to/r5-workspace/analysis/chart_v45_5300k_20261029/SONY-v4.5-100MP-5300K.TIF",
+  "tiff_sha256": "90bf3f78f8b14aa6f275ed5c4671815e103d1a72f2dee542940634771b270e7a",
+  "pt_runtime_identity": {
+    "cc1": [
+      -51,
+      -184,
+      -254,
+      -419,
+      830,
+      862,
+      1014,
+      1126
+    ],
+    "gamma_sha256": "383fa1bdbacf9c474cb43a36503212bb817b90ec00da92a67ac31ae2157a2f2d",
+    "block13_sha256": "c428079fc0474015714ffeacb25915e41ad84f7ed4764a698227a580aba740c0",
+    "direct_cc1_enabled": false,
+    "selected_coefficients": [
+      -51,
+      -184,
+      -254,
+      -419,
+      830,
+      862,
+      1014,
+      1126
+    ],
+    "existing_selected_coefficients": [
+      -51,
+      -184,
+      -254,
+      -419,
+      830,
+      862,
+      1014,
+      1126
+    ]
+  },
+  "runtime_wb": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "sharpness": 0,
+  "other_controls": {
+    "0x200": 0,
+    "0x218": 0,
+    "0x238": 0,
+    "0x2b4": 0,
+    "0x2b8": 0
+  },
+  "comparisons": {
+    "simulated_front_vs_actual_all9": {
+      "exact": true,
+      "differing_patches": 0,
+      "max_abs": 0,
+      "mae": 0.0,
+      "first_differing_indices": []
+    },
+    "simulated_front_vs_actual_center5": {
+      "exact": true,
+      "differing_patches": 0,
+      "max_abs": 0,
+      "mae": 0.0,
+      "first_differing_indices": []
+    },
+    "native_model_vs_output_center5": {
+      "exact": false,
+      "differing_patches": 1,
+      "max_abs": 11,
+      "mae": 3.68983885467402e-05,
+      "first_differing_indices": [
+        59361
+      ]
+    },
+    "existing_model_vs_output_center5": {
+      "exact": false,
+      "differing_patches": 1,
+      "max_abs": 11,
+      "mae": 3.68983885467402e-05,
+      "first_differing_indices": [
+        59361
+      ]
+    },
+    "tiff_vs_actual_all9": {
+      "exact": true,
+      "differing_patches": 0,
+      "max_abs": 0,
+      "mae": 0.0,
+      "first_differing_indices": []
+    }
+  },
+  "groups": {
+    "colorchecker24": {
+      "exact": true,
+      "differing_patches": 0,
+      "max_abs": 0,
+      "mae": 0.0,
+      "first_differing_indices": []
+    },
+    "gray": {
+      "exact": true,
+      "differing_patches": 0,
+      "max_abs": 0,
+      "mae": 0.0,
+      "first_differing_indices": []
+    },
+    "hue16_tonal": {
+      "exact": true,
+      "differing_patches": 0,
+      "max_abs": 0,
+      "mae": 0.0,
+      "first_differing_indices": []
+    },
+    "hue24_tonal": {
+      "exact": true,
+      "differing_patches": 0,
+      "max_abs": 0,
+      "mae": 0.0,
+      "first_differing_indices": []
+    },
+    "primary_anchor": {
+      "exact": true,
+      "differing_patches": 0,
+      "max_abs": 0,
+      "mae": 0.0,
+      "first_differing_indices": []
+    },
+    "primary_tonal": {
+      "exact": true,
+      "differing_patches": 0,
+      "max_abs": 0,
+      "mae": 0.0,
+      "first_differing_indices": []
+    },
+    "uniform_luma": {
+      "exact": false,
+      "differing_patches": 1,
+      "max_abs": 11,
+      "mae": 4.199691513568821e-05,
+      "first_differing_indices": [
+        47297
+      ]
+    }
+  },
+  "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+  "pairs_sha256": "ff89b472e8a71686bd4ff3d2e3e3fcb1886841a0e39ede91a1878df13310eb53",
+  "output_probes_sha256": "caf2ec8c4ad9bb334fa40a204a970c915a9f7bd42872e238001f991d82b614a8",
+  "training_inputs_changed": false,
+  "training_started": false,
+  "limitation": "Flat patch center evidence only; no arbitrary-photo spatial pipeline or camera equivalence claim"
+}

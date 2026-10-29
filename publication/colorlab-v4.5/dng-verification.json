@@ -1,0 +1,26 @@
+{
+  "source": "/path/to/r5-workspace/analysis/chart_v45_5300k_20261029/SONY-v4.5-100MP-5300K.ARW",
+  "source_sha256": "45455a7c46d7aa2454e73a67c32b01a29a13739d203e54ed24592a451fd48bd6",
+  "output": "/path/to/r5-workspace/analysis/chart_v45_5300k_20261029/SONY-v4.5-100MP-5300K.DNG",
+  "sha256": "0b9ea8efa0c67f7584409473d959da04716ae469441661955a8a30ab934026b1",
+  "bytes": 203514816,
+  "width": 11648,
+  "height": 8736,
+  "make": "SONY",
+  "model": "ILCE-7RM5",
+  "as_shot_neutral": [
+    0.39293937068303914,
+    1.0,
+    0.5723868082727781
+  ],
+  "wb_RGB": [
+    2606,
+    1024,
+    1789
+  ],
+  "black": 512,
+  "white": 16383,
+  "all_raw_pixels_equal": true,
+  "no_pixel_gain_or_scaling": true,
+  "adobe_open_verified": false
+}

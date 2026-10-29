@@ -11,7 +11,9 @@ def main():
     colors=[' '.join(str(x)for x in [r,g,b])for b in [0,1]for g in [0,1]for r in [0,1]]
     (out/'input.cube').write_text('LUT_3D_SIZE 2\n'+'\n'.join(colors)+'\n')
     core.prepare_target(out/'input.cube','S-Gamut3',out)
-    command=[sys.executable,str(ROOT/'web/fit_anchor_native.py'),str(out/'pairs.npz'),'--capture',str(core.CAPTURE),'--context','4','--gamut','0','--output',str(out/'fit'),'--evaluations','1','--pc-compensation','--search-options',json.dumps(dict(starts=2,adaptive_rounds=0,perceptual_weight=.35,quantization_sweeps=0,parameter_smoothing=30))]
+    import baseline
+    capture,context=baseline.for_job(out)
+    command=[sys.executable,str(ROOT/'web/fit_anchor_native.py'),str(out/'pairs.npz'),'--capture',str(capture),'--context',str(context),'--gamut','0','--output',str(out/'fit'),'--evaluations','1','--pc-compensation','--search-options',json.dumps(dict(starts=2,adaptive_rounds=0,perceptual_weight=.35,quantization_sweeps=0,parameter_smoothing=30))]
     with (out/'fit.log').open('w')as log:subprocess.run(command,stdout=log,stderr=subprocess.STDOUT,check=True)
     result=core.finish_fit(out,2,'Portable','Portable ST',131071);assert result['binary_bytes']==2580
     pc_compensation.generate(out)
@@ -25,10 +27,10 @@ def main():
     with np.load(out/'fit/fit_state.npz')as state:expected=state['test_prediction']
     import white_balance
     from edit_native_recipe import read
-    recipe,model=read(out/'fit/recipe.json',core.CAPTURE,4,None)
+    recipe,model=read(out/'fit/recipe.json',capture,context,None)
     with np.load(out/'pairs.npz')as pairs:actual=white_balance.render_pairs(model,pairs,recipe,pairs['split']=='test')
     np.testing.assert_array_equal(actual,expected)
     raw=core.write_validation_raw((ROOT/'tests/fixtures/synthetic-header.ARW').read_bytes(),out/'fit/recipe.json',out/'raw')if (ROOT/'tests/fixtures/synthetic-header.ARW').exists()else None
-    (out/'smoke_summary.json').write_text(json.dumps(dict(passed=True,samples=3700,wb_training=False,pc_training=True,v4_bytes=len(binary),grid_enabled=True,exact_recipe_reconstruction=True),indent=2)+'\n')
+    (out/'smoke_summary.json').write_text(json.dumps(dict(passed=True,samples=99372,wb_training=False,pc_training=True,v4_bytes=len(binary),grid_enabled=True,exact_recipe_reconstruction=True),indent=2)+'\n')
     print('独立新色卡训练、PC补偿、网格压缩、v4导出及配方重建通过。')
 if __name__=='__main__':main()

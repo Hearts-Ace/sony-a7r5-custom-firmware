@@ -3,7 +3,7 @@
 4.34修正自定义滤镜动态图标：沿用原厂Creative Look当前状态，ST时显示ST、切换其它外观时同步取图。4.33误将帮助文字资源当图片的问题已纠正。白色优先改为97，氛围优先保持−1；12地区通用Backup模板与backup.sum同步，保留R6可恢复ST参数、FL2/FL3和原有参数／网格生命周期。
 
 - [4.34源码、最新工具和滤镜下载](https://github.com/Hearts-Ace/sony-a7r5-custom-firmware/releases/tag/v4.34)
-- [色彩工作台](R5ColorLab/README.md) · [最新高精度训练方案](R5ColorLab/TRAINING.md)
+- [v4.5训练台与三格式色卡下载](https://github.com/Hearts-Ace/sony-a7r5-custom-firmware/releases/tag/colorlab-v4.5) · [训练台源码](R5ColorLab/README.md) · [高精度训练方案](R5ColorLab/TRAINING.md)
 - [新版12款滤镜：BIN、可编辑配置与完整训练设置](filters/FUJ_12_continuity30/README.md)
 - [反推网格工作台](R5GridCalibrator/README.md) · [R5实拍v2响应及来源](R5ColorLab/web/data/r5/PROVENANCE.md)
 - [唯一固件构建入口与复现说明](firmware/r5/README.md)
@@ -18,9 +18,9 @@
 
 正式默认：参数平滑30、输出连续性30、每阶段2000评估、12起点、8动态轮、3轮Gamma/色彩交替、3轮原生整数量化微调。最终5×9×9整数网格直接拟合目标，压缩后原生/网格交替和灰阶专项微调关闭。支持Apple Metal/MPS可选训练、文件夹批量和独立简称／全称。
 
-输入采用unity-WB 100MP合成色卡、PT前端、中心横向5点均值；R5实拍v2响应用于训练、压缩及预览，覆盖42/256颜色单元，其他区域外推。输出连续性在训练阶段约束明暗／色相／饱和度轨迹上的色度折返和过度放大，同时约束原生整数参数与最终整数网格；不增加照片处理步骤或BIN格式。
+新任务默认采用v4.5 5300K 100MP合成色卡、已独立验证的PT纯模拟前端和中心横向5点均值；旧v4目标/任务按版本保留。Adobe RGB目标先以浮点ICC转换到sRGB，再取中心均值；R5实拍v2响应用于训练、压缩及预览，覆盖42/256颜色单元，其他区域外推。输出连续性在训练阶段约束明暗／色相／饱和度轨迹上的色度折返和过度放大，同时约束原生整数参数与最终整数网格；不增加照片处理步骤或BIN格式。
 
-新版12项已全部完成，BIN v4共29,552字节，SHA256 `e3375e9f5fb8e32ae4dce5edab42c6024f1bc7d969abf7c2e01ded2b53419bc2`。下载的配置会完整替换自定义集合；名称用于说明模拟目标，非品牌官方产品。
+现有v4输入的12项已全部完成；该结果不冒充v4.5重新训练结果。BIN v4共29,552字节，SHA256 `e3375e9f5fb8e32ae4dce5edab42c6024f1bc7d969abf7c2e01ded2b53419bc2`。下载的配置会完整替换自定义集合；名称用于说明模拟目标，非品牌官方产品。
 
 ## 固件发布范围
 

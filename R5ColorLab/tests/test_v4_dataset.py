@@ -6,7 +6,7 @@ import core,chart_target,v4_dataset,anchor_dataset
 
 class V4Tests(unittest.TestCase):
     def test_default_and_tamper(self):
-        a,audit=core.measured_inputs()
+        a,audit=core.measured_inputs(v4_dataset.DATASET_ID)
         self.assertEqual(audit['dataset_id'],v4_dataset.DATASET_ID)
         self.assertEqual(a['input'].shape,(99372,9,3))
         self.assertTrue(anchor_dataset.validate(a)['passed'])
@@ -25,7 +25,7 @@ class V4Tests(unittest.TestCase):
     def test_actual_16bit_reference_sampling(self):
         import tifffile
         data=(v4_dataset.FOLDER/'reference-sRGB16.tiff').read_bytes()
-        t,audit=chart_target.decode(data)
+        t,audit=chart_target.decode(data,v4_dataset.DATASET_ID)
         pixels=tifffile.imread(io.BytesIO(data))
         expected=pixels[16::32,16::32].reshape(-1,3)/65535
         np.testing.assert_allclose(t,expected,atol=2e-16,rtol=0)
@@ -33,7 +33,7 @@ class V4Tests(unittest.TestCase):
         self.assertEqual(audit['bits_per_channel'],16)
 
     def test_download_exact_raf(self):
-        with zipfile.ZipFile(io.BytesIO(chart_target.download())) as z:
+        with zipfile.ZipFile(io.BytesIO(chart_target.download(v4_dataset.DATASET_ID))) as z:
             m=v4_dataset.metadata()
             self.assertEqual(core.sha(z.read(m['raf_file'])),m['raf_sha256'])
 

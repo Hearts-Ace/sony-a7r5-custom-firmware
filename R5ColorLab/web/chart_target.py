@@ -11,22 +11,37 @@ LAYOUT = 'r5-st-measured-3700-row-major-v1'
 MAX_BYTES = 1024*1024*1024
 
 
-def manifest():
-    import v4_dataset
-    return dict(v4_dataset.metadata(),schema=v4_dataset.DATASET_ID,
+def manifest(dataset_id=None):
+    from chart_datasets import get
+    dataset=get(dataset_id)
+    return dict(dataset.metadata(),schema=dataset.DATASET_ID,
         order='row-major pairs.npz sample order',colorspace='sRGB encoded RGB')
 
 
-def download():
-    import v4_dataset
-    m=manifest()
-    raw=__import__('gzip').decompress((v4_dataset.FOLDER/(m['raf_file']+'.gz')).read_bytes())
-    if core.sha(raw)!=m['raf_sha256']:raise ValueError('v4 RAF 色卡散列不符')
+def raw_file(dataset_id=None,format='raf'):
+    from chart_datasets import get
+    if format not in ('raf','arw','dng'):
+        raise ValueError('不支持的色卡格式')
+    dataset=get(dataset_id)
+    m=dataset.metadata()
+    if format+'_file' not in m:
+        raise ValueError('此历史色卡未提供该格式下载')
+    name=m[format+'_file']
+    path=dataset.FOLDER/name
+    data=path.read_bytes() if path.is_file() else __import__('gzip').decompress((dataset.FOLDER/(name+'.gz')).read_bytes())
+    if core.sha(data)!=m[format+'_sha256']:
+        raise ValueError('色卡文件散列不符')
+    return name,data
+
+def download(dataset_id=None):
+    m=manifest(dataset_id)
+    name,raw=raw_file(dataset_id)
     package=io.BytesIO()
     with zipfile.ZipFile(package,'w',zipfile.ZIP_DEFLATED) as archive:
-        archive.writestr(m['raf_file'],raw)
-        archive.writestr('layout.json',json.dumps(manifest(),indent=2))
-        archive.writestr('使用说明.txt','默认 Sony unity-WB 一亿像素色卡经 IED 方案转换的 GFX RAF；11648×8736，32×32 色块，共99372块。\n导出同尺寸 RGB JPG 或8/16位TIFF，推荐16位；支持 sRGB 或带 RGB ICC 的目标，非sRGB逐探针以64位精度转换后平均。保留方向，不缩放、不裁切、不做几何修正。\n训练输入由新Sony传感器码值经ITP/unity-WB/SSCS模拟生成，全部色块9探针已与Edit PT实采逐值核对。训练/评估统一使用中心5点均值。实采不作隐藏颜色补偿。\n旧白平衡错误色卡及其训练结果已废弃。照片空间处理预览仍为近似。\n')
+        archive.writestr(name,raw)
+        archive.writestr('layout.json',json.dumps(m,indent=2))
+        note=('v4.5：Sony 5300K 白平衡已在 Bayer 中补偿，DNG 保留相同码值和 WB，RAF 经 IED 转换不加增益。保留文件的拍摄白平衡；跨机型 Kelvin 显示可以不同，不要在富士软件强改为5300K。全部99372块中心模拟输入已与新版Edit实采逐值核对；最终PT输出仅1块绿色通道差11个原生码值，未加实采补偿。' if m.get('version')=='4.5' else '历史 v4：unity-WB；模拟输入已与 Edit PT 实采核对。')
+        archive.writestr('使用说明.txt',note+'\n11648×8736，32×32 色块，共99372块。导出同尺寸 RGB JPG 或8/16位TIFF，推荐16位；支持 sRGB 或 RGB ICC，转换后使用中心横向5点均值。保留方向，不缩放、不裁切、不做几何修正。\n上传时必须选择同一色卡版本，不要混用旧目标。照片空间前端仍为近似。\n')
     return package.getvalue()
 
 
@@ -40,7 +55,9 @@ def check_profile(icc):
     return ImageCms.getProfileDescription(profile).strip()
 
 
-def decode(data):
+def decode(data,dataset_id=None):
+    from chart_datasets import get
+    dataset=get(dataset_id)
     if not 0 < len(data) <= MAX_BYTES:
         raise ValueError('目标图大小必须在 1 GiB 内')
     if data[:4] in (b'II*\x00',b'MM\x00*'):
@@ -81,6 +98,8 @@ def decode(data):
     bits=pixels.dtype.itemsize*8
     # Average only the interior; avoid JPEG ringing and color-block boundaries.
     is_v4=pixels.shape[1]==11648
+    if not is_v4 and dataset.DATASET_ID != __import__('v4_dataset').DATASET_ID:
+        raise ValueError('v4.5 必须使用完整一亿像素新版色卡导出图')
     if is_v4:
         import v4_dataset
         # LibRaw can drop the first row of the odd-top recommended crop.
@@ -109,7 +128,7 @@ def decode(data):
         from exact_icc import to_srgb
         blocks,conversion=to_srgb(blocks/(2**bits-1),icc)
         samples=blocks.mean(axis=(1,3)).reshape(-1,3)
-    layout=manifest() if is_v4 else dict(schema=LAYOUT,samples=COLUMNS*ROWS,width=WIDTH,height=HEIGHT)
+    layout=manifest(dataset.DATASET_ID) if is_v4 else dict(schema=LAYOUT,samples=COLUMNS*ROWS,width=WIDTH,height=HEIGHT)
     audit=dict(layout, target_kind='chart-image', source_sha256=core.sha(data),
                file_format=kind,bits_per_channel=bits,icc_policy=profile,target_width=int(pixels.shape[1]),target_height=int(pixels.shape[0]),
                icc_conversion=conversion,layout_requires_user_preservation=True)
@@ -117,9 +136,9 @@ def decode(data):
     return samples,audit
 
 
-def prepare(data, output, source_path=None):
-    samples, chart_audit=decode(data)
-    arrays,audit=core.measured_inputs(None if chart_audit['schema']!=LAYOUT else 'legacy')
+def prepare(data, output, source_path=None,dataset_id=None):
+    samples, chart_audit=decode(data,dataset_id)
+    arrays,audit=core.measured_inputs(chart_audit['schema'] if chart_audit['schema']!=LAYOUT else 'legacy')
     if len(samples)!=len(arrays['input']):
         raise ValueError('目标图与训练输入样本数量不符')
     if source_path is None:

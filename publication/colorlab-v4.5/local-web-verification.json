@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "server_pid": 64358,
+  "default_chart": "v4.5-sony100mp-5300k-sim-center5-20261029",
+  "edit_validation": {
+    "independent_v45_capture": true,
+    "old_color_subchain_verified": true,
+    "report_file": "runtime-validation.json",
+    "report_sha256": "68af7cde710b01f30612befacfd2acaac601fdc4b9412ee69922d5c304f7d651",
+    "capture_report_sha256": "76a23e21daee5bff868293528d87d85a324edc74e9ca33adf54cda1e74783a9c",
+    "context": 0,
+    "samples": 99372,
+    "probes_per_patch": 9,
+    "simulated_inputs_exact": true,
+    "tiff_matches_actual_output": true,
+    "pt_parameters_verified": true,
+    "final_color_residual": {
+      "exact": false,
+      "differing_patches": 1,
+      "max_abs": 11,
+      "mae": 3.68983885467402e-05,
+      "first_differing_indices": [
+        59361
+      ]
+    }
+  },
+  "active_jobs": [],
+  "latest_batch": "dbd6a094691141ed8eb66a6d40fe58fc",
+  "compute_backend": {
+    "requested": "1",
+    "available": true,
+    "backend": "Apple Metal/MPS"
+  },
+  "inputs_unchanged": true,
+  "derived_context_unchanged": true,
+  "raw_sha256": {
+    "arw": "45455a7c46d7aa2454e73a67c32b01a29a13739d203e54ed24592a451fd48bd6",
+    "dng": "0b9ea8efa0c67f7584409473d959da04716ae469441661955a8a30ab934026b1",
+    "raf": "fd31efd39ed671e39891984ee0f9c56933599d52764a77138c905166cbb8dcda"
+  },
+  "formal_bin_sha256": "e3375e9f5fb8e32ae4dce5edab42c6024f1bc7d969abf7c2e01ded2b53419bc2",
+  "unit_tests": {
+    "run": 10,
+    "passed": 10
+  },
+  "js_syntax_passed": true
+}

@@ -1,0 +1,12 @@
+{
+  "original_source": "sony_chart_100mp_20261027/capture-PT-1793079348082/verified-probes.npz",
+  "original_sha256": "475233697d47338fde1ce0cba2b2c05c4604ee31337d452ceded7a2b87f9df8a",
+  "field": "input",
+  "shape": [
+    99372,
+    9,
+    3
+  ],
+  "fixture_sha256": "7a339e64e6acdd3b01230e23b49f7edb230cfbbd043b9f036903a11d05cb75cf",
+  "values_unchanged": true
+}

@@ -1,0 +1,83 @@
+{
+  "version": "4.5",
+  "source": "/Users/LOCAL_USER/Desktop/白平衡对比/DSC00569.ARW",
+  "source_sha256": "def6cb63c9687507c2fa1a532e86cfa2e1219fa066060b79259402c0bbc6198e",
+  "color_reference": "/path/to/r5-workspace/analysis/sony_chart_100mp_20261027/chart.npz",
+  "color_reference_sha256": "bea5cfe35a779b32130928a3021d4be7cbe591e3e5fca183f72688aacdfc2a7a",
+  "wb_kelvin": 5300,
+  "wb_RGGB": [
+    2606,
+    1024,
+    1024,
+    1789
+  ],
+  "gain_ratio_rgb": [
+    2.544921875,
+    1.0,
+    1.7470703125
+  ],
+  "edit_effective_wb": [
+    2687,
+    1056,
+    1056,
+    1844
+  ],
+  "native_reference": "previous unity-WB chart, same PT integer color subchain",
+  "delta_e00": {
+    "mean": 0.0026341806204740934,
+    "p95": 0.016999321065241248,
+    "maximum": 0.1962117039049936
+  },
+  "delta_e00_by_category": {
+    "colorchecker24": {
+      "mean": 0.003908985208962052,
+      "maximum": 0.06718349209381362
+    },
+    "gray": {
+      "mean": 0.006016603625853554,
+      "maximum": 0.12991636256707662
+    },
+    "hue16_tonal": {
+      "mean": 0.0034552421299047136,
+      "maximum": 0.17208071921820525
+    },
+    "hue24_tonal": {
+      "mean": 0.003429661253268849,
+      "maximum": 0.1647421016354424
+    },
+    "primary_anchor": {
+      "mean": 0.0,
+      "maximum": 0.0
+    },
+    "primary_tonal": {
+      "mean": 0.0036940112170339855,
+      "maximum": 0.1962117039049936
+    },
+    "uniform_luma": {
+      "mean": 0.0025110095147177847,
+      "maximum": 0.18819928884891532
+    }
+  },
+  "raw_codes_min": [
+    512,
+    512,
+    512
+  ],
+  "raw_codes_max": [
+    6749,
+    16383,
+    9602
+  ],
+  "pt_rgb_max_abs_14bit": [
+    79,
+    45,
+    36
+  ],
+  "gray_all_256_exactly_neutral": true,
+  "calibration": "WB inverse + exact integer lookup + local PT quantization selection",
+  "edit_v45_capture_validated": false,
+  "limits": [
+    "Full Edit v4.5 context not captured; PT downstream context held fixed.",
+    "14-bit RAW quantization prevents universally bit-identical colors."
+  ]
+}

@@ -18,7 +18,7 @@ def write(original,recipe_path,destination):
         raise ValueError('验证 ARW 仅支持原生颜色参数')
     from edit_color_pipeline import RuntimeColor
     source=RuntimeColor.from_capture(capture,context)
-    is_pt=recipe['source'].get('dataset_id') in (baseline.PT_ID,baseline.OLD_PT_ID)
+    is_pt=recipe['source'].get('dataset_id') in (*baseline.PT_IDS,baseline.OLD_PT_ID)
     look='Portrait' if is_pt else 'Standard';short='PT' if is_pt else 'ST'
     m=reader();a=m.parse(original)
     if a['model']!='ILCE-7RM5':raise ValueError('需要 R5 ARW')

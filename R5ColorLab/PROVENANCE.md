@@ -1,3 +1,5 @@
+2026-10-29：默认改为v4.5 5300K数据集，权威元数据为web/data/chart/sony100mp_5300k_v45/manifest.json。旧v4 unity-WB仅保留版本绑定兼容；下文旧默认描述按历史读取。新pairs数值未改，派生上下文报告及实采验证摘要只脱敏本地路径，原始/公开散列映射见publication/colorlab-v4.5/source_mapping.json。
+
 2026-10-28：当前默认、色卡及算法以README.md和web/data/chart/sony100mp_unity_center5/manifest.json为准；下文早期默认值及3700点色卡描述仅作历史来源。
 
 # 数据与算法来源

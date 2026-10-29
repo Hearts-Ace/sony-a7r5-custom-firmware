@@ -1,0 +1,48 @@
+{
+  "ARW": {
+    "sizes": "ImageSizes(raw_height=9216, raw_width=11776, height=9216, width=11776, top_margin=0, left_margin=0, iheight=9216, iwidth=11776, pixel_aspect=1.0, flip=0, crop_left_margin=32, crop_top_margin=20, crop_width=11648, crop_height=8736)",
+    "wb": [
+      2606.0,
+      1024.0,
+      1789.0,
+      1024.0
+    ],
+    "white": 16383,
+    "black": [
+      512,
+      512,
+      512,
+      512
+    ]
+  },
+  "DNG": {
+    "sizes": "ImageSizes(raw_height=8736, raw_width=11648, height=8736, width=11648, top_margin=0, left_margin=0, iheight=8736, iwidth=11648, pixel_aspect=1.0, flip=0, crop_left_margin=0, crop_top_margin=0, crop_width=0, crop_height=0)",
+    "wb": [
+      2.544921875,
+      1.0,
+      1.7470703125,
+      0.0
+    ],
+    "white": 16383,
+    "black": [
+      512,
+      512,
+      512,
+      512
+    ]
+  },
+  "linear_unscaled": {
+    "patches": 99372,
+    "probe_pixels": 496860,
+    "different_probe_pixels": 0,
+    "maximum_abs_16bit": 0,
+    "mae_16bit": 0.0
+  },
+  "srgb_as_shot": {
+    "patches": 99372,
+    "probe_pixels": 496860,
+    "different_probe_pixels": 605,
+    "maximum_abs_16bit": 12,
+    "mae_16bit": 0.0006105006105006105
+  }
+}

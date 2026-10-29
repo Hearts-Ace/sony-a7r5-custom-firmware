@@ -20,6 +20,7 @@ import zipfile
 
 import core
 import chart_target
+import chart_datasets
 import export_policy423
 import batch_training
 from grid_models import default_response
@@ -99,7 +100,7 @@ def work(identifier, body, resume=False):
             audit=json.loads((output/'chart_target.json').read_text())
             if audit['source_sha256']!=body.get('target_sha256') or saved['source']['pairs_sha256']!=core.sha((output/'pairs.npz').read_bytes()):
                 raise ValueError('已有拟合的目标或训练数据身份不符，拒绝接续')
-            if saved['source']['dataset_id']!='v4-sony100mp-unity-sim-center5-20261027':
+            if saved['source']['dataset_id'] not in chart_datasets.MODULES or saved['source']['dataset_id']!=body.get('dataset_id',__import__('v4_dataset').DATASET_ID):
                 raise ValueError('已有拟合色卡版本不符')
             job.update(phase='复用已完成的原生拟合，接续补偿与压缩')
         else:
@@ -131,12 +132,12 @@ def fit_native(identifier,body,output,job):
             data=source_path.read_bytes()
             if core.sha(data)!=body['target_sha256']:
                 raise ValueError('目标图上传来源发生变化')
-            chart_target.prepare(data,output,source_path=source_path)
+            chart_target.prepare(data,output,source_path=source_path,dataset_id=body.get('dataset_id'))
             description='source-bound measured RAW frontend -> processed chart image / sRGB'
         else:
             lut = output / 'input.cube'
             lut.write_text(body['lut'], encoding='utf-8')
-            core.prepare_target(lut, body['gamut'], output)
+            core.prepare_target(lut, body['gamut'], output,dataset_id=body.get('dataset_id'))
             description='integer RAW -> raw-alchemy-v0.6.2-fused ' + body['gamut'] + ' S-Log3 -> uploaded cube'
         job.update(phase='原生分阶段拟合与 PC 交替优化' if body.get('pc_compensation',False) else '原生分阶段拟合：明暗、色彩、联合微调')
         cmd = [sys.executable, str(core.HERE / 'fit_anchor_native.py'), str(output / 'pairs.npz'),
@@ -215,11 +216,15 @@ def validate_fit(body):
         target_id=body.get('target_id')
         if not isinstance(target_id,str) or len(target_id)!=32 or any(c not in '0123456789abcdef' for c in target_id):
             raise ValueError('请先上传色卡目标图')
-        data=(core.HERE/'chart_uploads'/target_id/'source.bin').read_bytes()
-        chart_target.decode(data)
+        folder=core.HERE/'chart_uploads'/target_id
+        body['dataset_id']=chart_datasets.upload_version(folder,body.get('dataset_id'))
+        data=(folder/'source.bin').read_bytes()
+        chart_target.decode(data,body['dataset_id'])
         body['target_sha256']=core.sha(data)
     elif body.get('gamut') not in ('S-Gamut3', 'S-Gamut3.Cine'):
         raise ValueError('请选择 LUT 输入色域')
+    if kind=='lut':
+        body['dataset_id']=chart_datasets.get(body.get('dataset_id')).DATASET_ID
     core.gamma_endpoint(body.get('gamma_endpoint128'))
     if kind=='lut' and (not isinstance(body.get('lut'), str) or not body['lut'].strip()):
         raise ValueError('请导入 .cube LUT')
@@ -261,15 +266,21 @@ class Handler(BaseHTTPRequestHandler):
             if path.startswith('/api/batches/'):
                 return batch_training.get(self, path, sys.modules[__name__])
             if path == '/api/chart-original':
-                return self.respond(chart_target.download(), 'application/zip', filename='GFX-unityWB-100MP-chart.zip')
+                dataset_id=parse_qs(urlparse(self.path).query).get('dataset_id',[None])[0]
+                return self.respond(chart_target.download(dataset_id), 'application/zip', filename='GFX-100MP-chart.zip')
+            if path == '/api/chart-file':
+                query=parse_qs(urlparse(self.path).query)
+                name,data=chart_target.raw_file(query.get('dataset_id',[None])[0],query.get('format',['raf'])[0])
+                return self.respond(data,'application/octet-stream',filename=name)
             if path == '/api/bootstrap':
                 entries, provenance = core.presets()
                 return self.respond(dict(token=TOKEN, presets=entries, provenance=provenance,
                                          default_chart=chart_target.manifest(),
+                                         chart_versions=chart_datasets.catalog(),
                                          compute_backend=__import__('gpu_runtime').policy(),
                                          latest_batch=batch_training.latest(core.HERE),
                                          template=core.config([]), stock_grids=__import__("stock_grids").catalog(),
-                                         fitting_baseline='PT / Sony unity-WB simulated ITP+SSCS · 99,372 patches; Edit verified',
+                                         fitting_baseline='PT / v4.5 5300K simulated ITP+SSCS · 99,372 patches; derived context',
                                          grid_response=default_response(), history=[dict(id=k, status=v['status'], started=v['started'], phase=v['phase'],target_kind=v.get('target_kind','lut'),pc_available=(RUNS/k/'pc_compensation.json').is_file())
                                                   for k, v in sorted(JOBS.items(), key=lambda kv: kv[1]['started'], reverse=True)][:30],
                                          jobs=[k for k, v in JOBS.items() if v['status'] in ('running', 'queued')]))
@@ -388,11 +399,14 @@ class Handler(BaseHTTPRequestHandler):
                 data=self.rfile.read(length)
                 if len(data)!=length:
                     raise ValueError('目标图上传不完整')
-                _, audit=chart_target.decode(data)
+                dataset_id=parse_qs(urlparse(self.path).query).get('dataset_id',[None])[0]
+                dataset_id=chart_datasets.get(dataset_id).DATASET_ID
+                _, audit=chart_target.decode(data,dataset_id)
                 identifier=uuid.uuid4().hex
                 destination=core.HERE/'chart_uploads'/identifier
                 destination.mkdir(parents=True)
                 (destination/'source.bin').write_bytes(data)
+                (destination/'audit.json').write_bytes(dump(audit))
                 return self.respond(dict(id=identifier,audit=audit),status=201)
             if urlparse(self.path).path == '/api/preview':
                 if not 0 < length <= 512*1024*1024 or self.headers.get('Content-Type') != 'application/octet-stream':

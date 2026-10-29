@@ -16,7 +16,8 @@ WIDTH, HEIGHT, TILE = 11648, 8736, 32
 COLUMNS, ROWS = WIDTH//TILE, HEIGHT//TILE
 
 def identity(arrays):
-    return str(np.asarray(arrays.get('dataset_id','')).item()) in (DATASET_ID, *RETIRED_IDS)
+    from v45_dataset import DATASET_ID as V45_ID
+    return str(np.asarray(arrays.get('dataset_id','')).item()) in (DATASET_ID, V45_ID, *RETIRED_IDS)
 
 @lru_cache(maxsize=1)
 def metadata():
@@ -31,6 +32,9 @@ def _load():
 
 def validate(arrays):
     dataset_id=str(np.asarray(arrays.get('dataset_id','')).item())
+    from v45_dataset import DATASET_ID as V45_ID, validate as validate_v45
+    if dataset_id==V45_ID:
+        return validate_v45(arrays)
     if dataset_id!=DATASET_ID:
         raise ValueError('此色卡数据已废弃：旧白平衡/传感器码值错误，请使用新版 unity-WB 色卡重新训练')
     expected=_load()

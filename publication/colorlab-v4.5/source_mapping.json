@@ -1,0 +1,192 @@
+{
+  "R5ColorLab/web/baseline.py": {
+    "source_sha256": "b40b1e0572cea3f53fc5c9e111a4b185b372baa9315eef868b47e3c49ae6eb5c",
+    "published_sha256": "b322c8994af6384efae5213315a1758c4a0380d0c97d3e05b7c49127de367b21",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/chart_datasets.py": {
+    "source_sha256": "d55e5023a05660fc12ea803f9649357a96844dcc0e18806ca440a584d6f855f3",
+    "published_sha256": "d55e5023a05660fc12ea803f9649357a96844dcc0e18806ca440a584d6f855f3",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/chart_target.py": {
+    "source_sha256": "e982fe0b80296d21cd3f4d016899664323649c3b3f2b584869b1134f05df394c",
+    "published_sha256": "df820863cf3ba2c1eb7a493dabe46df6bc98108dcc96a44f804818a24ef0c8ac",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/core.py": {
+    "source_sha256": "9e636de3809dbe884138eb0cf5b1a9585b2c26ba9a8807911e0971191942d0f1",
+    "published_sha256": "32b27168cdc2c865b5d01f6ab89c035f285062b3d531d3f6173db0c1c980bb44",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/fit_anchor_native.py": {
+    "source_sha256": "c690822434ce097b60a1d0c819a6386aa71f384d3c27ea5a07b9fd9bacc92c78",
+    "published_sha256": "9c99525742091488ad7238b9af6e885d8cd760fd4e01b399cd17f8c4aa81e78b",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/output_continuity.py": {
+    "source_sha256": "5602732fd2e099db18e1ae3c7c39d77f1ce39e7c9d2e8a3bf98ae684b60d198f",
+    "published_sha256": "5602732fd2e099db18e1ae3c7c39d77f1ce39e7c9d2e8a3bf98ae684b60d198f",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/pc_stages.py": {
+    "source_sha256": "4bf89ea18876ff0f1c786451af96d183b2bc204029151e56dcf5ab1825f9523f",
+    "published_sha256": "face2e962d8c1574dd884823ed782aab65750baa3fb3ce03dc448851e3f05621",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/photo_preview.py": {
+    "source_sha256": "7057809ff536af372116f5b566d5c3a0462c0833c9eeed3a11483aa8fc6b1a61",
+    "published_sha256": "c3d987644e9de046837c830a32dc3b451c8c699e0c020b141d2f3c1099406788",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/sensor_encoding.py": {
+    "source_sha256": "c25f89f0457545614f6f115e61bed0185d06475969da7841fb948238475e1983",
+    "published_sha256": "c25f89f0457545614f6f115e61bed0185d06475969da7841fb948238475e1983",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/server.py": {
+    "source_sha256": "818378732fb5332fd79387cdb73a7df7c0d20eba0ed183a0af3c2a8752e9ed24",
+    "published_sha256": "818378732fb5332fd79387cdb73a7df7c0d20eba0ed183a0af3c2a8752e9ed24",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/v45_dataset.py": {
+    "source_sha256": "5ab078ad41d319b3fc4bad16b8d12a373f0ebd44a1d6cbd34d2a305ce142376a",
+    "published_sha256": "5ab078ad41d319b3fc4bad16b8d12a373f0ebd44a1d6cbd34d2a305ce142376a",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/v4_dataset.py": {
+    "source_sha256": "b7d1b6600d32e8dd0aa63748f65394b3932306167f18551b89a923a14c71c289",
+    "published_sha256": "b7d1b6600d32e8dd0aa63748f65394b3932306167f18551b89a923a14c71c289",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/validation_raw.py": {
+    "source_sha256": "93a8cd6b130d5e0b3f37f118f3da7cf7de99c4f0c7648fb1df25f3d405f75665",
+    "published_sha256": "93a8cd6b130d5e0b3f37f118f3da7cf7de99c4f0c7648fb1df25f3d405f75665",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/static/index.html": {
+    "source_sha256": "7a02668c9314aa1ce65d8e00539ca6effbf810b90cb5189e899e38ec671f4126",
+    "published_sha256": "7a02668c9314aa1ce65d8e00539ca6effbf810b90cb5189e899e38ec671f4126",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/static/app.js": {
+    "source_sha256": "3306b8c087418debd9e3ddd2a207c5b29fa4b9f973b357b64feec7ee79579de8",
+    "published_sha256": "3306b8c087418debd9e3ddd2a207c5b29fa4b9f973b357b64feec7ee79579de8",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/data/chart/sony100mp_5300k_v45/pairs.npz": {
+    "source_sha256": "ff89b472e8a71686bd4ff3d2e3e3fcb1886841a0e39ede91a1878df13310eb53",
+    "published_sha256": "ff89b472e8a71686bd4ff3d2e3e3fcb1886841a0e39ede91a1878df13310eb53",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/data/chart/sony100mp_5300k_v45/reference-sRGB16.tiff": {
+    "source_sha256": "2167ef1990c6885bc8b49e3fe3f7b91c1deeca4829d7fe3cb51d8e7f6851f18c",
+    "published_sha256": "2167ef1990c6885bc8b49e3fe3f7b91c1deeca4829d7fe3cb51d8e7f6851f18c",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/data/chart/sony100mp_5300k_v45/capture/07623-color-build-runtime-16.bin": {
+    "source_sha256": "f34cfa7d867c797f08c211be4cb2fb27264148f1c3747043dcc9f7b4b6c95b1f",
+    "published_sha256": "f34cfa7d867c797f08c211be4cb2fb27264148f1c3747043dcc9f7b4b6c95b1f",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/data/chart/sony100mp_5300k_v45/capture/07740-area-comp-267-controls.bin": {
+    "source_sha256": "fc4d700d5a21ebf627dcba3030aee4668748d33b492517e516215f89ddf65227",
+    "published_sha256": "fc4d700d5a21ebf627dcba3030aee4668748d33b492517e516215f89ddf65227",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/data/chart/sony100mp_5300k_v45/capture/07624-color-build-raw-16.bin": {
+    "source_sha256": "97e5f10267835e0145787bf7441fde1932ca31098885ed262a79936e161c5559",
+    "published_sha256": "97e5f10267835e0145787bf7441fde1932ca31098885ed262a79936e161c5559",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/data/chart/sony100mp_5300k_v45/capture/07741-area-comp-266-controls.bin": {
+    "source_sha256": "fc4d700d5a21ebf627dcba3030aee4668748d33b492517e516215f89ddf65227",
+    "published_sha256": "fc4d700d5a21ebf627dcba3030aee4668748d33b492517e516215f89ddf65227",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/data/chart/sony100mp_5300k_v45/capture/07625-color-build-settings-16.bin": {
+    "source_sha256": "d45c8470ee64287de9c7fa855c5787b91c0cb15f05f454d10c055b8bf9fe21ab",
+    "published_sha256": "d45c8470ee64287de9c7fa855c5787b91c0cb15f05f454d10c055b8bf9fe21ab",
+    "paths_redacted": false
+  },
+  "R5ColorLab/web/data/chart/sony100mp_5300k_v45/capture/report.json": {
+    "source_sha256": "22bbaf438c4d5e05857407e625bb4038e5ea139de46f5acfe6f188ef8181fe90",
+    "published_sha256": "da271a4d6decff9cf6c36e9083d9f6fa953caf58e8c6a58b0f204f17e1ad6a12",
+    "paths_redacted": true
+  },
+  "R5ColorLab/web/data/chart/sony100mp_5300k_v45/runtime-validation.json": {
+    "source_sha256": "68af7cde710b01f30612befacfd2acaac601fdc4b9412ee69922d5c304f7d651",
+    "published_sha256": "41922816c76fbf6a612fb0be3ac7daa2d5cb33ce686b6f417e86f7378fb84004",
+    "paths_redacted": true
+  },
+  "R5ColorLab/tests/test_v45_dataset.py": {
+    "source_sha256": "faf3bd512ba3ed2c3a2ab0c4668c668e0e952f4fab20bcbbfcb3be28b65f2357",
+    "published_sha256": "faf3bd512ba3ed2c3a2ab0c4668c668e0e952f4fab20bcbbfcb3be28b65f2357",
+    "paths_redacted": false
+  },
+  "R5ColorLab/tests/test_pt_baseline.py": {
+    "source_sha256": "a640c2266fbbd5abf6c2b3656499d912f9079dacfa8dcf9d91f00c159e46cac6",
+    "published_sha256": "f92149465d35f5710d9e1ec84ebf8ccbfe1ce35f9957e4db2e045b98c09c9184",
+    "paths_redacted": false
+  },
+  "R5ColorLab/tests/test_v4_dataset.py": {
+    "source_sha256": "d93d320451d66778325b336b2448d9601e31cc5a2140b0de4f593dbde80ce2f9",
+    "published_sha256": "d93d320451d66778325b336b2448d9601e31cc5a2140b0de4f593dbde80ce2f9",
+    "paths_redacted": false
+  },
+  "R5ColorLab/chart_sources/v4.5/prepare_design.py": {
+    "source_sha256": "0d2eb8c042a1c7860038b66b94318b00746789f17ec8e29de3e3f8e3711da5af",
+    "published_sha256": "a0bd91d9c9fec045f94a3d58d97a437afb86a9f9f1c11d473adaffdd3c657609",
+    "paths_redacted": true
+  },
+  "R5ColorLab/chart_sources/v4.5/generate_arw.py": {
+    "source_sha256": "81b2c0199ff821feea9433983e01da488369eaf855bf3ab0265ea75b3b9c8948",
+    "published_sha256": "97cde83159a75305938847014727e2f5fda18b4685b60aa68f1d81773daddd67",
+    "paths_redacted": true
+  },
+  "R5ColorLab/chart_sources/v4.5/generate_dng.py": {
+    "source_sha256": "0c663ab052642a4c49b7f5926fd68a3a6f90f2e608b24d7585245ac7a5905596",
+    "published_sha256": "0c663ab052642a4c49b7f5926fd68a3a6f90f2e608b24d7585245ac7a5905596",
+    "paths_redacted": true
+  },
+  "R5ColorLab/chart_sources/v4.5/convert_raf.py": {
+    "source_sha256": "b899586c317af814a8135a40a85a8581c7449ca9f6f18ac0e7891b1c549a3333",
+    "published_sha256": "49f9ed6a838eff6178f33d5db7d4ec8f0c51e8b5999b7137c0c4adafed5f8443",
+    "paths_redacted": true
+  },
+  "R5ColorLab/chart_sources/v4.5/build_synthetic_ljpeg_arw.py": {
+    "source_sha256": "775f7ae295a066a62487ee8ce42a431794c15ee234f7cc7e1284d45cc562e642",
+    "published_sha256": "775f7ae295a066a62487ee8ce42a431794c15ee234f7cc7e1284d45cc562e642",
+    "paths_redacted": true
+  },
+  "R5ColorLab/chart_sources/v4.5/chart.npz": {
+    "source_sha256": "63e5c91fc9f4366837a72b2dd0216bd9f58e4e94dfcf483ce9f8c8180a81ae71",
+    "published_sha256": "63e5c91fc9f4366837a72b2dd0216bd9f58e4e94dfcf483ce9f8c8180a81ae71",
+    "paths_redacted": false
+  },
+  "publication/colorlab-v4.5/design-verification.json": {
+    "source_sha256": "a65fd8baef57263aae9bacd7d50d3d6520751ba49bdaebeb86c11a4f37461bb0",
+    "published_sha256": "39443653a876e917fe37f7aa8467166e14cc833ea0d43ea5a0010daab30a27f5",
+    "paths_redacted": true
+  },
+  "publication/colorlab-v4.5/dng-verification.json": {
+    "source_sha256": "17e240a772e933d74a25f72fb58e2c52257fd6f71200f04172ed9992912e3238",
+    "published_sha256": "40399a4a462be3ea61832d42459e46a6e4ca5a2acbdd117b10124e7b1df79e98",
+    "paths_redacted": true
+  },
+  "publication/colorlab-v4.5/libraw-arw-dng-comparison.json": {
+    "source_sha256": "2aca5c358462c4fa149c67913f23346aec05b6de210fe9b5c6e32afb7a830f27",
+    "published_sha256": "2aca5c358462c4fa149c67913f23346aec05b6de210fe9b5c6e32afb7a830f27",
+    "paths_redacted": true
+  },
+  "publication/colorlab-v4.5/edit-runtime-validation.json": {
+    "source_sha256": "68af7cde710b01f30612befacfd2acaac601fdc4b9412ee69922d5c304f7d651",
+    "published_sha256": "41922816c76fbf6a612fb0be3ac7daa2d5cb33ce686b6f417e86f7378fb84004",
+    "paths_redacted": true
+  },
+  "publication/colorlab-v4.5/local-web-verification.json": {
+    "source_sha256": "a761fea3c7f795175a0243bf4ea93144c1cef6b9da4c956a5e6e0ca8434622b1",
+    "published_sha256": "a761fea3c7f795175a0243bf4ea93144c1cef6b9da4c956a5e6e0ca8434622b1",
+    "paths_redacted": true
+  }
+}

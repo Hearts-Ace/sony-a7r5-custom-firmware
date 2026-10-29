@@ -71,6 +71,8 @@ class ProbeBank:
         rgb=self.rgb[:self.domain_size]
         linear = np.where(rgb <= .04045, rgb / 12.92, ((rgb + .055) / 1.055)**2.4)
         codes = np.rint(512 + linear * 15871).astype('<u2')
+        from sensor_encoding import encode_reference
+        codes = encode_reference(codes,model)
         settings = model.settings if not wb.active(white_balance) else wb.settings_for(model, white_balance)
         front = model.sscs(itp_flatfield(codes, model.raw, settings))
         front=np.r_[front,np.rint(self.rgb[self.domain_size:]*16383).astype('<u2')]

@@ -478,7 +478,10 @@ def main():
  result['fitting']['compute_backend']=__import__('gpu_runtime').policy()
  result['source']['dataset_id']=str(p['dataset_id']) if 'dataset_id' in p else 'legacy'
  result['source']['patch_sampling']=__import__('patch_sampling').POLICY
- result['full_chain_status']='Source-bound native integer color subchain. New unity-WB chart uses simulated ITP/SSCS inputs verified against independent Edit PT capture. Spatial processing and photograph frontend remain outside this validation.'
+ if result['source']['dataset_id']==__import__('baseline').V45_ID:
+  result['full_chain_status']='v4.5 5300K WB-compensated RAW -> simulated ITP/SSCS, original verified PT downstream context retained. New full Edit context has not been independently captured. Spatial and photograph frontend remain approximate.'
+ else:
+  result['full_chain_status']='Source-bound native integer color subchain. Unity-WB chart uses simulated ITP/SSCS inputs verified against independent Edit PT capture. Spatial processing and photograph frontend remain outside this validation.'
  result['fitting']['selection']='Fixed weighted floating RGB MSE + continuous DE00 on integer native outputs; full validation; full independent test excluded from all optimization and selection'
  if continuity_bank is not None:result['fitting']['selection']+='; output-space continuity penalty on fixed target-independent probes'
  (a.output/'recipe.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n');np.savez(a.output/'fit_state.npz',vector=fitted,start=start,test_prediction=exact_after)

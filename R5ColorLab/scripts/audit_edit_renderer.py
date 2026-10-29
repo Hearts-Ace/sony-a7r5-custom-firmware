@@ -10,11 +10,12 @@ import json
 import re
 import struct
 import sys
+import os
 from capstone import Cs, CS_ARCH_ARM64, CS_MODE_ARM
 
 HERE = Path(__file__).resolve().parents[1]
 OUT = HERE/'evidence/edit_renderer_20261019'
-APP = Path('/Applications/Imaging Edge/Edit.app/Contents/MacOS/Edit')
+APP = Path(os.environ.get('R5_EDIT_EXECUTABLE','Edit.app/Contents/MacOS/Edit'))
 PIN = '43ae5e1cb4bc18a52183b430e02b16a4506b89a907a6fd0feed359fa85a82ce9'
 THIN_PIN = 'c250f466835c5380d244de33a6824e9930fe3f250ce9b1d948d5e379cc4c8133'
 CLASSES = ['ZcTaskLinearMatrix16', 'ZcTaskLinearMatrix', 'ZcTaskMainGamma',

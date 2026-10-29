@@ -1,0 +1,81 @@
+{
+  "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+  "version": "4.5",
+  "width": 11648,
+  "height": 8736,
+  "samples": 99372,
+  "tile": 32,
+  "columns": 364,
+  "rows": 273,
+  "context": 16,
+  "raf_file": "GFX100SII-v4.5-100MP-5300K.RAF",
+  "arw_file": "SONY-v4.5-100MP-5300K.ARW",
+  "dng_file": "SONY-v4.5-100MP-5300K.DNG",
+  "reference_file": "reference-sRGB16.tiff",
+  "pairs_sha256": "ff89b472e8a71686bd4ff3d2e3e3fcb1886841a0e39ede91a1878df13310eb53",
+  "capture_report_sha256": "da271a4d6decff9cf6c36e9083d9f6fa953caf58e8c6a58b0f204f17e1ad6a12",
+  "source_design_sha256": "63e5c91fc9f4366837a72b2dd0216bd9f58e4e94dfcf483ce9f8c8180a81ae71",
+  "raw_black": 512,
+  "raw_white": 16383,
+  "raw_wb": [
+    2606,
+    1024,
+    1024,
+    1789
+  ],
+  "wb_kelvin": 5300,
+  "look": "PT",
+  "sampling": "center-horizontal-5-mean-x14..18-y16",
+  "input_source": "physical 5300K WB-compensated RAW -> simulated ITP/as-shot WB -> SSCS; fixed verified PT downstream context",
+  "sensor_normalization": "(RAW-512)/15871; LUT reference uses separate previous-standard reference_sensor",
+  "edit_capture": false,
+  "edit_validation": {
+    "independent_v45_capture": true,
+    "old_color_subchain_verified": true,
+    "report_file": "runtime-validation.json",
+    "report_sha256": "41922816c76fbf6a612fb0be3ac7daa2d5cb33ce686b6f417e86f7378fb84004",
+    "capture_report_sha256": "76a23e21daee5bff868293528d87d85a324edc74e9ca33adf54cda1e74783a9c",
+    "context": 0,
+    "samples": 99372,
+    "probes_per_patch": 9,
+    "simulated_inputs_exact": true,
+    "tiff_matches_actual_output": true,
+    "pt_parameters_verified": true,
+    "final_color_residual": {
+      "exact": false,
+      "differing_patches": 1,
+      "max_abs": 11,
+      "mae": 3.68983885467402e-05,
+      "first_differing_indices": [
+        59361
+      ]
+    },
+    "original_report_sha256": "68af7cde710b01f30612befacfd2acaac601fdc4b9412ee69922d5c304f7d651"
+  },
+  "frontend_approximate": false,
+  "spatial_postprocessing_modeled": false,
+  "categories": {
+    "colorchecker24": 24,
+    "gray": 256,
+    "hue16_tonal": 4096,
+    "hue24_tonal": 6144,
+    "primary_anchor": 8,
+    "primary_tonal": 1536,
+    "uniform_luma": 87308
+  },
+  "color_preservation": {
+    "mean": 0.0026341806204740934,
+    "p95": 0.016999321065241248,
+    "maximum": 0.1962117039049936
+  },
+  "limits": [
+    "All 99372 flat-patch center inputs are independently verified; arbitrary RAW spatial processing remains approximate.",
+    "Full PT color output matches 99371/99372 patches; patch59361 G differs by11 native codes. No sampled compensation is applied.",
+    "New targets must be exported from v4.5 chart; v4 uploads remain version-bound."
+  ],
+  "raf_sha256": "fd31efd39ed671e39891984ee0f9c56933599d52764a77138c905166cbb8dcda",
+  "arw_sha256": "45455a7c46d7aa2454e73a67c32b01a29a13739d203e54ed24592a451fd48bd6",
+  "dng_sha256": "0b9ea8efa0c67f7584409473d959da04716ae469441661955a8a30ab934026b1",
+  "reference_sha256": "2167ef1990c6885bc8b49e3fe3f7b91c1deeca4829d7fe3cb51d8e7f6851f18c",
+  "original_capture_report_sha256": "22bbaf438c4d5e05857407e625bb4038e5ea139de46f5acfe6f188ef8181fe90"
+}

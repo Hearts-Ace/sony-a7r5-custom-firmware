@@ -1,0 +1,9 @@
+# v4.5 色卡生成来源
+
+本目录保存已执行生成脚本的路径脱敏快照及完整设计chart.npz，供研究和来源核对；不自动执行，不作为训练台启动依赖。直接使用Web下载或Release色卡包即可训练。
+
+prepare_design.py保留原v4色块顺序、灰阶及24/16色相阶梯，以Sony5300K WB反向查表并选择14位量化码值。generate_arw.py以匹配的Sony无损ARW容器重写完整Bayer/几何/WB，并替换全部预览。generate_dng.py从新ARW复制有效Bayer、电平、Sony矩阵与AsShotNeutral。convert_raf.py使用独立IED RAW转GFX项目，仅扩展100MP几何和预览缩略图约束，sample_gain=1。
+
+重新运行ARW/RAF脚本需要提供脚本散列锁定的Sony容器、IED源模块/配置与ExifTool；这些外部输入和原始私人照片不随本包分发。本目录里的本地路径是脱敏占位符，需要显式配置为自己的输入；没有将占位符冒充独立一键生成入口。build_synthetic_ljpeg_arw.py仅提供生成器所用的Sony四分量无损JPEG写法，其历史独立main不作为v4.5入口。标准DNG输出可直接使用，Adobe实际打开状态以验证回执边界为准。
+
+色卡是101,756,928有效像素的合成RAW，14位信号；并非R5真实100MP拍摄模式。所有格式与独立采集边界见训练台README及publication/colorlab-v4.5。

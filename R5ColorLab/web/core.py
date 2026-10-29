@@ -70,8 +70,8 @@ def measured_inputs(dataset_id=None):
             arrays = {key: archive[key].copy() for key in archive.files}
         audit = anchor_dataset.validate(arrays)
     else:
-        import v4_dataset
-        arrays,audit = v4_dataset.load()
+        import chart_datasets
+        arrays,audit = chart_datasets.get(dataset_id).load()
     import sector16
     from edit_color_pipeline import RuntimeColor
     capture,context=baseline.resolve(audit.get('dataset_id'))
@@ -104,20 +104,20 @@ def target_matches(value, job):
     return identity['kind']=='lut' and value.get('lut_sha256')==identity['sha256']
 
 
-def prepare_target(lut, gamut, output):
+def prepare_target(lut, gamut, output, dataset_id=None):
     from raw_slog3_reference import Cube, RawSLog3Reference
     from validate_synthetic_pairs import validate_profile
     import numpy as np
     import anchor_dataset
-    arrays, audit = measured_inputs()
+    arrays, audit = measured_inputs(dataset_id)
     profile = json.loads(PROFILE.read_text())
     validate_profile(profile, json.loads((anchor_dataset.CHART / 'manifest.json').read_text()))
     reference = RawSLog3Reference(profile, Cube(lut), gamut, mode='raw-alchemy-v0.6.2-fused')
-    arrays['0_target'] = reference(arrays['sensor']) * 16383
+    arrays['0_target'] = reference(arrays.get('reference_sensor',arrays['sensor'])) * 16383
     arrays.pop('1_target', None)
     np.savez_compressed(output / 'pairs.npz', **arrays)
     audit.update(lut_sha256=sha(lut.read_bytes()), gamut=gamut, profile_sha256=sha(PROFILE.read_bytes()),
-                 original_pairs_sha256=__import__('v4_dataset').metadata()['pairs_sha256'], context=baseline.resolve(audit.get('dataset_id'))[1],
+                 original_pairs_sha256=__import__('chart_datasets').get(audit['dataset_id']).metadata()['pairs_sha256'], context=baseline.resolve(audit.get('dataset_id'))[1],
                  reference_mode=reference.mode, photo_training=False)
     (output / 'input_audit.json').write_text(json.dumps(audit, indent=2) + '\n')
 

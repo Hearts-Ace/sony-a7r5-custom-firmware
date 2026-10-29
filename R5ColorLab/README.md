@@ -1,4 +1,4 @@
-# R5 Color Lab · 4.34配套独立色彩工作台
+# R5 Color Lab · v4.5 色卡版（适配4.34固件）
 
 使用当前Python环境在本地浏览器拟合CC1、block13、Gamma和5×9×9网格。无需原研究工作区、Edit或RawAlchemy安装；不执行相机刷写。
 
@@ -17,9 +17,15 @@ CPU为默认后端；Apple Silicon可安装`requirements-gpu.txt`并设置`R5_GP
 
 ## 色卡与目标图
 
-下载原色卡得到`GFX100SII-v4-100MP-from-SONY-IED.RAF`：11648×8736、32×32色块，共99372块。该合成色卡使用Sony unity-WB设计，经IED方案转换为GFX100S II RAF；不是相机实拍。RAW散列`a8d5221521ecb2928596cadeecc43354481edd32be56551f126d7f9d1560637c`。
+默认使用 **v4.5 · 5300K · 一亿像素** 色卡，完整有效11648×8736，共99,372个32×32色块。Web提供Sony ARW、标准Sony DNG及GFX100S II RAF下载；[三格式色卡包与独立训练台下载](https://github.com/Hearts-Ace/sony-a7r5-custom-firmware/releases/tag/colorlab-v4.5)。三种RAW在源码包内以gzip无损存储，下载时恢复原始字节并核验SHA256。
 
-在显影软件中处理后导出同尺寸RGB TIFF（推荐16位）或JPG，保留方向和几何，不缩放或裁切；支持RGB ICC，转换后再取中心横向5点均值，避免中间RGB8量化。数值输入来自ITP/unity-WB→SSCS模拟，与Edit PT全部99372块×9探针逐值核对；不加入隐藏实采补偿。旧版白平衡错误色卡拒绝训练。RAW以gzip无损存储在源码包，下载时还原并核验原始SHA256；另附sRGB16参考色卡。
+Sony RGGB白平衡为2606:1024:1024:1789，Bayer码值已反向补偿，以保持原色卡的Sony PT颜色标准；DNG保留同一码值、电平和WB，RAF经IED方案转换，未另加增益。在各软件保留拍摄白平衡；富士显示的Kelvin可能不同，不要据显示值强改5300K。14位信号、16位DNG容器不等于16位有效传感器精度。
+
+从v4.5重新导出同尺寸RGB TIFF（推荐16位）或JPG，保留方向，不缩放、裁切或做几何修正。Adobe RGB等RGB ICC目标使用64位浮点ICC转换，先逐采样点转为sRGB、再取中心横向5点均值，无RGB8中间量化；超出sRGB的值裁切到有效范围。训练、压缩及评估统一使用中心5点均值。
+
+ITP/拍摄WB→SSCS的纯模拟输入已与新版Edit PT实采核对：全部99,372块×9探针RGB逐值一致。实采最终输出与TIFF编码逐值一致；完整PT颜色模拟99,371块一致，仅第59,361块（从0编号）G差11个原生码值，约0.17/255。实采仅作独立验证，不回填训练输入、不增加颜色补偿。任意照片的空间处理前端仍近似。
+
+Web保留v4历史色卡选择，上传及任务按版本绑定；同尺寸旧目标不能直接切换为v4.5。仓库现有12款已完成滤镜仍对应v4输入，v4.5训练结果需单独验收。生成源码及依赖边界见[chart_sources/v4.5](chart_sources/v4.5/README.md)，验证摘要见[发布记录](../publication/colorlab-v4.5/edit-runtime-validation.json)。
 
 ## 训练与导出
 
