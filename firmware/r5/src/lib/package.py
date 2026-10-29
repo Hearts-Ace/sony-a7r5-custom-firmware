@@ -33,8 +33,8 @@ from signature import (require, digest_file, inspect, hashes_and_signature, veri
 from image_io import digest_stream
 
 OUT=None
-VERSION='4.34'
-TAG='434'
+VERSION='4.35'
+TAG='435'
 TAR=None
 NAME='BODYDATA.DAT'
 CHUNK=4<<20

@@ -1,0 +1,8 @@
+# Source-level checks require Python >= 3.11; packaging uses CPython 3.12.
+numpy
+cryptography
+cffi
+pycryptodomex
+capstone
+pyelftools
+libusb-package==1.0.30.0

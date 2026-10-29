@@ -1,0 +1,611 @@
+{
+  "id": "69de0c2733f24d9689423b51ac5119da",
+  "status": "done",
+  "started": 1793254051.449794,
+  "jobs": [
+    {
+      "id": "649a42fd372742239bcb04669355e762",
+      "filename": "AS.tif",
+      "name": "AS",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "a255f3ea194f438d8b5c6c4824c60d9d",
+        "number": 1,
+        "short_name": "AS",
+        "full_name": "ASTIA",
+        "target_sha256": "7ce4bda60e2d0e6d347d6d47d684a90cb47c10b489f02bc1a4e2a2b1eb8036cd"
+      }
+    },
+    {
+      "id": "08d2505a31524b85be1a4e8d0ae7eef6",
+      "filename": "CC.tif",
+      "name": "CC",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "9529f5dda42a40a6962436922eab38d0",
+        "number": 2,
+        "short_name": "CC",
+        "full_name": "CLASSIC CHROME",
+        "target_sha256": "86c09cdc0150f581850ade18a120e61aeb8e2e18d8b20122444d6adec19d92fc"
+      }
+    },
+    {
+      "id": "becb00f658e24ac096aa91f3551a8efb",
+      "filename": "EBB.tif",
+      "name": "EBB",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "6b64023735c9422d9af71902f7229d76",
+        "number": 3,
+        "short_name": "EBB",
+        "full_name": "ETERNA BLEACH BYPASS",
+        "target_sha256": "b8941ca8fb296c754225e16880fa249c5d102fbede45f344b943e4437718acfb"
+      }
+    },
+    {
+      "id": "5dcf74a7659946b4aea95e8298f136fd",
+      "filename": "ET.tif",
+      "name": "ET",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "06988fb37ea44237a2d39063363e66f4",
+        "number": 4,
+        "short_name": "ET",
+        "full_name": "ETERNA",
+        "target_sha256": "f548c4036c5f9958292d4278f1c03001f4fcedb5507e7fe2bc522b54f918a4d7"
+      }
+    },
+    {
+      "id": "01881228b06c4bde900c13d00895b89a",
+      "filename": "NC.tif",
+      "name": "NC",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "76c470d79d5e434f9fa4cd228e92caa6",
+        "number": 5,
+        "short_name": "NC",
+        "full_name": "CLASSIC Neg.",
+        "target_sha256": "0b68207fd1c7d238e1750fd7c2895a7b5098f2f4b9483b2f6528ac4023ef912a"
+      }
+    },
+    {
+      "id": "59ed8675c17e48da91f8afe14142ae91",
+      "filename": "NH.tif",
+      "name": "NH",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "f3a003362984405980ca550ba7204124",
+        "number": 6,
+        "short_name": "NH",
+        "full_name": "PRO Neg. Hi",
+        "target_sha256": "d1ec9941d6a1fd3931124cf0eaf5045f117878a901b424877886846592f641a1"
+      }
+    },
+    {
+      "id": "08263b11a1164943988f80747f85b879",
+      "filename": "PV.tif",
+      "name": "PV",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "acf1c00640db4594b777f359bcbe4839",
+        "number": 7,
+        "short_name": "PV",
+        "full_name": "PROVIA",
+        "target_sha256": "c0277e8229dddc921fea6a0b25841c824f9ca47f55c3fb2e14206fd855b1c932"
+      }
+    },
+    {
+      "id": "e6ce1f4b684b485da7b884df56f98e54",
+      "filename": "RA.tif",
+      "name": "RA",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "944414acc97e404a9ed824e8e4638eb7",
+        "number": 8,
+        "short_name": "RA",
+        "full_name": "REALA ACE",
+        "target_sha256": "d8694e298d6db04bc8fe4f662d271c139090ab321cb9ecb865fd29ebb5c9ede9"
+      }
+    },
+    {
+      "id": "98ec4965e98341e5ad16fc10ce256ae5",
+      "filename": "VN.tif",
+      "name": "VN",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "cc0f9e193dad4ead8674b971564ebf91",
+        "number": 9,
+        "short_name": "VN",
+        "full_name": "Velvia",
+        "target_sha256": "f89bd6abee69fa9b0d31557c7bb50a52c8e37ee92ba03e6d4a8f26b80d61daac"
+      }
+    },
+    {
+      "id": "85af056966c34a57ae503833587ac190",
+      "filename": "正片v4.5.tif",
+      "name": "正片",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "a90f0acde8b648a99e495a96f321c003",
+        "number": 10,
+        "short_name": "正片",
+        "full_name": "理光正片",
+        "target_sha256": "61d6d4ec23c137de0b02cc34db191e4163ec80955f69c38ebac67fc3ee014c44"
+      }
+    },
+    {
+      "id": "f363621f734d4bf5801c74ce2276c20a",
+      "filename": "负片v4.5.tif",
+      "name": "负片",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "b34d27599ff14ee889871109048bd150",
+        "number": 11,
+        "short_name": "负片",
+        "full_name": "理光负片",
+        "target_sha256": "7dd6ea004d433a33cd908dc56f6a094e229bc4dceda5e65b672bbcaf86a52191"
+      }
+    },
+    {
+      "id": "3f3c2563011d4c0c920c08e32e9e8c11",
+      "filename": "Portra400NBv4.5.tif",
+      "name": "Portra400",
+      "options": {
+        "speed_priority": false,
+        "evaluations": 2000,
+        "white_balance": false,
+        "pc_compensation": true,
+        "compression_training": true,
+        "post_gray_refinement": false,
+        "gamma_endpoint128": 131071,
+        "pc_options": {
+          "curve_mode": "tone-tint",
+          "grid_enabled": true,
+          "response": {
+            "schema": "r5-measured-grid-response/1",
+            "preset": "r5-paired-20261024-v2",
+            "sha256": "8879499fbd9b24899dcbd8fee4135b806fdcba1fd18a677b090b7af212b85a45",
+            "model": "ILCE-7RM5"
+          }
+        },
+        "search_options": {
+          "starts": 12,
+          "adaptive_rounds": 8,
+          "perceptual_weight": 0.35,
+          "quantization_sweeps": 3,
+          "parameter_smoothing": 30.0,
+          "output_continuity": 30.0,
+          "gamma_color_rounds": 3,
+          "primary_tonal_weight": 1.0,
+          "hue24_tonal_weight": 1.0
+        },
+        "compression_objective": "fuji-target",
+        "compressed_alternation_rounds": 0,
+        "group_weights": {
+          "random": 1.0,
+          "primaries": 1.0,
+          "gray": 1.0,
+          "colorchecker24": 1.0
+        },
+        "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+        "target_kind": "chart-image",
+        "target_id": "c9bb7a56b1404a0c974b778a8b4be750",
+        "number": 12,
+        "short_name": "Portra400",
+        "full_name": "Portra400NB",
+        "target_sha256": "0f4aae9020cedc14c03bd9f17dd6d1ae80d3eae1f64b06a45fc500b3bd031db5"
+      }
+    }
+  ],
+  "concurrency": 2,
+  "sha256": "19e020fa48c79643aaf9526e9c720d38ec5a92c3df11d0852b0a93a25ee880b6",
+  "bytes": 29552,
+  "finished": 1793261838.53224
+}

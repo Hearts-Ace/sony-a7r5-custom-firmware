@@ -3,6 +3,8 @@
 #include <stdint.h>
 /* One worker owns resets; power callback only closes admission/records events. */
 void r5_session_cold(void);
+/* First admitted worker session only; independent of early power-event epochs. */
+int r5_session_cold_start(void);
 uint32_t r5_session_epoch(void);
 uint32_t r5_session_event_epoch(void);
 int r5_session_current(void);

@@ -1,0 +1,32 @@
+{
+  "schema": "r5-workbench-agent/1",
+  "name": "R5 Flash Workbench",
+  "version": "0.2.1",
+  "transport": "local CLI",
+  "discovery": "Contents/MacOS/r5wb describe",
+  "commands": {
+    "describe": {"arguments": [], "effect": "read bundled capabilities and filter identity; no USB"},
+    "status": {"arguments": [], "effect": "read task receipts and bundled filter identity; no USB"},
+    "selfcheck": {"arguments": [], "effect": "offline runtime and integrity checks; no USB"},
+    "plan": {"arguments": ["--destination PATH", "--firmware DAT (optional)"], "effect": "validate inputs and describe card changes without copying files"},
+    "prepare": {"arguments": ["--destination PATH", "--firmware DAT (optional)"], "effect": "copy bundled R5NATIVE.BIN and optional exact 4.35 DAT; preserve different existing files in .R5Workbench-backups; full readback"},
+    "verify": {"arguments": ["--firmware DAT"], "effect": "verify exact project 4.35 DAT"},
+    "build": {"arguments": ["--original-dat DAT --private-key PEM OR --inputs JSON", "--output NEW_DIRECTORY"], "effect": "offline build using unique firmware/r5/build.py; private key stays external"},
+    "usb-status": {"arguments": [], "effect": "explicit host USB metadata observation; no camera protocol commands"},
+    "backup": {"arguments": [], "effect": "ordinary MSC updater-partition backup; macOS administrator dialog; real USB transaction"},
+    "install-trust": {"arguments": ["--backup RESULT_JSON"], "effect": "install our signing public key; real USB writes; macOS administrator dialog"},
+    "recover": {"arguments": ["--previous RESULT_JSON"], "effect": "observe permitted previous transaction recovery; no reissued write or STOP"},
+    "result": {"arguments": ["RESULT_JSON"], "effect": "read saved receipt"}
+  },
+  "examples": [
+    {"user_request": "把附带的最新滤镜放进这个文件夹", "command": "r5wb prepare --destination PATH"},
+    {"user_request": "把这份固件和最新滤镜准备到卡里", "command": "r5wb prepare --firmware BODYDATA.DAT --destination CARD_ROOT"},
+    {"user_request": "先看看会改哪些文件", "command": "r5wb plan --destination PATH"},
+    {"user_request": "检查上次有没有完成", "command": "r5wb status"}
+  ],
+  "stdout": "single JSON object",
+  "progress": "stderr",
+  "exit_codes": {"0": "completed", "1": "failed or incomplete", "2": "invalid CLI arguments"},
+  "includes_training_workbench": false,
+  "camera_upgrade": "completed by user on camera via storage card; never infer completion from file export"
+}

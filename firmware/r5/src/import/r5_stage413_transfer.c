@@ -96,7 +96,21 @@ int r5_stage421_parameters_ready(void){
   r5_filter_service();return names;}
 }
 
-void r5_transfer420_log(unsigned drive){extern int r5_log420_emit(unsigned,const char *,const uint32_t *,unsigned);struct transfer_state *s=&r5_stage413_transfer_state;uint32_t v[11]={s->phase,s->result,s->matched,s->sends,s->tx.phase,s->tx.error,s->tx.slot,s->tx.mask,s->tx.payload_crc,s->tx.token,r5_session_epoch()};r5_log420_emit(drive,s->matched?"CP_PARAMETERS_SEALED":"CP_PARAMETERS_NOT_APPLIED",v,11);}
+void r5_transfer420_log(unsigned drive){
+ extern int r5_log420_emit(unsigned,const char *,const uint32_t *,unsigned);
+ struct transfer_state *s=&r5_stage413_transfer_state;
+ uint32_t v[11]={s->phase,s->result,s->matched,s->sends,s->tx.phase,s->tx.error,s->tx.slot,s->tx.mask,s->tx.payload_crc,s->tx.token,r5_session_epoch()};
+ r5_log420_emit(drive,s->matched?"CP_PARAMETERS_SEALED":"CP_PARAMETERS_NOT_APPLIED",v,11);
+ /* result5 means the worker consumed one complete44B ACK. Keep its raw
+  * header/state/status/mask so CRC/echo errors cannot masquerade as OOM. */
+ if(s->result==5){
+  for(unsigned i=0;i<11;i++){
+   const uint8_t *p=s->inbox+4*i;
+   v[i]=(uint32_t)p[0]|(uint32_t)p[1]<<8|(uint32_t)p[2]<<16|(uint32_t)p[3]<<24;
+  }
+  r5_log420_emit(drive,"CP_PARAMETERS_REJECTED_ACK",v,11);
+ }
+}
 
 void r5_stage421_transfer_reset(void){extern void *memset(void *,int,size_t);memset(&r5_stage413_transfer_state,0,sizeof(r5_stage413_transfer_state));}
 

@@ -1,0 +1,43 @@
+{
+  "run_marker": "d9a7216bc84f305e92a16bd4c7e038f5",
+  "hash_marker": "$6$rounds=10000$Q8j3k9w2s7m4n6p1$6lhx0k3sHAYxFjUD4ABYuT6dSdlSexDMBP7pfUI6UMH90SWvpx1KnSyTj0z8hG9QpTh5sMJMaNo6WyFqvdG04v",
+  "files": {
+    "capture.so": {
+      "sha256": "2dc7f28f192e886b0e57c9b7d0791da2c26b9bb37f2393e32cff096602e79a7f",
+      "bytes": 17096,
+      "fields": {
+        "run": 19
+      },
+      "configuration_matches_compilation": true,
+      "control_layout": "ram-v2",
+      "capture_format": "ram-16k-v1"
+    },
+    "capture-cleanup.so": {
+      "sha256": "0643b270768673a706bfdb3d30e9c3efeafb3fce72a4d2c239b7f44bf74fdfa7",
+      "bytes": 20464,
+      "fields": {
+        "run": 27
+      },
+      "configuration_matches_compilation": true,
+      "cleanup_policy": "verified-current-ram-v2"
+    },
+    "trust-blank-512.so": {
+      "sha256": "cfd98c8aca65661f18a139749e6f7db43fee8237b052ccc33455986d92e0fbb7",
+      "bytes": 52960,
+      "fields": {
+        "run": 21
+      },
+      "configuration_matches_compilation": true,
+      "control_layout": "ram-v2"
+    },
+    "trust-installed-boot-hook.so": {
+      "sha256": "f2f2d3a548ae77b3c1fc9ff46121f66b9ef6ffeb1c0855cc25bfec215df151fd",
+      "bytes": 52504,
+      "fields": {
+        "run": 21
+      },
+      "configuration_matches_compilation": true,
+      "control_layout": "ram-v2"
+    }
+  }
+}

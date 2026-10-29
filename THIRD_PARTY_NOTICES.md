@@ -52,3 +52,8 @@ R5ColorLab代码采用其目录内AGPL v3许可证，保留RawAlchemy来源声�
 
 
 2026-10-29固件源合并：既有固件C/汇编、链接器和打包代码收拢到firmware/r5/src，来源散列见source_provenance.json。fwtool.py保留其LICENSE.fwtool；其余原有许可及署名继续适用。baseline_recipes.json为既有原厂补丁的原像/目标配方，colour_fields.json为已公开同一功能的数值片段；不包含完整原厂镜像或签名私钥。
+
+
+## macOS R5 Flash Workbench
+
+R5FlashWorkbench is adapted from Liwenru88/a7r5-rea snapshot 290c79e; its original portions are for personal noncommercial research. See R5FlashWorkbench/THIRD_PARTY_NOTICES.md and licenses within that directory. This scope is not relicensed under the repository root license.

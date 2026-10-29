@@ -4,7 +4,6 @@
 #include "r5_filter_runtime423.h"
 extern void *r5_stage411_dlsym(void *,const char *);
 extern void *r5_stage411_child(void *);
-extern void r5_stage430_media_service(void);
 #define LOAD(p) __atomic_load_n((p),__ATOMIC_ACQUIRE)
 #define STORE(p,v) __atomic_store_n((p),(v),__ATOMIC_RELEASE)
 #define CLOSED 0x80000000u
@@ -13,7 +12,8 @@ extern void r5_stage430_media_service(void);
 /* Epoch, power intent, admission and readers share one CAS word. A delayed
  * older power callback cannot overwrite a newer callback's wake intent. */
 static uint64_t gate;
-static uint32_t handled,owner_epoch,serial;
+static uint32_t handled,owner_epoch,serial,owner_cold;
+int r5_session_cold_start(void){return LOAD(&owner_cold)!=0;}
 uint32_t r5_session_event_epoch(void){return (uint32_t)(LOAD(&gate)>>32);}
 uint32_t r5_session_epoch(void){return LOAD(&owner_epoch);}
 int r5_session_current(void){uint64_t g=LOAD(&gate);return (uint32_t)(g>>32)==LOAD(&owner_epoch)&&((uint32_t)g&WAKE)!=0;}
@@ -44,14 +44,13 @@ int r5_session_prepare(void){
  STORE(&owner_epoch,e);
  r5_stage421_probe_reset();r5_stage421_transfer_reset();r5_stage421_log_reset();
  if(!__atomic_compare_exchange_n(&gate,&old,old&~(uint64_t)CLOSED,0,__ATOMIC_RELEASE,__ATOMIC_ACQUIRE))return 0;
- STORE(&handled,e+1);return 1;
+ STORE(&owner_cold,LOAD(&handled)==0);STORE(&handled,e+1);return 1;
 }
 void *r5_stage421_loop(void *s){
  struct time {int64_t sec,ns;};const struct time pause={0,100000000};
  int (*sleep)(const void *,void *)=(void *)r5_stage411_dlsym(0,"nanosleep");
  if(!sleep)return 0;
  for(;;){if(r5_session_prepare()){r5_stage411_child(s);r5_session_finish();}
-  r5_stage430_media_service();
   r5_filter_service();
   if(sleep(&pause,0))return 0;
  }
