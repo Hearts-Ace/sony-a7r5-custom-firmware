@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "version": "4.34",
+  "stage": "all",
+  "outputs": {
+    "AP": "c61d151fd7da84896d675dd7be26a8319156598206556e6e5d50ea2da11406b3",
+    "CP": "8b38e753f34b1667d79b69079d911b9e6595f1ce1b873cb8e014437c6b4c494d",
+    "nflasha15": "4f10fe1afc076db58cf62f22e414c7359394c64975672dc13b26dfedc0948246",
+    "nflasha8": "0cc3cdf1c32d8f7c589629810337cce6fe6d878292f2608b6183c9e34b3de8a3",
+    "nflasha5": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693",
+    "archive": "61229a31acb99252b739ce6a35d7cc800807ea8b3b438147a7532ef87a6ea620"
+  },
+  "DAT_sha256": "1aeccd8f7fd6c1672b8fcd60ee1389c9b85a40a8aef51d6a720d898ecf9a1da9",
+  "previous_version_scripts_required": false,
+  "previous_version_outputs_required": false,
+  "camera_io": false,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+  "plaintext_verification": {
+    "independent_library": "PyCryptodome AES; encryption uses cryptography",
+    "plaintext_bytes": 751577088,
+    "decrypted_blocks": 736841,
+    "plaintext_sha256": "adadf17e76883087fe90f864885ff05496780b64cd6afd0e8f3f8e6f912a8312",
+    "every_plaintext_byte_matches": true,
+    "all_block_checksums_lengths_flags_and_padding_valid": true
+  },
+  "saved_signature_valid": true,
+  "outer_crc_valid": true,
+  "tampered_signature_rejected": true,
+  "device_acceptance_tested": false
+}

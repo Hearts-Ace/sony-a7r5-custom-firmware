@@ -49,3 +49,6 @@ R5ColorLab代码采用其目录内AGPL v3许可证，保留RawAlchemy来源声�
 ## 2026-10-28 / 4.34
 
 本次仅公开固件源码、构建／打包脚本与脱敏数值回执，不分发完整DAT、AP／CP、Backup镜像或密钥。4.33帮助文字误作图片的结论由4.34动态取图证据纠正。训练代码更新为连续性30／平滑30正式方案，附12项新配置／设置；旧公开滤镜目录与4.32 Release由本版替代，历史源码提交保留。算法许可与原有第三方署名不变。上游核心固定086df3b；颜色模板保留仅参考指定sd-colour-preservation文档／方法，不改变动态B／A1／A2策略。
+
+
+2026-10-29固件源合并：既有固件C/汇编、链接器和打包代码收拢到firmware/r5/src，来源散列见source_provenance.json。fwtool.py保留其LICENSE.fwtool；其余原有许可及署名继续适用。baseline_recipes.json为既有原厂补丁的原像/目标配方，colour_fields.json为已公开同一功能的数值片段；不包含完整原厂镜像或签名私钥。

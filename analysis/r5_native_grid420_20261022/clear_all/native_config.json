@@ -1,9 +1,0 @@
-{
-  "schema": "r5-native-overwrite-config/3",
-  "model": "ILCE-7RM5",
-  "baseline_ap_sha256": "8ee4d5876b7e127df39f8f820b9d21834c300ff895e02ca522636ed4733efc4b",
-  "baseline_cp_sha256": "8e9e26bf2e4b93fa5142e961dcf21cb0f43f8871283814be2dcfb0a694cb5a32",
-  "additional_compensation_matrix_enabled": false,
-  "compensation_grid_enabled": false,
-  "entries": []
-}

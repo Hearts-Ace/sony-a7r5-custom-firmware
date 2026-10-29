@@ -1,8 +1,0 @@
-{
-  "AP_sha256": "27c68273926a872955d88f89d6c5dec2eb13352559e983ce43e98a19e42fb039",
-  "CP_sha256": "c25b64c288a0b582363361771b424edcf1c86df44525e5c7aea9a55a2b1114ae",
-  "AP_RX": 23116,
-  "AP_BSS": 86896,
-  "native_readonly_e2fsck_passed": true,
-  "camera_operated": false
-}
