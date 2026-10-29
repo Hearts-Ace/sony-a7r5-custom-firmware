@@ -1,3 +1,7 @@
+# 当前固件源码布局（2026-10-29）
+
+唯一入口为 [firmware/r5/build.py](firmware/r5/build.py)。旧版tools/research及逐版analysis构建树已从当前分支移除；下方旧版路径仅为历史发布说明，请按Git历史读取。当前固件源身份见 firmware/r5/sources.lock.json；完整DAT复现身份见 firmware/r5/REPRODUCTION.json。色彩工作台、训练、滤镜和Release附件本轮不改。
+
 当前4.34入口与来源映射见 `publication/4.34/`；下文旧版本发布范围按日期阅读。
 
 # 发布范围与复现说明

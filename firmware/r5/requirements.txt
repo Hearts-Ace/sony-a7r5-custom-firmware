@@ -1,0 +1,5 @@
+numpy>=1.24
+pyelftools>=0.31
+capstone>=5.0
+pycryptodomex>=3.20
+cryptography>=42

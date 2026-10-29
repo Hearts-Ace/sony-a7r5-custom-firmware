@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "offline_directories_archived": 31,
+  "obsolete_build_scripts_retired": 40,
+  "old_source_bytes": 3650361027,
+  "compressed_recovery_bytes": 1158445104,
+  "all_files_verified_before_retirement": true,
+  "protected_originals_and_device_sessions_untouched": true,
+  "strict403_404_sources_preserved": true,
+  "standalone_public_tree_components_reproduced": true,
+  "full_DAT_reproduced_exactly": true,
+  "firmware_version_unchanged": "4.34",
+  "camera_io": false
+}

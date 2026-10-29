@@ -6,9 +6,13 @@
 - [色彩工作台](R5ColorLab/README.md) · [最新高精度训练方案](R5ColorLab/TRAINING.md)
 - [新版12款滤镜：BIN、可编辑配置与完整训练设置](filters/FUJ_12_continuity30/README.md)
 - [反推网格工作台](R5GridCalibrator/README.md) · [R5实拍v2响应及来源](R5ColorLab/web/data/r5/PROVENANCE.md)
-- [4.34源码与证据边界](analysis/r5_firmware434_20261028/README.md)
+- [唯一固件构建入口与复现说明](firmware/r5/README.md)
 - [固件本地交付回执](publication/4.34/firmware_delivery_verified.json) · [训练完成回执](publication/4.34/training_completion_verified.json)
 - [唯一研究总结](analysis/R5_FL2_FL3固件色彩与RAW参数研究总结.md)
+
+## 固件构建入口
+
+2026-10-29：构建代码已合并为 [firmware/r5/build.py](firmware/r5/build.py)。独立重编AP、CP和完整DAT，散列精确等于已发布4.34；版本及机内行为不变。目录内含完整源码、补丁配方、原始输入/源码锁、恢复说明和复现回执；没有引用旧目录。
 
 ## 当前训练方案
 
@@ -20,8 +24,8 @@
 
 ## 固件发布范围
 
-沿用用户指定的源码发布方式：公开4.34生产源码、构建／打包脚本与脱敏回执，不上传BODYDATA.DAT。完整固件的本地身份为754525608字节／BCD3404，SHA256 `1aeccd8f7fd6c1672b8fcd60ee1389c9b85a40a8aef51d6a720d898ecf9a1da9`。公开源码需要自行提供散列匹配的原始镜像、签名输入及部分研究依赖，不是干净克隆即可重建的一键工具。
+沿用用户指定的源码发布方式：公开4.34生产源码、构建／打包脚本与脱敏回执，不上传BODYDATA.DAT。完整固件的本地身份为754525608字节／BCD3404，SHA256 `1aeccd8f7fd6c1672b8fcd60ee1389c9b85a40a8aef51d6a720d898ecf9a1da9`。统一入口 `firmware/r5/build.py` 已合并全部固件构建代码；自行提供散列匹配的原始R5 4.00输入、外部签名材料和匹配工具链即可重建，无需旧版脚本、旧版产物或研究目录。详见固件目录的输入清单。
 
 动态图标12状态对照、Fn注册／激活／返回、25项现有离线回归和最终DAT独立签名／CRC／全量解密已通过。实际LCD／刷新、升级／冷启动、AWB与新批滤镜机内成像仍待实机验收。Fn只增加手动可注册项，不自动分配槽位。主菜单左侧小logo按用户要求未继续研究。
 
-旧Release和旧滤镜交付入口由本版替代；历史提交、必要构建依赖及历史回执保留。原机备份、密钥、私人照片和训练运行目录不发布。第三方来源见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+旧Release和旧滤镜交付入口由本版替代；历史提交及发布回执保留。旧版构建目录已从当前分支撤下，当前构建代码全部在 `firmware/r5/`。原机备份、密钥、私人照片和训练运行目录不发布。第三方来源见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

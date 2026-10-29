@@ -1,0 +1,14 @@
+{
+  "original_dat": "/path/to/original-r5-4.00/BODYDATA.DAT",
+  "original_fdat": "/path/to/original-r5-4.00/firmware.fdat",
+  "original_tar": "/path/to/original-r5-4.00/firmware.tar",
+  "updater": "/path/to/original-r5-4.00/updater.img",
+  "stock_ap": "/path/to/original-r5-4.00/appFw.so",
+  "stock_cp": "/path/to/original-r5-4.00/cpapp-b.bin",
+  "stock_nflasha5": "/path/to/original-r5-4.00/nflasha5",
+  "stock_nflasha15": "/path/to/original-r5-4.00/nflasha15",
+  "stock_nflasha8": "/path/to/original-r5-4.00/nflasha8",
+  "public_key": "/path/to/external-signing/public.pem",
+  "sony_public_key": "/path/to/original-updater/VerificationKey.pem",
+  "private_key": "/path/to/external-signing/private.pem"
+}
