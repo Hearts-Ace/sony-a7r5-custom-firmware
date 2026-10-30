@@ -1,3 +1,7 @@
+# Color project separation (2026-10-30)
+
+Training, calibration and related technical documents have moved to https://github.com/Hearts-Ace/sony-r5-colorlab. Historical release downloads and Git history stay at their original URLs; earlier scope descriptions below are historical. Current firmware and flash workbench do not depend on the new repository.
+
 # 当前发布：4.35与macOS刷写工作台（2026-10-30）
 
 当前唯一固件入口为 firmware/r5/build.py，188项冻结源码独立构建，不依赖旧版脚本或产物。4.35冷启动先校验SD再激活单份配置，恢复只读内部；公开检查及本地既有验证摘要见 publication/4.35/。实机尚未验收。

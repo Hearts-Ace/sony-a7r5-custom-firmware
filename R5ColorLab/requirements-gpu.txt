@@ -1,2 +1,0 @@
--r requirements.txt
-torch>=2.7,<3
