@@ -30,4 +30,8 @@ struct r5_stage_ops {
 
 int r5_stage_look_store(const struct r5_stage_ops *, const struct r5_look_set *,
     uint8_t *scratch, size_t capacity);
+/* Owner-only fast path: bytes must have passed r5_decode_look_file and remain
+ * immutable until publication. Preserves the existing v4 disk format. */
+int r5_stage_validated_look_bytes(const struct r5_stage_ops *,
+    const uint8_t *, size_t);
 #endif

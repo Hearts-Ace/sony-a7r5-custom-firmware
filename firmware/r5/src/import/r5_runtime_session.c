@@ -55,8 +55,8 @@ void *r5_stage421_loop(void *s){
   if(sleep(&pause,0))return 0;
  }
 }
-/* Single owner drains ACK readers before another transfer, including the
- * second transaction when SD replaces the early internal configuration. */
+/* Single owner drains ACK readers before a transfer or retry. Cold startup
+ * chooses its durable set before the first transfer; resume loads internal. */
 int r5_session_new_transfer(void){
  struct time {int64_t sec,ns;};const struct time pause={0,1000000};
  int (*sleep)(const void *,void *)=(void *)r5_stage411_dlsym(0,"nanosleep");

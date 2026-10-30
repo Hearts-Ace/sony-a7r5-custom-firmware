@@ -37,6 +37,10 @@ struct r5_persist_ops {
 
 int r5_publish_staged_look(const struct r5_persist_ops *,
     const struct r5_look_set *, uint8_t *, size_t);
+/* Same owner-only validated-byte contract as r5_stage_validated_look_bytes.
+ * Compare the complete staged bytes before the original atomic publication. */
+int r5_publish_staged_look_bytes(const struct r5_persist_ops *,
+    const uint8_t *, size_t);
 
 /* Read the complete active snapshot on startup/recovery. Missing/invalid/I/O
  * errors leave output untouched. Unlike SD import, omitted slots are cleared:

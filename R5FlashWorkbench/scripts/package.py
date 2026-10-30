@@ -98,7 +98,7 @@ def main():
     # Relocation check: exercise isolated Python imports from a fresh application path.
     check=run(runtime/'bin/python3.12','-I','-B',engine/'bootstrap.py','selfcheck',capture_output=True,text=True,cwd='/private/tmp')
     result=json.loads(check.stdout);save(out/'offline-selfcheck.json',result)
-    save(out/'build.json',dict(version=VERSION,firmware='4.35',platform='macOS-arm64',minimum_target='14.0',
+    save(out/'build.json',dict(version=VERSION,firmware='4.36',platform='macOS-arm64',minimum_target='14.0',
         app=str(app),ad_hoc_signed=True,notarized=False,camera_IO=False,USB_enumerated=False,
         firmware_private_key_included=False,original_firmware_included=False,native_libraries=len(native),
         native_source_sha256=sha(ROOT/'native/Workbench.swift'),firmware_source_lock_sha256=sha(a.firmware/'sources.lock.json')))

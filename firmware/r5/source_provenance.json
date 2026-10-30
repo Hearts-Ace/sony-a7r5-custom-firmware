@@ -1012,5 +1012,477 @@
     "source_sha256": "a485f27d0b22eb7fd9b9419795695d0a1750ea32c961d11c1dd8ddade564dedf",
     "target": "LICENSE.fwtool",
     "target_sha256": "a485f27d0b22eb7fd9b9419795695d0a1750ea32c961d11c1dd8ddade564dedf"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp/cp_transfer.c",
+    "source_sha256": "51e963cfe19c431072dc9ead64d1956e5f2bbf974ff6a19b794a4673c5aeca01",
+    "target": "src/cp/cp_transfer.c",
+    "target_sha256": "46e08aa860c7b398e42367b1843974e056cb655faec398287a4366428d2c0605",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_aa_snapshot.h",
+    "source_sha256": "5e5ee6593234c2e35dc7b483ccb20a503db0a4079330d622e4f8867980705905",
+    "target": "src/cp_include/r5_aa_snapshot.h",
+    "target_sha256": "d36ceca0a2082cddc493d44590d5381a4470d927a3ca664a9310bd645b1cc79a",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_ap_activation.h",
+    "source_sha256": "b12245559e6dad1bbe05651f6b7b334df1bb33fcdd299ffcd8033a275fbc3292",
+    "target": "src/cp_include/r5_ap_activation.h",
+    "target_sha256": "3a435fc88d8ed6685b60e9adeae79bacb09c5ccfb002dd18b29eef1bde52553f",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_ap_terminal.h",
+    "source_sha256": "d040c23ab4c8a9c28c6707fee0760bc782d295daa0cea24628db265140805e12",
+    "target": "src/cp_include/r5_ap_terminal.h",
+    "target_sha256": "3410cea848bd309257437009490795baa87b9b455585e201bc839776ef854728",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_async_import.h",
+    "source_sha256": "2d7cee5b8d61bb8660038f8f402066b9bcc04b27f5017ff05c363d765ae5946f",
+    "target": "src/cp_include/r5_async_import.h",
+    "target_sha256": "586498f394ebc9d934525ffd7725515fea61b3928f1c0a6b163499910cf8dfd1",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_boot_bank.h",
+    "source_sha256": "b04fcb762993329b2e6f0e44504af95ec87eeaed0dd7d2cdc6708109bbc09e8e",
+    "target": "src/cp_include/r5_boot_bank.h",
+    "target_sha256": "58f8e86cd497166f6da71e86501bfa81229f7256b44bcf5f563f923ec5440215",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_boot_coordinator.h",
+    "source_sha256": "9ca01f71c88b7cb1fece3ddf6863318011501987a222fb69a7a7bec9e52279e3",
+    "target": "src/cp_include/r5_boot_coordinator.h",
+    "target_sha256": "9d3c9c9eee8d706afb6f681ebc1f39d55d0fbd5d7bfc1bac8a0c06755b86d153",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_boot_media_bridge.h",
+    "source_sha256": "320df3f42dcb8ab9dc2f9ad33783861b1837f058e1a09816ddedcc2fdac64c0c",
+    "target": "src/cp_include/r5_boot_media_bridge.h",
+    "target_sha256": "9875e38eb4c1f911cd371b3200315aa70f038d81e568faea5c9f46c960456811",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_boot_runtime.h",
+    "source_sha256": "8ac1a1b1c0a939cfed43f0310b8641c342ef9edb71febe81b7bf543ae6b66840",
+    "target": "src/cp_include/r5_boot_runtime.h",
+    "target_sha256": "8261a2e1cb252b6978daccc19fa026da771bd996dece6838e0db6f72110b6fbd",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_boot_services.h",
+    "source_sha256": "436c0bed03856009409e7dca97bd405e13f3dc895664ce7076f029c2d7ba7b54",
+    "target": "src/cp_include/r5_boot_services.h",
+    "target_sha256": "345e1d2d7f9a7fc63be19a6e3ad4ca62ac8c50085ed822ca4fc8ffd7726135db",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_boot_transaction.h",
+    "source_sha256": "e5ee3dd11f1109eff2ff6bfa6dba93c4f9d5933ced135b25241dd926821f5b44",
+    "target": "src/cp_include/r5_boot_transaction.h",
+    "target_sha256": "4826639c8508d5fda8f5ab5500dabd76e6f860400791f5002423cbe785cfc7a6",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_boot_transfer_adapter.h",
+    "source_sha256": "bc3bdc8207ab492b9afd3062252354a08bdede505d3d1f94019740682bdc293d",
+    "target": "src/cp_include/r5_boot_transfer_adapter.h",
+    "target_sha256": "dea1e12f374593adfa7197d7f7c3237a5202f2c14d143960f3db5d05e82e110e",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_color_consumer.h",
+    "source_sha256": "be94d154620ea1a0648148d7c92f0a434f59078c8fe69abd597edbe5b4481db8",
+    "target": "src/cp_include/r5_color_consumer.h",
+    "target_sha256": "00c39c9cfa7a8471fde03df84341c89894e4143f8b449159cf981756b72c06e8",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_color_q_carrier.h",
+    "source_sha256": "46408fed44e198819597afe22b5189f70a548d6e5ce32eb8760a8602e1e17870",
+    "target": "src/cp_include/r5_color_q_carrier.h",
+    "target_sha256": "07caacd78bf9c1536b7d71ce4582b32c49d77ffd0192f20f483212d1320cdf1a",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_color_shadow.h",
+    "source_sha256": "99d9558c962030f32553fe264b5f29db28d2c9892dcf13d6cfe8661cdc54d5b8",
+    "target": "src/cp_include/r5_color_shadow.h",
+    "target_sha256": "04d04a4af69f0533940b3e8f2f2a23e7c6c16aa88b834e56c471e50ef3017a44",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_custom_filter423.h",
+    "source_sha256": "4459e5ba65d5bbbf4615a39139e8e225976342a6c70f327ae0ce87cb824f3909",
+    "target": "src/cp_include/r5_custom_filter423.h",
+    "target_sha256": "b93c3a027b7e4e5974964936b708743cc14b11e442531b0594841c6ed0619ccc",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_dedicated_worker.h",
+    "source_sha256": "0fdb68688ef5b14349f9837fdd66940085b23c26caf69433516e3a4f6be2e109",
+    "target": "src/cp_include/r5_dedicated_worker.h",
+    "target_sha256": "e410c917a515f2bfd18d00e3b7c165d4e8a8594e347fc4ef2b945e9658f8f8bc",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_direct_pthread.h",
+    "source_sha256": "6ee7d46003ad6af6817cfdbd21b44445e0e018c96b2734279f140fc9529daabc",
+    "target": "src/cp_include/r5_direct_pthread.h",
+    "target_sha256": "e1805db21147a4be6075f9fc7b98d1121374a1a28d2866f63d88d57f0f3fbc06",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_filter423.h",
+    "source_sha256": "f306f8621547cc44a4ebe82c2a5377e9788e154604eae34662eec9810ea2ff0a",
+    "target": "src/cp_include/r5_filter423.h",
+    "target_sha256": "47a7aa2d56969d80ddbefc9ffd58ca90aa9a0a989f5278b60da3ef7598090a2e",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_filter_runtime423.h",
+    "source_sha256": "afdf31d38131364c32563609deb5493788615fc6abd746c29ed1097af85889b1",
+    "target": "src/cp_include/r5_filter_runtime423.h",
+    "target_sha256": "fb00a8f2f3342d54ad671a3b048d376ce760e412d0d7dc409a230e50bfd51988",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_filter_selection423.h",
+    "source_sha256": "5bdd8079e562ce996384b180da5cc789759af839be2b9446e7dc464abbed54f0",
+    "target": "src/cp_include/r5_filter_selection423.h",
+    "target_sha256": "4b158305f5c2177d203de43b44f588e8ce43651802b675dcb5c7ca558e965720",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_fsys_adapter.h",
+    "source_sha256": "b6038bbd5422fb559f4305801215087b378f2453e89d63ca9b1a1682768f5fae",
+    "target": "src/cp_include/r5_fsys_adapter.h",
+    "target_sha256": "e531a14d54c477c70bfa38068a24a1eeb89a2b3e3b872770e41c871a32b9d59f",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_gamma_identity.h",
+    "source_sha256": "09190d689af74f307f333b97369fd022e80774b1c9e20bf7d7aaa05e537acca3",
+    "target": "src/cp_include/r5_gamma_identity.h",
+    "target_sha256": "b03b75d8bc5e88a20547ab0f41bc073086eaf141a18583d2341060fe59e72107",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_gamma_qualification.h",
+    "source_sha256": "ae24eddf783c8a75f59262fbb224c96cdc9ba55578b3f6518ee1e9135b7b1980",
+    "target": "src/cp_include/r5_gamma_qualification.h",
+    "target_sha256": "9cc3893227d9accfb84e96fb373f2fc6167728ba4e19d6614a21b7074d448583",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_grid422.h",
+    "source_sha256": "aa570b921b7d890d7abbd169a6756e0f7168e577d17438534f23db03ee46a5f0",
+    "target": "src/cp_include/r5_grid422.h",
+    "target_sha256": "f89f65132a680f24686e139dbef685b88d632e7aa9cf59239e5ccd219244b4c3",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_grid_diagnostics.h",
+    "source_sha256": "cbdcc091835fdacd16d3938667b39697af864b3fe17576be410c706942232078",
+    "target": "src/cp_include/r5_grid_diagnostics.h",
+    "target_sha256": "f2a558a58d7cbfcbe85f0c8d56da02a4fe15e4f07928da68ded3b922fb78a36b",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_isp_carrier.h",
+    "source_sha256": "11127dfc7c3644ff62af46a556f74c7d0265ca1bcf01725a86c0c2744c4a2de9",
+    "target": "src/cp_include/r5_isp_carrier.h",
+    "target_sha256": "7e236a443b35ac1538f0d5fffb3c3003f2d4bef0844e29e19665cb3b59e0e7ca",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_lifecycle.h",
+    "source_sha256": "ec75906fd92038114f6d691c89ae78bbeb04cdf878daa171104927cfe6d45fb6",
+    "target": "src/cp_include/r5_lifecycle.h",
+    "target_sha256": "98ce20da5b5a490ec5db1c84e6398b496aaf877658e8a1afabb14030d3d5f887",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_look_transfer.h",
+    "source_sha256": "ec6cdbdca8e6789bd0fce188e7866933f87f01fb763272af83e1649b364eb805",
+    "target": "src/cp_include/r5_look_transfer.h",
+    "target_sha256": "5af34045a938516e812b9ff71d79c0557b0fbb3bd021d2bff04d19eb85674035",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_lut_directory.h",
+    "source_sha256": "e8ed9746378b768179bff63c8e91e3fe658cf313e2e08f5cbd38ed32b482c188",
+    "target": "src/cp_include/r5_lut_directory.h",
+    "target_sha256": "4380c35a6bff0b2d29bcffbb3a1953aa447202422492b12d633477025e0461ea",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_lut_mount_guard.h",
+    "source_sha256": "ec7f65e67edb817cff953cd48b5b03165d3b10f92822b9c9702f80a7f17c1fea",
+    "target": "src/cp_include/r5_lut_mount_guard.h",
+    "target_sha256": "2575b41010119ed4ada1927e2b70b7c26ec78a4f99951ca5ef528b8d1cc8b8cc",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_lut_mount_reader.h",
+    "source_sha256": "f7f70f3948c42a79b685bfea8bc00e3ffb33cd0123248c8d12a3041611a350b7",
+    "target": "src/cp_include/r5_lut_mount_reader.h",
+    "target_sha256": "635ba63e9f7147f871e166a37a9852b1071c25ac46b7e8ea347f335755295132",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_native_lut_directory.h",
+    "source_sha256": "0ca38d1291541852bc25175abe55cfdc0ae01b512f3a19d27e6758c813840408",
+    "target": "src/cp_include/r5_native_lut_directory.h",
+    "target_sha256": "1b9b035341687e80979777d0fc728be667455af232169de0c50424856f701bee",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_native_readonly_services.h",
+    "source_sha256": "b22a7cf70e563ea4312e1c00ccd7b571c20378c42a7db1d73307cbafa4e8aeea",
+    "target": "src/cp_include/r5_native_readonly_services.h",
+    "target_sha256": "90cac913f9c1055e3a3d84b0cc3ab1dfd07d210076bfb41e0f5b7a2c54e329fb",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_native_transport.h",
+    "source_sha256": "4f55864941aa28bbe3054224ee90fd381b28df81e5387905fb5e5e81d2079e35",
+    "target": "src/cp_include/r5_native_transport.h",
+    "target_sha256": "2aec03eabe58cf57e485158279bc8d135ab8cf06a85e7e7ee89141c6803079e1",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_posix_persist.h",
+    "source_sha256": "ce341a9e792a5fdbbd3ddd5bf3f5051aabf9ec99cdef6c3b3c34ed65071abbce",
+    "target": "src/cp_include/r5_posix_persist.h",
+    "target_sha256": "e1c3cf3de1c46946624feb1e849022db1a8174995c3ec59928cfaf90655f6ead",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_posix_stage.h",
+    "source_sha256": "51495add0df53ad22088c489cf2764763b950cfa6cb73819725111c78eb5b7c2",
+    "target": "src/cp_include/r5_posix_stage.h",
+    "target_sha256": "e132161d632a453499a6c616d32c070eee303f6cea592aaa8a880e220aeccd66",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_preview.h",
+    "source_sha256": "25c62139aa472af6b77e03cf8b346213de58d865c56ef74d950bea205f36fb61",
+    "target": "src/cp_include/r5_preview.h",
+    "target_sha256": "00271596480e635c1b7069d3af0ef2bed230281dba76033eb52d87228c50317b",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_render_binding.h",
+    "source_sha256": "fb3d6b5e2b892703e7abf86607c0126b44348d281652d52bc83ca6e17f6ef589",
+    "target": "src/cp_include/r5_render_binding.h",
+    "target_sha256": "1d1cf5c0cd5647a1c4cc0b1b5eb205b078f330bb02589b4fbc78f1a891cecbd6",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_runtime_session.h",
+    "source_sha256": "b5461c3442cf9af94caee1c39d2c5a93a4f6ac5c133b56a4235883f7a4ba9e8b",
+    "target": "src/cp_include/r5_runtime_session.h",
+    "target_sha256": "45b8727bf6b04acfc7745c95282bc202a614a366ab4535c6e8f96b296618eb31",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/r5_scan_gate.h",
+    "source_sha256": "d65b0030bed4350b68b946c1acaeab9c582e83e3e3348be0e444adc92678f524",
+    "target": "src/cp_include/r5_scan_gate.h",
+    "target_sha256": "94d65cba3fbb73671a106889a69a55da856157d58b336cdcbd18d59ba461902a",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/sd_native_look.h",
+    "source_sha256": "56201f26cc28dc60629391d9aaa6f7d82eb8fda0089710d3b8d5e09ae4c1e72f",
+    "target": "src/cp_include/sd_native_look.h",
+    "target_sha256": "b8ae2260489584e8020c1827888d5f2260c41ff486cbe369a3a239d21d3596f7",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/sd_native_persist.h",
+    "source_sha256": "b4e50badecff327dcb6f49603b9f07aacad35f24208f32b499c8ad60c8337979",
+    "target": "src/cp_include/sd_native_persist.h",
+    "target_sha256": "a0e7df8eb4f62e1a0742ef475163b42a53e6b66503e1ee7b69cd3c7071016ec7",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/cp_include/sd_native_store.h",
+    "source_sha256": "9d659e7585992c7bc8e068b80fed7e9475127a95d38aaae27ed65f6ff9b52139",
+    "target": "src/cp_include/sd_native_store.h",
+    "target_sha256": "b2e24ef286cbb969ed7d7397cfcdb7e80075c089c25d227090f7cc9413cf65bb",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/gamma/native_gamma.c",
+    "source_sha256": "f1a5b719dfd5dd28ab13365f440e5ded0c367bfe14595ecadc7aec04cb6ac72c",
+    "target": "src/gamma/native_gamma.c",
+    "target_sha256": "62756abe47f11415bd52f67fe197c0fe0e408d0fd621d52672a2dffe6b1262f9",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/import/build_ap_image.py",
+    "source_sha256": "2540a699353ecd1a67dda2c3fb877b2f3d680fa7df329a856d15d15048d95ec9",
+    "target": "src/import/build_ap_image.py",
+    "target_sha256": "20c10ad19208ce245bacebb1a9657ed9ac365304741d89614a8fd8546a71bd06",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/import/build_ap_module.py",
+    "source_sha256": "30fecd90534549cf4472f7b65376f6ae3665fbbbed1371b524b568548b68f5ee",
+    "target": "src/import/build_ap_module.py",
+    "target_sha256": "e50590f71a9710ae7111808265c758f5bd911cdf2be651c7725588dbaec74651",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/import/r5_filter_runtime423.c",
+    "source_sha256": "b90a305620c5bf9c5e615d2f3ff8cda26c70f47b0516ed0f4256a6b687026855",
+    "target": "src/import/r5_filter_runtime423.c",
+    "target_sha256": "067523ac6bdac655f74b75de8c54afe89358fe3f1384b42c6166312ba4a891fe",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/import/r5_runtime_session.c",
+    "source_sha256": "29898333a2701a01f7d7f7c42958b4e329107b03fd2368369ed7c917990015b1",
+    "target": "src/import/r5_runtime_session.c",
+    "target_sha256": "27d46b8d261694a03cad216604c1f76822068db9f4805ea26264103a1862c83b",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/import/r5_stage413_thread.c",
+    "source_sha256": "05e0c777f940415647d1d5f04c4221413bce7e1bc84887f349d8170e57133b64",
+    "target": "src/import/r5_stage413_thread.c",
+    "target_sha256": "1ce79aa4f533c17f2b278c805129c617a06e50d11e374cf0fd8db196edf58ee9",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/import/r5_stage423_codec.c",
+    "source_sha256": "305f6f2037b649c4d5453ae2882ef8616cce9f52de543b6373299e7b8e95ea64",
+    "target": "src/import/r5_stage423_codec.c",
+    "target_sha256": "a5a5eccaf405dc9d555cc900a70c32ebc688cc5006ed5ca78354780c8bb7b659",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/import/sd_native_persist.c",
+    "source_sha256": "18cba48ec86c172766249dc57b36f0455b02444666543b6dfc4f58ed8965efba",
+    "target": "src/import/sd_native_persist.c",
+    "target_sha256": "ef1a7d599308bcdeddd1a96d263c72c1f088fe8e334d18283423908fbaa65a64",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/import/sd_native_persist.h",
+    "source_sha256": "b4e50badecff327dcb6f49603b9f07aacad35f24208f32b499c8ad60c8337979",
+    "target": "src/import/sd_native_persist.h",
+    "target_sha256": "57a6672f94b258ad52d54cf2baa4edfb640fe49779f68584945ab4c75fdd76f8",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/import/sd_native_store.c",
+    "source_sha256": "61f79c53a2a8e1bbf466fa34f84ef675786625b11e1b46c9aeaa99424952bbdb",
+    "target": "src/import/sd_native_store.c",
+    "target_sha256": "b91c0c43bba888f354e7ea5e8326aadd721ecf1f21b58325d3254ce239243efb",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/import/sd_native_store.h",
+    "source_sha256": "9d659e7585992c7bc8e068b80fed7e9475127a95d38aaae27ed65f6ff9b52139",
+    "target": "src/import/sd_native_store.h",
+    "target_sha256": "31eb6ad3d6ce0ea34833d6cf57dad163e8c3d98d6ea7406dcd7b8e35a14653e2",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_runtime436_20261030/source435-before.tar.gz:r5/src/lib/package.py",
+    "source_sha256": "7216c06af3ff36e746e24124af12a640ab7c6a475e7bd4b90bf7523643e6b989",
+    "target": "src/lib/package.py",
+    "target_sha256": "c8233ed52c079ce35cf9915db05018dc6abb8f84f08348d8717f3bac258a642e",
+    "revision": "4.36",
+    "reason": "Reviewed runtime CRC/selection/Gamma/dedup or validated-byte persistence optimization"
+  },
+  {
+    "source": "analysis/r5_fn_icon436_20261030/before/source436-before-icon.tar.gz:r5/src/menu_research/r5_filter_menu423.c",
+    "target": "src/menu_research/r5_filter_menu423.c",
+    "target_sha256": "40d92c6ccc78565e9211d6a390c00b02b51e8b06de2d91c6398862f4c1e81c66",
+    "revision": "4.36 same-version Fn default-icon fix",
+    "native_reference": "Original R5 Creative Look descriptor 0x5858b08 +0x60 = 0x02002290",
+    "reason": "One static image field only; dynamic getter unchanged"
+  },
+  {
+    "source": "analysis/r5_fn_icon436_20261030/before/source436-before-icon.tar.gz:r5/src/menu_research/r5_filter_menu423.c",
+    "target": "src/menu_research/r5_filter_menu423.c",
+    "target_sha256": "1b1cf220126dc3467fec733c6cf0166a08cd7fa75b8d225bcf5c50318d255b10",
+    "revision": "4.36 same-version fixed C.Look icons",
+    "native_reference": "Original Creative Look default image 0x02002290; native descriptor +0x60",
+    "reason": "Private default and existing private image query use C.Look; native menus retain original paths"
+  },
+  {
+    "source": "analysis/r5_fn_icon436_20261030/before/source436-before-icon.tar.gz:r5/src/menu_research/r5_filter_menu_icon434.S",
+    "target": "src/menu_research/r5_filter_menu_icon434.S",
+    "target_sha256": "8bc2126ef491004d830ee862845829c78c5441e52ff291935320dbea7d0ebcc9",
+    "revision": "4.36 same-version fixed C.Look icons",
+    "native_reference": "Original Creative Look default image 0x02002290; native descriptor +0x60",
+    "reason": "Private default and existing private image query use C.Look; native menus retain original paths"
   }
 ]

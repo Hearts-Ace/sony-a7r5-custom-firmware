@@ -13,7 +13,7 @@ SCHEMA='r5-workbench-cli/1'
 
 def describe():
     from card import filters
-    return dict(schema=SCHEMA,version='0.2.1',firmware='4.35',bundled_filters=filters(),
+    return dict(schema=SCHEMA,version='0.2.1',firmware='4.36',bundled_filters=filters(),
         guide=str(ROOT.parent/'AI_GUIDE.md'),manifest=str(ROOT/'agent-manifest.json'),
         commands=load(ROOT/'agent-manifest.json')['commands'],
         output=dict(stdout='one JSON object',progress='stderr',success_exit=0,error_exit=1),

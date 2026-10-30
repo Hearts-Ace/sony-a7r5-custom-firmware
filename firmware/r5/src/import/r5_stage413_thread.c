@@ -1,4 +1,4 @@
-/* 4.35: cold startup chooses SD/internal data before the first CP activation.
+/* 4.36: cold startup publishes validated SD bytes without reading the old file.
  * Resume loads internal data only; it never scans SD or replaces a live bank.
  * One owner services selection at descriptor-free wait points.
  * Synchronous native Fsys duration is not bounded by polling deadlines. */
@@ -36,6 +36,7 @@ struct r5_stage411_diagnostics {
     struct r5_look_set current;
     int32_t directory_status, load_status, stage_status, publish_status, release_status;
     uint32_t loaded_mask, saved_mask, unchanged, mount_attempts;
+    uint32_t file_crc;
 };
 __attribute__((aligned(16))) struct r5_stage411_diagnostics r5_stage411_state;
 static int activation425;
@@ -60,9 +61,9 @@ static int within(clock_fn clock,uint64_t start,uint64_t *last,uint32_t budget) 
     if(!r5_session_current()||now_ms(clock,&now)||now<*last||now<start||now-start>=budget)return 0;
     *last=now;return 1;
 }
-static int same_set(const struct r5_look_set *a,const struct r5_look_set *b){
-    const uint8_t *x=(const uint8_t *)a,*y=(const uint8_t *)b;
-    size_t i;for(i=0;i<sizeof(*a);i++)if(x[i]!=y[i])return 0;return 1;
+static uint32_t file_crc(const uint8_t *p){
+    return (uint32_t)p[112]|(uint32_t)p[113]<<8|
+        (uint32_t)p[114]<<16|(uint32_t)p[115]<<24;
 }
 void r5_stage411_initial(uint32_t a,uint32_t b) {
     (void)r5_scan_gate_initial(&r5_stage411_state.scan,a,b);
@@ -83,7 +84,7 @@ static int r5_stage411_persist(struct r5_stage411_diagnostics *s,clock_fn clock,
     struct r5_lut_directory_api directory_api;
     struct r5_persist_ops persist;struct r5_stage_ops stage;
     uint8_t mount_scratch[65537];
-    unsigned internal_ready=0;
+    unsigned internal_ready=0,load_attempted=0;size_t length=s->bytes_read;
     uint64_t start,last;unsigned poll;
     const struct timespec64 delay={0,100000000};
     if(now_ms(clock,&start))return R5_IO_ERROR;last=start;
@@ -106,34 +107,38 @@ static int r5_stage411_persist(struct r5_stage411_diagnostics *s,clock_fn clock,
     /* A validated SD candidate replaces the whole file, even if the old
      * file is corrupt. Only load the previous file when SD import failed/absent. */
     if(result!=R5_IMPORTED) {
+        load_attempted=1;
         s->load_status=r5_load_persisted_look(&persist,&s->current,s->scratch,sizeof(s->scratch));
         s->loaded_mask=s->current.valid_mask;
+        if(s->load_status==R5_IMPORTED)s->file_crc=file_crc(s->scratch);
         goto release;
     }
     s->decoded_mask=s->parsed.valid_mask;
-    /* Compare only after a complete SD candidate was validated. Loading the
-     * old file here does not publish names or allocate a CP bank. */
-    s->load_status=r5_load_persisted_look(&persist,&s->current,s->scratch,sizeof(s->scratch));
-    s->loaded_mask=s->current.valid_mask;
-    if(s->load_status==R5_IMPORTED && same_set(&s->current,&s->parsed)){
-        s->unchanged=1;s->saved_mask=s->current.valid_mask;goto release;
-    }
+    /* Do not read/compare the old file. The SD buffer is still the exact
+     * validated v4 file. Empty SD files retain the intentional clear action,
+     * represented on disk by a valid canonical empty v4 header. */
     s->load_status=R5_ABSENT;
+    if(!length)length=r5_encode_look_file(&s->parsed,s->scratch,sizeof(s->scratch));
+    if(!length){result=R5_INVALID;goto release;}
+    s->file_crc=file_crc(s->scratch);
     /* This worker owns .NEW before any stage handle opens. Recover a stale
      * interrupted stage; never truncate the active .BIN. */
     if(stage.unlink_file(stage.context,R5_LOOK_PENDING)){result=R5_COMMIT_ERROR;goto release;}
     if(!within(clock,start,&last,15000u)){result=R5_IO_ERROR;goto release;}
     STORE(&s->child_phase,5);
-    s->stage_status=r5_stage_look_store(&stage,&s->parsed,s->scratch,sizeof(s->scratch));
+    s->stage_status=r5_stage_validated_look_bytes(&stage,s->scratch,length);
     if(s->stage_status!=R5_STAGE_READY){result=R5_COMMIT_ERROR;goto release;}
     if(!within(clock,start,&last,15000u)){result=R5_COMMIT_ERROR;goto release;}
-    s->publish_status=r5_publish_staged_look(&persist,&s->parsed,s->scratch,sizeof(s->scratch));
+    s->publish_status=r5_publish_staged_look_bytes(&persist,s->scratch,length);
     if(s->publish_status!=R5_PUBLISHED&&s->publish_status!=R5_PUBLISHED_CLOSE_ERROR){result=R5_COMMIT_ERROR;goto release;}
     memcpy(&s->current,&s->parsed,sizeof(s->current));s->saved_mask=s->current.valid_mask;
     if(s->publish_status==R5_PUBLISHED_CLOSE_ERROR)result=R5_COMMIT_ERROR;
 release:
-    if(internal_ready&&result!=R5_IMPORTED&&s->load_status==R5_ABSENT&&!s->current.valid_mask)
+    if(internal_ready&&!load_attempted&&result!=R5_IMPORTED&&s->load_status==R5_ABSENT&&!s->current.valid_mask){
         s->load_status=r5_load_persisted_look(&persist,&s->current,s->scratch,sizeof(s->scratch));
+        s->loaded_mask=s->current.valid_mask;
+        if(s->load_status==R5_IMPORTED)s->file_crc=file_crc(s->scratch);
+    }
     if(internal_ready)s->release_status=r5_lut_directory_release(&directory);
     if(internal_ready&&s->release_status)return R5_IO_ERROR;
     if(s->directory_status||(s->load_status!=R5_IMPORTED&&s->load_status!=R5_ABSENT))return R5_IO_ERROR;
@@ -149,13 +154,7 @@ static void activate(struct r5_stage411_diagnostics *s,int log_sd){
     /* Probe the currently loaded/published set, never a failed candidate.
      * No set = zero mask/hash diagnostic. Reply does not activate anything. */
     if(r5_session_current()&&r5_session_new_transfer()) {
-        uint32_t digest=0,mask=s->current.valid_mask;
-        if(mask) {
-            size_t encoded=r5_encode_look_file(&s->current,s->scratch,sizeof(s->scratch));
-            if(encoded)digest=(uint32_t)s->scratch[112]|(uint32_t)s->scratch[113]<<8|
-                (uint32_t)s->scratch[114]<<16|(uint32_t)s->scratch[115]<<24;
-            else mask=0;
-        }
+        uint32_t mask=s->current.valid_mask,digest=mask?s->file_crc:0;
         r5_stage411_probe_run(mask,digest);
         r5_stage413_transfer_run(&s->current);
         {extern int r5_stage421_parameters_ready(void);extern int r5_stage421_transfer_matched(void);
@@ -188,7 +187,7 @@ void *r5_stage411_child(void *argument) {
     STORE(&s->entered,1);STORE(&s->terminal,0);STORE(&s->exited,0);
     memset(&s->parsed,0,sizeof(s->parsed));memset(&s->current,0,sizeof(s->current));
     s->bytes_read=s->read_calls=s->decoded_mask=s->loaded_mask=s->saved_mask=0;
-    s->unchanged=0;s->attempts=0;
+    s->unchanged=0;s->attempts=0;s->file_crc=0;
     s->selected_drive=0;
     STORE(&s->child_phase,1);s->selected_slot=UINT32_MAX;
     s->directory_status=s->load_status=s->stage_status=s->publish_status=s->release_status=-99;

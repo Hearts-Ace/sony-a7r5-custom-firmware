@@ -19,7 +19,7 @@ CLI='/Applications/R5 刷写工作台.app/Contents/MacOS/r5wb'
 ```
 
 - “把最新滤镜放到这个文件夹”：执行 `prepare --destination PATH`，只复制附带的 `R5NATIVE.BIN`。
-- “把固件和滤镜准备到卡里”：执行 `prepare --firmware DAT --destination PATH`。固件必须精确匹配我们的冻结 4.35 DAT。
+- “把固件和滤镜准备到卡里”：执行 `prepare --firmware DAT --destination PATH`。固件必须精确匹配我们的冻结 4.36 DAT。
 - “先看看会改什么”：执行 `plan`，只校验并输出计划，不复制或替换目标文件。
 - “上次完成了吗”：执行 `status`，再根据任务路径执行 `result`。有需要才查对应 `engine.log`。
 - “校验这份固件”：执行 `verify --firmware DAT`。
