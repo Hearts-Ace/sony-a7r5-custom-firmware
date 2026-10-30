@@ -20,7 +20,7 @@ extern void r5_native_refresh_construct425(void *,const void *);
 extern void r5_native_refresh_execute425(void *);
 extern int r5_stage425_reload(void);
 static uint64_t handled;
-static uint32_t initialized,saved,saved_valid,alias,bank_crc,mask,select_sequence,dirty;
+static uint32_t initialized,saved,saved_valid,alias,bank_crc,mask,select_sequence,dirty,synchronized_alias,synchronized_epoch;
 static uint32_t inbox_state;
 static uint64_t attempted_command;static uint32_t attempted_alias,attempts;
 static uint64_t retry_at430;
@@ -70,7 +70,7 @@ void r5_filter_bank_ready(uint32_t token,uint32_t crc,uint32_t valid_mask){
     uint64_t old,next;uint32_t n;
     if(!token || (valid_mask&~4095u))return;
     if(alias!=token || bank_crc!=crc || mask!=valid_mask)select_sequence=0;
-    alias=token;bank_crc=crc;mask=valid_mask;STORE(&dirty,1);
+    alias=token;bank_crc=crc;mask=valid_mask;synchronized_alias=0;STORE(&dirty,1);
     if(!initialized){initialized=1;saved_valid=0;}
     old=LOAD(&desired);
     for(;;){n=(uint32_t)old;if(!n || (n<=12 && (mask&(1u<<(n-1)))))break;
@@ -155,6 +155,14 @@ void r5_filter_service(void){
     }
     if(n>12 || (n && !(mask&(1u<<(n-1)))))goto failed;
     if(!LOAD(&dirty) && want==LOAD(&handled))goto done;
+    /* A repeated UI selection needs no E4/CP transaction only after this exact
+     * bank completed one in this session and its selection is durable. Bank-ready
+     * and every failure invalidate the witness; startup/resume/reload still
+     * synchronize, including wait points before the resumed bank is ready. */
+    if(explicit_command && kind==1 && !LOAD(&dirty) && synchronized_alias==alias &&
+       synchronized_epoch==r5_session_epoch() && n==previous && saved_valid && saved==n && current()){
+        STORE(&handled,want);STORE(&command_state,2);goto done;
+    }
     if(attempted_command!=want || attempted_alias!=alias){attempted_command=want;attempted_alias=alias;attempts=0;retry_at430=0;}
     /* A restored/new bank may precede native E4 readiness during startup.
      * Recover on this boot, with one-second backoff and a finite 30 attempts.
@@ -173,10 +181,11 @@ void r5_filter_service(void){
      * physical ISP/LCD completion is not inferred from message submission.
      * UI receives success only after durable sidecar publication and AP value. */
     if((!saved_valid || saved!=n) && save(n))goto failed;
-    STORE(&applied,n);STORE(&dirty,0);STORE(&handled,want);
+    synchronized_alias=alias;synchronized_epoch=r5_session_epoch();STORE(&applied,n);STORE(&dirty,0);STORE(&handled,want);
     if(explicit_command)STORE(&command_state,2);
     goto done;
 failed:
+    synchronized_alias=0;
     /* Best-effort rollback on the same accepted bank. Never report success if
      * persistence or execution failed; a failed rollback remains visible. */
     if(changed && current() && (previous==0 || (mask&(1u<<(previous-1))))){

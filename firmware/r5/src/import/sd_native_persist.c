@@ -43,19 +43,19 @@ int r5_load_persisted_look(const struct r5_persist_ops *ops,
     return R5_IMPORTED;
 }
 
-int r5_publish_staged_look(const struct r5_persist_ops *ops,
-    const struct r5_look_set *set, uint8_t *scratch, size_t capacity) {
+int r5_publish_staged_look_bytes(const struct r5_persist_ops *ops,
+    const uint8_t *bytes, size_t length) {
     uint8_t chunk[128];
     uintptr_t handle=0,directory=0;
-    size_t length,used=0,actual,i;
+    size_t used=0,actual,i;
     int status,closed,result=R5_PUBLISHED;
     if (!persist_read_ops(ops) || !ops->open_directory || !ops->rename_file ||
         !ops->sync_directory) return R5_PUBLISH_INVALID;
-    length=r5_encode_look_file(set,scratch,capacity);
-    if (!length) return R5_PUBLISH_INVALID;
+    if (!bytes || length<R5_LOOK_HEADER || length>R5_LOOK_MAX)
+        return R5_PUBLISH_INVALID;
     status=ops->open_read(ops->context,R5_LOOK_PENDING,&handle);
     if (status) return R5_PUBLISH_IO_ERROR;
-    /* Bound even an adversarial short-reader: at most length+1 calls, 7329
+    /* Bound even an adversarial short-reader: at most length+1 calls, 29553
      * bytes. One extra byte distinguishes exact content from trailing data. */
     do {
         size_t wanted=length+1-used;
@@ -64,7 +64,7 @@ int r5_publish_staged_look(const struct r5_persist_ops *ops,
         status=ops->read_file(ops->context,handle,chunk,wanted,&actual);
         if (status || actual>wanted) {result=R5_PUBLISH_IO_ERROR;break;}
         if (used+actual>length) {result=R5_PUBLISH_MISMATCH;break;}
-        for (i=0;i<actual;i++) if (chunk[i]!=scratch[used+i]) {
+        for (i=0;i<actual;i++) if (chunk[i]!=bytes[used+i]) {
             result=R5_PUBLISH_MISMATCH;break;
         }
         if (result!=R5_PUBLISHED) break;
@@ -81,4 +81,11 @@ int r5_publish_staged_look(const struct r5_persist_ops *ops,
     if (ops->close_file(ops->context,directory) && result==R5_PUBLISHED)
         result=R5_PUBLISHED_CLOSE_ERROR;
     return result;
+}
+
+int r5_publish_staged_look(const struct r5_persist_ops *ops,
+    const struct r5_look_set *set, uint8_t *scratch, size_t capacity) {
+    size_t length=r5_encode_look_file(set,scratch,capacity);
+    if (!length) return R5_PUBLISH_INVALID;
+    return r5_publish_staged_look_bytes(ops,scratch,length);
 }

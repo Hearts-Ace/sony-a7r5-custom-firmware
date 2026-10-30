@@ -1,6 +1,6 @@
 # 参考项目、致谢与许可
 
-当前版本为 R5 4.35；macOS 刷写工作台源码为 0.2.1。色彩训练与标定已独立至 [sony-r5-colorlab](https://github.com/Hearts-Ace/sony-r5-colorlab)。
+当前版本为 R5 4.36；macOS 刷写工作台源码为 0.2.1。色彩训练与标定已独立至 [sony-r5-colorlab](https://github.com/Hearts-Ace/sony-r5-colorlab)。
 
 - [Erlla/sony-a7m4-custom-firmware](https://github.com/Erlla/sony-a7m4-custom-firmware/tree/086df3b1e33dfa0206553ac2bb003535c58ddb80)：参考 FL2／FL3 解锁、菜单适配及颜色参数保留方法。[MIT 许可](licenses/Erlla-MIT.txt)。
 - [QAQLeonard/a7c2-fl23-research](https://github.com/QAQLeonard/a7c2-fl23-research)：参考自定义滤镜导入、原生网格及颜色参数处理思路。[MIT 许可](licenses/a7c2-fl23-MIT.txt)。

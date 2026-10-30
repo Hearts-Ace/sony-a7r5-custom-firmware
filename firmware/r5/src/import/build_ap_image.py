@@ -81,6 +81,6 @@ def main():
  # All changed dynamic/RELA bytes are the reviewed menu parent insertion above.
  (out/'menu_parent_patch.json').write_text(json.dumps(menu_report,indent=2)+'\n')
  (out/'appFw.so').write_bytes(image)
- report=dict(passed=True,version='4.35',AP_sha256=sha(image),bytes=len(image),reverse_to407_exact=True,module_audit_sha256=digest_file(HERE/'module_audit.json'),patches=changes,rx_file=rxfile,rw_file=rwfile,rx_bytes=secondary_report['final_rx_bytes'],runtime_source_bytes=len(code),bss_bytes=memory,device_IO=False,menu_parent_patch=menu_report,secondary_identity=secondary_report,Fn_registration=fn_report)
+ report=dict(passed=True,version='4.36',AP_sha256=sha(image),bytes=len(image),reverse_to407_exact=True,module_audit_sha256=digest_file(HERE/'module_audit.json'),patches=changes,rx_file=rxfile,rw_file=rwfile,rx_bytes=secondary_report['final_rx_bytes'],runtime_source_bytes=len(code),bss_bytes=memory,device_IO=False,menu_parent_patch=menu_report,secondary_identity=secondary_report,Fn_registration=fn_report)
  (out/'ap_build.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:report[k]for k in ('passed','AP_sha256','bytes','rx_bytes','runtime_source_bytes','bss_bytes','device_IO')}))
 if __name__=='__main__':main()

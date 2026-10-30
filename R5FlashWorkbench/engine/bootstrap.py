@@ -11,7 +11,7 @@ from common import safe, save, load, sha, progress, render_template
 FIRMWARE=ROOT.parent/'firmware/r5'
 if not FIRMWARE.is_dir():
     FIRMWARE=ROOT.parents[1]/'firmware/r5'
-DAT_SHA='76b06194aacd7b78553ad524e6d6fe0d7fc73edfae671e5ebc1e54bafe17ff74'
+DAT_SHA='57cfc5ff55a71685e95b7b6420d1270bd09dbb140822ad8dceb0a0c9002d9938'
 DAT_BYTES=754525608
 APP_ID='R5FlashWorkbench'
 
@@ -32,7 +32,7 @@ def selfcheck():
     plan=load(ROOT/'write-plan.json')
     if plan['changed_sectors']!=26 or plan['logical_write_bytes']!=13312:raise ValueError('信任写入计划变化')
     from card import filters
-    return dict(ok=True,version='0.2.1',firmware='4.35',python=sys.version.split()[0],bundled_filters=filters(),
+    return dict(ok=True,version='0.2.1',firmware='4.36',python=sys.version.split()[0],bundled_filters=filters(),
         platform='macOS arm64',USB_enumerated=False,camera_IO=False,templates_verified=True,
         signing_private_key_included=False,trust_sectors=26,firmware_DAT_sha256=DAT_SHA,
         compiler_available=Path('/Library/Developer/CommandLineTools/usr/bin/clang').is_file(),
@@ -40,10 +40,10 @@ def selfcheck():
 
 def verify_dat(path):
     path=safe(path,file=True)
-    progress('核对 4.35 固件完整 SHA-256')
+    progress('核对 4.36 固件完整 SHA-256')
     if path.stat().st_size!=DAT_BYTES or sha(path)!=DAT_SHA:
-        raise ValueError('文件不是我们已冻结的 4.35 BODYDATA.DAT；停止导出')
-    return dict(ok=True,version='4.35',bytes=DAT_BYTES,sha256=DAT_SHA,file=str(path),camera_IO=False)
+        raise ValueError('文件不是我们已冻结的 4.36 BODYDATA.DAT；停止导出')
+    return dict(ok=True,version='4.36',bytes=DAT_BYTES,sha256=DAT_SHA,file=str(path),camera_IO=False)
 
 def export_dat(request,job):
     source=safe(request['firmware'],file=True);verify_dat(source)

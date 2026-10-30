@@ -71,6 +71,9 @@ int r5_boot_bank_put_compact(struct r5_boot_bank *b,uint32_t token,unsigned slot
 uint32_t r5_transfer_bank_crc(const struct r5_boot_bank *b) {
     uint32_t c=~0u;unsigned slot,k;size_t i;
     if(!b||(b->expected_mask&~4095u)||b->received_mask!=b->expected_mask)return 0;
+    /* Sealed generations are immutable. The verified digest is written before
+     * native publication's release-store, using an existing reserved word. */
+    if(b->state==SEALED)return b->reserved[0];
     for(k=0;k<4;k++)c=crcbyte(c,(uint8_t)(b->expected_mask>>(8*k)));
     for(slot=1;slot<=12;slot++)if(b->expected_mask&(1u<<(slot-1))) {
         const uint8_t *p=(const uint8_t *)&b->value[slot-1];
@@ -90,6 +93,7 @@ static void header(uint8_t *p,unsigned op,uint32_t token,uint32_t mask,uint32_t 
 static unsigned next_slot(uint32_t mask,unsigned last) {
     unsigned s;for(s=last+1;s<=12;s++)if(mask&(1u<<(s-1)))return s;return 13;
 }
+static int seal_verified(struct r5_boot_bank *b,uint32_t token,uint32_t digest);
 int r5_transfer_cp_receive(struct r5_transfer_cp *c,struct r5_boot_bank *b,
     const uint8_t *p,size_t n,uint8_t ack[R5_TRANSFER_ACK]) {
     uint32_t token=0,mask=0,slot=0,digest=0,seq=0;unsigned op=0,status=R5_X_BAD_PACKET;
@@ -117,7 +121,7 @@ int r5_transfer_cp_receive(struct r5_transfer_cp *c,struct r5_boot_bank *b,
                 /* This compiler emits a native DMB for ARM and AArch64. It is
                  * a release fence, not proof of intercore ownership/ACK. */
                 __atomic_thread_fence(__ATOMIC_RELEASE);
-                { int sealed=r5_boot_bank_seal(b,token);
+                { int sealed=seal_verified(b,token,digest);
                   if(sealed==-2){status=R5_X_NOT_READY;goto reply;}
                   if(sealed){status=R5_X_BAD_STATE;goto rejected;} }
                 c->phase=2;status=R5_X_OK;
@@ -139,8 +143,14 @@ int r5_boot_bank_begin(struct r5_boot_bank *b,uint32_t token,uint32_t mask) {
  for(i=0;i<sizeof(*b);i++)if(p[i])return -1;
  b->token=token;b->expected_mask=mask;b->state=BUILDING;return 0;
 }
-int r5_boot_bank_seal(struct r5_boot_bank *b,uint32_t token) {
+static int seal_verified(struct r5_boot_bank *b,uint32_t token,uint32_t digest) {
+ int result;
  if(!b||b->state!=BUILDING||b->token!=token||b->received_mask!=b->expected_mask)return -1;
  extern int r5_native418_publish(struct r5_boot_bank *);
- return r5_native418_publish(b);
+ b->reserved[0]=digest;result=r5_native418_publish(b);
+ if(result)b->reserved[0]=0;
+ return result;
+}
+int r5_boot_bank_seal(struct r5_boot_bank *b,uint32_t token) {
+ return seal_verified(b,token,r5_transfer_bank_crc(b));
 }

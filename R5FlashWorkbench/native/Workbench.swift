@@ -155,7 +155,7 @@ enum Page: String, CaseIterable, Identifiable {
         if advanced && inputs.isEmpty { notice("请选择输入配置", "选择按 firmware/r5/inputs.example.json 填写的外部路径配置。"); return }
         if !advanced && (originalDAT.isEmpty || signingKey.isEmpty) { notice("请选择原始 DAT 和外部签名私钥", "需要原厂 R5 4.00 DAT，以及与我们公钥匹配的私钥（权限 0600）。原始 DAT 保持只读。"); return }
         guard let parent = choose("选择构建输出的父目录", directory: true) else { return }
-        let output = URL(fileURLWithPath: parent).appendingPathComponent("R5_4.35_" + UUID().uuidString.prefix(8)).path
+        let output = URL(fileURLWithPath: parent).appendingPathComponent("R5_4.36_" + UUID().uuidString.prefix(8)).path
         if advanced { run("build", values: ["inputs": inputs, "destination": output]) }
         else { run("build", values: ["original_dat": originalDAT, "private_key": signingKey, "destination": output]) }
     }
@@ -164,7 +164,7 @@ enum Page: String, CaseIterable, Identifiable {
     }
     func prepareCard(withFirmware: Bool) {
         if withFirmware && (firmware.isEmpty || !FileManager.default.fileExists(atPath: firmware)) {
-            guard let selected = choose("选择我们的 4.35 BODYDATA.DAT") else { return }; firmware = selected
+            guard let selected = choose("选择我们的 4.36 BODYDATA.DAT") else { return }; firmware = selected
         }
         guard let destination = choose("选择存储卡根目录或目标文件夹", directory: true) else { return }
         var values: [String: Any] = ["destination": destination]
@@ -210,7 +210,7 @@ struct ContentView: View {
                     VStack(alignment: .leading, spacing: 3) { Text("R5 工作台").font(.headline); Text("ILCE-7RM5 · macOS").font(.caption).foregroundStyle(.secondary) }
                 }.padding(.top, 16).padding(.horizontal, 16)
                 List(Page.allCases, selection: $model.page) { page in Label(page.rawValue, systemImage: page.symbol).tag(page) }.listStyle(.sidebar)
-                VStack(alignment: .leading, spacing: 6) { Text("固件 4.35 · 附带 12 款 BIN").font(.caption.weight(.semibold)); Text("普通 USB／MSC").font(.caption2).foregroundStyle(.secondary); Text("本地研究版 0.2.1").font(.caption2).foregroundStyle(.secondary) }.padding(18)
+                VStack(alignment: .leading, spacing: 6) { Text("固件 4.36 · 附带 12 款 BIN").font(.caption.weight(.semibold)); Text("普通 USB／MSC").font(.caption2).foregroundStyle(.secondary); Text("本地研究版 0.2.1").font(.caption2).foregroundStyle(.secondary) }.padding(18)
             }.navigationSplitViewColumnWidth(min: 200, ideal: 220, max: 260)
         } detail: {
             VStack(spacing: 0) {
@@ -263,8 +263,8 @@ struct ContentView: View {
                 }
                 HStack { Button("离线自检") { model.run("selfcheck") }.buttonStyle(.borderedProminent); Button("查看 USB 状态") { model.run("inspect") }; Spacer(); Button("使用说明") { NSWorkspace.shared.open(model.resources.appendingPathComponent("README.md")) } }
             }
-            Card(title: "继续使用我们的 4.35", subtitle: "动态图标、Fn 手动注册、R6 ST、FL2／FL3 参数保留、自定义滤镜，以及白色优先 97／氛围 −1。") {
-                Text("固件生成仅调用统一 build.py；不包含参考项目的功能补丁或签名私钥。已有 4.35 文件可直接校验、导出。").font(.subheadline).foregroundStyle(.secondary)
+            Card(title: "继续使用我们的 4.36", subtitle: "固定 C.Look 图标、Fn 手动注册、R6 ST、FL2／FL3 参数保留、自定义滤镜，以及白色优先 97／氛围 −1。") {
+                Text("固件生成仅调用统一 build.py；不包含参考项目的功能补丁或签名私钥。已有 4.36 文件可直接校验、导出。").font(.subheadline).foregroundStyle(.secondary)
                 HStack { Button("USB 维护") { model.page = .camera }; Button("固件与导出") { model.page = .firmware } }
             }
             Card(title: "验收状态", subtitle: "离线构建和回执验证，与相机实际升级、启动和拍摄分别记录。") {
@@ -282,7 +282,7 @@ struct ContentView: View {
                 HStack { Button("查看 USB 状态") { model.run("inspect") }; Button("备份更新器分区…") { model.backupCamera() }.buttonStyle(.borderedProminent) }
                 Text("备份为更新器分区（约 25 MB），不替代首次保留的整机备份。工作台不操作个人设置分区。").font(.caption).foregroundStyle(.secondary)
             }
-            Card(title: "安装匹配公钥", subtitle: "只使用我们 4.35 的公钥。真实备份和当前机内完整前像都必须匹配，才允许写入 26 个扇区。") {
+            Card(title: "安装匹配公钥", subtitle: "只使用我们 4.36 的公钥。真实备份和当前机内完整前像都必须匹配，才允许写入 26 个扇区。") {
                 FileChoice(title: "本工作台的备份回执 result.json", path: model.backup) { if let p = model.choose("选择备份 result.json") { model.backup = p } }
                 Button("安装更新信任…") { model.installTrust() }
                 Text("备份显示「已匹配我们的签名公钥」时，直接进入固件导出，无需再次安装。").font(.caption).foregroundStyle(.secondary)
@@ -295,12 +295,12 @@ struct ContentView: View {
     }
     var firmware: some View {
         VStack(spacing: 18) {
-            Card(title: "固件与附带滤镜", subtitle: "选择我们的 4.35 DAT 后，一次准备好固件和最新 BIN；内容相同会跳过，不同旧文件会先备份。") {
-                FileChoice(title: "BODYDATA.DAT", path: model.firmware) { if let p = model.choose("选择我们的 4.35 BODYDATA.DAT") { model.firmware = p } }
+            Card(title: "固件与附带滤镜", subtitle: "选择我们的 4.36 DAT 后，一次准备好固件和最新 BIN；内容相同会跳过，不同旧文件会先备份。") {
+                FileChoice(title: "BODYDATA.DAT", path: model.firmware) { if let p = model.choose("选择我们的 4.36 BODYDATA.DAT") { model.firmware = p } }
                 HStack { Button("校验文件") { model.run("verify", values: ["firmware": model.firmware]) }.disabled(model.firmware.isEmpty); Button("准备固件＋滤镜…") { model.exportFirmware() }.buttonStyle(.borderedProminent) }
                 Text("导出完成后，按相机菜单进入机身固件更新。工作台不会通过 USB 直接写 AP／CP。").font(.caption).foregroundStyle(.secondary)
             }
-            Card(title: "从原厂 DAT 生成 4.35", subtitle: "自动提取并核对原厂 R5 4.00 输入，再调用唯一 build.py。需要 Apple Command Line Tools 和足够的构建空间。") {
+            Card(title: "从原厂 DAT 生成 4.36", subtitle: "自动提取并核对原厂 R5 4.00 输入，再调用唯一 build.py。需要 Apple Command Line Tools 和足够的构建空间。") {
                 FileChoice(title: "原厂 R5 4.00 BODYDATA.DAT", path: model.originalDAT) { if let p = model.choose("选择原厂 R5 4.00 DAT") { model.originalDAT = p } }
                 FileChoice(title: "外部签名私钥 · 与我们的公钥匹配", path: model.signingKey) { if let p = model.choose("选择外部签名私钥 PEM") { model.signingKey = p } }
                 Button("生成完整固件…") { model.buildFirmware() }.buttonStyle(.borderedProminent)
@@ -317,7 +317,7 @@ struct ContentView: View {
         VStack(spacing: 18) {
             Card(title: "把要求直接告诉 AI", subtitle: "复制一次工作台说明，粘贴给能操作本机文件与终端的 AI，再写你要做的事。") {
                 Button("复制给 AI 的说明") { model.copyAIInstructions() }.buttonStyle(.borderedProminent)
-                Text("例如：把附带的最新 BIN 放到桌面的相机文件夹；把这份 4.35 固件和滤镜一起准备到存储卡；检查上一次操作有没有完成。").font(.subheadline).foregroundStyle(.secondary)
+                Text("例如：把附带的最新 BIN 放到桌面的相机文件夹；把这份 4.36 固件和滤镜一起准备到存储卡；检查上一次操作有没有完成。").font(.subheadline).foregroundStyle(.secondary)
                 Text("AI 会调用同一套刷写工具并读取回执。工作台不内置模型，也不需要 API Key。").font(.caption).foregroundStyle(.secondary)
             }
             Card(title: "AI 可以直接调用", subtitle: "固定命令、JSON 结果和独立任务日志，可直接发现功能并处理文件。") {

@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "firmware_version": "4.36",
+  "revision": "Fixed C.Look icons and runtime optimizations",
+  "source_lock_entries": 188,
+  "source_lock_all_matched": true,
+  "source_lock_sha256": "96c1a6f1df5c3b51e7daa06a0e547d02c55a1ada4bbd95cccc6b3098b32b31b2",
+  "python_syntax_files": 100,
+  "workbench_version": "0.2.1",
+  "workbench_firmware_target": "4.36",
+  "workbench_manifest_files": 89,
+  "card_cli_tests_passed": 12,
+  "full_firmware_rebuild_repeated_for_publication": false,
+  "prior_local_verification": {
+    "worker_scenarios": 27,
+    "arm_checks": 134,
+    "loader_scenarios": 170,
+    "crosscore_heap_scenarios": 6,
+    "default_icon_queries": 12,
+    "native_widget_store_checks": 8,
+    "icon_state_checks": 24,
+    "resource_checks": 12,
+    "private_current_look_reads": 0,
+    "unique_entry_full_rebuild": true,
+    "signature_crc_all_plaintext_verified": true
+  },
+  "firmware": {
+    "bytes": 754525608,
+    "sha256": "57cfc5ff55a71685e95b7b6420d1270bd09dbb140822ad8dceb0a0c9002d9938",
+    "ap_sha256": "bc766baaf1cd617479993afbec526bbc4dd5f6fc62a0f79bf2682abbd1adc222",
+    "cp_sha256": "8523298baa613ff93b6c9ae4f5e801fc81fd117680a81f4ea7ba6e1262350cb6"
+  },
+  "filter_sha256": "19e020fa48c79643aaf9526e9c720d38ec5a92c3df11d0852b0a93a25ee880b6",
+  "camera_io": false,
+  "hardware_validation": "pending",
+  "new_app_archive_published": false,
+  "firmware_dat_uploaded": false,
+  "swift_compiled": true
+}

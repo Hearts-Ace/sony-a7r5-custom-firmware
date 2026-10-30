@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
-"""Build the M4-method R5 4.03 or 4.04 FL2/FL3 SD package offline.
+"""Package the current R5 4.36 build offline from original R5 inputs.
 
-Inputs are original R5 images plus separately verified AP/CP/WBI components.
-The complete original update body and every factory settings template stay
-byte-for-byte original. Personal settings deployment is a separate host tool.
+Reviewed AP/CP/WBI and factory parameter overlays are verified independently.
 No camera or block-device access is performed.
 """
 import argparse
@@ -33,8 +31,8 @@ from signature import (require, digest_file, inspect, hashes_and_signature, veri
 from image_io import digest_stream
 
 OUT=None
-VERSION='4.35'
-TAG='435'
+VERSION='4.36'
+TAG='436'
 TAR=None
 NAME='BODYDATA.DAT'
 CHUNK=4<<20

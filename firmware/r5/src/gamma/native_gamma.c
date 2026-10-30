@@ -14,23 +14,34 @@ int r5_native_gamma418_begin(struct r5_native_gamma418 *g){
   unsigned b=base(i),a=route[b][0],v=route[b][1];
   for(k=0;k<3;k++){
    id=k==2?v:a;p=k?6:0;if(!table[id][p])return -2;
-   cp(g->record[group(i)][k],(const void *)(uintptr_t)table[id][p],576);
+   /* ST/NT and BW/SE share all three original records. Preserve the native
+    * source checks and every route, but initialize each record group once. */
+   if(i!=2&&i!=11)cp(g->record[group(i)][k],(const void *)(uintptr_t)table[id][p],576);
   }
   id=51+2*i;
   for(j=0;j<7;j++){g->table[id][j]=(uint32_t)(uintptr_t)g->record[group(i)][j==6?1:0];g->table[id+1][j]=j==6?(uint32_t)(uintptr_t)g->record[group(i)][2]:0;}
  }
  g->ready=0x4186b11u;return 0;
 }
-int r5_native_gamma418_put(struct r5_native_gamma418 *g,uint32_t one,const uint32_t y[129]){
- unsigned i,k;uint32_t prev=0;uintptr_t p=(uintptr_t)y,a=(uintptr_t)g;
- if(!g||g->ready!=0x4186b11u||one<1||one>12||!y||(p&3u)||p>UINT32_MAX-515u||
+static int valid_curve(const struct r5_native_gamma418 *g,const uint32_t y[129]){
+ unsigned i;uint32_t prev=0;uintptr_t p=(uintptr_t)y,a=(uintptr_t)g;
+ if(!g||g->ready!=0x4186b11u||!y||(p&3u)||p>UINT32_MAX-515u||
     (p<a+sizeof(*g)&&p+516u>a))return -1;
  for(i=0;i<129;i++){if(y[i]>131071u||(i&&y[i]<prev)||(!i&&y[i]))return -2;prev=y[i];}
+ return 0;
+}
+int r5_native_gamma418_put(struct r5_native_gamma418 *g,uint32_t one,const uint32_t y[129]){
+ unsigned k;int status;
+ if(one<1||one>12)return -1;
+ if((status=valid_curve(g,y)))return status;
  for(k=0;k<3;k++)cp(g->record[group(one-1)][k],y,516);
  g->mask|=1u<<(one-1);return 0;
 }
 int r5_native_gamma423_put(struct r5_native_gamma418 *g,const uint32_t y[129]){
- unsigned n;for(n=1;n<=12;n++)if(r5_native_gamma418_put(g,n,y))return -1;return 0;
+ unsigned n;
+ if(valid_curve(g,y))return -1;
+ for(n=0;n<30;n++)cp((uint8_t *)g->record+n*576u,y,516);
+ g->mask|=4095u;return 0;
 }
 int r5_native_gamma418_seal(struct r5_native_gamma418 *g){
  unsigned i;

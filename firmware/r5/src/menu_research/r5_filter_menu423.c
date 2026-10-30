@@ -39,15 +39,17 @@ static void initialize(void){
  if(initialized)return;
  copy(d,r5_native_menu_template,0xc0);
  put32(d,0,R5_FILTER_TITLE_RESOURCE);
- /* +0x0c is help text, not a picture. Image queries are forwarded to the
-  * current native Creative Look row by r5_filter_menu_icon_query434. */
+ /* +0x0c is help text, not a picture. The separate image-query hook uses the
+  * native C.Look image for this private menu. */
  put32(d,4,~0u);put32(d,8,~0u);put32(d,0x0c,0x021c6410u);put32(d,0x10,~0u);
  put32(d,0x18,~0u);put32(d,0x1c,~0u);
  /* 0x2ed is native scr7001_1005, the ordinary row-selection screen.
   * d4 in the copied source template is the dedicated DRO screen. */
  put32(d,0x20,0xd9u);put32(d,0x24,0xd9u);
  put32(d,0x54,R5_FILTER_ROW_COUNT);putptr(d,0x58,r5_filter_menu_rows);
- put32(d,0x60,~0u);put32(d,0x64,0x39fcu);
+ /* Native Fn assignment/settings use the static image at +0x60, separately
+  * from the current-row image query. Reuse Creative Look's original default. */
+ put32(d,0x60,0x02002290u);put32(d,0x64,0x39fcu);
  putptr(d,0x70,(const void *)yes);
  putptr(d,0x78,(const void *)r5_filter_menu_selected);
  putptr(d,0x80,(const void *)r5_filter_menu_select);

@@ -2,12 +2,12 @@
 
 面向 Apple Silicon Mac；最低编译目标 macOS 14。原生 SwiftUI 界面、包内独立 Python 和 libusb。运行备份、校验、导出无需安装 Python、Homebrew 或 Node；从源码重建固件另需 Apple Command Line Tools。
 
-连接使用普通 USB／MSC，参考 Liwenru88/a7r5-rea 的固定事务协议。固件内容只使用我们的 4.35 统一源码，未采用参考项目的固件功能补丁和签名身份。个人非商业研究使用，来源及各自许可见 THIRD_PARTY_NOTICES.md 和 licenses/。
+连接使用普通 USB／MSC，参考 Liwenru88/a7r5-rea 的固定事务协议。固件内容只使用我们的 4.36 统一源码，未采用参考项目的固件功能补丁和签名身份。个人非商业研究使用，来源及各自许可见 THIRD_PARTY_NOTICES.md 和 licenses/。
 
 ## 使用
 
 1. 解压后将「R5 刷写工作台.app」移到「应用程序」。应用临时签名，未公证；系统若拦截，可在系统设置「隐私与安全性」中允许打开。启动不扫描 USB。
-2. 首页「导出最新滤镜」选择存储卡根目录或文件夹即可。随包附带最新已完成的 12 款 `R5NATIVE.BIN`，不带滤镜训练工作台。需要固件时点击「固件＋滤镜一起准备」，选择我们的 4.35 DAT 与目标目录。离线自检可检查应用完整性。
+2. 首页「导出最新滤镜」选择存储卡根目录或文件夹即可。随包附带最新已完成的 12 款 `R5NATIVE.BIN`，不带滤镜训练工作台。需要固件时点击「固件＋滤镜一起准备」，选择我们的 4.36 DAT 与目标目录。离线自检可检查应用完整性。
 3. 需要准备更新信任时，使用普通数据线连接一台 ILCE-7RM5，机身选择 MSC。在「USB 维护」先备份更新器分区；macOS 会请求管理员授权。备份会短暂进入服务会话，使用 RAM 临时载荷两次读取更新器分区，保存并完整核对后清理本次 RAM 副本。没有整机备份功能。
 4. 备份回执若显示「已匹配我们的签名公钥」，无需重复安装。只有精确原厂前像才支持安装公钥；未知前像停止。标准安装只写我们公钥与更新器校验所需的 26 个逻辑扇区（13,312 字节），写前核对整个当前分区，写后两次完整回读。无强制安装、自动回滚、设置分区改写或 fastboot 流程。
 5. 「固件＋滤镜一起准备」将 BODYDATA.DAT 和 R5NATIVE.BIN 放到存储卡根目录，复制后完整读回。相同文件跳过，不同旧文件先保留到 `.R5Workbench-backups/`。导出完成不代表升级完成。随后在机身固件版本页启动存储卡更新，按机身提示操作。
@@ -23,11 +23,11 @@
 
 ## 固件内容
 
-4.35：创意外观动态图标、自定义滤镜 Fn 手动注册、R6 ST 可反推参数、FL2／FL3 参数保留、白色优先 97／氛围 −1、自定义滤镜及网格。导出仅接受冻结 DAT：
+4.36：固定 C.Look 图标、自定义滤镜 Fn 手动注册、R6 ST 可反推参数、FL2／FL3 参数保留、白色优先 97／氛围 −1、自定义滤镜及网格。导出仅接受冻结 DAT：
 
 ```
 754525608 bytes
-76b06194aacd7b78553ad524e6d6fe0d7fc73edfae671e5ebc1e54bafe17ff74
+57cfc5ff55a71685e95b7b6420d1270bd09dbb140822ad8dceb0a0c9002d9938
 ```
 
 重建功能直接调用随应用附带的 `firmware/r5/build.py`，无需旧脚本或旧产物。普通入口选择原厂 R5 4.00 DAT 和匹配公钥的外部签名私钥；工作台只读解码原厂 DAT，自动提取、逐项核对输入，然后交给统一构建入口。高级入口支持该目录 `inputs.example.json` 所列的已有原始输入。私钥要求 0600；应用、ZIP、日志均不包含私钥内容，任务配置仅记录输入路径。请自行保留所选输入配置的隐私。
@@ -38,7 +38,7 @@
 
 ## 验证边界
 
-离线验证涵盖：固定载荷 AArch64 ELF、配置字段替换与独立编译一致、26 扇区配方完整重建、未知前像与模拟备份拒绝、USB 会话失败/STOP约束、固件 SHA 和导出读回、应用签名及搬迁后隔离自检。历史0.2离线验证仅对应当时版本；当前源码发布检查见仓库 publication/4.35/validation.json。
+离线验证涵盖：固定载荷 AArch64 ELF、配置字段替换与独立编译一致、26 扇区配方完整重建、未知前像与模拟备份拒绝、USB 会话失败/STOP约束、固件 SHA 和导出读回、应用签名及搬迁后隔离自检。历史0.2离线验证仅对应当时版本；当前源码发布检查见仓库 publication/4.36/validation.json。
 
 **本工作台未做实机 USB 接管、公钥安装、卡刷、正常启动或拍摄验收。** 本机编译及测试结果不替代上述验收。最低系统版本是构建目标，尚未在所有 macOS 14+ 版本测试；Intel Mac 未支持。
 
@@ -50,4 +50,4 @@
 
 准备载荷需 Apple clang、Zig 0.13 的 ELF lld 和 pyelftools；调用 `prepare_payloads.py --zig /path/to/zig`。打包调用 `scripts/package.py --python-runtime /path/to/python3.12-runtime --extra-site /path/to/packages --firmware /path/to/firmware/r5 --public-key /path/to/public.pem --sony-public-key /path/to/original-public.pem --output /new/output`；额外 packages 包含 pycryptodomex、capstone、pyelftools、libusb-package，基础运行时提供 numpy、cryptography、cffi。完整依赖版本、来源和构建命令保存在交付证据中。
 
-本次提交为0.2.1完整源码，固件校验目标同步4.35；旧0.2应用ZIP仍锁定4.34，不代表本次源码的新构建。签名公钥也由打包者外部提供，不在Git中附带。
+本次提交为0.2.1完整源码，固件校验目标同步4.36；已有应用ZIP保留各自历史固件目标；本次只更新源码，未重打应用包。签名公钥也由打包者外部提供，不在Git中附带。

@@ -27,7 +27,7 @@ def run(request, job, *, session_module=None, host_module=host):
     save(job/'baseline.json',before)
     (job/'ATTEMPT_LOCK').mkdir(mode=0o700)
     operation.output=job/'session'
-    progress('正在备份更新器分区' if kind=='backup' else '正在安装匹配 4.35 的更新公钥；保持供电和 USB 连接')
+    progress('正在备份更新器分区' if kind=='backup' else '正在安装匹配 4.36 的更新公钥；保持供电和 USB 连接')
     report=session_module.run_session(operation.output,'libusb',_operation=operation)
     save(job/'session-result.json',report)
     writes,triggers=(4,2) if kind=='backup' else (2,1)
