@@ -5,7 +5,8 @@
   "firmware_source_lock": "firmware/r5/sources.lock.json",
   "firmware_original_inputs": "firmware/r5/inputs.lock.json",
   "firmware_reproduction": "firmware/r5/REPRODUCTION.json",
-  "workstation_sources": "R5ColorLab/publication_manifest.json",
+  "workstation_sources": "https://github.com/Hearts-Ace/sony-r5-colorlab/blob/main/R5ColorLab/publication_manifest.json",
   "historical_sources": "Git history before this consolidation",
-  "flash_workbench_sources": "publication/4.35/workbench_sources.json"
+  "flash_workbench_sources": "publication/4.35/workbench_sources.json",
+  "color_training_repository": "https://github.com/Hearts-Ace/sony-r5-colorlab"
 }
