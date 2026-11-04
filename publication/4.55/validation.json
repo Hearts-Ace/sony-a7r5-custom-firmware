@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "firmware_version": "4.55",
+  "source_files": 246,
+  "source_lock_entries": 245,
+  "published_source_lock_sha256": "eecfa910e647594ee00a11bfd60f641a29d60ffbe3f22261561bd2eed855d4e9",
+  "original_reviewed_source_lock_sha256": "9ccda7927d945539b190488d906ca7a8fb031a2d2444078366e9ef846598388f",
+  "source_lock_all_matched": true,
+  "all_runtime_and_build_sources_exact_reviewed": true,
+  "prior_source_ZIP_isolated_full_build_passed": true,
+  "public_full_firmware_rebuild_repeated": false,
+  "outputs": {
+    "AP": "23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6",
+    "CP": "bbae506511291eb3daab9befaaf80449e4e93d5200975fb68716a3772898e709",
+    "nflasha15": "06dcf249a3138ef81c70d5e384375454353215d2aa01fa0b7eb8887d14644a1a",
+    "nflasha8": "a73be9de2c2d1087ad2aac3d639293638a48377466310c8c015cafb0e889f693",
+    "nflasha5": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693",
+    "archive": "6c0f53875996923cf835efb60de1cce1cc257c041cae4d24aa99fec3160f9db8",
+    "DAT": "e6376d3836cb1fdfc65c7cfaf314044af96bde3442fc2a699c0841a4d2c6feef"
+  },
+  "firmware_bytes": 754525608,
+  "independent_package_review": {
+    "signature_valid": true,
+    "openssl_verified": true,
+    "tamper_rejected": true,
+    "outer_crc_valid": true,
+    "all_plaintext_verified": true,
+    "plaintext_bytes": 751577088
+  },
+  "functional_replay": {
+    "actual_AP_CP_chain": true,
+    "host_runtime_checks": 80,
+    "backend_cases": 23,
+    "backend_checks": 1336,
+    "burst_cases": 16,
+    "burst_checks": 2331,
+    "GUI_cases": 30,
+    "retained_memory_warm_eMMC_reload": true,
+    "hardware_and_OS_endpoints_include_fixtures": true
+  },
+  "firmware_DAT_uploaded": false,
+  "AP_CP_uploaded": false,
+  "camera_io": false,
+  "physical_audio_and_WBI_acceptance_verified": false,
+  "active_lost_completion_across_power_still_conservatively_waits": true,
+  "six_slot_auto_repair_in_firmware": false,
+  "grid_changes": false,
+  "flash_workbench_version": "0.2.1",
+  "flash_workbench_target": "4.36"
+}

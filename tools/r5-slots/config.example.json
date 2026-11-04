@@ -1,0 +1,6 @@
+{
+  "bootloader_zip": "/absolute/path/to/bootloader-scripts.zip",
+  "body_partition_table": "/absolute/path/to/your-original/sdm2_partition_table.raw.bin",
+  "body_bootrom": "/absolute/path/to/your-original/ap_bootrom.raw.A.bin",
+  "xts_reference_source": "/absolute/path/to/ILCE-7M4-RE/payloads/fastboot/src/spacc.c"
+}

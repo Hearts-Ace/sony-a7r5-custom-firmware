@@ -1,0 +1,22 @@
+{
+  ".gitignore": "155123abbb87bc998f63a6cc1dcefe944f3826ec5a9e005b0d35559ee14f300f",
+  "PROVENANCE.json": "9dfebb16fdc1d9c833e6679187799b3870504fb59669e809e261f393f9209f37",
+  "README.md": "66e6b5085c5d6525e36d2c8d0a0b6f92132ded62762aa7bfe147220ac40cea3f",
+  "VALIDATION.json": "8a5fad645e612155ea40970fde27aa009165134d70534d53e7fd4a0614a4aa0f",
+  "bk4.py": "da9a920d767eeaa8ba8965cc106397e7d1de409fff34c39c73c9debbc631c717",
+  "config.example.json": "5245cbb1c6232d9904831639e70f0c5aff4792a6f62cbb50efd9df5df49e0dec",
+  "device.py": "12e7f8f3e7d27ad421520f631d98b00a90bdd890959533fde12a327078ddf072",
+  "filesystem.py": "8ed8ee8328bf906d624892017daf63869cc14708034ea71fe2a447710e44cdd8",
+  "native/configure_fastboot_usb.c": "95e4f953c0935b6fc5f8d7bf71a77a87ccf6f4bf66c05f73f22ddb498c9d4be8",
+  "native/read_fastboot_usb.c": "13a69c2ff23a8646f19f6912258c123c20288db49a61e202601a4b44145b8811",
+  "native/read_fastboot_usb_all.c": "ba8e6bcd568aa438b95784164dae242a76905864d5b2ef49d5ce356118c203ef",
+  "native/write_slots_usb.c": "8830d40f81bf03a63e44b99b3ee98d14569a82c81b75e35c54d37d1d08715e67",
+  "r5_slots.py": "8528510f34a3bfda05e7f77d85be482ad29203371e465eb2c81b98e6dd6df09a",
+  "ram_boot.py": "0c283f0ce08f81f7efa07ef2d3aa6c0c63deba6a95441ee67d2f983e649bff21",
+  "requirements.txt": "045ae68f9b3b133953608690f9d2b33766adc83c7852cdd850320ff6aebe1435",
+  "selfcheck.py": "d00b33ba35c973883716095ffc579f0293e2280971a5eb557bece1081210ae93",
+  "session.py": "610de42fa691b91c5e38f36ddde2d9ef5f7d4e241e0c235cd5f3ca294edd3c59",
+  "slots.py": "a009b303a8db43d173152ce5df45741e1e3173cd7eda68eee023ba193dc7b3d7",
+  "sparse.py": "966f81aefacfee5f2ee4166a4519092e31127cc6bcfde9a292b84688338c1daa",
+  "transport.py": "bc6c659e3a3eba84884d08b7ffe3347f2578077df7e06b72ea56a6b9cf713c1a"
+}

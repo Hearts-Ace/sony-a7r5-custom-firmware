@@ -5714,5 +5714,134 @@
       "DAT": "5f4e2dc9789d5018ed35a84f7986d069a980ab01d0356bfbac653076cbdae25c"
     },
     "device_acceptance_tested": false
+  },
+  {
+    "revision": "4.54-install-version-only",
+    "source": "projects/firmware/development/shutter-sound-preempt448",
+    "parent_source_lock_sha256": "8446747d6927c9c1293df9249cd88f9a86b560ec77154f1565bf546014ac5350",
+    "runtime_changes": [],
+    "runtime_sources_byte_exact": true,
+    "note": "Historical FIELD_REPAIR/provenance retained. Standalone tree includes all build sources and recipes.",
+    "package_review": "analysis/r5_sound454_version_20261104/review/package-review.json",
+    "camera_io": false
+  },
+  {
+    "revision": "4.54-reviewed-package",
+    "scope": "Install version/header/signature/CRC only; no runtime changes",
+    "package_review": "analysis/r5_sound454_version_20261104/review/package-review.json",
+    "package_review_sha256": "c3c49253f8061260f5e98907a547593bbae08c3d8029ad51d8afdf7a70694478",
+    "outputs": {
+      "AP": "77e2bf6caa75089ae445928e16e3b6eff5c866eff4a5afa29ee4649e1fe74a87",
+      "CP": "bbae506511291eb3daab9befaaf80449e4e93d5200975fb68716a3772898e709",
+      "nflasha15": "261360b6fe4933434e58fe00d767cc58aa8dac16791b22a678671df4b88f3620",
+      "nflasha8": "a73be9de2c2d1087ad2aac3d639293638a48377466310c8c015cafb0e889f693",
+      "nflasha5": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693",
+      "archive": "d08fc318ccbc30a07bb1a6f040d214d3cfb7988afde83451ea40d1a47b993066",
+      "DAT": "62bffc38be35850004d9dfec633d5e2c24ffee14ab79d9d404eca0e047384faf"
+    },
+    "device_acceptance_tested": false
+  },
+  {
+    "revision": "4.55-sound-recovery-reviewed-20261105",
+    "source": "projects/firmware/development/shutter-sound-preempt454",
+    "parent_source_lock_sha256": "214c2ec98fa0670f4ad533a2788f45faeb1735145998806535d39438e84cbd95",
+    "production_changes": [
+      {
+        "path": "src/dependencies/native_bindings.json",
+        "sha256": "46c9ed20dfdf4d010ec4fa03511583179c3be206692f20eb1572b13410aef17f",
+        "parent_sha256": "0f44069d0e649ba3a30438986e34755249fee38ac4b89cfb626eb4e9acdd7719"
+      },
+      {
+        "path": "src/import/build_ap_image.py",
+        "sha256": "cafba30b04ebf6aec6b2d910522ed8571c1c14f6b38e395ff2479d85652db6ff",
+        "parent_sha256": "f7292e333e78d0b4846e2468f7dfcb7539f4d680c89a9f7c1b4e6bb50449fb87"
+      },
+      {
+        "path": "src/import/build_ap_module.py",
+        "sha256": "0f1658fdb3c35b7d5e8a83f25adfb6a1ba4d9e3001957cfeb798e68014cf53cf",
+        "parent_sha256": "62fd160f6529dc88aae634db45ac5f31fb1c194aa8e8453ef2fe9cd3016ac308"
+      },
+      {
+        "path": "src/import/native_loader_contract.h",
+        "sha256": "9a2acd5f02a09b41d5aa0020733619210fc9db8d1e48406a995d8f38b4593e1c",
+        "parent_sha256": "a0fd936ae522e22dbe1240169ed98897b54cbc8f28119742e89b50552d8c2bf9"
+      },
+      {
+        "path": "src/import/r5_shutter.h",
+        "sha256": "5d5ade34e906514e706155b9a60f5b5aa9b5abef9ec71bf306bcf837144eaf10",
+        "parent_sha256": "5f4be25d86efae9f77d2fcaa46ddb03643598cb216baa6df3a2a6fdc5040e81f"
+      },
+      {
+        "path": "src/import/r5_shutter_backend.h",
+        "sha256": "7d142aa7aaeea39214a3a1bdf2fcd96052687d1a8fda9fc89a5fdab85754b412",
+        "parent_sha256": "4677eef1e9f37c04f61e43a613d53834b2a730da302fc06e842d9a06fc21892e"
+      },
+      {
+        "path": "src/import/r5_shutter_backend_native.c",
+        "sha256": "0206c4b85f4d2d6e7d5f8249e93335b15987761ef489bfe9c5dad755cc5dc712",
+        "parent_sha256": "f3fe4636d8e03a0e67792d6c5ca40b7b5e79fa24c8e8de43cf1323e15dd80640"
+      },
+      {
+        "path": "src/import/r5_shutter_bridge_native.c",
+        "sha256": "a45f98ff8b1361f6276d4ab8f4535274a2bc41d6826b5cd989a56f5dafd90f13",
+        "parent_sha256": "0f60cb34952bfc8e91643ea06450e893ea5999dc30111e3fa03ed1d4e0d904e0"
+      },
+      {
+        "path": "src/import/r5_shutter_bridge_native.h",
+        "sha256": "67afb9bab8883e6e38c658014211ed6ea871bce21e141513888cb61730cb68c9",
+        "parent_sha256": "450a597db033948e7a53400b3bde0e2f244dbf35816b2a6b899435619ae6f7df"
+      },
+      {
+        "path": "src/import/r5_shutter_scheduler.c",
+        "sha256": "3d06303beff85a6f359f87f14ba61017eb807191e6c4830f0d03b3f6a620b585",
+        "parent_sha256": "b88c6f974c53124097478d9174e7b1dd1df8341c6b564dd808c7634878303448"
+      },
+      {
+        "path": "src/import/r5_sound_snapshot_wire.h",
+        "sha256": "0154a2ce6ebd087e43cf13f6783804a2e1082f44f9d76c8ac7da60d560571770",
+        "parent_sha256": "8e50146d343f3a6ccd0062f6c9f304c02db372b69d2358e8459be6eaa81b2ba4"
+      },
+      {
+        "path": "src/import/r5sound_runtime.c",
+        "sha256": "2f6e0a7127ee008ff467125038e6b60b4fbed2469fdcefcf1679f79855765215",
+        "parent_sha256": "6bbf4ad14c20e805ae398b439e1fe7b8b0f81e2701e1f68ba9d3d820a474ed59"
+      },
+      {
+        "path": "src/lib/grow_ap.py",
+        "sha256": "9b982bc2e63c6927476040d71ca1da98aecca7f7a38110b20d20240ce4aab306",
+        "parent_sha256": null
+      },
+      {
+        "path": "src/lib/package.py",
+        "sha256": "ebf99341e5cef4bdd869451f05d437a14c258fe98dd5d0d8dec98d7584d445b6",
+        "parent_sha256": "77454919be71d93373ea28ace6332bffe0f275a1713793bb0ff03ecef92344c4"
+      },
+      {
+        "path": "src/menu_parent423.py",
+        "sha256": "ae075be1440d3de79c2911bc93e1576942ffce62fcd4960468aa1e8acabab1e5",
+        "parent_sha256": "2bda4841519b797b7e463a1a71783bf2446e77f3315ed8249c53726a386f8aa6"
+      },
+      {
+        "path": "src/sound_menu_parent437.py",
+        "sha256": "ffc71f87b8b80ac64729a6ef479ab37ccd0a282be58fae0e863e519ce7330b95",
+        "parent_sha256": "c952397b1f05a519ea924fa1a1372be770c6653ac6bb43e48fc4fc9cf0788036"
+      }
+    ],
+    "outputs": {
+      "AP": "23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6",
+      "CP": "bbae506511291eb3daab9befaaf80449e4e93d5200975fb68716a3772898e709",
+      "nflasha15": "06dcf249a3138ef81c70d5e384375454353215d2aa01fa0b7eb8887d14644a1a",
+      "nflasha8": "a73be9de2c2d1087ad2aac3d639293638a48377466310c8c015cafb0e889f693",
+      "nflasha5": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693",
+      "archive": "6c0f53875996923cf835efb60de1cce1cc257c041cae4d24aa99fec3160f9db8",
+      "DAT": "e6376d3836cb1fdfc65c7cfaf314044af96bde3442fc2a699c0841a4d2c6feef"
+    },
+    "package_review": "analysis/r5_454_regressions_20261105/native-lifecycle/review455/package-review-sound-only.json",
+    "package_review_sha256": "fff14392cf93f455e396337bbcddd97227fffc793be5a371068fafa257242b1d",
+    "FL23_baseline_upstream": "086df3b1e33dfa0206553ac2bb003535c58ddb80",
+    "latest_M4_reference_only": "79c3663b1ac4fda98047c2c4f5769b9d60d25920",
+    "no_six_slot_or_grid_change": true,
+    "device_acceptance_tested": false,
+    "note": "Earlier records remain historical provenance, not acceptance of this revision."
   }
 ]

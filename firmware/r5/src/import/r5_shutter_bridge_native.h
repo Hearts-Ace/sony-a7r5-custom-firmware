@@ -6,6 +6,9 @@
 int r5ss_snapshot_inbound(const uint8_t *,uint32_t);
 int r5ss_native_first_owner17(uint32_t *token);
 int r5ss_native_owner_check17(uint64_t,uint32_t);
+/* Warm recovery: accept absent kind17 or the exact old descriptor only after
+ * complete stable idle, native AP pending0 and any active completion proof. */
+int r5ss_native_resume_check17(uint64_t,uint32_t,uint32_t *);
 int r5ss_native_start_arm17(void);
 int r5ss_native_retirement_poll(uint32_t);
 int r5ss_bridge_active(void);

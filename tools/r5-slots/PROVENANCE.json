@@ -1,0 +1,78 @@
+{
+  "schema": "r5-public-six-slots-source-derivation/1",
+  "scope": "Path/configuration adaptation of six-slot offline builder and D/T device transport; no proprietary images or keys included",
+  "files": [
+    {
+      "target": "filesystem.py",
+      "source": "tools/build_r5_partition1.py",
+      "source_sha256": "96181cc289a4dd43347040617854ae2340ec57aaad98a04c12899ce0f35de257",
+      "target_sha256": "8ed8ee8328bf906d624892017daf63869cc14708034ea71fe2a447710e44cdd8"
+    },
+    {
+      "target": "bk4.py",
+      "source": "tools/sony_bk4.py",
+      "source_sha256": "da9a920d767eeaa8ba8965cc106397e7d1de409fff34c39c73c9debbc631c717",
+      "target_sha256": "da9a920d767eeaa8ba8965cc106397e7d1de409fff34c39c73c9debbc631c717"
+    },
+    {
+      "target": "sparse.py",
+      "source": "tools/patch_r5_slot_settings.py",
+      "source_sha256": "05b412c3b31c0bcbbda0fbf597dee31214d4d8c7ef676c3e33517883b6095790",
+      "target_sha256": "966f81aefacfee5f2ee4166a4519092e31127cc6bcfde9a292b84688338c1daa"
+    },
+    {
+      "target": "slots.py",
+      "source": "tools/run_r5_six_slot_repair.py",
+      "source_sha256": "9f17cade6bf6667c18f8fbbbdcaef6fe421fecc87fa51d41ae2698d7cdc5a470",
+      "target_sha256": "a009b303a8db43d173152ce5df45741e1e3173cd7eda68eee023ba193dc7b3d7"
+    },
+    {
+      "target": "transport.py",
+      "source": "tools/modify_r5_slot_settings.py",
+      "source_sha256": "4670d7f15c4a85a7149f8a7edb26db7d9fd734a4c7f85b4324d8dea67252a6d8",
+      "target_sha256": "bc6c659e3a3eba84884d08b7ffe3347f2578077df7e06b72ea56a6b9cf713c1a"
+    },
+    {
+      "target": "ram_boot.py",
+      "source": "tools/r5_settings_ram_boot.py",
+      "source_sha256": "80b79977a51bdfdfb5d8947ff92192ec04d803df3dbc2d0f79d2a634500329d8",
+      "target_sha256": "0c283f0ce08f81f7efa07ef2d3aa6c0c63deba6a95441ee67d2f983e649bff21"
+    },
+    {
+      "target": "native/read_fastboot_usb_all.c",
+      "source": "analysis/r5_live_system_20261014/host_tools/read_fastboot_usb_all.c",
+      "source_sha256": "ba8e6bcd568aa438b95784164dae242a76905864d5b2ef49d5ce356118c203ef",
+      "target_sha256": "ba8e6bcd568aa438b95784164dae242a76905864d5b2ef49d5ce356118c203ef"
+    },
+    {
+      "target": "native/read_fastboot_usb.c",
+      "source": "analysis/r5_live_system_20261014/host_tools/read_fastboot_usb.c",
+      "source_sha256": "13a69c2ff23a8646f19f6912258c123c20288db49a61e202601a4b44145b8811",
+      "target_sha256": "13a69c2ff23a8646f19f6912258c123c20288db49a61e202601a4b44145b8811"
+    },
+    {
+      "target": "native/configure_fastboot_usb.c",
+      "source": "analysis/r5_live_system_20261014/host_tools/configure_fastboot_usb.c",
+      "source_sha256": "95e4f953c0935b6fc5f8d7bf71a77a87ccf6f4bf66c05f73f22ddb498c9d4be8",
+      "target_sha256": "95e4f953c0935b6fc5f8d7bf71a77a87ccf6f4bf66c05f73f22ddb498c9d4be8"
+    },
+    {
+      "target": "native/write_slots_usb.c",
+      "source": "analysis/r5_verifykey_skip_flash_20261014/partition1_usb.c",
+      "source_sha256": "bbf3faa3e45d04ec7f1231587721c70cbcea31f42846656d5bf21cc0fbb3b0c3",
+      "target_sha256": "8830d40f81bf03a63e44b99b3ee98d14569a82c81b75e35c54d37d1d08715e67"
+    },
+    {
+      "target": "device.py",
+      "source": "tools/deploy_r5_m4strict_personal.py",
+      "source_sha256": "e189cda6405ca03fd9f0617ebf4677d63c90d17553a3623efc6adacbdc716120",
+      "target_sha256": "12e7f8f3e7d27ad421520f631d98b00a90bdd890959533fde12a327078ddf072"
+    },
+    {
+      "target": "session.py",
+      "source": "tools/run_r5_m4strict_personal.py",
+      "source_sha256": "658afda1a6eb9235f9d48096b604e943a2b71fbf99dc9c19a68af355df978675",
+      "target_sha256": "610de42fa691b91c5e38f36ddde2d9ef5f7d4e241e0c235cd5f3ca294edd3c59"
+    }
+  ]
+}

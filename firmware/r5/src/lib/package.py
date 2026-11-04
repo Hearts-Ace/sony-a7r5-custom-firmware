@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Package the current R5 4.48 build offline from original R5 inputs.
+"""Package the current R5 4.55 build offline from original R5 inputs.
 
 Reviewed AP/CP/WBI and factory parameter overlays are verified independently.
 No camera or block-device access is performed.
@@ -31,8 +31,8 @@ from signature import (require, digest_file, inspect, hashes_and_signature, veri
 from image_io import digest_stream
 
 OUT=None
-VERSION='4.48'
-TAG='448'
+VERSION='4.55'
+TAG='455'
 TAR=None
 NAME='BODYDATA.DAT'
 CHUNK=4<<20

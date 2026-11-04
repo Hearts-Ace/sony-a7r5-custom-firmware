@@ -54,8 +54,9 @@ extern void r5ss_native_mem_unmap(const r5ss_mem_unmap_request *,uint32_t *statu
 extern void r5ss_native_file_read(const r5ss_file_read_request *,r5ss_file_read_reply *);
 extern void r5ss_native_copy(const r5ss_native_copy_request *,uint32_t *status);
 extern void r5ss_native_set_table(const r5ss_table_request *,uint32_t *status);
-/* Original public SYSND synchronous command/return helpers. 0329 payload
- * operation1 starts, operation2 stops; 032A is gain and is never Stop. */
+/* Original AP352135C generic synchronous IPC helper, also used for read-only
+ * DMM cmd28/2A. Original queue/ACK/assert behavior remains native. For SYSND,
+ * 0329 operation1 starts, operation2 stops; 032A is gain and is never Stop. */
 extern void r5ss_native_sysnd_command(uint32_t destination,const void *request,
                                     uint32_t bytes,void *reply,uint32_t reply_bytes);
 extern uint32_t r5ss_native_sysnd_result(uint32_t native_status);

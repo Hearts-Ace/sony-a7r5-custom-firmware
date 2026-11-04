@@ -21,6 +21,13 @@ int r5ss_session(r5ss_scheduler*s){
  if(!s)return R5SS_INVALID;if(!enter(s))return R5SS_BUSY;
  s->installed_generation=0;s->fault=0;s->stop_sent=0;__atomic_store_n(&s->consumed,s->serial,__ATOMIC_RELEASE);s->used=s->next=0;leave(s);return R5SS_OK;
 }
+int r5ss_reset_retired(r5ss_scheduler*s){
+ if(!s)return R5SS_INVALID;if(!enter(s))return R5SS_BUSY;
+ if(s->audible||s->wanted_generation){leave(s);return R5SS_INVALID;}
+ s->installed_generation=0;s->fault=0;s->stop_sent=0;
+ __atomic_store_n(&s->consumed,s->serial,__ATOMIC_RELEASE);
+ s->used=s->next=0;leave(s);return R5SS_OK;
+}
 static int failed(r5ss_scheduler*s){if(!enter(s))return R5SS_BUSY;__atomic_store_n(&s->fault,1,__ATOMIC_RELEASE);s->failures++;__atomic_store_n(&s->consumed,s->serial,__ATOMIC_RELEASE);leave(s);return R5SS_NATIVE;}
 int r5ss_tick(r5ss_scheduler*s,const r5ss_ops*o){
  if(!s||!o||!o->poll||!o->stop||!o->authorize||!o->install||!o->start)return R5SS_INVALID;
