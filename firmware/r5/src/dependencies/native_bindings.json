@@ -12,5 +12,20 @@
   "r5_osal_send": 23965632,
   "r5_osal_free": 23972448,
   "r5_osal_set_src": 23960000,
-  "r5_osal_msg_size": 23964640
+  "r5_osal_msg_size": 23964640,
+  "r5ss_native_silent_get": 29573436,
+  "r5ss_native_signals_get": 29416636,
+  "r5ss_native_volume_get": 29416076,
+  "r5ss_native_sysnd_start": 55747880,
+  "r5ss_native_dmm_claim": 56030908,
+  "r5ss_native_dmm_release": 56031396,
+  "r5ss_native_mem_map": 56032896,
+  "r5ss_native_mem_unmap": 56033124,
+  "r5ss_native_file_read": 56033304,
+  "r5ss_native_copy": 55859768,
+  "r5ss_native_set_table": 55727180,
+  "r5_native_fsys_find_first": 57217480,
+  "r5_native_fsys_find_next": 57217528,
+  "r5ss_native_sysnd_command": 55710556,
+  "r5ss_native_sysnd_result": 55703164
 }

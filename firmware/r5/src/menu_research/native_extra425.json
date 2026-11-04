@@ -5,6 +5,16 @@
   },
   "relocation_addend_remaps": [
     {
+      "va": "0x58da0c0",
+      "before_addend": "0x1998208",
+      "symbol": "r5sound_menu_event2d6_443"
+    },
+    {
+      "va": "0x58da128",
+      "before_addend": "0x1998890",
+      "symbol": "r5sound_menu_event425"
+    },
+    {
       "va": "0x5071080",
       "before_addend": "0x1e1e1a4",
       "symbol": "r5_filter_presenter425"

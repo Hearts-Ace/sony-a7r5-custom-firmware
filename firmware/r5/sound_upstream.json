@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/Erlla/sony-a7m4-custom-firmware",
+  "commit": "0bfeee4f961610434588dc89c2cd3bc658816a3d",
+  "files": {
+    "native/custom-sounds/runtime/src/sound_core.c": "3cd7ba39ad04760e05e5ab594acefdd79c9f72e3eedb593bf74ca8e25dd49a88",
+    "native/custom-sounds/worker/src/convert.c": "e7628fe2f2686ba71c661599dc25cceba12c852b9fede19a8ad18d979d352de0",
+    "native/custom-sounds/worker/include/convert.h": "c8c08bf16e9cda5eea363dd72b840162be4fc4b7982277c59ece9ad9a963db05",
+    "native/custom-sounds/worker/include/kernel_q24.h": "6013c6ed3e9fd71446986c460abea2a6cacfd55bb13b52822f9ec691f9c8c01d",
+    "native/custom-sounds/volume/src/menu_callbacks.c": "5ad9631fae6b01884dcb76f3cccc23862817b2661c89e4233c4ba85ff89a9881",
+    "native/custom-sounds/volume/src/sidecar_baseline50.c": "80f320269ef22416e53564e35ea6fec3bf01add54160f25aaed4a162ff59576b",
+    "native/custom-sounds/runtime/src/ap_native_policy.c": "8185be346b2ed001c3db5526fae9c7f7db19c7c9b4833af8816b47ee61b38bcd",
+    "native/custom-sounds/worker/src/resource.c": "b049f2881bd3366d56583c6414726b4016ae9ea8292635b9cafd8e4ca4289ccb",
+    "native/custom-sounds/worker/src/event_runtime.c": "3827a802ad094f40cba526275b03e0f4b57a76bf1fd58430d85a60347cb1be19",
+    "native/custom-sounds/cp-gain/src/gain_observation.c": "be783206fe351b2b8cc87fc10f3ada1e0c4362b56052d36e2d7bcb778aea48f5",
+    "native/custom-sounds/owner/src/cp_owner.c": "fe4ddfb9ff7a2ac1173d644116f46c7b429bf0d51fa4680ecc68197f5f0ed5f7"
+  },
+  "scope": "RIFF/PCM/Q24 utilities plus adapted M4 independent10-step default50 volume, persisted commit/resource regeneration, GUI staged and completion refresh, shutter-only silent policy, owned CP gain7, native Start/Stop/completion; single unified shutter slot with R5-specific native addresses, cold-SD catalog and existing atomic storage. No custom focus or M4 dual-slot memory manager."
+}

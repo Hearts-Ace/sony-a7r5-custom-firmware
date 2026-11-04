@@ -9,7 +9,7 @@ r5_cp_stage413_gate:
  mrs r4,apsr
  mov r0,r6
  mov r1,r5
- bl r5_cp_stage413_consume
+ bl r5ss_cp_guard_consume
  cmp r0,#0
  beq 1f
  msr APSR_nzcvq,r4

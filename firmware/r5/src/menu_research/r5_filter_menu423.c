@@ -3,6 +3,7 @@
  * This file does not claim a complete two-column screen; the final renderer
  * and return-event integration must be established separately before release. */
 #include "r5_filter_menu423.h"
+#include "r5_sound_menu437.h"
 extern unsigned r5_filter_selected(void);
 extern int r5_filter_request(unsigned);
 extern uint32_t r5_filter_available_mask(void);
@@ -79,28 +80,31 @@ static void initialize(void){
 }
 void r5_filter_menu_register(void *m,const void *begin,const void *end){
  initialize();r5_native_menu_insert(m,begin,end);r5_native_menu_insert(m,&menu_pair,&menu_pair+1);
+ r5sound_menu_register_extra(m);
 }
 void r5_filter_rows_register(void *m,const void *begin,const void *end){
  initialize();r5_native_row_insert(m,begin,end);r5_native_row_insert(m,row_pairs,row_pairs+R5_FILTER_ROW_COUNT);
+ r5sound_rows_register_extra(m);
 }
 unsigned r5_filter_menu_normalize(void *self,unsigned id){
+ if(id==R5SOUND_MENU_ID||id==R5SOUND_VOLUME_MENU_ID){r5sound_menu_catalog_changed();return id;}
  return id==R5_FILTER_MENU_ID?id:r5_native_menu_normalize(self,id);
 }
 unsigned r5_filter_row_normalize(void *self,unsigned id){
- return id-R5_FILTER_ROW_FIRST<R5_FILTER_ROW_COUNT?id:r5_native_row_normalize(self,id);
+ return id-R5SOUND_ROW_FIRST<R5SOUND_ROW_COUNT||id-R5SOUND_VOLUME_ROW_FIRST<R5SOUND_VOLUME_ROW_COUNT||id-R5_FILTER_ROW_FIRST<R5_FILTER_ROW_COUNT?id:r5_native_row_normalize(self,id);
 }
 static unsigned row_available(unsigned id){
  unsigned n=id-R5_FILTER_ROW_FIRST;
  return n==0 || (n<R5_FILTER_ROW_COUNT && ((r5_filter_available_mask()>>(n-1))&1u));
 }
 unsigned r5_filter_row_available(void *self,unsigned id){
- return id-R5_FILTER_ROW_FIRST<R5_FILTER_ROW_COUNT?row_available(id):r5_native_row_available(self,id);
+ return id-R5SOUND_ROW_FIRST<R5SOUND_ROW_COUNT||id-R5SOUND_VOLUME_ROW_FIRST<R5SOUND_VOLUME_ROW_COUNT?r5sound_menu_row_available(id):id-R5_FILTER_ROW_FIRST<R5_FILTER_ROW_COUNT?row_available(id):r5_native_row_available(self,id);
 }
 unsigned r5_filter_row_available_direct(void *self,unsigned id){
- return id-R5_FILTER_ROW_FIRST<R5_FILTER_ROW_COUNT?row_available(id):r5_native_row_available_direct(self,id);
+ return id-R5SOUND_ROW_FIRST<R5SOUND_ROW_COUNT||id-R5SOUND_VOLUME_ROW_FIRST<R5SOUND_VOLUME_ROW_COUNT?r5sound_menu_row_available(id):id-R5_FILTER_ROW_FIRST<R5_FILTER_ROW_COUNT?row_available(id):r5_native_row_available_direct(self,id);
 }
 unsigned r5_filter_row_parent(void *self,unsigned id){
- return id-R5_FILTER_ROW_FIRST<R5_FILTER_ROW_COUNT?R5_FILTER_MENU_ID:r5_native_row_parent(self,id);
+ return id-R5SOUND_ROW_FIRST<R5SOUND_ROW_COUNT?R5SOUND_MENU_ID:id-R5SOUND_VOLUME_ROW_FIRST<R5SOUND_VOLUME_ROW_COUNT?R5SOUND_VOLUME_MENU_ID:id-R5_FILTER_ROW_FIRST<R5_FILTER_ROW_COUNT?R5_FILTER_MENU_ID:r5_native_row_parent(self,id);
 }
 unsigned r5_filter_menu_selected(void){return r5_filter_selected();}
 void r5_filter_menu_select(unsigned n){
@@ -110,6 +114,7 @@ void r5_filter_menu_select(unsigned n){
 }
 const char *r5_filter_menu_text(unsigned id){
  unsigned n;
+ const char *sound=r5sound_menu_text(id);if(sound)return sound;
  const char *page=r5_filter_page_text425(id);if(page)return page;
  if(id==R5_FILTER_TITLE_RESOURCE)return "自定义滤镜";
  n=id-R5_FILTER_SHORT_RESOURCE;

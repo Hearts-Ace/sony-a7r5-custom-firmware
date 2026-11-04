@@ -1,32 +1,32 @@
 {
-  "passed": true,
-  "version": "4.36",
-  "revision": "Fn default and usage fixed C.Look icon",
-  "stage": "all",
-  "phase": "reviewed_frozen_candidate",
-  "outputs": {
-    "AP": "bc766baaf1cd617479993afbec526bbc4dd5f6fc62a0f79bf2682abbd1adc222",
-    "CP": "8523298baa613ff93b6c9ae4f5e801fc81fd117680a81f4ea7ba6e1262350cb6",
-    "archive": "0c026f0269b4dbc9257ac26c1c15702ceb5ed3754b61af4095a2112bebcf17de",
-    "nflasha15": "bfaf6c1e27ba7130883103e43c6d124a7364e62b18fc8044f08895a78f1ab2df",
-    "nflasha8": "9e1cd2371ecdc09b1ecfa67931a210b008838e9bb7b75428719bc7f1899f7c3d",
-    "nflasha5": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693"
+  "schema": "r5-preempt448-reproduction-contract/1",
+  "version": "4.48",
+  "unique_entry": "build.py",
+  "original_input_identity": "inputs.lock.json",
+  "expected_outputs": {
+    "AP": "77e2bf6caa75089ae445928e16e3b6eff5c866eff4a5afa29ee4649e1fe74a87",
+    "CP": "bbae506511291eb3daab9befaaf80449e4e93d5200975fb68716a3772898e709",
+    "nflasha15": "261360b6fe4933434e58fe00d767cc58aa8dac16791b22a678671df4b88f3620",
+    "nflasha8": "a73be9de2c2d1087ad2aac3d639293638a48377466310c8c015cafb0e889f693",
+    "nflasha5": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693",
+    "archive": "d08fc318ccbc30a07bb1a6f040d214d3cfb7988afde83451ea40d1a47b993066",
+    "DAT": "5f4e2dc9789d5018ed35a84f7986d069a980ab01d0356bfbac653076cbdae25c"
   },
-  "DAT_sha256": "57cfc5ff55a71685e95b7b6420d1270bd09dbb140822ad8dceb0a0c9002d9938",
+  "expected_outputs_status": "Six body outputs exact reviewed4.46; saved448 DAT independently reviewed; final frozen ZIP isolated build reported externally",
   "previous_version_scripts_required": false,
-  "previous_version_outputs_required": false,
+  "previous_version_generated_outputs_required": false,
+  "runtime_scope": "Install version only; all runtime sources, AP/CP and six body outputs exact sound4.46",
+  "required_final_evidence": [
+    "Version/header/signature/CRC/full plaintext independently reviewed",
+    "Runtime source and six body identities exact frozen sound4.46",
+    "Final-source ZIP isolated build.py --stage all reproduces exact outputs"
+  ],
+  "result_location": "analysis/r5_sound448_version_20261104/final-validation.json",
+  "reference_rule": "External freeze binds final source lock and independent receipts without self-reference",
   "camera_io": false,
-  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
-  "plaintext_verification": {
-    "independent_library": "PyCryptodome AES; encryption uses cryptography",
-    "plaintext_bytes": 751577088,
-    "decrypted_blocks": 736841,
-    "plaintext_sha256": "5f26c0267422fb5e9750b4e5ed8bcd843cfccd653891108d8bc9d9b65caff168",
-    "every_plaintext_byte_matches": true,
-    "all_block_checksums_lengths_flags_and_padding_valid": true
-  },
-  "saved_signature_valid": true,
-  "outer_crc_valid": true,
-  "tampered_signature_rejected": true,
-  "device_acceptance_tested": false
+  "physical_LCD_or_speaker_or_WBI_verified_by_host": false,
+  "component_review": "analysis/r5_sound446_preempt_20261103/review/components-reviewed.json",
+  "component_review_sha256": "061f680131797753776588154a76b8acc845b5ae83d326261b92cddc9439965c",
+  "package_review": "analysis/r5_sound448_version_20261104/review/package-review.json",
+  "package_review_sha256": "0ddafe182ffb3689b9297806ffbb225ed8a533b24555d7ee59b4d0a273c435cb"
 }

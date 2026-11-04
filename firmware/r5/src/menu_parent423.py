@@ -8,6 +8,7 @@ import hashlib
 import io
 import struct
 from elftools.elf.elffile import ELFFile
+from sound_menu_parent437 import patch_sound_group
 
 GROUP = 0x5053628
 MENU_ID = 0x635
@@ -19,6 +20,8 @@ def patch_menu_parent(image, rx_file, runtime_code, module_audit):
     elf = ELFFile(io.BytesIO(image))
     rx = module_audit['rx']
     descriptor = module_audit['symbols'][DESCRIPTOR]
+    sound_descriptor = module_audit['symbols']['r5sound_menu_descriptor']
+    volume_descriptor = module_audit['symbols']['r5sound_volume_descriptor']
     rela = elf.get_section_by_name('.rela.dyn')
     plt = elf.get_section_by_name('.rela.plt')
     assert rela['sh_entsize'] == plt['sh_entsize'] == 24
@@ -62,22 +65,25 @@ def patch_menu_parent(image, rx_file, runtime_code, module_audit):
             patch(rela['sh_offset']+i*24, struct.pack('<QQq', address+24, info, addend))
             moved.append(dict(before=hex(address), after=hex(address+24), addend=hex(addend)))
     assert len(moved) == 5
+    image, sound_changes, sound_relas = patch_sound_group(image, sound_descriptor, volume_descriptor)
+    changes.extend(sound_changes)
     new_target = GROUP+16+2*24+8
     assert new_target == 0x5053670
-    # All PLT entries move intact; old location supplies one extra dyn entry.
+    # Formal4.36 already moves every PLT entry intact to the new RX tail.
+    # Three dyn records now consume72 bytes. No loader table covers later bytes.
     patch(plt_file, old_plt)
-    patch(plt['sh_offset'], struct.pack('<QQq', new_target, 1027, descriptor))
+    patch(plt['sh_offset'], struct.pack('<QQq', new_target, 1027, descriptor)+b''.join(struct.pack('<QQq',*r)for r in sound_relas))
     dynamic = elf.get_section_by_name('.dynamic')
     dynamic_changed = []
     for i, (tag, value) in enumerate(struct.iter_unpack('<qQ', dynamic.data())):
-        after = rela['sh_size']+24 if tag == 8 else plt_va if tag == 23 else None
+        after = rela['sh_size']+72 if tag == 8 else plt_va if tag == 23 else None
         if after is not None:
             patch(dynamic['sh_offset']+i*16+8, struct.pack('<Q',after))
             dynamic_changed.append(dict(tag=tag,before=hex(value),after=hex(after)))
     assert {r['tag'] for r in dynamic_changed} == {8,23}
     shoff, shentsize = elf['e_shoff'], elf['e_shentsize']
     for i, section in enumerate(elf.iter_sections()):
-        if section.name == '.rela.dyn': patch(shoff+i*shentsize+32,struct.pack('<Q',rela['sh_size']+24))
+        if section.name == '.rela.dyn': patch(shoff+i*shentsize+32,struct.pack('<Q',rela['sh_size']+72))
         if section.name == '.rela.plt':
             patch(shoff+i*shentsize+16,struct.pack('<2Q',plt_va,plt_file))
     # Update the actual new executable PT_LOAD range; module audit stays source-only.
@@ -90,13 +96,18 @@ def patch_menu_parent(image, rx_file, runtime_code, module_audit):
     else: raise AssertionError('No new RX segment')
     final = ELFFile(io.BytesIO(image))
     new_relas = list(struct.iter_unpack('<QQq', final.get_section_by_name('.rela.dyn').data()))
-    assert len(new_relas)==len(old_relas)+1
+    assert len(new_relas)==len(old_relas)+3
     assert final.get_section_by_name('.rela.plt').data()==old_plt
     assert len({a for a,_,_ in new_relas})==len(new_relas)
     report = dict(passed=True, menu_id=hex(MENU_ID), group=hex(GROUP),
         descriptor_symbol=DESCRIPTOR, descriptor=hex(descriptor),
         count_before=7,count_after=8,new_index=2,moved_relocations=moved,
         new_relative_target=hex(new_target),new_relative_addend=hex(descriptor),
+        added_relative_entries=3,sound_menu=dict(menu_id='0x636',group='0x505fcc8',count_before=8,count_after=10,
+            descriptor=hex(sound_descriptor),relative_target=hex(sound_relas[0][0]),original_eight_records_exact=True,
+            volume_menu_id='0x637',volume_descriptor=hex(volume_descriptor),volume_relative_target=hex(sound_relas[1][0]),
+            native_volume_GL_fields_changed=0,native_825_On_Off_unchanged=True,native_827_record_and_RELA_unchanged=True,
+            independent_volume_steps=10,independent_volume_default=5),
         plt_bytes=len(old_plt),plt_sha256=hashlib.sha256(old_plt).hexdigest(),
         plt_old_va=hex(plt['sh_addr']),plt_va=hex(plt_va),plt_file=plt_file,
         original_relative_fast_count_unchanged=True,dynamic_changes=dynamic_changed,

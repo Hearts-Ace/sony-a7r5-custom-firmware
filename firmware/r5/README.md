@@ -1,49 +1,31 @@
-# R5 4.36：唯一固件构建入口
+# R5 4.48 完整固件构建源码
 
-运行 `build.py`。不再逐版执行 4.05→4.36，不导入工作区 `tools/`、`analysis/`、`research/`、`history/` 中的脚本，也不读取任何旧版生成镜像、产物或历史验证回执。
+本目录为当前唯一构建入口，含244文件（243项源锁及锁文件自身），从匹配散列的原厂R5 4.00输入重建AP、CP、分区及完整DAT；不依赖旧版本脚本、旧生成件或本地研究目录。
 
-本目录包含完整的当前 AP/CP C、汇编、专用链接器、参数模板合并和 DAT 封装实现。`src/` 下 Python 文件是构建内部模块，不是另外一套版本入口。C/汇编中的 411/423 等文件名、符号和协议常量保留原 ABI 含义，不要求存在对应旧版本目录。
+4.48包含连拍声音打断、声音/音量菜单刷新、机外R5S转换与十档音量，以及4.36的滤镜、网格、静态C.Look图标、R6 ST、FL2/FL3参数保留和AWB（白色优先97/氛围−1）。下一次曝光通过原厂0329/operation2停止当前声音，原完成清理后从头播放最新一拍。4.48只将已审声音4.46的安装版本升号，全部运行代码及六主体输出保持。
 
 ## 构建
 
-需要 Python 3.9+、支持 AArch64/ARM 裸机目标的 clang 和 OpenSSL。
+安装Python依赖，并准备clang及ELF链接器等工具链；构建器会使用现有工具链。原始输入的大小与SHA256见inputs.lock.json，路径示例见inputs.example.json。签名材料由使用者在本机外部提供，私钥权限须为0600。
 
 ```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-cp inputs.example.json inputs.local.json
-# 编辑 inputs.local.json，填写自己提供的原始文件和签名材料路径。
-.venv/bin/python build.py --inputs inputs.local.json --output /path/to/new-r5-4.36
+python3 -m pip install -r firmware/r5/requirements.txt
+python3 firmware/r5/build.py --inputs /path/to/inputs.json --output /path/to/new-output --stage all
 ```
 
-本次在 macOS 工具链验证。编译器生成的机器码必须匹配 `expected_outputs.json`；不同 clang 版本如生成不同代码，构建会拒绝确认重现。已验证的编译器身份见 `REPRODUCTION.json`，不声称任意工具链均可逐字重建。
+输出目录必须不存在。构建先核源锁和全部原始输入，再从原厂输入编译与封装，逐项匹配expected_outputs.json。禁止使用python -O跳过校验。只编译组件可用--stage components；该模式不产生完整DAT。
 
-`--output` 必须不存在。所有复制、编译、派生镜像和签名输出仅写入该新目录，源码目录和输入文件不改写。不要使用 `python -O`。仅重建 AP/CP、参数模板和分区可用 `--stage components`，此时不读取私钥或生成 DAT。
+本目录自带host/电脑端声音转换器。输入为不超过2秒/1MiB的整数PCM WAV，输出供相机冷启动导入的R5S；机内不进行WAV转换。
 
-## 输入与恢复
+```sh
+python3 firmware/r5/host/prepare_sound.py convert "声音.WAV" -o "声音.R5S"
+python3 firmware/r5/host/prepare_sound.py inspect "声音.R5S"
+```
 
-`inputs.example.json` 列出原始 R5 4.00 DAT、同一 DAT 解包所得 FDAT/TAR、原厂 updater、原始 AP/CP/三个分区，以及外部提供的公钥/私钥。原厂输入逐项按 `inputs.lock.json` 核对大小和 SHA256。私钥不随仓库分发、不打印、不写入回执；完整固件也不公开上传。完整签名构建仍需要原机信任的匹配签名身份。
+## 身份与验证
 
-`src/dependencies/baseline_recipes.json` 将已批准的底层 AP/CP/WBI 修改收为带原像、目标散列的补丁配方：AP 7处、CP 82处、WBI 1处；AP 分区扩容布局15处。扩容配方只保留文件系统布局，旧模块已剔除，新增空间置零后由当前源码编译结果完整覆盖。没有嵌入完整旧版本组件。
+本地最终源码ZIP已隔离执行唯一stage all，精确复现六主体和完整DAT。独立RSA/OpenSSL、篡改拒绝、外CRC及全部751577088B明文对照通过；相对4.46仅版本头和头CRC共5字节变化。功能回放以168份运行源和六主体身份复用4.46证据；物理扬声器、连拍时序、LCD及4.48安装/冷启动/WBI仍待机身确认。
 
-`src/dependencies/colour_fields.json` 是当前13段/2746字节的 FL2/FL3、R6 ST 与 AWB 参数。包含全部12地区模板的原像校验及 BK4/backup.sum 更新，不需要旧逆算脚本或另一机型的完整镜像。
+公开副本只调整本README的入口路径和发布说明，重算源锁；其余运行、构建和封装文件与本地已审冻结源逐字相同。公开映射和脱敏回执见../../publication/4.48/。FIELD_REPAIR、REPRODUCTION及source_provenance中的旧版本/本地证据路径保留历史身份；它们不是旧版本构建依赖，未公开证据不伪装成仓库文件。
 
-`source_provenance.json` 仅记录合并来源，历史路径不是运行依赖。`sources.lock.json` 固定当前源码/数据；修改实现时须审查后更新该清单及目标输出身份，不能仅删除校验绕过失败。恢复当前版本需要本目录、匹配的原厂输入、签名材料及工具链；无需恢复历史目录。
-
-## 4.36运行时优化与启动行为
-
-冷启动先扫描SD并完整校验R5NATIVE.BIN，再确定唯一一份待激活配置。有合法BIN时不读取或对比旧文件，直接将通过验证的原始v4字节暂存、读回校验、原子替换内部旧文件，再向CP传输；无BIN或BIN损坏则加载内部原配置。零字节/有效空BIN沿用清空语义。相同BIN也执行替换；零字节清空请求先生成合法的空v4文件。保存过程不再重复解码或编码数值。不会先向CP发布旧配置再申请第二份bank。
-
-恢复启动只加载内部已保存配置，不扫描SD、不做SD诊断写入或网格观察；内容相同的CP bank通过既有BEGIN协议复用。已撤下的私有重读入口保持拒绝，不会由迟到SD事件绕过此策略。恢复后更换SD的BIN需等下次冷启动才更新。
-
-旧文件通过原子替换移除，不会先unlink活动文件；未通过验证或未成功写入的新BIN不会提前删除可恢复配置。冷启动避免创建旧CP bank，从源头避免那一份占用；不新增对渲染读者可能持有的bank进行free/清零的路径，也不扩大原厂heap。冷/恢复分类依据AP常驻工作线程的首次成功会话，首次会话之前的电源通知不会错误跳过冷启动扫描。
-
-本地已执行当前AArch64加载/持久化与恢复路径回放、原厂有限heap下的AP/CP联动及打包校验。实际机身电源/WBI对首次会话的重建行为、当次菜单刷新与拍摄效果仍需实机验收；主机模拟和验签不等于机身通过。
-
-4.35完整源码和冻结交付保留于工作区；不作为4.36构建输入。白色优先97、氛围−1、原厂菜单图标、Fn手动注册、R6 ST、FL23及参数模板保持原实现。本轮仅本地开发，无相机/SD写入。
-
-CP在成功封存前校验完整参数CRC并缓存于bank既有reserved[0]，后续SELECT、复用和诊断读取缓存；不增加522152字节申请。消息CRC、值域、序号及代际检查保留。相同滤镜仅在同代际、同会话、已成功同步且保存、无dirty或错误时跳过刷新；启动及恢复仍完整同步。Gamma按10个唯一原厂record组初始化，所有原厂尾字段和路由保持。CP头文件转发到AP/CP共用定义，旧codec文件名保留为兼容入口。
-
-原厂网格控制器、恢复缓存、八档预计算、Gamma引用点和原上传路径保持，未扩大代码注入区或原厂堆。主机验证范围及实机待验收边界见本地analysis/r5_runtime436_20261030/记录；该目录不参与构建。
-
-4.36同版本补充：自定义菜单描述符+0x60的静态默认图标改为原厂Creative Look资源02002290，供Fn分配／设置页查询。使用页的既有图片查询hook也固定返回同一原厂C.Look资源，不再跟随ST/PT等原厂Look变化；其它菜单的动态图标保持原厂路径。未新增hook、资源图片或改变滤镜选择逻辑。修改前4.36身份及本次原厂对照保存在本地analysis/r5_fn_icon436_20261030/，该记录不参与构建。
+本仓库发布完整源码、脚本、数值配置和校验摘要；原厂镜像、DAT/AP/CP、签名密钥及设备原始日志由使用者自行保留。来源与许可见THIRD_PARTY_NOTICES.md、LICENSE.Erlla和LICENSE.fwtool。原厂恢复时使用自行保留的对应机型原版输入；本源码构建不是设备恢复工具。

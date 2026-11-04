@@ -2,6 +2,7 @@
 #include <stddef.h>
 #include "r5_runtime_session.h"
 #include "r5_filter_runtime423.h"
+#include "r5sound_runtime.h"
 extern void *r5_stage411_dlsym(void *,const char *);
 extern void *r5_stage411_child(void *);
 #define LOAD(p) __atomic_load_n((p),__ATOMIC_ACQUIRE)
@@ -28,7 +29,7 @@ void r5_session_finish(void){__atomic_fetch_or(&gate,(uint64_t)CLOSED,__ATOMIC_A
 void r5_stage421_power(const uint32_t *m){
  uint64_t old,next;uint32_t e,event;
  if(!m)return;event=m[0];if(event!=0x920143u&&event!=0x92015au)return;
- old=LOAD(&gate);
+ r5sound_power(m);old=LOAD(&gate);
  do{e=(uint32_t)(old>>32);if(e==0xfffffffeu)return;
   next=((uint64_t)(e+1)<<32)|((uint32_t)old&READERS)|CLOSED|(event==0x92015au?WAKE:0);
  }while(!__atomic_compare_exchange_n(&gate,&old,next,0,__ATOMIC_ACQ_REL,__ATOMIC_ACQUIRE));
@@ -47,11 +48,12 @@ int r5_session_prepare(void){
  STORE(&owner_cold,LOAD(&handled)==0);STORE(&handled,e+1);return 1;
 }
 void *r5_stage421_loop(void *s){
- struct time {int64_t sec,ns;};const struct time pause={0,100000000};
+ struct time {int64_t sec,ns;};struct time pause={0,100000000};
  int (*sleep)(const void *,void *)=(void *)r5_stage411_dlsym(0,"nanosleep");
+ int ready=0;
  if(!sleep)return 0;
- for(;;){if(r5_session_prepare()){r5_stage411_child(s);r5_session_finish();}
-  r5_filter_service();
+ for(;;){if(r5_session_prepare()){ready=r5_stage411_child(s)!=0;if(ready)r5sound_boot();r5_session_finish();}
+  r5_filter_service();pause.ns=ready&&r5sound_service()?10000000:100000000;
   if(sleep(&pause,0))return 0;
  }
 }
@@ -74,3 +76,13 @@ int r5_session_new_transfer(void){
  return 0;
 }
 uint32_t r5_session_token(uint32_t salt){uint32_t t=(serial*0x9e3779b1u)^salt;return t?t:1;}
+/* Called only by the file worker between complete WAV operations. No IO is
+ * added to UI, exposure or power callbacks; a power epoch cancels the scan. */
+int r5sound_worker_yield(void){
+ struct time {int64_t sec,ns;};const struct time pause={0,1000000};
+ int (*sleep)(const void *,void *)=(void *)r5_stage411_dlsym(0,"nanosleep");
+ if(!r5_session_current())return 0;
+ r5_filter_service();
+ if(sleep)(void)sleep(&pause,0);
+ return r5_session_current();
+}

@@ -7,7 +7,13 @@
 .type r5_filter_menu_icon_query434,@function
 r5_filter_menu_icon_query434:
  cmp w1, #0x635
+ b.eq 2f
+ cmp w1, #0x636
  b.ne 1f
+ movz w0, #0x48eb
+ movk w0, #0x0200, lsl #16
+ ret
+2:
  movz w0, #0x2290
  movk w0, #0x0200, lsl #16
  ret

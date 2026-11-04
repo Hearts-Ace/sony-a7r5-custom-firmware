@@ -15,7 +15,7 @@ sys.path.insert(0,str(HERE.parent/'fn'))
 from patch_fn434 import apply_fn_patch
 
 def patch_secondary_identity(image,rxfile,rxbytes):
- """Preserve 4.24 MID635 fix after rebuilding the runtime module."""
+ """Keep native secondary identity for the three registered private MIDs."""
  from strict_ap_link import branch
  image=bytearray(image);changes=[]
  def edit(at,after):
@@ -23,10 +23,10 @@ def patch_secondary_identity(image,rxfile,rxbytes):
   image[at:at+len(after)]=after
   changes.append(dict(offset=at,before=before.hex(),after=after.hex()))
  at=(rxbytes+15)&-16;wrapper=module.RX+at;entry=0x1bd2020
- delta=(0x5959000//4096)-((wrapper+16)//4096)
+ delta=(0x5959000//4096)-((wrapper+32)//4096)
  assert -(1<<20)<=delta<(1<<20)
  adrp=0x90000000|((delta&3)<<29)|(((delta>>2)&0x7ffff)<<5)
- code=struct.pack('<4I',0x7100003f|(0x635<<10),0x54000061,0x2a0103e0,0xd65f03c0)+struct.pack('<I',adrp)+branch(wrapper+20,entry+4)
+ code=struct.pack('<8I',0x7100003f|(0x635<<10),0x540000a0,0x7100003f|(0x636<<10),0x54000060,0x7100003f|(0x637<<10),0x54000061,0x2a0103e0,0xd65f03c0)+struct.pack('<I',adrp)+branch(wrapper+36,entry+4)
  assert bytes(image[entry:entry+4])==bytes.fromhex('20ec01f0')
  assert image[rxfile+rxbytes:rxfile+at+len(code)]==bytes(at+len(code)-rxbytes)
  assert at+len(code)<=65536
@@ -34,13 +34,17 @@ def patch_secondary_identity(image,rxfile,rxbytes):
  elf=ELFFile(io.BytesIO(image))
  i=next(i for i,s in enumerate(elf.iter_segments()) if s['p_type']=='PT_LOAD' and s['p_vaddr']==module.RX)
  edit(elf['e_phoff']+i*elf['e_phentsize']+32,struct.pack('<2Q',at+len(code),at+len(code)))
- return image,changes,dict(passed=True,entry=entry,wrapper=wrapper,final_rx_bytes=at+len(code),preserves_424_secondary_ID_fix=True)
+ return image,changes,dict(passed=True,entry=entry,wrapper=wrapper,final_rx_bytes=at+len(code),preserves_424_secondary_ID_fix=True,private_MIDs=[0x635,0x636,0x637])
 
 def sha(b):return hashlib.sha256(b).hexdigest()
 def main():
  p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);a=p.parse_args();out=a.output;out.mkdir(parents=True,exist_ok=True)
  module.main();audit=json.loads((HERE/'module_audit.json').read_text());raw=(ROOT/'inputs/ap_baseline.so').read_bytes()
  assert sha(raw)=='a8d5cd444bf08a03a70aedc3cc32bdd857b89b468ac10bf8365d640e8d390d75'
+ # These pre-existing AP PLT imports retain their original GOT targets and
+ # normal loader resolution; the sound module adds no dynamic symbols.
+ for at,expected in [(0x16d9a50,'901502f011c241f910020e9120021fd6'),(0x16d97f0,'901502f0112a41f91042099120021fd6'),(0x16d9970,'901502f0118a41f910420c9120021fd6')]:
+  assert raw[at:at+16]==bytes.fromhex(expected),('Native SHA256 PLT changed',hex(at))
  e=ELFFile(io.BytesIO(raw));assert e['e_phnum']==6
  code=bytearray((HERE/'runtime_rx.bin').read_bytes());memory=audit['bss_bytes'];RX=audit['rx'];RW=audit['rw'];rxfile=module.align(len(raw),65536);rwfile=module.align(rxfile+len(code),65536)
  types={'PT_LOAD':1,'PT_DYNAMIC':2,'PT_GNU_EH_FRAME':0x6474e550,'PT_GNU_STACK':0x6474e551,'PT_GNU_RELRO':0x6474e552}
@@ -62,6 +66,20 @@ def main():
   at=rel['sh_offset']+i*24+16;before=bytes(image[at:at+8]);after=struct.pack('<q',audit['symbols'][remap['symbol']])
   image[at:at+8]=after;changes.append(dict(offset=at,before=before.hex(),after=after.hex()))
  image,menu_changes,menu_report=patch_menu_parent(image,rxfile,code,audit);changes.extend(menu_changes)
+ # Reuse only bytes vacated by the very same PLT relocation used in4.36.
+ # Both native tables are bounded by dynamic tags; neither includes this span.
+ old_plt=e.get_section_by_name('.rela.plt');extra=(HERE/'runtime_extra_rx.bin').read_bytes()
+ assert audit['extra_rx_base']==old_plt['sh_addr']+72==module.EXTRA_RX
+ assert audit['extra_rx_capacity']==old_plt['sh_size']-72==module.EXTRA_BYTES
+ assert len(extra)==audit['extra_rx_bytes']<=module.EXTRA_BYTES
+ extra_file=old_plt['sh_offset']+72
+ assert any(s['p_type']=='PT_LOAD'and s['p_flags']==5 and s['p_vaddr']<=module.EXTRA_RX and module.EXTRA_RX+module.EXTRA_BYTES<=s['p_vaddr']+s['p_filesz']for s in e.iter_segments())
+ for section in (e.get_section_by_name('.rela.dyn'),old_plt):
+  for address,info,addend in struct.iter_unpack('<QQq',section.data()):
+   assert not(module.EXTRA_RX<=address<module.EXTRA_RX+module.EXTRA_BYTES)
+   assert not(module.EXTRA_RX<=addend<module.EXTRA_RX+module.EXTRA_BYTES)
+ changes.append(dict(offset=extra_file,before=bytes(image[extra_file:extra_file+len(extra)]).hex(),after=extra.hex()))
+ image[extra_file:extra_file+len(extra)]=extra
  image,secondary_changes,secondary_report=patch_secondary_identity(image,rxfile,menu_report['final_rx_bytes']);changes.extend(secondary_changes)
  image,fn_report=apply_fn_patch(image)
  for row in fn_report['patches']:
@@ -72,8 +90,10 @@ def main():
   before=bytes.fromhex(c['before']);limit=min(len(before),len(raw)-c['offset'])
   reverse[c['offset']:c['offset']+limit]=before[:limit]
  assert reverse==raw
- new=ELFFile(io.BytesIO(image));assert [dict(s.header)for s in list(new.iter_segments())[:6]]==[dict(s.header)for s in e.iter_segments()]
+ new=ELFFile(io.BytesIO(image));assert new['e_phnum']==8
+ assert [dict(s.header)for s in list(new.iter_segments())[:6]]==[dict(s.header)for s in e.iter_segments()]
  loads=[s for s in new.iter_segments()if s['p_type']=='PT_LOAD']
+ assert len(loads)==4
  for s in loads:assert s['p_filesz']<=s['p_memsz']and s['p_offset']%65536==s['p_vaddr']%65536 and s['p_flags']&3!=3
  for x,y in zip(loads,loads[1:]):assert module.align(x['p_vaddr']+x['p_memsz'],65536)<=y['p_vaddr']
  for name in ('.dynsym','.dynstr','.init_array','.fini_array'):
@@ -81,6 +101,6 @@ def main():
  # All changed dynamic/RELA bytes are the reviewed menu parent insertion above.
  (out/'menu_parent_patch.json').write_text(json.dumps(menu_report,indent=2)+'\n')
  (out/'appFw.so').write_bytes(image)
- report=dict(passed=True,version='4.36',AP_sha256=sha(image),bytes=len(image),reverse_to407_exact=True,module_audit_sha256=digest_file(HERE/'module_audit.json'),patches=changes,rx_file=rxfile,rw_file=rwfile,rx_bytes=secondary_report['final_rx_bytes'],runtime_source_bytes=len(code),bss_bytes=memory,device_IO=False,menu_parent_patch=menu_report,secondary_identity=secondary_report,Fn_registration=fn_report)
+ report=dict(passed=True,version='4.48-sound-preempt',AP_sha256=sha(image),bytes=len(image),reverse_to407_exact=True,module_audit_sha256=digest_file(HERE/'module_audit.json'),patches=changes,rx_file=rxfile,rw_file=rwfile,rx_bytes=secondary_report['final_rx_bytes'],runtime_source_bytes=len(code),bss_bytes=memory,device_IO=False,menu_parent_patch=menu_report,secondary_identity=secondary_report,Fn_registration=fn_report,extra_rx=dict(base=module.EXTRA_RX,file_offset=extra_file,capacity=module.EXTRA_BYTES,bytes=len(extra),sha256=sha(extra),original_RX_LOAD_unchanged=True,requires_no_new_mapping=True))
  (out/'ap_build.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:report[k]for k in ('passed','AP_sha256','bytes','rx_bytes','runtime_source_bytes','bss_bytes','device_IO')}))
 if __name__=='__main__':main()

@@ -113,6 +113,10 @@ void r5_stage421_probe_reset(void){extern void *memset(void *,int,size_t);memset
 
 int r5_stage411_inbound(const uint8_t *p,uint32_t source){
  extern int r5_filter_inbound(const uint8_t *,uint32_t);
+ extern int r5ss_snapshot_inbound(const uint8_t *,uint32_t);
+ extern void r5sound_inbound(const uint8_t *,uint32_t);
+ if(r5ss_snapshot_inbound(p,source))return 1;
+ r5sound_inbound(p,source);
  int rc;if(source!=0x90030001u)return 0;
  if(r5_filter_inbound(p,source))return 1;
  /* Foreign native packets still take native dispatch when our gate is closed. */
