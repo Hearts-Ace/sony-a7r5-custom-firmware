@@ -6,7 +6,8 @@ ROOT=Path(__file__).resolve().parents[1]
 HERE=Path(__file__).resolve().parent
 sys.path[:0]=[str(ROOT/'lib')]
 from strict_ap_link import link,align,branch
-RX,RW=0x8e90000,0x8ea0000
+RX,RW=0x8e90000,0x8eb0000
+RX_CAPACITY=131072
 # Formal4.36 already relocates the complete native PLT table to its RX tail.
 # Two new dyn records occupy the first72 bytes; only the remaining original
 # RX bytes may hold optional sound code. No new mapping or VA alias is added.
@@ -56,7 +57,7 @@ def main():
  gc_objects=[obj for obj in extra_objects if obj.name!='r5_sound_menu437.o']
  code,data,memory,sy,rels,layout=link(objects,RX,RW,bytes(align(8*56,16)),{**native,**NATIVE_SHA,'r5_stage411_dlsym':0x16dac90,'r5_native_fsys_open':0x3691104,'r5_native_fsys_write':0x3691174,'r5_native_fsys_read':0x3691138,'r5_native_fsys_close':0x3691124,'name_id':0x16db4f0,'name_char':0x16d9370,'r5_native_creative_sequence_request':0x24b0780},gc_objects=gc_objects,gc_report=section_gc,extra_rx_objects=extra_objects,extra_rx_base=EXTRA_RX,extra_rx_size=EXTRA_BYTES,extra_rx_output=extra_output,merge_strings=True,
   drop_unused_functions=('r5_publish_staged_look','r5_stage_look_store','r5_filter_reload_request','r5_transfer_ap_active_mask','r5_session_finish','r5_session_event_epoch','r5ss_backend_session'))
- assert not data and 0<memory<=196608 and align(len(code),8)+22464+64<=65536,(len(code),memory,len(extra_output['data']))
+ assert not data and 0<memory<=196608 and align(len(code),8)+22464+64<=RX_CAPACITY,(len(code),memory,len(extra_output['data']))
  assert all(r['kind']!=257 for r in rels)
  hooks=[('startup',0x18012e4,'60a26e39'),('initial',0x34dae68,'60c21091'),('completed',0x34e5140,'60c21091'),('media',0x33c3cd4,'a003168b'),('inbound',0x3554d4c,'20008052'),('power',0x35b2a78,'fd7bbba9')]
  code=bytearray(code)
@@ -68,7 +69,7 @@ def main():
  menu_hooks=[dict(name='custom_menu_'+r['symbol'],site=int(r['va'],16),before=r['before'],after=branch(int(r['va'],16),sy[r['symbol']],r.get('link',True)).hex())for r in menu_plan['calls']]
  (HERE/'runtime_rx.bin').write_bytes(code)
  (HERE/'runtime_extra_rx.bin').write_bytes(extra_output['data'])
- report=dict(schema='r5-native12-ap-module/2',version='4.48-sound-preempt',rx=RX,rw=RW,rx_bytes=len(code),bss_bytes=memory,headers_reserved=448,extra_rx_base=EXTRA_RX,extra_rx_capacity=EXTRA_BYTES,extra_rx_bytes=len(extra_output['data']),section_gc=section_gc,commands=commands,symbols=sy,relocations=rels,sections=layout,hooks=[dict(name=n,site=s,before=b,after=branch(s,sy['r5_stage411_'+n+'_hook']).hex())for n,s,b in hooks]+menu_hooks,menu_relocation_addend_remaps=menu_plan['relocation_addend_remaps'],sources={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()for p in sorted(set(sources)-{amalgam}|set(sound_implementation)|set(HERE.glob('*.h'))|set((HERE.parent/'menu_research').glob('*.h'))|{Path(__file__),HERE/'build_ap_image.py',ROOT/'lib/strict_ap_link.py'})},limitations=['Compile/link proof only. No AP loader/device/menus or native overwrite proof.'])
+ report=dict(schema='r5-native12-ap-module/2',version='4.55-sound-recovery',rx=RX,rw=RW,rx_bytes=len(code),bss_bytes=memory,headers_reserved=448,extra_rx_base=EXTRA_RX,extra_rx_capacity=EXTRA_BYTES,extra_rx_bytes=len(extra_output['data']),section_gc=section_gc,commands=commands,symbols=sy,relocations=rels,sections=layout,hooks=[dict(name=n,site=s,before=b,after=branch(s,sy['r5_stage411_'+n+'_hook']).hex())for n,s,b in hooks]+menu_hooks,menu_relocation_addend_remaps=menu_plan['relocation_addend_remaps'],sources={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()for p in sorted(set(sources)-{amalgam}|set(sound_implementation)|set(HERE.glob('*.h'))|set((HERE.parent/'menu_research').glob('*.h'))|{Path(__file__),HERE/'build_ap_image.py',ROOT/'lib/strict_ap_link.py'})},limitations=['Compile/link proof only. No AP loader/device/menus or native overwrite proof.'])
  (HERE/'module_audit.json').write_text(json.dumps(report,indent=2)+'\n')
  print(json.dumps({k:report[k]for k in ('rx_bytes','bss_bytes','hooks')}))
 if __name__=='__main__':main()

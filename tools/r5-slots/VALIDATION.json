@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "camera_io": false,
+  "independently_verified_target_equal": true,
+  "native_compiled": [
+    "configure_fastboot_usb.c",
+    "read_fastboot_usb.c",
+    "read_fastboot_usb_all.c",
+    "write_slots_usb.c"
+  ],
+  "all_40960_raw_sectors_verified": true,
+  "checks": [
+    "all source pins",
+    "exact target identity",
+    "already-correct idempotency",
+    "forward and reverse sparse",
+    "whole-partition change allowlist",
+    "bad second-bank checksum rejected",
+    "unknown LOOK rejected"
+  ],
+  "changed_bytes": 15,
+  "changed_sectors": [
+    15397,
+    16699,
+    16701,
+    33029,
+    34331,
+    34333
+  ],
+  "schema": "r5-public-slot-tools-offline-validation/1",
+  "fixture": "Private same-session R5 readback supplied locally; no fixture is distributed",
+  "public_cli_inspect_and_offline_passed": true,
+  "hardware_execution_of_public_path_adaptation": false,
+  "original_live_slot_flow_verified": true,
+  "limits": [
+    "Public portable configuration adaptation has not been run on a camera.",
+    "Original live flow normal reboot acknowledgment is not physical HUD or image acceptance."
+  ]
+}

@@ -35,8 +35,11 @@ enum {
  * reply184 is its acceptance flag. OP1/OP2 retain their original semantics. */
 /* OP1 observes only. OP2 is guarded by the original6549DC completion witness:
  * exactly one native kind17 Start is outstanding; AP reads the baseline before
- * synchronous Start, then awaits completion advance and native actor cleanup.
- * AP MUST NOT treat OBSERVED_IDLE or STABLE as RETIRED. No boot proof is added. */
+ * asynchronous Start, then awaits completion advance and native actor cleanup.
+ * AP MUST NOT treat OBSERVED_IDLE or STABLE alone as RETIRED. The AP bridge may
+ * independently prove all native async replies drained in the same arm epoch,
+ * together with complete stable idle observations and the exact descriptor.
+ * No boot proof is added. */
 enum { R5SS_RETIREMENT_UNKNOWN=0,R5SS_RETIREMENT_RETIRED=1,
        R5SS_RETIREMENT_BUSY=2 };
 /* Read-only initial-registration diagnostics. These are not playback policy

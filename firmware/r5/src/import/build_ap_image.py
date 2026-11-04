@@ -29,7 +29,7 @@ def patch_secondary_identity(image,rxfile,rxbytes):
  code=struct.pack('<8I',0x7100003f|(0x635<<10),0x540000a0,0x7100003f|(0x636<<10),0x54000060,0x7100003f|(0x637<<10),0x54000061,0x2a0103e0,0xd65f03c0)+struct.pack('<I',adrp)+branch(wrapper+36,entry+4)
  assert bytes(image[entry:entry+4])==bytes.fromhex('20ec01f0')
  assert image[rxfile+rxbytes:rxfile+at+len(code)]==bytes(at+len(code)-rxbytes)
- assert at+len(code)<=65536
+ assert at+len(code)<=module.RX_CAPACITY
  edit(rxfile+at,code);edit(entry,branch(entry,wrapper))
  elf=ELFFile(io.BytesIO(image))
  i=next(i for i,s in enumerate(elf.iter_segments()) if s['p_type']=='PT_LOAD' and s['p_vaddr']==module.RX)
@@ -46,7 +46,7 @@ def main():
  for at,expected in [(0x16d9a50,'901502f011c241f910020e9120021fd6'),(0x16d97f0,'901502f0112a41f91042099120021fd6'),(0x16d9970,'901502f0118a41f910420c9120021fd6')]:
   assert raw[at:at+16]==bytes.fromhex(expected),('Native SHA256 PLT changed',hex(at))
  e=ELFFile(io.BytesIO(raw));assert e['e_phnum']==6
- code=bytearray((HERE/'runtime_rx.bin').read_bytes());memory=audit['bss_bytes'];RX=audit['rx'];RW=audit['rw'];rxfile=module.align(len(raw),65536);rwfile=module.align(rxfile+len(code),65536)
+ code=bytearray((HERE/'runtime_rx.bin').read_bytes());memory=audit['bss_bytes'];RX=audit['rx'];RW=audit['rw'];rxfile=module.align(len(raw),65536);rwfile=rxfile+module.RX_CAPACITY
  types={'PT_LOAD':1,'PT_DYNAMIC':2,'PT_GNU_EH_FRAME':0x6474e550,'PT_GNU_STACK':0x6474e551,'PT_GNU_RELRO':0x6474e552}
  def ph(h):return struct.pack('<II6Q',types[h['p_type']],h['p_flags'],*[h[k]for k in ('p_offset','p_vaddr','p_paddr','p_filesz','p_memsz','p_align')])
  headers=b''.join(ph(s.header)for s in e.iter_segments())+struct.pack('<II6Q',1,5,rxfile,RX,RX,len(code),len(code),65536)+struct.pack('<II6Q',1,6,rwfile,RW,RW,0,memory,65536)
@@ -65,7 +65,7 @@ def main():
   assert info==1027 and addend==int(remap['before_addend'],16)
   at=rel['sh_offset']+i*24+16;before=bytes(image[at:at+8]);after=struct.pack('<q',audit['symbols'][remap['symbol']])
   image[at:at+8]=after;changes.append(dict(offset=at,before=before.hex(),after=after.hex()))
- image,menu_changes,menu_report=patch_menu_parent(image,rxfile,code,audit);changes.extend(menu_changes)
+ image,menu_changes,menu_report=patch_menu_parent(image,rxfile,code,audit,rx_capacity=module.RX_CAPACITY);changes.extend(menu_changes)
  # Reuse only bytes vacated by the very same PLT relocation used in4.36.
  # Both native tables are bounded by dynamic tags; neither includes this span.
  old_plt=e.get_section_by_name('.rela.plt');extra=(HERE/'runtime_extra_rx.bin').read_bytes()
@@ -101,6 +101,6 @@ def main():
  # All changed dynamic/RELA bytes are the reviewed menu parent insertion above.
  (out/'menu_parent_patch.json').write_text(json.dumps(menu_report,indent=2)+'\n')
  (out/'appFw.so').write_bytes(image)
- report=dict(passed=True,version='4.48-sound-preempt',AP_sha256=sha(image),bytes=len(image),reverse_to407_exact=True,module_audit_sha256=digest_file(HERE/'module_audit.json'),patches=changes,rx_file=rxfile,rw_file=rwfile,rx_bytes=secondary_report['final_rx_bytes'],runtime_source_bytes=len(code),bss_bytes=memory,device_IO=False,menu_parent_patch=menu_report,secondary_identity=secondary_report,Fn_registration=fn_report,extra_rx=dict(base=module.EXTRA_RX,file_offset=extra_file,capacity=module.EXTRA_BYTES,bytes=len(extra),sha256=sha(extra),original_RX_LOAD_unchanged=True,requires_no_new_mapping=True))
+ report=dict(passed=True,version='4.55-sound-recovery',AP_sha256=sha(image),bytes=len(image),reverse_to407_exact=True,module_audit_sha256=digest_file(HERE/'module_audit.json'),patches=changes,rx_file=rxfile,rw_file=rwfile,rx_bytes=secondary_report['final_rx_bytes'],runtime_source_bytes=len(code),bss_bytes=memory,device_IO=False,menu_parent_patch=menu_report,secondary_identity=secondary_report,Fn_registration=fn_report,extra_rx=dict(base=module.EXTRA_RX,file_offset=extra_file,capacity=module.EXTRA_BYTES,bytes=len(extra),sha256=sha(extra),original_RX_LOAD_unchanged=True,requires_no_new_mapping=True))
  (out/'ap_build.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:report[k]for k in ('passed','AP_sha256','bytes','rx_bytes','runtime_source_bytes','bss_bytes','device_IO')}))
 if __name__=='__main__':main()

@@ -15,7 +15,7 @@ MENU_ID = 0x635
 DESCRIPTOR = 'r5_filter_menu_descriptor'
 
 
-def patch_menu_parent(image, rx_file, runtime_code, module_audit):
+def patch_menu_parent(image, rx_file, runtime_code, module_audit, rx_capacity=65536):
     image = bytearray(image)
     elf = ELFFile(io.BytesIO(image))
     rx = module_audit['rx']
@@ -33,7 +33,7 @@ def patch_menu_parent(image, rx_file, runtime_code, module_audit):
     code_at = (len(runtime_code)+7) & ~7
     appended = bytes(code_at-len(runtime_code))+old_plt
     new_rx_size = len(runtime_code)+len(appended)
-    assert new_rx_size <= 65536, 'Menu/RELA copy exceeds mapped RX page'
+    assert new_rx_size <= rx_capacity, 'Menu/RELA copy exceeds reserved RX span'
     plt_va, plt_file = rx+code_at, rx_file+code_at
     assert plt_file+len(old_plt) <= len(image), 'Caller must reserve RX alignment file space'
     changes = []

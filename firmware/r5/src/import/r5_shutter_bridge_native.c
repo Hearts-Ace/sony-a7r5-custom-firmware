@@ -5,12 +5,14 @@ extern void *r5_stage411_dlsym(void *,const char *);
 extern int r5_native_ap_send(void *,const uint8_t *,size_t);
 extern uint32_t r5_osal_msg_size(const void *);
 extern int *r5_ap_posix_errno(void);
+extern void r5ss_original_pending(const void *,uint32_t *);
 #define LOAD(p) __atomic_load_n((p),__ATOMIC_ACQUIRE)
 #define STORE(p,v) __atomic_store_n((p),(v),__ATOMIC_RELEASE)
 struct time437 {int64_t sec,ns;};
 typedef int (*sleep_fn)(const void *,void *);
 typedef int (*clock_fn)(int,struct time437 *);
 static uint32_t phase,serial,tag,power,owner_power,owner_epoch,active,baseline,stop_ready;
+static uint32_t arm_power,arm_epoch,arm_physical_lo,arm_physical_hi,arm_bytes;
 static uint8_t inbox[R5SS_SNAPSHOT_REPLY_BYTES];
 static uint32_t diag[R5SS_BRIDGE_DIAG_WORDS];
 void r5ss_bridge_diagnostics(uint32_t out[R5SS_BRIDGE_DIAG_WORDS]){
@@ -114,14 +116,33 @@ int r5ss_native_start_arm17(void){
   * and MMIO must be idle. 198AD88..8B include persistent native mode bytes;
   * those are not pending work and must not permanently block admission. */
  if((bridge_get(p+32)&0x003f0fffu)||bridge_get(p+176)||bridge_get(p+180))return 1;
+ if(bridge_get(p+60)!=2||bridge_get(p+188)!=1)return -1;
+ arm_power=owner_power;arm_epoch=owner_epoch;
+ arm_physical_lo=bridge_get(p+160);arm_physical_hi=bridge_get(p+164);arm_bytes=bridge_get(p+168);
  baseline=bridge_get(p+152);stop_ready=0;active=1;return 0;
 }
 int r5ss_native_retirement_poll(uint32_t kind){
  stop_ready=0;
  if(kind!=17||!bridge_current())return -1;
  if(!active)return 0;
+ uint32_t pending_before=~0u,pending_after=~0u;
+ r5ss_original_pending(0,&pending_before);
  uint8_t p[R5SS_SNAPSHOT_REPLY_BYTES];if(query(2,p,0,0))return -1;
+ r5ss_original_pending(0,&pending_after);
+ if(!bridge_current())return -1;
  if(bridge_get(p+48)==R5SS_RETIREMENT_RETIRED){active=0;return 0;}
+ /* Async Start increments the original pending counter before enqueue. The
+  * original public1329 collector decrements it only after the native reply,
+  * including admission rejection (which has no kind17 cleanup witness).
+  * Zero on both sides of a stable, completely idle CP observation proves all
+  * native async work drained. Never infer this from CP zeros alone, or reuse
+  * a possibly reset counter after a power/session change. Persistent native
+  * mode bytes are excluded exactly as in Start admission above. */
+ if(arm_power==owner_power&&arm_epoch==owner_epoch&&!pending_before&&!pending_after&&
+    !(bridge_get(p+32)&0x003f0fffu)&&!bridge_get(p+36)&&bridge_get(p+40)==1&&
+    !bridge_get(p+176)&&!bridge_get(p+180)&&bridge_get(p+60)==2&&bridge_get(p+188)==1&&
+    bridge_get(p+160)==arm_physical_lo&&bridge_get(p+164)==arm_physical_hi&&
+    bridge_get(p+168)==arm_bytes){active=0;return 0;}
  /* Queued/deferred cancellation can bypass native common cleanup. Stop only
   * after both snapshots show our kind17 as the actual bridge_current sound. Pending
   * packets wait for native admission or completion without forced removal. */
@@ -134,4 +155,24 @@ int r5ss_native_gain_bind17(uint64_t physical,uint32_t bytes){
  uint8_t p[R5SS_SNAPSHOT_REPLY_BYTES];if(!physical||!bytes||active||query(3,p,physical,bytes))return -1;
  uint64_t actual=(uint64_t)bridge_get(p+160)|((uint64_t)bridge_get(p+164)<<32);
  return bridge_get(p+184)==1&&bridge_get(p+188)==1&&bridge_get(p+60)==2&&actual==physical&&bridge_get(p+168)==bytes?0:-1;
+}
+
+int r5ss_native_resume_check17(uint64_t physical,uint32_t bytes,uint32_t *registered){
+ extern void r5ss_original_pending(const void *,uint32_t *);
+ uint32_t before=~0u,after=~0u;uint8_t p[R5SS_SNAPSHOT_REPLY_BYTES];
+ if(!registered||!bridge_current())return -1;
+ /* A CP-empty snapshot is not proof that an old AP async Start completed.
+  * Preserve that baseline, including across power/epoch rebind. */
+ if(active){int state=r5ss_native_retirement_poll(17);if(state)return state;}
+ r5ss_original_pending(0,&before);if(before)return 1;
+ if(query(1,p,0,0))return -1;
+ r5ss_original_pending(0,&after);if(!bridge_current())return -1;
+ if(after||bridge_get(p+40)!=1||(bridge_get(p+32)&0x003f0fffu)||
+    bridge_get(p+176)||bridge_get(p+180))return 1;
+ if(bridge_get(p+52)&7u)return -1;
+ if(bridge_get(p+60)==1&&bridge_get(p+184)==1){*registered=0;return 0;}
+ uint64_t actual=(uint64_t)bridge_get(p+160)|((uint64_t)bridge_get(p+164)<<32);
+ if(!physical||!bytes||bridge_get(p+60)!=2||bridge_get(p+188)!=1||
+    actual!=physical||bridge_get(p+168)!=bytes)return -1;
+ *registered=1;return 0;
 }

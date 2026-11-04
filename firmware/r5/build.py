@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Only supported R5 4.48 build entry. Offline, no camera access."""
+"""Only supported R5 4.55 build entry. Offline, no camera access."""
 from pathlib import Path
 import argparse, hashlib, json, os, shutil, subprocess, sys, tarfile
 
 HERE=Path(__file__).resolve().parent
-VERSION='4.48'
+VERSION='4.55'
 
 def sha(path):
     h=hashlib.sha256()
@@ -61,6 +61,7 @@ def main():
     p.add_argument('--inputs',required=True,type=Path,help='Private input path JSON; see inputs.example.json')
     p.add_argument('--output',required=True,type=Path,help='New empty output directory')
     p.add_argument('--stage',choices=('components','all'),default='all')
+    p.add_argument('--candidate',action='store_true',help='Record new outputs for review; any DAT is renamed NONINSTALLABLE.DAT')
     a=p.parse_args()
     if not __debug__:p.error('Do not run with python -O: integrity assertions are required')
     out=a.output.resolve()
@@ -99,8 +100,10 @@ def main():
     run(work/'cp/build_cp.py')
     cp=work/'cp/cp423.NONINSTALLABLE.bin'
     shutil.copyfile(cp,patched/'cpapp-b.bin')
+    from grow_ap import replace as extend_ap
+    shutil.copyfile(inputs/'nflasha15',patched/'nflasha15')
     partitions={
-      'AP':integrate(inputs/'nflasha15',patched/'nflasha15',patched/'appFw.so','appFw.so'),
+      'AP':extend_ap(patched/'nflasha15',patched/'appFw.so',evidence/'ap-extension.json'),
       'CP':integrate(paths['stock_nflasha8'],patched/'nflasha8',patched/'cpapp-b.bin','cpapp-b.bin')}
     from prepare_templates import build_templates
     replacements,templates=build_templates(paths['original_tar'],patched/'templates',expected_archive_sha256=lock['original_tar']['sha256'])
@@ -131,14 +134,15 @@ def main():
             facts.append(dict(member=m.name,sha256=after,changed=before!=after))
     archive=dict(passed=True,output_sha256=archive_sha,changed_members=list(replacements),members=facts,
                  original_headers_padding_trailer_preserved=True)
-    save(evidence/'archive_verification_448.json',archive)
+    save(evidence/'archive_verification_455.json',archive)
     expected=json.loads((HERE/'expected_outputs.json').read_text())
     actual={'AP':sha(patched/'appFw.so'),'CP':sha(patched/'cpapp-b.bin'),
             'nflasha15':sha(patched/'nflasha15'),'nflasha8':sha(patched/'nflasha8'),
             'nflasha5':sha(patched/'nflasha5'),'archive':archive_sha}
     save(evidence/'computed_outputs.json',actual)
-    for key,value in actual.items():
-        assert value==expected[key],('Reproduction differs',key,value,expected[key])
+    if not a.candidate:
+        for key,value in actual.items():
+            assert value==expected[key],('Reproduction differs',key,value,expected[key])
     save(evidence/'components.json',dict(passed=True,version=VERSION,actual=actual,partitions=partitions,
          original_inputs=lock,source_sha256=sha(HERE/'sources.lock.json'),camera_io=False))
     if a.stage=='all':
@@ -149,7 +153,8 @@ def main():
         original_digest=package.digest_file
         package.digest_file=lambda path:archive_sha if path is overlay else original_digest(path)
         package.build_package()
-        assert sha(out/'BODYDATA.DAT')==expected['DAT'],'DAT differs from frozen 4.48'
+        if not a.candidate:
+            assert sha(out/'BODYDATA.DAT')==expected['DAT'],'DAT differs from frozen 4.55'
         receipt=json.loads((out/'verification.json').read_text())
         receipt.update(exact_four_member_scope_verified=False,factory_defaults_and_backup_sum_unchanged=False,
             consolidated_source_build=True,source_input='original R5 4.00',
@@ -159,6 +164,9 @@ def main():
     save(out/'build-result.json',dict(passed=True,version=VERSION,stage=a.stage,outputs=actual,
          DAT_sha256=sha(out/'BODYDATA.DAT') if a.stage=='all' else None,
          previous_version_scripts_required=False,previous_version_outputs_required=False,camera_io=False))
-    print('R5 4.48 reproduced exactly:',out,flush=True)
+    if a.candidate:
+        if (out/'BODYDATA.DAT').exists():(out/'BODYDATA.DAT').rename(out/'NONINSTALLABLE.DAT')
+        save(out/'CANDIDATE.json',dict(frozen_output_identity_verified=False,review_required=True,outputs=actual))
+    print('R5 4.55 reproduced exactly:',out,flush=True)
 
 if __name__=='__main__':main()

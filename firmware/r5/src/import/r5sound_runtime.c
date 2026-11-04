@@ -23,7 +23,7 @@ extern void r5sound_menu_catalog_changed(void);
 static struct {
  r5sound_catalog catalog;
  uint32_t published,selected,request,status,initial[2],completed[2],media[2];
- uint32_t epoch,token,desired,changing,attempts,retry,generation,fault,volume,last_start,last_stop,logged_play,logged_stop,step,target_step,revision,volume_request,logged_done,seen_exposures,logged_gate,persisted;
+ uint32_t epoch,token,desired,changing,attempts,retry,generation,fault,volume,last_start,last_stop,logged_play,logged_stop,step,target_step,revision,volume_request,logged_done,seen_exposures,logged_gate,persisted,resuming,restoring;
  void *(*alloc)(size_t);void (*free)(void *);
  uint8_t *audio;uint32_t encoded_bytes;
  r5ss_scheduler scheduler;r5ss_native_backend backend;
@@ -31,7 +31,7 @@ static struct {
 enum {S_READY,S_SCAN,S_SCAN_ERROR,S_REQUEST,S_LOADING,S_ACTIVE,S_OFF,S_QUERY,S_REGISTER,S_SAVE_ERROR,S_BOOT_ERROR,S_POLICY,S_PLAY_ERROR};
 unsigned r5sound_volume_get(void){unsigned s=LOAD(&run.step);return s?s:5;}
 unsigned r5sound_revision(void){return LOAD(&run.revision);}
-int r5sound_volume_blocked(void){return !LOAD(&run.published)||!LOAD(&run.selected)||LOAD(&run.request)||run.fault;}
+int r5sound_volume_blocked(void){return !LOAD(&run.published)||!LOAD(&run.selected)||LOAD(&run.request)||LOAD(&run.resuming)||run.fault;}
 int r5sound_volume_enqueue(unsigned step){
  if(step<1||step>10||r5sound_volume_blocked())return -1;
  uint32_t z=0;if(!__atomic_compare_exchange_n(&run.request,&z,0x100u|step,0,__ATOMIC_ACQ_REL,__ATOMIC_ACQUIRE))return 1;
@@ -41,7 +41,7 @@ unsigned r5sound_count(void){return LOAD(&run.published)?run.catalog.count:0;}
 const char*r5sound_name(unsigned i){return i&&i<=r5sound_count()?run.catalog.entries[i-1].name:0;}
 unsigned r5sound_selected(void){return LOAD(&run.selected);}
 const char*r5sound_status(void){
- if(LOAD(&run.request))return "正在启用";
+ if(LOAD(&run.request)||LOAD(&run.resuming))return "正在启用";
  switch(LOAD(&run.status)){
  case S_SCAN:return "正在导入声音包";
  
@@ -59,6 +59,7 @@ const char*r5sound_status(void){
  }
 }
 int r5sound_request(unsigned i){
+ if(LOAD(&run.resuming))return 1;
  if(!LOAD(&run.published)||i>run.catalog.count||run.fault)return -1;
  uint32_t z=0;if(!__atomic_compare_exchange_n(&run.request,&z,i+1,0,__ATOMIC_ACQ_REL,__ATOMIC_ACQUIRE))return 1;
  return 0;
@@ -143,15 +144,30 @@ void r5sound_boot(void){
  unsigned step=5;int vol=r5sound_volume_load(&s,&step);STORE(&run.step,step);logit("VOLUME_LOAD",0,vol,&step,1);
  int sel=r5sound_selection_load(&s,&run.catalog,&selected);if(sel)logit("SELECTION_LOAD_FAILED",0,sel,0,0);
  if(r5_lut_directory_release(&d)){rc=-1;goto done;}
+ /* The first published library already belongs to this admitted session.
+  * A menu request before the worker's first service tick must not be erased
+  * by treating a nonzero initial power epoch as a retained resume. */
+ run.epoch=r5_session_epoch();
  STORE(&run.published,1);r5sound_menu_catalog_changed();rc=0;
  if(selected)(void)r5sound_request(selected);
 done:
  if(c)run.free(c);
  if(rc<0)STORE(&run.status,S_BOOT_ERROR);
 }
-static void diagnostic(const char*stage,int rc){uint32_t v[R5SS_BRIDGE_DIAG_WORDS];r5ss_bridge_diagnostics(v);logit(stage,run.desired?r5sound_name(run.desired):0,rc,v,R5SS_BRIDGE_DIAG_WORDS);}
+static void diagnostic(const char*stage,int rc){
+ uint32_t v[R5SS_BRIDGE_DIAG_WORDS];r5ss_bridge_diagnostics(v);
+ logit(stage,run.desired?r5sound_name(run.desired):0,rc,v,R5SS_BRIDGE_DIAG_WORDS);
+ /* Preserve the existing bridge wire format. Its successful last snapshot
+  * does not identify a later allocator, copy or table-registration failure. */
+ const uint32_t backend[]={1,run.backend.fault,run.backend.last_native,
+  run.backend.cleanup_fault,run.backend.cleanup_native,
+  run.backend.registered,run.backend.cp_owned,run.backend.ap_owned,run.backend.mapped,
+  (uint32_t)run.backend.cp.handle,(uint32_t)run.backend.ap.handle,
+  run.epoch,r5_session_epoch()};
+ logit("BACKEND_STATE",0,rc,backend,sizeof backend/sizeof backend[0]);
+}
 static void end_request(unsigned status,int fault){
- STORE(&run.status,status);STORE(&run.request,0);run.changing=0;
+ STORE(&run.status,status);STORE(&run.request,0);run.changing=run.restoring=0;
  if(fault||status==S_POLICY||status==S_PLAY_ERROR){STORE(&run.selected,0);(void)r5ss_configure(&run.scheduler,0,0);}
  if(fault)run.fault=1;
  if(!fault&&run.selected&&run.backend.registered){
@@ -179,16 +195,40 @@ static int save_config(unsigned index,unsigned step){
  struct r5_lut_directory d;r5sound_storage s;int rc=directory(&d,&s);
  if(!rc){rc=step?r5sound_volume_save(&s,step):r5sound_selection_save(&s,&run.catalog,index);if(r5_lut_directory_release(&d))rc=-1;}return rc;
 }
+static int resume_config(void){
+ struct r5_lut_directory d;r5sound_storage s;unsigned step=5,selected=0;
+ if(directory(&d,&s))return -1;
+ int vol=r5sound_volume_load(&s,&step);
+ int sel=r5sound_selection_load(&s,&run.catalog,&selected);
+ int close=r5_lut_directory_release(&d);
+ if(vol<0||sel<0||close||!r5_session_current())return -1;
+ STORE(&run.step,step);run.restoring=1;
+ STORE(&run.request,selected+1);return 0;
+}
 int r5sound_service(void){
- if(!r5_session_current()||!LOAD(&run.published)||run.fault)return 0;
+ if(!r5_session_current()||!LOAD(&run.published))return 0;
  uint32_t epoch=r5_session_epoch();
  if(run.epoch!=epoch){
-  run.epoch=epoch;(void)r5ss_configure(&run.scheduler,0,0);
-  if(r5ss_bridge_bind_epoch(epoch)){end_request(S_QUERY,run.token!=0);return 0;}
-  if(run.backend.registered&&r5ss_native_owner_check17(run.backend.cp.physical,run.backend.installed_bytes)){
-   diagnostic("RESUME_OWNER_FAILED",-1);end_request(S_REGISTER,1);return 0;
-  }
+  if(r5ss_configure(&run.scheduler,0,0))return 1;
+  run.epoch=epoch;STORE(&run.resuming,1);STORE(&run.selected,0);
+  STORE(&run.request,0);run.changing=run.restoring=run.retry=0;
+  __atomic_add_fetch(&run.revision,1,__ATOMIC_RELEASE);
+  if(r5ss_bridge_bind_epoch(epoch)){STORE(&run.resuming,0);end_request(S_QUERY,1);return 0;}
  }
+ if(LOAD(&run.resuming)){
+  /* The backend queries original DMM ownership and drains native playback.
+   * An AP power epoch alone never permits reuse/free of a numeric handle. */
+  int rc=r5ss_backend_resume(&run.backend);
+  if(rc>0)return 1;
+  if(rc<0){diagnostic("RESUME_RESOURCE_FAILED",rc);STORE(&run.resuming,0);end_request(S_REGISTER,1);return 0;}
+  rc=r5ss_reset_retired(&run.scheduler);if(rc>0)return 1;
+  if(rc<0){STORE(&run.resuming,0);end_request(S_REGISTER,1);return 0;}
+  if(run.audio){run.free(run.audio);run.audio=0;run.backend.encoded=0;}
+  run.fault=0;
+  if(resume_config()){STORE(&run.resuming,0);end_request(S_BOOT_ERROR,0);return 0;}
+  STORE(&run.resuming,0);logit("RESUME_RELOAD",0,0,&epoch,1);
+ }
+ if(run.fault)return 0;
  if(run.retry){run.retry--;return 1;}
  uint32_t request=LOAD(&run.request);
  r5ss_native_policy policy;
@@ -213,7 +253,7 @@ int r5sound_service(void){
   }
   if(!run.desired){
    int rc=0;
-   if(!run.persisted){rc=save_config(0,0);logit("SELECT_OFF_SAVE",0,rc,0,0);if(rc){end_request(S_SAVE_ERROR,0);return 0;}run.persisted=1;}
+   if(!run.persisted&&!run.restoring){rc=save_config(0,0);logit("SELECT_OFF_SAVE",0,rc,0,0);if(rc){end_request(S_SAVE_ERROR,0);return 0;}run.persisted=1;}
    if(!r5_session_current()){end_request(S_OFF,0);return 0;}
    rc=run.token?r5ss_backend_unload(&run.backend):0;if(rc>0)return 1;if(rc<0){diagnostic("UNLOAD_FAILED",rc);end_request(S_REGISTER,1);return 0;}
    STORE(&run.selected,0);logit("SELECT_OFF",0,0,0,0);end_request(rc?S_SAVE_ERROR:S_OFF,0);return 0;
@@ -225,7 +265,7 @@ int r5sound_service(void){
    /* Persist the independent volume before changing CP audio. A failed write
     * leaves the previous bank untouched. Native uncertainty later disables
     * playback and pins its lease; it is never called a successful rollback. */
-   {
+   if(!run.restoring){
     int saved=save_config(run.desired,run.volume_request?run.target_step:0);
     logit(run.volume_request?"VOLUME_SAVE":"SELECTION_SAVE",0,saved,run.volume_request?&run.target_step:&run.desired,1);
     if(saved){end_request(S_SAVE_ERROR,0);return 0;}
@@ -254,9 +294,9 @@ int r5sound_service(void){
   unsigned active=r5ss_bridge_active();r5ss_ops ops=r5ss_backend_ops(&run.backend);int rc=r5ss_tick(&run.scheduler,&ops);
   if(active&&!r5ss_bridge_active()&&!run.logged_done){logit("PLAY_COMPLETE",r5sound_name(run.selected),0,0,0);run.logged_done=1;}
   if(rc<0){diagnostic("PLAY_FAILED",rc);end_request(S_PLAY_ERROR,1);return 0;}
-  /* Record the first accepted Start per selection, not every burst frame.
-   * ACK proves admission only; speaker output remains a device test. */
-  if(!run.logged_play&&run.scheduler.starts!=run.last_start){logit("PLAY_ACCEPTED",r5sound_name(run.selected),0,&run.scheduler.starts,1);run.logged_play=1;}
+  /* Native async Start returns after enqueue. Completion and retirement are
+   * observed separately; this event does not prove CP admission or sound. */
+  if(!run.logged_play&&run.scheduler.starts!=run.last_start){logit("PLAY_QUEUED",r5sound_name(run.selected),0,&run.scheduler.starts,1);run.logged_play=1;}
   if(!run.logged_stop&&run.scheduler.stops!=run.last_stop){logit("STOP_ACCEPTED",r5sound_name(run.selected),0,&run.scheduler.stops,1);run.logged_stop=1;}
  }
  return 1;

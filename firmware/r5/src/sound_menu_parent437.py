@@ -21,7 +21,10 @@ def patch_sound_group(image,descriptor,volume_descriptor):
  if [struct.unpack_from('<Q',result,g+16+i*24)[0] for i in range(8)]!=EXPECTED_IDS:raise ValueError('Unexpected original peer IDs')
  if bytes(result[a:a+48])!=bytes(48):raise ValueError('New record reserve is not empty')
  for pointer in (descriptor,volume_descriptor):
-  if not (0x8ea0000<=pointer<0x8ed0000) or pointer%8:raise ValueError('Descriptor outside current mapped private BSS')
+  if pointer%8 or not any(s['p_type']=='PT_LOAD' and s['p_flags']==6 and
+      s['p_filesz']==0 and s['p_vaddr']<=pointer and
+      pointer+0xc0<=s['p_vaddr']+s['p_memsz'] for s in elf.iter_segments()):
+   raise ValueError('Descriptor outside current mapped private BSS')
  changes=[]
  def edit(at,after):
   before=bytes(result[at:at+len(after)]);result[at:at+len(after)]=after

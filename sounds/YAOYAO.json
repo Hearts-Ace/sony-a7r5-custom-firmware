@@ -1,0 +1,83 @@
+{
+  "format": "R5SNDF0/v1",
+  "version": 1,
+  "bytes": 155936,
+  "sample_rate": 24000,
+  "pcm_frames": 15047,
+  "duration_seconds": 0.6269583333333333,
+  "encoded_bytes_per_step": 15552,
+  "steps": 10,
+  "source_wav_sha256": "b442e5c368a7d7ab5209715106c6db6e5d0538f7cc1a595a8a77c5a374a83131",
+  "header_crc32": "6ab60782",
+  "sha256": "f8ec47f831ca25c9a0d5f5f86e5d766d7b4d8751d00be27ffbc453a42fcd4769",
+  "header_sha256": "47feb3d07e2912bf3a69b168e068514d9ffa897de0f2d2a5aa39893e943a7eb8",
+  "catalog_identity": {
+    "algorithm": "sha256",
+    "scope": "first_416_bytes",
+    "value": "47feb3d07e2912bf3a69b168e068514d9ffa897de0f2d2a5aa39893e943a7eb8",
+    "purpose": "camera catalog e.sha and internal R5SN filename; header commits all ten payload hashes"
+  },
+  "payloads": [
+    {
+      "step": 1,
+      "percent": 10,
+      "bytes": 15552,
+      "sha256": "ac49345009a6885e7fa27a26702a0163dc3ac8643ff0ebc07ca02b4bb96da454"
+    },
+    {
+      "step": 2,
+      "percent": 20,
+      "bytes": 15552,
+      "sha256": "a1d677318685a096c8e8288fe317eccc416c2989e47e7f69cdf56a45b18539a6"
+    },
+    {
+      "step": 3,
+      "percent": 30,
+      "bytes": 15552,
+      "sha256": "bf2a3cf8c4eeb00e618729ad96fcc1892314be8fc115e7386fbdb6ba06d017cb"
+    },
+    {
+      "step": 4,
+      "percent": 40,
+      "bytes": 15552,
+      "sha256": "e4839a51b8dea32af75bf0715867f1a6a7e4b9fcf428ba079d6d9be813259699"
+    },
+    {
+      "step": 5,
+      "percent": 50,
+      "bytes": 15552,
+      "sha256": "1e6bc93578a111c63a26041f9eacb9d8cf1d1a160701207a4c4684a118c835c1"
+    },
+    {
+      "step": 6,
+      "percent": 60,
+      "bytes": 15552,
+      "sha256": "a0bf4b2c45e42f09cabd31cd93eb367a4ee8c4be821393e166cb5d11e63eb6fc"
+    },
+    {
+      "step": 7,
+      "percent": 70,
+      "bytes": 15552,
+      "sha256": "a91824b0c8bf1ac79c49ae8b4f60ae71da58d8088284ca3b55436e0c20616e8c"
+    },
+    {
+      "step": 8,
+      "percent": 80,
+      "bytes": 15552,
+      "sha256": "406b0e51513b4deba2d53c568bc4a67732b64a5321290c2810be952fe1b213db"
+    },
+    {
+      "step": 9,
+      "percent": 90,
+      "bytes": 15552,
+      "sha256": "2ebb0600e8f24245028d6e43bfb3efa88d366af840ef4cc6947530d680dfbe97"
+    },
+    {
+      "step": 10,
+      "percent": 100,
+      "bytes": 15552,
+      "sha256": "8207e465cda2576d0138144b9bcc9c4eb5bedd2ba868d572ec5c5912b41007dd"
+    }
+  ],
+  "guard_bytes_stored": 0
+}

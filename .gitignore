@@ -41,3 +41,6 @@ analysis/sony_write_path_20261008/reference/
 !R5FlashWorkbench/engine/templates/*.so
 !R5FlashWorkbench/engine/vendor/
 !R5FlashWorkbench/engine/vendor/**
+
+# Explicitly authorized downloadable sound bundle
+!sounds/R5-Sounds-4.55.zip

@@ -1,32 +1,33 @@
 {
-  "schema": "r5-preempt448-reproduction-contract/1",
-  "version": "4.48",
+  "schema": "r5-sound455-reproduction-contract/1",
+  "version": "4.55",
   "unique_entry": "build.py",
   "original_input_identity": "inputs.lock.json",
   "expected_outputs": {
-    "AP": "77e2bf6caa75089ae445928e16e3b6eff5c866eff4a5afa29ee4649e1fe74a87",
+    "AP": "23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6",
     "CP": "bbae506511291eb3daab9befaaf80449e4e93d5200975fb68716a3772898e709",
-    "nflasha15": "261360b6fe4933434e58fe00d767cc58aa8dac16791b22a678671df4b88f3620",
+    "nflasha15": "06dcf249a3138ef81c70d5e384375454353215d2aa01fa0b7eb8887d14644a1a",
     "nflasha8": "a73be9de2c2d1087ad2aac3d639293638a48377466310c8c015cafb0e889f693",
     "nflasha5": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693",
-    "archive": "d08fc318ccbc30a07bb1a6f040d214d3cfb7988afde83451ea40d1a47b993066",
-    "DAT": "5f4e2dc9789d5018ed35a84f7986d069a980ab01d0356bfbac653076cbdae25c"
+    "archive": "6c0f53875996923cf835efb60de1cce1cc257c041cae4d24aa99fec3160f9db8",
+    "DAT": "e6376d3836cb1fdfc65c7cfaf314044af96bde3442fc2a699c0841a4d2c6feef"
   },
-  "expected_outputs_status": "Six body outputs exact reviewed4.46; saved448 DAT independently reviewed; final frozen ZIP isolated build reported externally",
+  "expected_outputs_status": "Reviewed sound-only build3; final source ZIP isolated reproduction bound externally",
   "previous_version_scripts_required": false,
   "previous_version_generated_outputs_required": false,
-  "runtime_scope": "Install version only; all runtime sources, AP/CP and six body outputs exact sound4.46",
-  "required_final_evidence": [
-    "Version/header/signature/CRC/full plaintext independently reviewed",
-    "Runtime source and six body identities exact frozen sound4.46",
-    "Final-source ZIP isolated build.py --stage all reproduces exact outputs"
-  ],
-  "result_location": "analysis/r5_sound448_version_20261104/final-validation.json",
-  "reference_rule": "External freeze binds final source lock and independent receipts without self-reference",
+  "runtime_scope": "R5 native asynchronous sound Start, retirement/rejection handling and eMMC sound restoration on a new session",
+  "six_slot_repair_included": false,
+  "grid_changes_included": false,
+  "package_review": "analysis/r5_454_regressions_20261105/native-lifecycle/review455/package-review-sound-only.json",
+  "package_review_sha256": "fff14392cf93f455e396337bbcddd97227fffc793be5a371068fafa257242b1d",
+  "functional_evidence": "analysis/r5_454_regressions_20261105/burst/continuous-build3-summary.json",
+  "result_location": "analysis/r5_454_regressions_20261105/final-validation.json",
+  "reference_rule": "External final receipt binds source ZIP, source lock, tested AP/CP, package and isolated reproduction",
   "camera_io": false,
   "physical_LCD_or_speaker_or_WBI_verified_by_host": false,
-  "component_review": "analysis/r5_sound446_preempt_20261103/review/components-reviewed.json",
-  "component_review_sha256": "061f680131797753776588154a76b8acc845b5ae83d326261b92cddc9439965c",
-  "package_review": "analysis/r5_sound448_version_20261104/review/package-review.json",
-  "package_review_sha256": "0ddafe182ffb3689b9297806ffbb225ed8a533b24555d7ee59b4d0a273c435cb"
+  "limitations": [
+    "OS, transport, allocator and hardware endpoints include explicit fixtures",
+    "Playback interrupted across a session with lost completion remains conservatively busy",
+    "Original synchronous Stop and DMM RPC wait semantics remain unchanged"
+  ]
 }

@@ -1,26 +1,24 @@
-# Sony A7R V / R5 自定义滤镜与声音 4.48
+# Sony A7R V / R5 自定义滤镜与声音 4.55
 
-4.48支持下一次拍摄打断当前快门声：沿原厂停止命令及完成清理后，从头播放最新一拍，快速连拍只保留最新待处理触发。包含声音/音量菜单刷新、机外R5S转换与十档音量；保留4.36滤镜/网格、固定C.Look图标、Fn手动注册、R6 ST、FL2/FL3参数保留，以及白色优先97/氛围−1。4.48仅将已审声音4.46安装版本升号，全部运行代码及六主体保持。
+4.55把快门声改为原生异步播放，使下一次曝光能停止当前声音并重播最新一拍；普通关机再开后从eMMC重载已保存的声音、选择及音量。保留十档音量、R5S机外转换和4.36滤镜功能。完整源码、六槽回读/解放工具及10份现成音频包均已提供。
 
 - [完整固件源码与唯一构建入口](firmware/r5/README.md)
+- [六槽回读与解放工具](tools/r5-slots/README.md)
+- [音频包及使用说明](sounds/README.md) · [下载声音ZIP](sounds/R5-Sounds-4.55.zip)
 - [最新十二款滤镜BIN](filters/FUJ_12_v45/README.md)
-- [滤镜工作台、训练方案及网格算子](https://github.com/Hearts-Ace/sony-r5-colorlab)
-- [macOS刷写台0.2.1完整源码](R5FlashWorkbench/README.md)（该独立应用仍以4.36为目标）
-- [4.48发布校验摘要](publication/4.48/validation.json) · [完整源码映射](publication/4.48/source_mapping.json)
-
-## 完整脚本
+- [滤镜训练与网格工作台](https://github.com/Hearts-Ace/sony-r5-colorlab)
+- [macOS刷写台0.2.1源码](R5FlashWorkbench/README.md)（独立应用仍以4.36为目标）
+- [4.55验证摘要](publication/4.55/validation.json) · [完整源码映射](publication/4.55/source_mapping.json)
 
 ```sh
 python3 -m pip install -r firmware/r5/requirements.txt
 python3 firmware/r5/build.py --inputs /path/to/inputs.json --output /path/to/new-output --stage all
 ```
 
-自行提供inputs.lock.json要求的原厂R5 4.00输入、外部签名材料和匹配工具链；不依赖历史版本脚本、历史生成件或研究目录。输出目录必须不存在。电脑声音转换器同时包含在firmware/r5/host/。
+自行提供inputs.lock.json匹配的原厂R5 4.00输入、外部签名材料和工具链。源码共246文件，可独立编译封装；最终本地源码ZIP隔离重建、完整包独立验签/CRC/全部明文检查通过。实际AP/CP指令回放覆盖连拍Stop/重播、异步拒绝及保留内存的暖恢复，实体扬声器/时序/WBI仍待验。播放中断电且完成回调丢失仍保守等待。
 
-## 验证与发布
+独立槽位工具只把本机新读BACKUP.BIN/BAK的六个LOOK值00补为0A/0B，保留颜色、其他设置与UPDATER；固件没有加入启动自动补槽。对应本机原入口已完成6扇区/15字节写入及完整20MiB logical/raw回读，公开适配仅离线验证，详见工具说明。
 
-最终本地244文件源码ZIP隔离完整重建、RSA/OpenSSL验签、篡改拒绝、CRC和全部明文核对通过。168份运行源及六主体与声音4.46全等，相关宿主与原指令回放按身份复用；4.48实体安装、扬声器/连拍时序、LCD与启动/WBI待机身验收。
+本仓库发布源码、脚本、滤镜BIN、R5S音频包与脱敏校验摘要。完整DAT/AP/CP、机身备份、签名材料、私人照片及设备原始日志不发布。4.55本地DAT为754525608字节，SHA256 `e6376d3836cb1fdfc65c7cfaf314044af96bde3442fc2a699c0841a4d2c6feef`。独立照片/PPLUT分支未合入。
 
-本仓库沿用源码发布方式，公开完整源码、打包脚本、滤镜BIN和脱敏校验摘要。完整DAT/AP/CP、原机备份、签名密钥、私人照片和原始设备日志不随仓库分发；本地DAT身份为754525608B，SHA256 `5f4e2dc9789d5018ed35a84f7986d069a980ab01d0356bfbac653076cbdae25c`。独立照片/LUT研究不包含在本声音版本。
-
-色彩训练与网格标定维护于[sony-r5-colorlab](https://github.com/Hearts-Ace/sony-r5-colorlab)，本仓库保留可直接导入的最新BIN。参考项目、致谢与许可见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)；历史提交和发布回执保留各自版本身份。
+参考项目、来源和许可见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。历史提交/回执保留各自身份，旧路径不是当前构建入口。

@@ -1,0 +1,46 @@
+{
+  "schema": "r5-audio-publication/1",
+  "user_explicitly_authorized_audio_publication": true,
+  "published_R5S_count": 10,
+  "initial_two_pack_validation": {
+    "passed": true,
+    "files": {
+      "YAOYAO.R5S": {
+        "bytes": 155936,
+        "sha256": "f8ec47f831ca25c9a0d5f5f86e5d766d7b4d8751d00be27ffbc453a42fcd4769",
+        "header_sha256": "47feb3d07e2912bf3a69b168e068514d9ffa897de0f2d2a5aa39893e943a7eb8",
+        "ten_payloads_verified": true
+      },
+      "YEAH.R5S": {
+        "bytes": 276576,
+        "sha256": "35369fbb8880c56f9af360faca95674f7e4582bd208f8927a8ae5f76b24ba204",
+        "header_sha256": "406f64ddf3d1e91ba7f2f4892b1c854e7455a03777b711281bfd47e604b96204",
+        "ten_payloads_verified": true
+      }
+    },
+    "same_R5S_bytes_as_local_455_delivery": true,
+    "scope": "Only YAOYAO.R5S and YEAH.R5S; not the final ten-pack ZIP"
+  },
+  "additional_packs": {
+    "source_batch": "2026-11-04",
+    "files": [
+      "Ciallo.R5S",
+      "WOCAO.R5S",
+      "YYLX.R5S",
+      "ZBS.R5S",
+      "ZYJH.R5S",
+      "你干嘛.R5S",
+      "兔娘caliio.R5S",
+      "遥遥领先.R5S"
+    ],
+    "copied_existing_files": true,
+    "revalidation_performed": false,
+    "reencoding_performed": false,
+    "reason": "User requested locating files only, without validation",
+    "historical_conversion_notes": "sounds/CONVERSION_NOTES.md"
+  },
+  "source_audio_uploaded": false,
+  "personal_paths_excluded_from_public_JSON": true,
+  "physical_audio_acceptance_verified": false,
+  "zip_bytes": 2009409
+}

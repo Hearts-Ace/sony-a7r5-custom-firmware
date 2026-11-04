@@ -32,4 +32,8 @@ int r5ss_tick(r5ss_scheduler *,const r5ss_ops *);
 /* Only after an independently verified new CP session. Does not release or
  * reuse a numeric resource handle; backend must acquire fresh ownership. */
 int r5ss_session(r5ss_scheduler *);
+/* Reset local exposure history only after the caller has independently
+ * proved native retirement. Requires disabled scheduling; grants no native
+ * resource authority and does not assert that the CP has rebooted. */
+int r5ss_reset_retired(r5ss_scheduler *);
 #endif

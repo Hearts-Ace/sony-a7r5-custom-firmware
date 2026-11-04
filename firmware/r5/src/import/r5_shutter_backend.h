@@ -11,7 +11,7 @@ typedef struct {
  uint32_t session_witness,offered_generation,installed_generation;
  uint32_t encoded_bytes,padded_bytes,registered,cp_owned,ap_owned,mapped,fault;
  uint32_t starts,stops,imports,last_native,abandoned,volume_step;
- uint32_t installed_bytes;
+ uint32_t installed_bytes,cleanup_fault,cleanup_native;
  const uint8_t *encoded;
  r5ss_dmm_extent ap,cp;
  r5ss_mem_map_reply map;
@@ -26,6 +26,11 @@ int r5ss_backend_session(r5ss_native_backend *b,uint32_t cp_session_witness);
  * no kind17 pending, actor/MMIO idle. A later successful native CLAIM creates
  * real ownership. This does not assert that the whole CP just rebooted. */
 int r5ss_backend_first_authorize(r5ss_native_backend *b,uint32_t authorization_token);
+/* Worker-only after bridge epoch bind and scheduler mute. Revalidate native
+ * registry and DMM lease through read-only stock queries. 0 permits reloading
+ * internal R5S; positive waits for native retirement; negative pins unknown
+ * ownership. Never equate AP power/epoch with a fresh CP session. */
+int r5ss_backend_resume(r5ss_native_backend *b);
 /* Worker-only. Pins root-owned encoded staging through install completion;
  * no second staging copy lives in the backend. bytes+64 must be readable,
  * with every guard byte zero. Expected f0 payload is already converted and

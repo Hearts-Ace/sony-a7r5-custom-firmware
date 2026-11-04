@@ -17,6 +17,7 @@ extern int r5ss_bridge_stop_ready(void);
 /* Warm registry physical+bytes must still match our owned lease. Real ACK:
  * 0=match;1=pending;negative=absent/mismatch/unknown (including CP reset). */
 extern int r5ss_native_owner_check17(uint64_t physical,uint32_t encoded_bytes);
+extern int r5ss_native_resume_check17(uint64_t,uint32_t,uint32_t *);
 
 static int bad(r5ss_native_backend *b,uint32_t why){
  b->fault=why;return R5SS_NATIVE;
@@ -32,21 +33,24 @@ static int drop_ap(r5ss_native_backend *b){
  if(b->mapped){
   const r5ss_mem_unmap_request r={b->map.map_base,b->map.map_bytes,b->map.fd};
   r5ss_native_mem_unmap(&r,&status);b->last_native=status;
-  if(status)return bad(b,0x31u);
+  if(status){b->cleanup_fault=0x31u;b->cleanup_native=status;return bad(b,0x31u);}
   b->mapped=0;
  }
  if(b->ap_owned){
   const r5ss_dmm_release_request r={(uint32_t)b->ap.handle};status=~0u;
   r5ss_native_dmm_release(&r,&status);b->last_native=status;
-  if(status)return bad(b,0x32u);
+  if(status){b->cleanup_fault=0x32u;b->cleanup_native=status;return bad(b,0x32u);}
   b->ap_owned=0;
  }
  return R5SS_OK;
 }
 static int fail_import(r5ss_native_backend *b,uint32_t why){
  /* CP lease is deliberately retained. An ACK failure must never free data
-  * that a native registry/transfer could still reference. */
- (void)drop_ap(b);return bad(b,why);
+  * that a native registry/transfer could still reference. Cleanup has a
+  * separate diagnostic: successful unmap/release must not erase the first
+  * native failure, and a cleanup failure must not replace its identity. */
+ uint32_t native=b->last_native;
+ (void)drop_ap(b);b->last_native=native;return bad(b,why);
 }
 int r5ss_backend_session(r5ss_native_backend *b,uint32_t witness){
  if(!b||!witness)return R5SS_INVALID;
@@ -60,6 +64,66 @@ int r5ss_backend_first_authorize(r5ss_native_backend *b,uint32_t token){
  if(!b||!token||b->session_witness||b->cp_owned||b->ap_owned||b->registered||b->mapped)
   return R5SS_INVALID;
  b->session_witness=token;return R5SS_OK;
+}
+/* Original AP352135C is a generic synchronous IPC wrapper. CP DMM cmd28
+ * GetUnitInfo and cmd2A Open(mode1001) only observe; no Share/Open/Close or
+ * stale numeric Release occurs. Both replies must describe the same lease.
+ * Return1 only when BOTH stock queries report unused/stale generation. */
+static int resume_lease(r5ss_native_backend *b){
+ int stale=0;
+ for(uint32_t command=0x28u;command<=0x2au;command+=2){
+  uint32_t request[10]={0},reply[10]={0};
+  request[0]=command;request[2]=(uint32_t)b->cp.handle;
+  r5ss_native_sysnd_command(0x9061003cu,request,sizeof request,reply,
+                           command==0x28u?24u:40u);
+  int status=(int16_t)(reply[0]>>16);
+  if((reply[0]&0xffffu)!=(command|0x8000u)||(reply[1]>>16))return -1;
+  if(status){
+   b->last_native=(uint32_t)status;
+   if(status!=-5&&status!=-1)return -1;
+   if(command==0x28u)stale=status;
+   else if(stale!=status)return -1;
+  }else{
+   if(stale||(reply[2]&0xffffu)!=1u)return -1;
+   if(command==0x28u){
+    if(!(reply[2]>>16)||(reply[2]>>16)>255u||!(reply[3]&0xffffu)||
+       (reply[3]&0xffffu)>255u||reply[4]!=R5SS_NATIVE_CAPACITY||reply[5]!=0x70817u)return -1;
+   }else if(reply[3]!=(uint32_t)b->cp.handle||reply[6]!=(uint32_t)b->cp.physical||
+       reply[7]!=(uint32_t)(b->cp.physical>>32)||reply[8]!=R5SS_NATIVE_CAPACITY)return -1;
+  }
+ }
+ return stale?1:0;
+}
+int r5ss_backend_resume(r5ss_native_backend *b){
+ if(!b)return R5SS_INVALID;
+ if(!b->session_witness){
+  if(b->cp_owned||b->ap_owned||b->mapped||b->registered||b->fault)return R5SS_INVALID;
+  uint32_t registered=0;return r5ss_native_resume_check17(0,0,&registered);
+ }
+ /* A failed AP unmap/release needs independent ownership evidence. Retained
+  * pointers and an AP epoch cannot authorize retrying those old operations. */
+ if(b->mapped||b->ap_owned||b->cleanup_fault)return bad(b,0x81u);
+ if(b->cp_owned&&!extent(&b->cp,1))return bad(b,0x82u);
+ uint32_t registered=0;
+ int state=r5ss_native_resume_check17(b->cp_owned?b->cp.physical:0,
+                                     b->installed_bytes,&registered);
+ if(state)return state<0?bad(b,0x83u):state;
+ int stale=b->cp_owned?resume_lease(b):0;
+ if(stale<0)return bad(b,0x82u);
+ /* Queries can block across a power notification. Recheck current epoch,
+  * pending requests and exact registry immediately before any mutation. */
+ state=r5ss_native_resume_check17(b->cp_owned?b->cp.physical:0,
+                                 b->installed_bytes,&registered);
+ if(state)return state<0?bad(b,0x83u):state;
+ if(registered){
+  r5ss_table_request remove={0};uint32_t status=~0u;remove.kind=R5SS_NATIVE_KIND;
+  r5ss_native_set_table(&remove,&status);b->last_native=status;
+  if(status)return bad(b,0x84u);
+ }
+ b->registered=0;b->installed_generation=0;b->installed_bytes=0;
+ if(stale){b->cp_owned=0;b->cp=(r5ss_dmm_extent){0};b->abandoned++;}
+ b->encoded=0;b->offered_generation=0;b->encoded_bytes=0;b->padded_bytes=0;
+ b->fault=0;b->last_native=0;return R5SS_OK;
 }
 int r5ss_backend_stage(r5ss_native_backend *b,uint32_t generation,
                        const uint8_t *encoded,uint32_t bytes,uint32_t padded,
@@ -170,7 +234,8 @@ int r5ss_backend_install(void *ctx,uint32_t generation){
 int r5ss_backend_unload(r5ss_native_backend *b){
  if(!b||!b->session_witness||b->fault)return R5SS_NATIVE;
  /* poll authenticates exact registry physical/length before any remove.
-  * A completion witness and actor/pending/MMIO retirement are required.
+  * The bridge proves native completion or async reply drain together with
+  * actor/pending/MMIO retirement before releasing the extent.
   * Unknown/failed native state retains the lease; no forced free. */
  int state=r5ss_backend_poll(b);if(state)return state<0?state:R5SS_BUSY;
  uint32_t status=~0u;
@@ -203,9 +268,12 @@ int r5ss_backend_start(void *ctx,uint32_t generation,uint32_t serial){
  if(state)return state<0?state:R5SS_BUSY;
  int armed=r5ss_native_start_arm17();
  if(armed)return armed<0?bad(b,0x62u):R5SS_BUSY;
- /* byte9=1 requests original synchronous admission ACK instead of the
-  * asynchronous enqueue-only return. Native CP handles the original kind. */
- const uint32_t request[3]={R5SS_NATIVE_KIND,0,0x100u};
+ /* The original synchronous Start replies from native completion, not
+  * admission. Waiting here prevents this same worker from sending Stop for
+  * the next exposure. Use the original one-shot async branch (byte9=0).
+  * Its return proves enqueue only: the armed bridge retains ownership until
+  * native completion or reply drain and actor/packet/MMIO checks pass. */
+ const uint32_t request[3]={R5SS_NATIVE_KIND,0,0};
  int32_t status=-1;r5ss_native_sysnd_start(request,&status);
  b->last_native=(uint32_t)status;
  if(status)return bad(b,0x61u);
