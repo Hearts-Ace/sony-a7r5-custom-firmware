@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scope": "Existing12 completed jobs exported by public standalone source without retraining",
+  "batch": "c29ff1d3ef314d718ab370cf6ed2bfb6",
+  "entries": 12,
+  "BIN_sha256": "2e9c60c1f7858940e366aa1b0f2c0c089347445c9c286c0c938a40a35610caee",
+  "BIN_bytes": 29552,
+  "model_sha256": "e794ece2fe8f4114eb241e376918bffbc4c182e9fadf0f6fa21d99fdd7a1b552",
+  "all_12_compression_report_and_saved_source_identities_verified": true,
+  "all_12_exported_entries_byte_exact_saved": true,
+  "combined_recompile_byte_exact": true,
+  "independent_codec_roundtrip": true,
+  "source_files_unchanged": true,
+  "current_workbench_sources_already_published_in_parent_commit": "fb464bdef54cae7b56092bd35d35dc3542793ff3",
+  "new_training_or_GPU_runs": false,
+  "device_io": false
+}

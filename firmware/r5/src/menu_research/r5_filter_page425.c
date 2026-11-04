@@ -1,6 +1,7 @@
 /* 4.32: private Creative-Look D9 shell. Source-bound Sony widgets, no new
  * global resources or changes to the factory Creative Look model. */
 #include "r5_filter_menu423.h"
+#include "r5_sound_menu437.h"
 #include <stdint.h>
 #include <stddef.h>
 extern char r5_filter_page_anchor[];
@@ -267,6 +268,40 @@ uint64_t r5_filter_parent_presenter425(uint64_t i,uint64_t view,uint64_t context
  /* Preserve original construction. Native pop owns parent reconstruction and
   * initial update; no cached pointer or premature parent repaint is retained. */
  return ((F6)A(0x1d90c7c))(i,view,context,pi,scene,layout);
+}
+/* Native main-menu scenes use distinct original controller dispatch and
+ * presenter layouts. Resolve only the currently owned GUI objects; completion
+ * stays pending while an option page owns the slots. */
+static uintptr_t sound_parent_presenter(uintptr_t controller,unsigned scene,uintptr_t table,uintptr_t update){
+ uintptr_t manager=r64(controller+0x180);
+ if(!manager||r64(manager+0x398)!=controller)return 0;
+ uintptr_t p=r64(manager+0x338);
+ unsigned scene_offset=scene==0x2d7u?0x38u:0x58u;
+ if(p&&r64(p)==A(table)&&r32(p+scene_offset)==scene&&
+    r64(r64(p)+0x10)==A(update))return p;
+ return 0;
+}
+static uint64_t sound_menu_event(uint64_t controller,uint64_t message,uint64_t code,
+ unsigned scene,uintptr_t original,uintptr_t table,uintptr_t update){
+ uint64_t result=((F3)A(original))(controller,message,code);
+ if(code==0x20f0000u&&controller&&r32(controller+0x178)==scene){
+  unsigned id=mid();
+  uintptr_t presenter=(id==R5SOUND_MENU_ID||id==R5SOUND_VOLUME_MENU_ID)?sound_parent_presenter(controller,scene,table,update):0;
+  if(presenter&&r5sound_menu_gui_changed()){
+   ((F2)A(0x1bdfb0c))(controller,R5SOUND_MENU_ID);
+   ((F2)A(0x1bdfb0c))(controller,R5SOUND_VOLUME_MENU_ID);
+   /* This scene's original update projects both committed text and blocked
+    * state through its existing native widgets and current visible window. */
+   ((F2)A(update))(presenter,1);
+  }
+ }
+ return result;
+}
+uint64_t r5sound_menu_event2d6_443(uint64_t c,uint64_t m,uint64_t e){
+ return sound_menu_event(c,m,e,0x2d6u,0x1998208u,0x58c1400u,0x1d902bcu);
+}
+uint64_t r5sound_menu_event425(uint64_t c,uint64_t m,uint64_t e){
+ return sound_menu_event(c,m,e,0x2d7u,0x1998890u,0x58c1508u,0x1d90de8u);
 }
 uint64_t r5_filter_controller425(uint64_t i,uint64_t m,uint64_t c,uint64_t s,uint64_t p,uint64_t l){
  uintptr_t object;

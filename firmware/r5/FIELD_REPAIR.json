@@ -1,0 +1,19 @@
+{
+  "version": "4.46",
+  "base_source": "projects/firmware/development/shutter-sound-ui443",
+  "base_source_lock_sha256": "ad0ee27ca10cb9e12994a412dc870cf4348cd7d5acd4458b3758813e844a1c19",
+  "base_DAT_sha256": "a19f3a70ad3bdd5c5ab79b190259a534d8719b3a442ca16990c3e4a70af15ed8",
+  "scope": "Replace misbound public032A gain call with original public0329 operation2 stop; retain scheduler/CP/GUI/boot/ownership",
+  "runtime_changed": [
+    "src/import/r5_shutter_backend_native.c",
+    "src/import/native_loader_contract.h",
+    "src/dependencies/native_bindings.json"
+  ],
+  "camera_io": false,
+  "independent_photo_445_included": false,
+  "heap_or_BSS_added": false,
+  "CP_or_startup_changed": false,
+  "implementation_status": "implemented; final validation and delivery are bound by external-freeze.json",
+  "verification_result_location": "analysis/r5_sound446_preempt_20261103",
+  "user_requested_install_version": "4.46"
+}

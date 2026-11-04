@@ -9,6 +9,7 @@
 #include "r5_runtime_session.h"
 #include "r5_filter_runtime423.h"
 #include "r5_native_lut_directory.h"
+#include "r5sound_runtime.h"
 extern void r5_stage411_probe_run(uint32_t,uint32_t);
 extern int r5_log420_emit(unsigned,const char *,const uint32_t *,unsigned);
 extern void r5_grid420_watch(unsigned,uint32_t);
@@ -66,16 +67,16 @@ static uint32_t file_crc(const uint8_t *p){
         (uint32_t)p[114]<<16|(uint32_t)p[115]<<24;
 }
 void r5_stage411_initial(uint32_t a,uint32_t b) {
-    (void)r5_scan_gate_initial(&r5_stage411_state.scan,a,b);
+    (void)r5_scan_gate_initial(&r5_stage411_state.scan,a,b);r5sound_initial(a,b);
 }
 void r5_stage411_completed(uint32_t slot) {
-    (void)r5_scan_gate_completed(&r5_stage411_state.scan,slot);
+    (void)r5_scan_gate_completed(&r5_stage411_state.scan,slot);r5sound_completed(slot);
 }
 void r5_stage411_media(uint32_t slot,uint32_t status,uint32_t drive) {
     uint32_t value=0x80000000u;
     if(slot>1)return;
     if(!status&&drive>='A'&&drive<='Z')value|=0x40000000u|drive;
-    STORE(&r5_stage411_state.media[slot],value);
+    STORE(&r5_stage411_state.media[slot],value);r5sound_media(slot,status,drive);
 }
 /* Only after SD scan/close: no retained directory fd across event waits.
  * Cold startup only. Native unmount/suspend concurrency remains unproven. */
@@ -306,7 +307,9 @@ done:
 complete:
     s->result=(uint32_t)result;
     STORE(&s->terminal,1);STORE(&s->exited,1);STORE(&s->child_phase,4);
-    return 0;
+    /* Private worker readiness: do not add audio filesystem work when the
+     * original scheduler downgrade or clock/sleep binding failed. */
+    return (void *)(uintptr_t)(clock&&sleep);
 }
 
 /* Retained private ABI; SD updates are now exclusively a cold-start action. */

@@ -1,0 +1,43 @@
+{
+  "schema": "r5sound-native-scan-bindings/1",
+  "original_AP_sha256": "41bd8f4cda1f44c7038912837737e1ce6a650065f2108061ada30e5c7f9ce7c7",
+  "native_symbols": {
+    "r5_native_fsys_find_first": 57217480,
+    "r5_native_fsys_find_next": 57217528
+  },
+  "preimages": [
+    {
+      "name": "r5_native_fsys_find_first",
+      "va": "0x36911c8",
+      "file_offset": "0x36911c8",
+      "bytes": 48,
+      "sha256": "a8d0bd12ca6fad62201b7257a8024965a28997c8d4d47265e66a8d85d048c368",
+      "before": "fd7bbfa9e20301aae10f8012fd030091fe2181971f08007160000054fd7bc1a8f0feff1780008052fd7bc1a8c0035fd6"
+    },
+    {
+      "name": "r5_native_fsys_find_next",
+      "va": "0x36911f8",
+      "file_offset": "0x36911f8",
+      "bytes": 40,
+      "sha256": "76f629fc560e65b5d18f147d5e68cc89af3b9a1d18e8e1e28ac3af535adf8875",
+      "before": "fd7bbfa9fd030091502a81971f08007160000054fd7bc1a8e6feff1780008052fd7bc1a8c0035fd6"
+    }
+  ],
+  "ABI": {
+    "first": "int(const char *path, void *FILEINFO)",
+    "next": "int(void *FILEINFO)",
+    "first_attr": "Original AP wrapper supplies uint8 0x80 to three-argument raw export",
+    "success": 0,
+    "end": 4,
+    "raw_end": 2,
+    "FILEINFO_bytes": 3112,
+    "scratch_bytes": 4096,
+    "name_pointer_offset": 0,
+    "file_bytes_u64_offset": 8,
+    "attributes_u8_offset": 38,
+    "drive_letter_u8_offset": 40,
+    "directory_attribute": 16,
+    "iterator_close": "No FindClose export in this exact library; stock wrapper scans borrow the FILEINFO object. No open file/iterator handle is returned."
+  },
+  "scope": "Static original-byte evidence from capstone and ELF symbols; no REA MCP/native camera execution."
+}

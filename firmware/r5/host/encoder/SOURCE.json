@@ -1,0 +1,11 @@
+{
+  "source": "Frozen shutter-sound-menu441/src/import; provenance only, not a runtime dependency",
+  "files_sha256": {
+    "sound_core.h": "9fa799e361b77e96ecedc280f0c40f9ba60160b7a39e777a4fd8b9718ac05249",
+    "sound_parse.c": "1fb72ae5e2f57efc1f06fcfbd36e18ff6ef42d9118a493f854f3c8793c8781f3",
+    "sound_convert.c": "78a321a6e7efd2a567c69bddcc57b55f5460d1bd09d6c92434d470f81bc436fa",
+    "convert.h": "9295de82eaab76c09cc36fd6cd32435d2b01287e2e5021451cf17414286d45f0",
+    "kernel_q24.h": "3e090ee220f3f922776ec7a59183c65feaab661382999e32d183ffb03fa2d85b"
+  },
+  "unchanged": true
+}
