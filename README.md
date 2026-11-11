@@ -1,15 +1,15 @@
-# Sony A7R V / R5 自定义固件 4.58
+# Sony A7R V / R5 自定义固件 4.59
 
-4.58是当前唯一完整固件构建版本，包含自定义滤镜、异步快门声和新增拍摄比例1.618:1、2.39:1、5:4、1.85:1。JPG／HEIF及RAW组合共享预览按比例裁切，RAW原始像素保持全幅。原厂Fn纵横比样式保留，自定义滤镜Fn采用左简称、右当前全称。新增比例图标已统一并优化。
+4.59是当前唯一完整固件构建版本，包含自定义滤镜、异步快门声和新增拍摄比例1.618:1、2.39:1、5:4、1.85:1。相对4.58清除确认弃用的旧滤镜页面副本、旧renderer、GRID/E9观测链和无生产者reload分支；有效滤镜交易、PT、持久化、比例处理与声音流程保持。JPG／HEIF及RAW组合共享预览按比例裁切，RAW原始像素保持全幅。原厂Fn纵横比样式保留，自定义滤镜Fn采用左简称、右当前全称。
 
 - [完整源码与唯一构建入口](firmware/r5/README.md)
-- [4.58验证摘要](publication/4.58/validation.json) · [冻结源码映射](publication/4.58/source_mapping.json)
+- [4.59验证摘要](firmware/r5/evidence_manifest.json) · [4.59源码锁](firmware/r5/sources.lock.json)
 - [六槽回读与解放工具](tools/r5-slots/README.md)
 - [音频包](sounds/README.md) · [下载声音ZIP](sounds/R5-Sounds-4.55.zip)
 - [十二款滤镜BIN](filters/FUJ_12_v45/README.md)
 - [滤镜训练与网格工作台](https://github.com/Hearts-Ace/sony-r5-colorlab)
 
-本项目以魔改线方案为主，不再提供macOS刷写工作台。
+本项目以魔改线方案为主，不再提供macOS刷写工作台；六槽工具仅用于独立读取和限定设置修复，固件本身不自动补槽。
 
 ```sh
 python3 -m pip install -r firmware/r5/requirements.txt

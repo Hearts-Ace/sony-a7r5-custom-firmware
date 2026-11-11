@@ -1,28 +1,221 @@
 {
-  "parent_source": "projects/firmware/development/aspect457-icon-subpixel",
-  "parent_source_lock_sha256": "764790e373c36a400ce13939f80d5d5ec7ac000842d557c1afc5ceb0f896c66a",
-  "version": "4.58",
-  "confirmed_preview": "analysis/r5_icons_unified458_20261111",
-  "recipe_sha256": "79e238000268696db1194141237ac37e67e5eab39e88d2888bfa3fce10bd491e",
-  "resource_only_runtime": true,
-  "runtime_changes": [],
-  "five54_native_playback": "0x020048b2",
-  "middle_one_shift_px": {
-    "23": -1.3,
-    "32": -2
-  },
-  "camera_io": false,
-  "device_tested": false,
-  "unified_scheme": "两银行新增MENU和Fn统一采用23像素；回放1.618:1、2.39:1采用23，1.85:1采用32。尺寸相同无需拉伸；5:4回放保持原厂020048b2。209运行源及四组件、Fn样式、滤镜、裁切、RAW、PT与声音保持，仅资源和安装版本4.58变化。",
-  "final_DAT_sha256": "c37605b64aa04653d9cd57e63c7e223a4064e96d8480e0021137686bf61f7c8b",
-  "final_components": {
+  "parent": "aspect458-icons",
+  "parent_source_lock_sha256": "3fe1733b4c34359ff6552d609970d9f7a6a13bfd381ca5f92e1e4f5f41d3c286",
+  "version": "4.59",
+  "version_parent_clean458_lock_sha256": "45e4352c37a88ad6071014de36ae9d0fabcc88b9a62ff1230bc4eaef4ce21def",
+  "version_only_runtime_exact": 202,
+  "changed": [
+    {
+      "path": "source/analysis/r5_aspect456_20261110/ap/compile_module.py",
+      "parent_sha256": "e98788927b3e789e47c0888bb66aaf317902db3a14a42cfeabd01bdd50f9fd27",
+      "sha256": "612f91ce73d70850dffdf87fc5b2d3bc065679098db2770d1f2d5ccf485ce2ee"
+    },
+    {
+      "path": "source/analysis/r5_aspect456_20261110/ap/integration.json",
+      "parent_sha256": "e072481cf2c1e55be049f87ea6d5879cbe348415debb7f7f55ccb3aab6514830",
+      "sha256": "4758f386e3c972ceff2a8c483c1e4b9483fef731bfc022bb126bd72f198e87cb"
+    },
+    {
+      "path": "source/analysis/r5_aspect456_20261110/cp/resident-crcshare-b/cp_stage413_probe.c",
+      "parent_sha256": "eb5d8c81f6d44a958592c343c71f67b213905b953399223665240b4629e15c50",
+      "sha256": "6faf4edda4f2e850d3e66d7a069ae85af11f51ec9706499e8ab558a3c64d9fe6"
+    },
+    {
+      "path": "source/analysis/r5_aspect456_20261110/cp/resident-crcshare-b/cp_transfer.c",
+      "parent_sha256": "d6340c67e9f5bddd282b06b0fad447d203dfd54f56dd3aa3d1e88db94a1d771d",
+      "sha256": "ec0f0655afe5a76a0b0dd0e3096713abd977d0ba0849afe3dbb426b6a7b0c452"
+    },
+    {
+      "path": "source/analysis/r5_aspect456_20261110/full/build_partitions.py",
+      "parent_sha256": "b0e7dc92761617d852a7b8cece598290706632ec80d01c7346851ef1392fe4d9",
+      "sha256": "c6f9a623a2d84d754f134c32d0d3687d57f838d7ea12b96f3799b1a334c05dd4"
+    },
+    {
+      "path": "source/analysis/r5_aspect456_20261110/full/package_candidate.py",
+      "parent_sha256": "a58138a170184bbc13de620eafbdab1e26b5728e0b1a5cf049fdcf7e970ad08a",
+      "sha256": "aa6de12710d5ad224931f6b4d7b262f77c3547489a4a73154983475279d63f78"
+    },
+    {
+      "path": "source/analysis/r5_aspect456_20261110/ui/append_ui.py",
+      "parent_sha256": "15eafb505683f1860d631748e0298072a777a9e1ae3185727f99434e7ca07458",
+      "sha256": "bda25e84b54c916799e5af0f3a00e5ac86775504c4e72177ce51e4c2bc722c78"
+    },
+    {
+      "path": "source/analysis/r5_aspect456_20261110/ui/compile_ui.py",
+      "parent_sha256": "576efa49c5c125892232a37a24842d2349551134f2efbe7005d02abce1e93e67",
+      "sha256": "ba150dfea9cd5370140654c3bc144539f35d10ae3c0568f7bce73619018ccfd5"
+    },
+    {
+      "path": "source/analysis/r5_aspect456_20261110/ui/evidence/layout/ui-layout.json",
+      "parent_sha256": "b150544a90362fd1885e7d1c9fe55a2c1c7ee6f356e9fafb1156c8e17e84380e",
+      "sha256": "795e94bf0b8ca30199bc49b6f8d59d63112687fb1339a2d817b5b677e37aebb5"
+    },
+    {
+      "path": "source/analysis/r5_aspect456_20261110/ui/inspect_ui.py",
+      "parent_sha256": "909d592d02675cbda13fccf56cc7ffc5a7076be7b9f54cf6fc155c3a30363655",
+      "sha256": "83e9447150c52a36d5876a2caa8c96aa7c6419a966510e258bb651e8159b4707"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/README.md",
+      "parent_sha256": "5630a3b8a5bc86ea071b2493d8c6ce415805973349240e140b9f2d3306c54bfc",
+      "sha256": "ac084108ef75aa037e4c8ce7893d53d6f6fbca3cdf2e704742ec023a17a19ff0"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/build.py",
+      "parent_sha256": "f07eb4ffb1a1966545080d9bd949d9f7171467b8591ef297fda7a724ccc38756",
+      "sha256": "8fb7cee6382c128b872093ae94929263b2a8a1481fc0c177224596c9f96ff287"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/expected_outputs.json",
+      "parent_sha256": "bdecdaa3831e6507c98f1a8db70fdd3a9835e06d6216953a5d0a84920f71c543",
+      "sha256": "92797a8b9648f921204417885cdd750c0b04429eb438a27d1a8a0c0ef5d65ead"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/source_provenance.json",
+      "parent_sha256": "9ae73a156a62839b806ab407739905d282214aabf64940ad8a238dadc20a8737",
+      "sha256": "117b1f5fd00e9e362f26c58ba829ae6d83b6e345c0350008d1ac21b8516d6d13"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/sources.lock.json",
+      "parent_sha256": "9ccda7927d945539b190488d906ca7a8fb031a2d2444078366e9ef846598388f",
+      "sha256": "92f7e00c23fabbd3018f7989651f65e6588f018d5c8d549864f602b3093bac4a"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/cp/build_cp.py",
+      "parent_sha256": "20374decd440833e0da4cc9fcecf22f00ef68d2022d166d85ad702428a4e5724",
+      "sha256": "e2cd2ac2232aa561b355fec72a8c18d668e0b4c3753b320a87fc196e6a5427cf"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/cp/cp_stage413_probe.c",
+      "parent_sha256": "3f70e6d4cfb5ef7d2482854edefa5b4a6c3812e5a235a720423a54d1d91de923",
+      "sha256": "b95f46d914aa12783eb542634adbf42156c7f27213da04cb60b5951e15c7bed1"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/cp/custom_filter423.c",
+      "parent_sha256": "193cce35637d2e2d1834860efd522210744b49b924f0a49556298f79d1c9d015",
+      "sha256": "62b31ddfc7b55fae8b8427472d482edac901e2b91d99e04b57f3f76de284940e"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/cp/native_color.c",
+      "parent_sha256": "6a0305ed95d77951d7c726dacc53abb5f18f14c9f3f92a66326b664b4d48da9c",
+      "sha256": "24b83276410f2f1a6530ec039ad4866be9182688d98d5552f8a0c51946a47c39"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/cp/r5_resident_crc.c",
+      "parent_sha256": "ba0c1a6af32f4d7bf276711d24fc5e0ec70b8c320fd8ff6640ea681a47c03433",
+      "sha256": "ea91a77f4da8d1f1841f021024f5fac344fd60e5bd57b96a2038906f3c9bebe5"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/cp_include/r5_wire.h",
+      "parent_sha256": null,
+      "sha256": "637b110c6b20b55f9d2ed60411b15349ef38bef1646eae61613b9fe21fa48129"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/import/build_ap_module.py",
+      "parent_sha256": "0f1658fdb3c35b7d5e8a83f25adfb6a1ba4d9e3001957cfeb798e68014cf53cf",
+      "sha256": "98d74bdaa04a7898aef4b0cf93d80058c0ab5888c145663570b68cbfb0719b73"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/import/r5_filter_runtime423.c",
+      "parent_sha256": "067523ac6bdac655f74b75de8c54afe89358fe3f1384b42c6166312ba4a891fe",
+      "sha256": "fa249dc988c664ce1c946dd61178ef18ba9d013832f21aa311eb7c4a7aa16ad6"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/import/r5_filter_runtime423.h",
+      "parent_sha256": "47eb53ce63d3c226cf1cb7cfc66ac99d4548f0aaa1f99e32592dfc64227254b8",
+      "sha256": "5e6e43435ee63ce6dc3d8582119985d1a940135b53a44a679d8a1cf128495701"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/import/r5_runtime_session.c",
+      "parent_sha256": "c8ec2e790619c5f23eedb892e27d6fe15d201bed41643c241c6fddb06b03f4a9",
+      "sha256": "5311f1917122d04d6f84df37e2bf468a38237ff14be071ecb06c7be01683e276"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/import/r5_runtime_session.h",
+      "parent_sha256": "a1695ade13c99797812f96d9948a0f7e45d8997a0dd5e7cceec3c2f80659472a",
+      "sha256": "76d7714bd6b8589bd70eca4509219b8b5d5ff2ebb5b679e9272bec781a216907"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/import/r5_stage413_probe.c",
+      "parent_sha256": "6963d421bfe50ad0fa1c6a6eb431766036e5196aa458bd9a20968c7c7ed03a03",
+      "sha256": "7c70d94af066cef84ee958157516e20a122d7b8a0f08cbed27b21f9a70a20ffd"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/import/r5_stage413_thread.c",
+      "parent_sha256": "e4a2d0a340817da1ec05bdef73d84c603bbffbb0b6a2ea0570542e2ad61e11e2",
+      "sha256": "ad1795256db0c663f9f56b602d5a4b5eb1ff42ac880d558f9956bfc0a1481efb"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/import/r5_stage413_transfer.c",
+      "parent_sha256": "ee2244697cdb36909cf627cb4cc18fb6c7184872034721088f9a4a1fe647a287",
+      "sha256": "95f950747e113e99620683cd636efb0710ce224e9307f4612c47a8058e81d947"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/import/r5_wire.h",
+      "parent_sha256": null,
+      "sha256": "693af37718ee428976ccd30e01337e59255a553110c142afe0e0591c52f7e2c1"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/menu_research/menu_hooks.json",
+      "parent_sha256": "74260cde562e66de538801a3ab484d77d2faad24e6d753ac49796f474261a9cf",
+      "sha256": "a9896ac67958ea20af1f20d236eb26c7f52347d9b8457c57bcfb408a7e10d84a"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/menu_research/r5_filter_page425.c",
+      "parent_sha256": "4c863af9a970387447b6b40a9bc30d91a687c8c545ae37a9f8d2bbb11719dd43",
+      "sha256": "9ec1fbea660d68dcb27294cafb1b957678de3227e62214411398487fa2b0c324"
+    }
+  ],
+  "removed": [
+    {
+      "path": "source/analysis/r5_filter_native_style_20261110/build_style.py",
+      "sha256": "775966da3b8287d86fbcff7dc89d5eb3096e2b5fc26701548985905c3c8f106f"
+    },
+    {
+      "path": "source/analysis/r5_filter_native_style_20261110/r5_filter_menu423.h",
+      "sha256": "f24dc35ed16e4b682407eaaf7d8eb59cf7fd9a8731bfd9045d6c7c317a497c47"
+    },
+    {
+      "path": "source/analysis/r5_filter_native_style_20261110/r5_filter_page_style.c",
+      "sha256": "9ec1fbea660d68dcb27294cafb1b957678de3227e62214411398487fa2b0c324"
+    },
+    {
+      "path": "source/analysis/r5_filter_native_style_20261110/r5_sound_menu437.h",
+      "sha256": "3f81c15a7465df6ff0a4dc18f3ed820c6d196906c2de05d29c4de552503864f4"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/cp/grid_observe.S",
+      "sha256": "346a96e99d05fa0535b49cb044366d6697cc443c98862b186173d87d0d0c5483"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/cp_include/r5_grid_diagnostics.h",
+      "sha256": "67f31c639c9d399cd282d70c25514228e16b8483b251a8982605b9cb200d21e9"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/import/r5_grid420_log.c",
+      "sha256": "135eee41d89c8cda07fe11cbd60b9087388f3f96de24f50ee5a97eec34053896"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/import/r5_grid_diagnostics.h",
+      "sha256": "cbdcc091835fdacd16d3938667b39697af864b3fe17576be410c706942232078"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/menu_research/r5_filter_renderer423.S",
+      "sha256": "07072985be98bdc75abd4a8e2ce77dcfc0aa0eea108abc1870831468ad7994e2"
+    },
+    {
+      "path": "source/projects/firmware/development/shutter-sound-recovery455/src/menu_research/r5_filter_renderer423.c",
+      "sha256": "01d0c2034f0930abcff705d1a551ffd0f2279c5ce436a8e4881f8af72ac7690d"
+    }
+  ],
+  "components": {
     "AP": {
       "bytes": 97583104,
-      "sha256": "e403e98212fc20056e0f876f7b8312cf48f9bfe5122b9954cb4e3e45e0d61937"
+      "sha256": "b3f0d4481dc17402a89d99400b3964044281d9cd188af70f0a9acefc6773798f"
     },
     "CP": {
       "bytes": 17617008,
-      "sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+      "sha256": "c4a85d621c8dec91c94ad2d80b3539a626a30ca390a8003e3317123cad6a1086"
     },
     "AVCAM": {
       "bytes": 12958672,
@@ -33,5 +226,10 @@
       "sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478"
     }
   },
-  "independent_source_archive_rebuild_pending": true
+  "DAT": {
+    "bytes": 754525608,
+    "sha256": "0c768e25948951573e159bbc80ec6c1e0f229578ea8e3ba40754401867967e0d"
+  },
+  "camera_io": false,
+  "device_tested": false
 }

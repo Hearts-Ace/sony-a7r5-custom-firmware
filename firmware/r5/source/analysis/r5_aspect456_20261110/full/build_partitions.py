@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build local 4.58 partitions from reproduced 4.55 and SHA-bound crop components.
+"""Build local 4.59 partitions from reproduced 4.55 and SHA-bound crop components.
 Never opens a device or modifies a source partition. Output must be new.
 """
 from pathlib import Path
@@ -12,8 +12,8 @@ from a7r5dat.fat import FatImage
 from partition_support import patch_partition, verify_lut_layout
 
 EXPECTED={
- 'AP':'e403e98212fc20056e0f876f7b8312cf48f9bfe5122b9954cb4e3e45e0d61937',
- 'CP':'c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a',
+ 'AP':'b3f0d4481dc17402a89d99400b3964044281d9cd188af70f0a9acefc6773798f',
+ 'CP':'c4a85d621c8dec91c94ad2d80b3539a626a30ca390a8003e3317123cad6a1086',
  'AVCAM':'c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b',
  'MPR':'81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478'}
 def sha(p):
@@ -87,7 +87,7 @@ def main():
  save(evidence/'nflasha3.json',fat_replace(archive_parts/'nflasha3',parts/'nflasha3','/av-cam.bin',paths['AVCAM'].read_bytes()))
  save(evidence/'nflasha8.json',fat_replace(baseline/'nflasha8',parts/'nflasha8','/cpapp-b.bin',paths['CP'].read_bytes()))
  shutil.copyfile(baseline/'nflasha5',parts/'nflasha5');assert sha(parts/'nflasha5')==base_expected['nflasha5']
- report=dict(passed=True,state='PARTITIONS_BUILT_DEVICE_UNTESTED',version='4.58',camera_io=False,
+ report=dict(passed=True,state='PARTITIONS_BUILT_DEVICE_UNTESTED',version='4.59',camera_io=False,
   baseline_version='4.55',baseline_outputs=base_expected,components={key:identity(path)for key,path in paths.items()},
   resource_manifest_sha256=sha(a.resources/'manifest.json'),resources=70,
   partitions={q.name:identity(q)for q in parts.iterdir()},

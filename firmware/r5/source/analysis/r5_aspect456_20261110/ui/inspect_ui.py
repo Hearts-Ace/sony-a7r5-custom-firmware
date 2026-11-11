@@ -19,7 +19,7 @@ from unicorn import Uc, UC_ARCH_ARM64, UC_MODE_ARM
 from unicorn import arm64_const as A
 
 BASE = ROOT / 'projects/firmware/releases/4.55-sound-recovery-20261105/appFw.so'
-BASE_SHA = '23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6'
+BASE_SHA = 'a5ea55ed9251ed90b91803e8cab0c8ad6e79dbc62d202bce655a21afe78399ee'
 PAGES = [
     ('select', 98, 4, 0, 0x59239e8, 0x5930f80),
     ('fn38', 38, 6, 0, 0x5969138, 0x592f0c0),

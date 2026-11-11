@@ -17,6 +17,5 @@ int r5_session_new_transfer(void);
 uint32_t r5_session_token(uint32_t);
 void r5_stage421_probe_reset(void);
 void r5_stage421_transfer_reset(void);
-void r5_stage421_log_reset(void);
 void *r5_stage421_loop(void *);
 #endif

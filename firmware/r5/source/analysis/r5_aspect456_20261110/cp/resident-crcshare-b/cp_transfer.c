@@ -14,7 +14,7 @@ static uint32_t crcbyte(uint32_t c,uint8_t b) {
     for(k=0;k<8;k++)c=(c>>1)^((0u-(c&1u))&0xedb88320u);
     return c;
 }
-extern uint32_t r5_diag_crc(const uint8_t *,size_t);
+extern uint32_t r5_wire_crc(const uint8_t *,size_t);
 static int overlap(const void *a,size_t an,const void *b,size_t bn) {
     uintptr_t x=(uintptr_t)a,y=(uintptr_t)b;return x>=y?x-y<bn:y-x<an;
 }
@@ -101,7 +101,7 @@ int r5_transfer_cp_receive(struct r5_transfer_cp *c,struct r5_boot_bank *b,
        overlap(ack,R5_TRANSFER_ACK,p,n))return 1;
     if(n>=32&&n<=R5_TRANSFER_MAX) {
         token=get32(p+8);mask=get32(p+12);slot=get32(p+16);digest=get32(p+20);seq=get32(p+24);op=p[2];
-        if(p[1]!=3||p[3]||!token||(mask&~4095u)||get32(p+28)!=r5_diag_crc(p,n))goto rejected;
+        if(p[1]!=3||p[3]||!token||(mask&~4095u)||get32(p+28)!=r5_wire_crc(p,n))goto rejected;
         if(op==R5_X_BEGIN&&n==32&&!slot&&!seq) {
             const uint8_t *zero=(const uint8_t *)c;
             for(i=0;i<sizeof(*c);i++)if(zero[i]){status=R5_X_BAD_STATE;goto rejected;}
@@ -130,7 +130,7 @@ rejected:
 reply:
     header(ack,R5_X_ACK,token,mask,slot,digest,seq);
     put32(ack+32,b->state);put32(ack+36,status);put32(ack+40,b->received_mask);
-    put32(ack+28,r5_diag_crc(ack,R5_TRANSFER_ACK));return 1;
+    put32(ack+28,r5_wire_crc(ack,R5_TRANSFER_ACK));return 1;
 }
 
 int r5_boot_bank_begin(struct r5_boot_bank *b,uint32_t token,uint32_t mask) {

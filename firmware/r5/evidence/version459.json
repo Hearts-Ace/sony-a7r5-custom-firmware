@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "version": "4.59",
+  "parent_cleaned_AP": {
+    "bytes": 97583104,
+    "sha256": "b3f0d4481dc17402a89d99400b3964044281d9cd188af70f0a9acefc6773798f"
+  },
+  "runtime_sources_exact": 202,
+  "changed_version_build_files": [
+    "build.py",
+    "source/analysis/r5_aspect456_20261110/full/build_partitions.py",
+    "source/analysis/r5_aspect456_20261110/full/package_candidate.py"
+  ],
+  "partition_bytes_exact": true,
+  "no_partition_installation_version_field_changed": true,
+  "installation_version_location": "FDAT header minor BCD0x59 major0x04",
+  "camera_io": false,
+  "FDAT_header_differing_offsets": [
+    8,
+    9,
+    10,
+    11,
+    32
+  ],
+  "all_202_runtime_sources_byte_exact": true,
+  "cleaned458_archive_sha256": "fa0dc7d870756b62c0146f6bdc8438ba2573a4898d4ea3c8aa8ba92eb99c40f6",
+  "version459_archive_sha256": "fa0dc7d870756b62c0146f6bdc8438ba2573a4898d4ea3c8aa8ba92eb99c40f6"
+}

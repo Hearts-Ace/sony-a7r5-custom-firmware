@@ -40,8 +40,6 @@ static int transition(uint32_t *p,uint32_t from,uint32_t to) {
 static int inbound_open(const uint8_t *p,uint32_t source) {
     struct r5_stage411_probe_diagnostics *s=&r5_stage411_probe_state;
     uint32_t n,state;unsigned i;
-    extern int r5_grid420_inbound(const uint8_t *,uint32_t);
-    if(r5_grid420_inbound(p,source))return 1;
     if(r5_stage413_inbound(p,source))return 1;
     if(source!=0x90030001u||!LOAD(&s->once))return 0;
     n=r5_osal_msg_size(p);
@@ -107,8 +105,6 @@ done:
 
 int r5_stage413_capacity_ready(void) {return __atomic_load_n(&r5_stage411_probe_state.matched,__ATOMIC_ACQUIRE)==1;}
 
-void r5_probe420_log(unsigned drive){extern int r5_log420_emit(unsigned,const char *,const uint32_t *,unsigned);struct r5_stage411_probe_diagnostics *s=&r5_stage411_probe_state;uint32_t v[5]={s->phase,s->result,s->matched,s->mask,(uint32_t)s->send_status};r5_log420_emit(drive,s->matched?"CP_CAPACITY_OK":"CP_CAPACITY_FAILED",v,5);}
-
 void r5_stage421_probe_reset(void){extern void *memset(void *,int,size_t);memset(&r5_stage411_probe_state,0,sizeof(r5_stage411_probe_state));}
 
 int r5_stage411_inbound(const uint8_t *p,uint32_t source){
@@ -122,7 +118,7 @@ int r5_stage411_inbound(const uint8_t *p,uint32_t source){
  /* Foreign native packets still take native dispatch when our gate is closed. */
  if(!r5_session_admit()){
   uint32_t n=r5_osal_msg_size(p);extern int r5_transfer_is_envelope(const uint8_t *,size_t);
-  return envelope(p,n)||r5_transfer_is_envelope(p,n)||(n>=8&&p[0]==0xe9&&get32(p+4)==0x44353252u);
+  return envelope(p,n)||r5_transfer_is_envelope(p,n);
  }
  rc=inbound_open(p,source);r5_session_leave();return rc;
 }

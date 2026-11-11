@@ -1,13 +1,13 @@
 {
-  "version": "4.58",
+  "version": "4.59",
   "components": {
     "AP": {
       "bytes": 97583104,
-      "sha256": "e403e98212fc20056e0f876f7b8312cf48f9bfe5122b9954cb4e3e45e0d61937"
+      "sha256": "b3f0d4481dc17402a89d99400b3964044281d9cd188af70f0a9acefc6773798f"
     },
     "CP": {
       "bytes": 17617008,
-      "sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+      "sha256": "c4a85d621c8dec91c94ad2d80b3539a626a30ca390a8003e3317123cad6a1086"
     },
     "AVCAM": {
       "bytes": 12958672,
@@ -21,11 +21,11 @@
   "partitions": {
     "nflasha8": {
       "bytes": 24531968,
-      "sha256": "15b9f91c85e8c938e6322aa48811a8d0192864bd85457f30358074054ed20429"
+      "sha256": "c5aa2205590261d57d00505bb4e173053a406f0b0bf074cb3259517d715c8c26"
     },
     "nflasha15": {
       "bytes": 410652672,
-      "sha256": "91d675bc8d465bc14c95ba54e99e30b35e0599a9b6a5144b0d1cdc51b3d3679c"
+      "sha256": "05743e5c7aa682802f4d4255f6aeadc4b4dc58193fd907385e174dde2027dca3"
     },
     "nflasha3": {
       "bytes": 31803392,
@@ -130,6 +130,6 @@
   "Fn_aspect_style": "Original producers, queries, style tables and input/lifecycle; new ratios/icons only, no list detour",
   "DAT": {
     "bytes": 754525608,
-    "sha256": "c37605b64aa04653d9cd57e63c7e223a4064e96d8480e0021137686bf61f7c8b"
+    "sha256": "0c768e25948951573e159bbc80ec6c1e0f229578ea8e3ba40754401867967e0d"
   }
 }

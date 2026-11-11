@@ -1,24 +1,15 @@
-# R5 4.58 完整固件构建源码
+# R5 4.59：清除确认弃用的私有代码
 
-本目录是当前唯一完整固件构建入口，`build.py`从散列匹配的原厂R5 4.00输入重建AP、CP、AVCAM、MPR、资源、四分区及完整DAT。所需4.55基础配方已包含于source中，是内部构建依赖，无需检出历史提交或使用旧生成件。
+从aspect458-icons派生。最终滤镜Fn页面直接编译一次，移除旧页面代码／BSS及追加跳转阶段；删除旧type53 renderer及两处共享列表拦截，恢复原厂指令；删除AP GRID/E9日志观测链、CP E9回应及上传observer；删除无生产者的reload kind2分支和失败stub。
 
-4.58保留自定义滤镜、异步快门声及音量恢复，加入1.618:1、2.39:1、5:4、1.85:1比例。JPG／HEIF及RAW组合共享预览按比例裁切，RAW Bayer、DefaultCrop和SonyCrop保持全幅。Fn纵横比沿用原厂菜单样式，只扩比例和图标；滤镜Fn显示左简称、右当前全称。两图像银行新增MENU／Fn统一23像素，回放1.85:1使用32，5:4回放复用原厂图标。
+保留实际滤镜交易、ACK/E4、PT、文件原子持久化、电源会话及声音流程。wait_command和声音日志仍被当前功能使用，未判为弃用。传输固定ABI间的72字节空区保留，不再定义、访问或传输旧诊断结构；本轮不迁移bank布局。AVCAM／MPR／70资源与父4.58精确相同。安装版本升级为4.59。固件主体与已验证清理版4.58精确相同。
 
-## 构建
-
-按inputs.example.json配置原厂输入和自己的外部签名材料；输入大小及散列必须匹配inputs.lock.json。私钥权限0600。需要Python、clang、e2fsck和以下依赖，本地验证使用Apple clang 21。输出目录必须不存在，禁止python -O跳过断言。
+build.py是完整固件唯一入口，需要外置原厂输入及本机签名材料。示例：
 
 ```sh
-python3 -m pip install -r firmware/r5/requirements.txt
-python3 firmware/r5/build.py --inputs /path/to/inputs.json --output /path/to/new-output --stage all
+python3 -B build.py --inputs /absolute/inputs.local.json --output /new/build-directory --stage all
 ```
 
-`--stage components`只构建组件和分区；`--stage all`另行签名并核验完整DAT，输出package/NONINSTALLABLE.DAT，名称保留本地测试状态。可用`--e2fsck /path/to/e2fsck`指定工具。原厂输入、密钥、完整DAT和设备备份不包含于仓库。
+expected_outputs.json绑定当前输出，sources.lock.json绑定所有交付源码和证据。evidence/是本轮新AP／CP的离线回执；历史证据只适用于原来的具体散列。原4.58源码／交付保留。
 
-声音转换器位于source/projects/firmware/development/shutter-sound-recovery455/host，现成音频仍见仓库sounds。六槽电脑端工具仍见tools/r5-slots，固件没有新增启动补槽。独立PPLUT分支未合入。
-
-## 验证
-
-冻结4.58源码ZIP已解压独立全量构建，精确复现四组件、70资源、四分区及754525608字节DAT；签名、CRC和完整明文检查通过。DAT SHA256：c37605b64aa04653d9cd57e63c7e223a4064e96d8480e0021137686bf61f7c8b。
-
-公开副本仅修改说明及源锁、补充输入示例和许可入口，生产运行及构建代码与冻结源逐字一致，映射见../../publication/4.58/source_mapping.json。内部历史证据中的工作区路径是来源记录，不是构建依赖。未重跑历史被拒CPU测试，未变组件沿用已有证据；实体安装、启动、LCD及成片待验。
+本轮横竖／大小池原生菜单输出、失败／延迟／退出、PT18组、CP启动64项／入口回退337项通过；完整源码独立构建和DAT核验见外部最终交付回执。OS、显示提交及worker完成等仍有显式夹具；自然动画调度、物理LCD、相机安装／启动／成片及耗时未验收。无相机／USB／SD／网络操作。

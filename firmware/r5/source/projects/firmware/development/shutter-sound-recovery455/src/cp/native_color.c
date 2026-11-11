@@ -2,7 +2,7 @@
  * all custom stages acquire one immutable (bank, selected) view. */
 #include "r5_boot_bank.h"
 #include "native_gamma.h"
-#include "r5_grid_diagnostics.h"
+#include "r5_wire.h"
 #include "r5_grid422.h"
 #include "r5_custom_filter423.h"
 #define SEALED 0x35424c53u
@@ -70,18 +70,6 @@ int r5_native418_publish(struct r5_boot_bank *b){
  r5_grid422_prepare(b);
  __atomic_store_n(&b->state,SEALED,__ATOMIC_RELEASE);return 0;
 }
-static volatile struct r5_grid_diag *diag(void){
- const struct r5_filter423_view *v=r5_filter423_acquire();return v?(void *)(uintptr_t)(v->bank+52252u):0;
-}
-void r5_grid420_uploaded(const uint8_t *s,unsigned enabled,uint32_t bank){
- volatile struct r5_grid_diag *d=diag();unsigned i;
- if(!d||!s||!enabled||!bank)return;
- for(i=0;i<4;i++)if(d->bank_pointer[i]==bank&&d->bank_slot[i]){
-  if(enabled==2){d->copy_mask|=1u<<(d->bank_slot[i]-1);d->copy_calls++;}
-  else{d->upload_mask|=1u<<(d->bank_slot[i]-1);d->upload_calls++;}break;
- }
-}
-
 /* The native builder's audited type1/transform2, root36=0 format. Publish all
  * level variants before the common ready/release; retired generations stay live.
  * Level1..7 use signed arithmetic shift; 0 and >=8 use the full eighth class. */
@@ -112,8 +100,7 @@ const uint32_t *r5_grid422_restore(struct r5_boot_bank *b,const uint8_t *root,co
  struct r5_grid422_restore_entry *e=0,*q;
  const uint8_t *raw=(const void *)(uintptr_t)*(const uint32_t *)(const void *)(s+0x184);
  unsigned i,j,n=0,kind=s[0x188],transform=s[0x189],level=root[0x2f],key,canonical;
- volatile struct r5_grid_diag *d=(void *)((uintptr_t)b+52252u);
- if(__atomic_load_n(&g->ready,__ATOMIC_ACQUIRE)!=R5_GRID422_MAGIC||kind>2||transform>2||root[0x36]){d->last_reason=6;return 0;}
+ if(__atomic_load_n(&g->ready,__ATOMIC_ACQUIRE)!=R5_GRID422_MAGIC||kind>2||transform>2||root[0x36]){return 0;}
  if(raw)n=kind==1?1215:162;
  /* The native fast path has a real level-0 distinction for the otherwise
   * unusual kind-0/non-null source. Preserve that class; all levels >=8 share
@@ -130,7 +117,7 @@ const uint32_t *r5_grid422_restore(struct r5_boot_bank *b,const uint8_t *root,co
   q=&g->restore[i];
   if(__atomic_load_n(&q->ready,__ATOMIC_ACQUIRE)!=2||q->key!=key)continue;
   for(j=0;j<n&&e->raw[j]==q->raw[j];j++){}
-  if(j==n){__atomic_store_n(&e->ready,0,__ATOMIC_RELEASE);d->last_reason=0;return q->packed;}
+  if(j==n){__atomic_store_n(&e->ready,0,__ATOMIC_RELEASE);return q->packed;}
  }
  if(__atomic_fetch_add(&g->restore_used,1,__ATOMIC_ACQ_REL)>=R5_GRID422_RESTORE_LIMIT){
   __atomic_fetch_sub(&g->restore_used,1,__ATOMIC_RELEASE);
@@ -150,9 +137,9 @@ const uint32_t *r5_grid422_restore(struct r5_boot_bank *b,const uint8_t *root,co
   out[2]=(uint32_t)((uintptr_t)&fields-0x184u);out[3]=(uint32_t)(uintptr_t)e->work;out[4]=(uint32_t)(uintptr_t)meta;
   ((void (*)(const uint32_t *,const uint32_t *))0x231655u)(w,out);
  }
- __atomic_store_n(&e->ready,2,__ATOMIC_RELEASE);d->last_reason=0;return e->packed;
+ __atomic_store_n(&e->ready,2,__ATOMIC_RELEASE);return e->packed;
 failed:
- d->last_reason=5;return 0;
+ return 0;
 }
 
 /* This call-site wrapper owns a source snapshot across the original controller.
@@ -164,7 +151,6 @@ void r5_grid422_controller(const uint32_t *w,const uint32_t *out) {
  const struct r5_boot_value *v=0;const int8_t *source=0;
  const struct r5_boot_bank *b=0;const struct r5_filter423_view *view=0;
  unsigned n=0,level=root[0x2f],index;uint8_t *s=(void *)(uintptr_t)out[2];
- volatile struct r5_grid_diag *d;
  unsigned route=root[3]<=1;
  if(route){view=r5_filter423_acquire();if(view)b=(const void *)(uintptr_t)view->bank;if(!root[0x36])v=selected_mode(w,env[0x25],1,view);if(v){source=(const int8_t *)v->grid;n=view->selected-1;}}
  ((void (*)(const uint32_t *,const uint32_t *))0x230da9u)(w,out);
@@ -174,16 +160,13 @@ void r5_grid422_controller(const uint32_t *w,const uint32_t *out) {
   * The one added route is the proved ordinary non-direct index3 context. */
  if(!route||!b||index>3||(index==3&&env[6]!=1&&
     !(root[1]==1&&env[0xc]==6&&!env[6])))return;
- d=(void *)((uintptr_t)b+52252u);
  if(source) {
   const struct r5_grid422 *g;
   g=(const void *)((uintptr_t)b+R5_GRID422_OFFSET);
-  if(__atomic_load_n(&g->ready,__ATOMIC_ACQUIRE)!=R5_GRID422_MAGIC||!(g->mask&(1u<<n))){d->last_reason=6;goto disabled;}
+  if(__atomic_load_n(&g->ready,__ATOMIC_ACQUIRE)!=R5_GRID422_MAGIC||!(g->mask&(1u<<n))){goto disabled;}
   {
    *(uint32_t *)(void *)(s+0x20)=(uint32_t)(uintptr_t)g->packed[n][level>=1&&level<=7?level-1:7];
    s[0x24]=1;s[0x18]=root[0x2c4]?0:1;s[0x19]=32;
-   d->bank_pointer[index]=*(uint32_t *)(void *)(s+0x20);d->bank_slot[index]=n+1;
-   d->selected_mask|=1u<<n;d->built_mask|=1u<<n;d->last_reason=0;d->last_slot=n+1;
    goto snapshot;
   }
  } else {
@@ -192,14 +175,12 @@ void r5_grid422_controller(const uint32_t *w,const uint32_t *out) {
    * not permission to keep a prior custom hardware table with submit0. */
   const uint32_t *packed=r5_grid422_restore((struct r5_boot_bank *)(uintptr_t)b,root,s);
   *(uint32_t *)(void *)(s+0x20)=(uint32_t)(uintptr_t)packed;s[0x24]=packed?1:0;
-  d->bank_pointer[index]=0;d->bank_slot[index]=0;d->last_slot=0;
   if(!packed)s[0x18]=0;
   goto snapshot;
  }
 disabled:
  /* Explicit off or unsupported source: transmit a disabled stage so a
   * previous FL2 table is never merely left enabled with no new submit. */
- d->bank_pointer[index]=0;d->bank_slot[index]=0;d->last_slot=0;
  s[0x18]=0;*(uint32_t *)(void *)(s+0x20)=0;s[0x24]=0;
 snapshot:
  /* Original root3 snapshot was copied by the native controller before our

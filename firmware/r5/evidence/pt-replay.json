@@ -1,0 +1,488 @@
+{
+  "passed": true,
+  "AP_sha256": "b3f0d4481dc17402a89d99400b3964044281d9cd188af70f0a9acefc6773798f",
+  "build_sha256": "abfe216de2cfb6256722d8e64c23ece2ab059f88155c139fd31c3367be15fbb7",
+  "cases": [
+    {
+      "bias": 0,
+      "selected": 1,
+      "kind": 1,
+      "state": 1,
+      "initial_look": 0,
+      "mirrored_model": false,
+      "final_look": 1,
+      "events": [
+        [
+          "transaction",
+          1680,
+          1,
+          4
+        ],
+        [
+          "commit",
+          1680,
+          1
+        ],
+        [
+          "notify",
+          1680,
+          1
+        ],
+        [
+          "existing_E4_request",
+          536871424,
+          1
+        ]
+      ],
+      "instructions": {
+        "total": 116,
+        "helper": 28,
+        "getter": 1,
+        "setter": 1
+      }
+    },
+    {
+      "bias": 0,
+      "selected": 12,
+      "kind": 1,
+      "state": 1,
+      "initial_look": 5,
+      "mirrored_model": true,
+      "final_look": 1,
+      "events": [
+        [
+          "transaction",
+          1680,
+          1,
+          4
+        ],
+        [
+          "commit",
+          1680,
+          1
+        ],
+        [
+          "notify",
+          1680,
+          1
+        ],
+        [
+          "existing_E4_request",
+          536871424,
+          1
+        ]
+      ],
+      "instructions": {
+        "total": 116,
+        "helper": 28,
+        "getter": 1,
+        "setter": 1
+      }
+    },
+    {
+      "bias": 0,
+      "selected": 5,
+      "kind": 1,
+      "state": 1,
+      "initial_look": 1,
+      "mirrored_model": true,
+      "final_look": 1,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          1
+        ]
+      ],
+      "instructions": {
+        "total": 49,
+        "helper": 26,
+        "getter": 1,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 0,
+      "selected": 0,
+      "kind": 1,
+      "state": 1,
+      "initial_look": 3,
+      "mirrored_model": true,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 25,
+        "helper": 23,
+        "getter": 0,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 0,
+      "selected": 13,
+      "kind": 1,
+      "state": 1,
+      "initial_look": 3,
+      "mirrored_model": false,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 25,
+        "helper": 23,
+        "getter": 0,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 0,
+      "selected": 1,
+      "kind": 2,
+      "state": 1,
+      "initial_look": 3,
+      "mirrored_model": true,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 25,
+        "helper": 23,
+        "getter": 0,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 0,
+      "selected": 1,
+      "kind": 1,
+      "state": 2,
+      "initial_look": 3,
+      "mirrored_model": true,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 18,
+        "helper": 16,
+        "getter": 0,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 0,
+      "selected": 1,
+      "kind": 1,
+      "state": 3,
+      "initial_look": 3,
+      "mirrored_model": true,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 18,
+        "helper": 16,
+        "getter": 0,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 0,
+      "selected": 1,
+      "kind": 0,
+      "state": 0,
+      "initial_look": 3,
+      "mirrored_model": false,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 18,
+        "helper": 16,
+        "getter": 0,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 274877906944,
+      "selected": 1,
+      "kind": 1,
+      "state": 1,
+      "initial_look": 0,
+      "mirrored_model": false,
+      "final_look": 1,
+      "events": [
+        [
+          "transaction",
+          1680,
+          1,
+          4
+        ],
+        [
+          "commit",
+          1680,
+          1
+        ],
+        [
+          "notify",
+          1680,
+          1
+        ],
+        [
+          "existing_E4_request",
+          536871424,
+          1
+        ]
+      ],
+      "instructions": {
+        "total": 116,
+        "helper": 28,
+        "getter": 1,
+        "setter": 1
+      }
+    },
+    {
+      "bias": 274877906944,
+      "selected": 12,
+      "kind": 1,
+      "state": 1,
+      "initial_look": 5,
+      "mirrored_model": true,
+      "final_look": 1,
+      "events": [
+        [
+          "transaction",
+          1680,
+          1,
+          4
+        ],
+        [
+          "commit",
+          1680,
+          1
+        ],
+        [
+          "notify",
+          1680,
+          1
+        ],
+        [
+          "existing_E4_request",
+          536871424,
+          1
+        ]
+      ],
+      "instructions": {
+        "total": 116,
+        "helper": 28,
+        "getter": 1,
+        "setter": 1
+      }
+    },
+    {
+      "bias": 274877906944,
+      "selected": 5,
+      "kind": 1,
+      "state": 1,
+      "initial_look": 1,
+      "mirrored_model": true,
+      "final_look": 1,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          1
+        ]
+      ],
+      "instructions": {
+        "total": 49,
+        "helper": 26,
+        "getter": 1,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 274877906944,
+      "selected": 0,
+      "kind": 1,
+      "state": 1,
+      "initial_look": 3,
+      "mirrored_model": true,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 25,
+        "helper": 23,
+        "getter": 0,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 274877906944,
+      "selected": 13,
+      "kind": 1,
+      "state": 1,
+      "initial_look": 3,
+      "mirrored_model": false,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 25,
+        "helper": 23,
+        "getter": 0,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 274877906944,
+      "selected": 1,
+      "kind": 2,
+      "state": 1,
+      "initial_look": 3,
+      "mirrored_model": true,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 25,
+        "helper": 23,
+        "getter": 0,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 274877906944,
+      "selected": 1,
+      "kind": 1,
+      "state": 2,
+      "initial_look": 3,
+      "mirrored_model": true,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 18,
+        "helper": 16,
+        "getter": 0,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 274877906944,
+      "selected": 1,
+      "kind": 1,
+      "state": 3,
+      "initial_look": 3,
+      "mirrored_model": true,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 18,
+        "helper": 16,
+        "getter": 0,
+        "setter": 0
+      }
+    },
+    {
+      "bias": 274877906944,
+      "selected": 1,
+      "kind": 0,
+      "state": 0,
+      "initial_look": 3,
+      "mirrored_model": false,
+      "final_look": 3,
+      "events": [
+        [
+          "existing_E4_request",
+          536871424,
+          3
+        ]
+      ],
+      "instructions": {
+        "total": 18,
+        "helper": 16,
+        "getter": 0,
+        "setter": 0
+      }
+    }
+  ],
+  "actual": [
+    "Final AP private refresh425 BL",
+    "112-byte PT helper, no new BSS",
+    "Native 1c05f18 getter and 28ae4b0/28ae4c4 model accessors",
+    "Native 1c6f208 setter writes model and optional mirror; native destructor path",
+    "Original E4 request receives identical parameter pointer and native BL continuation"
+  ],
+  "fixtures": [
+    "Native locks and transaction-context creation",
+    "3694f64 transaction service records PID/value",
+    "252d80c commit observer and 252ca34 Notify delivery boundaries",
+    "24b0780 E4 queue endpoint; no actual IPC/hardware completion"
+  ],
+  "limits": [
+    "CPU instruction count is not camera timing",
+    "Native notification scheduling and LCD/ISP completion not emulated",
+    "Existing worker selection ACK/wait/rollback source and byte identity bound separately",
+    "PT remains selected if the existing filter transaction later fails after this refresh"
+  ],
+  "camera_io": false,
+  "device_tested": false
+}

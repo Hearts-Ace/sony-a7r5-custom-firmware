@@ -17,11 +17,11 @@ NATIVE={
  'r5_aspect_freeze_continue':0x3565f7c,
  'r5_aspect_native_apply_continue':0x1bc7724,
  'r5_aspect_native_size_continue':0x1bcfd1c,
- 'r5_aspect_original_rows_register':0x8e98414,
- 'r5_aspect_original_row_normalize':0x8e984a0,
- 'r5_aspect_original_row_available':0x8e984d8,
- 'r5_aspect_original_row_available_direct':0x8e9856c,
- 'r5_aspect_original_row_parent':0x8e985ac,
+ 'r5_aspect_original_rows_register':0x8e9770c,
+ 'r5_aspect_original_row_normalize':0x8e97798,
+ 'r5_aspect_original_row_available':0x8e977d0,
+ 'r5_aspect_original_row_available_direct':0x8e97864,
+ 'r5_aspect_original_row_parent':0x8e978a4,
 }
 SOURCES=['r5_aspect_state.c','r5_aspect_menu.c','r5_aspect_persist.c','r5_aspect_wire.S']
 def build(out,rx=0x8ee1000,rw=0x8ef0000):

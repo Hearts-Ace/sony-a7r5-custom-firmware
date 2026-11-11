@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild local R5 4.58 crop test components/partitions from frozen sources.
+"""Rebuild local R5 4.59 crop test components/partitions from frozen sources.
 
 Source and original firmware inputs are never modified. No device or network
 operation exists in this entry. --stage all additionally signs the local test
@@ -81,7 +81,6 @@ def main():
     release=runtime/'projects/firmware/releases/4.55-sound-recovery-20261105'
     release.mkdir(parents=True);shutil.copyfile(base/'patched/appFw.so',release/'appFw.so')
     crop=runtime/REL;cp=crop/'cp';ui=crop/'ui';review=crop/'reference-review'
-    style=runtime/'analysis/r5_filter_native_style_20261110'
     shutil.copyfile(base/'work/inputs/cp_baseline.bin',cp/'baseline404.bin')
     # Extract only the required originals into this fresh runtime. In particular
     # no old patched AP/CP/AVCAM/MPR or resource output is an input.
@@ -124,14 +123,11 @@ def main():
     run('09-mpr',review/'mpr_patch.py','--output',mpr)
     run('10-ap-playback',review/'append_playback_segment.py','--base',ap/'appFw-NONINSTALLABLE.so',
         '--base-sha256',sha(ap/'appFw-NONINSTALLABLE.so'),'--output',playback)
-    styled=style/'candidate-build'
-    run('10b-ap-filter-style',style/'build_style.py','--base',playback/'appFw-NONINSTALLABLE.so',
-        '--audit',base/'work/import/module_audit.json','--output',styled)
     resource_output=crop/'resources/output-build'
     run('11-resources',crop/'resources/build_resources.py','--input-root',resource_inputs,'--output',resource_output)
     pt=runtime/'analysis/r5_filter_pt456_20261110/candidate-build'
     run('10c-ap-filter-pt',runtime/'analysis/r5_filter_pt456_20261110/build_pt.py',
-        '--base',styled/'appFw-NONINSTALLABLE.so','--audit',base/'work/import/module_audit.json','--output',pt)
+        '--base',playback/'appFw-NONINSTALLABLE.so','--audit',base/'work/import/module_audit.json','--output',pt)
     outputs={'AP':pt/'appFw-NONINSTALLABLE.so','CP':integrated/'cp/cp423.NONINSTALLABLE.bin',
              'AVCAM':avcam/'av-cam.bin','MPR':mpr/'libmpr.so'}
     for key,path in outputs.items():exact(path,expected['components'][key],key)
@@ -156,7 +152,7 @@ def main():
                             all_components_and_partitions_rebuilt_from_frozen_sources=True,
                             device_acceptance_tested=False)
         save(verification_path,verification)
-    report=dict(passed=True,status='LOCAL_TEST_BUILD_REPRODUCED_CAMERA_UNTESTED',version='4.58',stage=a.stage,
+    report=dict(passed=True,status='LOCAL_TEST_BUILD_REPRODUCED_CAMERA_UNTESTED',version='4.59',stage=a.stage,
                 source_lock_sha256=sha(HERE/'sources.lock.json'),expected_outputs_sha256=sha(HERE/'expected_outputs.json'),
                 components={k:dict(path=str(v.relative_to(out)),bytes=v.stat().st_size,sha256=sha(v)) for k,v in outputs.items()},
                 partitions={name:dict(path=str((partitions/'partitions'/name).relative_to(out)),**row) for name,row in expected['partitions'].items()},

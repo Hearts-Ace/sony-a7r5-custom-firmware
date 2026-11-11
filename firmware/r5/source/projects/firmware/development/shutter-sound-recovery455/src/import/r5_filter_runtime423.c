@@ -18,7 +18,6 @@ static uint32_t refresh_request[8],refresh_wait,refresh_done,refresh_serial;
 static uintptr_t refresh_object;
 extern void r5_native_refresh_construct425(void *,const void *);
 extern void r5_native_refresh_execute425(void *);
-extern int r5_stage425_reload(void);
 static uint64_t handled;
 static uint32_t initialized,saved,saved_valid,alias,bank_crc,mask,select_sequence,dirty,synchronized_alias,synchronized_epoch;
 static uint32_t inbox_state;
@@ -44,7 +43,6 @@ static int request425(unsigned n,unsigned kind){
     STORE(&desired,((uint64_t)serial<<32)|n);STORE(&command_state,1);return 0;
 }
 int r5_filter_request(unsigned n){return request425(n,1);}
-int r5_filter_reload_request(void){return request425(r5_filter_selected(),2);}
 /* These wrappers run on their original native owner threads.  Only the exact
  * private request's allocated E4 object can complete this transaction. */
 void r5_filter_refresh_construct425(void *object,const void *params){
@@ -148,11 +146,6 @@ void r5_filter_service(void){
     previous=r5_filter_selected();
     want=LOAD(&desired);n=(uint32_t)want;kind=LOAD(&command_kind);
     explicit_command=LOAD(&command_state)==1;
-    if(explicit_command && kind==2){
-        if(r5_stage425_reload())goto failed;
-        /* Reconciliation may have removed the selected configuration. */
-        want=LOAD(&desired);n=(uint32_t)want;
-    }
     if(n>12 || (n && !(mask&(1u<<(n-1)))))goto failed;
     if(!LOAD(&dirty) && want==LOAD(&handled))goto done;
     /* A repeated UI selection needs no E4/CP transaction only after this exact

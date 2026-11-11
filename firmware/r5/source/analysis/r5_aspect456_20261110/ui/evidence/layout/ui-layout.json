@@ -2,7 +2,7 @@
   "passed": true,
   "device_tested": false,
   "camera_io": false,
-  "AP_sha256": "23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6",
+  "AP_sha256": "a5ea55ed9251ed90b91803e8cab0c8ad6e79dbc62d202bce655a21afe78399ee",
   "script_sha256": "909d592d02675cbda13fccf56cc7ffc5a7076be7b9f54cf6fc155c3a30363655",
   "pages": [
     {
@@ -2988,5 +2988,7 @@
       "before": "f1d71794",
       "instruction": "01e17b1c: bl       #0x240dae0"
     }
-  ]
+  ],
+  "inherited_AP_sha256": "23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6",
+  "cleanup_rebind": "Allocation observations inherited from original execution; all ten native layout tables checked byte-exact in cleaned baseline, no new allocator replay claimed."
 }
