@@ -8,7 +8,8 @@
 - [音频包](sounds/README.md) · [下载声音ZIP](sounds/R5-Sounds-4.55.zip)
 - [十二款滤镜BIN](filters/FUJ_12_v45/README.md)
 - [滤镜训练与网格工作台](https://github.com/Hearts-Ace/sony-r5-colorlab)
-- [macOS刷写台0.2.1源码](R5FlashWorkbench/README.md)（独立应用仍以4.36为目标）
+
+本项目以魔改线方案为主，不再提供macOS刷写工作台。
 
 ```sh
 python3 -m pip install -r firmware/r5/requirements.txt

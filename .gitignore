@@ -37,10 +37,5 @@ analysis/sony_write_path_20261008/reference/
 *.tar
 *.tar.gz
 
-# Required, source-built MSC templates and small licensed PMCA sources
-!R5FlashWorkbench/engine/templates/*.so
-!R5FlashWorkbench/engine/vendor/
-!R5FlashWorkbench/engine/vendor/**
-
 # Explicitly authorized downloadable sound bundle
 !sounds/R5-Sounds-4.55.zip
