@@ -1,0 +1,607 @@
+{
+  "passed": true,
+  "camera_io": false,
+  "device_tested": false,
+  "hardware_executed": false,
+  "loader_sha256": "16d0e74201c8734acf16b6abfaf90448b81cfc4ebaad91134309a80120ac018d",
+  "stock_sha256": "640740f3bbd7e20cf49be3288f496415b1d045020c5b9a46ea77fb187699ab04",
+  "patched_sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b",
+  "candidate_kind": "patched",
+  "actual_helper_code_validated": false,
+  "actual_installed_snapshot_layout": {
+    "new_EOF": "0xc5bbd0",
+    "backup": "0xc5bc00",
+    "backup_end": "0xd0efb8",
+    "tail": "0xd0f000",
+    "reserved_bytes": 16777216,
+    "tail_margin_bytes": 3084288,
+    "original_RAM_bytes": 734136
+  },
+  "snapshot_layout_contract_sha256": "5287d9f85e52eea1c7231d8972ee6cbb0fe101a0a8903be53960cb3e111f3027",
+  "script_sha256": "73dafaae59f89a2bd7ec2dc50b8ca996402942c9cbec004b7d1cef7995ffa4f4",
+  "scenarios": 10,
+  "rows": [
+    {
+      "bias": 0,
+      "image_kind": "stock",
+      "file_bytes": 12956536,
+      "read_calls": 3165,
+      "final_data_read_bytes": 888,
+      "EOF_result": 0,
+      "icache_range": {
+        "kind": "flush_icache_range",
+        "start": 18446743798848421888,
+        "end": 18446743798861378424
+      },
+      "api_copy": {
+        "kind": "memcpy",
+        "destination": 18446743798848422380,
+        "source": 270073856,
+        "bytes": 1688
+      },
+      "initial_header_entry_not_executed": true,
+      "backup_events": [
+        {
+          "kind": "entrypre_skipped",
+          "address": 18446743798848422112
+        },
+        {
+          "kind": "kthread_create_on_node",
+          "entry": 268569552,
+          "thread_not_started": true
+        },
+        {
+          "kind": "vmalloc",
+          "bytes": 1688,
+          "address": 1895825408
+        },
+        {
+          "kind": "vmalloc",
+          "bytes": 1555690,
+          "address": 1900019712
+        },
+        {
+          "kind": "memcpy",
+          "destination": 1895825408,
+          "source": 18446743798848422380,
+          "bytes": 1688
+        },
+        {
+          "kind": "memcpy",
+          "destination": 1900019712,
+          "source": 18446743798860557078,
+          "bytes": 1555690
+        }
+      ],
+      "restore_events": [
+        {
+          "kind": "boot_time_add",
+          "args": [
+            269484128,
+            18446743798860557078,
+            1555690,
+            18446743798852953665
+          ]
+        },
+        {
+          "kind": "memcpy",
+          "destination": 18446743798848422380,
+          "source": 1895825408,
+          "bytes": 1688
+        },
+        {
+          "kind": "memcpy",
+          "destination": 18446743798860557078,
+          "source": 1900019712,
+          "bytes": 1555690
+        },
+        {
+          "kind": "boot_time_add",
+          "args": [
+            269484288,
+            1900019712,
+            1555690,
+            18446743798852953665
+          ]
+        },
+        {
+          "kind": "__udif_cache_ctrl",
+          "start": 18446743798848421888,
+          "bytes": 13690880,
+          "mode": 1
+        },
+        {
+          "kind": "boot_time_add",
+          "args": [
+            269484312,
+            13690880,
+            1,
+            18446743798848421888
+          ]
+        },
+        {
+          "kind": "vfree",
+          "args": [
+            1895825408,
+            13690880,
+            1,
+            18446743798848421888
+          ]
+        },
+        {
+          "kind": "vfree",
+          "args": [
+            1900019712,
+            13690880,
+            1,
+            18446743798848421888
+          ]
+        }
+      ],
+      "retained_range": [
+        18446743798860557078,
+        18446743798862112768
+      ],
+      "retained_bytes": 1555690,
+      "full_region_restored": true,
+      "helper_loaded_and_flushed": false,
+      "helper_restored": false
+    },
+    {
+      "bias": 0,
+      "image_kind": "patched",
+      "file_bytes": 12958672,
+      "read_calls": 3165,
+      "final_data_read_bytes": 3024,
+      "EOF_result": 0,
+      "icache_range": {
+        "kind": "flush_icache_range",
+        "start": 18446743798848421888,
+        "end": 18446743798861380560
+      },
+      "api_copy": {
+        "kind": "memcpy",
+        "destination": 18446743798848422380,
+        "source": 270073856,
+        "bytes": 1688
+      },
+      "initial_header_entry_not_executed": true,
+      "backup_events": [
+        {
+          "kind": "entrypre_skipped",
+          "address": 18446743798848422112
+        },
+        {
+          "kind": "kthread_create_on_node",
+          "entry": 268569552,
+          "thread_not_started": true
+        },
+        {
+          "kind": "vmalloc",
+          "bytes": 1688,
+          "address": 1895825408
+        },
+        {
+          "kind": "vmalloc",
+          "bytes": 1557738,
+          "address": 1900019712
+        },
+        {
+          "kind": "memcpy",
+          "destination": 1895825408,
+          "source": 18446743798848422380,
+          "bytes": 1688
+        },
+        {
+          "kind": "memcpy",
+          "destination": 1900019712,
+          "source": 18446743798860557078,
+          "bytes": 1557738
+        }
+      ],
+      "restore_events": [
+        {
+          "kind": "boot_time_add",
+          "args": [
+            269484128,
+            18446743798860557078,
+            1557738,
+            18446743798852953665
+          ]
+        },
+        {
+          "kind": "memcpy",
+          "destination": 18446743798848422380,
+          "source": 1895825408,
+          "bytes": 1688
+        },
+        {
+          "kind": "memcpy",
+          "destination": 18446743798860557078,
+          "source": 1900019712,
+          "bytes": 1557738
+        },
+        {
+          "kind": "boot_time_add",
+          "args": [
+            269484288,
+            1900019712,
+            1557738,
+            18446743798852953665
+          ]
+        },
+        {
+          "kind": "__udif_cache_ctrl",
+          "start": 18446743798848421888,
+          "bytes": 13692928,
+          "mode": 1
+        },
+        {
+          "kind": "boot_time_add",
+          "args": [
+            269484312,
+            13692928,
+            1,
+            18446743798848421888
+          ]
+        },
+        {
+          "kind": "vfree",
+          "args": [
+            1895825408,
+            13692928,
+            1,
+            18446743798848421888
+          ]
+        },
+        {
+          "kind": "vfree",
+          "args": [
+            1900019712,
+            13692928,
+            1,
+            18446743798848421888
+          ]
+        }
+      ],
+      "retained_range": [
+        18446743798860557078,
+        18446743798862114816
+      ],
+      "retained_bytes": 1557738,
+      "full_region_restored": true,
+      "helper_loaded_and_flushed": true,
+      "helper_restored": true
+    },
+    {
+      "bias": 0,
+      "image_kind": "read_error_fixture",
+      "bytes_read": 4096,
+      "icache_not_flushed": true,
+      "native_header_still_accepted": true,
+      "limit": "原生 loader 读错后仍可能凭有效头继续；本测试不修改该既有行为。"
+    },
+    {
+      "bias": 0,
+      "image_kind": "backup_allocation_failure_fixture",
+      "failed_allocation": 1,
+      "native_result": -12,
+      "backup_pointers_cleared": true
+    },
+    {
+      "bias": 0,
+      "image_kind": "backup_allocation_failure_fixture",
+      "failed_allocation": 2,
+      "native_result": -12,
+      "backup_pointers_cleared": true
+    },
+    {
+      "bias": 536870912,
+      "image_kind": "stock",
+      "file_bytes": 12956536,
+      "read_calls": 3165,
+      "final_data_read_bytes": 888,
+      "EOF_result": 0,
+      "icache_range": {
+        "kind": "flush_icache_range",
+        "start": 18446743798848421888,
+        "end": 18446743798861378424
+      },
+      "api_copy": {
+        "kind": "memcpy",
+        "destination": 18446743798848422380,
+        "source": 806944768,
+        "bytes": 1688
+      },
+      "initial_header_entry_not_executed": true,
+      "backup_events": [
+        {
+          "kind": "entrypre_skipped",
+          "address": 18446743798848422112
+        },
+        {
+          "kind": "kthread_create_on_node",
+          "entry": 805440464,
+          "thread_not_started": true
+        },
+        {
+          "kind": "vmalloc",
+          "bytes": 1688,
+          "address": 1895825408
+        },
+        {
+          "kind": "vmalloc",
+          "bytes": 1555690,
+          "address": 1900019712
+        },
+        {
+          "kind": "memcpy",
+          "destination": 1895825408,
+          "source": 18446743798848422380,
+          "bytes": 1688
+        },
+        {
+          "kind": "memcpy",
+          "destination": 1900019712,
+          "source": 18446743798860557078,
+          "bytes": 1555690
+        }
+      ],
+      "restore_events": [
+        {
+          "kind": "boot_time_add",
+          "args": [
+            806355040,
+            18446743798860557078,
+            1555690,
+            18446743798852953665
+          ]
+        },
+        {
+          "kind": "memcpy",
+          "destination": 18446743798848422380,
+          "source": 1895825408,
+          "bytes": 1688
+        },
+        {
+          "kind": "memcpy",
+          "destination": 18446743798860557078,
+          "source": 1900019712,
+          "bytes": 1555690
+        },
+        {
+          "kind": "boot_time_add",
+          "args": [
+            806355200,
+            1900019712,
+            1555690,
+            18446743798852953665
+          ]
+        },
+        {
+          "kind": "__udif_cache_ctrl",
+          "start": 18446743798848421888,
+          "bytes": 13690880,
+          "mode": 1
+        },
+        {
+          "kind": "boot_time_add",
+          "args": [
+            806355224,
+            13690880,
+            1,
+            18446743798848421888
+          ]
+        },
+        {
+          "kind": "vfree",
+          "args": [
+            1895825408,
+            13690880,
+            1,
+            18446743798848421888
+          ]
+        },
+        {
+          "kind": "vfree",
+          "args": [
+            1900019712,
+            13690880,
+            1,
+            18446743798848421888
+          ]
+        }
+      ],
+      "retained_range": [
+        18446743798860557078,
+        18446743798862112768
+      ],
+      "retained_bytes": 1555690,
+      "full_region_restored": true,
+      "helper_loaded_and_flushed": false,
+      "helper_restored": false
+    },
+    {
+      "bias": 536870912,
+      "image_kind": "patched",
+      "file_bytes": 12958672,
+      "read_calls": 3165,
+      "final_data_read_bytes": 3024,
+      "EOF_result": 0,
+      "icache_range": {
+        "kind": "flush_icache_range",
+        "start": 18446743798848421888,
+        "end": 18446743798861380560
+      },
+      "api_copy": {
+        "kind": "memcpy",
+        "destination": 18446743798848422380,
+        "source": 806944768,
+        "bytes": 1688
+      },
+      "initial_header_entry_not_executed": true,
+      "backup_events": [
+        {
+          "kind": "entrypre_skipped",
+          "address": 18446743798848422112
+        },
+        {
+          "kind": "kthread_create_on_node",
+          "entry": 805440464,
+          "thread_not_started": true
+        },
+        {
+          "kind": "vmalloc",
+          "bytes": 1688,
+          "address": 1895825408
+        },
+        {
+          "kind": "vmalloc",
+          "bytes": 1557738,
+          "address": 1900019712
+        },
+        {
+          "kind": "memcpy",
+          "destination": 1895825408,
+          "source": 18446743798848422380,
+          "bytes": 1688
+        },
+        {
+          "kind": "memcpy",
+          "destination": 1900019712,
+          "source": 18446743798860557078,
+          "bytes": 1557738
+        }
+      ],
+      "restore_events": [
+        {
+          "kind": "boot_time_add",
+          "args": [
+            806355040,
+            18446743798860557078,
+            1557738,
+            18446743798852953665
+          ]
+        },
+        {
+          "kind": "memcpy",
+          "destination": 18446743798848422380,
+          "source": 1895825408,
+          "bytes": 1688
+        },
+        {
+          "kind": "memcpy",
+          "destination": 18446743798860557078,
+          "source": 1900019712,
+          "bytes": 1557738
+        },
+        {
+          "kind": "boot_time_add",
+          "args": [
+            806355200,
+            1900019712,
+            1557738,
+            18446743798852953665
+          ]
+        },
+        {
+          "kind": "__udif_cache_ctrl",
+          "start": 18446743798848421888,
+          "bytes": 13692928,
+          "mode": 1
+        },
+        {
+          "kind": "boot_time_add",
+          "args": [
+            806355224,
+            13692928,
+            1,
+            18446743798848421888
+          ]
+        },
+        {
+          "kind": "vfree",
+          "args": [
+            1895825408,
+            13692928,
+            1,
+            18446743798848421888
+          ]
+        },
+        {
+          "kind": "vfree",
+          "args": [
+            1900019712,
+            13692928,
+            1,
+            18446743798848421888
+          ]
+        }
+      ],
+      "retained_range": [
+        18446743798860557078,
+        18446743798862114816
+      ],
+      "retained_bytes": 1557738,
+      "full_region_restored": true,
+      "helper_loaded_and_flushed": true,
+      "helper_restored": true
+    },
+    {
+      "bias": 536870912,
+      "image_kind": "read_error_fixture",
+      "bytes_read": 4096,
+      "icache_not_flushed": true,
+      "native_header_still_accepted": true,
+      "limit": "原生 loader 读错后仍可能凭有效头继续；本测试不修改该既有行为。"
+    },
+    {
+      "bias": 536870912,
+      "image_kind": "backup_allocation_failure_fixture",
+      "failed_allocation": 1,
+      "native_result": -12,
+      "backup_pointers_cleared": true
+    },
+    {
+      "bias": 536870912,
+      "image_kind": "backup_allocation_failure_fixture",
+      "failed_allocation": 2,
+      "native_result": -12,
+      "backup_pointers_cleared": true
+    }
+  ],
+  "helper_file_range": [
+    12956544,
+    12958672
+  ],
+  "API_overwrite_range": [
+    492,
+    2180
+  ],
+  "original_file_bytes": 12956536,
+  "file_cluster_capacity": 12959744,
+  "capacity_after_alignment": 3200,
+  "original_header_RAM_end": 18446743798861378424,
+  "retained_range": [
+    18446743798860557078,
+    18446743798862114816
+  ],
+  "native": [
+    "LIRO .init.text 1f8..4d4 full file read/cache/API copy path",
+    "LIRO .text 4d8..688 actual warm backup with actual header field copy",
+    "LIRO .text 1a8..1e8 actual warm resume selection and2f4..3d4 copy/OS-cache/free path"
+  ],
+  "models": [
+    "ET_REL ABS64/CALL26 relocations use two explicit module-section placements",
+    "filp/vfs uses supplied in-memory file bytes; no filesystem/device calls execute",
+    "memcpy/vmalloc/vfree/cache/kernel thread/PM/logging OS boundaries modeled",
+    "module entrypre hardware call skipped; no newly appended helper instruction executes",
+    "warm backing memory deliberately overwritten between actual backup and restore"
+  ],
+  "limits": [
+    "Proves file read/cache/copy coverage, not firmware startup or actual helper execution.",
+    "Does not prove the source FAT directory/file-size change; builder verifies it separately.",
+    "Read failure skips cache flush but native header check may still allow continuation; unchanged loader boundary.",
+    "No real sleep/power cycle, camera/card/partition IO, HEIF codec or same-card writer executed."
+  ]
+}

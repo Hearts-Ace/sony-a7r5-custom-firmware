@@ -1,0 +1,274 @@
+{
+  "passed": true,
+  "version": "4.57",
+  "resource_only": true,
+  "banks": [
+    {
+      "bank": "image_00_23_IPSX.uxc",
+      "changed_images": [
+        {
+          "id": "0x2001e80",
+          "width": 76,
+          "height": 40,
+          "blocks": [
+            {
+              "compressed_bytes": 545,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 246,
+              "decoded_bytes": 2304
+            }
+          ],
+          "changed_pixels": 422
+        },
+        {
+          "id": "0x2001e83",
+          "width": 76,
+          "height": 40,
+          "blocks": [
+            {
+              "compressed_bytes": 544,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 239,
+              "decoded_bytes": 2304
+            }
+          ],
+          "changed_pixels": 360
+        },
+        {
+          "id": "0x2001e90",
+          "width": 70,
+          "height": 60,
+          "blocks": [
+            {
+              "compressed_bytes": 302,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 554,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ],
+          "changed_pixels": 422
+        },
+        {
+          "id": "0x2001e93",
+          "width": 70,
+          "height": 60,
+          "blocks": [
+            {
+              "compressed_bytes": 308,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 534,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ],
+          "changed_pixels": 360
+        },
+        {
+          "id": "0x2001e94",
+          "width": 70,
+          "height": 60,
+          "blocks": [
+            {
+              "compressed_bytes": 291,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 495,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ],
+          "changed_pixels": 385
+        },
+        {
+          "id": "0x2001e97",
+          "width": 70,
+          "height": 60,
+          "blocks": [
+            {
+              "compressed_bytes": 294,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 483,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ],
+          "changed_pixels": 334
+        }
+      ],
+      "all_other_payloads_exact": true
+    },
+    {
+      "bank": "image_00_32_IPSX.uxc",
+      "changed_images": [
+        {
+          "id": "0x2001e80",
+          "width": 76,
+          "height": 40,
+          "blocks": [
+            {
+              "compressed_bytes": 526,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 261,
+              "decoded_bytes": 2304
+            }
+          ],
+          "changed_pixels": 547
+        },
+        {
+          "id": "0x2001e83",
+          "width": 76,
+          "height": 40,
+          "blocks": [
+            {
+              "compressed_bytes": 501,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 258,
+              "decoded_bytes": 2304
+            }
+          ],
+          "changed_pixels": 461
+        },
+        {
+          "id": "0x2001e90",
+          "width": 70,
+          "height": 60,
+          "blocks": [
+            {
+              "compressed_bytes": 333,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 501,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ],
+          "changed_pixels": 547
+        },
+        {
+          "id": "0x2001e93",
+          "width": 70,
+          "height": 60,
+          "blocks": [
+            {
+              "compressed_bytes": 324,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 515,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ],
+          "changed_pixels": 461
+        },
+        {
+          "id": "0x2001e94",
+          "width": 70,
+          "height": 60,
+          "blocks": [
+            {
+              "compressed_bytes": 313,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 478,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ],
+          "changed_pixels": 527
+        },
+        {
+          "id": "0x2001e97",
+          "width": 70,
+          "height": 60,
+          "blocks": [
+            {
+              "compressed_bytes": 313,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 460,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ],
+          "changed_pixels": 445
+        },
+        {
+          "id": "0x2001e9c",
+          "width": 47,
+          "height": 32,
+          "blocks": [
+            {
+              "compressed_bytes": 568,
+              "decoded_bytes": 3072
+            }
+          ],
+          "changed_pixels": 49
+        },
+        {
+          "id": "0x2001e9e",
+          "width": 47,
+          "height": 32,
+          "blocks": [
+            {
+              "compressed_bytes": 528,
+              "decoded_bytes": 3072
+            }
+          ],
+          "changed_pixels": 49
+        }
+      ],
+      "all_other_payloads_exact": true
+    }
+  ],
+  "strings_exact": 68,
+  "runtime_sources_exact": 209,
+  "image_ids_dimensions_and_fn_plate_exact": true,
+  "menu_is_fn_slice": true,
+  "host_pixel_preview_only": true,
+  "camera_io": false,
+  "device_tested": false
+}

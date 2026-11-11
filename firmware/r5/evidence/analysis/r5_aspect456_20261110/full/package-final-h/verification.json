@@ -1,0 +1,107 @@
+{
+  "created_utc": "2026-11-10T13:42:59.982533+00:00",
+  "state": "OFFLINE_VERIFIED_LOCAL_TEST_PACKAGE_CAMERA_UNTESTED",
+  "model": "Sony ILCE-7RM5 / A7R V",
+  "target_region": "CN2",
+  "version": "4.56",
+  "user_version": "4.56",
+  "base_firmware": "Original R5 4.00",
+  "output": "analysis/r5_aspect456_20261110/full/package-final-h/NONINSTALLABLE.DAT",
+  "output_bytes": 754525608,
+  "output_sha256": "41a58a604db975a1418b2b433895ddcca37289caad6d938a9ec310071ddb7292",
+  "source_sha256": "51e1176a255a9a4b4782dfbcfa6c5f332b71173bdfe9ed2bcf4fca6bcbc6c2e2",
+  "public_key_sha256": "4cb3cf8cc7a847a5b6108863c2defa327ceb06280c1dda468cd57c3dd3cae859",
+  "source_repository": "https://github.com/Erlla/sony-a7m4-custom-firmware",
+  "source_commit": "086df3b1e33dfa0206553ac2bb003535c58ddb80",
+  "components": {
+    "AP": {
+      "bytes": 97583104,
+      "sha256": "bafcd7da96cd644a040a61f29cb09288ec700c89b2417bc1bc22deac700cce66"
+    },
+    "CP": {
+      "bytes": 17617008,
+      "sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+    },
+    "AVCAM": {
+      "bytes": 12958672,
+      "sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b"
+    },
+    "MPR": {
+      "bytes": 3606928,
+      "sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478"
+    }
+  },
+  "archive_sha256": "6d310367d4931efeb5d3fa2c53d5ccc691e9b20cec60966191d50eb2c22733c4",
+  "updater_sha256": "c4b18a82eea52a507fb82b86ad50bab6047070b8908d03c28edcce4a9577d348",
+  "updater_byte_for_byte_stock": true,
+  "changed_tar_members": [
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_E38.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_J1.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_KR2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_UC2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_AF1.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_ALLLANG.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_AP2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_CEC.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_CN2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_IN5.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_JE3.bin",
+    "0111_backup_sum/backup.sum",
+    "0700_part_image/dev/nflasha8",
+    "0700_part_image/dev/nflasha15",
+    "0700_part_image/dev/nflasha3",
+    "0700_part_image/dev/nflasha5",
+    "0701_part_image_sum/part_image.sum"
+  ],
+  "exact_four_member_scope_verified": false,
+  "factory_defaults_and_backup_sum_unchanged": false,
+  "old_forced_slot_initialization_and_write_guards_removed": true,
+  "added_migration_sync_readback_finalizer_and_native_marker_absent": true,
+  "personal_settings_embedded": false,
+  "personal_settings_deployed": false,
+  "signing_algorithm": "RSASSA-PKCS1-v1_5 / SHA-256",
+  "openssl_verification": "Signature Verified Successfully",
+  "saved_signature_valid": true,
+  "tampered_signature_rejected": true,
+  "outer_crc_valid": true,
+  "non_fdat_metadata_unchanged": true,
+  "plaintext_verification": {
+    "independent_library": "PyCryptodome AES; encryption uses cryptography",
+    "plaintext_bytes": 751577088,
+    "decrypted_blocks": 736841,
+    "plaintext_sha256": "d9d460f6100122dcff817e6c8180ff27350d32a66941a26335fe4006d8893fac",
+    "every_plaintext_byte_matches": true,
+    "all_block_checksums_lengths_flags_and_padding_valid": true
+  },
+  "same_previously_installed_custom_key": true,
+  "same_version_bypass_added": false,
+  "camera_io_performed": false,
+  "device_acceptance_tested": false,
+  "boot_recovery_tested": false,
+  "nor_write_or_readback_performed": false,
+  "limitations": [
+    "Camera installation, startup, physical LCD, actual JPEG/HEIF encoding and real ARW files remain untested for4.56.",
+    "Instruction replays explicitly model OS, memory/files, display, transport and hardware encoder endpoints; they do not establish real pixel output.",
+    "Full Bayer and native DefaultCrop/SonyCrop are preserved by the patch scope; shared embedded preview size declarations and playback recognition are updated.",
+    "The original conditional CP NOR updater is retained; no physical NOR readback or camera operation was performed in this task.",
+    "Existing4.55 sound/session behavior and updater trust are inherited; no additional physical acceptance is implied."
+  ],
+  "scope_against_455": [
+    "nflasha3",
+    "nflasha8",
+    "nflasha15",
+    "part_image.sum"
+  ],
+  "factory_defaults_and_backup_sum_unchanged_from_455": true,
+  "only_four_archive_members_differ_from_455": true,
+  "ratios": [
+    "809/500",
+    "239/100",
+    "5/4",
+    "37/20"
+  ],
+  "RAW": "Full Bayer, DefaultCrop and SonyCrop preserved; shared embedded JPEG previews crop with JPEG/HEIF and their private size declarations are synchronized.",
+  "scope": "Crop menus, preview masks, shared JPEG/HEIF and RAW embedded previews, metadata/playback; native two-column filter menu presentation with existing455 filter and sound behavior retained.",
+  "source_freeze_and_rebuild_pending": true
+}

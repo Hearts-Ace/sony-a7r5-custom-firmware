@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
-"""Only supported R5 4.55 build entry. Offline, no camera access."""
+"""Rebuild local R5 4.58 crop test components/partitions from frozen sources.
+
+Source and original firmware inputs are never modified. No device or network
+operation exists in this entry. --stage all additionally signs the local test
+DAT using the operator's separately supplied private-key path.
+"""
 from pathlib import Path
-import argparse, hashlib, json, os, shutil, subprocess, sys, tarfile
+import argparse,hashlib,importlib,json,os,shutil,subprocess,sys,tarfile,time
 
 HERE=Path(__file__).resolve().parent
-VERSION='4.55'
+REL=Path('analysis/r5_aspect456_20261110')
+BASE_REL=Path('projects/firmware/development/shutter-sound-recovery455')
 
 def sha(path):
     h=hashlib.sha256()
@@ -16,157 +22,150 @@ def save(path,value):
     path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
 
-def apply_recipe(source,target,recipe):
-    if sha(source)!=recipe['source_sha256']:raise ValueError('Unsupported source: '+str(source))
-    shutil.copyfile(source,target)
-    with target.open('r+b') as f:
-        for row in recipe['patches']:
-            before,after=bytes.fromhex(row['before']),bytes.fromhex(row['after'])
-            assert len(before)==len(after)
-            f.seek(row['offset']);assert f.read(len(before))==before
-            f.seek(row['offset']);f.write(after)
-    assert target.stat().st_size==recipe['bytes'] and sha(target)==recipe['target_sha256']
-
-def integrate(source,target,component,name):
-    from image_io import geometry
-    before,offsets,unit,meta=geometry(source,name)
-    payload=component.read_bytes();assert len(payload)==len(before)
-    shutil.copyfile(source,target)
-    with target.open('r+b') as f:
-        for i,at in enumerate(offsets):
-            block=payload[i*unit:(i+1)*unit];f.seek(at);f.write(block)
-        f.flush();os.fsync(f.fileno())
-    actual,o,u,m=geometry(target,name)
-    assert actual==payload and (o,u,m)==(offsets,unit,meta)
-    intervals=sorted((at,at+min(unit,len(payload)-i*unit)) for i,at in enumerate(offsets))
-    with source.open('rb') as a,target.open('rb') as b:
-        cursor=0
-        for lo,hi in intervals:
-            # Bounded reads even on unrelated large extents.
-            left=lo-cursor
-            while left:
-                n=min(left,4<<20);assert a.read(n)==b.read(n);left-=n
-            a.seek(hi);b.seek(hi);cursor=hi
-        while True:
-            x=a.read(4<<20);y=b.read(len(x));assert x==y
-            if not x:break
-    return dict(component_sha256=sha(component),partition_sha256=sha(target),
-                original_partition_sha256=sha(source),all_other_bytes_unchanged=True)
-
-def run(script,*args):
-    subprocess.run([sys.executable,'-B',str(script),*map(str,args)],check=True)
+def exact(path,row,label):
+    assert path.stat().st_size==row['bytes'] and sha(path)==row['sha256'],('Identity differs',label)
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--inputs',required=True,type=Path,help='Private input path JSON; see inputs.example.json')
-    p.add_argument('--output',required=True,type=Path,help='New empty output directory')
-    p.add_argument('--stage',choices=('components','all'),default='all')
-    p.add_argument('--candidate',action='store_true',help='Record new outputs for review; any DAT is renamed NONINSTALLABLE.DAT')
-    a=p.parse_args()
-    if not __debug__:p.error('Do not run with python -O: integrity assertions are required')
-    out=a.output.resolve()
-    if out.exists():p.error('Output must not exist; completed builds are immutable')
-    if out==HERE or HERE.is_relative_to(out):p.error('Output cannot contain the source directory')
-    config=json.loads(a.inputs.read_text());lock=json.loads((HERE/'inputs.lock.json').read_text())
-    source_lock=json.loads((HERE/'sources.lock.json').read_text())
-    for name,expected_digest in source_lock.items():
-        assert sha(HERE/name)==expected_digest,('Source changed; update reviewed source lock',name)
-    paths={key:Path(value).expanduser().resolve() for key,value in config.items()}
-    for key,row in lock.items():
-        source=paths[key]
-        if not source.is_file() or source.stat().st_size!=row['bytes'] or sha(source)!=row['sha256']:
-            raise ValueError('Wrong or unavailable original input: '+key)
-    if a.stage=='all':
-        private=paths['private_key']
-        if private.stat().st_mode&0o777!=0o600:raise ValueError('Private key must have mode 0600')
-    # All compilation happens in this new build tree, never in checked-in src.
-    out.mkdir(parents=True)
-    work=out/'work';shutil.copytree(HERE/'src',work)
-    sys.path[:0]=[str(work/'lib'),str(work/'templates')]
-    inputs=work/'inputs';inputs.mkdir()
-    names={'original_dat':'original.DAT','original_fdat':'original.fdat',
-           'updater':'updater.img','public_key':'public.pem','sony_public_key':'sony_public.pem'}
-    if a.stage=='all':names['private_key']='private.pem'
-    for key,name in names.items():(inputs/name).symlink_to(paths[key])
-    recipes=json.loads((work/'dependencies/baseline_recipes.json').read_text())
-    for key,src,dst in [('ap_baseline','stock_ap','ap_baseline.so'),
-                        ('cp_baseline','stock_cp','cp_baseline.bin'),
-                        ('nflasha15_layout','stock_nflasha15','nflasha15')]:
-        apply_recipe(paths[src],inputs/dst,recipes[key])
-    patched=out/'patched';patched.mkdir();evidence=out/'evidence';evidence.mkdir()
-    apply_recipe(paths['stock_nflasha5'],patched/'nflasha5',recipes['nflasha5'])
-    run(work/'import/build_ap_image.py','--output',patched)
-    run(work/'gamma/getter_gates.py')
-    run(work/'cp/build_cp.py')
-    cp=work/'cp/cp423.NONINSTALLABLE.bin'
-    shutil.copyfile(cp,patched/'cpapp-b.bin')
-    from grow_ap import replace as extend_ap
-    shutil.copyfile(inputs/'nflasha15',patched/'nflasha15')
-    partitions={
-      'AP':extend_ap(patched/'nflasha15',patched/'appFw.so',evidence/'ap-extension.json'),
-      'CP':integrate(paths['stock_nflasha8'],patched/'nflasha8',patched/'cpapp-b.bin','cpapp-b.bin')}
-    from prepare_templates import build_templates
-    replacements,templates=build_templates(paths['original_tar'],patched/'templates',expected_archive_sha256=lock['original_tar']['sha256'])
-    save(evidence/'templates.json',templates)
-    from image_io import update_sum,digest_stream
-    from overlay import Overlay
-    replacements.update({'0700_part_image/dev/'+name:patched/name for name in ('nflasha5','nflasha8','nflasha15')})
-    with tarfile.open(paths['original_tar'],'r:') as t:
-        members=t.getmembers();by={m.name:m for m in members};assert len(by)==len(members)
-        name='0701_part_image_sum/part_image.sum'
-        mapping={'dev/'+name:patched/name for name in ('nflasha5','nflasha8','nflasha15')}
-        text,changes=update_sum(t.extractfile(name).read().decode('ascii'),mapping,{k:v.stat().st_size for k,v in mapping.items()})
-        assert len(changes)==3
-        sums=patched/'part_image.sum';sums.write_text(text);replacements[name]=sums
-    ranges=[]
-    for name,path in sorted(replacements.items(),key=lambda item:by[item[0]].offset_data):
-        m=by[name];assert path.stat().st_size==m.size
-        ranges.append((m.offset_data,m.offset_data+m.size,path))
-    overlay=Overlay(paths['original_tar'],ranges)
-    with overlay.open('rb') as f:archive_sha=digest_stream(f)
-    facts=[]
-    with tarfile.open(paths['original_tar'],'r:') as original,overlay.open('rb') as f,tarfile.open(fileobj=f,mode='r:') as result:
-        assert [m.get_info() for m in original.getmembers()]==[m.get_info() for m in result.getmembers()]
-        for m in members:
-            if not m.isfile():continue
-            before,after=digest_stream(original.extractfile(m)),digest_stream(result.extractfile(m))
-            assert after==(sha(replacements[m.name]) if m.name in replacements else before)
-            facts.append(dict(member=m.name,sha256=after,changed=before!=after))
-    archive=dict(passed=True,output_sha256=archive_sha,changed_members=list(replacements),members=facts,
-                 original_headers_padding_trailer_preserved=True)
-    save(evidence/'archive_verification_455.json',archive)
+    p.add_argument('--inputs',type=Path,required=True,help='Private original input-path JSON; never included in source archive')
+    p.add_argument('--output',type=Path,required=True,help='New build directory; compiled output lives here only')
+    p.add_argument('--stage',choices=('components','all'),default='components')
+    p.add_argument('--e2fsck',type=Path,help='Optional e2fsck executable for read-only ext2 validation')
+    a=p.parse_args();assert __debug__,'Do not disable integrity assertions with -O'
+    out=a.output.expanduser().resolve();config_path=a.inputs.expanduser().resolve()
+    assert not out.exists(),'Output must be new'
+    assert out!=HERE and not HERE.is_relative_to(out),'Output must not contain source tree'
+    lock=json.loads((HERE/'sources.lock.json').read_text())
+    assert lock and all(sha(HERE/name)==digest for name,digest in lock.items()),'Frozen source changed'
     expected=json.loads((HERE/'expected_outputs.json').read_text())
-    actual={'AP':sha(patched/'appFw.so'),'CP':sha(patched/'cpapp-b.bin'),
-            'nflasha15':sha(patched/'nflasha15'),'nflasha8':sha(patched/'nflasha8'),
-            'nflasha5':sha(patched/'nflasha5'),'archive':archive_sha}
-    save(evidence/'computed_outputs.json',actual)
-    if not a.candidate:
-        for key,value in actual.items():
-            assert value==expected[key],('Reproduction differs',key,value,expected[key])
-    save(evidence/'components.json',dict(passed=True,version=VERSION,actual=actual,partitions=partitions,
-         original_inputs=lock,source_sha256=sha(HERE/'sources.lock.json'),camera_io=False))
+    config={k:str(Path(v).expanduser().resolve()) for k,v in json.loads(config_path.read_text()).items()}
+    # Fail before the expensive baseline rebuild when a declared host tool or
+    # Python package is missing. All resolved paths remain ordinary host tools.
+    packages={name:importlib.import_module(name) for name in ('numpy','elftools','capstone','unicorn','Cryptodome','cryptography')}
+    compiler=shutil.which('clang');assert compiler,'clang is required'
+    checker=str(a.e2fsck.expanduser().resolve()) if a.e2fsck else (shutil.which('e2fsck') or '/opt/homebrew/opt/e2fsprogs/sbin/e2fsck')
+    assert Path(checker).is_file(),'e2fsck is required; supply --e2fsck'
+    # The original immutable 4.55 entry validates all input sizes/hashes before
+    # using them. No private-key read is needed for the default component stage.
+    out.mkdir(parents=True);runtime=out/'runtime';shutil.copytree(HERE/'source',runtime)
+    for path,digest in lock.items():
+        if path.startswith('source/'):
+            assert sha(runtime/Path(path).relative_to('source'))==digest
+    logs=out/'logs';logs.mkdir();commands=[]
+    save(out/'host-environment.json',dict(python=sys.version,executable=sys.executable,
+         compiler=compiler,compiler_version=subprocess.run([compiler,'--version'],capture_output=True,text=True,check=True).stdout,
+         e2fsck=checker,packages={name:dict(path=str(module.__file__),version=getattr(module,'__version__',None))
+                                for name,module in packages.items()}))
+    env=os.environ.copy();env['PYTHONDONTWRITEBYTECODE']='1'
+    # Canonicalize the caller's dependency search paths before cwd changes.
+    # Third-party host packages are installed dependencies, not firmware inputs.
+    if env.get('PYTHONPATH'):
+        env['PYTHONPATH']=os.pathsep.join(str(Path(x or '.').resolve()) for x in env['PYTHONPATH'].split(os.pathsep))
+    def run(label,script,*args,extra_env=None):
+        command=[sys.executable,'-B',str(script),*map(str,args)]
+        print(label,flush=True);started=time.monotonic()
+        log=logs/(label+'.log')
+        with log.open('w') as stream:
+            r=subprocess.run(command,cwd=runtime,env={**env,**(extra_env or {})},stdout=stream,stderr=subprocess.STDOUT)
+        row=dict(stage=label,command=command,exit_code=r.returncode,seconds=round(time.monotonic()-started,3),
+                 log=str(log.relative_to(out)),log_sha256=sha(log))
+        commands.append(row);save(out/'commands.json',commands)
+        if r.returncode:
+            print(log.read_text()[-6000:],file=sys.stderr)
+            raise RuntimeError('Stage failed: '+label+'; see '+str(log))
+    base=out/'base455';frozen455=runtime/BASE_REL
+    run('01-baseline455',frozen455/'build.py','--inputs',config_path,'--output',base,'--stage','components')
+    base_expected=json.loads((frozen455/'expected_outputs.json').read_text())
+    for key,name in (('AP','appFw.so'),('CP','cpapp-b.bin'),('nflasha5','nflasha5'),('nflasha8','nflasha8'),('nflasha15','nflasha15')):
+        assert sha(base/'patched'/name)==base_expected[key],('Baseline455 differs',key)
+    release=runtime/'projects/firmware/releases/4.55-sound-recovery-20261105'
+    release.mkdir(parents=True);shutil.copyfile(base/'patched/appFw.so',release/'appFw.so')
+    crop=runtime/REL;cp=crop/'cp';ui=crop/'ui';review=crop/'reference-review'
+    style=runtime/'analysis/r5_filter_native_style_20261110'
+    shutil.copyfile(base/'work/inputs/cp_baseline.bin',cp/'baseline404.bin')
+    # Extract only the required originals into this fresh runtime. In particular
+    # no old patched AP/CP/AVCAM/MPR or resource output is an input.
+    full=crop/'full';sys.path.insert(0,str(full/'vendor'))
+    from a7r5dat.ext2_patch import reader
+    from a7r5dat.fat import FatImage
+    fs=reader(Path(config['stock_nflasha15']).read_bytes())
+    root_usr=runtime/'unpacked/r5/usr_complete';lib=root_usr/'lib';lib.mkdir(parents=True)
+    (lib/'libmpr.so').write_bytes(fs.read_inode(fs.walk('/lib/libmpr.so')))
+    resource_inputs=root_usr/'share/app';resource_inputs.mkdir(parents=True)
+    resource_manifest=json.loads((crop/'resources/inputs.json').read_text())
+    for row in resource_manifest['resource_files']:
+        raw=fs.read_inode(fs.walk('/share/app/'+row['name']))
+        assert len(raw)==row['bytes'] and hashlib.sha256(raw).hexdigest()==row['sha256']
+        (resource_inputs/row['name']).write_bytes(raw)
+    del fs
+    stock_parts=runtime/'unpacked/r5/firmware/0700_part_image/dev';stock_parts.mkdir(parents=True)
+    with tarfile.open(config['original_tar'],'r:') as t:
+        n3=t.extractfile('0700_part_image/dev/nflasha3').read()
+    (stock_parts/'nflasha3').write_bytes(n3)
+    camera=runtime/'unpacked/r5/system_main';camera.mkdir(parents=True)
+    (camera/'av-cam.bin').write_bytes(FatImage(n3).read('/av-cam.bin'));del n3
+    # Supply the original n3 next to n8 for the reviewed partition builder.
+    (stock_parts/'nflasha8').symlink_to(Path(config['stock_nflasha8']))
+    local_config={**config,'stock_nflasha8':str(stock_parts/'nflasha8')}
+    generated_inputs=out/'inputs.runtime.json';save(generated_inputs,local_config)
+    stock_cp=runtime/'unpacked/r5/cp_data';stock_cp.mkdir(parents=True)
+    (stock_cp/'cpapp-b.bin').symlink_to(Path(config['stock_cp']))
+    run('02-gamma',cp/'build_gamma_compact.py')
+    adapter=cp/'adapter-build'
+    run('03-cp-adapter',cp/'build_adapter.py','--dispatch','--out',adapter)
+    integrated=cp/'integrated-build'
+    run('04-cp-integrated',cp/'build_integrated.py','--adapter',adapter,'--out',integrated)
+    module=ui/'module-build';contract=ui/'contract-build';ap=ui/'candidate-build'
+    run('05-ap-module',ui/'compile_ui.py','--output',module)
+    run('06-ap-contract',ui/'make_contract.py','--module',module,'--output',contract)
+    run('07-ap-append',ui/'append_ui.py','--module',module,'--contract',contract/'integration.json','--output',ap)
+    avcam=review/'avcam-build';mpr=review/'mpr-build';playback=review/'playback-build'
+    run('08-avcam',review/'avcam_patch.py','--output',avcam)
+    run('09-mpr',review/'mpr_patch.py','--output',mpr)
+    run('10-ap-playback',review/'append_playback_segment.py','--base',ap/'appFw-NONINSTALLABLE.so',
+        '--base-sha256',sha(ap/'appFw-NONINSTALLABLE.so'),'--output',playback)
+    styled=style/'candidate-build'
+    run('10b-ap-filter-style',style/'build_style.py','--base',playback/'appFw-NONINSTALLABLE.so',
+        '--audit',base/'work/import/module_audit.json','--output',styled)
+    resource_output=crop/'resources/output-build'
+    run('11-resources',crop/'resources/build_resources.py','--input-root',resource_inputs,'--output',resource_output)
+    pt=runtime/'analysis/r5_filter_pt456_20261110/candidate-build'
+    run('10c-ap-filter-pt',runtime/'analysis/r5_filter_pt456_20261110/build_pt.py',
+        '--base',styled/'appFw-NONINSTALLABLE.so','--audit',base/'work/import/module_audit.json','--output',pt)
+    outputs={'AP':pt/'appFw-NONINSTALLABLE.so','CP':integrated/'cp/cp423.NONINSTALLABLE.bin',
+             'AVCAM':avcam/'av-cam.bin','MPR':mpr/'libmpr.so'}
+    for key,path in outputs.items():exact(path,expected['components'][key],key)
+    actual_resources=json.loads((resource_output/'manifest.json').read_text())
+    assert {r['name']:r['output_sha256'] for r in actual_resources['files']}==expected['resources']
+    partitions=out/'partitions-build'
+    extra=['--e2fsck',checker]
+    run('12-partitions',full/'build_partitions.py','--base',base,'--output',partitions,'--inputs',generated_inputs,
+        '--ap',outputs['AP'],'--cp',outputs['CP'],'--avcam',outputs['AVCAM'],'--mpr',outputs['MPR'],
+        '--resources',resource_output,*extra)
+    for key,row in expected['partitions'].items():exact(partitions/'partitions'/key,row,key)
+    package=None
     if a.stage=='all':
-        import package
-        package.ROOT=work;package.OUT=out;package.TAR=overlay
-        package.components=lambda:dict(upstream_commit='086df3b1e33dfa0206553ac2bb003535c58ddb80',
-            components={n:dict(sha256=sha(patched/n)) for n in ('appFw.so','cpapp-b.bin','nflasha5')})
-        original_digest=package.digest_file
-        package.digest_file=lambda path:archive_sha if path is overlay else original_digest(path)
-        package.build_package()
-        if not a.candidate:
-            assert sha(out/'BODYDATA.DAT')==expected['DAT'],'DAT differs from frozen 4.55'
-        receipt=json.loads((out/'verification.json').read_text())
-        receipt.update(exact_four_member_scope_verified=False,factory_defaults_and_backup_sum_unchanged=False,
-            consolidated_source_build=True,source_input='original R5 4.00',
-            custom_filter_Fn_automatically_assigned=False,AWB_white_priority=97,AWB_ambience=-1)
-        save(out/'verification.json',receipt)
-    # Record only public source identities; never store private key bytes.
-    save(out/'build-result.json',dict(passed=True,version=VERSION,stage=a.stage,outputs=actual,
-         DAT_sha256=sha(out/'BODYDATA.DAT') if a.stage=='all' else None,
-         previous_version_scripts_required=False,previous_version_outputs_required=False,camera_io=False))
-    if a.candidate:
-        if (out/'BODYDATA.DAT').exists():(out/'BODYDATA.DAT').rename(out/'NONINSTALLABLE.DAT')
-        save(out/'CANDIDATE.json',dict(frozen_output_identity_verified=False,review_required=True,outputs=actual))
-    print('R5 4.55 reproduced exactly:',out,flush=True)
-
+        package=out/'package'
+        run('13-package',full/'package_candidate.py','--base',base,'--build',partitions,
+            '--inputs',generated_inputs,'--output',package)
+        if expected.get('DAT'):exact(package/'NONINSTALLABLE.DAT',expected['DAT'],'DAT')
+        verification_path=package/'verification.json'
+        verification=json.loads(verification_path.read_text())
+        verification.update(source_freeze_and_rebuild_pending=False,
+                            frozen_source_lock_sha256=sha(HERE/'sources.lock.json'),
+                            all_components_and_partitions_rebuilt_from_frozen_sources=True,
+                            device_acceptance_tested=False)
+        save(verification_path,verification)
+    report=dict(passed=True,status='LOCAL_TEST_BUILD_REPRODUCED_CAMERA_UNTESTED',version='4.58',stage=a.stage,
+                source_lock_sha256=sha(HERE/'sources.lock.json'),expected_outputs_sha256=sha(HERE/'expected_outputs.json'),
+                components={k:dict(path=str(v.relative_to(out)),bytes=v.stat().st_size,sha256=sha(v)) for k,v in outputs.items()},
+                partitions={name:dict(path=str((partitions/'partitions'/name).relative_to(out)),**row) for name,row in expected['partitions'].items()},
+                resources=len(actual_resources['files']),all_resource_bytes_exact=True,
+                DAT=dict(path=str((package/'NONINSTALLABLE.DAT').relative_to(out)),sha256=sha(package/'NONINSTALLABLE.DAT')) if package else None,
+                RAW=expected['RAW'],
+                ratios=['809/500','239/100','5/4','37/20'],menu_order=[0,4,1,6,2,7,5,3],
+                camera_io=False,device_tested=False,
+                limitations=['Reproduction and offline CPU evidence do not establish camera startup, LCD, encoding or file acceptance'])
+    save(out/'build-result.json',report)
+    print(json.dumps(report,ensure_ascii=False,indent=2),flush=True)
 if __name__=='__main__':main()

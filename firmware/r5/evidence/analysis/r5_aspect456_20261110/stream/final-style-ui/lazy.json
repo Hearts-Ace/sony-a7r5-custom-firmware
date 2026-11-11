@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "bias": "0x4000000000",
+      "initial": 4,
+      "side_cache": 260,
+      "after": 4,
+      "saved": 4,
+      "correct": true
+    },
+    {
+      "bias": "0x4000000000",
+      "initial": 5,
+      "side_cache": 261,
+      "after": 5,
+      "saved": 5,
+      "correct": true
+    },
+    {
+      "bias": "0x4000000000",
+      "initial": 6,
+      "side_cache": 262,
+      "after": 6,
+      "saved": 6,
+      "correct": true
+    },
+    {
+      "bias": "0x4000000000",
+      "initial": 7,
+      "side_cache": 263,
+      "after": 7,
+      "saved": 7,
+      "correct": true
+    },
+    {
+      "bias": "0x6000000000",
+      "initial": 4,
+      "side_cache": 260,
+      "after": 4,
+      "saved": 4,
+      "correct": true
+    },
+    {
+      "bias": "0x6000000000",
+      "initial": 5,
+      "side_cache": 261,
+      "after": 5,
+      "saved": 5,
+      "correct": true
+    },
+    {
+      "bias": "0x6000000000",
+      "initial": 6,
+      "side_cache": 262,
+      "after": 6,
+      "saved": 6,
+      "correct": true
+    },
+    {
+      "bias": "0x6000000000",
+      "initial": 7,
+      "side_cache": 263,
+      "after": 7,
+      "saved": 7,
+      "correct": true
+    }
+  ],
+  "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac"
+}

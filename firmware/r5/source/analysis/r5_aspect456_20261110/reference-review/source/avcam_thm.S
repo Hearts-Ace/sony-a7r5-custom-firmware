@@ -1,0 +1,29 @@
+.text
+.global aspect_avcam_thm
+aspect_avcam_thm:
+    ldrh w8,[x23,#4]
+    ldrh w9,[x23,#6]
+    mov w10,#160
+    mov w11,#120
+    mul w12,w8,w11
+    mul w13,w9,w10
+    cmp w12,w13
+    udiv w12,w12,w9
+    udiv w13,w13,w8
+    csel w8,w10,w12,hs
+    csel w9,w13,w11,hs
+    and w8,w8,#0xfffffffc
+    and w9,w9,#0xfffffffe
+    strh w8,[sp,#0x148]
+    strh w9,[sp,#0x14a]
+    sub w10,w10,w8
+    lsr w10,w10,#1
+    and w10,w10,#0xfffffffe
+    strh w10,[sp,#0x144]
+    sub w11,w11,w9
+    lsr w11,w11,#1
+    strh w11,[sp,#0x146]
+    mov w10,#0x08000000
+    mov w11,#0x0800
+    str w10,[sp,#0x58]
+    strh w11,[sp,#0x5c]

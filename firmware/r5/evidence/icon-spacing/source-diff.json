@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "resource_only": true,
+  "changes": [
+    {
+      "path": "source/analysis/r5_aspect456_20261110/resources/reference_style.py",
+      "diff": "--- \n+++ \n@@ -1807,10 +1807,19 @@\n         for x, code in enumerate(row):\n             pixels[(plate_top+y)*80+left+x] = FN_PALETTE[code]\n     x = (70 - text_width) // 2\n-    for glyph in glyphs:\n-        for y, row in enumerate(glyph):\n+    for index, glyph in enumerate(glyphs):\n+        # Resource-only optical spacing for the middle 1 in 1.618:1.\n+        # Original advance boxes, plate and all other glyph positions stay fixed.\n+        shift = (-2 if variant == '23' else -3) if label == '1.618:1' and index == 3 else 0\n+        source = (FN_STYLES['23']['glyphs']['5'][state]\n+                  if variant == '32' and label == '1.85:1' and index == 3 else glyph)\n+        y_shift = 1 if source is not glyph else 0  # Exact15-row glyph centered in17-row box.\n+        background = '!' if state else '$'\n+        for y, row in enumerate(source):\n             for dx, code in enumerate(row):\n-                pixels[(text_top+y)*80+x+dx] = FN_PALETTE[code]\n+                if shift and code == background:\n+                    continue  # Keep the adjacent 6 edge antialiasing intact.\n+                pixels[(text_top+y+y_shift)*80+x+dx+shift] = FN_PALETTE[code]\n         x += len(glyph[0]) + gap\n     return struct.pack('<4800H', *pixels)\n \n"
+    }
+  ]
+}

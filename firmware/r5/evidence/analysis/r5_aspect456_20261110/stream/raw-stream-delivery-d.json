@@ -1,0 +1,1383 @@
+{
+  "passed": true,
+  "schema": "r5-cp-rawheader-avcam-stream/1",
+  "cases": 24,
+  "rows": [
+    {
+      "selection": 4,
+      "size_enum": 0,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        9504,
+        5872
+      ],
+      "CP_SonyCrop_WH": [
+        9504,
+        6336
+      ],
+      "CPheader_sha256": "9434cc0deedce6937eefd7a757cc39ce38211dae0d9497610c2b7aa6de783052",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            232,
+            9504,
+            5872,
+            0,
+            0,
+            9504,
+            5872
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            5872,
+            0,
+            0,
+            9504,
+            5872
+          ],
+          "pixel_WH": [
+            9504,
+            5872
+          ],
+          "pixel_sha256": "0e42477088b196a8d7a942b9e35a594c10df825d8157bf40419e71a2bfff2c01"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 4,
+      "size_enum": 0,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        9504,
+        5872
+      ],
+      "CP_SonyCrop_WH": [
+        9504,
+        6336
+      ],
+      "CPheader_sha256": "9434cc0deedce6937eefd7a757cc39ce38211dae0d9497610c2b7aa6de783052",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            232,
+            9504,
+            5872,
+            0,
+            0,
+            9504,
+            5872
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            5872,
+            0,
+            0,
+            9504,
+            5872
+          ],
+          "pixel_WH": [
+            9504,
+            5872
+          ],
+          "pixel_sha256": "0e42477088b196a8d7a942b9e35a594c10df825d8157bf40419e71a2bfff2c01"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 4,
+      "size_enum": 1,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        6240,
+        3856
+      ],
+      "CP_SonyCrop_WH": [
+        6240,
+        4160
+      ],
+      "CPheader_sha256": "ddd46f57823cff342bbd664c2a784332fe0d0b742e0eb546072dc843db0c048f",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            152,
+            6240,
+            3856,
+            0,
+            0,
+            6240,
+            3856
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            3856,
+            0,
+            0,
+            6240,
+            3856
+          ],
+          "pixel_WH": [
+            6240,
+            3856
+          ],
+          "pixel_sha256": "9364197ff308b070a3a825c16c22ebbcbb12763c62659be05d730dd3c6baa420"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 4,
+      "size_enum": 1,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        6240,
+        3856
+      ],
+      "CP_SonyCrop_WH": [
+        6240,
+        4160
+      ],
+      "CPheader_sha256": "ddd46f57823cff342bbd664c2a784332fe0d0b742e0eb546072dc843db0c048f",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            152,
+            6240,
+            3856,
+            0,
+            0,
+            6240,
+            3856
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            3856,
+            0,
+            0,
+            6240,
+            3856
+          ],
+          "pixel_WH": [
+            6240,
+            3856
+          ],
+          "pixel_sha256": "9364197ff308b070a3a825c16c22ebbcbb12763c62659be05d730dd3c6baa420"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 4,
+      "size_enum": 2,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        4752,
+        2936
+      ],
+      "CP_SonyCrop_WH": [
+        4752,
+        3168
+      ],
+      "CPheader_sha256": "5543824b5661cf2b72cf9dacb4b3fe21ff05b492e017b61ab69234d1ad4cff73",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            116,
+            4752,
+            2936,
+            0,
+            0,
+            4752,
+            2936
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            2936,
+            0,
+            0,
+            4752,
+            2936
+          ],
+          "pixel_WH": [
+            4752,
+            2936
+          ],
+          "pixel_sha256": "92c6bdd11044c69337d3c509cc9dd63c604c85497ce704a815f1a2e70eaebb85"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 4,
+      "size_enum": 2,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        4752,
+        2936
+      ],
+      "CP_SonyCrop_WH": [
+        4752,
+        3168
+      ],
+      "CPheader_sha256": "5543824b5661cf2b72cf9dacb4b3fe21ff05b492e017b61ab69234d1ad4cff73",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            116,
+            4752,
+            2936,
+            0,
+            0,
+            4752,
+            2936
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            2936,
+            0,
+            0,
+            4752,
+            2936
+          ],
+          "pixel_WH": [
+            4752,
+            2936
+          ],
+          "pixel_sha256": "92c6bdd11044c69337d3c509cc9dd63c604c85497ce704a815f1a2e70eaebb85"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 5,
+      "size_enum": 0,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        9504,
+        3976
+      ],
+      "CP_SonyCrop_WH": [
+        9504,
+        6336
+      ],
+      "CPheader_sha256": "9be97c071de6e90dcf4116918db7de7b741ddca57d257bcf34c8fb4fbb857f9d",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            1180,
+            9504,
+            3976,
+            0,
+            0,
+            9504,
+            3976
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            3976,
+            0,
+            0,
+            9504,
+            3976
+          ],
+          "pixel_WH": [
+            9504,
+            3976
+          ],
+          "pixel_sha256": "8cd006b0c1cb9073b0abaf145b756166d414f4a70b5e13cd922f0f5425c0d6aa"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 5,
+      "size_enum": 0,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        9504,
+        3976
+      ],
+      "CP_SonyCrop_WH": [
+        9504,
+        6336
+      ],
+      "CPheader_sha256": "9be97c071de6e90dcf4116918db7de7b741ddca57d257bcf34c8fb4fbb857f9d",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            1180,
+            9504,
+            3976,
+            0,
+            0,
+            9504,
+            3976
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            3976,
+            0,
+            0,
+            9504,
+            3976
+          ],
+          "pixel_WH": [
+            9504,
+            3976
+          ],
+          "pixel_sha256": "8cd006b0c1cb9073b0abaf145b756166d414f4a70b5e13cd922f0f5425c0d6aa"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 5,
+      "size_enum": 1,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        6240,
+        2608
+      ],
+      "CP_SonyCrop_WH": [
+        6240,
+        4160
+      ],
+      "CPheader_sha256": "f70ffbb2805fa6109a7135ec62afe2981dc37347c41de5074ac00e88eafde12e",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            776,
+            6240,
+            2608,
+            0,
+            0,
+            6240,
+            2608
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            2608,
+            0,
+            0,
+            6240,
+            2608
+          ],
+          "pixel_WH": [
+            6240,
+            2608
+          ],
+          "pixel_sha256": "afb60c0151dc3daf79b90aaa8aeb8f0a142c64db1e72f0c147aec0fb3db4d4f5"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 5,
+      "size_enum": 1,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        6240,
+        2608
+      ],
+      "CP_SonyCrop_WH": [
+        6240,
+        4160
+      ],
+      "CPheader_sha256": "f70ffbb2805fa6109a7135ec62afe2981dc37347c41de5074ac00e88eafde12e",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            776,
+            6240,
+            2608,
+            0,
+            0,
+            6240,
+            2608
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            2608,
+            0,
+            0,
+            6240,
+            2608
+          ],
+          "pixel_WH": [
+            6240,
+            2608
+          ],
+          "pixel_sha256": "afb60c0151dc3daf79b90aaa8aeb8f0a142c64db1e72f0c147aec0fb3db4d4f5"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 5,
+      "size_enum": 2,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        4752,
+        1992
+      ],
+      "CP_SonyCrop_WH": [
+        4752,
+        3168
+      ],
+      "CPheader_sha256": "19744307da4dfd15630f825fd8f24ff5b6e742f47b17ea9e4c188034d5f2be31",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            588,
+            4752,
+            1992,
+            0,
+            0,
+            4752,
+            1992
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            1992,
+            0,
+            0,
+            4752,
+            1992
+          ],
+          "pixel_WH": [
+            4752,
+            1992
+          ],
+          "pixel_sha256": "6cabe44f05bbf51cbf29fd71e0e7987b29a21ebaa9db776cc756fd591f688baf"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 5,
+      "size_enum": 2,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        4752,
+        1992
+      ],
+      "CP_SonyCrop_WH": [
+        4752,
+        3168
+      ],
+      "CPheader_sha256": "19744307da4dfd15630f825fd8f24ff5b6e742f47b17ea9e4c188034d5f2be31",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            588,
+            4752,
+            1992,
+            0,
+            0,
+            4752,
+            1992
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            1992,
+            0,
+            0,
+            4752,
+            1992
+          ],
+          "pixel_WH": [
+            4752,
+            1992
+          ],
+          "pixel_sha256": "6cabe44f05bbf51cbf29fd71e0e7987b29a21ebaa9db776cc756fd591f688baf"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 6,
+      "size_enum": 0,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        7920,
+        6336
+      ],
+      "CP_SonyCrop_WH": [
+        9504,
+        6336
+      ],
+      "CPheader_sha256": "e7a21228aa0c5b350831809a11290e62d8161ba78e3806bfcafa36412fa1640e",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            792,
+            0,
+            7920,
+            6336,
+            0,
+            0,
+            7920,
+            6336
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            7920,
+            6336,
+            0,
+            0,
+            7920,
+            6336
+          ],
+          "pixel_WH": [
+            7920,
+            6336
+          ],
+          "pixel_sha256": "8bb83788b8599481f92ef16b0257294c64aa2e10dd822c6b38949e86b468a4b7"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 6,
+      "size_enum": 0,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        7920,
+        6336
+      ],
+      "CP_SonyCrop_WH": [
+        9504,
+        6336
+      ],
+      "CPheader_sha256": "e7a21228aa0c5b350831809a11290e62d8161ba78e3806bfcafa36412fa1640e",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            792,
+            0,
+            7920,
+            6336,
+            0,
+            0,
+            7920,
+            6336
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            7920,
+            6336,
+            0,
+            0,
+            7920,
+            6336
+          ],
+          "pixel_WH": [
+            7920,
+            6336
+          ],
+          "pixel_sha256": "8bb83788b8599481f92ef16b0257294c64aa2e10dd822c6b38949e86b468a4b7"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 6,
+      "size_enum": 1,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        5200,
+        4160
+      ],
+      "CP_SonyCrop_WH": [
+        6240,
+        4160
+      ],
+      "CPheader_sha256": "1655d5a97da64eb6fdea3e2de410fd3ec302f389bc3e2a7498e1a29baae6b7df",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            520,
+            0,
+            5200,
+            4160,
+            0,
+            0,
+            5200,
+            4160
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            5200,
+            4160,
+            0,
+            0,
+            5200,
+            4160
+          ],
+          "pixel_WH": [
+            5200,
+            4160
+          ],
+          "pixel_sha256": "ffb90c9739d2d32ca1b6d53aca1f0204d34ffb007967de5734e38d4015d6c0ee"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 6,
+      "size_enum": 1,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        5200,
+        4160
+      ],
+      "CP_SonyCrop_WH": [
+        6240,
+        4160
+      ],
+      "CPheader_sha256": "1655d5a97da64eb6fdea3e2de410fd3ec302f389bc3e2a7498e1a29baae6b7df",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            520,
+            0,
+            5200,
+            4160,
+            0,
+            0,
+            5200,
+            4160
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            5200,
+            4160,
+            0,
+            0,
+            5200,
+            4160
+          ],
+          "pixel_WH": [
+            5200,
+            4160
+          ],
+          "pixel_sha256": "ffb90c9739d2d32ca1b6d53aca1f0204d34ffb007967de5734e38d4015d6c0ee"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 6,
+      "size_enum": 2,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        3968,
+        3168
+      ],
+      "CP_SonyCrop_WH": [
+        4752,
+        3168
+      ],
+      "CPheader_sha256": "fd2b1dc188f488614409d5781410714b66b56ee5a8cf83c61898e53afc2fb03e",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            392,
+            0,
+            3968,
+            3168,
+            0,
+            0,
+            3968,
+            3168
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            3968,
+            3168,
+            0,
+            0,
+            3968,
+            3168
+          ],
+          "pixel_WH": [
+            3968,
+            3168
+          ],
+          "pixel_sha256": "03be4cbf4bd82c3625f1e67d94edefe0a539a401aed4be4b230596177285f6db"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 6,
+      "size_enum": 2,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        3968,
+        3168
+      ],
+      "CP_SonyCrop_WH": [
+        4752,
+        3168
+      ],
+      "CPheader_sha256": "fd2b1dc188f488614409d5781410714b66b56ee5a8cf83c61898e53afc2fb03e",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            392,
+            0,
+            3968,
+            3168,
+            0,
+            0,
+            3968,
+            3168
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            3968,
+            3168,
+            0,
+            0,
+            3968,
+            3168
+          ],
+          "pixel_WH": [
+            3968,
+            3168
+          ],
+          "pixel_sha256": "03be4cbf4bd82c3625f1e67d94edefe0a539a401aed4be4b230596177285f6db"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 7,
+      "size_enum": 0,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        9504,
+        5136
+      ],
+      "CP_SonyCrop_WH": [
+        9504,
+        6336
+      ],
+      "CPheader_sha256": "ee62273033cdc9919af5b24287214330e1e94ea29156741804243f7899e84698",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            600,
+            9504,
+            5136,
+            0,
+            0,
+            9504,
+            5136
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            5136,
+            0,
+            0,
+            9504,
+            5136
+          ],
+          "pixel_WH": [
+            9504,
+            5136
+          ],
+          "pixel_sha256": "c5ef0d04e30a3c15f0be246c428423288ec4dcc9b5bde8be281f1728faf694b1"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 7,
+      "size_enum": 0,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        9504,
+        5136
+      ],
+      "CP_SonyCrop_WH": [
+        9504,
+        6336
+      ],
+      "CPheader_sha256": "ee62273033cdc9919af5b24287214330e1e94ea29156741804243f7899e84698",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            600,
+            9504,
+            5136,
+            0,
+            0,
+            9504,
+            5136
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            5136,
+            0,
+            0,
+            9504,
+            5136
+          ],
+          "pixel_WH": [
+            9504,
+            5136
+          ],
+          "pixel_sha256": "c5ef0d04e30a3c15f0be246c428423288ec4dcc9b5bde8be281f1728faf694b1"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 7,
+      "size_enum": 1,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        6240,
+        3376
+      ],
+      "CP_SonyCrop_WH": [
+        6240,
+        4160
+      ],
+      "CPheader_sha256": "61f253df827f8e29db1b3fc959d0e2c73b4711c63edefdbc1314e52d383bde95",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            392,
+            6240,
+            3376,
+            0,
+            0,
+            6240,
+            3376
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            3376,
+            0,
+            0,
+            6240,
+            3376
+          ],
+          "pixel_WH": [
+            6240,
+            3376
+          ],
+          "pixel_sha256": "8c6b54bbfdf13965a8cf6b1948edabf409133a9cac2d2dee4e3002156c1efc21"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 7,
+      "size_enum": 1,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        6240,
+        3376
+      ],
+      "CP_SonyCrop_WH": [
+        6240,
+        4160
+      ],
+      "CPheader_sha256": "61f253df827f8e29db1b3fc959d0e2c73b4711c63edefdbc1314e52d383bde95",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            392,
+            6240,
+            3376,
+            0,
+            0,
+            6240,
+            3376
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            3376,
+            0,
+            0,
+            6240,
+            3376
+          ],
+          "pixel_WH": [
+            6240,
+            3376
+          ],
+          "pixel_sha256": "8c6b54bbfdf13965a8cf6b1948edabf409133a9cac2d2dee4e3002156c1efc21"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 7,
+      "size_enum": 2,
+      "formats": [
+        2,
+        4
+      ],
+      "CP_EMB_WH": [
+        4752,
+        2568
+      ],
+      "CP_SonyCrop_WH": [
+        4752,
+        3168
+      ],
+      "CPheader_sha256": "11ad1a309ce8b78331de7e99df169722c246f64e44cddd81b05497419b927d86",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 8,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            300,
+            4752,
+            2568,
+            0,
+            0,
+            4752,
+            2568
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            2568,
+            0,
+            0,
+            4752,
+            2568
+          ],
+          "pixel_WH": [
+            4752,
+            2568
+          ],
+          "pixel_sha256": "bd1a5e591585e031032c88a5d5b309c9400e40997a70277297ab1323c31f8808"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    },
+    {
+      "selection": 7,
+      "size_enum": 2,
+      "formats": [
+        4,
+        2
+      ],
+      "CP_EMB_WH": [
+        4752,
+        2568
+      ],
+      "CP_SonyCrop_WH": [
+        4752,
+        3168
+      ],
+      "CPheader_sha256": "11ad1a309ce8b78331de7e99df169722c246f64e44cddd81b05497419b927d86",
+      "CP_RAW_descriptor_sha256": "e25ae24993fe488cac1f49d7e100d7ba01a559f2f1862abf78197f5caf4dcf99",
+      "native_getter_extra": "0x20193fdc",
+      "native_plan": 11,
+      "requests": [
+        {
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            300,
+            4752,
+            2568,
+            0,
+            0,
+            4752,
+            2568
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            2568,
+            0,
+            0,
+            4752,
+            2568
+          ],
+          "pixel_WH": [
+            4752,
+            2568
+          ],
+          "pixel_sha256": "bd1a5e591585e031032c88a5d5b309c9400e40997a70277297ab1323c31f8808"
+        }
+      ],
+      "header_exact_after": true,
+      "shared_YC_exact": true
+    }
+  ],
+  "CP_sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a",
+  "AVCAM_sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b",
+  "script_sha256": "34fef85b9eae929f082122ef6c0ee3bb2051940a009d6705adcc8a8c05f9cc50",
+  "fixture_sources": {
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_ap_menu.py": "1bca1f32a923a979ee85946d406a719361bb07f0f05c1b046f9d0c76ca377572",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_avcam.py": "e824442b6c4b442d1fe1f6e83740c03a682b60048da5988295603eed4f5394ec",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/cp/verify_raw_emb.py": "bc94ee1ad6a4cba5c635cb2ebedeae52bf124310c320b074af5636a9c38d20f9",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_allocation_failure.py": "ff6c1e991a1568ec8bbc0f7d593dc4e41ffe8f1ea1b38e561d759582204ad97a",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference-review/tests/verify_raw_preview_local.py": "4d6f71d8dd1ba87b03c35cb1ce020fe6e2692746cf1dbae4f55a55b454d3707e",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_preview.py": "d369ddc8fd8b96216e255cb479821f5fd1ab879d6ce22b7709b9921e45285e5b",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_heif_clip.py": "e7836a8f98860d5a0afd12250befac98840c9be1cdc6b50d4660c83182ad571a",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_heif.py": "3caf8d8a9bccd093ce0e873d958be3be87ad9812b8dae0643d4887f4420c585b",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_cp.py": "810593628a4d24d16ef322c4c255dc79022b3e3e543452607f1b4cee56de1da9",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/stream/replay_raw_stream.py": "34fef85b9eae929f082122ef6c0ee3bb2051940a009d6705adcc8a8c05f9cc50",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_crop_tags.py": "61efcffa224ca2a528a7d891ef26783f1f9fcaedec149fc03d60ae69d8a3a207",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/native.py": "4ec3a9dc9130a60e4f796072f09eea7d5fe567f730e87a2d36135ac148c831a4"
+  },
+  "actual": [
+    "finalCP48a00a guard\u2192completeRAWheaderproducer\u2192onlyEMBWHupdate",
+    "actual CP ade81a/ade8a2/ade8ac/ade8b6/ade6f8/ade71e/ade726/ade72e produce RAW descriptor; exact descriptor12c:268 copied to AVCAMpacket314:450",
+    "exactCPheader copied to AVCAM; actual1f5388 getter returns extra pointer andEMB",
+    "actualnatural plan\u2192206f70\u2192native prepare/resize/commit request"
+  ],
+  "fixtures": [
+    "RAW effective size/rawtype/formats/native pool and TTBR inputs",
+    "packet transport copies actual CP-produced EMB WH and native RAW WH",
+    "reference resource allocation/driver returns and CPU grayscale resize consume actual native requests"
+  ],
+  "limits": [
+    "not hardwareencoding/Bayer/card/fullIPC or actualcamera",
+    "onlyRAW+HEIF twoorders are naturalAVCAMpreview routes; RAW-only/JPEG sharedCPpreview checked separately"
+  ]
+}

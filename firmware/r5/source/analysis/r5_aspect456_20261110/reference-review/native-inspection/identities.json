@@ -1,0 +1,20 @@
+{
+  "AVCAM": {
+    "path": "unpacked/r5/system_main/av-cam.bin",
+    "sha256": "640740f3bbd7e20cf49be3288f496415b1d045020c5b9a46ea77fb187699ab04",
+    "bytes": 12956536,
+    "mtime_ns": 1790561024193639241
+  },
+  "MPR": {
+    "path": "unpacked/r5/usr_complete/lib/libmpr.so",
+    "sha256": "ba1aa289a142c2d0b41d0864a57a0d72a2c796de89c5caf215ebaf124143e9af",
+    "bytes": 3541784,
+    "mtime_ns": 1790241045814236258
+  },
+  "AP": {
+    "path": "projects/firmware/releases/4.55-sound-recovery-20261105/appFw.so",
+    "sha256": "23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6",
+    "bytes": 97517568,
+    "mtime_ns": 1793814718830455838
+  }
+}

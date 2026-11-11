@@ -1,0 +1,29 @@
+{
+  "adopt": "SOURCE_MINIMAL_E",
+  "replace_relative_to_source_analysis_r5_aspect456_20261110": {
+    "ap/r5_aspect_menu.c": "5347cfb0288828253d907666f2defdb06dc2fd29e31d4e74f18dd3cf89fa0b0f",
+    "ap/r5_aspect_wire.S": "669016f38885f3f0a9fe40f63b1c293c86575705aa1e5c2000022b12e64023e9",
+    "ap/compile_module.py": "e98788927b3e789e47c0888bb66aaf317902db3a14a42cfeabd01bdd50f9fd27",
+    "ap/integration.json": "e072481cf2c1e55be049f87ea6d5879cbe348415debb7f7f55ccb3aab6514830",
+    "cancel/candidate-f/contract.json": "f9d1519da04ffa3cb34413e531ad7672f5c5cb7be3685b1aa8d2e42356937941",
+    "resources/build_resources.py": "0ed06c871fd069111167de71704f2a789139e41d3d87acd0a6a21aa89cca412c",
+    "resources/reference_style.py": "a00ffc5a703a25618b99a31c14da6faf56bad8d0b1c714fbcae7f7ed0c96deac",
+    "resources/inputs.json": "b799ded36f605c83aa284104dfa525c6fc8dc50ea7799a58211003fd98d404c1"
+  },
+  "generated_resources": "generated-resources-e",
+  "static_proof": "static-e.json",
+  "component_compile": "compile-minimal-e/module.json",
+  "excluded": [
+    "build_icons.py",
+    "ratio_icons.S",
+    "build-a",
+    "build-b",
+    "verify_icons.py",
+    "ap/r5_aspect_state.c",
+    "ap/r5_aspect_state.h",
+    "ap/r5_aspect_persist.c"
+  ],
+  "no_additional_hooks": true,
+  "device_tested": false,
+  "instruction_replay": false
+}

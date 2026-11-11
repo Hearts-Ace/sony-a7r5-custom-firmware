@@ -1,0 +1,30 @@
+--- reference/mpr_raw_metadata.c
+
++++ 4.56/mpr_raw_metadata.c
+
+@@ -38,17 +38,16 @@
+
+         || lo != (uintptr_t)ptr(cnv + 0xf8)) return -1;
+     uintptr_t hi = lo + (uint32_t)bytes;
+     if (hi < lo) return -1;
+-    uint32_t *crop = tag(ptr(app + 0x1868), 0x74c8, 2, lo, hi);
+-    if (!crop) return 0;
++    /* Recognize this file's actual EMB dimensions; never infer preview from
++     * SonyCrop, which intentionally remains the original full sensor area. */
++    const uint8_t *geometry = ptr(cnv + 0xd0);
++    if (!geometry) return 0;
++    uint32_t w = *(const uint16_t *)geometry;
++    uint32_t h = *(const uint16_t *)(geometry + 4);
+     uint32_t id;
+     for (id = 0; id < 12; ++id)
+-        if (crop[0] == crops[id][0] && crop[1] == crops[id][1]) break;
++        if (w == crops[id][0] && h == crops[id][1]) break;
+     if (id == 12) return 0;
+-    uint32_t w = crop[0], h = crop[1];
+-    /* IFD2由本张RAWheader EMB WH原生生成，不取配对格式M/S。 */
+-    const uint8_t *geometry = ptr(cnv + 0xd0);
+-    if (!geometry || *(const uint16_t *)geometry != w
+-        || *(const uint16_t *)(geometry + 4) != h) return -1;
+     /* 与此调用点前原生strb写SOI使用同一BufferArea+10指针；
+      * 不假设+18另一别名的缓存/同步语义。 */
+     const uint8_t *scene = ptr(cnv + 0x1b8);

@@ -1,0 +1,2764 @@
+{
+  "passed": true,
+  "camera_io": false,
+  "device_tested": false,
+  "library_sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478",
+  "CP_sha256": null,
+  "CP_boundary": "explicit RAW cnv/header geometry fixture, no CP binary input",
+  "stock_library_sha256": "ba1aa289a142c2d0b41d0864a57a0d72a2c796de89c5caf215ebaf124143e9af",
+  "script_sha256": "de37650709bbda90937c18e01098229499434d27bfe9e5e94d1aa5abed661f1a",
+  "dependencies": {
+    "tests/mpr_native.py": "fa511c04d47276a6f0ac20543ddc916dc6398bd4488221d3710d78af385fa658"
+  },
+  "cases": 60,
+  "native_controls": 20,
+  "failure_cases": 9,
+  "old_library_rejections": 60,
+  "rows": [
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        9504,
+        5872
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        9504,
+        5872
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        6240,
+        3856
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        6240,
+        3856
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        4752,
+        2936
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        1000
+      ],
+      "paired_WH": [
+        4752,
+        2936
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        9504,
+        3976
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        9504,
+        3976
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        2608
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        2608
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        4752,
+        1992
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        4752,
+        1992
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        7920,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        7920,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        5200,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        5200,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        3968,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1344,
+        1080
+      ],
+      "paired_WH": [
+        3968,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        9504,
+        5136
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        9504,
+        5136
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        6240,
+        3376
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        6240,
+        4160
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "full_WH": [
+        6240,
+        4160
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        6240,
+        3376
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        4752,
+        2568
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        4752,
+        3168
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 6,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "full_WH": [
+        4752,
+        3168
+      ],
+      "SCN_WH": [
+        1616,
+        872
+      ],
+      "paired_WH": [
+        4752,
+        2568
+      ],
+      "private": true,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 2,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    }
+  ],
+  "control_rows": [
+    {
+      "WH": [
+        9504,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        8448,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1440,
+        1080
+      ],
+      "paired_WH": [
+        8448,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        8448,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1440,
+        1080
+      ],
+      "paired_WH": [
+        8448,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        8448,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1440,
+        1080
+      ],
+      "paired_WH": [
+        8448,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        8448,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1440,
+        1080
+      ],
+      "paired_WH": [
+        8448,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        8448,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1440,
+        1080
+      ],
+      "paired_WH": [
+        8448,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5344
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1920,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        5344
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5344
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1920,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        5344
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5344
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1920,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        5344
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5344
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1920,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        5344
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5344
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1920,
+        1080
+      ],
+      "paired_WH": [
+        9504,
+        5344
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    },
+    {
+      "WH": [
+        6336,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1080,
+        1080
+      ],
+      "paired_WH": [
+        6336,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        0
+      ]
+    },
+    {
+      "WH": [
+        6336,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1080,
+        1080
+      ],
+      "paired_WH": [
+        6336,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        1
+      ]
+    },
+    {
+      "WH": [
+        6336,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1080,
+        1080
+      ],
+      "paired_WH": [
+        6336,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        1,
+        2
+      ]
+    },
+    {
+      "WH": [
+        6336,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1080,
+        1080
+      ],
+      "paired_WH": [
+        6336,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        2,
+        4
+      ]
+    },
+    {
+      "WH": [
+        6336,
+        6336
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1080,
+        1080
+      ],
+      "paired_WH": [
+        6336,
+        6336
+      ],
+      "private": false,
+      "defect": null,
+      "native_header_bytes": 234258,
+      "status": 0,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false,
+      "formats": [
+        4,
+        2
+      ]
+    }
+  ],
+  "failure_rows": [
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        2608
+      ],
+      "private": true,
+      "defect": "target-type",
+      "native_header_bytes": 234258,
+      "status": -1,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        2608
+      ],
+      "private": true,
+      "defect": "target-count",
+      "native_header_bytes": 234258,
+      "status": -1,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        2608
+      ],
+      "private": true,
+      "defect": "target-missing",
+      "native_header_bytes": 234258,
+      "status": -1,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        2608
+      ],
+      "private": true,
+      "defect": "payload-outside",
+      "native_header_bytes": 234258,
+      "status": -1,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        2608
+      ],
+      "private": true,
+      "defect": "SCN-SOF",
+      "native_header_bytes": 234258,
+      "status": -1,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        2608
+      ],
+      "private": true,
+      "defect": "SCN-short",
+      "native_header_bytes": 234258,
+      "status": -1,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        2608
+      ],
+      "private": true,
+      "defect": "source-alias",
+      "native_header_bytes": 234258,
+      "status": -1,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        2608
+      ],
+      "private": true,
+      "defect": "zero-header",
+      "native_header_bytes": 234258,
+      "status": -1,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "full_WH": [
+        9504,
+        6336
+      ],
+      "SCN_WH": [
+        1616,
+        680
+      ],
+      "paired_WH": [
+        6240,
+        2608
+      ],
+      "private": true,
+      "defect": "negative-header",
+      "native_header_bytes": 234258,
+      "status": -1,
+      "changed_bytes": 0,
+      "private_targets_checked": true,
+      "shared_sources_read_only": true,
+      "ABI_preserved": true,
+      "complete_CP_header": false
+    }
+  ],
+  "native": [
+    "complete app1_arw27b600 and27ce1c private TIFF construction",
+    "26c7d0..26c7e8 actual SCN SOI writes and26c7ec patched caller",
+    "26f050 native tag lookup",
+    "274b44 native JPEG SOF parse",
+    "26cc10..26cc34 original failure epilogue"
+  ],
+  "models": [
+    "completed JPEG codestream boundary supplies exact SOF bytes, no pixel decoder",
+    "RAW cnv and full-frameSonyCrop are explicit fixtures; no CP source overlay",
+    "format/order fixtures alter shared GEN source; full scheduling not executed",
+    "libc/allocation/diagnostic and exact DMA byte-copy models",
+    "caller frame/live registers seeded from native26c658 layout"
+  ],
+  "limitations": [
+    "does not execute fullRAW writer XMP stage or actual encoder/complete scheduling",
+    "not camera playback or Photoshop UI validation"
+  ]
+}

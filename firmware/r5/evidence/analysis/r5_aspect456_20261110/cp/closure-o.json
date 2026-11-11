@@ -1,0 +1,94 @@
+{
+  "schema": "r5-reference-ratios-cp-offline-closure/1",
+  "installable": false,
+  "CP_path": "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/cp/integrated-o/cp/cp423.NONINSTALLABLE.bin",
+  "CP_sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a",
+  "CP_bytes": 17617008,
+  "adapter_sha256": "3227f1d226d6be8d57748aa2543f293d6a6dad8861fb48adf6c1766b1030957a",
+  "adapter_bytes": 1764,
+  "ratios": {
+    "4": [
+      809,
+      500
+    ],
+    "5": [
+      239,
+      100
+    ],
+    "6": [
+      5,
+      4
+    ],
+    "7": [
+      37,
+      20
+    ]
+  },
+  "full_native_9504x6336_outputs": {
+    "4": [
+      9504,
+      5872
+    ],
+    "5": [
+      9504,
+      3976
+    ],
+    "6": [
+      7920,
+      6336
+    ],
+    "7": [
+      9504,
+      5136
+    ]
+  },
+  "receipts": {
+    "boot-verification.json": {
+      "sha256": "84d1baac79e00946c8f98b793259bed12d0059c3e1e69ebc964a65f5ef2f8150",
+      "CP_sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+    },
+    "hook-verification.json": {
+      "sha256": "b41151aeee51750fca1f91aa01b2ef60bf31b7e0ce57c1d20ca5e146250dff63",
+      "CP_sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+    },
+    "preservation.json": {
+      "sha256": "100eab927b940f97b36db5c8defedf529fec65d99fe24370edea819552eb2fcc",
+      "CP_sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+    },
+    "layout-gamma.json": {
+      "sha256": "974320f9420b309324eb753b208e2ba42bedde5afd79fd75d2d7aca2fb6ed0ee",
+      "CP_sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+    },
+    "final-audit-v2.json": {
+      "sha256": "a727ea0983a5a53f4e3ac1ef38647f9ca77f9ec6b974fa1e367cbdb113264571",
+      "CP_sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+    },
+    "raw-emb.json": {
+      "sha256": "df6144a2fe48705cd64ebc99010badc93f8fa725c8524a6c7380526cbdd666e8",
+      "CP_sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+    }
+  },
+  "checks": {
+    "native_boot": 64,
+    "guard_and_format": 337,
+    "RAW_EMB_native_header": 720,
+    "preservation_scenarios": 104,
+    "layout_comparisons": 6,
+    "Gamma_register_APSR_differentials": 99,
+    "adapter_geometry_latch_pool": 73
+  },
+  "RAW_policy": "Full Bayer data, DefaultCrop and SonyCrop remain native; shared embedded JPEG Main/SCN/THM crops for RAW-only and paired JPEG/HEIF. RAW header changes only EMB_WH14a2c/14a30 to agree with preview. RAW Notify remains native and independent JPEG/HEIF slots crop.",
+  "HEIF_policy": "Native ae78ae copy stays exact; only per-slot fmt4 Notify WH crops. Paired AVCAM local-view crop and MPR metadata required.",
+  "sound_relocation": {
+    "offset": "0x1c",
+    "baseline": "0x1195261",
+    "final": "0x11951e1",
+    "reason": "resident r5ss original filter consumer RX moved -0x80; all other2236 sound bytes exact"
+  },
+  "script_sha256": "5d822b20c29904a14ffd06593ee3c6b565aab36b52b1d058dba88237dfc3815e",
+  "limits": [
+    "Flat CPU replay with declared native services and imported OS/peripheral fixtures; not actual MMU/TLB/cache or camera boot.",
+    "No AP/AVCAM/MPR/resource/full-DAT integration acceptance, no image encode/decode or real RAW file acceptance.",
+    "No camera/USB/SD, installation, signing or publishing operation."
+  ]
+}

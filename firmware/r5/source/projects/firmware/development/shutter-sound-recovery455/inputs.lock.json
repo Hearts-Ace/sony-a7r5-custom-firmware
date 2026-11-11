@@ -1,0 +1,46 @@
+{
+  "original_dat": {
+    "sha256": "51e1176a255a9a4b4782dfbcfa6c5f332b71173bdfe9ed2bcf4fca6bcbc6c2e2",
+    "bytes": 754525608
+  },
+  "original_fdat": {
+    "sha256": "b3af8557d6279d8b8dfb5f8e1a56ac31ab3f5c2a8b2f301562bb7b93ccfcb0ff",
+    "bytes": 751577088
+  },
+  "original_tar": {
+    "sha256": "8b03700edb87d29315377a044b477792e3c47b149e4e300618b38dbe7a565813",
+    "bytes": 750323200
+  },
+  "updater": {
+    "sha256": "c4b18a82eea52a507fb82b86ad50bab6047070b8908d03c28edcce4a9577d348",
+    "bytes": 1253376
+  },
+  "stock_ap": {
+    "sha256": "41bd8f4cda1f44c7038912837737e1ce6a650065f2108061ada30e5c7f9ce7c7",
+    "bytes": 97368304
+  },
+  "stock_cp": {
+    "sha256": "3269bf62426339791fcfbe8529698cd4accbe6c3d2ea61cd7c368a90ab7ee7c8",
+    "bytes": 17617008
+  },
+  "stock_nflasha5": {
+    "sha256": "15020d1afe7f1cf40b3822ea0a7426c5c9b40f6330f163d72cf82fb08b1363e8",
+    "bytes": 243789184
+  },
+  "stock_nflasha15": {
+    "sha256": "197fc934db37ed9b88701ae7fd2e866126f63e098f6d45e3fd767618af638fa5",
+    "bytes": 410652672
+  },
+  "stock_nflasha8": {
+    "sha256": "a625468fbbd6b0e053e1974a3a0f7e9b9151bc88aaf6261aea21813f9e1f8f46",
+    "bytes": 24531968
+  },
+  "public_key": {
+    "sha256": "4cb3cf8cc7a847a5b6108863c2defa327ceb06280c1dda468cd57c3dd3cae859",
+    "bytes": 451
+  },
+  "sony_public_key": {
+    "sha256": "8281413b5607446939613e07d020b2c7d8ee2371349099de56bc8288f7be0a43",
+    "bytes": 451
+  }
+}

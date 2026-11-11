@@ -1,0 +1,2379 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "positives": [
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        }
+      ],
+      "negatives": [
+        {
+          "page": 0,
+          "case": "native"
+        },
+        {
+          "page": 0,
+          "case": "cancel"
+        },
+        {
+          "page": 0,
+          "case": "no_registration"
+        },
+        {
+          "page": 0,
+          "case": "new_generation"
+        },
+        {
+          "page": 0,
+          "case": "stale_epoch"
+        },
+        {
+          "page": 0,
+          "case": "invalid_44"
+        },
+        {
+          "page": 0,
+          "case": "other_model"
+        },
+        {
+          "page": 0,
+          "case": "invalid_mode"
+        },
+        {
+          "page": 0,
+          "case": "invalid_aspect"
+        },
+        {
+          "page": 0,
+          "case": "movie"
+        },
+        {
+          "page": 0,
+          "case": "output_hidden"
+        },
+        {
+          "page": 1,
+          "case": "native"
+        },
+        {
+          "page": 1,
+          "case": "cancel"
+        },
+        {
+          "page": 1,
+          "case": "no_registration"
+        },
+        {
+          "page": 1,
+          "case": "new_generation"
+        },
+        {
+          "page": 1,
+          "case": "stale_epoch"
+        },
+        {
+          "page": 1,
+          "case": "invalid_44"
+        },
+        {
+          "page": 1,
+          "case": "other_model"
+        },
+        {
+          "page": 1,
+          "case": "invalid_mode"
+        },
+        {
+          "page": 1,
+          "case": "invalid_aspect"
+        },
+        {
+          "page": 1,
+          "case": "movie"
+        },
+        {
+          "page": 1,
+          "case": "output_hidden"
+        }
+      ],
+      "guards": [
+        {
+          "page": 0,
+          "boundary": "invalid_kind"
+        },
+        {
+          "page": 0,
+          "boundary": "null_parameter_table"
+        },
+        {
+          "page": 0,
+          "boundary": "wrong_config"
+        },
+        {
+          "page": 1,
+          "boundary": "invalid_kind"
+        },
+        {
+          "page": 1,
+          "boundary": "null_parameter_table"
+        },
+        {
+          "page": 1,
+          "boundary": "wrong_config"
+        }
+      ],
+      "unchanged_rows": 1025,
+      "bias": "0x4000000000"
+    },
+    {
+      "positives": [
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 4,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 5,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 6,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 0,
+          "selected": 7,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 4,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 5,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 6,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 0,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 1,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 2,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 3,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 4,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 5,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 6,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 7,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 8,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 9,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 10,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        },
+        {
+          "page": 1,
+          "selected": 7,
+          "exposure": 11,
+          "identity": {
+            "product": 2,
+            "internal": 23,
+            "feature": 3,
+            "column": 16
+          }
+        }
+      ],
+      "negatives": [
+        {
+          "page": 0,
+          "case": "native"
+        },
+        {
+          "page": 0,
+          "case": "cancel"
+        },
+        {
+          "page": 0,
+          "case": "no_registration"
+        },
+        {
+          "page": 0,
+          "case": "new_generation"
+        },
+        {
+          "page": 0,
+          "case": "stale_epoch"
+        },
+        {
+          "page": 0,
+          "case": "invalid_44"
+        },
+        {
+          "page": 0,
+          "case": "other_model"
+        },
+        {
+          "page": 0,
+          "case": "invalid_mode"
+        },
+        {
+          "page": 0,
+          "case": "invalid_aspect"
+        },
+        {
+          "page": 0,
+          "case": "movie"
+        },
+        {
+          "page": 0,
+          "case": "output_hidden"
+        },
+        {
+          "page": 1,
+          "case": "native"
+        },
+        {
+          "page": 1,
+          "case": "cancel"
+        },
+        {
+          "page": 1,
+          "case": "no_registration"
+        },
+        {
+          "page": 1,
+          "case": "new_generation"
+        },
+        {
+          "page": 1,
+          "case": "stale_epoch"
+        },
+        {
+          "page": 1,
+          "case": "invalid_44"
+        },
+        {
+          "page": 1,
+          "case": "other_model"
+        },
+        {
+          "page": 1,
+          "case": "invalid_mode"
+        },
+        {
+          "page": 1,
+          "case": "invalid_aspect"
+        },
+        {
+          "page": 1,
+          "case": "movie"
+        },
+        {
+          "page": 1,
+          "case": "output_hidden"
+        }
+      ],
+      "guards": [
+        {
+          "page": 0,
+          "boundary": "invalid_kind"
+        },
+        {
+          "page": 0,
+          "boundary": "null_parameter_table"
+        },
+        {
+          "page": 0,
+          "boundary": "wrong_config"
+        },
+        {
+          "page": 1,
+          "boundary": "invalid_kind"
+        },
+        {
+          "page": 1,
+          "boundary": "null_parameter_table"
+        },
+        {
+          "page": 1,
+          "boundary": "wrong_config"
+        }
+      ],
+      "unchanged_rows": 1025,
+      "bias": "0x6000000000"
+    }
+  ],
+  "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac",
+  "module_sha256": "22bec8a57a39ff7c66016bbc84e4e168206cebda4a0be49c1b31b62cf0528a14",
+  "script_sha256": "84b436c51d0a261fdfb81b84e5806db9adc472117a6f29292ea4271916311bfd",
+  "actual_product_model_initialization": true,
+  "actual_four_gate_chains": true,
+  "model_column_written_by_test_for_positive": false,
+  "actual_public_setters": true,
+  "actual_shoot2_bulk_model_rejection": true,
+  "actual_native_Guide_child_output": true,
+  "fixtures": [
+    "OS locks, libc memory/allocation, availability of two display options",
+    "Other widget rows get typed parameter buffers; actual target Guide is natively constructed",
+    "UX registration/engine counter and resource lookup models in replay_ui_support"
+  ],
+  "limitations": [
+    "No complete GUI loop or device LCD, startup, IPC or encoding",
+    "Second page replays original split dynamic, bulk and output visibility gates"
+  ]
+}

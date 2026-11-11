@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "version": "4.58",
+  "resource_only": true,
+  "DAT_bytes": 754525608,
+  "DAT_sha256": "c37605b64aa04653d9cd57e63c7e223a4064e96d8480e0021137686bf61f7c8b",
+  "source_zip_sha256": "91419fb91a7bd898f62695366777e697a84c28a992526d544abf790619567443",
+  "source_lock_sha256": "3fe1733b4c34359ff6552d609970d9f7a6a13bfd381ca5f92e1e4f5f41d3c286",
+  "source_files": 466,
+  "runtime_sources_exact": 209,
+  "strings_exact": 68,
+  "icon_scheme": "new MENU/Fn use23; playback185 uses32; others23; native54 unchanged",
+  "changed_archive_members_vs_parent": [
+    "0700_part_image/dev/nflasha15",
+    "0701_part_image_sum/part_image.sum"
+  ],
+  "parent_DAT_sha256": "6c08395a5217aaa363a27df3b765c7051c9961af0db587f26da9bd0e0ed116d0",
+  "independent_ZIP_full_build_exact": true,
+  "signature_CRC_full_plaintext_verified": true,
+  "original_Fn_style_code_exact": true,
+  "camera_io": false,
+  "device_tested": false,
+  "reused_parent_instruction_evidence": true,
+  "instruction_tests_rerun": false
+}

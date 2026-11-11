@@ -1,0 +1,2289 @@
+{
+  "passed": true,
+  "cases": 60,
+  "native_controls": 5,
+  "failure_cases": 6,
+  "getter_cases": 5,
+  "AVCAM_sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b",
+  "rows": [
+    {
+      "selection": 4,
+      "index": 0,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        9504,
+        5872
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            232,
+            9504,
+            5872,
+            0,
+            0,
+            9504,
+            5872
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            5872,
+            0,
+            0,
+            9504,
+            5872
+          ],
+          "pixel_WH": [
+            9504,
+            5872
+          ],
+          "pixel_sha256": "0e42477088b196a8d7a942b9e35a594c10df825d8157bf40419e71a2bfff2c01"
+        }
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 0,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        9504,
+        5872
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            232,
+            9504,
+            5872,
+            0,
+            0,
+            9504,
+            5872
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            5872,
+            0,
+            0,
+            9504,
+            5872
+          ],
+          "pixel_WH": [
+            9504,
+            5872
+          ],
+          "pixel_sha256": "0e42477088b196a8d7a942b9e35a594c10df825d8157bf40419e71a2bfff2c01"
+        }
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 0,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        9504,
+        5872
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 0,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        9504,
+        5872
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 0,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        9504,
+        5872
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 1,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        6240,
+        3856
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            152,
+            6240,
+            3856,
+            0,
+            0,
+            6240,
+            3856
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            3856,
+            0,
+            0,
+            6240,
+            3856
+          ],
+          "pixel_WH": [
+            6240,
+            3856
+          ],
+          "pixel_sha256": "9364197ff308b070a3a825c16c22ebbcbb12763c62659be05d730dd3c6baa420"
+        }
+      ],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 1,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        6240,
+        3856
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            152,
+            6240,
+            3856,
+            0,
+            0,
+            6240,
+            3856
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            3856,
+            0,
+            0,
+            6240,
+            3856
+          ],
+          "pixel_WH": [
+            6240,
+            3856
+          ],
+          "pixel_sha256": "9364197ff308b070a3a825c16c22ebbcbb12763c62659be05d730dd3c6baa420"
+        }
+      ],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 1,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        6240,
+        3856
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 1,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        6240,
+        3856
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 1,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        6240,
+        3856
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 2,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        4752,
+        2936
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            116,
+            4752,
+            2936,
+            0,
+            0,
+            4752,
+            2936
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            2936,
+            0,
+            0,
+            4752,
+            2936
+          ],
+          "pixel_WH": [
+            4752,
+            2936
+          ],
+          "pixel_sha256": "92c6bdd11044c69337d3c509cc9dd63c604c85497ce704a815f1a2e70eaebb85"
+        }
+      ],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 2,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        4752,
+        2936
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            116,
+            4752,
+            2936,
+            0,
+            0,
+            4752,
+            2936
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            2936,
+            0,
+            0,
+            4752,
+            2936
+          ],
+          "pixel_WH": [
+            4752,
+            2936
+          ],
+          "pixel_sha256": "92c6bdd11044c69337d3c509cc9dd63c604c85497ce704a815f1a2e70eaebb85"
+        }
+      ],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 2,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        4752,
+        2936
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 2,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        4752,
+        2936
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 4,
+      "index": 2,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        4752,
+        2936
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 0,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        9504,
+        3976
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            1180,
+            9504,
+            3976,
+            0,
+            0,
+            9504,
+            3976
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            3976,
+            0,
+            0,
+            9504,
+            3976
+          ],
+          "pixel_WH": [
+            9504,
+            3976
+          ],
+          "pixel_sha256": "8cd006b0c1cb9073b0abaf145b756166d414f4a70b5e13cd922f0f5425c0d6aa"
+        }
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 0,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        9504,
+        3976
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            1180,
+            9504,
+            3976,
+            0,
+            0,
+            9504,
+            3976
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            3976,
+            0,
+            0,
+            9504,
+            3976
+          ],
+          "pixel_WH": [
+            9504,
+            3976
+          ],
+          "pixel_sha256": "8cd006b0c1cb9073b0abaf145b756166d414f4a70b5e13cd922f0f5425c0d6aa"
+        }
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 0,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        9504,
+        3976
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 0,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        9504,
+        3976
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 0,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        9504,
+        3976
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 1,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        6240,
+        2608
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            776,
+            6240,
+            2608,
+            0,
+            0,
+            6240,
+            2608
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            2608,
+            0,
+            0,
+            6240,
+            2608
+          ],
+          "pixel_WH": [
+            6240,
+            2608
+          ],
+          "pixel_sha256": "afb60c0151dc3daf79b90aaa8aeb8f0a142c64db1e72f0c147aec0fb3db4d4f5"
+        }
+      ],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 1,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        6240,
+        2608
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            776,
+            6240,
+            2608,
+            0,
+            0,
+            6240,
+            2608
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            2608,
+            0,
+            0,
+            6240,
+            2608
+          ],
+          "pixel_WH": [
+            6240,
+            2608
+          ],
+          "pixel_sha256": "afb60c0151dc3daf79b90aaa8aeb8f0a142c64db1e72f0c147aec0fb3db4d4f5"
+        }
+      ],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 1,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        6240,
+        2608
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 1,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        6240,
+        2608
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 1,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        6240,
+        2608
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 2,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        4752,
+        1992
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            588,
+            4752,
+            1992,
+            0,
+            0,
+            4752,
+            1992
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            1992,
+            0,
+            0,
+            4752,
+            1992
+          ],
+          "pixel_WH": [
+            4752,
+            1992
+          ],
+          "pixel_sha256": "6cabe44f05bbf51cbf29fd71e0e7987b29a21ebaa9db776cc756fd591f688baf"
+        }
+      ],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 2,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        4752,
+        1992
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            588,
+            4752,
+            1992,
+            0,
+            0,
+            4752,
+            1992
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            1992,
+            0,
+            0,
+            4752,
+            1992
+          ],
+          "pixel_WH": [
+            4752,
+            1992
+          ],
+          "pixel_sha256": "6cabe44f05bbf51cbf29fd71e0e7987b29a21ebaa9db776cc756fd591f688baf"
+        }
+      ],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 2,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        4752,
+        1992
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 2,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        4752,
+        1992
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 5,
+      "index": 2,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        4752,
+        1992
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 0,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        7920,
+        6336
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            792,
+            0,
+            7920,
+            6336,
+            0,
+            0,
+            7920,
+            6336
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            7920,
+            6336,
+            0,
+            0,
+            7920,
+            6336
+          ],
+          "pixel_WH": [
+            7920,
+            6336
+          ],
+          "pixel_sha256": "8bb83788b8599481f92ef16b0257294c64aa2e10dd822c6b38949e86b468a4b7"
+        }
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 0,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        7920,
+        6336
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            792,
+            0,
+            7920,
+            6336,
+            0,
+            0,
+            7920,
+            6336
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            7920,
+            6336,
+            0,
+            0,
+            7920,
+            6336
+          ],
+          "pixel_WH": [
+            7920,
+            6336
+          ],
+          "pixel_sha256": "8bb83788b8599481f92ef16b0257294c64aa2e10dd822c6b38949e86b468a4b7"
+        }
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 0,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        7920,
+        6336
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 0,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        7920,
+        6336
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 0,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        7920,
+        6336
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 1,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        5200,
+        4160
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            520,
+            0,
+            5200,
+            4160,
+            0,
+            0,
+            5200,
+            4160
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            5200,
+            4160,
+            0,
+            0,
+            5200,
+            4160
+          ],
+          "pixel_WH": [
+            5200,
+            4160
+          ],
+          "pixel_sha256": "ffb90c9739d2d32ca1b6d53aca1f0204d34ffb007967de5734e38d4015d6c0ee"
+        }
+      ],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 1,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        5200,
+        4160
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            520,
+            0,
+            5200,
+            4160,
+            0,
+            0,
+            5200,
+            4160
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            5200,
+            4160,
+            0,
+            0,
+            5200,
+            4160
+          ],
+          "pixel_WH": [
+            5200,
+            4160
+          ],
+          "pixel_sha256": "ffb90c9739d2d32ca1b6d53aca1f0204d34ffb007967de5734e38d4015d6c0ee"
+        }
+      ],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 1,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        5200,
+        4160
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 1,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        5200,
+        4160
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 1,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        5200,
+        4160
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 2,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        3968,
+        3168
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            392,
+            0,
+            3968,
+            3168,
+            0,
+            0,
+            3968,
+            3168
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            3968,
+            3168,
+            0,
+            0,
+            3968,
+            3168
+          ],
+          "pixel_WH": [
+            3968,
+            3168
+          ],
+          "pixel_sha256": "03be4cbf4bd82c3625f1e67d94edefe0a539a401aed4be4b230596177285f6db"
+        }
+      ],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 2,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        3968,
+        3168
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            392,
+            0,
+            3968,
+            3168,
+            0,
+            0,
+            3968,
+            3168
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            3968,
+            3168,
+            0,
+            0,
+            3968,
+            3168
+          ],
+          "pixel_WH": [
+            3968,
+            3168
+          ],
+          "pixel_sha256": "03be4cbf4bd82c3625f1e67d94edefe0a539a401aed4be4b230596177285f6db"
+        }
+      ],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 2,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        3968,
+        3168
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 2,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        3968,
+        3168
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 6,
+      "index": 2,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        3968,
+        3168
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 0,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        9504,
+        5136
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            600,
+            9504,
+            5136,
+            0,
+            0,
+            9504,
+            5136
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            5136,
+            0,
+            0,
+            9504,
+            5136
+          ],
+          "pixel_WH": [
+            9504,
+            5136
+          ],
+          "pixel_sha256": "c5ef0d04e30a3c15f0be246c428423288ec4dcc9b5bde8be281f1728faf694b1"
+        }
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 0,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        9504,
+        5136
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            600,
+            9504,
+            5136,
+            0,
+            0,
+            9504,
+            5136
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            5136,
+            0,
+            0,
+            9504,
+            5136
+          ],
+          "pixel_WH": [
+            9504,
+            5136
+          ],
+          "pixel_sha256": "c5ef0d04e30a3c15f0be246c428423288ec4dcc9b5bde8be281f1728faf694b1"
+        }
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 0,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        9504,
+        5136
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 0,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        9504,
+        5136
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 0,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        9504,
+        5136
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 1,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        6240,
+        3376
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            392,
+            6240,
+            3376,
+            0,
+            0,
+            6240,
+            3376
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            3376,
+            0,
+            0,
+            6240,
+            3376
+          ],
+          "pixel_WH": [
+            6240,
+            3376
+          ],
+          "pixel_sha256": "8c6b54bbfdf13965a8cf6b1948edabf409133a9cac2d2dee4e3002156c1efc21"
+        }
+      ],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 1,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        6240,
+        3376
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            6272,
+            4160,
+            0,
+            392,
+            6240,
+            3376,
+            0,
+            0,
+            6240,
+            3376
+          ],
+          "target": [
+            6272,
+            4160,
+            0,
+            0,
+            6240,
+            3376,
+            0,
+            0,
+            6240,
+            3376
+          ],
+          "pixel_WH": [
+            6240,
+            3376
+          ],
+          "pixel_sha256": "8c6b54bbfdf13965a8cf6b1948edabf409133a9cac2d2dee4e3002156c1efc21"
+        }
+      ],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 1,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        6240,
+        3376
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 1,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        6240,
+        3376
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 1,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        6240,
+        3376
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        6240,
+        4160
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 2,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        4752,
+        2568
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            300,
+            4752,
+            2568,
+            0,
+            0,
+            4752,
+            2568
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            2568,
+            0,
+            0,
+            4752,
+            2568
+          ],
+          "pixel_WH": [
+            4752,
+            2568
+          ],
+          "pixel_sha256": "bd1a5e591585e031032c88a5d5b309c9400e40997a70277297ab1323c31f8808"
+        }
+      ],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 2,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        4752,
+        2568
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            4864,
+            3168,
+            0,
+            300,
+            4752,
+            2568,
+            0,
+            0,
+            4752,
+            2568
+          ],
+          "target": [
+            4864,
+            3168,
+            0,
+            0,
+            4752,
+            2568,
+            0,
+            0,
+            4752,
+            2568
+          ],
+          "pixel_WH": [
+            4752,
+            2568
+          ],
+          "pixel_sha256": "bd1a5e591585e031032c88a5d5b309c9400e40997a70277297ab1323c31f8808"
+        }
+      ],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 2,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        4752,
+        2568
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 2,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        4752,
+        2568
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 7,
+      "index": 2,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        4752,
+        2568
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        4752,
+        3168
+      ],
+      "header_unchanged": true
+    }
+  ],
+  "control_rows": [
+    {
+      "selection": 0,
+      "index": 0,
+      "formats": [
+        2,
+        4
+      ],
+      "target": [
+        9504,
+        6336
+      ],
+      "plan": 8,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            6336,
+            0,
+            0,
+            9504,
+            6336
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            6336,
+            0,
+            0,
+            9504,
+            6336
+          ],
+          "pixel_WH": [
+            9504,
+            6336
+          ],
+          "pixel_sha256": "43d6c5d6d1c1416f52a5692d0dea784021f5b6f3d1f92836aa994d78cff37ce7"
+        }
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 0,
+      "index": 0,
+      "formats": [
+        4,
+        2
+      ],
+      "target": [
+        9504,
+        6336
+      ],
+      "plan": 11,
+      "requests": [
+        {
+          "callsite": "0x207048",
+          "mode": 3,
+          "driver": "0x1fb5e4",
+          "source": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            6336,
+            0,
+            0,
+            9504,
+            6336
+          ],
+          "target": [
+            9600,
+            6336,
+            0,
+            0,
+            9504,
+            6336,
+            0,
+            0,
+            9504,
+            6336
+          ],
+          "pixel_WH": [
+            9504,
+            6336
+          ],
+          "pixel_sha256": "43d6c5d6d1c1416f52a5692d0dea784021f5b6f3d1f92836aa994d78cff37ce7"
+        }
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 0,
+      "index": 0,
+      "formats": [
+        2,
+        0
+      ],
+      "target": [
+        9504,
+        6336
+      ],
+      "plan": 1,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 0,
+      "index": 0,
+      "formats": [
+        2,
+        1
+      ],
+      "target": [
+        9504,
+        6336
+      ],
+      "plan": 10,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    },
+    {
+      "selection": 0,
+      "index": 0,
+      "formats": [
+        1,
+        2
+      ],
+      "target": [
+        9504,
+        6336
+      ],
+      "plan": 4,
+      "requests": [],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_unchanged": true
+    }
+  ],
+  "failure_rows": [
+    {
+      "failure_mode": 3,
+      "injected_error": 1,
+      "result": 5,
+      "completed_driver_requests": 0,
+      "shared_unchanged": true,
+      "header_unchanged": true
+    },
+    {
+      "failure_mode": 3,
+      "injected_error": 2,
+      "result": 5,
+      "completed_driver_requests": 0,
+      "shared_unchanged": true,
+      "header_unchanged": true
+    },
+    {
+      "failure_mode": 1,
+      "injected_error": 1,
+      "result": 5,
+      "completed_driver_requests": 0,
+      "shared_unchanged": true,
+      "header_unchanged": true
+    },
+    {
+      "failure_mode": 1,
+      "injected_error": 2,
+      "result": 5,
+      "completed_driver_requests": 0,
+      "shared_unchanged": true,
+      "header_unchanged": true
+    },
+    {
+      "failure_mode": 2,
+      "injected_error": 1,
+      "result": 5,
+      "completed_driver_requests": 1,
+      "shared_unchanged": true,
+      "header_unchanged": true
+    },
+    {
+      "failure_mode": 2,
+      "injected_error": 2,
+      "result": 5,
+      "completed_driver_requests": 1,
+      "shared_unchanged": true,
+      "header_unchanged": true
+    }
+  ],
+  "getter_rows": [
+    {
+      "EMB_WH": [
+        9504,
+        5872
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_present": true,
+      "RAW_present": true,
+      "recognized_ratio": 4
+    },
+    {
+      "EMB_WH": [
+        9504,
+        6336
+      ],
+      "SonyCrop": [
+        9504,
+        5872
+      ],
+      "header_present": true,
+      "RAW_present": true,
+      "recognized_ratio": 0
+    },
+    {
+      "EMB_WH": [
+        9504,
+        3512
+      ],
+      "SonyCrop": [
+        9504,
+        5872
+      ],
+      "header_present": true,
+      "RAW_present": true,
+      "recognized_ratio": 0
+    },
+    {
+      "EMB_WH": [
+        9504,
+        5872
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_present": false,
+      "RAW_present": true,
+      "recognized_ratio": 0
+    },
+    {
+      "EMB_WH": [
+        9504,
+        5872
+      ],
+      "SonyCrop": [
+        9504,
+        6336
+      ],
+      "header_present": true,
+      "RAW_present": false,
+      "recognized_ratio": 0
+    }
+  ],
+  "camera_io": false,
+  "device_tested": false,
+  "native": [
+    "actual1f4160 format constructors and1f5388 RAW header getter",
+    "actual natural plan and206f70 RAW EMB stage",
+    "nativeprepare/resize/commit requests"
+  ],
+  "models": [
+    "packet/RAWheader EMB target is explicit CP boundary fixture; SonyCropfullframe",
+    "YC resources, allocation, driver returns and CPUgrayscale resize are reference models"
+  ],
+  "limits": [
+    "No encoder/card/rawfile or complete scheduler",
+    "CPheader source separately verified byCPagent"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "camera_io": false,
+  "native_setter_equivalence_cases": 210,
+  "native_constructor_cases": 32,
+  "HEIF_geometry_cases": 12,
+  "image_encoding": false,
+  "actual_native_constructor": true,
+  "memcpy_and_diagnostic": "模型",
+  "AVCAM_sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b",
+  "test_sha256": "e824442b6c4b442d1fe1f6e83740c03a682b60048da5988295603eed4f5394ec"
+}

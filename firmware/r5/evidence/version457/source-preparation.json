@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "parent_lock": "a6dd18c16d8099bc508cb81ed14110e7a396ecdf7f9ed4b7056fb741973cefe4",
+  "runtime_files": 209,
+  "all_runtime_sources_exact": true,
+  "changed_build_files": [
+    "build.py",
+    "source/analysis/r5_aspect456_20261110/full/build_partitions.py",
+    "source/analysis/r5_aspect456_20261110/full/package_candidate.py"
+  ],
+  "camera_io": false
+}

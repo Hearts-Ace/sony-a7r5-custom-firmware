@@ -1,0 +1,99 @@
+{
+  "reference_zip_sha256": "43d492427b9d1b7fce40ef5edf20668029e1261681d20babce2546e53936c123",
+  "reference_project": "/Users/zhaoyunpeng/Documents/ChatGPT/固件/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios",
+  "target": "/Users/zhaoyunpeng/Documents/ChatGPT/固件/projects/firmware/development/aspect456-pt",
+  "files": [
+    {
+      "file": "ap_playback_badge.S",
+      "reference_sha256": "af174959aea15640e8fadb48c8e964c1a9f732cd6251152dd9a212b8b961bad3",
+      "target_sha256": "dfa44270d280271cd03e71dca43f8b3da4a00f08249f9e89ccf1688b109d8a39",
+      "same": false,
+      "diff": "/Users/zhaoyunpeng/Documents/ChatGPT/固件/analysis/r5_filter_pt456_20261110/ap_playback_badge.S.reference.diff"
+    },
+    {
+      "file": "ap_playback_pixels.S",
+      "reference_sha256": "fbb0f7055af3b2d337ca548c05011270c6eb72a26575c6f879e8d269a9066be9",
+      "target_sha256": "a00ebbe33a8516a6ffcdd76fdaf880b29c9f53893c01b986cfd2de8ed1ad749c",
+      "same": false,
+      "diff": "/Users/zhaoyunpeng/Documents/ChatGPT/固件/analysis/r5_filter_pt456_20261110/ap_playback_pixels.S.reference.diff"
+    },
+    {
+      "file": "ap_playback_zoom.S",
+      "reference_sha256": "d8bc8b5a0c54a048660eff9abcf942b83eee53798c5bfb33cd1344713411cd5d",
+      "target_sha256": "0000f60f10061c5c42342f352c499934935e530cc9dd4ce316d9a56080c0850d",
+      "same": false,
+      "diff": "/Users/zhaoyunpeng/Documents/ChatGPT/固件/analysis/r5_filter_pt456_20261110/ap_playback_zoom.S.reference.diff"
+    },
+    {
+      "file": "ap_still_size.S",
+      "reference_sha256": "a5aa778d8c0f89815bb10dde1f6b41e08e96c1950ca10a30f45b23616bc75131",
+      "target_sha256": "672656ced06d3178d740e7dfcc96db946c0ddaa70c7a86428a1b0eeab75d604b",
+      "same": false,
+      "diff": "/Users/zhaoyunpeng/Documents/ChatGPT/固件/analysis/r5_filter_pt456_20261110/ap_still_size.S.reference.diff"
+    },
+    {
+      "file": "avcam_heif.S",
+      "reference_sha256": "492a54d4ab80fa10c72166adc42c67ebee93bf580290c5b992a20bfe57e45c29",
+      "target_sha256": "492a54d4ab80fa10c72166adc42c67ebee93bf580290c5b992a20bfe57e45c29",
+      "same": true,
+      "diff": null
+    },
+    {
+      "file": "avcam_heif.c",
+      "reference_sha256": "fa507e1c1d0bb21264d6b7b50756a0c76f30db6f1e9e5e138be5cb982c368ac4",
+      "target_sha256": "824d9fb9392b86fd976b747cfbbf2a9245e15f9b56e3f7123f948abb22515011",
+      "same": false,
+      "diff": "/Users/zhaoyunpeng/Documents/ChatGPT/固件/analysis/r5_filter_pt456_20261110/avcam_heif.c.reference.diff"
+    },
+    {
+      "file": "avcam_jpeg.S",
+      "reference_sha256": "2fe762c7bfe5c46deaa271b74da906f435d308d9b426e0cfac8e959faaf2d1fe",
+      "target_sha256": "2fe762c7bfe5c46deaa271b74da906f435d308d9b426e0cfac8e959faaf2d1fe",
+      "same": true,
+      "diff": null
+    },
+    {
+      "file": "avcam_thm.S",
+      "reference_sha256": "c4d34748f8a41e01c4d4ded7bdd8fd36b461108befec00e74f43bbcb27a5cb95",
+      "target_sha256": "c4d34748f8a41e01c4d4ded7bdd8fd36b461108befec00e74f43bbcb27a5cb95",
+      "same": true,
+      "diff": null
+    },
+    {
+      "file": "crop_core.c",
+      "reference_sha256": "1fdd68e9ed22a747171f9e47c4fbe57be6716e1ce0b2d284f316f3f594c5dc3e",
+      "target_sha256": "1fdd68e9ed22a747171f9e47c4fbe57be6716e1ce0b2d284f316f3f594c5dc3e",
+      "same": true,
+      "diff": null
+    },
+    {
+      "file": "crop_core.h",
+      "reference_sha256": "0ddcf1b4af8a9e5fc92466d852d6405d1882ff253eac78ba668cadc2c7ac4c16",
+      "target_sha256": "0ddcf1b4af8a9e5fc92466d852d6405d1882ff253eac78ba668cadc2c7ac4c16",
+      "same": true,
+      "diff": null
+    },
+    {
+      "file": "mpr_heif.S",
+      "reference_sha256": "c8a73f089dbe8e15ce9499d11596f510adc734086e75944622ee7ffe8cedbcd6",
+      "target_sha256": "c8a73f089dbe8e15ce9499d11596f510adc734086e75944622ee7ffe8cedbcd6",
+      "same": true,
+      "diff": null
+    },
+    {
+      "file": "mpr_jpeg_metadata.c",
+      "reference_sha256": "f04a35979aa1ceaea849832c15a33f10b4e04653bd49a0b05dc38742fb97897b",
+      "target_sha256": "f04a35979aa1ceaea849832c15a33f10b4e04653bd49a0b05dc38742fb97897b",
+      "same": true,
+      "diff": null
+    },
+    {
+      "file": "mpr_raw_metadata.c",
+      "reference_sha256": "e16cd5895bf1c327859cc11e1fe07b6537f3e801c2d6c0cd868473ddc03c7d36",
+      "target_sha256": "2ac4b20ff1f8c1dda95771943b20e0b03e430472a901310b983dadd3605649a2",
+      "same": false,
+      "diff": "/Users/zhaoyunpeng/Documents/ChatGPT/固件/analysis/r5_filter_pt456_20261110/mpr_raw_metadata.c.reference.diff"
+    }
+  ],
+  "source_comparison_only": true
+}

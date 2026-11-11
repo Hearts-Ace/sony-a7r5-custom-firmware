@@ -1,0 +1,3909 @@
+{
+  "passed": true,
+  "cases": 96,
+  "controls": 6,
+  "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac",
+  "rows": [
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "HEIF",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "RAW",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "RAW+JPEG",
+      "publication": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      },
+      "before": [
+        [
+          2252,
+          20553
+        ]
+      ],
+      "after": [],
+      "controller": {
+        "controller_return": 1,
+        "transitions": [],
+        "caution": "0xffff",
+        "text_resource": null
+      }
+    }
+  ],
+  "control_rows": [
+    {
+      "bias": 0,
+      "domain": "8cd",
+      "value": 0,
+      "preserved": true
+    },
+    {
+      "bias": 0,
+      "domain": "8cd",
+      "value": 1,
+      "preserved": true
+    },
+    {
+      "bias": 0,
+      "domain": "8cd",
+      "value": 0,
+      "preserved": true
+    },
+    {
+      "bias": 268435456,
+      "domain": "8cd",
+      "value": 0,
+      "preserved": true
+    },
+    {
+      "bias": 268435456,
+      "domain": "8cd",
+      "value": 1,
+      "preserved": true
+    },
+    {
+      "bias": 268435456,
+      "domain": "8cd",
+      "value": 0,
+      "preserved": true
+    }
+  ],
+  "camera_io": false,
+  "device_tested": false,
+  "dependencies": {
+    "reference/custom-aspect-ratios/tests/verify_zoom_inhibition.py": "900d4ce73433aa434276a5d035022c866db1a31a6f9edaa826c1dcf3975fb45c",
+    "reference/custom-aspect-ratios/tests/verify_playback_badge.py": "179b6e70d268d01da5c362298a2ee22e4d277fa5ff4b831d91343ac64deee194",
+    "reference/custom-aspect-ratios/tests/verify_jpeg_playback.py": "62d30cc49ee9114ac868c2a0e5a95e505c50d7103a3c45fcd4d3563c2a2b7f4c",
+    "reference/custom-aspect-ratios/native.py": "4ec3a9dc9130a60e4f796072f09eea7d5fe567f730e87a2d36135ac148c831a4"
+  },
+  "native": [
+    "341ccac real content class publication",
+    "2492270 property staging and appended exact-record domain helper",
+    "2493248 native cached exclusion engine and VM byte write",
+    "20d41e0 actual controller and18e31c0 Caution text lookup"
+  ],
+  "models": [
+    "native harness C++ container storage, API/property index and heap/libc/locks",
+    "record dimensions/class/format/CamMeta-valid explicitly supplied",
+    "observer notification boundary modeled; native publication and processing are separate explicit invocations"
+  ],
+  "limits": [
+    "No full GUI input/queue, decoder pixels or camera execution",
+    "synthetic class7 records exercise otherwise rejected known exact dimensions; native MPR classification independently verified"
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "schema": "r5-aspect456-ap-contract/1",
+  "base_sha256": "23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6",
+  "status": "REVIEWED_AP_CONTRACT",
+  "complete_menu_contract": true,
+  "aliases": [
+    "0x1660",
+    "0x1661",
+    "0x1662",
+    "0x1663"
+  ],
+  "native_leaf": 33,
+  "native_parameter": "0x52b",
+  "patches": [
+    {
+      "va": "0x3565f78",
+      "kind": "B",
+      "before": "810a40b9",
+      "symbol": "r5_aspect_freeze_hook",
+      "reason": "Restore once and freeze choice alongside native aspect read"
+    },
+    {
+      "va": "0x3566a44",
+      "kind": "BL",
+      "before": "7ac7ff97",
+      "symbol": "r5_aspect_send_hook",
+      "reason": "Use frozen private wire5..8 for this exact packet"
+    },
+    {
+      "va": "0x1bc7720",
+      "kind": "B",
+      "before": "fd7bbea9",
+      "symbol": "r5_aspect_apply_hook",
+      "reason": "Normalize independent row broker to native alias126"
+    },
+    {
+      "va": "0x1bcfd18",
+      "kind": "B",
+      "before": "00f80151",
+      "symbol": "r5_aspect_size_alias_hook",
+      "reason": "Normalize original size lookup alias"
+    },
+    {
+      "va": "0x16f6610",
+      "kind": "BL",
+      "before": "8187de95",
+      "symbol": "r5_aspect_rows_register",
+      "reason": "Chain exact455 filter/sound registry then add four aspect rows"
+    },
+    {
+      "va": "0x1bd8edc",
+      "kind": "BL",
+      "before": "71fdca95",
+      "symbol": "r5_aspect_row_normalize",
+      "reason": "Accept new private aliases while chaining prior455 behavior"
+    },
+    {
+      "va": "0x1bd5ad4",
+      "kind": "BL",
+      "before": "a60acb95",
+      "symbol": "r5_aspect_row_available_direct",
+      "reason": "Use native base-ratio availability"
+    },
+    {
+      "va": "0x1bdb238",
+      "kind": "BL",
+      "before": "ddf4ca95",
+      "symbol": "r5_aspect_row_parent",
+      "reason": "Map private aspect rows to native leaf33"
+    },
+    {
+      "va": "0x586b9e4",
+      "kind": "BYTES",
+      "before": "04000000",
+      "after": "08000000",
+      "reason": "Eight entries in native aspect descriptor"
+    },
+    {
+      "va": "0x2adfd3c",
+      "kind": "B",
+      "symbol": "r5_aspect_capture_value",
+      "before": "fd7bbfa9",
+      "reason": "Pair private selection with actual native key52b snapshot"
+    },
+    {
+      "va": "0x2adfd5c",
+      "kind": "B",
+      "symbol": "r5_aspect_restore_value",
+      "before": "fd7bbea9",
+      "reason": "Restore paired private selection with fresh epoch"
+    },
+    {
+      "va": "0x1bd64c8",
+      "kind": "BL",
+      "symbol": "r5_aspect_restore_alias",
+      "before": "09bbff97",
+      "reason": "Carry full selection epoch from native restored alias"
+    },
+    {
+      "va": "0x1bd64d4",
+      "kind": "BL",
+      "symbol": "r5_aspect_restore_commit",
+      "before": "20003fd6",
+      "reason": "CAS protects restored commit from newer publication"
+    }
+  ],
+  "rela_remaps": [
+    {
+      "va": "0x586b9e8",
+      "before_addend": "0x3f46600",
+      "symbol": "r5_aspect_menu_rows",
+      "reason": "Use eight-row table initialized in original row registry constructor"
+    },
+    {
+      "va": "0x586ba08",
+      "before_addend": "0x1c448dc",
+      "symbol": "r5_aspect_menu_get",
+      "reason": "Native0 plus private token yields UI choice"
+    },
+    {
+      "va": "0x586ba10",
+      "before_addend": "0x1c61d14",
+      "symbol": "r5_aspect_menu_set",
+      "reason": "Native menu browse/cancel setter preserves separate private state"
+    },
+    {
+      "va": "0x586ba18",
+      "before_addend": "0x1c93d88",
+      "symbol": "r5_aspect_menu_commit",
+      "reason": "Commit native alias126 then persist private choice"
+    },
+    {
+      "va": "0x582d1b8",
+      "before_addend": "0x8e984a0",
+      "symbol": "r5_aspect_row_normalize",
+      "reason": "Both original facade row normalization paths"
+    },
+    {
+      "va": "0x582dd68",
+      "before_addend": "0x8e984a0",
+      "symbol": "r5_aspect_row_normalize",
+      "reason": "Both original facade row normalization paths"
+    },
+    {
+      "va": "0x582cc10",
+      "before_addend": "0x8e984d8",
+      "symbol": "r5_aspect_row_available",
+      "reason": "Both original facade row availability paths"
+    },
+    {
+      "va": "0x582d7c0",
+      "before_addend": "0x8e984d8",
+      "symbol": "r5_aspect_row_available",
+      "reason": "Both original facade row availability paths"
+    },
+    {
+      "va": "0x582cc18",
+      "before_addend": "0x8e9856c",
+      "symbol": "r5_aspect_row_available_direct",
+      "reason": "Both original direct availability paths"
+    },
+    {
+      "va": "0x582d7c8",
+      "before_addend": "0x8e9856c",
+      "symbol": "r5_aspect_row_available_direct",
+      "reason": "Both original direct availability paths"
+    },
+    {
+      "va": "0x582cd90",
+      "before_addend": "0x8e985ac",
+      "symbol": "r5_aspect_row_parent",
+      "reason": "Both original row parent paths"
+    },
+    {
+      "va": "0x582d940",
+      "before_addend": "0x8e985ac",
+      "symbol": "r5_aspect_row_parent",
+      "reason": "Both original row parent paths"
+    }
+  ],
+  "review_scope": [
+    "All patch beforebytes and relocation source addends bound to exact455",
+    "Both existing row facade paths chain exact455 filter and sound wrappers",
+    "Model native enum remains0..3; generic broker and size helper normalize custom aliases"
+  ],
+  "required_runtime_validation": [
+    "Registry constructor, list text model, Fn/selection, cancel/commit sequence",
+    "POSIX save/restore fault matrix and cross-task completion order"
+  ],
+  "physical_device_verified": false
+}

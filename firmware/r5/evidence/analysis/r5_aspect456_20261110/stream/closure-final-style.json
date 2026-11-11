@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "status": "OFFLINE_FINAL_STYLE_AP_UI_FN_CANCEL_STREAM_CLOSED",
+  "AP": "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_filter_native_style_20261110/candidate-c/appFw-NONINSTALLABLE.so",
+  "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac",
+  "module": "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/build-d",
+  "module_manifest_sha256": "22bec8a57a39ff7c66016bbc84e4e168206cebda4a0be49c1b31b62cf0528a14",
+  "module_rx_sha256": "206c18f9eabd18ae3ab54eb9d6ebd41611d092167716d4b734521470cd69a1ec",
+  "counts": {
+    "creation": 440,
+    "native_Guide_output": 192,
+    "native_Image_Sprite_output": 576,
+    "page_negative": 40,
+    "ABI": 256,
+    "model_gate_positive": 192,
+    "model_gate_negative": 44,
+    "model_entry_guard": 12,
+    "other_model_rows_unchanged": 2050,
+    "native_Fn_snapshot": 384,
+    "native_Fn_pending_transitions": 8,
+    "ordered_wheel_MENU_cancel": 128,
+    "lifecycle_checks": 242,
+    "first_lazy_restore": 8
+  },
+  "stream_counts": {
+    "AP_CP": 8,
+    "geometry": 24,
+    "RAW_MPR_add": 8,
+    "CP_RAWheader_AVCAM": 24
+  },
+  "bindings": {
+    "ui": {
+      "path": "analysis/r5_aspect456_20261110/stream/final-style-ui/ui-binding.json",
+      "sha256": "cb45e8ba479aa179b5aad7cc18a54e64280d08137b00b1dc1ccdaba27875c604"
+    },
+    "visibility": {
+      "path": "analysis/r5_aspect456_20261110/stream/final-style-ui/visibility-binding.json",
+      "sha256": "b0b5f983f84a25d816fd3dcefb771657d28a584b17a107bd1fdfa387e1fae4f2"
+    },
+    "fn": {
+      "path": "analysis/r5_aspect456_20261110/stream/final-style-ui/fn-binding.json",
+      "sha256": "bf3190c92592f7c1c4764c844d3ab97c5462ceefbe36d3a4105e6c5e9aad8080"
+    },
+    "cancel": {
+      "path": "analysis/r5_aspect456_20261110/stream/final-style-ui/cancel-binding.json",
+      "sha256": "e1017f8112418cfb1bd6a5730b529dccbce94cf95b22dc67ff5e43dc7e157917"
+    },
+    "lifecycle": {
+      "path": "analysis/r5_aspect456_20261110/stream/final-style-ui/lifecycle-binding.json",
+      "sha256": "1ce91f4c84eb2c219cb33b7ffb1b03ec2c8412ae5d5cf3f5d0700a17362110f6"
+    },
+    "lazy": {
+      "path": "analysis/r5_aspect456_20261110/stream/final-style-ui/lazy-binding.json",
+      "sha256": "ce383012a917aadea4752edab1c85a3281d5d0b333478453cc4b8685f98a83f8"
+    }
+  },
+  "stream": {
+    "path": "analysis/r5_aspect456_20261110/stream/stream-final-style.json",
+    "sha256": "2a1e75e092c759cc3b4787ee0a32edcac7c7bc71878d08c7794fcc47f63de209"
+  },
+  "raw_stream": {
+    "path": "analysis/r5_aspect456_20261110/stream/raw-stream-delivery-d.json",
+    "sha256": "46e14ac97cbfb9c972a0bc685b6618f3496c1c3caf0519b6a7f017d52de916e4"
+  },
+  "current_sources_exact": true,
+  "source_hashes": {
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/replay_ui.py": "2d837be5b80a14f754ef80e59e2542e97bf658bb1b852f2e2f71c3ee2953849d",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/stream/rebind_ui_case.py": "5658e7727d69959eff686820c35135a750dd4523f7dfe728797eb50749b4c477",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/integration/inspect_ap.py": "3c102bbc8151778e748ae7cba42199a877b23da4df051bf0de3457faaea9f6e0",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ap/replay_ap.py": "70b700531c9fd959f82e6b3d3c846ae2582ee90ee37abf866bcd1ed207123788",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/integration/replay_final_ap.py": "c41da769b3e17b19f9d3e09737aeb02e9dffce8dee7518ff27b9cd9f5db3a151",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/replay_ui_support.py": "567b87b004b93d747993fb0bac37af0ade38a812e462cdea8172534a4383e46b",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/replay_visibility.py": "84b436c51d0a261fdfb81b84e5806db9adc472117a6f29292ea4271916311bfd",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/replay_fn_native.py": "fe3b62ca2d1be089511f2321e143d985a2f3bb5004a92d944dff6425f69ac19b",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/replay_ordered_cancel.py": "70201e23413d571272d88aa5bdaa263c8b2ec26ee89b7e7a575b26427dd39516",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/cancel/replay_lifecycle.py": "f48e126e8a6553f6249f1e2328574037158766a5215ef5ebfa7d906f79295ac6",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/cancel/replay_cancel.py": "d4a58972c57f8a22308bf82be5387e5e3a54b297242fa28223a78dd182c3ed34",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/cancel/replay_lazy_capture.py": "f689fbc7b6bba748333ac64c4c20ccad78d2a1b32d098bddd662853bb4193caf",
+    "analysis/r5_aspect456_20261110/integration/replay_final_ap.py": "c41da769b3e17b19f9d3e09737aeb02e9dffce8dee7518ff27b9cd9f5db3a151",
+    "analysis/r5_aspect456_20261110/ap/replay_ap.py": "70b700531c9fd959f82e6b3d3c846ae2582ee90ee37abf866bcd1ed207123788",
+    "analysis/r5_aspect456_20261110/reference-review/tests/verify_heif_clip.py": "e7836a8f98860d5a0afd12250befac98840c9be1cdc6b50d4660c83182ad571a",
+    "analysis/r5_aspect456_20261110/reference-review/tests/verify_avcam.py": "e824442b6c4b442d1fe1f6e83740c03a682b60048da5988295603eed4f5394ec",
+    "analysis/r5_aspect456_20261110/reference-review/tests/verify_mpr_jpeg_metadata.py": "df8b8585ccaf47ec449a93dc937b277269fd5e27a3d82305d1307d697cbc9aca",
+    "analysis/r5_aspect456_20261110/reference-review/tests/mpr_native.py": "fa511c04d47276a6f0ac20543ddc916dc6398bd4488221d3710d78af385fa658",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_ap_menu.py": "1bca1f32a923a979ee85946d406a719361bb07f0f05c1b046f9d0c76ca377572",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_avcam.py": "e824442b6c4b442d1fe1f6e83740c03a682b60048da5988295603eed4f5394ec",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/cp/verify_raw_emb.py": "bc94ee1ad6a4cba5c635cb2ebedeae52bf124310c320b074af5636a9c38d20f9",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_allocation_failure.py": "ff6c1e991a1568ec8bbc0f7d593dc4e41ffe8f1ea1b38e561d759582204ad97a",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference-review/tests/verify_raw_preview_local.py": "4d6f71d8dd1ba87b03c35cb1ce020fe6e2692746cf1dbae4f55a55b454d3707e",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_preview.py": "d369ddc8fd8b96216e255cb479821f5fd1ab879d6ce22b7709b9921e45285e5b",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_heif_clip.py": "e7836a8f98860d5a0afd12250befac98840c9be1cdc6b50d4660c83182ad571a",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_heif.py": "3caf8d8a9bccd093ce0e873d958be3be87ad9812b8dae0643d4887f4420c585b",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_cp.py": "810593628a4d24d16ef322c4c255dc79022b3e3e543452607f1b4cee56de1da9",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/stream/replay_raw_stream.py": "34fef85b9eae929f082122ef6c0ee3bb2051940a009d6705adcc8a8c05f9cc50",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_crop_tags.py": "61efcffa224ca2a528a7d891ef26783f1f9fcaedec149fc03d60ae69d8a3a207",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/native.py": "4ec3a9dc9130a60e4f796072f09eea7d5fe567f730e87a2d36135ac148c831a4"
+  },
+  "module_production_sources": {
+    "analysis/r5_aspect456_20261110/ap/r5_aspect_state.c": "e6b251f468c67de9236a7d0437692b472bb5c13a82da0ed8ab4ff627122708e3",
+    "analysis/r5_aspect456_20261110/ap/r5_aspect_menu.c": "71d4091333586d9162fa254c714604a6bc578de70398449234160b4674eba5fb",
+    "analysis/r5_aspect456_20261110/ap/r5_aspect_persist.c": "0c5208ab69668bd6a178dc572e424c34f8e397d15fb62b74d5664149c0298a8d",
+    "analysis/r5_aspect456_20261110/ap/r5_aspect_wire.S": "6898693cf0a63d3ba1e3afc5a7a5318b2c891f1bc40d2c3847c49cd003686a14",
+    "analysis/r5_aspect456_20261110/ui/preview_core.c": "22ac9adb34e8e36ef545872f5642a7285ab0915b12ea7ede730aff79a7a95eb3",
+    "analysis/r5_aspect456_20261110/ui/ui_create.c": "cdf1e4e8e83f439a14517ef8718e33473de1780ed145c839e18cae638b0403d4",
+    "analysis/r5_aspect456_20261110/ui/ui_preview.c": "558b04d8c1ed8604cfe60e96d0ddafe899f39b5de8fbe71316260914c0f22455",
+    "analysis/r5_aspect456_20261110/ui/ui_draw.c": "3b9c6c606b979e5704e950e79ec3c9d2d4aae4a42c4fc853cf9088e69ecc1eba",
+    "analysis/r5_aspect456_20261110/ui/ui_hooks.S": "52802d68b874c0ebb34bbd377607908a8b42cb5019757f095752d96422ba858a",
+    "analysis/r5_aspect456_20261110/cancel/r5_aspect_cancel.c": "5638e45460251197608688221d1fd5a07e24ea60786127492cb5791cbc2f3b03",
+    "analysis/r5_aspect456_20261110/cancel/r5_aspect_cancel_hooks.S": "d6889d17e44259128c7b079315279a876d4e1f264250df8d2aa78f20fc7b2e63",
+    "analysis/r5_aspect456_20261110/ui/build-d/ui_wrappers.S": "b04a42e2500be72345415dbeeda3bf82e42b3b54964ab625d946b9fb19d4ca05",
+    "analysis/r5_aspect456_20261110/ui/preview_core.h": "1f387b04d7fda058e22ddec1d3ae03b64fdb18b301f9bd3cb7a7f5e8a0af62a9",
+    "analysis/r5_aspect456_20261110/ui/ui_preview.h": "568153bebaee9aba03bdfa65db1d0dd0c4b8ff9c44ff62373204d7b1c363b100",
+    "analysis/r5_aspect456_20261110/ap/r5_aspect_state.h": "cae5b980727d06e6ca25055edc96c69b69a1ccbd03d4d7d79b97df231dfd300e",
+    "analysis/r5_aspect456_20261110/ui/build-d/ui_layout.h": "4ff62f3c0c4c569da04af63f9b5630cfa09ae66c77f162fa5aa5c2e2b369b621",
+    "analysis/r5_aspect456_20261110/ui/evidence/layout/ui-layout.json": "b150544a90362fd1885e7d1c9fe55a2c1c7ee6f356e9fafb1156c8e17e84380e",
+    "analysis/r5_aspect456_20261110/ui/compile_ui.py": "576efa49c5c125892232a37a24842d2349551134f2efbe7005d02abce1e93e67"
+  },
+  "script_sha256": "996e00e71bdca2a952d7b28e6ea05eae9f7fb4873744a804c56f696ae5da064b",
+  "physical_camera_verified": false,
+  "limits": [
+    "Exact final AP bytes execute without a runtime production module overlay",
+    "Native library/object models, OS/locks, POSIX-memory files and scheduler/transport inputs remain explicit fixtures",
+    "No hardware encoder, real pixels/card, physical LCD/startup or camera acceptance"
+  ]
+}

@@ -1,0 +1,108 @@
+.text
+.p2align 2
+/* Replaces one LDR W1,[X20,#8] at R5 0x3565f78. Preserve live caller state,
+ * NZCV and SIMD; freeze a private choice in the verified frame padding +74. */
+.global r5_aspect_freeze_hook
+.type r5_aspect_freeze_hook,%function
+r5_aspect_freeze_hook:
+    sub sp,sp,#0x2c0
+    stp x0,x1,[sp,#0]
+    stp x2,x3,[sp,#0x10]
+    stp x4,x5,[sp,#0x20]
+    stp x6,x7,[sp,#0x30]
+    stp x8,x9,[sp,#0x40]
+    stp x10,x11,[sp,#0x50]
+    stp x12,x13,[sp,#0x60]
+    stp x14,x15,[sp,#0x70]
+    stp x16,x17,[sp,#0x80]
+    stp x18,x30,[sp,#0x90]
+    mrs x0,nzcv
+    str x0,[sp,#0xa0]
+    mrs x0,fpcr
+    str x0,[sp,#0xa8]
+    mrs x0,fpsr
+    str x0,[sp,#0x2b0]
+    stp q0,q1,[sp,#0xb0]
+    stp q2,q3,[sp,#0xd0]
+    stp q4,q5,[sp,#0xf0]
+    stp q6,q7,[sp,#0x110]
+    stp q8,q9,[sp,#0x130]
+    stp q10,q11,[sp,#0x150]
+    stp q12,q13,[sp,#0x170]
+    stp q14,q15,[sp,#0x190]
+    stp q16,q17,[sp,#0x1b0]
+    stp q18,q19,[sp,#0x1d0]
+    stp q20,q21,[sp,#0x1f0]
+    stp q22,q23,[sp,#0x210]
+    stp q24,q25,[sp,#0x230]
+    stp q26,q27,[sp,#0x250]
+    stp q28,q29,[sp,#0x270]
+    stp q30,q31,[sp,#0x290]
+    bl r5_aspect_restore_once
+    ldr w0,[x20,#8]
+    bl r5_aspect_freeze
+    str w0,[x29,#0x74]
+    ldp q0,q1,[sp,#0xb0]
+    ldp q2,q3,[sp,#0xd0]
+    ldp q4,q5,[sp,#0xf0]
+    ldp q6,q7,[sp,#0x110]
+    ldp q8,q9,[sp,#0x130]
+    ldp q10,q11,[sp,#0x150]
+    ldp q12,q13,[sp,#0x170]
+    ldp q14,q15,[sp,#0x190]
+    ldp q16,q17,[sp,#0x1b0]
+    ldp q18,q19,[sp,#0x1d0]
+    ldp q20,q21,[sp,#0x1f0]
+    ldp q22,q23,[sp,#0x210]
+    ldp q24,q25,[sp,#0x230]
+    ldp q26,q27,[sp,#0x250]
+    ldp q28,q29,[sp,#0x270]
+    ldp q30,q31,[sp,#0x290]
+    ldr x0,[sp,#0x2b0]
+    msr fpsr,x0
+    ldr x0,[sp,#0xa8]
+    msr fpcr,x0
+    ldr x0,[sp,#0xa0]
+    msr nzcv,x0
+    ldp x18,x30,[sp,#0x90]
+    ldp x16,x17,[sp,#0x80]
+    ldp x14,x15,[sp,#0x70]
+    ldp x12,x13,[sp,#0x60]
+    ldp x10,x11,[sp,#0x50]
+    ldp x8,x9,[sp,#0x40]
+    ldp x6,x7,[sp,#0x30]
+    ldp x4,x5,[sp,#0x20]
+    ldp x2,x3,[sp,#0x10]
+    ldp x0,x1,[sp,#0]
+    add sp,sp,#0x2c0
+    ldr w1,[x20,#8]
+    b r5_aspect_freeze_continue
+.size r5_aspect_freeze_hook,.-r5_aspect_freeze_hook
+.global r5_aspect_send_hook
+.type r5_aspect_send_hook,%function
+r5_aspect_send_hook:
+    /* All original arguments and flags reach the original send unchanged. */
+    stp x9,x10,[sp,#-0x20]!
+    mrs x9,nzcv
+    ldr w10,[x29,#0x74]
+    sub w10,w10,#4
+    cmp w10,#3
+    b.hi 1f
+    add w10,w10,#5
+    strb w10,[x1,#8]
+1:  msr nzcv,x9
+    ldp x9,x10,[sp],#0x20
+    b r5_native_aspect_send
+.size r5_aspect_send_hook,.-r5_aspect_send_hook
+.global r5_aspect_native_apply
+.type r5_aspect_native_apply,%function
+r5_aspect_native_apply:
+    stp x29,x30,[sp,#-0x20]!
+    b r5_aspect_native_apply_continue
+.size r5_aspect_native_apply,.-r5_aspect_native_apply
+.global r5_aspect_native_size_alias
+.type r5_aspect_native_size_alias,%function
+r5_aspect_native_size_alias:
+    sub w0,w0,#126
+    b r5_aspect_native_size_continue
+.size r5_aspect_native_size_alias,.-r5_aspect_native_size_alias

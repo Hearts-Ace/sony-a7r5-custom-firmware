@@ -1,0 +1,443 @@
+{
+  "passed": true,
+  "style_native_evidence_pending": false,
+  "files": [
+    {
+      "original": "analysis/r5_aspect456_20261110/full/candidate-final-c/build.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/full/candidate-final-c/build.json",
+      "sha256": "1b5c5f4cc1cc7bca0c07a7ff4c4e1e674ebdf6371da802f45e488ac2eddae4c1"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/resources/generated-reference-b/manifest.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/resources/generated-reference-b/manifest.json",
+      "sha256": "8bddf03adfed25bcb6dee3437df80bc121d05790ba4fd54b7baaa5ad20e7455f"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/closure-o.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/closure-o.json",
+      "sha256": "263d16c488b454413f8abf1289fd3bc418a78d359ec7767712868ec80eac4b7a"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/closure-reference-d.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/closure-reference-d.json",
+      "sha256": "2f6d0de271067d6956da3e2755d9636156191cfab6087832f647f88c46c75b60"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-style-final/closure.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-style-final/closure.json",
+      "sha256": "3971f12f570b998ed6f84e078bda973d71b70a6eef90d23753b2a8d8b1178278"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/closure-final-style.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/closure-final-style.json",
+      "sha256": "6577b3919b20d8b85ccbd1cd66ac0a87f0a6f36b366cb8c32111858012cf810f"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/integrated-o/boot-verification.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/integrated-o/boot-verification.json",
+      "sha256": "84d1baac79e00946c8f98b793259bed12d0059c3e1e69ebc964a65f5ef2f8150"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/integrated-o/hook-verification.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/integrated-o/hook-verification.json",
+      "sha256": "b41151aeee51750fca1f91aa01b2ef60bf31b7e0ce57c1d20ca5e146250dff63"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/integrated-o/preservation.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/integrated-o/preservation.json",
+      "sha256": "100eab927b940f97b36db5c8defedf529fec65d99fe24370edea819552eb2fcc"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/integrated-o/layout-gamma.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/integrated-o/layout-gamma.json",
+      "sha256": "974320f9420b309324eb753b208e2ba42bedde5afd79fd75d2d7aca2fb6ed0ee"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/integrated-o/final-audit-v2.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/integrated-o/final-audit-v2.json",
+      "sha256": "a727ea0983a5a53f4e3ac1ef38647f9ca77f9ec6b974fa1e367cbdb113264571"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/integrated-o/raw-emb.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/integrated-o/raw-emb.json",
+      "sha256": "df6144a2fe48705cd64ebc99010badc93f8fa725c8524a6c7380526cbdd666e8"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/integrated-o/source-provenance.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/integrated-o/source-provenance.json",
+      "sha256": "28bc43f88baa94779364a4e7ea8321baa59dc1abfad87cb1d10f7819ada3615b"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/adapter-k/build.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/adapter-k/build.json",
+      "sha256": "1335f4508d2fe0d7fbde66630defbe74e635ec54b2c86eece859304d96322e4d"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/adapter-k/verification.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/adapter-k/verification.json",
+      "sha256": "51a4237744ef9ce7ee887e9b26d609f0cc895dbb2c5d8e101e2b9cc295990e6c"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/integrated-o/cp/build.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/integrated-o/cp/build.json",
+      "sha256": "ead13526e82432b882905b4da0f3c6328c6771a957f6d93736be913e5adba0bd"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/candidate-d/avcam-native.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/candidate-d/avcam-native.json",
+      "sha256": "66806fdbc432cf214cc7ebe1280e3c458178dc092c011caa891aef5e731a3c8c"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/candidate-d/heif-clip.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/candidate-d/heif-clip.json",
+      "sha256": "9033c6582aa356e1bf9c592fbb48a959f65913130802e8f898d9af02d1924e77"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/candidate-c/mpr-jpeg.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/candidate-c/mpr-jpeg.json",
+      "sha256": "732c565a4387bec894cabac9c6ed8b5136c8d6591ec702e9510ef8bc7af1fd6a"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/candidate-c/mpr-heif.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/candidate-c/mpr-heif.json",
+      "sha256": "8b85417048725c85243df9eeff34a60f815fc5a073b3954508287fe732dce68a"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/candidate-d/mpr-preview.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/candidate-d/mpr-preview.json",
+      "sha256": "9b31b98eb76d8c08c56c223b194b5a8b77028f46b329f8d5e031ec0ec4482c05"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/candidate-d/raw-preview-local.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/candidate-d/raw-preview-local.json",
+      "sha256": "1600f9136cc17dab461d65e8f6de1c20eeb63e7e9efc9c9e3ab5737f91d21bdb"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/candidate-d/snapshot.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/candidate-d/snapshot.json",
+      "sha256": "710089a2033a76f3b02e135310ec1e18e1d5ee6205e5882f8cdf8becd4660ab8"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/candidate-d/loader.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/candidate-d/loader.json",
+      "sha256": "7f496433089d02eeefda438ccbd57c9367e058acc2398df78c6a6c094e5a8c19"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-ui-e/preview-gate.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-ui-e/preview-gate.json",
+      "sha256": "fd750af808614605ee58f9d9995d7e936592e8b8bdd9421d83c1027438c256e8"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-ui-e/policy.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-ui-e/policy.json",
+      "sha256": "973b6a1b6fefea4ef49fc31ed03a38365bc2c74b696d3cbae93b7ef5b2b3ba70"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-ui-e/policy-scope.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-ui-e/policy-scope.json",
+      "sha256": "032fe27c314ca3f777989cc2d9604af95df9ddfad2aa531520e038c9a446cd3f"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-ui-e/zoom-gate.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-ui-e/zoom-gate.json",
+      "sha256": "c5ffdd2e9cac1a1e69b7aa6198f0b7431d32e68eaad7662fe8d166dfd7f37273"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-ui-e/raw-writer-reader-ap-final.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-ui-e/raw-writer-reader-ap-final.json",
+      "sha256": "dc093204a093f3845b54e57c69790a0ad4380c33904675b6ccbbaae315847fdb"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-style-final/preview-gate.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-style-final/preview-gate.json",
+      "sha256": "88bad76e6612dd10c26cfa610b0acbcf564ade51ddfad0f0932275f6ec43f8c5"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-style-final/policy.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-style-final/policy.json",
+      "sha256": "87e5f791a973de65e14ee04f70570c1ee1d23286b510152c1664e96c20800049"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-style-final/zoom-gate.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-style-final/zoom-gate.json",
+      "sha256": "eea84d91e0d24fb7faffe4f4e330571770942dd6cf28e88d0d3d5ccda58a776c"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-style-final/policy-scope.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-style-final/policy-scope.json",
+      "sha256": "eaf8dc463769b2e79d0c347b0f9392419898cfcce1fa63b8dd4ff964b9bc0920"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-style-final/raw-writer-reader-ap.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-style-final/raw-writer-reader-ap.json",
+      "sha256": "d44ea4f1e3a7b13c7bad4326a1491852d82693135836afec84467d50ab878f44"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/playback-style-final/binding.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/playback-style-final/binding.json",
+      "sha256": "e3d23c028fd6eec567388168fae7846256f72bfa5648154bf67ac0a4a732a0db"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/ui-binding.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/ui-binding.json",
+      "sha256": "cb45e8ba479aa179b5aad7cc18a54e64280d08137b00b1dc1ccdaba27875c604"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/ui.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/ui.json",
+      "sha256": "bf269b99be541094f8d36f85ba209567769174122a0010b95cc568db10008459"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/visibility-binding.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/visibility-binding.json",
+      "sha256": "b0b5f983f84a25d816fd3dcefb771657d28a584b17a107bd1fdfa387e1fae4f2"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/visibility.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/visibility.json",
+      "sha256": "dce2c1ef72edaf2a269ff52bd756a7f47510020513aebe99e2ee2c75460eb414"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/fn-binding.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/fn-binding.json",
+      "sha256": "bf3190c92592f7c1c4764c844d3ab97c5462ceefbe36d3a4105e6c5e9aad8080"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/fn.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/fn.json",
+      "sha256": "81c8d34a18cd591c374e5bfa8c461282f2a128645d94b7ffa1becf688ec92cb3"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/cancel-binding.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/cancel-binding.json",
+      "sha256": "e1017f8112418cfb1bd6a5730b529dccbce94cf95b22dc67ff5e43dc7e157917"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/cancel.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/cancel.json",
+      "sha256": "a3b6e4e9238b517f4cb5507302903843070946f8276122eedabf15977cdee688"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/lifecycle-binding.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/lifecycle-binding.json",
+      "sha256": "1ce91f4c84eb2c219cb33b7ffb1b03ec2c8412ae5d5cf3f5d0700a17362110f6"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/lifecycle.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/lifecycle.json",
+      "sha256": "9c912aae8517021abb37192919682b6bc98b739ee05a28708b5052856d94749b"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/lazy-binding.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/lazy-binding.json",
+      "sha256": "ce383012a917aadea4752edab1c85a3281d5d0b333478453cc4b8685f98a83f8"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/final-style-ui/lazy.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/final-style-ui/lazy.json",
+      "sha256": "22d1d5574fb916fd6f7fa1d172c64203a4dce5a4c5c190ccde357d822fa78fa0"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/stream-final-style.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/stream-final-style.json",
+      "sha256": "2a1e75e092c759cc3b4787ee0a32edcac7c7bc71878d08c7794fcc47f63de209"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/raw-stream-delivery-d.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/raw-stream-delivery-d.json",
+      "sha256": "46e14ac97cbfb9c972a0bc685b6618f3496c1c3caf0519b6a7f017d52de916e4"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/ui/replay_ui.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/ui/replay_ui.py",
+      "sha256": "2d837be5b80a14f754ef80e59e2542e97bf658bb1b852f2e2f71c3ee2953849d"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/rebind_ui_case.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/rebind_ui_case.py",
+      "sha256": "5658e7727d69959eff686820c35135a750dd4523f7dfe728797eb50749b4c477"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/integration/inspect_ap.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/integration/inspect_ap.py",
+      "sha256": "3c102bbc8151778e748ae7cba42199a877b23da4df051bf0de3457faaea9f6e0"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/ap/replay_ap.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/ap/replay_ap.py",
+      "sha256": "70b700531c9fd959f82e6b3d3c846ae2582ee90ee37abf866bcd1ed207123788"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/integration/replay_final_ap.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/integration/replay_final_ap.py",
+      "sha256": "c41da769b3e17b19f9d3e09737aeb02e9dffce8dee7518ff27b9cd9f5db3a151"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/ui/replay_ui_support.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/ui/replay_ui_support.py",
+      "sha256": "567b87b004b93d747993fb0bac37af0ade38a812e462cdea8172534a4383e46b"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/ui/replay_visibility.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/ui/replay_visibility.py",
+      "sha256": "84b436c51d0a261fdfb81b84e5806db9adc472117a6f29292ea4271916311bfd"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/ui/replay_fn_native.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/ui/replay_fn_native.py",
+      "sha256": "fe3b62ca2d1be089511f2321e143d985a2f3bb5004a92d944dff6425f69ac19b"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/ui/replay_ordered_cancel.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/ui/replay_ordered_cancel.py",
+      "sha256": "70201e23413d571272d88aa5bdaa263c8b2ec26ee89b7e7a575b26427dd39516"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cancel/replay_lifecycle.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cancel/replay_lifecycle.py",
+      "sha256": "f48e126e8a6553f6249f1e2328574037158766a5215ef5ebfa7d906f79295ac6"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cancel/replay_cancel.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cancel/replay_cancel.py",
+      "sha256": "d4a58972c57f8a22308bf82be5387e5e3a54b297242fa28223a78dd182c3ed34"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cancel/replay_lazy_capture.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cancel/replay_lazy_capture.py",
+      "sha256": "f689fbc7b6bba748333ac64c4c20ccad78d2a1b32d098bddd662853bb4193caf"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/tests/verify_heif_clip.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/tests/verify_heif_clip.py",
+      "sha256": "e7836a8f98860d5a0afd12250befac98840c9be1cdc6b50d4660c83182ad571a"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/tests/verify_avcam.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/tests/verify_avcam.py",
+      "sha256": "e824442b6c4b442d1fe1f6e83740c03a682b60048da5988295603eed4f5394ec"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/tests/verify_mpr_jpeg_metadata.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/tests/verify_mpr_jpeg_metadata.py",
+      "sha256": "df8b8585ccaf47ec449a93dc937b277269fd5e27a3d82305d1307d697cbc9aca"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/tests/mpr_native.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/tests/mpr_native.py",
+      "sha256": "fa511c04d47276a6f0ac20543ddc916dc6398bd4488221d3710d78af385fa658"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_ap_menu.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_ap_menu.py",
+      "sha256": "1bca1f32a923a979ee85946d406a719361bb07f0f05c1b046f9d0c76ca377572"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_avcam.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_avcam.py",
+      "sha256": "e824442b6c4b442d1fe1f6e83740c03a682b60048da5988295603eed4f5394ec"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/cp/verify_raw_emb.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/cp/verify_raw_emb.py",
+      "sha256": "bc94ee1ad6a4cba5c635cb2ebedeae52bf124310c320b074af5636a9c38d20f9"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_allocation_failure.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_allocation_failure.py",
+      "sha256": "ff6c1e991a1568ec8bbc0f7d593dc4e41ffe8f1ea1b38e561d759582204ad97a"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference-review/tests/verify_raw_preview_local.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference-review/tests/verify_raw_preview_local.py",
+      "sha256": "4d6f71d8dd1ba87b03c35cb1ce020fe6e2692746cf1dbae4f55a55b454d3707e"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_preview.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_preview.py",
+      "sha256": "d369ddc8fd8b96216e255cb479821f5fd1ab879d6ce22b7709b9921e45285e5b"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_heif_clip.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_heif_clip.py",
+      "sha256": "e7836a8f98860d5a0afd12250befac98840c9be1cdc6b50d4660c83182ad571a"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_heif.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_heif.py",
+      "sha256": "3caf8d8a9bccd093ce0e873d958be3be87ad9812b8dae0643d4887f4420c585b"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_cp.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_cp.py",
+      "sha256": "810593628a4d24d16ef322c4c255dc79022b3e3e543452607f1b4cee56de1da9"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/stream/replay_raw_stream.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/stream/replay_raw_stream.py",
+      "sha256": "34fef85b9eae929f082122ef6c0ee3bb2051940a009d6705adcc8a8c05f9cc50"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_crop_tags.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/tests/verify_raw_crop_tags.py",
+      "sha256": "61efcffa224ca2a528a7d891ef26783f1f9fcaedec149fc03d60ae69d8a3a207"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/native.py",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/reference/custom-aspect-ratios/native.py",
+      "sha256": "4ec3a9dc9130a60e4f796072f09eea7d5fe567f730e87a2d36135ac148c831a4"
+    },
+    {
+      "original": "analysis/r5_filter_native_style_20261110/candidate-c/build.json",
+      "delivered": "evidence/analysis/r5_filter_native_style_20261110/candidate-c/build.json",
+      "sha256": "918ba26e244c55962f57ee803b6a618d81a57d3b3a869e62b81843f7085f03cb"
+    },
+    {
+      "original": "analysis/r5_filter_native_style_20261110/provenance.json",
+      "delivered": "evidence/analysis/r5_filter_native_style_20261110/provenance.json",
+      "sha256": "bd9fd4f354a88635496da0d22f7252def16974136cb3578a934029b6c4c49e57"
+    },
+    {
+      "original": "analysis/r5_filter_native_style_20261110/closure-h.json",
+      "delivered": "evidence/analysis/r5_filter_native_style_20261110/closure-h.json",
+      "sha256": "941a1f3470beaed0f9b9bf414ad9715eaaf17bdb2b067ebfedb5b3f144b1ff52"
+    },
+    {
+      "original": "analysis/r5_filter_native_style_20261110/verify_style.py",
+      "delivered": "evidence/analysis/r5_filter_native_style_20261110/verify_style.py",
+      "sha256": "08e01624d3c3d284de1c6cd4f8a3f8645d22fb9a69f112c9d570a91d7da094c0"
+    },
+    {
+      "original": "analysis/r5_filter_native_style_20261110/replay_style.py",
+      "delivered": "evidence/analysis/r5_filter_native_style_20261110/replay_style.py",
+      "sha256": "edf9dd09d7043217360ec5a8bf7cebdb59731797fffb859969c0fa0d062a7845"
+    },
+    {
+      "original": "analysis/r5_filter_native_style_20261110/candidate-h/build.json",
+      "delivered": "evidence/analysis/r5_filter_native_style_20261110/candidate-h/build.json",
+      "sha256": "755505597f00f7b3ddb6d9f7480cbfd52c6134b2d1b8662a483dbb19cd218d75"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/full/candidate-final-h/build.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/full/candidate-final-h/build.json",
+      "sha256": "f5956fd4cba05152584da1cbff86399c8b49c0a9e3d3588193b8bde42431d289"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/full/package-final-h/verification.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/full/package-final-h/verification.json",
+      "sha256": "5aaa4120c557256602a46970cb7583265c66379e817baa93b30b0a940e71641b"
+    },
+    {
+      "original": "analysis/r5_aspect456_20261110/full/package-final-h/evidence/archive_verification_456.json",
+      "delivered": "evidence/analysis/r5_aspect456_20261110/full/package-final-h/evidence/archive_verification_456.json",
+      "sha256": "0b913ca1259ee4c6670aea1077efc5554bd7ea5ee420b2ca888fa3a20fc25519"
+    }
+  ],
+  "limits": "Offline evidence does not establish physical camera functionality",
+  "style_native_closure": "analysis/r5_filter_native_style_20261110/closure-h.json",
+  "style_AP_sha256": "bafcd7da96cd644a040a61f29cb09288ec700c89b2417bc1bc22deac700cce66",
+  "inherited_parent_evidence": true,
+  "parent_source": "projects/firmware/development/aspect456-reference",
+  "new_PT_evidence": "evidence/pt456/pt-native-first.json",
+  "current_crop_CPU_rerun_performed": false
+}

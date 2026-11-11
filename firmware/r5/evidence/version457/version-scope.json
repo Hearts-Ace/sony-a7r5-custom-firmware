@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "parent_DAT": "8719f7a987dd4b6a2cb11c75c02e28ae0bbb0756ff781527bce362e4e8a506b6",
+  "DAT_sha256": "4effe34a806359ea0517db7240557f3f771a034322ab8aa37c2640ed29467cf1",
+  "plaintext_bytes": 751577088,
+  "changed_plaintext_offsets": [
+    8,
+    9,
+    10,
+    11,
+    32
+  ],
+  "version_bcd": "57 04",
+  "archive_sha256": "5033bb45491ae597ffb7e44f9f29d51896835e5d1b79757e1c30e0becdd15303",
+  "archive_exact_parent": true,
+  "all_four_components_and_partitions_exact_parent": true,
+  "camera_io": false,
+  "device_tested": false
+}

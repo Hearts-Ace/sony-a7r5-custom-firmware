@@ -1,0 +1,7133 @@
+{
+  "passed": true,
+  "camera_io": false,
+  "device_tested": false,
+  "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac",
+  "previous_AP_sha256": "9c12f6c2ba0496c7d3439424a20df4b9dc63fd0558dd97b495488c11f630c30f",
+  "MPR_sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478",
+  "cases": 24,
+  "negative_cases": 84,
+  "rows": [
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "ratio": 4,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "8fcf4a0f82c2625ab8b4d87d438efc8df0e557b549497a36a1e2334f82599e8c",
+      "native_CamMeta_sha256": "03e5a6cb50b04dbbf3fdc06adf069747da556158d0f47dd3c6b3c886d8a10895",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          9504
+        ],
+        "ExifH": [
+          5872
+        ],
+        "SonyFull": [
+          5872,
+          9504
+        ],
+        "SonyPreview": [
+          1000,
+          1616
+        ],
+        "IFD2W": [
+          9504
+        ],
+        "IFD2H": [
+          5872
+        ],
+        "SonyCrop": [
+          9504,
+          6336
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          9504,
+          6336
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            9504,
+            5872
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            9504,
+            5872
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "ratio": 4,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "8fcf4a0f82c2625ab8b4d87d438efc8df0e557b549497a36a1e2334f82599e8c",
+      "native_CamMeta_sha256": "03e5a6cb50b04dbbf3fdc06adf069747da556158d0f47dd3c6b3c886d8a10895",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          9504
+        ],
+        "ExifH": [
+          5872
+        ],
+        "SonyFull": [
+          5872,
+          9504
+        ],
+        "SonyPreview": [
+          1000,
+          1616
+        ],
+        "IFD2W": [
+          9504
+        ],
+        "IFD2H": [
+          5872
+        ],
+        "SonyCrop": [
+          9504,
+          6336
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          9504,
+          6336
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            9504,
+            5872
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            9504,
+            5872
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "ratio": 4,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "35f91e63df4451d74b9225f029674794c76a60b07c0019ff012bdf050ff491cc",
+      "native_CamMeta_sha256": "42da23da46e83b3b0f8953f8691e7b7e9bab3454ddf341f5ade3bc73edb1ee46",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          6240
+        ],
+        "ExifH": [
+          3856
+        ],
+        "SonyFull": [
+          3856,
+          6240
+        ],
+        "SonyPreview": [
+          1000,
+          1616
+        ],
+        "IFD2W": [
+          6240
+        ],
+        "IFD2H": [
+          3856
+        ],
+        "SonyCrop": [
+          6240,
+          4160
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          6240,
+          4160
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            6240,
+            3856
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            6240,
+            3856
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "ratio": 4,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "35f91e63df4451d74b9225f029674794c76a60b07c0019ff012bdf050ff491cc",
+      "native_CamMeta_sha256": "42da23da46e83b3b0f8953f8691e7b7e9bab3454ddf341f5ade3bc73edb1ee46",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          6240
+        ],
+        "ExifH": [
+          3856
+        ],
+        "SonyFull": [
+          3856,
+          6240
+        ],
+        "SonyPreview": [
+          1000,
+          1616
+        ],
+        "IFD2W": [
+          6240
+        ],
+        "IFD2H": [
+          3856
+        ],
+        "SonyCrop": [
+          6240,
+          4160
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          6240,
+          4160
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            6240,
+            3856
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            6240,
+            3856
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "ratio": 4,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "7c8f5e199981c3b1cd72a2541af9f8266b23ab40cfb11ca8b67714af540fd9cd",
+      "native_CamMeta_sha256": "99c0c3db88f69b9abc8a2cccf030120993f0344d4e8cecca9cb366ea75168961",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          4752
+        ],
+        "ExifH": [
+          2936
+        ],
+        "SonyFull": [
+          2936,
+          4752
+        ],
+        "SonyPreview": [
+          1000,
+          1616
+        ],
+        "IFD2W": [
+          4752
+        ],
+        "IFD2H": [
+          2936
+        ],
+        "SonyCrop": [
+          4752,
+          3168
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          4752,
+          3168
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            4752,
+            2936
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            4752,
+            2936
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "ratio": 4,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "7c8f5e199981c3b1cd72a2541af9f8266b23ab40cfb11ca8b67714af540fd9cd",
+      "native_CamMeta_sha256": "99c0c3db88f69b9abc8a2cccf030120993f0344d4e8cecca9cb366ea75168961",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          4752
+        ],
+        "ExifH": [
+          2936
+        ],
+        "SonyFull": [
+          2936,
+          4752
+        ],
+        "SonyPreview": [
+          1000,
+          1616
+        ],
+        "IFD2W": [
+          4752
+        ],
+        "IFD2H": [
+          2936
+        ],
+        "SonyCrop": [
+          4752,
+          3168
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          4752,
+          3168
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            4752,
+            2936
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            4752,
+            2936
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "ratio": 5,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "9fb6cf1d773d609217a5224253e6d2534852dbfffb78a5454da96b4147a1a526",
+      "native_CamMeta_sha256": "eea021ee74d18d3e1bba89cf71fa6eca27f80f9336dfe5a0439a12d8f0f90364",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          9504
+        ],
+        "ExifH": [
+          3976
+        ],
+        "SonyFull": [
+          3976,
+          9504
+        ],
+        "SonyPreview": [
+          680,
+          1616
+        ],
+        "IFD2W": [
+          9504
+        ],
+        "IFD2H": [
+          3976
+        ],
+        "SonyCrop": [
+          9504,
+          6336
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          9504,
+          6336
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 6,
+        "publication": {
+          "WH": [
+            9504,
+            3976
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 6,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            9504,
+            3976
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 6,
+        "property152": 7,
+        "staged": "0x5048",
+        "internal_value": "0x5048",
+        "producer_events": [],
+        "native_staged_raw": 7,
+        "native_effective_raw": 7,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        3976
+      ],
+      "ratio": 5,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "9fb6cf1d773d609217a5224253e6d2534852dbfffb78a5454da96b4147a1a526",
+      "native_CamMeta_sha256": "eea021ee74d18d3e1bba89cf71fa6eca27f80f9336dfe5a0439a12d8f0f90364",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          9504
+        ],
+        "ExifH": [
+          3976
+        ],
+        "SonyFull": [
+          3976,
+          9504
+        ],
+        "SonyPreview": [
+          680,
+          1616
+        ],
+        "IFD2W": [
+          9504
+        ],
+        "IFD2H": [
+          3976
+        ],
+        "SonyCrop": [
+          9504,
+          6336
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          9504,
+          6336
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 6,
+        "publication": {
+          "WH": [
+            9504,
+            3976
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 6,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            9504,
+            3976
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 6,
+        "property152": 7,
+        "staged": "0x5048",
+        "internal_value": "0x5048",
+        "producer_events": [],
+        "native_staged_raw": 7,
+        "native_effective_raw": 7,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "ratio": 5,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "973845eaa36b8b316377d43abe58abeef033aa6289117b99ad9bd26d298b06a2",
+      "native_CamMeta_sha256": "96442ac12d8c03943b56e25353dd2473ba98a4dac2d504e3e8ffadd29acab68c",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          6240
+        ],
+        "ExifH": [
+          2608
+        ],
+        "SonyFull": [
+          2608,
+          6240
+        ],
+        "SonyPreview": [
+          680,
+          1616
+        ],
+        "IFD2W": [
+          6240
+        ],
+        "IFD2H": [
+          2608
+        ],
+        "SonyCrop": [
+          6240,
+          4160
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          6240,
+          4160
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 6,
+        "publication": {
+          "WH": [
+            6240,
+            2608
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 6,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            6240,
+            2608
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 6,
+        "property152": 7,
+        "staged": "0x5048",
+        "internal_value": "0x5048",
+        "producer_events": [],
+        "native_staged_raw": 7,
+        "native_effective_raw": 7,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        2608
+      ],
+      "ratio": 5,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "973845eaa36b8b316377d43abe58abeef033aa6289117b99ad9bd26d298b06a2",
+      "native_CamMeta_sha256": "96442ac12d8c03943b56e25353dd2473ba98a4dac2d504e3e8ffadd29acab68c",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          6240
+        ],
+        "ExifH": [
+          2608
+        ],
+        "SonyFull": [
+          2608,
+          6240
+        ],
+        "SonyPreview": [
+          680,
+          1616
+        ],
+        "IFD2W": [
+          6240
+        ],
+        "IFD2H": [
+          2608
+        ],
+        "SonyCrop": [
+          6240,
+          4160
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          6240,
+          4160
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 6,
+        "publication": {
+          "WH": [
+            6240,
+            2608
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 6,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            6240,
+            2608
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 6,
+        "property152": 7,
+        "staged": "0x5048",
+        "internal_value": "0x5048",
+        "producer_events": [],
+        "native_staged_raw": 7,
+        "native_effective_raw": 7,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "ratio": 5,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "96774b5fdad744b2bb3a9471050fa2ed0b4323b44aab33f33c918c27c1b78430",
+      "native_CamMeta_sha256": "c1bfced9488704c7a5553cb7b498529f2005f11414f7d1478cb5306443f13cd5",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          4752
+        ],
+        "ExifH": [
+          1992
+        ],
+        "SonyFull": [
+          1992,
+          4752
+        ],
+        "SonyPreview": [
+          680,
+          1616
+        ],
+        "IFD2W": [
+          4752
+        ],
+        "IFD2H": [
+          1992
+        ],
+        "SonyCrop": [
+          4752,
+          3168
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          4752,
+          3168
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 6,
+        "publication": {
+          "WH": [
+            4752,
+            1992
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 6,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            4752,
+            1992
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 6,
+        "property152": 7,
+        "staged": "0x5048",
+        "internal_value": "0x5048",
+        "producer_events": [],
+        "native_staged_raw": 7,
+        "native_effective_raw": 7,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        1992
+      ],
+      "ratio": 5,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "96774b5fdad744b2bb3a9471050fa2ed0b4323b44aab33f33c918c27c1b78430",
+      "native_CamMeta_sha256": "c1bfced9488704c7a5553cb7b498529f2005f11414f7d1478cb5306443f13cd5",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          4752
+        ],
+        "ExifH": [
+          1992
+        ],
+        "SonyFull": [
+          1992,
+          4752
+        ],
+        "SonyPreview": [
+          680,
+          1616
+        ],
+        "IFD2W": [
+          4752
+        ],
+        "IFD2H": [
+          1992
+        ],
+        "SonyCrop": [
+          4752,
+          3168
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          4752,
+          3168
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 6,
+        "publication": {
+          "WH": [
+            4752,
+            1992
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 6,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            4752,
+            1992
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 6,
+        "property152": 7,
+        "staged": "0x5048",
+        "internal_value": "0x5048",
+        "producer_events": [],
+        "native_staged_raw": 7,
+        "native_effective_raw": 7,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "ratio": 6,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "bdde7fe048d62ca8030800b166d79b2325318e7f85298144d4f8168a48c0072d",
+      "native_CamMeta_sha256": "d8bec3d6635a4fada0728fe802400b000a7a0a6f9cef7070336af26e1b96b6e8",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          7920
+        ],
+        "ExifH": [
+          6336
+        ],
+        "SonyFull": [
+          6336,
+          7920
+        ],
+        "SonyPreview": [
+          1080,
+          1344
+        ],
+        "IFD2W": [
+          7920
+        ],
+        "IFD2H": [
+          6336
+        ],
+        "SonyCrop": [
+          9504,
+          6336
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          9504,
+          6336
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 4,
+        "publication": {
+          "WH": [
+            7920,
+            6336
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 4,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            7920,
+            6336
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 4,
+        "property152": 5,
+        "staged": "0x5046",
+        "internal_value": "0x5046",
+        "producer_events": [],
+        "native_staged_raw": 5,
+        "native_effective_raw": 5,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        7920,
+        6336
+      ],
+      "ratio": 6,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "bdde7fe048d62ca8030800b166d79b2325318e7f85298144d4f8168a48c0072d",
+      "native_CamMeta_sha256": "d8bec3d6635a4fada0728fe802400b000a7a0a6f9cef7070336af26e1b96b6e8",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          7920
+        ],
+        "ExifH": [
+          6336
+        ],
+        "SonyFull": [
+          6336,
+          7920
+        ],
+        "SonyPreview": [
+          1080,
+          1344
+        ],
+        "IFD2W": [
+          7920
+        ],
+        "IFD2H": [
+          6336
+        ],
+        "SonyCrop": [
+          9504,
+          6336
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          9504,
+          6336
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 4,
+        "publication": {
+          "WH": [
+            7920,
+            6336
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 4,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            7920,
+            6336
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 4,
+        "property152": 5,
+        "staged": "0x5046",
+        "internal_value": "0x5046",
+        "producer_events": [],
+        "native_staged_raw": 5,
+        "native_effective_raw": 5,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "ratio": 6,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "99b3efa976f7501cfe169cf3dc7909d916bbbafd724deebc25fac355ec0f8f04",
+      "native_CamMeta_sha256": "aa93bb3339730c7e2b4ddf771fe242c438ff2a63b9dba77f284e476eec67f77d",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          5200
+        ],
+        "ExifH": [
+          4160
+        ],
+        "SonyFull": [
+          4160,
+          5200
+        ],
+        "SonyPreview": [
+          1080,
+          1344
+        ],
+        "IFD2W": [
+          5200
+        ],
+        "IFD2H": [
+          4160
+        ],
+        "SonyCrop": [
+          6240,
+          4160
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          6240,
+          4160
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 4,
+        "publication": {
+          "WH": [
+            5200,
+            4160
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 4,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            5200,
+            4160
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 4,
+        "property152": 5,
+        "staged": "0x5046",
+        "internal_value": "0x5046",
+        "producer_events": [],
+        "native_staged_raw": 5,
+        "native_effective_raw": 5,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        5200,
+        4160
+      ],
+      "ratio": 6,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "99b3efa976f7501cfe169cf3dc7909d916bbbafd724deebc25fac355ec0f8f04",
+      "native_CamMeta_sha256": "aa93bb3339730c7e2b4ddf771fe242c438ff2a63b9dba77f284e476eec67f77d",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          5200
+        ],
+        "ExifH": [
+          4160
+        ],
+        "SonyFull": [
+          4160,
+          5200
+        ],
+        "SonyPreview": [
+          1080,
+          1344
+        ],
+        "IFD2W": [
+          5200
+        ],
+        "IFD2H": [
+          4160
+        ],
+        "SonyCrop": [
+          6240,
+          4160
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          6240,
+          4160
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 4,
+        "publication": {
+          "WH": [
+            5200,
+            4160
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 4,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            5200,
+            4160
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 4,
+        "property152": 5,
+        "staged": "0x5046",
+        "internal_value": "0x5046",
+        "producer_events": [],
+        "native_staged_raw": 5,
+        "native_effective_raw": 5,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "ratio": 6,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "7d8f9ef1fbda6fc39a5f66a77ac6191a6af48fef3f803a3006078d6e27c0662c",
+      "native_CamMeta_sha256": "a1c59be841cd57f9cd98793505eb62228654c0aec42251a4276601df08897a6d",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          3968
+        ],
+        "ExifH": [
+          3168
+        ],
+        "SonyFull": [
+          3168,
+          3968
+        ],
+        "SonyPreview": [
+          1080,
+          1344
+        ],
+        "IFD2W": [
+          3968
+        ],
+        "IFD2H": [
+          3168
+        ],
+        "SonyCrop": [
+          4752,
+          3168
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          4752,
+          3168
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 4,
+        "publication": {
+          "WH": [
+            3968,
+            3168
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 4,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            3968,
+            3168
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 4,
+        "property152": 5,
+        "staged": "0x5046",
+        "internal_value": "0x5046",
+        "producer_events": [],
+        "native_staged_raw": 5,
+        "native_effective_raw": 5,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        3968,
+        3168
+      ],
+      "ratio": 6,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "7d8f9ef1fbda6fc39a5f66a77ac6191a6af48fef3f803a3006078d6e27c0662c",
+      "native_CamMeta_sha256": "a1c59be841cd57f9cd98793505eb62228654c0aec42251a4276601df08897a6d",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          3968
+        ],
+        "ExifH": [
+          3168
+        ],
+        "SonyFull": [
+          3168,
+          3968
+        ],
+        "SonyPreview": [
+          1080,
+          1344
+        ],
+        "IFD2W": [
+          3968
+        ],
+        "IFD2H": [
+          3168
+        ],
+        "SonyCrop": [
+          4752,
+          3168
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          4752,
+          3168
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 0,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 4,
+        "publication": {
+          "WH": [
+            3968,
+            3168
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 4,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            3968,
+            3168
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x2dbf7f0",
+          "0x2dbf7f4",
+          "0x2dbf7f8",
+          "0x2dbf7fc",
+          "0x2dbf800",
+          "0x2dbf804",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 4,
+        "property152": 5,
+        "staged": "0x5046",
+        "internal_value": "0x5046",
+        "producer_events": [],
+        "native_staged_raw": 5,
+        "native_effective_raw": 5,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "ratio": 7,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "bf79ff54213afbf1c2cbc89974b5e3c13705b86a5d2c0182ba8b76702b677ed9",
+      "native_CamMeta_sha256": "f802eb3f539dcafc3c9a3524a67c376db41f67bca84fafcad922e84e5325c75c",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          9504
+        ],
+        "ExifH": [
+          5136
+        ],
+        "SonyFull": [
+          5136,
+          9504
+        ],
+        "SonyPreview": [
+          872,
+          1616
+        ],
+        "IFD2W": [
+          9504
+        ],
+        "IFD2H": [
+          5136
+        ],
+        "SonyCrop": [
+          9504,
+          6336
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          9504,
+          6336
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            9504,
+            5136
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            9504,
+            5136
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "ratio": 7,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "bf79ff54213afbf1c2cbc89974b5e3c13705b86a5d2c0182ba8b76702b677ed9",
+      "native_CamMeta_sha256": "f802eb3f539dcafc3c9a3524a67c376db41f67bca84fafcad922e84e5325c75c",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          9504
+        ],
+        "ExifH": [
+          5136
+        ],
+        "SonyFull": [
+          5136,
+          9504
+        ],
+        "SonyPreview": [
+          872,
+          1616
+        ],
+        "IFD2W": [
+          9504
+        ],
+        "IFD2H": [
+          5136
+        ],
+        "SonyCrop": [
+          9504,
+          6336
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          9504,
+          6336
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            9504,
+            5136
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            9504,
+            5136
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "ratio": 7,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "ff3e2dc5dc91f77ebb6d5f4c664f510e90eb75730f2fb6a39df7e2b9ed14a64f",
+      "native_CamMeta_sha256": "dffc9d522996d79fa6aecd3a41ac74c272621bf44df71acb3e6f86f76f992a39",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          6240
+        ],
+        "ExifH": [
+          3376
+        ],
+        "SonyFull": [
+          3376,
+          6240
+        ],
+        "SonyPreview": [
+          872,
+          1616
+        ],
+        "IFD2W": [
+          6240
+        ],
+        "IFD2H": [
+          3376
+        ],
+        "SonyCrop": [
+          6240,
+          4160
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          6240,
+          4160
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            6240,
+            3376
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            6240,
+            3376
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "ratio": 7,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "ff3e2dc5dc91f77ebb6d5f4c664f510e90eb75730f2fb6a39df7e2b9ed14a64f",
+      "native_CamMeta_sha256": "dffc9d522996d79fa6aecd3a41ac74c272621bf44df71acb3e6f86f76f992a39",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          6240
+        ],
+        "ExifH": [
+          3376
+        ],
+        "SonyFull": [
+          3376,
+          6240
+        ],
+        "SonyPreview": [
+          872,
+          1616
+        ],
+        "IFD2W": [
+          6240
+        ],
+        "IFD2H": [
+          3376
+        ],
+        "SonyCrop": [
+          6240,
+          4160
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          6240,
+          4160
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            6240,
+            3376
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            6240,
+            3376
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "ratio": 7,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "f834f08cb1d918fa48bbbb9e28fa794897ffeb8c78298bc1e31480bbd1d66d15",
+      "native_CamMeta_sha256": "090ba9de93f0b950516af6c7a5e895e4efba99ca881fbef1f7a579582f9917f6",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          4752
+        ],
+        "ExifH": [
+          2568
+        ],
+        "SonyFull": [
+          2568,
+          4752
+        ],
+        "SonyPreview": [
+          872,
+          1616
+        ],
+        "IFD2W": [
+          4752
+        ],
+        "IFD2H": [
+          2568
+        ],
+        "SonyCrop": [
+          4752,
+          3168
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          4752,
+          3168
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            4752,
+            2568
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            4752,
+            2568
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "ratio": 7,
+      "native_TIFF_bytes": 234258,
+      "native_TIFF_sha256": "f834f08cb1d918fa48bbbb9e28fa794897ffeb8c78298bc1e31480bbd1d66d15",
+      "native_CamMeta_sha256": "090ba9de93f0b950516af6c7a5e895e4efba99ca881fbef1f7a579582f9917f6",
+      "native_read_status": 0,
+      "native_query_tags": [
+        34665,
+        37500,
+        40965,
+        34853,
+        50740,
+        29248,
+        330,
+        700,
+        513,
+        514,
+        274,
+        40962,
+        40963,
+        36867,
+        36881,
+        37521,
+        33437,
+        33434,
+        34850,
+        37380,
+        37381,
+        37386,
+        37385,
+        41985,
+        41987,
+        41990,
+        37382,
+        41988,
+        37384,
+        34855,
+        37383,
+        34866,
+        40961,
+        1,
+        45140,
+        45121,
+        4099,
+        45089,
+        8203,
+        45091,
+        8206,
+        45097,
+        45093,
+        8202,
+        258,
+        260,
+        8205,
+        8212,
+        8213,
+        8214,
+        8230,
+        8231,
+        8232,
+        8233,
+        8235,
+        8236,
+        8238,
+        8239,
+        8196,
+        8197,
+        8198,
+        8246,
+        8245,
+        8244,
+        8243,
+        8242,
+        8247,
+        8248,
+        8251,
+        8264,
+        8265,
+        8266,
+        8263,
+        8284,
+        8259,
+        33432,
+        315,
+        8250,
+        8252,
+        272,
+        8260,
+        8260,
+        8208,
+        513,
+        514,
+        65280,
+        65281,
+        52545,
+        513,
+        514,
+        273,
+        279,
+        256,
+        257,
+        258,
+        259,
+        262,
+        277,
+        284,
+        282,
+        283,
+        296,
+        33421,
+        33421,
+        28672,
+        28673,
+        28688,
+        28688,
+        28688,
+        28688,
+        28689,
+        28689,
+        28689,
+        28689,
+        28704,
+        8263,
+        531,
+        531,
+        531
+      ],
+      "writer_values": {
+        "ExifW": [
+          4752
+        ],
+        "ExifH": [
+          2568
+        ],
+        "SonyFull": [
+          2568,
+          4752
+        ],
+        "SonyPreview": [
+          872,
+          1616
+        ],
+        "IFD2W": [
+          4752
+        ],
+        "IFD2H": [
+          2568
+        ],
+        "SonyCrop": [
+          4752,
+          3168
+        ],
+        "SonyOrigin": [
+          32,
+          20
+        ],
+        "DefaultSize": [
+          4752,
+          3168
+        ],
+        "DefaultOrigin": [
+          32,
+          20
+        ]
+      },
+      "previous_inhibition": 1,
+      "gate": {
+        "inhibition": 0,
+        "aspect": 7,
+        "publication": {
+          "WH": [
+            4752,
+            2568
+          ],
+          "format": "RAW",
+          "kind": 0,
+          "native_aspect": 7,
+          "native_MP_WH": [
+            0,
+            0
+          ],
+          "native_RAW_WH": [
+            4752,
+            2568
+          ],
+          "native_RAW_present": true,
+          "header_WH": [
+            111,
+            222
+          ],
+          "cammeta_offset": "0xb80",
+          "reader_bytes": 9152
+        },
+        "branch": "0x30c6418",
+        "trace": [
+          "0x30c6e7c",
+          "0x30c6e80",
+          "0x30c6e84",
+          "0x30c6e88",
+          "0x30c6e8c",
+          "0x30c6e90",
+          "0x30c6e94",
+          "0x30c6e98",
+          "0x30c6e9c",
+          "0x30c6ea0",
+          "0x30c6ea4",
+          "0x30c6ea8",
+          "0x30c6eac",
+          "0x30c6eb0",
+          "0x30c6eb4",
+          "0x30c6eb8",
+          "0x30c6ebc",
+          "0x30c6ec0",
+          "0x30c6ec4",
+          "0x30c6ec8",
+          "0x30c6ecc",
+          "0x30c6ed0",
+          "0x30c6ef8",
+          "0x30c6efc",
+          "0x30c6f00",
+          "0x30c6f04",
+          "0x30c6f2c",
+          "0x30c6f30",
+          "0x30c6f34",
+          "0x30c6f18",
+          "0x30c6f1c",
+          "0x30c6f20",
+          "0x30c6f24",
+          "0x30c6f28",
+          "0x30c6ed8",
+          "0x30c6edc",
+          "0x30c6ee0",
+          "0x30c6ee4",
+          "0x30c6ee8"
+        ],
+        "ABI_preserved": true,
+        "input_unchanged": true
+      },
+      "policy": {
+        "native_class": 7,
+        "property152": 8,
+        "staged": "0x507a",
+        "internal_value": "0x507a",
+        "producer_events": [
+          "lock",
+          "current_record_getter",
+          "unlock"
+        ],
+        "native_staged_raw": 8,
+        "native_effective_raw": 8,
+        "native_publication_notify_flags": [
+          1,
+          1
+        ],
+        "native_ffd_counter": 0,
+        "native_VM_inhibited": 0
+      }
+    }
+  ],
+  "negative_rows": [
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5872
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3856
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2936
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        5136
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        3376
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "RAW_width_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "RAW_height_mismatch",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "RAW_zero_WH",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "invalid_CamMeta",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "nonstill1",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "nonstill2",
+      "inhibition": 1
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        4752,
+        2568
+      ],
+      "defect": "RAW_flag_missing",
+      "inhibition": 1
+    }
+  ],
+  "source_sha256": {
+    "reference-review/tests/verify_raw_preview_writer_reader_ap.py": "621f0d228354058a8de3249a0f56d2e96124b576108f9dfcd9b0d2314f5403d6",
+    "reference-review/tests/verify_mpr_preview_metadata.py": "de37650709bbda90937c18e01098229499434d27bfe9e5e94d1aa5abed661f1a",
+    "reference-review/tests/mpr_native.py": "fa511c04d47276a6f0ac20543ddc916dc6398bd4488221d3710d78af385fa658",
+    "reference/custom-aspect-ratios/evidence/device-4.21-raw-followup-20261108/sample-analysis/read_raw_cammeta.py": "9e177d29ad1e1e03b719243955320b993e515e8a581f82e69b7122a7369cba5b",
+    "reference/custom-aspect-ratios/tests/verify_playback_badge.py": "179b6e70d268d01da5c362298a2ee22e4d277fa5ff4b831d91343ac64deee194",
+    "reference/custom-aspect-ratios/tests/verify_playback_zoom.py": "46a51cfbc993abe3b1af45d43a0fec3521da7931f3d9a9ad1351948b4921e23b",
+    "reference/custom-aspect-ratios/tests/verify_zoom_inhibition.py": "900d4ce73433aa434276a5d035022c866db1a31a6f9edaa826c1dcf3975fb45c"
+  },
+  "native": [
+    "actual27b600/27ce1c full TIFF construction,26c7d0 private SCN writer and26c7ec hook",
+    "actual libarw constructor26ab74 and full2745fc ana_if to return; serialized TIFF bytes read without geometry overlays",
+    "actual30c54e8..30c555c raw/main/class/CamMeta projection and1ea404c dual snapshot",
+    "actual30c6e7c gate to return and30ca574 add_effect/decoder preparation branch",
+    "actual current-record341ccac/2492270/2493248 policy VM/controller"
+  ],
+  "models": [
+    "CP input cnv/RAW header and JPEG SCN SOF explicit fixtures; no CP code in this test",
+    "serialized TIFF is native writer output with synthetic metadata, no camera-captured RAW/Bayer or hardware image encoder",
+    "frozen reader libc/heap/locks/hostExpat callbacks plus ostream logging; no actual decoder",
+    "native policy C++ storage/property/observer boundaries from reference harness"
+  ],
+  "limits": [
+    "metadata reader closure does not validate final complete ARW image payload or actual RAW rendering",
+    "Bayer/crop tags stay full frame; AP embedded-preview playback and internal RAW processing use published CamMeta WH",
+    "no OS GUI queue/hardware LCD/camera or card IO"
+  ]
+}

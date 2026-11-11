@@ -1,0 +1,36 @@
+--- reference/avcam_heif.c
+
++++ 4.56/avcam_heif.c
+
+@@ -65,7 +65,7 @@
+
+     return 0;
+ }
+ 
+-/* 原生 RAW getter 的第 19 项是本张照片 extra-IFD。SonyCrop 由 CP 冻结
++/* 原生 RAW getter 的第 19 项是本张照片 extra-IFD。EMB WH 由 CP 冻结
+  * task 生成；不读取当前菜单，也不依赖另一格式的 L/M/S 或拍摄顺序。
+  */
+ uint32_t aspect_avcam_raw_crop(const uint8_t *ctx, uint32_t *width, uint32_t *height)
+@@ -83,7 +83,9 @@
+
+     void *headers[19];
+     aspect_native_raw_headers((void *)info, base, headers);
+     const uint8_t *extra = headers[18];
+-    uint32_t w = word(extra + 0x248), h = word(extra + 0x24c);
++    /* RAW preview WH already frozen by CP into native EMB header.
++     * SonyCrop/DefaultCrop remain full frame and are deliberately not read. */
++    uint32_t w = word(extra + 0xa50), h = word(extra + 0xa54);
+     for (uint32_t i = 0; i < 12; ++i) {
+         if (w == sizes[i][0] && h == sizes[i][1]) {
+             *width = w; *height = h;
+@@ -95,7 +97,7 @@
+
+ 
+ /* RAW EMB 和 HEIF 10→8bit 辅助图的原生 prepare 返回局部 source/target。
+  * 只裁这两个 view；canvas、原有申请和共享 YC 不变。辅助 stage 的 slot
+- * 来自 HEIF mask，故用本张 SonyCrop 判定 RAW 裁切，不能把该 slot 当 RAW。
++ * 来自 HEIF mask，故用本张 EMB WH 判定 RAW 预览裁切，不能把该 slot 当 RAW。
+  */
+ uint32_t aspect_avcam_raw_preview_prepare(uint32_t slot, uint32_t mode, void *ctx,
+     void *owner, aspect_geometry *source, void *input, aspect_geometry *target,

@@ -1,0 +1,1434 @@
+{
+  "schema": "r5-final-component-stream/1",
+  "passed": true,
+  "camera_io": false,
+  "image_encoding": false,
+  "no_runtime_production_patch_overlay": true,
+  "identities": {
+    "AP": {
+      "path": "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_filter_native_style_20261110/candidate-c/appFw-NONINSTALLABLE.so",
+      "sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac"
+    },
+    "CP": {
+      "path": "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/cp/integrated-o/cp/cp423.NONINSTALLABLE.bin",
+      "sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+    },
+    "AVCAM": {
+      "path": "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference-review/candidate-d/avcam/av-cam.bin",
+      "sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b"
+    },
+    "MPR": {
+      "path": "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/reference-review/candidate-d/mpr/libmpr.so",
+      "sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478"
+    }
+  },
+  "module_sha256": "206c18f9eabd18ae3ab54eb9d6ebd41611d092167716d4b734521470cd69a1ec",
+  "fixture_source_hashes": {
+    "analysis/r5_aspect456_20261110/integration/replay_final_ap.py": "c41da769b3e17b19f9d3e09737aeb02e9dffce8dee7518ff27b9cd9f5db3a151",
+    "analysis/r5_aspect456_20261110/ap/replay_ap.py": "70b700531c9fd959f82e6b3d3c846ae2582ee90ee37abf866bcd1ed207123788",
+    "analysis/r5_aspect456_20261110/reference-review/tests/verify_heif_clip.py": "e7836a8f98860d5a0afd12250befac98840c9be1cdc6b50d4660c83182ad571a",
+    "analysis/r5_aspect456_20261110/reference-review/tests/verify_avcam.py": "e824442b6c4b442d1fe1f6e83740c03a682b60048da5988295603eed4f5394ec",
+    "analysis/r5_aspect456_20261110/reference-review/tests/verify_mpr_jpeg_metadata.py": "df8b8585ccaf47ec449a93dc937b277269fd5e27a3d82305d1307d697cbc9aca",
+    "analysis/r5_aspect456_20261110/reference-review/tests/mpr_native.py": "fa511c04d47276a6f0ac20543ddc916dc6398bd4488221d3710d78af385fa658"
+  },
+  "script_sha256": "be9ec2813ed7a1069385b4813614e4966810fadc3bfc28e8ccdaad23507d33b3",
+  "AP_CP_cases": [
+    {
+      "bias": "0x4000000000",
+      "choice": 4,
+      "sent": {
+        "opcode": 16429,
+        "arguments": [
+          2416115713,
+          302116072,
+          24,
+          16429,
+          302116480,
+          12
+        ],
+        "packet": "05002d407856341205000002000200010002000200010000"
+      },
+      "CP_live_after_change": 5,
+      "CP_frozen_request": [
+        4,
+        104
+      ]
+    },
+    {
+      "bias": "0x4000000000",
+      "choice": 5,
+      "sent": {
+        "opcode": 16429,
+        "arguments": [
+          2416115713,
+          302116072,
+          24,
+          16429,
+          302116480,
+          12
+        ],
+        "packet": "05002d407856341206000002000200010002000200010000"
+      },
+      "CP_live_after_change": 6,
+      "CP_frozen_request": [
+        5,
+        105
+      ]
+    },
+    {
+      "bias": "0x4000000000",
+      "choice": 6,
+      "sent": {
+        "opcode": 16429,
+        "arguments": [
+          2416115713,
+          302116072,
+          24,
+          16429,
+          302116480,
+          12
+        ],
+        "packet": "05002d407856341207000002000200010002000200010000"
+      },
+      "CP_live_after_change": 7,
+      "CP_frozen_request": [
+        6,
+        106
+      ]
+    },
+    {
+      "bias": "0x4000000000",
+      "choice": 7,
+      "sent": {
+        "opcode": 16429,
+        "arguments": [
+          2416115713,
+          302116072,
+          24,
+          16429,
+          302116480,
+          12
+        ],
+        "packet": "05002d407856341208000002000200010002000200010000"
+      },
+      "CP_live_after_change": 4,
+      "CP_frozen_request": [
+        7,
+        107
+      ]
+    },
+    {
+      "bias": "0x6000000000",
+      "choice": 4,
+      "sent": {
+        "opcode": 16429,
+        "arguments": [
+          2416115713,
+          302116072,
+          24,
+          16429,
+          302116480,
+          12
+        ],
+        "packet": "05002d407856341205000002000200010002000200010000"
+      },
+      "CP_live_after_change": 5,
+      "CP_frozen_request": [
+        4,
+        104
+      ]
+    },
+    {
+      "bias": "0x6000000000",
+      "choice": 5,
+      "sent": {
+        "opcode": 16429,
+        "arguments": [
+          2416115713,
+          302116072,
+          24,
+          16429,
+          302116480,
+          12
+        ],
+        "packet": "05002d407856341206000002000200010002000200010000"
+      },
+      "CP_live_after_change": 6,
+      "CP_frozen_request": [
+        5,
+        105
+      ]
+    },
+    {
+      "bias": "0x6000000000",
+      "choice": 6,
+      "sent": {
+        "opcode": 16429,
+        "arguments": [
+          2416115713,
+          302116072,
+          24,
+          16429,
+          302116480,
+          12
+        ],
+        "packet": "05002d407856341207000002000200010002000200010000"
+      },
+      "CP_live_after_change": 7,
+      "CP_frozen_request": [
+        6,
+        106
+      ]
+    },
+    {
+      "bias": "0x6000000000",
+      "choice": 7,
+      "sent": {
+        "opcode": 16429,
+        "arguments": [
+          2416115713,
+          302116072,
+          24,
+          16429,
+          302116480,
+          12
+        ],
+        "packet": "05002d407856341208000002000200010002000200010000"
+      },
+      "CP_live_after_change": 4,
+      "CP_frozen_request": [
+        7,
+        107
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "bias": "0x4000000000",
+      "selection": 4,
+      "size_enum": 0,
+      "native_WH": [
+        9504,
+        6336
+      ],
+      "CP_JPEG_WH": [
+        9504,
+        5872
+      ],
+      "CP_HEIF_WH": [
+        9504,
+        5872
+      ],
+      "CP_RAW_WH": [
+        9504,
+        6336
+      ],
+      "AVCAM_packet": "0400000000002025f0160000000000000000000000000000",
+      "HEIF_image_geometry": [
+        9600,
+        6336,
+        0,
+        232,
+        9504,
+        5872,
+        0,
+        0,
+        9504,
+        5872
+      ],
+      "hardware_origin": [
+        0,
+        232
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        9504,
+        5872
+      ],
+      "MPR_JPEG_Exif_WH": [
+        9504,
+        5872
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 4,
+      "size_enum": 1,
+      "native_WH": [
+        6240,
+        4160
+      ],
+      "CP_JPEG_WH": [
+        6240,
+        3856
+      ],
+      "CP_HEIF_WH": [
+        6240,
+        3856
+      ],
+      "CP_RAW_WH": [
+        6240,
+        4160
+      ],
+      "AVCAM_packet": "0400000001006018100f0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        6272,
+        4160,
+        0,
+        152,
+        6240,
+        3856,
+        0,
+        0,
+        6240,
+        3856
+      ],
+      "hardware_origin": [
+        0,
+        152
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        6240,
+        3856
+      ],
+      "MPR_JPEG_Exif_WH": [
+        6240,
+        3856
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 4,
+      "size_enum": 2,
+      "native_WH": [
+        4752,
+        3168
+      ],
+      "CP_JPEG_WH": [
+        4752,
+        2936
+      ],
+      "CP_HEIF_WH": [
+        4752,
+        2936
+      ],
+      "CP_RAW_WH": [
+        4752,
+        3168
+      ],
+      "AVCAM_packet": "0400000002009012780b0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        4864,
+        3168,
+        0,
+        116,
+        4752,
+        2936,
+        0,
+        0,
+        4752,
+        2936
+      ],
+      "hardware_origin": [
+        0,
+        116
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        4752,
+        2936
+      ],
+      "MPR_JPEG_Exif_WH": [
+        4752,
+        2936
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 5,
+      "size_enum": 0,
+      "native_WH": [
+        9504,
+        6336
+      ],
+      "CP_JPEG_WH": [
+        9504,
+        3976
+      ],
+      "CP_HEIF_WH": [
+        9504,
+        3976
+      ],
+      "CP_RAW_WH": [
+        9504,
+        6336
+      ],
+      "AVCAM_packet": "0400000000002025880f0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        9600,
+        6336,
+        0,
+        1180,
+        9504,
+        3976,
+        0,
+        0,
+        9504,
+        3976
+      ],
+      "hardware_origin": [
+        0,
+        1180
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        9504,
+        3976
+      ],
+      "MPR_JPEG_Exif_WH": [
+        9504,
+        3976
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 5,
+      "size_enum": 1,
+      "native_WH": [
+        6240,
+        4160
+      ],
+      "CP_JPEG_WH": [
+        6240,
+        2608
+      ],
+      "CP_HEIF_WH": [
+        6240,
+        2608
+      ],
+      "CP_RAW_WH": [
+        6240,
+        4160
+      ],
+      "AVCAM_packet": "0400000001006018300a0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        6272,
+        4160,
+        0,
+        776,
+        6240,
+        2608,
+        0,
+        0,
+        6240,
+        2608
+      ],
+      "hardware_origin": [
+        0,
+        776
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        6240,
+        2608
+      ],
+      "MPR_JPEG_Exif_WH": [
+        6240,
+        2608
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 5,
+      "size_enum": 2,
+      "native_WH": [
+        4752,
+        3168
+      ],
+      "CP_JPEG_WH": [
+        4752,
+        1992
+      ],
+      "CP_HEIF_WH": [
+        4752,
+        1992
+      ],
+      "CP_RAW_WH": [
+        4752,
+        3168
+      ],
+      "AVCAM_packet": "0400000002009012c8070000000000000000000000000000",
+      "HEIF_image_geometry": [
+        4864,
+        3168,
+        0,
+        588,
+        4752,
+        1992,
+        0,
+        0,
+        4752,
+        1992
+      ],
+      "hardware_origin": [
+        0,
+        588
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        4752,
+        1992
+      ],
+      "MPR_JPEG_Exif_WH": [
+        4752,
+        1992
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 6,
+      "size_enum": 0,
+      "native_WH": [
+        9504,
+        6336
+      ],
+      "CP_JPEG_WH": [
+        7920,
+        6336
+      ],
+      "CP_HEIF_WH": [
+        7920,
+        6336
+      ],
+      "CP_RAW_WH": [
+        9504,
+        6336
+      ],
+      "AVCAM_packet": "040000000000f01ec0180000000000000000000000000000",
+      "HEIF_image_geometry": [
+        9600,
+        6336,
+        792,
+        0,
+        7920,
+        6336,
+        0,
+        0,
+        7920,
+        6336
+      ],
+      "hardware_origin": [
+        792,
+        0
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        7920,
+        6336
+      ],
+      "MPR_JPEG_Exif_WH": [
+        7920,
+        6336
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 6,
+      "size_enum": 1,
+      "native_WH": [
+        6240,
+        4160
+      ],
+      "CP_JPEG_WH": [
+        5200,
+        4160
+      ],
+      "CP_HEIF_WH": [
+        5200,
+        4160
+      ],
+      "CP_RAW_WH": [
+        6240,
+        4160
+      ],
+      "AVCAM_packet": "040000000100501440100000000000000000000000000000",
+      "HEIF_image_geometry": [
+        6272,
+        4160,
+        520,
+        0,
+        5200,
+        4160,
+        0,
+        0,
+        5200,
+        4160
+      ],
+      "hardware_origin": [
+        520,
+        0
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        5200,
+        4160
+      ],
+      "MPR_JPEG_Exif_WH": [
+        5200,
+        4160
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 6,
+      "size_enum": 2,
+      "native_WH": [
+        4752,
+        3168
+      ],
+      "CP_JPEG_WH": [
+        3968,
+        3168
+      ],
+      "CP_HEIF_WH": [
+        3968,
+        3168
+      ],
+      "CP_RAW_WH": [
+        4752,
+        3168
+      ],
+      "AVCAM_packet": "040000000200800f600c0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        4864,
+        3168,
+        392,
+        0,
+        3968,
+        3168,
+        0,
+        0,
+        3968,
+        3168
+      ],
+      "hardware_origin": [
+        392,
+        0
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        3968,
+        3168
+      ],
+      "MPR_JPEG_Exif_WH": [
+        3968,
+        3168
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 7,
+      "size_enum": 0,
+      "native_WH": [
+        9504,
+        6336
+      ],
+      "CP_JPEG_WH": [
+        9504,
+        5136
+      ],
+      "CP_HEIF_WH": [
+        9504,
+        5136
+      ],
+      "CP_RAW_WH": [
+        9504,
+        6336
+      ],
+      "AVCAM_packet": "040000000000202510140000000000000000000000000000",
+      "HEIF_image_geometry": [
+        9600,
+        6336,
+        0,
+        600,
+        9504,
+        5136,
+        0,
+        0,
+        9504,
+        5136
+      ],
+      "hardware_origin": [
+        0,
+        600
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        9504,
+        5136
+      ],
+      "MPR_JPEG_Exif_WH": [
+        9504,
+        5136
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 7,
+      "size_enum": 1,
+      "native_WH": [
+        6240,
+        4160
+      ],
+      "CP_JPEG_WH": [
+        6240,
+        3376
+      ],
+      "CP_HEIF_WH": [
+        6240,
+        3376
+      ],
+      "CP_RAW_WH": [
+        6240,
+        4160
+      ],
+      "AVCAM_packet": "0400000001006018300d0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        6272,
+        4160,
+        0,
+        392,
+        6240,
+        3376,
+        0,
+        0,
+        6240,
+        3376
+      ],
+      "hardware_origin": [
+        0,
+        392
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        6240,
+        3376
+      ],
+      "MPR_JPEG_Exif_WH": [
+        6240,
+        3376
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 7,
+      "size_enum": 2,
+      "native_WH": [
+        4752,
+        3168
+      ],
+      "CP_JPEG_WH": [
+        4752,
+        2568
+      ],
+      "CP_HEIF_WH": [
+        4752,
+        2568
+      ],
+      "CP_RAW_WH": [
+        4752,
+        3168
+      ],
+      "AVCAM_packet": "0400000002009012080a0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        4864,
+        3168,
+        0,
+        300,
+        4752,
+        2568,
+        0,
+        0,
+        4752,
+        2568
+      ],
+      "hardware_origin": [
+        0,
+        300
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        4752,
+        2568
+      ],
+      "MPR_JPEG_Exif_WH": [
+        4752,
+        2568
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 4,
+      "size_enum": 0,
+      "native_WH": [
+        9504,
+        6336
+      ],
+      "CP_JPEG_WH": [
+        9504,
+        5872
+      ],
+      "CP_HEIF_WH": [
+        9504,
+        5872
+      ],
+      "CP_RAW_WH": [
+        9504,
+        6336
+      ],
+      "AVCAM_packet": "0400000000002025f0160000000000000000000000000000",
+      "HEIF_image_geometry": [
+        9600,
+        6336,
+        0,
+        232,
+        9504,
+        5872,
+        0,
+        0,
+        9504,
+        5872
+      ],
+      "hardware_origin": [
+        0,
+        232
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        9504,
+        5872
+      ],
+      "MPR_JPEG_Exif_WH": [
+        9504,
+        5872
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 4,
+      "size_enum": 1,
+      "native_WH": [
+        6240,
+        4160
+      ],
+      "CP_JPEG_WH": [
+        6240,
+        3856
+      ],
+      "CP_HEIF_WH": [
+        6240,
+        3856
+      ],
+      "CP_RAW_WH": [
+        6240,
+        4160
+      ],
+      "AVCAM_packet": "0400000001006018100f0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        6272,
+        4160,
+        0,
+        152,
+        6240,
+        3856,
+        0,
+        0,
+        6240,
+        3856
+      ],
+      "hardware_origin": [
+        0,
+        152
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        6240,
+        3856
+      ],
+      "MPR_JPEG_Exif_WH": [
+        6240,
+        3856
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 4,
+      "size_enum": 2,
+      "native_WH": [
+        4752,
+        3168
+      ],
+      "CP_JPEG_WH": [
+        4752,
+        2936
+      ],
+      "CP_HEIF_WH": [
+        4752,
+        2936
+      ],
+      "CP_RAW_WH": [
+        4752,
+        3168
+      ],
+      "AVCAM_packet": "0400000002009012780b0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        4864,
+        3168,
+        0,
+        116,
+        4752,
+        2936,
+        0,
+        0,
+        4752,
+        2936
+      ],
+      "hardware_origin": [
+        0,
+        116
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        4752,
+        2936
+      ],
+      "MPR_JPEG_Exif_WH": [
+        4752,
+        2936
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 5,
+      "size_enum": 0,
+      "native_WH": [
+        9504,
+        6336
+      ],
+      "CP_JPEG_WH": [
+        9504,
+        3976
+      ],
+      "CP_HEIF_WH": [
+        9504,
+        3976
+      ],
+      "CP_RAW_WH": [
+        9504,
+        6336
+      ],
+      "AVCAM_packet": "0400000000002025880f0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        9600,
+        6336,
+        0,
+        1180,
+        9504,
+        3976,
+        0,
+        0,
+        9504,
+        3976
+      ],
+      "hardware_origin": [
+        0,
+        1180
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        9504,
+        3976
+      ],
+      "MPR_JPEG_Exif_WH": [
+        9504,
+        3976
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 5,
+      "size_enum": 1,
+      "native_WH": [
+        6240,
+        4160
+      ],
+      "CP_JPEG_WH": [
+        6240,
+        2608
+      ],
+      "CP_HEIF_WH": [
+        6240,
+        2608
+      ],
+      "CP_RAW_WH": [
+        6240,
+        4160
+      ],
+      "AVCAM_packet": "0400000001006018300a0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        6272,
+        4160,
+        0,
+        776,
+        6240,
+        2608,
+        0,
+        0,
+        6240,
+        2608
+      ],
+      "hardware_origin": [
+        0,
+        776
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        6240,
+        2608
+      ],
+      "MPR_JPEG_Exif_WH": [
+        6240,
+        2608
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 5,
+      "size_enum": 2,
+      "native_WH": [
+        4752,
+        3168
+      ],
+      "CP_JPEG_WH": [
+        4752,
+        1992
+      ],
+      "CP_HEIF_WH": [
+        4752,
+        1992
+      ],
+      "CP_RAW_WH": [
+        4752,
+        3168
+      ],
+      "AVCAM_packet": "0400000002009012c8070000000000000000000000000000",
+      "HEIF_image_geometry": [
+        4864,
+        3168,
+        0,
+        588,
+        4752,
+        1992,
+        0,
+        0,
+        4752,
+        1992
+      ],
+      "hardware_origin": [
+        0,
+        588
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        4752,
+        1992
+      ],
+      "MPR_JPEG_Exif_WH": [
+        4752,
+        1992
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 6,
+      "size_enum": 0,
+      "native_WH": [
+        9504,
+        6336
+      ],
+      "CP_JPEG_WH": [
+        7920,
+        6336
+      ],
+      "CP_HEIF_WH": [
+        7920,
+        6336
+      ],
+      "CP_RAW_WH": [
+        9504,
+        6336
+      ],
+      "AVCAM_packet": "040000000000f01ec0180000000000000000000000000000",
+      "HEIF_image_geometry": [
+        9600,
+        6336,
+        792,
+        0,
+        7920,
+        6336,
+        0,
+        0,
+        7920,
+        6336
+      ],
+      "hardware_origin": [
+        792,
+        0
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        7920,
+        6336
+      ],
+      "MPR_JPEG_Exif_WH": [
+        7920,
+        6336
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 6,
+      "size_enum": 1,
+      "native_WH": [
+        6240,
+        4160
+      ],
+      "CP_JPEG_WH": [
+        5200,
+        4160
+      ],
+      "CP_HEIF_WH": [
+        5200,
+        4160
+      ],
+      "CP_RAW_WH": [
+        6240,
+        4160
+      ],
+      "AVCAM_packet": "040000000100501440100000000000000000000000000000",
+      "HEIF_image_geometry": [
+        6272,
+        4160,
+        520,
+        0,
+        5200,
+        4160,
+        0,
+        0,
+        5200,
+        4160
+      ],
+      "hardware_origin": [
+        520,
+        0
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        5200,
+        4160
+      ],
+      "MPR_JPEG_Exif_WH": [
+        5200,
+        4160
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 6,
+      "size_enum": 2,
+      "native_WH": [
+        4752,
+        3168
+      ],
+      "CP_JPEG_WH": [
+        3968,
+        3168
+      ],
+      "CP_HEIF_WH": [
+        3968,
+        3168
+      ],
+      "CP_RAW_WH": [
+        4752,
+        3168
+      ],
+      "AVCAM_packet": "040000000200800f600c0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        4864,
+        3168,
+        392,
+        0,
+        3968,
+        3168,
+        0,
+        0,
+        3968,
+        3168
+      ],
+      "hardware_origin": [
+        392,
+        0
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        3968,
+        3168
+      ],
+      "MPR_JPEG_Exif_WH": [
+        3968,
+        3168
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 7,
+      "size_enum": 0,
+      "native_WH": [
+        9504,
+        6336
+      ],
+      "CP_JPEG_WH": [
+        9504,
+        5136
+      ],
+      "CP_HEIF_WH": [
+        9504,
+        5136
+      ],
+      "CP_RAW_WH": [
+        9504,
+        6336
+      ],
+      "AVCAM_packet": "040000000000202510140000000000000000000000000000",
+      "HEIF_image_geometry": [
+        9600,
+        6336,
+        0,
+        600,
+        9504,
+        5136,
+        0,
+        0,
+        9504,
+        5136
+      ],
+      "hardware_origin": [
+        0,
+        600
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        9504,
+        5136
+      ],
+      "MPR_JPEG_Exif_WH": [
+        9504,
+        5136
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 7,
+      "size_enum": 1,
+      "native_WH": [
+        6240,
+        4160
+      ],
+      "CP_JPEG_WH": [
+        6240,
+        3376
+      ],
+      "CP_HEIF_WH": [
+        6240,
+        3376
+      ],
+      "CP_RAW_WH": [
+        6240,
+        4160
+      ],
+      "AVCAM_packet": "0400000001006018300d0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        6272,
+        4160,
+        0,
+        392,
+        6240,
+        3376,
+        0,
+        0,
+        6240,
+        3376
+      ],
+      "hardware_origin": [
+        0,
+        392
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        6240,
+        3376
+      ],
+      "MPR_JPEG_Exif_WH": [
+        6240,
+        3376
+      ],
+      "live_changed_after_freeze": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 7,
+      "size_enum": 2,
+      "native_WH": [
+        4752,
+        3168
+      ],
+      "CP_JPEG_WH": [
+        4752,
+        2568
+      ],
+      "CP_HEIF_WH": [
+        4752,
+        2568
+      ],
+      "CP_RAW_WH": [
+        4752,
+        3168
+      ],
+      "AVCAM_packet": "0400000002009012080a0000000000000000000000000000",
+      "HEIF_image_geometry": [
+        4864,
+        3168,
+        0,
+        300,
+        4752,
+        2568,
+        0,
+        0,
+        4752,
+        2568
+      ],
+      "hardware_origin": [
+        0,
+        300
+      ],
+      "hardware_enabled": 1,
+      "AVCAM_JPEG_slot_WH": [
+        4752,
+        2568
+      ],
+      "MPR_JPEG_Exif_WH": [
+        4752,
+        2568
+      ],
+      "live_changed_after_freeze": true
+    }
+  ],
+  "RAW_MPR_add_rows": [
+    {
+      "bias": "0x4000000000",
+      "selection": 4,
+      "native_RAW_source_pointer": 1375731712,
+      "JPEG_only_add_metadata_not_adopted_for_RAW": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 5,
+      "native_RAW_source_pointer": 1375731712,
+      "JPEG_only_add_metadata_not_adopted_for_RAW": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 6,
+      "native_RAW_source_pointer": 1375731712,
+      "JPEG_only_add_metadata_not_adopted_for_RAW": true
+    },
+    {
+      "bias": "0x4000000000",
+      "selection": 7,
+      "native_RAW_source_pointer": 1375731712,
+      "JPEG_only_add_metadata_not_adopted_for_RAW": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 4,
+      "native_RAW_source_pointer": 1375731712,
+      "JPEG_only_add_metadata_not_adopted_for_RAW": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 5,
+      "native_RAW_source_pointer": 1375731712,
+      "JPEG_only_add_metadata_not_adopted_for_RAW": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 6,
+      "native_RAW_source_pointer": 1375731712,
+      "JPEG_only_add_metadata_not_adopted_for_RAW": true
+    },
+    {
+      "bias": "0x6000000000",
+      "selection": 7,
+      "native_RAW_source_pointer": 1375731712,
+      "JPEG_only_add_metadata_not_adopted_for_RAW": true
+    }
+  ],
+  "geometry_rows": 24,
+  "actual": [
+    "final ELF relocation and actual descriptor setter/commit",
+    "native AP3565f34 serializer and patched freeze/send sites",
+    "CP33f304 receiver packet-byte loads and native GFW writes through33f3d2",
+    "final CP snapshot/capture/Notify guarded hooks and native memcpy/ImageParam/GetImageSize",
+    "AVCAM native slot constructor\u2192HEIF main request\u2192MC geometry/clip/tile config",
+    "MPR native JPEG constructor/add/header/Exif getter and RAW constructor/add gate"
+  ],
+  "fixtures": [
+    "in-memory POSIX and native setter/commit leaf, OS model mutex",
+    "AP serializer logging/helper callees return0; memset models original destination/fill/length; send captures bytes, no IPC",
+    "serializer pauses exactly beforeSEND; real descriptor setter runs on a separate modeled stack, then saved live CPU registers resume; no selection-state injection or arbitrary SMP claim",
+    "CP flat native TTBR/PTE input as separately validated by boot receipt; native receiver stops before scheduling services33d004/33d14c/adee8e",
+    "scheduler invokes actual snapshot, then receives another live selection, then actual capture callsite with explicit unique request IDs and task-pool inputs",
+    "native ReadBackup8 returns unmodified L/M/S source sizes; Notify output is executed machine code, not expected constants",
+    "CP\u2192AVCAM transport copies actual produced Notify WH into native slot packet fields; buffer handles/encoder service state/driver callbacks declared by Clip harness",
+    "synthetic JPEG SOF carries CP-produced WH; MPR receives these exact bytes; no hardware encoding or pixels"
+  ],
+  "limits": [
+    "Not continuous real IPC/task scheduler/SMP or full OS dynamic loader.",
+    "No real camera boot, LCD, hardware encoder/RAW image or storage/card output acceptance.",
+    "JPEG SOF bytes are generated fixtures, HEIF hardware config is observed before encoding.",
+    "L/M/S HEIF-only local view tested here; mixed-format resize and RAW shared metadata gates are separate exact-candidate receipts."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "runtime_sources_exact": 209,
+  "parent": "projects/firmware/development/aspect457-icon-subpixel",
+  "scheme": "两银行新增MENU和Fn统一采用23像素；回放1.618:1、2.39:1采用23，1.85:1采用32。尺寸相同无需拉伸；5:4回放保持原厂020048b2。209运行源及四组件、Fn样式、滤镜、裁切、RAW、PT与声音保持，仅资源和安装版本4.58变化。"
+}

@@ -1,0 +1,280 @@
+{
+  "schema": "r5-aspect-cp-adapter/1",
+  "firmware_emitted": false,
+  "installable": false,
+  "R5_stock_sha256": "3269bf62426339791fcfbe8529698cd4accbe6c3d2ea61cd7c368a90ab7ee7c8",
+  "code_bytes": 1764,
+  "code_sha256": "3227f1d226d6be8d57748aa2543f293d6a6dad8861fb48adf6c1766b1030957a",
+  "RX": "0x1a3b000",
+  "state": "0x1a394a0",
+  "state_bytes": 504,
+  "upstream_commit": "79c3663b1ac4fda98047c2c4f5769b9d60d25920",
+  "sources": {
+    "crop_core.c": "16b5e359d4ed6264a2acf904c3936bb4fcbef6d4ee241faeaa7b8f58b5d3d109",
+    "crop_core.h": "0ddcf1b4af8a9e5fc92466d852d6405d1882ff253eac78ba668cadc2c7ac4c16",
+    "cp_capture_latch.c": "cee4af00807d0ffe913c136140da5d75e7870edce99af12a64043c2edb13feb1",
+    "cp_crop_wrappers.S": "754685fb714f6a85bab0d9673d5e420bfff3c55813ddff8e591d32f2d243e352",
+    "cp_selector_wrapper.S": "1517beec4dd66156142580a4a3b8e11adc10b5b9186a8475566b877a82164b99"
+  },
+  "symbols": {
+    "aspect_divide": "0x1a3b001",
+    "aspect_crop_geometry": "0x1a3b031",
+    "aspect_pool_reset": "0x1a3b1c9",
+    "aspect_task_id": "0x1a3b1f1",
+    "aspect_task_clear": "0x1a3b261",
+    "aspect_pool_release": "0x1a3b27d",
+    "aspect_freeze_copy": "0x1a3b299",
+    "aspect_capture_copy": "0x1a3b2f5",
+    "aspect_jpeg_request_copy": "0x1a3b355",
+    "aspect_thumbnail_request_clear": "0x1a3b3d1",
+    "aspect_notify_dimensions": "0x1a3b4b9",
+    "aspect_cp_select": "0x1a3b511",
+    "aspect_jpeg_copy_hook": "0x1a3b529",
+    "aspect_thumbnail_clear_hook": "0x1a3b531",
+    "aspect_pool_reset_hook": "0x1a3b539",
+    "aspect_notify_primary_hook": "0x1a3b559",
+    "aspect_notify_secondary_hook": "0x1a3b585",
+    "aspect_notify_release_hook": "0x1a3b5b1",
+    "aspect_cp_select_hook": "0x1a3b5c5",
+    "aspect_raw_emb_build": "0x1a3b5e9",
+    "aspect_module_dispatch": "0x1a3b659"
+  },
+  "commands": [
+    [
+      "clang",
+      "--target=arm-none-eabi",
+      "-mthumb",
+      "-march=armv7-a",
+      "-mfloat-abi=soft",
+      "-Oz",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-fno-stack-protector",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "analysis/r5_aspect456_20261110/cp/adapter-k",
+      "-c",
+      "analysis/r5_aspect456_20261110/cp/adapter-k/crop_core.c",
+      "-o",
+      "analysis/r5_aspect456_20261110/cp/adapter-k/crop_core.o"
+    ],
+    [
+      "clang",
+      "--target=arm-none-eabi",
+      "-mthumb",
+      "-march=armv7-a",
+      "-mfloat-abi=soft",
+      "-Oz",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-fno-stack-protector",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "analysis/r5_aspect456_20261110/cp/adapter-k",
+      "-c",
+      "analysis/r5_aspect456_20261110/cp/adapter-k/cp_capture_latch.c",
+      "-o",
+      "analysis/r5_aspect456_20261110/cp/adapter-k/cp_capture_latch.o"
+    ],
+    [
+      "clang",
+      "--target=arm-none-eabi",
+      "-mthumb",
+      "-march=armv7-a",
+      "-mfloat-abi=soft",
+      "-Oz",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-fno-stack-protector",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "analysis/r5_aspect456_20261110/cp/adapter-k",
+      "-c",
+      "analysis/r5_aspect456_20261110/cp/adapter-k/cp_wrappers.S",
+      "-o",
+      "analysis/r5_aspect456_20261110/cp/adapter-k/cp_wrappers.o"
+    ],
+    [
+      "clang",
+      "--target=arm-none-eabi",
+      "-mthumb",
+      "-march=armv7-a",
+      "-mfloat-abi=soft",
+      "-Oz",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-fno-stack-protector",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "analysis/r5_aspect456_20261110/cp/adapter-k",
+      "-c",
+      "analysis/r5_aspect456_20261110/cp/adapter-k/raw_emb.c",
+      "-o",
+      "analysis/r5_aspect456_20261110/cp/adapter-k/raw_emb.o"
+    ],
+    [
+      "clang",
+      "--target=arm-none-eabi",
+      "-mthumb",
+      "-march=armv7-a",
+      "-mfloat-abi=soft",
+      "-Oz",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-fno-stack-protector",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fstack-usage",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "analysis/r5_aspect456_20261110/cp/adapter-k",
+      "-c",
+      "analysis/r5_aspect456_20261110/cp/adapter-k/aspect_module_dispatch.S",
+      "-o",
+      "analysis/r5_aspect456_20261110/cp/adapter-k/aspect_module_dispatch.o"
+    ]
+  ],
+  "ratios": {
+    "4": [
+      809,
+      500
+    ],
+    "5": [
+      239,
+      100
+    ],
+    "6": [
+      5,
+      4
+    ],
+    "7": [
+      37,
+      20
+    ]
+  },
+  "production_sources": {
+    "crop_core.c": "1fdd68e9ed22a747171f9e47c4fbe57be6716e1ce0b2d284f316f3f594c5dc3e",
+    "cp_capture_latch.c": "03b16a6dad6ba48b11ef661d9215fffafd8c83dad42fa5140336f81a87ed4472",
+    "cp_wrappers.S": "c21a16eb80a9757c200a52f30b86c0325fd2a2e9ae9fec3184b226f69c19f151",
+    "raw_emb.c": "1b7de547c8307bdfc3da5be9acb230b021eca7e04ed9f31838e5c9a845c3b063",
+    "aspect_module_dispatch.S": "99d74ec771d8aa272466da48f46f2daecbed175d59b4c973697b4ce47b4bf706",
+    "crop_core.h": "0ddcf1b4af8a9e5fc92466d852d6405d1882ff253eac78ba668cadc2c7ac4c16"
+  },
+  "hooks": {
+    "selector": {
+      "VA": "0x33f322",
+      "source_bytes": "c5f8cc10",
+      "target": "aspect_cp_select_hook"
+    },
+    "freeze": {
+      "VA": "0xadf128",
+      "source_bytes": "16f748e0",
+      "target": "aspect_freeze_copy"
+    },
+    "capture": {
+      "VA": "0xadd846",
+      "source_bytes": "7bf555f7",
+      "target": "aspect_capture_copy"
+    },
+    "jpeg_main": {
+      "VA": "0x473562",
+      "source_bytes": "81f12cee",
+      "target": "aspect_jpeg_copy_hook"
+    },
+    "jpeg_scn": {
+      "VA": "0x472a0e",
+      "source_bytes": "82f1d6eb",
+      "target": "aspect_jpeg_copy_hook"
+    },
+    "thumbnail": {
+      "VA": "0x46e07e",
+      "source_bytes": "87f118ec",
+      "target": "aspect_thumbnail_clear_hook"
+    },
+    "notify_primary": {
+      "VA": "0xae77d8",
+      "source_bytes": "a4f5fef0",
+      "target": "aspect_notify_primary_hook"
+    },
+    "notify_secondary": {
+      "VA": "0xae7822",
+      "source_bytes": "a4f5d9f0",
+      "target": "aspect_notify_secondary_hook"
+    },
+    "notify_clear": {
+      "VA": "0xae7a20",
+      "source_bytes": "45f61825",
+      "target": "aspect_notify_release_hook"
+    },
+    "raw_emb": {
+      "VA": "0x48a00a",
+      "source_bytes": "54f217f4",
+      "target": "aspect_raw_emb_build"
+    },
+    "pool_reset": {
+      "VA": "0x4614a4",
+      "source_bytes": "00220260",
+      "target": "aspect_pool_reset_hook"
+    },
+    "pool_release": {
+      "VA": "0xae088a",
+      "source_bytes": "00f01df8",
+      "target": "aspect_pool_release"
+    }
+  },
+  "R5_contract": {
+    "pool": "0x1112c54",
+    "max_count": 490,
+    "task_stride": "0x6688",
+    "current_state": "0x157aa10",
+    "frozen_state": "0x163f3f0",
+    "request_id": "0x163f3c8",
+    "aspect_state_offset": "0xcc",
+    "aspect_task_offset": "0x24",
+    "format_offsets": [
+      "0x5980",
+      "0x5988"
+    ],
+    "main_roi": "0x5f78",
+    "scn_roi": "0x5fdc",
+    "thm_roi": "0x5fe8"
+  },
+  "remaining": [
+    "RX/state placement and native boot/MMU proof",
+    "resident guarded dispatch",
+    "AVCAM format dimensions",
+    "complete AP and output integration"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "status": "TEST_IDENTITY_BINDING_NOT_BUILD_RECEIPT",
+  "passed": true,
+  "sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac",
+  "symbols": {
+    "aspect_native_still_size_body": 47969204,
+    "aspect_playback_badge_continue": 37611068,
+    "aspect_playback_pixels_continue": 37616180,
+    "aspect_playback_pixels_store": 37616168,
+    "aspect_native_zoom_map": 47970288,
+    "aspect_native_zoom_policy_descriptor": 87931152,
+    "aspect_native_zoom_policy_continue": 38340256,
+    "aspect_native_zoom_domain_continue": 38347316,
+    "aspect_native_current_content": 42600968,
+    "aspect_model_lock": 48747016,
+    "aspect_model_unlock": 48746212,
+    "aspect_native_still_size": 149828848,
+    "aspect_playback_badge": 149829072,
+    "aspect_playback_pixels": 149829408,
+    "aspect_playback_zoom_map": 149829552,
+    "aspect_playback_zoom_eligible": 149829808,
+    "aspect_playback_zoom_policy": 149829616,
+    "aspect_playback_zoom_domain": 149829712
+  },
+  "final_AP": "analysis/r5_filter_native_style_20261110/candidate-c/appFw-NONINSTALLABLE.so",
+  "playback_build_receipt": "analysis/r5_aspect456_20261110/reference-review/playback-ui-e/patch.json",
+  "playback_build_receipt_sha256": "ba2b50d34a93982e95274aa0cf3d2eb9e1c555b6e8618e787883c1f872a13ebb",
+  "style_build_receipt": "analysis/r5_filter_native_style_20261110/candidate-c/build.json",
+  "style_build_receipt_sha256": "918ba26e244c55962f57ee803b6a618d81a57d3b3a869e62b81843f7085f03cb",
+  "playback_module_bytes_exact": true,
+  "playback_hook_bytes_exact": true,
+  "code_start": 149828848,
+  "code_bytes": 1200,
+  "sources": {
+    "analysis/r5_aspect456_20261110/reference-review/source/ap_still_size.S": "672656ced06d3178d740e7dfcc96db946c0ddaa70c7a86428a1b0eeab75d604b",
+    "analysis/r5_aspect456_20261110/reference-review/source/ap_playback_badge.S": "dfa44270d280271cd03e71dca43f8b3da4a00f08249f9e89ccf1688b109d8a39",
+    "analysis/r5_aspect456_20261110/reference-review/source/ap_playback_pixels.S": "a00ebbe33a8516a6ffcdd76fdaf880b29c9f53893c01b986cfd2de8ed1ad749c",
+    "analysis/r5_aspect456_20261110/reference-review/source/ap_playback_zoom.S": "0000f60f10061c5c42342f352c499934935e530cc9dd4ce316d9a56080c0850d"
+  }
+}

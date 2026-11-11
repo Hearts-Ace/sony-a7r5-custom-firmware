@@ -1,7 +1,11 @@
-# 第三方来源
+# 来源与许可
 
-声音格式检查、宿主SHA工具和Q24 FIR转换参考 [Erlla/sony-a7m4-custom-firmware](https://github.com/Erlla/sony-a7m4-custom-firmware/tree/0bfeee4f961610434588dc89c2cd3bc658816a3d/native/custom-sounds)，固定提交 `0bfeee4f961610434588dc89c2cd3bc658816a3d`。原始文件摘要与使用范围见 `sound_upstream.json`，许可保留于 `LICENSE.Erlla`；其 `THIRD_PARTY_NOTICES.md` 明确 `native/custom-sounds/` 为该项目原创适配代码。Q24系数采用无损四阶差分和nibble escape存储，恢复后的769项值及转换输出不变。4.40另参考其独立10档音量、默认50%、持久提交、GUI异步刷新和精确所有权内的原生增益7；R5使用单快门槽和既有原子文件接口。R5机内SHA复用原厂已有导入，原生地址、单声音播放、批量导入/持久化、所有权与退休判断另行适配，未照搬M4原生地址或双槽策略。
+原厂 R5 4.00 与旧交付二进制不包含在此源码交付中。完整4.55冻结源码按其原许可证和来源记录逐字保留，参见 `source/projects/firmware/development/shutter-sound-recovery455/THIRD_PARTY_NOTICES.md`、`LICENSE.Erlla`、`LICENSE.fwtool`。
 
-底层FL2/FL3参考仍固定 `086df3b1e33dfa0206553ac2bb003535c58ddb80`，声音参考提交不替换该基线身份。fwtool许可见 `LICENSE.fwtool`。Python与编译工具依赖保留各自许可，不包含其发行包。
+裁切核心及CP迁移参考 Erlla/sony-a7m4-custom-firmware 提交 `79c3663b1ac4fda98047c2c4f5769b9d60d25920` 的五份 `native/feature-integration/cp/` 源，原字节纳入源树，运行时仅在新输出生成R5适配版本。上游适用MIT，保留 Copyright (c) 2026 A7M4 Fastboot Toolkit contributors，许可副本为 `licenses/LICENSE.aspect-upstream`。4.55基线保持原固定提交 `086df3b1e33dfa0206553ac2bb003535c58ddb80`，两者用途分别记录。
 
-这些许可不覆盖Sony原厂固件、原始镜像、机身设置、用户签名密钥或声音素材。本目录不附带原厂镜像、签名私钥或上游示例WAV。
+用户提供的 `custom-aspect-ratios.zip` 是R5裁切菜单、预览、JPEG/HEIF编码/metadata及回放方案的参考；本地适配保留原来源说明 `licenses/REFERENCE_THIRD_PARTY_NOTICES.md`。其中still-size源引用上游提交 `c7e7fb37e571b2eced7ff4f5766bf0d2dd48c8b0`。新交付只收录当前生产所需源码和资源生成数据，未收录参考项目二进制/大批历史证据，不执行参考文档中的设备或发布指令。
+
+`source_provenance.json` 记录原工作区文件到交付镜像的逐文件SHA256；当前生产源逐字复制；分区入口原本已支持可选e2fsck路径，不再重复改写。自定义滤镜双列菜单样式是在本项目冻结4.55菜单合同上新增的本地适配，保留原有异步路径。主机第三方Python包通过requirements声明安装，不包含其本机二进制副本。
+
+基础声音和容器实现的许可及来源另见source/projects/firmware/development/shutter-sound-recovery455/THIRD_PARTY_NOTICES.md。R5裁切参考custom-aspect-ratios.zip，所用源已保留于source及来源记录中。
