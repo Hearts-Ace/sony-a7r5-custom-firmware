@@ -13,7 +13,7 @@ RX_CAPACITY=131072
 # RX bytes may hold optional sound code. No new mapping or VA alias is added.
 EXTRA_RX,EXTRA_BYTES=0x16d3ba0,22392
 NATIVE_SHA={'r5sound_sha256_init':0x16d9a50,'r5sound_sha256_update':0x16d97f0,'r5sound_sha256_final':0x16d9970}
-SOURCES=('r5_runtime_session.c','r5_stage413_thread.c','r5_grid420_log.c','r5_stage411_hooks.c','r5_stage413_probe.c','r5_stage413_transfer.c','r5_stage413_transfer_core.c','r5_native_transport_pie.c','r5_stage410_codec.c','r5_fsys_adapter.c','r5_scan_gate.c','sd_native_store.c','sd_native_persist.c','r5_lut_directory.c','r5_native_lut_directory.c','r5_lut_mount_guard.c','r5_filter_names423.c','r5_filter_selection423.c','r5_filter_runtime423.c','r5_filter_menu423.c','r5_filter_renderer423.c','r5_filter_renderer423.S')
+SOURCES=('r5_runtime_session.c','r5_stage413_thread.c','r5_stage411_hooks.c','r5_stage413_probe.c','r5_stage413_transfer.c','r5_stage413_transfer_core.c','r5_native_transport_pie.c','r5_stage410_codec.c','r5_fsys_adapter.c','r5_scan_gate.c','sd_native_store.c','sd_native_persist.c','r5_lut_directory.c','r5_native_lut_directory.c','r5_lut_mount_guard.c','r5_filter_names423.c','r5_filter_selection423.c','r5_filter_runtime423.c','r5_filter_menu423.c')
 def main():
  objdir=HERE/'objects';objdir.mkdir(exist_ok=True)
  native=json.loads((HERE.parent/'dependencies/native_bindings.json').read_text())
@@ -26,7 +26,7 @@ def main():
    menu_plan['relocation_addend_remaps']+=plan.get('relocation_addend_remaps',[])
  native.update(menu_plan['native_symbols'])
  commands=[];objects=[]
- sources=[HERE.parent/'menu_research'/name if name.startswith(('r5_filter_menu423.','r5_filter_renderer423.')) else HERE/name for name in SOURCES]
+ sources=[HERE.parent/'menu_research'/name if name.startswith(('r5_filter_menu423.',)) else HERE/name for name in SOURCES]
  sources+=sorted((HERE.parent/'menu_research').glob('*425.c'))+sorted((HERE.parent/'menu_research').glob('*425.S'))
  sources+=sorted(HERE.glob('*425.c'))+sorted(HERE.glob('*425.S'))
  sources+=[HERE.parent/'menu_research/r5_filter_menu_icon434.S']
@@ -56,7 +56,7 @@ def main():
  extra_objects=[obj for source,obj in zip(sources,objects)if source in compile_sound]
  gc_objects=[obj for obj in extra_objects if obj.name!='r5_sound_menu437.o']
  code,data,memory,sy,rels,layout=link(objects,RX,RW,bytes(align(8*56,16)),{**native,**NATIVE_SHA,'r5_stage411_dlsym':0x16dac90,'r5_native_fsys_open':0x3691104,'r5_native_fsys_write':0x3691174,'r5_native_fsys_read':0x3691138,'r5_native_fsys_close':0x3691124,'name_id':0x16db4f0,'name_char':0x16d9370,'r5_native_creative_sequence_request':0x24b0780},gc_objects=gc_objects,gc_report=section_gc,extra_rx_objects=extra_objects,extra_rx_base=EXTRA_RX,extra_rx_size=EXTRA_BYTES,extra_rx_output=extra_output,merge_strings=True,
-  drop_unused_functions=('r5_publish_staged_look','r5_stage_look_store','r5_filter_reload_request','r5_transfer_ap_active_mask','r5_session_finish','r5_session_event_epoch','r5ss_backend_session'))
+  drop_unused_functions=('r5_publish_staged_look','r5_stage_look_store','r5_transfer_ap_active_mask','r5_session_finish','r5_session_event_epoch','r5ss_backend_session'))
  assert not data and 0<memory<=196608 and align(len(code),8)+22464+64<=RX_CAPACITY,(len(code),memory,len(extra_output['data']))
  assert all(r['kind']!=257 for r in rels)
  hooks=[('startup',0x18012e4,'60a26e39'),('initial',0x34dae68,'60c21091'),('completed',0x34e5140,'60c21091'),('media',0x33c3cd4,'a003168b'),('inbound',0x3554d4c,'20008052'),('power',0x35b2a78,'fd7bbba9')]

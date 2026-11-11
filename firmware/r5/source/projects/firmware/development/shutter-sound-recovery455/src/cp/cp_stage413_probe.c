@@ -5,7 +5,7 @@
  */
 #include "r5_stage413_probe.h"
 #include "r5_look_transfer.h"
-#include "r5_grid_diagnostics.h"
+#include "r5_wire.h"
 #include "r5_grid422.h"
 #include "r5_custom_filter423.h"
 #define FN(a,t) ((t)(uintptr_t)(a))
@@ -16,7 +16,7 @@ typedef int (*free_fn)(uint32_t,void *);
 typedef void (*source_fn)(void *,uint32_t);
 typedef void *(*bank_alloc_fn)(uint32_t);
 #define BANK_BYTES 28768u
-#define TX_OFFSET (52252u+sizeof(struct r5_grid_diag))
+#define TX_OFFSET 52324u /* Fixed transfer ABI; earlier reserved bytes are not read. */
 #define ALLOCATION_BYTES R5_FILTER423_ALLOCATION
 _Static_assert(TX_OFFSET+24u==52348u,"preserve original transfer offset");
 #define MANAGER ((volatile uint32_t *)(uintptr_t)0x1a39450u)
@@ -67,26 +67,6 @@ int r5_cp_stage413_consume(const uint8_t *p,uint32_t source) {
      if(FN(0x53bb55u,send_fn)(source,reply))(void)FN(0x53c31du,free_fn)(source,reply);
      return 1;
     }
-  if(r5_diag_envelope(p,n)) {
-   if(n!=32||p[1]!=1||p[2]!=1||p[3]!=32||!word(p,8)||word(p,12)||word(p,16)||word(p,20)||word(p,24)||word(p,28)!=r5_diag_crc(p,n))return 1;
-   if(FN(0x53c221u,alloc_fn)(source,&allocation,R5_DIAG_BYTES,0)||!allocation)return 1;
-   reply=allocation;FN(0xbaaaa1u,source_fn)(reply,R5_STAGE413_CP_QUEUE);
-   for(i=0;i<R5_DIAG_BYTES;i++)reply[i]=0;
-   for(i=0;i<12;i++)reply[i]=p[i];reply[2]=0x81;reply[3]=R5_DIAG_BYTES;
-   put(reply,12,0x420);put(reply,16,STATE[1]);
-   if(STATE[0]&&STATE[1]==BANK_BYTES) {
-    const struct r5_boot_bank *b=(const void *)(uintptr_t)STATE[0];
-    const volatile struct r5_grid_diag *d=(const void *)(uintptr_t)(STATE[0]+52252u);
-    uint32_t mask=0;put(reply,20,b->state);put(reply,24,b->received_mask);
-    for(i=0;i<12;i++)if((b->received_mask&(1u<<i))&&b->value[i].grid_enabled)mask|=1u<<i;
-    put(reply,32,mask);
-    for(i=0;i<8;i++)put(reply,36+4*i,((const volatile uint32_t *)d)[i]);
-    put(reply,68,d->copy_mask);put(reply,72,d->copy_calls);put(reply,76,MANAGER[1]);put(reply,80,r5_transfer_bank_crc(b));
-   }
-   put(reply,28,r5_diag_crc(reply,R5_DIAG_BYTES));
-   if(FN(0x53bb55u,send_fn)(source,reply))(void)FN(0x53c31du,free_fn)(source,reply);
-   return 1;
-  }
  }
  if(source==R5_STAGE413_AP_QUEUE&&p) {
   uint32_t n=FN(0xbaad0du,size_fn)(p);
@@ -96,7 +76,7 @@ int r5_cp_stage413_consume(const uint8_t *p,uint32_t source) {
    if(n>R5_TRANSFER_MAX||!STATE[0]||STATE[1]!=BANK_BYTES)return 1;
    /* CRC and full header precede allocation or generation changes. */
    if(n>=32&&p[1]==3&&!p[3]&&word(p,8)&&!(word(p,12)&~4095u)&&
-      word(p,28)==r5_diag_crc(p,n)&&p[2]==R5_X_BEGIN&&n==32&&!word(p,16)&&!word(p,24)) {
+      word(p,28)==r5_wire_crc(p,n)&&p[2]==R5_X_BEGIN&&n==32&&!word(p,16)&&!word(p,24)) {
     const struct r5_boot_bank *active=(const void *)(uintptr_t)STATE[0];
     if(active->state==0x35424c53u&&active->expected_mask==word(p,12)&&
        r5_transfer_bank_crc(active)==word(p,20)) {
@@ -106,7 +86,7 @@ int r5_cp_stage413_consume(const uint8_t *p,uint32_t source) {
      r5_filter423_accept(word(p,8),0);
      for(i=0;i<32;i++)ack[i]=p[i];ack[2]=R5_X_ACK;
      put(ack,32,active->state);put(ack,36,0);put(ack,40,active->received_mask);
-     put(ack,28,r5_diag_crc(ack,sizeof(ack)));goto transfer_reply;
+     put(ack,28,r5_wire_crc(ack,sizeof(ack)));goto transfer_reply;
     }
     if(!MANAGER[0]||((struct r5_boot_bank *)(uintptr_t)MANAGER[0])->state) {
      uintptr_t a;volatile uint8_t *q;
@@ -127,7 +107,7 @@ int r5_cp_stage413_consume(const uint8_t *p,uint32_t source) {
     for(i=0;i<32;i++)ack[i]=i<n?p[i]:0;ack[2]=R5_X_ACK;
     put(ack,32,((const struct r5_boot_bank *)(uintptr_t)STATE[0])->state);
     put(ack,36,R5_X_BAD_STATE);put(ack,40,0);
-    put(ack,28,r5_diag_crc(ack,sizeof(ack)));goto transfer_reply;
+    put(ack,28,r5_wire_crc(ack,sizeof(ack)));goto transfer_reply;
    }
    if(!r5_transfer_cp_receive(ctx,bank,p,n,ack))return 1;
    if(ctx->phase==2&&bank->state==0x35424c53u){
@@ -139,7 +119,7 @@ generation_failed:
    for(i=0;i<32;i++)ack[i]=p[i];ack[2]=R5_X_ACK;
    put(ack,32,((const struct r5_boot_bank *)(uintptr_t)STATE[0])->state);
    put(ack,36,6);put(ack,40,0); /* retained-generation/heap resource limit */
-   put(ack,28,r5_diag_crc(ack,sizeof(ack)));
+   put(ack,28,r5_wire_crc(ack,sizeof(ack)));
 transfer_reply:
    if(FN(0x53c221u,alloc_fn)(source,&allocation,R5_TRANSFER_ACK,0)||!allocation)return 1;
    reply=(uint8_t *)allocation;

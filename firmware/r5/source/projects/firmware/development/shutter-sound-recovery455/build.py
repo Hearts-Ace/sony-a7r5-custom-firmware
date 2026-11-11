@@ -167,6 +167,6 @@ def main():
     if a.candidate:
         if (out/'BODYDATA.DAT').exists():(out/'BODYDATA.DAT').rename(out/'NONINSTALLABLE.DAT')
         save(out/'CANDIDATE.json',dict(frozen_output_identity_verified=False,review_required=True,outputs=actual))
-    print('R5 4.55 reproduced exactly:',out,flush=True)
+    print('R5 cleaned base outputs '+('recorded for review:' if a.candidate else 'reproduced exactly:'),out,flush=True)
 
 if __name__=='__main__':main()

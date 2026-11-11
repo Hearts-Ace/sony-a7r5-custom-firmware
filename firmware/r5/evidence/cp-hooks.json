@@ -1,0 +1,625 @@
+{
+  "schema": "r5-aspect-final11-and-native-union-hook-machine/2",
+  "CP_sha256": "c4a85d621c8dec91c94ad2d80b3539a626a30ca390a8003e3317123cad6a1086",
+  "script_sha256": "d31d55afdf93f1595ab61366af36a2b1328f81adf821e6073cdc2f14256668c4",
+  "adapter_sha256": "3227f1d226d6be8d57748aa2543f293d6a6dad8861fb48adf6c1766b1030957a",
+  "executed_sites": 12,
+  "guarded_hooks": 11,
+  "matrix_modes": 6,
+  "checks": [
+    "good selector returns native continuation",
+    "good selector enum safe",
+    "good freeze returns native continuation",
+    "good freeze private latch",
+    "good capture returns native continuation",
+    "good capture private latch",
+    "good jpeg_main returns native continuation",
+    "good jpeg_main actual crop",
+    "good jpeg_scn returns native continuation",
+    "good jpeg_scn actual crop",
+    "good thumbnail returns native continuation",
+    "good thumbnail native canvas and clear",
+    "good thumbnail ROI",
+    "good notify_primary returns native continuation",
+    "good notify_primary dims",
+    "good notify_primary fifth arg resource",
+    "good notify_secondary returns native continuation",
+    "good notify_secondary dims",
+    "good notify_secondary fifth arg resource",
+    "good notify_clear returns native continuation",
+    "good notify retire",
+    "good pool_reset returns native continuation",
+    "good native pool reset and retire",
+    "good pool_release returns native continuation",
+    "good release native list called",
+    "good heif returns native continuation",
+    "good HEIF native hook bytes",
+    "good HEIF complete union copy unchanged",
+    "missing selector returns native continuation",
+    "missing selector clears stale private state",
+    "missing selector enum safe",
+    "missing freeze returns native continuation",
+    "missing freeze clears stale private state",
+    "missing freeze private latch",
+    "missing capture returns native continuation",
+    "missing capture clears stale private state",
+    "missing capture private latch",
+    "missing jpeg_main returns native continuation",
+    "missing jpeg_main clears stale private state",
+    "missing jpeg_main actual crop",
+    "missing jpeg_scn returns native continuation",
+    "missing jpeg_scn clears stale private state",
+    "missing jpeg_scn actual crop",
+    "missing thumbnail returns native continuation",
+    "missing thumbnail clears stale private state",
+    "missing thumbnail native canvas and clear",
+    "missing thumbnail ROI",
+    "missing notify_primary returns native continuation",
+    "missing notify_primary clears stale private state",
+    "missing notify_primary dims",
+    "missing notify_primary fifth arg resource",
+    "missing notify_secondary returns native continuation",
+    "missing notify_secondary clears stale private state",
+    "missing notify_secondary dims",
+    "missing notify_secondary fifth arg resource",
+    "missing notify_clear returns native continuation",
+    "missing notify_clear clears stale private state",
+    "missing notify retire",
+    "missing pool_reset returns native continuation",
+    "missing pool_reset clears stale private state",
+    "missing native pool reset and retire",
+    "missing pool_release returns native continuation",
+    "missing pool_release clears stale private state",
+    "missing release native list called",
+    "missing heif returns native continuation",
+    "missing HEIF native hook bytes",
+    "missing HEIF complete union copy unchanged",
+    "missing_first selector returns native continuation",
+    "missing_first selector clears stale private state",
+    "missing_first selector enum safe",
+    "missing_first freeze returns native continuation",
+    "missing_first freeze clears stale private state",
+    "missing_first freeze private latch",
+    "missing_first capture returns native continuation",
+    "missing_first capture clears stale private state",
+    "missing_first capture private latch",
+    "missing_first jpeg_main returns native continuation",
+    "missing_first jpeg_main clears stale private state",
+    "missing_first jpeg_main actual crop",
+    "missing_first jpeg_scn returns native continuation",
+    "missing_first jpeg_scn clears stale private state",
+    "missing_first jpeg_scn actual crop",
+    "missing_first thumbnail returns native continuation",
+    "missing_first thumbnail clears stale private state",
+    "missing_first thumbnail native canvas and clear",
+    "missing_first thumbnail ROI",
+    "missing_first notify_primary returns native continuation",
+    "missing_first notify_primary clears stale private state",
+    "missing_first notify_primary dims",
+    "missing_first notify_primary fifth arg resource",
+    "missing_first notify_secondary returns native continuation",
+    "missing_first notify_secondary clears stale private state",
+    "missing_first notify_secondary dims",
+    "missing_first notify_secondary fifth arg resource",
+    "missing_first notify_clear returns native continuation",
+    "missing_first notify_clear clears stale private state",
+    "missing_first notify retire",
+    "missing_first pool_reset returns native continuation",
+    "missing_first pool_reset clears stale private state",
+    "missing_first native pool reset and retire",
+    "missing_first pool_release returns native continuation",
+    "missing_first pool_release clears stale private state",
+    "missing_first release native list called",
+    "missing_first heif returns native continuation",
+    "missing_first HEIF native hook bytes",
+    "missing_first HEIF complete union copy unchanged",
+    "wrong_pte selector returns native continuation",
+    "wrong_pte selector clears stale private state",
+    "wrong_pte selector enum safe",
+    "wrong_pte freeze returns native continuation",
+    "wrong_pte freeze clears stale private state",
+    "wrong_pte freeze private latch",
+    "wrong_pte capture returns native continuation",
+    "wrong_pte capture clears stale private state",
+    "wrong_pte capture private latch",
+    "wrong_pte jpeg_main returns native continuation",
+    "wrong_pte jpeg_main clears stale private state",
+    "wrong_pte jpeg_main actual crop",
+    "wrong_pte jpeg_scn returns native continuation",
+    "wrong_pte jpeg_scn clears stale private state",
+    "wrong_pte jpeg_scn actual crop",
+    "wrong_pte thumbnail returns native continuation",
+    "wrong_pte thumbnail clears stale private state",
+    "wrong_pte thumbnail native canvas and clear",
+    "wrong_pte thumbnail ROI",
+    "wrong_pte notify_primary returns native continuation",
+    "wrong_pte notify_primary clears stale private state",
+    "wrong_pte notify_primary dims",
+    "wrong_pte notify_primary fifth arg resource",
+    "wrong_pte notify_secondary returns native continuation",
+    "wrong_pte notify_secondary clears stale private state",
+    "wrong_pte notify_secondary dims",
+    "wrong_pte notify_secondary fifth arg resource",
+    "wrong_pte notify_clear returns native continuation",
+    "wrong_pte notify_clear clears stale private state",
+    "wrong_pte notify retire",
+    "wrong_pte pool_reset returns native continuation",
+    "wrong_pte pool_reset clears stale private state",
+    "wrong_pte native pool reset and retire",
+    "wrong_pte pool_release returns native continuation",
+    "wrong_pte pool_release clears stale private state",
+    "wrong_pte release native list called",
+    "wrong_pte heif returns native continuation",
+    "wrong_pte HEIF native hook bytes",
+    "wrong_pte HEIF complete union copy unchanged",
+    "corrupt selector returns native continuation",
+    "corrupt selector clears stale private state",
+    "corrupt selector enum safe",
+    "corrupt freeze returns native continuation",
+    "corrupt freeze clears stale private state",
+    "corrupt freeze private latch",
+    "corrupt capture returns native continuation",
+    "corrupt capture clears stale private state",
+    "corrupt capture private latch",
+    "corrupt jpeg_main returns native continuation",
+    "corrupt jpeg_main clears stale private state",
+    "corrupt jpeg_main actual crop",
+    "corrupt jpeg_scn returns native continuation",
+    "corrupt jpeg_scn clears stale private state",
+    "corrupt jpeg_scn actual crop",
+    "corrupt thumbnail returns native continuation",
+    "corrupt thumbnail clears stale private state",
+    "corrupt thumbnail native canvas and clear",
+    "corrupt thumbnail ROI",
+    "corrupt notify_primary returns native continuation",
+    "corrupt notify_primary clears stale private state",
+    "corrupt notify_primary dims",
+    "corrupt notify_primary fifth arg resource",
+    "corrupt notify_secondary returns native continuation",
+    "corrupt notify_secondary clears stale private state",
+    "corrupt notify_secondary dims",
+    "corrupt notify_secondary fifth arg resource",
+    "corrupt notify_clear returns native continuation",
+    "corrupt notify_clear clears stale private state",
+    "corrupt notify retire",
+    "corrupt pool_reset returns native continuation",
+    "corrupt pool_reset clears stale private state",
+    "corrupt native pool reset and retire",
+    "corrupt pool_release returns native continuation",
+    "corrupt pool_release clears stale private state",
+    "corrupt release native list called",
+    "corrupt heif returns native continuation",
+    "corrupt HEIF native hook bytes",
+    "corrupt HEIF complete union copy unchanged",
+    "corrupt_last selector returns native continuation",
+    "corrupt_last selector clears stale private state",
+    "corrupt_last selector enum safe",
+    "corrupt_last freeze returns native continuation",
+    "corrupt_last freeze clears stale private state",
+    "corrupt_last freeze private latch",
+    "corrupt_last capture returns native continuation",
+    "corrupt_last capture clears stale private state",
+    "corrupt_last capture private latch",
+    "corrupt_last jpeg_main returns native continuation",
+    "corrupt_last jpeg_main clears stale private state",
+    "corrupt_last jpeg_main actual crop",
+    "corrupt_last jpeg_scn returns native continuation",
+    "corrupt_last jpeg_scn clears stale private state",
+    "corrupt_last jpeg_scn actual crop",
+    "corrupt_last thumbnail returns native continuation",
+    "corrupt_last thumbnail clears stale private state",
+    "corrupt_last thumbnail native canvas and clear",
+    "corrupt_last thumbnail ROI",
+    "corrupt_last notify_primary returns native continuation",
+    "corrupt_last notify_primary clears stale private state",
+    "corrupt_last notify_primary dims",
+    "corrupt_last notify_primary fifth arg resource",
+    "corrupt_last notify_secondary returns native continuation",
+    "corrupt_last notify_secondary clears stale private state",
+    "corrupt_last notify_secondary dims",
+    "corrupt_last notify_secondary fifth arg resource",
+    "corrupt_last notify_clear returns native continuation",
+    "corrupt_last notify_clear clears stale private state",
+    "corrupt_last notify retire",
+    "corrupt_last pool_reset returns native continuation",
+    "corrupt_last pool_reset clears stale private state",
+    "corrupt_last native pool reset and retire",
+    "corrupt_last pool_release returns native continuation",
+    "corrupt_last pool_release clears stale private state",
+    "corrupt_last release native list called",
+    "corrupt_last heif returns native continuation",
+    "corrupt_last HEIF native hook bytes",
+    "corrupt_last HEIF complete union copy unchanged",
+    "custom4 fmt1 notify_primary exact frozen dimensions",
+    "custom4 fmt1 notify_secondary exact frozen dimensions",
+    "custom4 fmt4 notify_primary exact frozen dimensions",
+    "custom4 fmt4 notify_secondary exact frozen dimensions",
+    "custom5 fmt1 notify_primary exact frozen dimensions",
+    "custom5 fmt1 notify_secondary exact frozen dimensions",
+    "custom5 fmt4 notify_primary exact frozen dimensions",
+    "custom5 fmt4 notify_secondary exact frozen dimensions",
+    "custom6 fmt1 notify_primary exact frozen dimensions",
+    "custom6 fmt1 notify_secondary exact frozen dimensions",
+    "custom6 fmt4 notify_primary exact frozen dimensions",
+    "custom6 fmt4 notify_secondary exact frozen dimensions",
+    "custom7 fmt1 notify_primary exact frozen dimensions",
+    "custom7 fmt1 notify_secondary exact frozen dimensions",
+    "custom7 fmt4 notify_primary exact frozen dimensions",
+    "custom7 fmt4 notify_secondary exact frozen dimensions",
+    "RAW jpeg_main native continuation",
+    "RAW jpeg_main source task untouched",
+    "RAW jpeg_main shared preview crops",
+    "RAW jpeg_scn native continuation",
+    "RAW jpeg_scn source task untouched",
+    "RAW jpeg_scn shared preview crops",
+    "RAW thumbnail native continuation",
+    "RAW thumbnail source task untouched",
+    "RAW thumbnail native clear",
+    "RAW notify_primary native continuation",
+    "RAW notify_primary source task untouched",
+    "RAW notify_primary dimensions unchanged",
+    "RAW notify_secondary native continuation",
+    "RAW notify_secondary source task untouched",
+    "RAW notify_secondary dimensions unchanged",
+    "RAW heif native continuation",
+    "RAW heif source task untouched",
+    "RAW union native copy byte-exact",
+    "RAW preview 2/0 custom4 jpeg_main source native",
+    "RAW preview 2/0 custom4 jpeg_main crops",
+    "RAW preview 2/0 custom4 jpeg_scn source native",
+    "RAW preview 2/0 custom4 jpeg_scn crops",
+    "RAW preview 2/0 custom5 jpeg_main source native",
+    "RAW preview 2/0 custom5 jpeg_main crops",
+    "RAW preview 2/0 custom5 jpeg_scn source native",
+    "RAW preview 2/0 custom5 jpeg_scn crops",
+    "RAW preview 2/0 custom6 jpeg_main source native",
+    "RAW preview 2/0 custom6 jpeg_main crops",
+    "RAW preview 2/0 custom6 jpeg_scn source native",
+    "RAW preview 2/0 custom6 jpeg_scn crops",
+    "RAW preview 2/0 custom7 jpeg_main source native",
+    "RAW preview 2/0 custom7 jpeg_main crops",
+    "RAW preview 2/0 custom7 jpeg_scn source native",
+    "RAW preview 2/0 custom7 jpeg_scn crops",
+    "RAW preview 1/2 custom4 jpeg_main source native",
+    "RAW preview 1/2 custom4 jpeg_main crops",
+    "RAW preview 1/2 custom4 jpeg_scn source native",
+    "RAW preview 1/2 custom4 jpeg_scn crops",
+    "RAW preview 1/2 custom5 jpeg_main source native",
+    "RAW preview 1/2 custom5 jpeg_main crops",
+    "RAW preview 1/2 custom5 jpeg_scn source native",
+    "RAW preview 1/2 custom5 jpeg_scn crops",
+    "RAW preview 1/2 custom6 jpeg_main source native",
+    "RAW preview 1/2 custom6 jpeg_main crops",
+    "RAW preview 1/2 custom6 jpeg_scn source native",
+    "RAW preview 1/2 custom6 jpeg_scn crops",
+    "RAW preview 1/2 custom7 jpeg_main source native",
+    "RAW preview 1/2 custom7 jpeg_main crops",
+    "RAW preview 1/2 custom7 jpeg_scn source native",
+    "RAW preview 1/2 custom7 jpeg_scn crops",
+    "RAW preview 2/1 custom4 jpeg_main source native",
+    "RAW preview 2/1 custom4 jpeg_main crops",
+    "RAW preview 2/1 custom4 jpeg_scn source native",
+    "RAW preview 2/1 custom4 jpeg_scn crops",
+    "RAW preview 2/1 custom5 jpeg_main source native",
+    "RAW preview 2/1 custom5 jpeg_main crops",
+    "RAW preview 2/1 custom5 jpeg_scn source native",
+    "RAW preview 2/1 custom5 jpeg_scn crops",
+    "RAW preview 2/1 custom6 jpeg_main source native",
+    "RAW preview 2/1 custom6 jpeg_main crops",
+    "RAW preview 2/1 custom6 jpeg_scn source native",
+    "RAW preview 2/1 custom6 jpeg_scn crops",
+    "RAW preview 2/1 custom7 jpeg_main source native",
+    "RAW preview 2/1 custom7 jpeg_main crops",
+    "RAW preview 2/1 custom7 jpeg_scn source native",
+    "RAW preview 2/1 custom7 jpeg_scn crops",
+    "RAW preview 4/2 custom4 jpeg_main source native",
+    "RAW preview 4/2 custom4 jpeg_main crops",
+    "RAW preview 4/2 custom4 jpeg_scn source native",
+    "RAW preview 4/2 custom4 jpeg_scn crops",
+    "RAW preview 4/2 custom5 jpeg_main source native",
+    "RAW preview 4/2 custom5 jpeg_main crops",
+    "RAW preview 4/2 custom5 jpeg_scn source native",
+    "RAW preview 4/2 custom5 jpeg_scn crops",
+    "RAW preview 4/2 custom6 jpeg_main source native",
+    "RAW preview 4/2 custom6 jpeg_main crops",
+    "RAW preview 4/2 custom6 jpeg_scn source native",
+    "RAW preview 4/2 custom6 jpeg_scn crops",
+    "RAW preview 4/2 custom7 jpeg_main source native",
+    "RAW preview 4/2 custom7 jpeg_main crops",
+    "RAW preview 4/2 custom7 jpeg_scn source native",
+    "RAW preview 4/2 custom7 jpeg_scn crops",
+    "RAW preview 2/4 custom4 jpeg_main source native",
+    "RAW preview 2/4 custom4 jpeg_main crops",
+    "RAW preview 2/4 custom4 jpeg_scn source native",
+    "RAW preview 2/4 custom4 jpeg_scn crops",
+    "RAW preview 2/4 custom5 jpeg_main source native",
+    "RAW preview 2/4 custom5 jpeg_main crops",
+    "RAW preview 2/4 custom5 jpeg_scn source native",
+    "RAW preview 2/4 custom5 jpeg_scn crops",
+    "RAW preview 2/4 custom6 jpeg_main source native",
+    "RAW preview 2/4 custom6 jpeg_main crops",
+    "RAW preview 2/4 custom6 jpeg_scn source native",
+    "RAW preview 2/4 custom6 jpeg_scn crops",
+    "RAW preview 2/4 custom7 jpeg_main source native",
+    "RAW preview 2/4 custom7 jpeg_main crops",
+    "RAW preview 2/4 custom7 jpeg_scn source native",
+    "RAW preview 2/4 custom7 jpeg_scn crops"
+  ],
+  "count": 337,
+  "services": [
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "native pool list return",
+      "task": 35651584
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331608,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331608,
+        8
+      ]
+    },
+    {
+      "service": "native pool list return",
+      "task": 35651584
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331608,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331608,
+        8
+      ]
+    },
+    {
+      "service": "native pool list return",
+      "task": 35651584
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331608,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331608,
+        8
+      ]
+    },
+    {
+      "service": "native pool list return",
+      "task": 35651584
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331608,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331608,
+        8
+      ]
+    },
+    {
+      "service": "native pool list return",
+      "task": 35651584
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331608,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331608,
+        8
+      ]
+    },
+    {
+      "service": "native pool list return",
+      "task": 35651584
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    },
+    {
+      "service": "ReadBackup8",
+      "args": [
+        328335,
+        50331576,
+        8
+      ]
+    }
+  ],
+  "fixtures": [
+    "flat page table and TTBR are explicit inputs; separate native boot verifies produced tables",
+    "native ReadBackup8 returns original9504x6336 source and records selected resource",
+    "native pool-list node return callback only; real pool interval validation executes"
+  ],
+  "remaining": [
+    "full task scheduler/concurrent capture",
+    "all native sizes and quality combinations",
+    "real image encode/camera tests"
+  ]
+}

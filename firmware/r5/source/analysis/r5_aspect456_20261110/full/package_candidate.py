@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build and fully verify a local 4.58 test DAT; no deployment or publishing."""
+"""Build and fully verify a local 4.59 test DAT; no deployment or publishing."""
 from pathlib import Path
 import argparse, hashlib, json, os, shutil, sys, tarfile
 
@@ -16,7 +16,7 @@ def main():
  for n in ('base','build','output'):p.add_argument('--'+n,type=Path,required=True)
  p.add_argument('--inputs',type=Path,default=ROOT/'projects/firmware/inputs.local.json')
  a=p.parse_args();assert __debug__ and not a.output.exists()
- report=json.loads((a.build/'build.json').read_text());assert report['passed'] and report['version']=='4.58'
+ report=json.loads((a.build/'build.json').read_text());assert report['passed'] and report['version']=='4.59'
  for name,row in report['partitions'].items():assert digest_file(a.build/'partitions'/name)==row['sha256']
  config={k:Path(v).resolve()for k,v in json.loads(a.inputs.read_text()).items()}
  a.output.mkdir(parents=True);work=a.output/'work';inputs=work/'inputs';inputs.mkdir(parents=True)
@@ -55,8 +55,8 @@ def main():
    facts.append(dict(member=m.name,sha256=after,changed_from_stock=before!=after,changed_from_455=differs))
  archive=dict(passed=True,output_sha256=archive_sha,changed_members=list(replacements),members=facts,
   original_headers_padding_trailer_preserved=True,only_four_archive_members_differ_from_455=True)
- save(evidence/'archive_verification_458.json',archive)
- package.ROOT=work;package.OUT=a.output;package.TAR=overlay;package.VERSION='4.58';package.TAG='458';package.NAME='NONINSTALLABLE.DAT'
+ save(evidence/'archive_verification_459.json',archive)
+ package.ROOT=work;package.OUT=a.output;package.TAR=overlay;package.VERSION='4.59';package.TAG='459';package.NAME='NONINSTALLABLE.DAT'
  package.components=lambda:dict(upstream_commit='086df3b1e33dfa0206553ac2bb003535c58ddb80',components=report['components'])
  old_digest=package.digest_file;package.digest_file=lambda path:archive_sha if path is overlay else old_digest(path)
  package.build_package()
@@ -64,9 +64,9 @@ def main():
  receipt.update(state='OFFLINE_VERIFIED_LOCAL_TEST_PACKAGE_CAMERA_UNTESTED',
   exact_four_member_scope_verified=False,scope_against_455=['nflasha3','nflasha8','nflasha15','part_image.sum'],
   factory_defaults_and_backup_sum_unchanged_from_455=True,only_four_archive_members_differ_from_455=True,
-  ratios=report['ratios'],RAW=report['RAW'],scope='Crop menus, preview masks, shared JPEG/HEIF and RAW embedded previews, metadata/playback; filter presentation using the original aspect Fn style with left abbreviations and selected full name, existing455 filter and sound behavior retained; explicit non-Off filter switching sets native Creative Look to PT before the existing E4 request.',
+  ratios=report['ratios'],RAW=report['RAW'],scope='Crop menus, preview masks, shared JPEG/HEIF and RAW embedded previews, metadata/playback; filter presentation using the original aspect Fn style with left abbreviations and selected full name, filter/sound transactions retained; abandoned page/renderer, E9 observers and reload branch removed; explicit non-Off filter switching sets native Creative Look to PT before the existing E4 request.',
   limitations=[
-   'Camera installation, startup, physical LCD, actual JPEG/HEIF encoding and real ARW files remain untested for4.58.',
+   'Camera installation, startup, physical LCD, actual JPEG/HEIF encoding and real ARW files remain untested for4.59.',
    'Instruction replays explicitly model OS, memory/files, display, transport and hardware encoder endpoints; they do not establish real pixel output.',
    'Full Bayer and native DefaultCrop/SonyCrop are preserved by the patch scope; shared embedded preview size declarations and playback recognition are updated.',
    'The original conditional CP NOR updater is retained; no physical NOR readback or camera operation was performed in this task.',

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "base_AP_sha256": "a5ea55ed9251ed90b91803e8cab0c8ad6e79dbc62d202bce655a21afe78399ee",
+  "private_bindings": {
+    "r5_aspect_original_rows_register": 149518092,
+    "r5_aspect_original_row_normalize": 149518232,
+    "r5_aspect_original_row_available": 149518288,
+    "r5_aspect_original_row_available_direct": 149518436,
+    "r5_aspect_original_row_parent": 149518500
+  },
+  "native_layout_tables_byte_exact": 10,
+  "patch_beforebytes_and_relocations_checked": true,
+  "layout_evidence_inherited": true
+}

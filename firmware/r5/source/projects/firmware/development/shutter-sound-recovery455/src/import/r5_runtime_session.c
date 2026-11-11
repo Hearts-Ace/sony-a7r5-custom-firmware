@@ -43,7 +43,7 @@ int r5_session_prepare(void){
  uint64_t old=LOAD(&gate);uint32_t e=(uint32_t)(old>>32);
  if((uint32_t)old!=(CLOSED|WAKE)||e+1==LOAD(&handled))return 0;
  STORE(&owner_epoch,e);
- r5_stage421_probe_reset();r5_stage421_transfer_reset();r5_stage421_log_reset();
+ r5_stage421_probe_reset();r5_stage421_transfer_reset();
  if(!__atomic_compare_exchange_n(&gate,&old,old&~(uint64_t)CLOSED,0,__ATOMIC_RELEASE,__ATOMIC_ACQUIRE))return 0;
  STORE(&owner_cold,LOAD(&handled)==0);STORE(&handled,e+1);return 1;
 }

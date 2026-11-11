@@ -9,7 +9,6 @@ int r5_filter_request(unsigned);
  * The UI must not close or publish a success while state is pending/failed. */
 unsigned r5_filter_command_state(void);
 unsigned r5_filter_command_sequence(void);
-int r5_filter_reload_request(void);
 void r5_filter_refresh_construct425(void *,const void *);
 void r5_filter_refresh_execute425(void *);
 void r5_filter_load_selection(struct r5_lut_directory *);

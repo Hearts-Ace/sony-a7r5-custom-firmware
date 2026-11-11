@@ -11,7 +11,7 @@ sys.path[:0]=[str(ROOT/'vendor/audit-python'),str(ROOT/'projects/firmware/develo
 from elftools.elf.elffile import ELFFile
 from strict_ap_link import branch
 
-BASE_SHA='23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6'
+BASE_SHA='a5ea55ed9251ed90b91803e8cab0c8ad6e79dbc62d202bce655a21afe78399ee'
 RX=0x8ee0000;CODE=RX+0x1000;RW=0x8ef0000
 def sha(raw):return hashlib.sha256(raw).hexdigest()
 def align(value,alignment=0x10000):return(value+alignment-1)&-alignment

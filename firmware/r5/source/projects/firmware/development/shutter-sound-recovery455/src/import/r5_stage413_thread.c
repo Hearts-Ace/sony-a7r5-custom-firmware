@@ -11,10 +11,6 @@
 #include "r5_native_lut_directory.h"
 #include "r5sound_runtime.h"
 extern void r5_stage411_probe_run(uint32_t,uint32_t);
-extern int r5_log420_emit(unsigned,const char *,const uint32_t *,unsigned);
-extern void r5_grid420_watch(unsigned,uint32_t);
-extern void r5_transfer420_log(unsigned);
-extern void r5_probe420_log(unsigned);
 extern void r5_stage413_transfer_run(const struct r5_look_set *);
 extern void *r5_stage411_dlsym(void *, const char *);
 extern int r5_native_fsys_open(const char *, uint32_t, uint64_t *);
@@ -148,7 +144,7 @@ release:
 
 /* Both startup and SD replacement use the same complete parameter publication.
  * A failed storage read is never treated as an intentional empty configuration. */
-static void activate(struct r5_stage411_diagnostics *s,int log_sd){
+static void activate(struct r5_stage411_diagnostics *s){
  activation425=-1;
  if(s->load_status!=R5_IMPORTED&&s->load_status!=R5_ABSENT&&
     s->publish_status!=R5_PUBLISHED&&s->publish_status!=R5_PUBLISHED_CLOSE_ERROR)return;
@@ -162,13 +158,7 @@ static void activate(struct r5_stage411_diagnostics *s,int log_sd){
          if(r5_session_current()&&r5_stage421_transfer_matched()){
           int names=r5_stage421_parameters_ready();
           if(names>=0)activation425=0;
-          if(names<0&&log_sd){uint32_t error=16;r5_log420_emit(s->selected_drive,"NAME_GENERATION_LIMIT",&error,1);}
-          uint32_t v[2]={r5_session_epoch(),mask};
-          if(log_sd)r5_log420_emit(s->selected_drive,"CUSTOM_FILTER_SELECTION_QUEUED",v,2);
          }}
-        /* Disk diagnostics follow application, so they cannot delay the first
-         * CP selection / original E4 execution of a freshly imported bank. */
-        if(log_sd){r5_probe420_log(s->selected_drive);r5_transfer420_log(s->selected_drive);}
 
     }
 }
@@ -231,7 +221,6 @@ scan:
     }
     if(selected==2)goto done;
     s->selected_slot=selected;s->selected_drive=media[selected]&255u;
-    {uint32_t v[2]={0x421,selected};r5_log420_emit(s->selected_drive,"BOOT421_SD_SELECTED",v,2);}
     /* Runtime ADRP/ADD callback pointers; no absolute PIE relocations. */
     api.open=r5_native_fsys_open;api.read=r5_native_fsys_read;api.close=r5_native_fsys_close;
     if(r5_fsys_reader_init(&reader,&api,(char)s->selected_drive))goto done;
@@ -287,22 +276,14 @@ done:
     if(clock&&sleep&&r5_session_current())
         result=r5_stage411_persist(s,clock,sleep,result);
     s->result=(uint32_t)result;
-    {uint32_t v[13]={(uint32_t)result,s->bytes_read,s->decoded_mask,s->current.valid_mask,(uint32_t)s->last_native_status,(uint32_t)s->close_status,(uint32_t)s->directory_status,(uint32_t)s->load_status,(uint32_t)s->stage_status,(uint32_t)s->publish_status,(uint32_t)s->release_status,s->saved_mask,s->selected_slot};
-     if(cold)r5_log420_emit(s->selected_drive,result==R5_IMPORTED?"IMPORT_REPLACED_OR_CLEARED":"IMPORT_KEPT_OR_FAILED",v,13);}
     if(clock&&sleep&&r5_session_current()){
             for(poll=0;poll<3&&r5_session_current();poll++){
-                activate(s,cold);
+                activate(s);
                 if(activation425==0)break;
-                {uint32_t v[2]={r5_session_epoch(),poll+1};
-                 if(cold)r5_log420_emit(s->selected_drive,"CP_BANK_RETRY_THIS_BOOT",v,2);}
                 for(slot=0;slot<10;slot++){
                     r5_filter_service();if(!r5_session_current()||sleep(&delay,0))goto complete;
                 }
             }
-        /* Diagnostic observation is limited to the selected filter; waiting
-         * for every configured filter cannot complete without user switching. */
-        if(cold && activation425==0 && s->current.valid_mask)
-            r5_grid420_watch(s->selected_drive,s->current.valid_mask);
     }
 complete:
     s->result=(uint32_t)result;
@@ -311,9 +292,6 @@ complete:
      * original scheduler downgrade or clock/sleep binding failed. */
     return (void *)(uintptr_t)(clock&&sleep);
 }
-
-/* Retained private ABI; SD updates are now exclusively a cold-start action. */
-int r5_stage425_reload(void){return -1;}
 
 int r5_stage411_startup(void) {
     struct r5_stage411_diagnostics *s = &r5_stage411_state;

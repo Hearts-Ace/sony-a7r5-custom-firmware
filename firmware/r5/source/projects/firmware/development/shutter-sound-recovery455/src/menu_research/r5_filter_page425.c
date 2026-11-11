@@ -12,6 +12,7 @@ extern int r5_filter_request(unsigned);
 extern unsigned r5_filter_command_state(void);
 extern unsigned r5_filter_command_sequence(void);
 extern const char *r5_filter_short_name(unsigned);
+extern const char *r5_filter_full_name(unsigned);
 extern int usleep(unsigned);
 /* Parent callback runs on the UI thread after the worker commits. */
 #define PAGE 0xd9u
@@ -55,6 +56,7 @@ static unsigned owned(uintptr_t c){return c && c==g.controller && g.manager && r
 static unsigned valid(void){return g.active && !g.closing && owned(g.controller) && mid()==R5_FILTER_MENU_ID;}
 static void setrect(struct style *s,unsigned x,unsigned y,unsigned w,unsigned h){s->w[10]=x|(y<<16);s->w[11]=w|(h<<16);}
 static unsigned orientation(unsigned layout){return layout==0?1u:0u;}
+static unsigned next(unsigned direction);
 static int project(uintptr_t p);
 static uint64_t refresh(uint64_t p,uint64_t paint);
 static uint64_t dispatch(uint64_t c,uint64_t message,uint64_t event);
@@ -67,63 +69,53 @@ static void delete_presenter(uint64_t p){destroy(p);}
 static void controller_destroy(uint64_t c){if(c!=g.controller)return;g.active=0;g.controller=0;((F1)A(0x22083ec))(c);}
 static void controller_delete(uint64_t c){controller_destroy(c);}
 static void setup(unsigned native_list){
- unsigned j,i;const unsigned visible[]={0,1,9,11,12,13,16,17,18,19,20,21,22,23,24,25,26,27,28};
+ unsigned j,i;
+ static const unsigned mapping[][2]={{0,1},{1,2},{4,6},{5,7},{8,16},{9,20},{11,21},{12,22},{14,23},{30,33},{31,32}};
  if(g.initialized && g.native_list==native_list)return;
  g.native_list=native_list;
  copy(g.cvt,(void *)A(0x58da650),sizeof g.cvt);
  copy(g.pvt,(void *)A(0x58ca660),sizeof g.pvt);
  g.cvt[2]=(uintptr_t)controller_destroy;g.cvt[3]=(uintptr_t)controller_delete;
  g.cvt[4]=(uintptr_t)dispatch;g.cvt[5]=(uintptr_t)none;g.cvt[6]=(uintptr_t)none;g.cvt[7]=(uintptr_t)exit_page;
- /* Object address point is &pvt[2]: +30 is a query, +40 is layout. */
  g.pvt[2]=(uintptr_t)destroy;g.pvt[3]=(uintptr_t)delete_presenter;g.pvt[4]=(uintptr_t)refresh;g.pvt[7]=(uintptr_t)none;g.pvt[10]=(uintptr_t)relayout;
  for(i=0;i<NUM_WIDGETS;i++)g.masks[i]=1;
- /* Background2 intentionally has no Widget, as in the M4 D9 implementation.
-  * Mask0 constructs a real Widget; it does not itself mean transparency. */
- for(i=0;i<sizeof visible/sizeof visible[0];i++)g.masks[visible[i]]=0;
- if(native_list){for(i=16;i<22;i++)g.masks[i]=1;g.masks[27]=g.masks[28]=1;}
+ for(i=0;i<sizeof mapping/sizeof mapping[0];i++)g.masks[mapping[i][0]]=0;
+ g.masks[13]=0;
  for(j=0;j<2;j++){
-  struct style *s=g.styles[j];copy(s,(void *)A(j?0x4060398:0x405fc78),sizeof g.styles[j]);
-  /* Native No12 typography for readable full UTF8 names. */
-  s[11].w[2]=s[12].w[2];s[11].w[6]=s[12].w[6];
-  s[12].w[1]=TITLE_TEXT;s[11].w[1]=R5_FILTER_FULL_RESOURCE;
-  s[14].w[1]=0; /* No reload text or touch widget in this page. */
-  s[13]=s[11];s[13].w[9]=13u<<16;s[13].w[1]=STATUS_TEXT;
-  if(j){
-   setrect(&s[12],128,8,496,42);
-   setrect(&s[11],128,72,496,184);setrect(&s[13],128,302,496,80);
-  }else{
-   setrect(&s[12],8,8,464,42);
-   setrect(&s[11],8,74,464,184);setrect(&s[13],8,300,464,80);
+  struct style *s=g.styles[j];
+  const struct style *fn=(void *)A(j?0x414fef8:0x414ead8);
+  copy(s,(void *)A(j?0x4060398:0x405fc78),sizeof g.styles[j]);
+  for(i=0;i<sizeof mapping/sizeof mapping[0];i++){
+   unsigned index=mapping[i][0];s[index]=fn[mapping[i][1]];
+   s[index].w[9]=(s[index].w[9]&65535u)|(index<<16);
   }
-  if(native_list){
-   /* Original type1c owns row backgrounds, selection and scrolling. */
-   if(!j)setrect(&s[9],8,64,150,330);
+  s[11].w[1]=R5_FILTER_FULL_RESOURCE;s[12].w[1]=TITLE_TEXT;
+  s[13]=s[11];s[13].w[1]=STATUS_TEXT;s[13].w[9]=13u<<16;
+  setrect(&s[13],j?128:123,j?118:194,j?486:349,46);
+  /* A complete native1c needs 640 KiB. Keep the existing 128 KiB
+   * fallback, with the same five-row Fn geometry and native typography. */
+  if(!native_list){
    for(i=0;i<5;i++){
-    s[22+i]=s[15];s[22+i].w[9]=(22+i)<<16;
-    setrect(&s[22+i],j?1:8,(j?51:64)+i*66,j?112:150,66);
+    unsigned index=i?15+i:9;
+    s[index]=fn[21];s[index].w[9]=index<<16;s[index].w[1]=ROW_TEXT+i;
+    setrect(&s[index],j?1:49+i*76,j?51+i*66:501,j?112:76,j?66:70);
+    g.masks[index]=0;
+    s[22+i]=g.styles[j][15];s[22+i].w[0]=20;s[22+i].w[1]=0;s[22+i].w[9]=(22+i)<<16;
+    setrect(&s[22+i],j?1:49+i*76,j?51+i*66:501,j?112:76,j?66:70);
+    g.masks[22+i]=0;
    }
-  }else for(i=0;i<7;i++){
-   unsigned index=i?15+i:9,x=j?8:8,y=(j?64:64)+i*(j?46:70);
-   s[index]=s[12];s[index].w[9]=index<<16;s[index].w[1]=ROW_TEXT+i;
-   setrect(&s[index],x,y,j?112:150,j?42:62);
-   s[22+i]=s[15];s[22+i].w[9]=(22+i)<<16;
-   setrect(&s[22+i],x,y,j?112:150,j?42:62);
   }
-  /* Right pane starts after the native left list; preview remains behind. */
-  if(j){setrect(&s[11],136,74,488,180);setrect(&s[13],136,302,488,80);}
-  else{setrect(&s[11],168,74,304,184);setrect(&s[13],168,300,304,80);}
  }
  g.initialized=1;
 }
 static unsigned char *param(struct entry *map,unsigned n,unsigned type){return map[n].type==type && map[n].param && !(map[n].param&7)?(unsigned char *)(uintptr_t)map[n].param:0;}
 static int resource(struct entry *m,unsigned n,unsigned id,unsigned show){unsigned char *p=param(m,n,2);if(!p)return -1;w32((uintptr_t)p+0x30,id);w64((uintptr_t)p+0x38,0);p[0x2c]=show;return 0;}
 static unsigned visible_row(unsigned row){
- unsigned list[13],n=1,i,at=0,first,mask=r5_filter_available_mask();list[0]=0;
+ unsigned list[13],n=1,i,at=0,mask=r5_filter_available_mask();list[0]=0;
  for(i=1;i<=12;i++)if(mask&(1u<<(i-1)))list[n++]=i;
  for(i=0;i<n;i++)if(list[i]==g.focus)at=i;
- if(g.native_list){int position=(int)at+(int)row-2;return row<5 && position>=0 && (unsigned)position<n?list[position]:~0u;}
- first=at>3?at-3:0;if(n>7 && first>n-7)first=n-7;if(n<=7)first=0;
- return first+row<n?list[first+row]:~0u;
+ int position=(int)at+(int)row-2;
+ return row<5 && position>=0 && (unsigned)position<n?list[position]:~0u;
 }
 static int project(uintptr_t p){
  struct entry *m;unsigned char *v;unsigned i;
@@ -141,17 +133,29 @@ static int project(uintptr_t p){
   w32((uintptr_t)v+0xd30,n);w32((uintptr_t)v+0xd34,0);w32((uintptr_t)v+0xd38,focus);
   w32((uintptr_t)v+0xd3c,R5_FILTER_MENU_ID);v[0x2c]=1;v[0xd40]=1;v[0xd56]=1;
   w32((uintptr_t)v+0xd44,r32(((F0)A(0x28cc860))()));
- }
- for(i=0;i<7;i++){
+ }else for(i=0;i<5;i++){
   unsigned row=visible_row(i),index=i?15+i:9;
-  if(!g.native_list && resource(m,index,ROW_TEXT+i,row!=~0u)<0)return -1;
-  v=param(m,22+i,0x14);if(!v)return -1;v[0x2c]=row!=~0u;
+  if(resource(m,index,ROW_TEXT+i,row!=~0u)<0)return -1;
+  /* Match native kind13 String consumer (1856410), including centering,
+   * focused/normal text style and font resource. */
+  v=param(m,index,2);if(!v)return -1;
+  w32((uintptr_t)v+0x44,0x0207a00eu);
+  w32((uintptr_t)v+0x48,row==g.focus?0x0207a001u:0x0207a000u);
+  w32((uintptr_t)v+0x4c,0x02066026u);w32((uintptr_t)v+0x50,1);
+  v=param(m,22+i,0x14);if(!v)return -1;v[0x2c]=row!=~0u && row==g.focus;
  }
  if(resource(m,11,R5_FILTER_FULL_RESOURCE+g.focus,1)<0 ||
-    resource(m,12,TITLE_TEXT,1)<0 || resource(m,14,0,0)<0 || resource(m,13,STATUS_TEXT,g.status!=0)<0)return -1;
- v=param(m,15,0x14);if(!v)return -1;v[0x2c]=0;
- /* No native Creative Look adjustment, icon, arrow or footer widget is
-  * instantiated. The right pane consists only of our full-name String. */
+    resource(m,12,TITLE_TEXT,1)<0 || resource(m,13,STATUS_TEXT,g.status!=0)<0)return -1;
+ /* Image parameters carry resource IDs at +3c, not +30. */
+ v=param(m,4,0);if(!v)return -1;w32((uintptr_t)v+0x3c,0x02000321u);v[0x2c]=1;
+ v=param(m,8,0);if(!v)return -1;w32((uintptr_t)v+0x3c,0x02002cacu);v[0x2c]=1;
+ /* Scheme8 is the native Help/Cancel/OK footer in the aspect Fn page. */
+ v=param(m,5,24);if(!v)return -1;w32((uintptr_t)v+0x30,8);w32((uintptr_t)v+0x34,1);v[0x2c]=1;
+ for(i=0;i<2;i++){
+  v=param(m,30+i,15);if(!v)return -1;
+  v[0x39]=1;v[0x3a]=0;v[0x2c]=next(i)!=~0u;
+ }
+ /* There are no Creative Look adjustment controls. */
  return 1;
 }
 static uint64_t refresh(uint64_t p,uint64_t paint){uintptr_t v;if(project(p)!=1)return 0;v=r64(p+0x40);return ((F2)r64(r64(v)+0x20))(v,paint);}
@@ -321,9 +325,8 @@ uint64_t r5_filter_presenter425(uint64_t i,uint64_t view,uint64_t context,uint64
   return ((F6)A(0x1e1e1a4))(i,view,context,pi,scene,layout);
  if(i>5 || pi>5)return 0;
  if(g.presenter)return 0;p=(uintptr_t)g.presenter_storage;
- /* Native view pools vary from128KiB to6MiB. The full original1c widget
-  * is0x9ffd8 bytes; preserve an operable text fallback in small native pools
-  * instead of letting their arena allocator assert. */
+ /* Reuse native String/background widgets for both columns in every pool.
+  * The controller and asynchronous commit flow remain the455 contract. */
  setup(r32(view+0x3ea0)>=0xb0000u);
  zero((void *)p,0x5a10);style=g.styles[orientation((unsigned)layout)];vt=r64(view);
  w64(p,(uintptr_t)&g.pvt[2]);w32(p+8,layout);w64(p+0x10,(uintptr_t)style);w64(p+0x40,view);
@@ -346,13 +349,11 @@ static uint64_t relayout(uint64_t p,uint64_t layout){
  return 0;
 }
 const char *r5_filter_page_text425(unsigned id){
- static char rows[7][96];unsigned i,n;const char *s;char *d;
+ unsigned n;
  if(id>=ROW_TEXT && id<ROW_TEXT+7){
-  i=id-ROW_TEXT;n=visible_row(i);if(n==~0u)return "";
-  d=rows[i];*d++=n==g.focus?'>':(n==r5_filter_selected()?'*':' ');*d++=' ';
-  s=n?r5_filter_short_name(n):"关闭";for(i=0;s[i] && i<90;i++)*d++=s[i];*d=0;return rows[id-ROW_TEXT];
+  n=visible_row(id-ROW_TEXT);return n==~0u?"":n?r5_filter_short_name(n):"关闭";
  }
- if(id==TITLE_TEXT)return "自定义滤镜";
+  if(id==TITLE_TEXT)return "自定义滤镜";
  if(id==STATUS_TEXT){switch(g.status){case 1:return "正在同步应用…";case 3:return "应用失败，请重试";case 4:return "正在应用，请稍候";case 5:return "滤镜已应用，菜单刷新待重试";default:return "";}}
  return 0;
 }

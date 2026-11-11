@@ -22,7 +22,7 @@ from strict_ap_link import link
 from compile_module import NATIVE as AP_NATIVE, SOURCES as AP_SOURCES
 from inspect_ap import Image
 
-BASE_SHA = '23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6'
+BASE_SHA = 'a5ea55ed9251ed90b91803e8cab0c8ad6e79dbc62d202bce655a21afe78399ee'
 BASE = ROOT / 'projects/firmware/releases/4.55-sound-recovery-20261105/appFw.so'
 UI_SOURCES = tuple(HERE / n for n in ('preview_core.c', 'ui_create.c', 'ui_preview.c', 'ui_draw.c', 'ui_hooks.S'))
 CANCEL_SOURCES = tuple(CANCEL / n for n in ('r5_aspect_cancel.c', 'r5_aspect_cancel_hooks.S'))

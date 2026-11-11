@@ -12,7 +12,7 @@ SOURCE=ROOT/'inputs/cp_baseline.bin';SHA='8e9e26bf2e4b93fa5142e961dcf21cb0f43f88
 sha=lambda b:hashlib.sha256(b).hexdigest()
 def main():
  raw=SOURCE.read_bytes();assert sha(raw)==SHA;objects=[];commands=[]
- for src in [OUT/'cp_stage413_probe.c',OUT/'cp_stage413_gate.S',OUT/'cp_transfer.c',OUT/'custom_filter423.c',OUT/'native_color.c',OUT/'grid_observe.S',OUT/'cc1_gate.S',OUT/'b13_gate.S',WORK/'gamma/native_gamma.c',OUT/'r5_resident_crc.c']:
+ for src in [OUT/'cp_stage413_probe.c',OUT/'cp_stage413_gate.S',OUT/'cp_transfer.c',OUT/'custom_filter423.c',OUT/'native_color.c',OUT/'cc1_gate.S',OUT/'b13_gate.S',WORK/'gamma/native_gamma.c',OUT/'r5_resident_crc.c']:
   obj=OUT/(src.stem+'.o');cmd=['clang','--target=arm-none-eabi','-mthumb','-march=armv7-a','-mfloat-abi=soft','-Oz','-fno-jump-tables','-ffreestanding','-fno-builtin','-fno-stack-protector','-fno-unwind-tables','-fno-asynchronous-unwind-tables','-ffunction-sections','-fdata-sections','-fstack-usage','-Wall','-Wextra','-Werror','-I',str(OUT),'-I',str(WORK/'cp_include'),'-I',str(WORK/'gamma'),'-c',str(src),'-o',str(obj)]
   subprocess.run(cmd,check=True);objects.append(obj);commands.append(cmd)
  # The original Gamma gates end at1195260; use their existing16B alignment
@@ -68,7 +68,7 @@ def main():
    else:at+=2
   assert len(found)==len(targets),(symbol,found,targets)
   for at,target in zip(found,targets):code[at:at+4]=bw(RX+at,target)
- fixslots('r5_grid420_upload_original',[0x414f48]);fixslots('r5_cp_stage413_gate',[0x496068,0x49604e,0x496056]);fixslots('r5_native418_cc1_gate',[0x71e72a]);fixslots('r5_native418_b13_gate',[0x71d6f2,0x71d6f2,0x71d6d0])
+ fixslots('r5_cp_stage413_gate',[0x496068,0x49604e,0x496056]);fixslots('r5_native418_cc1_gate',[0x71e72a]);fixslots('r5_native418_b13_gate',[0x71d6f2,0x71d6f2,0x71d6d0])
  resident_used=len(code)
  assert resident_used<=7584,(resident_used,7584)
  code+=bytes(7584-resident_used)
@@ -117,8 +117,6 @@ def main():
  # never perform a second, late STATE lookup inside the native controller.
  for at,expected in [(0x230ee0,'002ac5f88421'),(0x230f0a,'00e0'),(0x230f0c,'bcb14846'),(0x2312f0,'002565e1'),(0x230f62,'4ff61450')]:
   assert raw[at-BASE:at-BASE+len(bytes.fromhex(expected))].hex()==expected
- for at,symbol in [(0x414f44,'r5_grid420_upload')]:
-  assert raw[at-BASE:at-BASE+4]==bytes.fromhex('f0b503af');patch(at-BASE,bw(at,sy[symbol]&~1),'Grid diagnostic call/return observer; native prologue displaced')
  def bl(at,target):
   b=bytearray(bw(at,target&~1));struct.pack_into('<H',b,2,struct.unpack_from('<H',b,2)[0]|0x4000);return b
  assert raw[0x719f16-BASE:0x719f1a-BASE]==bl(0x719f16,0x230da8)
