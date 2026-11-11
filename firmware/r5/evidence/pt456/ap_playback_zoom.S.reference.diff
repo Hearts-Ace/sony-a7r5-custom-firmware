@@ -1,0 +1,64 @@
+--- reference/ap_playback_zoom.S
+
++++ 4.56/ap_playback_zoom.S
+
+@@ -95,6 +95,14 @@
+
+ aspect_playback_zoom_eligible:
+     ldr w8, [x0]
+     cbnz w8, .Lineligible
++    // RAW previews use the native RAW slot; Bayer and crop tags remain untouched.
++    ldrb w8, [x0, #0xf3]
++    cbnz w8, .Lformat_known
++    ldrb w8, [x0, #0xf2]
++    ldrb w9, [x0, #0xf4]
++    orr w8, w8, w9
++    cbz w8, .Lineligible
++.Lformat_known:
+     ldr w8, [x0, #0x1c]
+     cmp w8, #7
+     b.ne .Lineligible
+@@ -102,7 +110,6 @@
+
+     cbz w8, .Lineligible
+     ldr w8, [x0, #0xb84]
+     ldr w9, [x0, #0xb88]
+-    // RAW 的原生普通图像槽为零；按原生 RAW 标记使用专用尺寸槽。
+     ldrb w10, [x0, #0xf3]
+     cbnz w10, .Lraw_dimensions
+     ldp w10, w11, [x0, #0xc]
+@@ -114,7 +121,7 @@
+
+     ccmp w9, w11, #0, eq
+     b.ne .Lineligible
+     adr x10, .Lpairs
+-    mov w11, #21
++    mov w11, #12
+ .Lnext:
+     ldp w12, w13, [x10], #8
+     cmp w8, w12
+@@ -130,11 +137,16 @@
+
+     ret
+ .balign 8
+ .Lpairs:
+-    .word 9504, 5704, 6240, 3744, 4752, 2848
+-    .word 9504, 3512, 6240, 2304, 4752, 1752
+-    .word 7920, 6336, 5200, 4160, 3968, 3168
+-    .word 7392, 6336, 4848, 4160, 3696, 3168
+-    .word 9504, 5872, 6240, 3856, 4752, 2936
+-    .word 9504, 3976, 6240, 2608, 4752, 1992
+-    .word 9504, 5136, 6240, 3376, 4752, 2568
++    .word 9504, 5872
++    .word 6240, 3856
++    .word 4752, 2936
++    .word 9504, 3976
++    .word 6240, 2608
++    .word 4752, 1992
++    .word 7920, 6336
++    .word 5200, 4160
++    .word 3968, 3168
++    .word 9504, 5136
++    .word 6240, 3376
++    .word 4752, 2568
+ .size aspect_playback_zoom_eligible,.-aspect_playback_zoom_eligible

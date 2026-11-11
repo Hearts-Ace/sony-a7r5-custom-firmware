@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "AP_sha256": "e403e98212fc20056e0f876f7b8312cf48f9bfe5122b9954cb4e3e45e0d61937",
+  "source_lock_sha256": "09510a5e107305abf9ad7ffadd2817c45e6bb05f6e4ca12ae96094c85330bc39",
+  "parent_source_lock_sha256": "66442c3e0e13e593e419247094b162a4858c252c12dc8ae42b355837d15b8d44",
+  "all_production_source_runtime_exact": true,
+  "production_file_count": 315,
+  "changed_production_paths": [
+    "analysis/r5_aspect456_20261110/ap/compile_module.py",
+    "analysis/r5_aspect456_20261110/ap/integration.json",
+    "analysis/r5_aspect456_20261110/ap/r5_aspect_menu.c",
+    "analysis/r5_aspect456_20261110/ap/r5_aspect_wire.S",
+    "analysis/r5_aspect456_20261110/cancel/candidate-f/contract.json",
+    "analysis/r5_aspect456_20261110/full/build_partitions.py",
+    "analysis/r5_aspect456_20261110/full/package_candidate.py",
+    "analysis/r5_aspect456_20261110/resources/build_resources.py",
+    "analysis/r5_aspect456_20261110/resources/reference_style.py",
+    "analysis/r5_filter_native_style_20261110/build_style.py",
+    "analysis/r5_filter_native_style_20261110/r5_filter_page_style.c"
+  ],
+  "native_Fn_checks": [
+    {
+      "name": "native Fn aspect producer including image/text publication",
+      "va": "0x1bc36f8",
+      "bytes": 2032,
+      "sha256": "16d1925de62e7753c4c0461a615c426fb24d845ed28706e9255464cfa2c30d65",
+      "equals_native455": true
+    },
+    {
+      "name": "native icon queries A/B",
+      "va": "0x1bd18e8",
+      "bytes": 380,
+      "sha256": "7023c33c784942aa626622ca08ba6f7dd97e2e1623bcb2fff40b807412b75c44",
+      "equals_native455": true
+    },
+    {
+      "name": "native vertical Fn style",
+      "va": "0x414ead8",
+      "bytes": 5096,
+      "sha256": "36ca5ad9ba8d550d0ffa8d3545a0dd8a33fbb0f6648107517db5a0c4f719dd52",
+      "equals_native455": true
+    },
+    {
+      "name": "native horizontal Fn style",
+      "va": "0x414fef8",
+      "bytes": 5096,
+      "sha256": "16ba8887f730f267f0ebf40644d764bacab6d4f8390e2ebdddbc1ef8bc2b80b4",
+      "equals_native455": true
+    }
+  ],
+  "unchanged_components": [
+    "CP",
+    "AVCAM",
+    "MPR"
+  ],
+  "unchanged_partitions": [
+    "nflasha3",
+    "nflasha8",
+    "nflasha5"
+  ],
+  "unchanged_resources": "68 strings; only 2 image banks changed",
+  "PT_sources_byte_identical": true,
+  "camera_io": false,
+  "device_tested": false,
+  "limits": [
+    "Byte/static proof, no instruction replay",
+    "Independent frozen-source ZIP rebuild still pending"
+  ],
+  "candidate": "B: small fallback native kind13 String attributes",
+  "instruction_replay": false
+}

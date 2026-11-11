@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "state": "PARTITIONS_BUILT_DEVICE_UNTESTED",
+  "version": "4.56",
+  "camera_io": false,
+  "baseline_version": "4.55",
+  "baseline_outputs": {
+    "AP": "23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6",
+    "CP": "bbae506511291eb3daab9befaaf80449e4e93d5200975fb68716a3772898e709",
+    "nflasha15": "06dcf249a3138ef81c70d5e384375454353215d2aa01fa0b7eb8887d14644a1a",
+    "nflasha8": "a73be9de2c2d1087ad2aac3d639293638a48377466310c8c015cafb0e889f693",
+    "nflasha5": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693",
+    "archive": "6c0f53875996923cf835efb60de1cce1cc257c041cae4d24aa99fec3160f9db8",
+    "DAT": "e6376d3836cb1fdfc65c7cfaf314044af96bde3442fc2a699c0841a4d2c6feef"
+  },
+  "components": {
+    "AP": {
+      "bytes": 97583104,
+      "sha256": "e403e98212fc20056e0f876f7b8312cf48f9bfe5122b9954cb4e3e45e0d61937"
+    },
+    "CP": {
+      "bytes": 17617008,
+      "sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+    },
+    "AVCAM": {
+      "bytes": 12958672,
+      "sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b"
+    },
+    "MPR": {
+      "bytes": 3606928,
+      "sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478"
+    }
+  },
+  "resource_manifest_sha256": "ce359c1d9b568425d308ae4706c56ea3a8d384c2d6b23c90331549fd7fd92c9a",
+  "resources": 70,
+  "partitions": {
+    "nflasha8": {
+      "bytes": 24531968,
+      "sha256": "15b9f91c85e8c938e6322aa48811a8d0192864bd85457f30358074054ed20429"
+    },
+    "nflasha15": {
+      "bytes": 410652672,
+      "sha256": "f0c38732f746017489945084f769468679048e62e870367292eb7ae9c719f20c"
+    },
+    "nflasha3": {
+      "bytes": 31803392,
+      "sha256": "d79845e753bd786058d14b50209f877e5f1799b649f0619a64860915d77d9631"
+    },
+    "nflasha5": {
+      "bytes": 243789184,
+      "sha256": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693"
+    }
+  },
+  "RAW": "Full Bayer, DefaultCrop and SonyCrop preserved; shared embedded JPEG previews crop with JPEG/HEIF and their private size declarations are synchronized.",
+  "ratios": [
+    "809/500",
+    "239/100",
+    "5/4",
+    "37/20"
+  ],
+  "menu_order": [
+    0,
+    4,
+    1,
+    6,
+    2,
+    7,
+    5,
+    3
+  ],
+  "limitation": "Offline partition integration; actual camera encoding, rendering and startup untested."
+}

@@ -1,0 +1,11 @@
+{
+  "baseline": "4.55",
+  "files": {
+    "r5_filter_page425.c": "4c863af9a970387447b6b40a9bc30d91a687c8c545ae37a9f8d2bbb11719dd43",
+    "r5_filter_renderer423.S": "07072985be98bdc75abd4a8e2ce77dcfc0aa0eea108abc1870831468ad7994e2",
+    "r5_filter_menu423.h": "f24dc35ed16e4b682407eaaf7d8eb59cf7fd9a8731bfd9045d6c7c317a497c47",
+    "r5_filter_renderer423.c": "01d0c2034f0930abcff705d1a551ffd0f2279c5ce436a8e4881f8af72ac7690d",
+    "r5_sound_menu437.h": "3f81c15a7465df6ff0a4dc18f3ed820c6d196906c2de05d29c4de552503864f4"
+  },
+  "changes": "Page setup/project/text layout only; controller/async functions retained"
+}

@@ -1,0 +1,225 @@
+{
+  "passed": true,
+  "version": "4.57",
+  "resource_only": true,
+  "banks": [
+    {
+      "bank": "image_00_23_IPSX.uxc",
+      "changed_images": [
+        {
+          "id": "0x2001e80",
+          "changed_pixels": 85,
+          "blocks": [
+            {
+              "compressed_bytes": 574,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 252,
+              "decoded_bytes": 2304
+            }
+          ]
+        },
+        {
+          "id": "0x2001e90",
+          "changed_pixels": 85,
+          "blocks": [
+            {
+              "compressed_bytes": 322,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 565,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ]
+        },
+        {
+          "id": "0x2001e94",
+          "changed_pixels": 81,
+          "blocks": [
+            {
+              "compressed_bytes": 307,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 516,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ]
+        }
+      ],
+      "all_other_payloads_exact": true
+    },
+    {
+      "bank": "image_00_32_IPSX.uxc",
+      "changed_images": [
+        {
+          "id": "0x2001e80",
+          "changed_pixels": 126,
+          "blocks": [
+            {
+              "compressed_bytes": 530,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 266,
+              "decoded_bytes": 2304
+            }
+          ]
+        },
+        {
+          "id": "0x2001e83",
+          "changed_pixels": 110,
+          "blocks": [
+            {
+              "compressed_bytes": 507,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 268,
+              "decoded_bytes": 2304
+            }
+          ]
+        },
+        {
+          "id": "0x2001e90",
+          "changed_pixels": 126,
+          "blocks": [
+            {
+              "compressed_bytes": 335,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 509,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ]
+        },
+        {
+          "id": "0x2001e93",
+          "changed_pixels": 110,
+          "blocks": [
+            {
+              "compressed_bytes": 319,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 539,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ]
+        },
+        {
+          "id": "0x2001e94",
+          "changed_pixels": 125,
+          "blocks": [
+            {
+              "compressed_bytes": 311,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 487,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ]
+        },
+        {
+          "id": "0x2001e97",
+          "changed_pixels": 103,
+          "blocks": [
+            {
+              "compressed_bytes": 304,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 492,
+              "decoded_bytes": 4096
+            },
+            {
+              "compressed_bytes": 56,
+              "decoded_bytes": 1408
+            }
+          ]
+        }
+      ],
+      "all_other_payloads_exact": true
+    }
+  ],
+  "optical_changes": [
+    {
+      "variant": "23",
+      "selected": false,
+      "label": "1.618:1",
+      "middle_one_left_shift_px": 1.5,
+      "original_six_ink_exact": true
+    },
+    {
+      "variant": "23",
+      "selected": true,
+      "label": "1.618:1",
+      "middle_one_left_shift_px": 1.5,
+      "original_six_ink_exact": true
+    },
+    {
+      "variant": "32",
+      "selected": false,
+      "label": "1.618:1",
+      "middle_one_left_shift_px": 3,
+      "original_six_ink_exact": true
+    },
+    {
+      "variant": "32",
+      "selected": false,
+      "label": "1.85:1",
+      "five_source_23": true,
+      "target_height17": true,
+      "endpoint_rows_exact": true,
+      "width10": true
+    },
+    {
+      "variant": "32",
+      "selected": true,
+      "label": "1.618:1",
+      "middle_one_left_shift_px": 3,
+      "original_six_ink_exact": true
+    },
+    {
+      "variant": "32",
+      "selected": true,
+      "label": "1.85:1",
+      "five_source_23": true,
+      "target_height17": true,
+      "endpoint_rows_exact": true,
+      "width10": true
+    }
+  ],
+  "strings_exact": 68,
+  "runtime_sources_exact": 209,
+  "playback_payloads_exact": true,
+  "plate_dimensions_ids_exact": true,
+  "menu_is_fn_slice": true,
+  "host_pixel_preview_only": true,
+  "camera_io": false,
+  "device_tested": false
+}

@@ -1,0 +1,8087 @@
+{
+  "passed": true,
+  "camera_io": false,
+  "device_tested": false,
+  "original_files_modified": false,
+  "scenarios": 264,
+  "failure_scenarios": 28,
+  "rows": [
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        968
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        600
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        1000
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        680
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        872
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        208
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        208
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        1080
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1920,
+        1080
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1920,
+        720
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1344,
+        1080
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1264,
+        1080
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        192
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        120
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        200
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        136
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        176
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        212
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        212,
+        320
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        0
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        0,
+        320
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2304
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        0,
+        0
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1,
+        1
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        65535,
+        65535
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        224,
+        208
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        200
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        207
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        209
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        216
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        200
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        207
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        209
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        216
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        272,
+        208
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1600,
+        600
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1600,
+        680
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1600,
+        872
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1600,
+        968
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1600,
+        1000
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        592
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        599
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        601
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        608
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        672
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        679
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        681
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        688
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        864
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        871
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        873
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        880
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        960
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        967
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        969
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        976
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        992
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        999
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        1001
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        1008
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1632,
+        600
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1632,
+        680
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1632,
+        872
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1632,
+        968
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1632,
+        1000
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        968
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        600
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        1000
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        680
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        872
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        208
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        208
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        1080
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1920,
+        1080
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1920,
+        720
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1344,
+        1080
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1264,
+        1080
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        192
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        120
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        200
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        136
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        176
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        212
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        212,
+        320
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        320,
+        0
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        0,
+        320
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2304
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        0,
+        0
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1,
+        1
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        65535,
+        65535
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        224,
+        208
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        200
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        207
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        209
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        216
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        200
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        207
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        209
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        216
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        272,
+        208
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1600,
+        600
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1600,
+        680
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1600,
+        872
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1600,
+        968
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1600,
+        1000
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        592
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        599
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        601
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        608
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        672
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        679
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        681
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        688
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        864
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        871
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        873
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        880
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        960
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        967
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        969
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        976
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        992
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        999
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        1001
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        1008
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1632,
+        600
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1632,
+        680
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1632,
+        872
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1632,
+        968
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1632,
+        1000
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        968
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        600
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        1000
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        680
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        872
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        208
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        208
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        1080
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1920,
+        1080
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1920,
+        720
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1344,
+        1080
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1264,
+        1080
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        192
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        120
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        200
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        136
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        176
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        212
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        212,
+        320
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        0
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        0,
+        320
+      ],
+      "variant": "first",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        6336
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        2304
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        0,
+        0
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1,
+        1
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        65535,
+        65535
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        224,
+        208
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        200
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        207
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        209
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        216
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        200
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        207
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        209
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        216
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        272,
+        208
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1600,
+        600
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1600,
+        680
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1600,
+        872
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1600,
+        968
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1600,
+        1000
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        592
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        599
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        601
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        608
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        672
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        679
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        681
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        688
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        864
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        871
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        873
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        880
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        960
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        967
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        969
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        976
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        992
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        999
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        1001
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        1008
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1632,
+        600
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1632,
+        680
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1632,
+        872
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1632,
+        968
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1632,
+        1000
+      ],
+      "variant": "first",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        968
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        600
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        1000
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        680
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        872
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        208
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        208
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        1080
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1920,
+        1080
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1920,
+        720
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1344,
+        1080
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1264,
+        1080
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 1,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        192
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        120
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        200
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        136
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        176
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        212
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        212,
+        320
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        320,
+        0
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        0,
+        320
+      ],
+      "variant": "second",
+      "before": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 1,
+        "classification": 2,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        9504,
+        6336
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        6240,
+        2304
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        0,
+        0
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1,
+        1
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        65535,
+        65535
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        224,
+        208
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        200
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        207
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        209
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        216
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        200
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        207
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        209
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        216
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        272,
+        208
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1600,
+        600
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1600,
+        680
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1600,
+        872
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1600,
+        968
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1600,
+        1000
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        592
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        599
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        601
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        608
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        672
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        679
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        681
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        688
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        864
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        871
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        873
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        880
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        960
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        967
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        969
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        976
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        992
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        999
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        1001
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        1008
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1632,
+        600
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1632,
+        680
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1632,
+        872
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1632,
+        968
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1632,
+        1000
+      ],
+      "variant": "second",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c",
+          "0x266ad4",
+          "0x267030",
+          "0x26717c"
+        ]
+      }
+    }
+  ],
+  "failure_rows": [
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        968
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        600
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        1000
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        680
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        872
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        208
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        208
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        968
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        600
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        1000
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        680
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        1616,
+        872
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        256,
+        208
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 0,
+      "WH": [
+        240,
+        208
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        968
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        600
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        1000
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        680
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        872
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        208
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        208
+      ],
+      "variant": "missing",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        968
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        600
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        1000
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        680
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        1616,
+        872
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        256,
+        208
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    },
+    {
+      "bias": 268435456,
+      "WH": [
+        240,
+        208
+      ],
+      "variant": "version1",
+      "before": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      },
+      "after": {
+        "result": 0,
+        "classification": 4,
+        "native_queries": [
+          "0x26699c"
+        ]
+      }
+    }
+  ],
+  "mapped_PT_PHDR_rows": [
+    {
+      "bias": 0,
+      "mapped_PT_PHDR": 4587520,
+      "bytes": 392,
+      "sha256": "5f91b9c2bedf7a9ec2c3ea5d730e215eff6d639f7a8ebc90d004675b04c8cd44"
+    },
+    {
+      "bias": 268435456,
+      "mapped_PT_PHDR": 273022976,
+      "bytes": 392,
+      "sha256": "5f91b9c2bedf7a9ec2c3ea5d730e215eff6d639f7a8ebc90d004675b04c8cd44"
+    }
+  ],
+  "added_exact_pairs": {
+    "SCN": [
+      [
+        1616,
+        968
+      ],
+      [
+        1616,
+        600
+      ],
+      [
+        1616,
+        1000
+      ],
+      [
+        1616,
+        680
+      ],
+      [
+        1616,
+        872
+      ]
+    ],
+    "THM": [
+      [
+        256,
+        208
+      ],
+      [
+        240,
+        208
+      ]
+    ]
+  },
+  "stock_library_sha256": "ba1aa289a142c2d0b41d0864a57a0d72a2c796de89c5caf215ebaf124143e9af",
+  "library_sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478",
+  "script_sha256": "de656fb0edad601869305265b7f0577647fe8cdddd5cb97bf0402e3fe7068b8a",
+  "reverse_exact": true,
+  "native": [
+    "full2670c4 entry-to-ret",
+    "26699c ipma query",
+    "266ad4 ipco iteration",
+    "267030 BE ispe byte reading"
+  ],
+  "models": [
+    "合成parsed iprp，两属性和真实ipma关联",
+    "只替代诊断打印/传输",
+    "PT_LOAD映射与PT_PHDR实际内存比对，非完整OS动态loader"
+  ],
+  "limitations": [
+    "不执行完整HEIF文件解析、硬件HEVC或屏幕回放",
+    "真实原片完整parser验收为独立证据"
+  ]
+}

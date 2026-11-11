@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "case": "fn",
+  "AP": "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_filter_native_style_20261110/candidate-c/appFw-NONINSTALLABLE.so",
+  "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac",
+  "module": "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/build-d",
+  "module_manifest_sha256": "22bec8a57a39ff7c66016bbc84e4e168206cebda4a0be49c1b31b62cf0528a14",
+  "module_rx_sha256": "206c18f9eabd18ae3ab54eb9d6ebd41611d092167716d4b734521470cd69a1ec",
+  "invocation": [
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/replay_fn_native.py",
+    "--candidate",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_filter_native_style_20261110/candidate-c/appFw-NONINSTALLABLE.so",
+    "--module",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/build-d",
+    "--output",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/stream/final-style-ui/fn.json"
+  ],
+  "receipt": "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/stream/final-style-ui/fn.json",
+  "receipt_sha256": "81c8d34a18cd591c374e5bfa8c461282f2a128645d94b7ffa1becf688ec92cb3",
+  "source_hashes": {
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/replay_fn_native.py": "fe3b62ca2d1be089511f2321e143d985a2f3bb5004a92d944dff6425f69ac19b",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/stream/rebind_ui_case.py": "5658e7727d69959eff686820c35135a750dd4523f7dfe728797eb50749b4c477",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/integration/inspect_ap.py": "3c102bbc8151778e748ae7cba42199a877b23da4df051bf0de3457faaea9f6e0",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ap/replay_ap.py": "70b700531c9fd959f82e6b3d3c846ae2582ee90ee37abf866bcd1ed207123788",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/integration/replay_final_ap.py": "c41da769b3e17b19f9d3e09737aeb02e9dffce8dee7518ff27b9cd9f5db3a151",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/replay_ui_support.py": "567b87b004b93d747993fb0bac37af0ade38a812e462cdea8172534a4383e46b",
+    "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_aspect456_20261110/ui/replay_ui.py": "2d837be5b80a14f754ef80e59e2542e97bf658bb1b852f2e2f71c3ee2953849d"
+  },
+  "no_runtime_production_overlay": true,
+  "device_tested": false,
+  "legacy_lifecycle_AP_binding": null
+}

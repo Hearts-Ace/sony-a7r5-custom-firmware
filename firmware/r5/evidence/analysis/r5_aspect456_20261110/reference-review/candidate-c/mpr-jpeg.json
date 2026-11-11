@@ -1,0 +1,3272 @@
+{
+  "passed": true,
+  "camera_io": false,
+  "device_tested": false,
+  "library_sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478",
+  "legacy_library_sha256": "ba1aa289a142c2d0b41d0864a57a0d72a2c796de89c5caf215ebaf124143e9af",
+  "stock_library_sha256": "ba1aa289a142c2d0b41d0864a57a0d72a2c796de89c5caf215ebaf124143e9af",
+  "script_sha256": "df8b8585ccaf47ec449a93dc937b277269fd5e27a3d82305d1307d697cbc9aca",
+  "dependency_sha256": {
+    "tests/mpr_native.py": "fa511c04d47276a6f0ac20543ddc916dc6398bd4488221d3710d78af385fa658",
+    "source/mpr_jpeg_metadata.c": "f04a35979aa1ceaea849832c15a33f10b4e04653bd49a0b05dc38742fb97897b",
+    "mpr_patch.py": "deff07037c76f7a8b40175d4e50bef78d4c6974405c4c1f217fb1fb0839a542d"
+  },
+  "cases": 74,
+  "controls": 24,
+  "failure_cases": 32,
+  "old_library_rejections": 24,
+  "rows": [
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        9504,
+        5872
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        5872,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        5872,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "8a6d8931b67a2ef4d45a507f5795e8b565410e6971d96844866223bcd9f99355"
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        9504,
+        5872
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        5872,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        5872,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "29b8240d7e61f62ac135bc1ce6ea2d063a3644fb6d49cbb0207413f3664d2be1"
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        6240,
+        3856
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        3856,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        3856,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "7d5f722575493c47635078fe0d5426cd38718ceba9224ed65a2c058966849284"
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        6240,
+        3856
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        3856,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        3856,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "def584243cf146909f54d679ead4967a3341e8c06183bec0fcabe80fe5d08180"
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        4752,
+        2936
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        2936,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        2936,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "48f87864f8cd6c6d2b6d31b5529c546fa543aa13568b75f1c52686d1aea59d84"
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        4752,
+        2936
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        2936,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        2936,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "4072786b8b50c5bc18936bbc245d7fa0e271f44d32db3055c5ad0056bc729df9"
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        9504,
+        3976
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        3976,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        3976,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "2d6f85f977d100edc52fa1f76449792cd7998f465b003701953eb7ecb0e463a1"
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        9504,
+        3976
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        3976,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        3976,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "3211fd2af06785c2f62ab7e9eaaee924b8c7bdf9e8b4bb8a716ed39c449f00bd"
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        6240,
+        2608
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        2608,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        2608,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "6d187dcd65667d98ffda672be7075c4be27e2d007431d3ea0858735c16cd31f5"
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        6240,
+        2608
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        2608,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        2608,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "006c775b794dbd3f1d3f30de5d9defa986561de37497a493894193116633ed77"
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        4752,
+        1992
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        1992,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        1992,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "239670fcab23a6458cc88bd057d6d686c5d83941ba60f6f6f0d7801e6993e141"
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        4752,
+        1992
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        1992,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        1992,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "cc1fe05e39614fc6441ec40d9f54dfaf1700535975b52e52108348db8718428b"
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        7920,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        7920,
+        6336,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        7920,
+        6336,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "8c063122ed0619f6c804d9788d8f0efc08631c5cbed6b5dae498779ea443ca4b"
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        7920,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        7920,
+        6336,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        7920,
+        6336,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "0bd2ff8653afe887271c95272238f53f4516bea6efadbfc0cb16a7f837c5fc44"
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        5200,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        5200,
+        4160,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        5200,
+        4160,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "a8235d7c3f79072a826700f8059bf64e03fcaec02432abdefa9faa2dd64d089e"
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        5200,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        5200,
+        4160,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        5200,
+        4160,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "3e8e6ead4088f9ef437b8bfc6a2d062670b6adc5e00705d40058d986a33802e7"
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        3968,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        3968,
+        3168,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        3968,
+        3168,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "cf3f7b90cf8cc647813909bf6f567c29209a2bc6c92abcb7797292985a167c61"
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        3968,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        3968,
+        3168,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        3968,
+        3168,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "2ad87f703c925333ec82553415533c567877c1e71209e2fc5ae1f17862d56502"
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        9504,
+        5136
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        5136,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        5136,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "ca90c9123a2624f566e229d9f431660efb02f9500fedbf331c8c7b632db591cf"
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        9504,
+        5136
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        5136,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        5136,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "fb7923f5d387a84bb000ba08b3f9a35db8bd1d21d3455bf2345f3bce5507a1ed"
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        6240,
+        3376
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        3376,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        3376,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "a24fd998ce7ea48410aa58f8fbf40727ae1508d6cc03cac1d28819533d5548fb"
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        6240,
+        3376
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        3376,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        3376,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "d6a4b1133979d18fc7aea41a659eefd7b9c799f638cf28d595f866db27492b5c"
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "Exif_WH": [
+        4752,
+        2568
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        2568,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        2568,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "36047a72afa59b7b3e461f5ac184cb5f8161f2bf7a4ce4317beed3c99efe3091"
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 0,
+      "prefix": "DQT",
+      "Exif_WH": [
+        4752,
+        2568
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        2568,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        2568,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "02de1539c12531538b5fd51815f412700656a5485765debbb14b37b10586a9a6"
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "source_WH": [
+        9504,
+        5872
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        9504,
+        5872,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        9504,
+        5872
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "source_WH": [
+        6240,
+        3856
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        6240,
+        3856,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        6240,
+        3856
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "source_WH": [
+        4752,
+        2936
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        4752,
+        2936,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        4752,
+        2936
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "source_WH": [
+        9504,
+        3976
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        9504,
+        3976,
+        1,
+        9
+      ],
+      "Exif_WH": [
+        9504,
+        3976
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "source_WH": [
+        6240,
+        2608
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        6240,
+        2608,
+        1,
+        9
+      ],
+      "Exif_WH": [
+        6240,
+        2608
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "source_WH": [
+        4752,
+        1992
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        4752,
+        1992,
+        1,
+        9
+      ],
+      "Exif_WH": [
+        4752,
+        1992
+      ]
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "source_WH": [
+        7920,
+        6336
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        7920,
+        6336,
+        1,
+        5
+      ],
+      "Exif_WH": [
+        7920,
+        6336
+      ]
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "source_WH": [
+        5200,
+        4160
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        5200,
+        4160,
+        1,
+        5
+      ],
+      "Exif_WH": [
+        5200,
+        4160
+      ]
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "source_WH": [
+        3968,
+        3168
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        3968,
+        3168,
+        1,
+        5
+      ],
+      "Exif_WH": [
+        3968,
+        3168
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "source_WH": [
+        9504,
+        5136
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        9504,
+        5136,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        9504,
+        5136
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "source_WH": [
+        6240,
+        3376
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        6240,
+        3376,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        6240,
+        3376
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "source_WH": [
+        4752,
+        2568
+      ],
+      "bias": 0,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        4752,
+        2568,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        4752,
+        2568
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "bias": 0,
+      "prefix": "SOF-complete-at-0x800",
+      "Exif_WH": [
+        9504,
+        5872
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        9504,
+        5872
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        5872,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        5872,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "8a6d8931b67a2ef4d45a507f5795e8b565410e6971d96844866223bcd9f99355"
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        9504,
+        5872
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        5872,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        5872,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "29b8240d7e61f62ac135bc1ce6ea2d063a3644fb6d49cbb0207413f3664d2be1"
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        6240,
+        3856
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        3856,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        3856,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "7d5f722575493c47635078fe0d5426cd38718ceba9224ed65a2c058966849284"
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        6240,
+        3856
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        3856,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        3856,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "def584243cf146909f54d679ead4967a3341e8c06183bec0fcabe80fe5d08180"
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        4752,
+        2936
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        2936,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        2936,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "48f87864f8cd6c6d2b6d31b5529c546fa543aa13568b75f1c52686d1aea59d84"
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        4752,
+        2936
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        2936,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        2936,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "4072786b8b50c5bc18936bbc245d7fa0e271f44d32db3055c5ad0056bc729df9"
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        9504,
+        3976
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        3976,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        3976,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "2d6f85f977d100edc52fa1f76449792cd7998f465b003701953eb7ecb0e463a1"
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        9504,
+        3976
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        3976,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        3976,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "3211fd2af06785c2f62ab7e9eaaee924b8c7bdf9e8b4bb8a716ed39c449f00bd"
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        6240,
+        2608
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        2608,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        2608,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "6d187dcd65667d98ffda672be7075c4be27e2d007431d3ea0858735c16cd31f5"
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        6240,
+        2608
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        2608,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        2608,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "006c775b794dbd3f1d3f30de5d9defa986561de37497a493894193116633ed77"
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        4752,
+        1992
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        1992,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        1992,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "239670fcab23a6458cc88bd057d6d686c5d83941ba60f6f6f0d7801e6993e141"
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        4752,
+        1992
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        1992,
+        1,
+        9
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        1992,
+        1,
+        9
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "cc1fe05e39614fc6441ec40d9f54dfaf1700535975b52e52108348db8718428b"
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        7920,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        7920,
+        6336,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        7920,
+        6336,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "8c063122ed0619f6c804d9788d8f0efc08631c5cbed6b5dae498779ea443ca4b"
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        7920,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        7920,
+        6336,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        7920,
+        6336,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "0bd2ff8653afe887271c95272238f53f4516bea6efadbfc0cb16a7f837c5fc44"
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        5200,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        5200,
+        4160,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        5200,
+        4160,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "a8235d7c3f79072a826700f8059bf64e03fcaec02432abdefa9faa2dd64d089e"
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        5200,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        5200,
+        4160,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        5200,
+        4160,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "3e8e6ead4088f9ef437b8bfc6a2d062670b6adc5e00705d40058d986a33802e7"
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        3968,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        3968,
+        3168,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        3968,
+        3168,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "cf3f7b90cf8cc647813909bf6f567c29209a2bc6c92abcb7797292985a167c61"
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        3968,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        3968,
+        3168,
+        1,
+        5
+      ],
+      "native_getter_geometry": [
+        1,
+        3968,
+        3168,
+        1,
+        5
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "2ad87f703c925333ec82553415533c567877c1e71209e2fc5ae1f17862d56502"
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        9504,
+        5136
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        5136,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        5136,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "ca90c9123a2624f566e229d9f431660efb02f9500fedbf331c8c7b632db591cf"
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "source_WH": [
+        9504,
+        6336
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        9504,
+        5136
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        5136,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        9504,
+        5136,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "fb7923f5d387a84bb000ba08b3f9a35db8bd1d21d3455bf2345f3bce5507a1ed"
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        6240,
+        3376
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        3376,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        3376,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "a24fd998ce7ea48410aa58f8fbf40727ae1508d6cc03cac1d28819533d5548fb"
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "source_WH": [
+        6240,
+        4160
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        6240,
+        3376
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        3376,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        6240,
+        3376,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "d6a4b1133979d18fc7aea41a659eefd7b9c799f638cf28d595f866db27492b5c"
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "Exif_WH": [
+        4752,
+        2568
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        2568,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        2568,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "36047a72afa59b7b3e461f5ac184cb5f8161f2bf7a4ce4317beed3c99efe3091"
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "source_WH": [
+        4752,
+        3168
+      ],
+      "bias": 268435456,
+      "prefix": "DQT",
+      "Exif_WH": [
+        4752,
+        2568
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        2568,
+        0,
+        0
+      ],
+      "native_getter_geometry": [
+        1,
+        4752,
+        2568,
+        0,
+        0
+      ],
+      "source_unchanged": true,
+      "add_if_unchanged": true,
+      "private_source_bytes": 188,
+      "header_sha256": "02de1539c12531538b5fd51815f412700656a5485765debbb14b37b10586a9a6"
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "source_WH": [
+        9504,
+        5872
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        9504,
+        5872,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        9504,
+        5872
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "source_WH": [
+        6240,
+        3856
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        6240,
+        3856,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        6240,
+        3856
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "source_WH": [
+        4752,
+        2936
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        4752,
+        2936,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        4752,
+        2936
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "source_WH": [
+        9504,
+        3976
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        9504,
+        3976,
+        1,
+        9
+      ],
+      "Exif_WH": [
+        9504,
+        3976
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "source_WH": [
+        6240,
+        2608
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        6240,
+        2608,
+        1,
+        9
+      ],
+      "Exif_WH": [
+        6240,
+        2608
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "source_WH": [
+        4752,
+        1992
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        4752,
+        1992,
+        1,
+        9
+      ],
+      "Exif_WH": [
+        4752,
+        1992
+      ]
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "source_WH": [
+        7920,
+        6336
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        7920,
+        6336,
+        1,
+        5
+      ],
+      "Exif_WH": [
+        7920,
+        6336
+      ]
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "source_WH": [
+        5200,
+        4160
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        5200,
+        4160,
+        1,
+        5
+      ],
+      "Exif_WH": [
+        5200,
+        4160
+      ]
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "source_WH": [
+        3968,
+        3168
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        3968,
+        3168,
+        1,
+        5
+      ],
+      "Exif_WH": [
+        3968,
+        3168
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "source_WH": [
+        9504,
+        5136
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        9504,
+        5136,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        9504,
+        5136
+      ]
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "source_WH": [
+        6240,
+        3376
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        6240,
+        3376,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        6240,
+        3376
+      ]
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "source_WH": [
+        4752,
+        2568
+      ],
+      "bias": 268435456,
+      "prefix": "SOI",
+      "source_already_exact": true,
+      "cache_geometry": [
+        1,
+        4752,
+        2568,
+        0,
+        0
+      ],
+      "Exif_WH": [
+        4752,
+        2568
+      ]
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "bias": 268435456,
+      "prefix": "SOF-complete-at-0x800",
+      "Exif_WH": [
+        9504,
+        5872
+      ]
+    }
+  ],
+  "control_rows": [
+    {
+      "WH": [
+        9504,
+        6336
+      ],
+      "bias": 0,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        9504,
+        5344
+      ],
+      "bias": 0,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        8448,
+        6336
+      ],
+      "bias": 0,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        6336,
+        6336
+      ],
+      "bias": 0,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        1234,
+        987
+      ],
+      "bias": 0,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        9520,
+        5872
+      ],
+      "bias": 0,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        9504,
+        5880
+      ],
+      "bias": 0,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        9504,
+        5144
+      ],
+      "bias": 0,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "kind": "RAW",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "kind": "HEIF",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "kind": "same-JPEG-object-pending-adds",
+      "history": [
+        {
+          "WH": [
+            9504,
+            5872
+          ],
+          "source_pointer": "0x500013c0",
+          "cache_geometry": [
+            1,
+            9504,
+            5872,
+            0,
+            0
+          ]
+        },
+        {
+          "WH": [
+            9504,
+            5136
+          ],
+          "source_pointer": "0x500013c0",
+          "cache_geometry": [
+            1,
+            9504,
+            5136,
+            0,
+            0
+          ]
+        },
+        {
+          "WH": [
+            9504,
+            6336
+          ],
+          "source_pointer": "0x52000000",
+          "cache_geometry": [
+            1,
+            9504,
+            6336,
+            1,
+            0
+          ]
+        }
+      ],
+      "final_Exif_WH": [
+        9504,
+        6336
+      ],
+      "GEN_unchanged_during_each_add": true
+    },
+    {
+      "bias": 0,
+      "kind": "same-JPEG-object-pending-adds",
+      "history": [
+        {
+          "WH": [
+            9504,
+            6336
+          ],
+          "source_pointer": "0x52000000",
+          "cache_geometry": [
+            1,
+            9504,
+            6336,
+            1,
+            0
+          ]
+        },
+        {
+          "WH": [
+            9504,
+            5872
+          ],
+          "source_pointer": "0x500013c0",
+          "cache_geometry": [
+            1,
+            9504,
+            5872,
+            0,
+            0
+          ]
+        },
+        {
+          "WH": [
+            9504,
+            5136
+          ],
+          "source_pointer": "0x500013c0",
+          "cache_geometry": [
+            1,
+            9504,
+            5136,
+            0,
+            0
+          ]
+        }
+      ],
+      "final_Exif_WH": [
+        9504,
+        5136
+      ],
+      "GEN_unchanged_during_each_add": true
+    },
+    {
+      "WH": [
+        9504,
+        6336
+      ],
+      "bias": 268435456,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        9504,
+        5344
+      ],
+      "bias": 268435456,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        8448,
+        6336
+      ],
+      "bias": 268435456,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        6336,
+        6336
+      ],
+      "bias": 268435456,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        1234,
+        987
+      ],
+      "bias": 268435456,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        9520,
+        5872
+      ],
+      "bias": 268435456,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        9504,
+        5880
+      ],
+      "bias": 268435456,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "WH": [
+        9504,
+        5144
+      ],
+      "bias": 268435456,
+      "kind": "native-or-unknown",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "kind": "RAW",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "kind": "HEIF",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "kind": "same-JPEG-object-pending-adds",
+      "history": [
+        {
+          "WH": [
+            9504,
+            5872
+          ],
+          "source_pointer": "0x500013c0",
+          "cache_geometry": [
+            1,
+            9504,
+            5872,
+            0,
+            0
+          ]
+        },
+        {
+          "WH": [
+            9504,
+            5136
+          ],
+          "source_pointer": "0x500013c0",
+          "cache_geometry": [
+            1,
+            9504,
+            5136,
+            0,
+            0
+          ]
+        },
+        {
+          "WH": [
+            9504,
+            6336
+          ],
+          "source_pointer": "0x52000000",
+          "cache_geometry": [
+            1,
+            9504,
+            6336,
+            1,
+            0
+          ]
+        }
+      ],
+      "final_Exif_WH": [
+        9504,
+        6336
+      ],
+      "GEN_unchanged_during_each_add": true
+    },
+    {
+      "bias": 268435456,
+      "kind": "same-JPEG-object-pending-adds",
+      "history": [
+        {
+          "WH": [
+            9504,
+            6336
+          ],
+          "source_pointer": "0x52000000",
+          "cache_geometry": [
+            1,
+            9504,
+            6336,
+            1,
+            0
+          ]
+        },
+        {
+          "WH": [
+            9504,
+            5872
+          ],
+          "source_pointer": "0x500013c0",
+          "cache_geometry": [
+            1,
+            9504,
+            5872,
+            0,
+            0
+          ]
+        },
+        {
+          "WH": [
+            9504,
+            5136
+          ],
+          "source_pointer": "0x500013c0",
+          "cache_geometry": [
+            1,
+            9504,
+            5136,
+            0,
+            0
+          ]
+        }
+      ],
+      "final_Exif_WH": [
+        9504,
+        5136
+      ],
+      "GEN_unchanged_during_each_add": true
+    }
+  ],
+  "failure_rows": [
+    {
+      "bias": 0,
+      "input": "empty",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "short",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "no-SOI-DQT",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "SOF-length",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "precision12",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "one-component",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "width-zero",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "height-zero",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "SOF1",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "prefix-before-SOI",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "invalid-length",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "segment-over-bound",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "SOF-one-byte-past-bound",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "SOS-before-SOF",
+      "unchanged": true
+    },
+    {
+      "bias": 0,
+      "input": "native-header-state-rejection",
+      "library_sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478",
+      "result": -1
+    },
+    {
+      "bias": 0,
+      "input": "native-header-state-rejection",
+      "library_sha256": "ba1aa289a142c2d0b41d0864a57a0d72a2c796de89c5caf215ebaf124143e9af",
+      "result": -1
+    },
+    {
+      "bias": 268435456,
+      "input": "empty",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "short",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "no-SOI-DQT",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "SOF-length",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "precision12",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "one-component",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "width-zero",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "height-zero",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "SOF1",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "prefix-before-SOI",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "invalid-length",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "segment-over-bound",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "SOF-one-byte-past-bound",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "SOS-before-SOF",
+      "unchanged": true
+    },
+    {
+      "bias": 268435456,
+      "input": "native-header-state-rejection",
+      "library_sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478",
+      "result": -1
+    },
+    {
+      "bias": 268435456,
+      "input": "native-header-state-rejection",
+      "library_sha256": "ba1aa289a142c2d0b41d0864a57a0d72a2c796de89c5caf215ebaf124143e9af",
+      "result": -1
+    }
+  ],
+  "old_rows": [
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        9504,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        6336,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        6240,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        4160,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        4752,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        3168,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        9504,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        6336,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        6240,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        4160,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        4752,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        3168,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        9504,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        6336,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        6240,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        4160,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        4752,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        3168,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        9504,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        6336,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        6240,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        4160,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "bias": 0,
+      "Exif_WH": [
+        4752,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        3168,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        9504,
+        5872
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        9504,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        6336,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        6240,
+        3856
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        6240,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        4160,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        4752,
+        2936
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        4752,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        3168,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        9504,
+        3976
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        9504,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        6336,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        6240,
+        2608
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        6240,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        4160,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        4752,
+        1992
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        4752,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        3168,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        7920,
+        6336
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        9504,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        6336,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        5200,
+        4160
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        6240,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        4160,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        3968,
+        3168
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        4752,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        3168,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        9504,
+        5136
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        9504,
+        6336
+      ],
+      "cache_geometry": [
+        1,
+        9504,
+        6336,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        6240,
+        3376
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        6240,
+        4160
+      ],
+      "cache_geometry": [
+        1,
+        6240,
+        4160,
+        1,
+        0
+      ],
+      "rejected": true
+    },
+    {
+      "WH": [
+        4752,
+        2568
+      ],
+      "bias": 268435456,
+      "Exif_WH": [
+        4752,
+        3168
+      ],
+      "cache_geometry": [
+        1,
+        4752,
+        3168,
+        1,
+        0
+      ],
+      "rejected": true
+    }
+  ],
+  "native": [
+    "JPEG27079c constructor",
+    "complete27420c add and original273bbc CamMeta builder",
+    "274548/274114 complete generic cache get",
+    "complete274730 header wrapper and271f9c JPEG header including27ce1c TIFF serialization",
+    "complete270c48 JPEG get and278800 Exif geometry/classification"
+  ],
+  "models": [
+    "heap/libc/pthread and equivalent DMA copy",
+    "current board model name ILCE-7RM5 explicitly initialized",
+    "XML_ParserCreate returns NULL: original XMP allocation-failure branch",
+    "SOF bytes supplied from completed encoder boundary; no pixel encoding"
+  ],
+  "limits": [
+    "not full record scheduler, MC encoding, card writing, AP GUI or camera acceptance",
+    "second loading bias configured through exact ELF segment/symbol/RELA rebasing; code bytes unchanged",
+    "old incorrectly declared files remain unchanged; fix applies when producing new JPEGs"
+  ]
+}

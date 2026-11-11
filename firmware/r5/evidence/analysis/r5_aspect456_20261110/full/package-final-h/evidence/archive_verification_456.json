@@ -1,0 +1,670 @@
+{
+  "passed": true,
+  "output_sha256": "6d310367d4931efeb5d3fa2c53d5ccc691e9b20cec60966191d50eb2c22733c4",
+  "changed_members": [
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_E38.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_J1.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_KR2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89200_UC2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_AF1.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_ALLLANG.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_AP2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_CEC.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_CN2.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_IN5.bin",
+    "0110_backup/SYSIPSX-DSLR/GL/CX89201_JE3.bin",
+    "0111_backup_sum/backup.sum",
+    "0700_part_image/dev/nflasha8",
+    "0700_part_image/dev/nflasha15",
+    "0700_part_image/dev/nflasha3",
+    "0700_part_image/dev/nflasha5",
+    "0701_part_image_sum/part_image.sum"
+  ],
+  "members": [
+    {
+      "member": "0100_config/big_backup.conf",
+      "sha256": "de103ba907fd36bc69ec323d2c8e94ad0d286e4894f7a9b9fe88b2669b33d417",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0100_config/mount.conf",
+      "sha256": "0ca833d35b80949f17585b37b8db1e35e767ea9f0dcd03c8c1ef747249750a30",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0101_config_sum/config.sum",
+      "sha256": "7c9d11e5dd7855784e81c8a658602caae31dbc1519f3e3e2de52558eb0d435eb",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/MainDest.txt",
+      "sha256": "72d796314aa439ec900791f13d890ff7a9af6c5414109205a4b0d549fb59fcb8",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_ALLLANG.bin",
+      "sha256": "f0281f9513fd247d1b32f2c7b6c6e6122788b097db41cad0bb61ed6b05495f37",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_E38.bin",
+      "sha256": "f025b3725d3824e4d851d3df0d234f224bf389bd92a8fb59818276347aebdff9",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_J1.bin",
+      "sha256": "fa27745f8b8694651df6bc55bffde4b8809ad7305b3a2851faecbac13cc99c75",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_KR2.bin",
+      "sha256": "cb0c7062f6ec1c7a2c0c2a604727d397f2a356e03abe912b11f2f1923db739a3",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89200_UC2.bin",
+      "sha256": "acc379d7f78603d30377d1fc47c25ecb4e6f74e5d211dd579906f3602d51826a",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_AF1.bin",
+      "sha256": "fc3619283668c15590eda179b72eee4e13c5c2aaf4f6971a187dc80ad2398203",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_ALLLANG.bin",
+      "sha256": "5de3b79bf557e749679b3c019a45ca81e7f236e250cf4428fbaca435f2be88be",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_AP2.bin",
+      "sha256": "bd008c2be586c3ca3d95d834e41ab77ed70504b2ad22c7bbfc18e2ff768a9668",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_CEC.bin",
+      "sha256": "6c6f98ca3060841955a06a1ac256636be7ece9bf39012485ed9ed339c441abcb",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_CN2.bin",
+      "sha256": "62161d753b7a2169357fab1a1a891b3e25f15d6a2e8a33ac7855617320010d8b",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_IN5.bin",
+      "sha256": "a0a2844f1aef419b501069f0602181fc42ecd17111204acbc589a954169d095c",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0110_backup/SYSIPSX-DSLR/GL/CX89201_JE3.bin",
+      "sha256": "900961d01664b17bf25fb2d399563fde9da6646b7a0a6dd0c58fd716654eabee",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0111_backup_sum/backup.sum",
+      "sha256": "3bb4488c4bc93a5cb5ff57ab9b4624ff444192145a1b908cbdeeb71718a8a2cc",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0300_partconf/partinf.conf",
+      "sha256": "9c072080269cdec8b0cff12bdfa9e3bb618d7b569e7caf1dd75e24d804fdabf7",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0301_partconf_sum/partconf.sum",
+      "sha256": "094207b8f6f937441b81bbcf5a03599136d9aa02ab3aaaefd557c201aa805285",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0640_darwin/darwin_core.bin",
+      "sha256": "526590bb94cafdc7e9c6f41c54a3bf8c7c9816e0a326e18ad5a75216339debd6",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0641_darwin_sum/darwin.sum",
+      "sha256": "e600c4a8e315e9557bb6669370d23480fbde7111cf232567e5dd7b550672d952",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/BSD_ETC.txt",
+      "sha256": "7ea438d3ae77b787fb8cb9de7f1da1a3302eb3770900ca29943712469da5dcf6",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/BTPROP.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/CP_TOPRS.txt",
+      "sha256": "1a8d6a75b8c89fb782d0a07f8f86b0a07853f89a6257989373bd8404cb1eb042",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/EULA.pdf",
+      "sha256": "b114fc06946d8eed3176861cdccae90198acd35664481f67a21b53b8d268c19e",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/GPL.txt",
+      "sha256": "016d78e01c6d4ab9ddfe526c1c8432b1ee3b207cbdd1fba77368579573f4612a",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/LGPL.txt",
+      "sha256": "ec01087ff6ea6e2d1a5567c20acb7ea65c7b54cabbe1e19a0912659c99655642",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/LGPLv2.txt",
+      "sha256": "18f17c4b55eb567a2d8576642d353186cc6bf99e9f678586498d1d9277849d21",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/LGPLv2_1.txt",
+      "sha256": "1e7e6bae5a5bde32f1ae5a7c37a082d1ab03cf89354f7f936ac40be9e39a6531",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/MIT.txt",
+      "sha256": "7516bd3a05377103bcae3fb4fc0281db346f9de1cc39834cecad0531c7923b29",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/MPLv2.txt",
+      "sha256": "cde215e5b42363eb28ca2462c4558ff4807b38f383c537624c31e44657ac58f4",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/NEWLIB.txt",
+      "sha256": "1efc9b230b4c2a549bdc0af41546808c605bcd3d85848fc904fd3ceeb189ba08",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/WCNSSFLT.txt",
+      "sha256": "e7e7d9d12466ef7127d52b2b83d77b028208bf18f5e223a782c42c0cd7c8a93b",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/WLDRVQCA.txt",
+      "sha256": "eb533a1c0e6027af3daf1267f433bdfc6358cbb2b94e94d1f390bca6bd038643",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/awsiot.txt",
+      "sha256": "52f54173fb286e7baa536bab3fb2aef58891af07e96646fb4d80663fabdfdcfb",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/coreMQTT.txt",
+      "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/curl.txt",
+      "sha256": "b1d7feb949ea5023552029fbe0bf5db4f23c2f85e9b8e51e18536f0ecbf9c524",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/dhcp.txt",
+      "sha256": "18add1790d1ed47d6ef6f3ed5945aa0cb2f7785fa8bc7fd859f8ae2f9f78567d",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/expat.txt",
+      "sha256": "46336ab2fec900803e2f1a4253e325ac01d998efb09bc6906651f7259e636f76",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/glibc.txt",
+      "sha256": "61abdd6930c9c599062d89e916b3e7968783879b6be0ee1c6229dd6169def431",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/iw.txt",
+      "sha256": "5932fb70481e128940168a5fdf133e6454293c0865c7e757874b235cb6daa2af",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/jemalloc.txt",
+      "sha256": "94aa2caa98c25d942f58b956c71dba6a99ff98fc3a31cbc669fe2a4cd0268b53",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/jsmn.txt",
+      "sha256": "d3d192df444cbe8abdaf824a246e15c2dfe41943b5ddfb13daab8469172362fe",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/jsoncpp.txt",
+      "sha256": "95039d77a20e75b428207740d9a8f97b2dce3c89da4b21f1ad862b5997160e0a",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/kvspic.txt",
+      "sha256": "261e320fc79f94200cd74a5362348af6c3f4b354d43bd147b57a5c8ac4b4bced",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/libevent.txt",
+      "sha256": "068af94c84731ca6ede003ef2800f879b4f78dd46bc645a7f97c12a68a94e1e2",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/libffi.txt",
+      "sha256": "0f4d7a0bfb83c37465d42dc305f124189196cc0cc2cc8d6f8461103682aebbc5",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/libnl3.txt",
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/libpcap.txt",
+      "sha256": "8a54594d257e14a5260ac770f1633516cb51e3fc28c40136ce2697014eda7afd",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/libpng.txt",
+      "sha256": "bf5e22b9dce8464064ae17a48ea1133c3369ac9e1d80ef9e320e5219aa14ea9b",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/libssh2.txt",
+      "sha256": "859e60d760a3446ecaf777339f1eef98c527aea40714384d24b882a83ffdd23a",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/libtirpc.txt",
+      "sha256": "17cf6098f95bdbb269f0bbc68e76c88fe20487ca7ec53f454923ab4256ecd2e7",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/libuuid.txt",
+      "sha256": "9b718a9460fed5952466421235bc79eb49d4e9eacc920d7a9dd6285ab8fd6c6d",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/ncurses.txt",
+      "sha256": "8d8caaec335cbd1da15d5e9c12cd559f6d0d5566273077cc6f651684092606b5",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/openssh.txt",
+      "sha256": "05a4c25ef464e19656c5259bd4f4da8428efab01044f3541b79fbb3ff209350f",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/openssl.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/opus.txt",
+      "sha256": "8338ce8d922bb4416ce3dd1e5680173332435e3f0755007ac7801ccd674fe682",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/pcre.txt",
+      "sha256": "0dd9c13864dbb9ee4d77a1557e96be29b2d719fb6584192ee36611aae264c4a3",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/popt.txt",
+      "sha256": "518d4f2a05064cb9a8ec0ea02e86408af4feed6916f78ef42171465db8b383c5",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/producer.txt",
+      "sha256": "261e320fc79f94200cd74a5362348af6c3f4b354d43bd147b57a5c8ac4b4bced",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/protobuf.txt",
+      "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/readme.txt",
+      "sha256": "d18f09a8dd4c1830f83c47848805cb94e7c3f34b6c4f81f6426040a619934c72",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/tcpdump.txt",
+      "sha256": "9b03d5d13e66d6de02a4bb2d0dd1cb9f41808d045962cdcc42350d5291b141a1",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/usrsctp.txt",
+      "sha256": "fa53711b25af4b9a9b8dadfea3cb38166ec4b96760c8d62b284055554537d9ef",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/wbsocket.txt",
+      "sha256": "6f030fe3824e8f017254d909fdbaa637bc031f7a382f678a7f995d1bdb7685b4",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/webrtc.txt",
+      "sha256": "053e9e587853debc66cb22fe4593a7fffff317b31dce09aedd6852735250e0ad",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/wpasuppl.txt",
+      "sha256": "9da5dd0776da266b180b915e460ff75c6ff729aca1196ab396529510f24f3761",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0650_prfile/PMBP/LICENSE/zlib.txt",
+      "sha256": "464352f7afcece608041241e20b28e8006ae170446898e9713fb076323d1487d",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0651_prfile_sum/prfile.sum",
+      "sha256": "e646d38d0ad14f446118d2d95b91e961d3b66ff9646a45de038cfe7802c02d96",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0700_part_image/dev/nflasha15",
+      "sha256": "d4761f13efa9fba049befcd93cb673bb5d3e3bd494735112feaa989d0373aaa8",
+      "changed_from_stock": true,
+      "changed_from_455": true
+    },
+    {
+      "member": "0700_part_image/dev/nflasha3",
+      "sha256": "d79845e753bd786058d14b50209f877e5f1799b649f0619a64860915d77d9631",
+      "changed_from_stock": true,
+      "changed_from_455": true
+    },
+    {
+      "member": "0700_part_image/dev/nflasha5",
+      "sha256": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693",
+      "changed_from_stock": true,
+      "changed_from_455": false
+    },
+    {
+      "member": "0700_part_image/dev/nflasha7",
+      "sha256": "f6229c7e166ed54ebdd8a867b31b60af25e971788091cc12f365f2ab12d060d4",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0700_part_image/dev/nflasha8",
+      "sha256": "15b9f91c85e8c938e6322aa48811a8d0192864bd85457f30358074054ed20429",
+      "changed_from_stock": true,
+      "changed_from_455": true
+    },
+    {
+      "member": "0701_part_image_sum/part_image.sum",
+      "sha256": "8af236b3557fa62e89c94971f5e66fc3f2e97f6908b49ebf137f6ddccdf3c921",
+      "changed_from_stock": true,
+      "changed_from_455": true
+    },
+    {
+      "member": "0750_nor_loader/loader_nor.tar",
+      "sha256": "1edaab7c63196e84a941f5f2ad9595705e20d3e934735d9bcb20279b57f86d8a",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0751_nor_loader_sum/nor_loader.sum",
+      "sha256": "a1a30b77c0a468fbdb1d1af0ed76d4e036751d5754aeb55fbfac952b9edf8e3e",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/lens/lensfile.bin",
+      "sha256": "49a08398bd47b917bc54497f247ef19fcb77df593610aea15e4ae0c466e24824",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/setting/DmmCfg.bin",
+      "sha256": "d14ffd35f69ddd066ac5cb3a8f8120ee216a2a4a34cce1e329b0639bdff976e2",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/setting/cxd90057.dtb",
+      "sha256": "be15e28c10b1468756132a5662a91dc65003ca0a8509c2233f863d31934cf679",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/setting/development.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/setting/facedmy.bin",
+      "sha256": "e1db981a5261c8eb234071bbfbd15116d3bfbb651e91dfc1175578adbf7ec1ba",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/setting/kemco.txt",
+      "sha256": "b17b52771a07d0575f560f1160bddf9a4b0d1b9e3db4fd37d9a099a5d8992c9d",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/setting/public_key.pem",
+      "sha256": "d37060a2a34e2250ed539de1ba415047bc2b0ce081d7c4fb39b3f18c26637a0c",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/setting/ulogio.bin",
+      "sha256": "de5ea7683d1e69533e2bb924277b7277454ef42ced8229b7cb397a2666efd6eb",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/setting/verify_key.pem",
+      "sha256": "357a0101467ddb810b6e38d90896d58bf19ce20cb1bbaa14dccc78c5d93e34c8",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/config.spec",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/heapmon.conf",
+      "sha256": "598f6bbf676ffa8382e1fff3592c410111414770e68e9c4034905120a3656e06",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/hosts",
+      "sha256": "304e9b1af1a3ea64d456388f99ae5d78a3905aa796496de63f82c4f12d5d475b",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/images/MYingHeiC-Big5-SJ_wIcon.ltt",
+      "sha256": "732b896098b8ceed3820ff42e456d0aa87aeba5deb0b39c3ad9f0b72bc7ff6c1",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/images/MYingHeiC-GB18030-SJ_wIcon.ltt",
+      "sha256": "e25ccca0ea0c4c0837b04e5008496c342f53c98c2a868541ba89eaead9798205",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/images/Sony_DI_Icons.ttf",
+      "sha256": "66b540e1bb372fc66248e73eb64d21279b2bf85cdd0903ea5ba11956fc2227b9",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/log/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/nsswitch.conf",
+      "sha256": "3cb6f73826acc6786500cbac5f7a6a6ce11c807621eaa67d3f0dcebbe556f929",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/pam.d/other",
+      "sha256": "a4f8ea6460d3e99b516718bc4c04f857e728233f0260a982586db3a511b70c5b",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/pam.d/ssh",
+      "sha256": "ae2247cfced38a73782e6e1c863cdd235a3e1064e8035dc2181369bae9cbfcdd",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/passwd",
+      "sha256": "4a691edcd492167bb3d538e4e15c24dd5fbc45785afcf2beddb3fbd39e097398",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/protocols",
+      "sha256": "a90a2be9c2a88be6fbfc1fc73ba76f34698377bb19513e5de503dbb0bfe13be1",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/regroot.pem",
+      "sha256": "2c43952ee9e000ff2acc4e2ed0897c0a72ad5fa72c3d934e81741cbd54f05bd1",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/run/sshd/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/services",
+      "sha256": "75d36dfa5c3f829d23f64750d6451641963c5a1e0c6e5d85fb83525755b1450c",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/ssh/sshd_config",
+      "sha256": "fdccb272a96cc8b100116c8142b60b2bfd200390895770d2f263d07921db195d",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0800_appli/tmp/toprc",
+      "sha256": "45be788042dd68dee20f66ab28c981dec29bb35da1570d360eff28383477d323",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "0801_appli_sum/appli.sum",
+      "sha256": "042e1179d29e41b91845a444a4ec0a2598f034f619e5c4b70662f635fe5e5292",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "1050_i2c/fw2_normal_app.cyacd",
+      "sha256": "e4a7f5d100fbf2a83b7b654283d08cffd8e1de33df63baf2bc624f8deb6a73be",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "1050_i2c/fw2_normal_cfg.cyacd",
+      "sha256": "f938076979e042c588b7e23fce052b4197ee620c33143c4cee8ecd3c726252d9",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    },
+    {
+      "member": "1051_i2c_sum/i2c.sum",
+      "sha256": "ef7df283c4e9bb78a889fef83787fbdba3e05f38942363a35a671c62b24d28c8",
+      "changed_from_stock": false,
+      "changed_from_455": false
+    }
+  ],
+  "original_headers_padding_trailer_preserved": true,
+  "only_four_archive_members_differ_from_455": true
+}

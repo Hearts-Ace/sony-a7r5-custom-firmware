@@ -1,0 +1,573 @@
+{
+  "schema": "r5-cp-final-minimal-audit/1",
+  "CP_sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a",
+  "CP_bytes": 17617008,
+  "baseline455_sha256": "bbae506511291eb3daab9befaaf80449e4e93d5200975fb68716a3772898e709",
+  "adapter_sha256": "3227f1d226d6be8d57748aa2543f293d6a6dad8861fb48adf6c1766b1030957a",
+  "adapter_bytes": 1764,
+  "sound_only_relocation": {
+    "offset": "0x1c",
+    "baseline": "0x1195261",
+    "final": "0x11951e1",
+    "reason": "resident r5ss original filter consumer RX moved -0x80; all other2236 sound bytes exact"
+  },
+  "sound_normalized_equal": true,
+  "baseline_sound2240_byte_identical": false,
+  "immutable455_source_checks": 201,
+  "new_source_checks": 201,
+  "baseline_source_hashes": {
+    "cp/r5_sound_gain.h": "8ba6551fa334ab7566ad7a21211874274ac43ef5026c4bfa533425f1a34a1ec9",
+    "cp/r5_sound_gain_hooks.S": "c373c886a6128634e285175dbefbea2be00f791c0eaeaa6b20f6de8fd328886e",
+    "cp/r5_stage413_probe.h": "244c009417e7a163ba056a51ef9df35c00c87d4ba9327e95da14d23fb932e987",
+    "cp/r5_sound_completion_hooks.S": "e8511abe95906d177d4322f5db071a8ecc2815cb60b659a4314e0540f2abaaf1",
+    "cp/cc1_gate.S": "b556dff897c12050b0f99a85edd37403d40e444337218083c65a1c6476a9ffc1",
+    "cp/r5_sound_guard_hooks.S": "85850e5277eadfc162f953c0bfe550decc92bff2b2a6f88e6bcfef4d3f5cc8d9",
+    "cp/r5_sound_receive.c": "3fe87124ec6ed92fe105dd0a36aaa4e9c67f4e9b3a7efb47b8a0d8ec11520a01",
+    "cp/r5_sound_completion_state.c": "76e4799aa4b67f26da29393a87d56d6fe8962a6e512507650a91439f890953da",
+    "cp/r5_sound_page.S": "7ab0943b8a075bc2b2627596a85efa1591cb90bdc5849dfaa76d1db76658d53b",
+    "cp/r5_sound_completion.c": "99b0af49cff28e10f137fc77d67775a1622f58fd8800f2774f9b8c44e646ba39",
+    "cp/r5_sound_gain_guard.S": "02c87a24eb07edffbd29c0fbdc96c1b8a693aef7f86beafdbd212ada338e2745",
+    "cp/b13_gate.S": "6298a5387f74eb516a6e561d93bbe8e7ae5ffac29a96881ae15707710b418194",
+    "cp/r5_resident_crc.c": "ba0c1a6af32f4d7bf276711d24fc5e0ec70b8c320fd8ff6640ea681a47c03433",
+    "cp/r5_sound_gain.c": "fecfeaed5c667ebd75ab9c49b4bd51edc9106745ae0439c59e55df50446b4d32",
+    "cp/native_color.c": "6a0305ed95d77951d7c726dacc53abb5f18f14c9f3f92a66326b664b4d48da9c",
+    "cp/grid_observe.S": "346a96e99d05fa0535b49cb044366d6697cc443c98862b186173d87d0d0c5483",
+    "cp/cp_stage413_gate.S": "a78559e226329248e2649efc0df0666cb7c6145e6d1e26247b50ab73da958cae",
+    "cp/build_cp.py": "20374decd440833e0da4cc9fcecf22f00ef68d2022d166d85ad702428a4e5724",
+    "cp/r5_sound_snapshot_wire.h": "8e50146d343f3a6ccd0062f6c9f304c02db372b69d2358e8459be6eaa81b2ba4",
+    "cp/r5_sound_snapshot.c": "9a2b3bacf6babcae7c6994a3c593a64cd00d06a31fa28e90453fe63653feefc1",
+    "cp/cp_stage413_probe.c": "3f70e6d4cfb5ef7d2482854edefa5b4a6c3812e5a235a720423a54d1d91de923",
+    "cp/cp_transfer.c": "46e08aa860c7b398e42367b1843974e056cb655faec398287a4366428d2c0605",
+    "cp/custom_filter423.c": "193cce35637d2e2d1834860efd522210744b49b924f0a49556298f79d1c9d015",
+    "cp/r5_sound_completion.h": "6619feb648e09c9e507820a070545760753601fde315907a9eb8f7e43ba93c74",
+    "gamma/native_gamma.c": "62756abe47f11415bd52f67fe197c0fe0e408d0fd621d52672a2dffe6b1262f9",
+    "gamma/getter_gates.py": "417a59642ae40b40b47ba882cc23236798116fe02f24cab86d2985ca5ad4e425",
+    "gamma/native_gamma.h": "4cb7d46106400be79fee5cfb03023e8f1deac2b9166d52966c19383632344f5b",
+    "cp_include/sd_native_persist.h": "a0e7df8eb4f62e1a0742ef475163b42a53e6b66503e1ee7b69cd3c7071016ec7",
+    "cp_include/r5_boot_transaction.h": "4826639c8508d5fda8f5ab5500dabd76e6f860400791f5002423cbe785cfc7a6",
+    "cp_include/r5_filter423.h": "47a7aa2d56969d80ddbefc9ffd58ca90aa9a0a989f5278b60da3ef7598090a2e",
+    "cp_include/r5_render_binding.h": "1d1cf5c0cd5647a1c4cc0b1b5eb205b078f330bb02589b4fbc78f1a891cecbd6",
+    "cp_include/r5_dedicated_worker.h": "e410c917a515f2bfd18d00e3b7c165d4e8a8594e347fc4ef2b945e9658f8f8bc",
+    "cp_include/r5_native_lut_directory.h": "1b9b035341687e80979777d0fc728be667455af232169de0c50424856f701bee",
+    "cp_include/r5_color_shadow.h": "04d04a4af69f0533940b3e8f2f2a23e7c6c16aa88b834e56c471e50ef3017a44",
+    "cp_include/r5_filter_runtime423.h": "fb00a8f2f3342d54ad671a3b048d376ce760e412d0d7dc409a230e50bfd51988",
+    "cp_include/r5_grid422.h": "f89f65132a680f24686e139dbef685b88d632e7aa9cf59239e5ccd219244b4c3",
+    "cp_include/r5_runtime_session.h": "45b8727bf6b04acfc7745c95282bc202a614a366ab4535c6e8f96b296618eb31",
+    "cp_include/r5_boot_runtime.h": "8261a2e1cb252b6978daccc19fa026da771bd996dece6838e0db6f72110b6fbd",
+    "cp_include/r5_preview.h": "00271596480e635c1b7069d3af0ef2bed230281dba76033eb52d87228c50317b",
+    "cp_include/r5_boot_coordinator.h": "9d3c9c9eee8d706afb6f681ebc1f39d55d0fbd5d7bfc1bac8a0c06755b86d153",
+    "cp_include/r5_native_readonly_services.h": "90cac913f9c1055e3a3d84b0cc3ab1dfd07d210076bfb41e0f5b7a2c54e329fb",
+    "cp_include/r5_fsys_adapter.h": "e531a14d54c477c70bfa38068a24a1eeb89a2b3e3b872770e41c871a32b9d59f",
+    "cp_include/r5_native_transport.h": "2aec03eabe58cf57e485158279bc8d135ab8cf06a85e7e7ee89141c6803079e1",
+    "cp_include/r5_posix_persist.h": "e1c3cf3de1c46946624feb1e849022db1a8174995c3ec59928cfaf90655f6ead",
+    "cp_include/r5_ap_activation.h": "3a435fc88d8ed6685b60e9adeae79bacb09c5ccfb002dd18b29eef1bde52553f",
+    "cp_include/sd_native_store.h": "b2e24ef286cbb969ed7d7397cfcdb7e80075c089c25d227090f7cc9413cf65bb",
+    "cp_include/r5_lifecycle.h": "98ce20da5b5a490ec5db1c84e6398b496aaf877658e8a1afabb14030d3d5f887",
+    "cp_include/r5_boot_media_bridge.h": "9875e38eb4c1f911cd371b3200315aa70f038d81e568faea5c9f46c960456811",
+    "cp_include/r5_isp_carrier.h": "7e236a443b35ac1538f0d5fffb3c3003f2d4bef0844e29e19665cb3b59e0e7ca",
+    "cp_include/r5_boot_bank.h": "58f8e86cd497166f6da71e86501bfa81229f7256b44bcf5f563f923ec5440215",
+    "cp_include/r5_filter_selection423.h": "4b158305f5c2177d203de43b44f588e8ce43651802b675dcb5c7ca558e965720",
+    "cp_include/r5_grid_diagnostics.h": "67f31c639c9d399cd282d70c25514228e16b8483b251a8982605b9cb200d21e9",
+    "cp_include/r5_color_q_carrier.h": "07caacd78bf9c1536b7d71ce4582b32c49d77ffd0192f20f483212d1320cdf1a",
+    "cp_include/r5_scan_gate.h": "94d65cba3fbb73671a106889a69a55da856157d58b336cdcbd18d59ba461902a",
+    "cp_include/r5_lut_directory.h": "4380c35a6bff0b2d29bcffbb3a1953aa447202422492b12d633477025e0461ea",
+    "cp_include/r5_look_transfer.h": "5af34045a938516e812b9ff71d79c0557b0fbb3bd021d2bff04d19eb85674035",
+    "cp_include/r5_async_import.h": "586498f394ebc9d934525ffd7725515fea61b3928f1c0a6b163499910cf8dfd1",
+    "cp_include/r5_lut_mount_reader.h": "635ba63e9f7147f871e166a37a9852b1071c25ac46b7e8ea347f335755295132",
+    "cp_include/r5_gamma_identity.h": "b03b75d8bc5e88a20547ab0f41bc073086eaf141a18583d2341060fe59e72107",
+    "cp_include/r5_custom_filter423.h": "b93c3a027b7e4e5974964936b708743cc14b11e442531b0594841c6ed0619ccc",
+    "cp_include/sd_native_look.h": "b8ae2260489584e8020c1827888d5f2260c41ff486cbe369a3a239d21d3596f7",
+    "cp_include/r5_color_consumer.h": "00c39c9cfa7a8471fde03df84341c89894e4143f8b449159cf981756b72c06e8",
+    "cp_include/r5_boot_transfer_adapter.h": "dea1e12f374593adfa7197d7f7c3237a5202f2c14d143960f3db5d05e82e110e",
+    "cp_include/r5_aa_snapshot.h": "d36ceca0a2082cddc493d44590d5381a4470d927a3ca664a9310bd645b1cc79a",
+    "cp_include/r5_posix_stage.h": "e132161d632a453499a6c616d32c070eee303f6cea592aaa8a880e220aeccd66",
+    "cp_include/r5_gamma_qualification.h": "9cc3893227d9accfb84e96fb373f2fc6167728ba4e19d6614a21b7074d448583",
+    "cp_include/r5_lut_mount_guard.h": "2575b41010119ed4ada1927e2b70b7c26ec78a4f99951ca5ef528b8d1cc8b8cc",
+    "cp_include/r5_ap_terminal.h": "3410cea848bd309257437009490795baa87b9b455585e201bc839776ef854728",
+    "cp_include/r5_direct_pthread.h": "e1805db21147a4be6075f9fc7b98d1121374a1a28d2866f63d88d57f0f3fbc06",
+    "cp_include/r5_boot_services.h": "345e1d2d7f9a7fc63be19a6e3ad4ca62ac8c50085ed822ca4fc8ffd7726135db",
+    "lib/package.py": "ebf99341e5cef4bdd869451f05d437a14c258fe98dd5d0d8dec98d7584d445b6",
+    "lib/overlay.py": "2d19f2fc563dc3d9c7a3ce35106d5cea55d88274b795e04b4e5756c4c7cd2b81",
+    "lib/strict_ap_link.py": "1734fd0d8069fbf034764a95b240085582e5f2e668ae7fa59102ee80db88ff41",
+    "lib/image_io.py": "a2064c0b85274a5a2642cc241895ebb15e6b4e0b2fa78277b1f97d74f5bdee10",
+    "lib/grow_ap.py": "9b982bc2e63c6927476040d71ca1da98aecca7f7a38110b20d20240ce4aab306",
+    "lib/sony_bk4.py": "da9a920d767eeaa8ba8965cc106397e7d1de409fff34c39c73c9debbc631c717",
+    "lib/arm_ops.py": "a2a95d370ee934be16bb26db1aa40a114944f289b7b3d66b190420a41ca8cb98",
+    "lib/fat_reader.py": "a24e86423804532991d24fe8e93878197d2f09ceade479bde307d70199cad1df",
+    "lib/thumb_ops.py": "2d27a76f72432bf96d61ff12e152463326bb317d96fceea9b438a9146d8a40fe",
+    "lib/fdat_encrypt.py": "6f8317a3fbb7b94dbc57fa04c415b1139f2b768d27e4d517466c3f995f422603",
+    "lib/thumb_link.py": "2bbe431f8cdbec9a6bfab48c4f652f7a05a2ed32fa9532345e612f2846d4d64a",
+    "lib/signature.py": "285496c313926ec22acf1e126e6278ceb34b64fc84c6e3d2a3d1fdfbaf0800cb",
+    "lib/ext2read.py": "ba8fdfd5dfb6367d9d58f3571bb87ee40d94e9d46f10878d8f42b8342ebfd776",
+    "lib/fwtool/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lib/fwtool/pe/__init__.py": "1053d39910a1be15fb048cfedf913ec8498428fe81bce91d0d96ef2dc9edf7d0",
+    "lib/fwtool/mbr/__init__.py": "565771758632031048768d2135976c2cd97b36799bd25bdc4f16901934c04a5f",
+    "lib/fwtool/lz77/__init__.py": "dc1407237c002545b08530b96d4efc1eadd24021ae6efc54688408850584c197",
+    "lib/fwtool/archive/gz.py": "aeb66c01e272a81cc5ca54b9e679359353430addc044170acfb2751c62263319",
+    "lib/fwtool/archive/squashfs.py": "0b39db150ae4ce02191736b2dfaaa5e65e075136c308d7140922f5d1f5163324",
+    "lib/fwtool/archive/tar.py": "e42b1d2c1c996e5fa2b2242e62efdf080aa74bc3a1537f9dccb42093641c9318",
+    "lib/fwtool/archive/lzpt.py": "771f6a8197f8b16c0a6fd2816ca4b8aae550a78d5a0c116e9097a26ba83a1f4b",
+    "lib/fwtool/archive/__init__.py": "01e99b6b3e86184e397c1328d92a38b53db6058721819d64a62cb0d45ece526a",
+    "lib/fwtool/archive/cramfs.py": "0dccfc895ab0635b7ebbd134fb38f4ed5ab34580b27d0b17c4a51d3ce975affd",
+    "lib/fwtool/archive/cpio.py": "22b97142da05d6d23520deaefa370d5cae4cb5304e2e733aca07941f0db66c25",
+    "lib/fwtool/archive/ext2.py": "eff6223e786a260c6329db2c1aeeedbe80fe8ce96a012aa02dc6870ddd813591",
+    "lib/fwtool/archive/fat.py": "1430374a905ea2e55f2813b4c8c3b7a050798e1c03a0ecc95eb6d20228e84828",
+    "lib/fwtool/archive/axfs.py": "a87616bd803f1ee145f37cbaf117e81e463ba38359e4f009bc7f882c78240920",
+    "lib/fwtool/util/__init__.py": "befbfdb6f5a096f4cc33ca68a5cd5690dbc67b630aa0a56e007fec90f45596b6",
+    "lib/fwtool/io/__init__.py": "6981352a7a39e1427555468e11ef301b7e4bc3e40ae02b09e86e05a2d96e6963",
+    "lib/fwtool/zip/__init__.py": "d6b0e01525654301adbf1668ef27b801761e7230f8753b09c2ca96c8b569c165",
+    "lib/fwtool/lzh/__init__.py": "8fb5a451128f7e8996a7d452b2eb846896c7c394638eec50e5add6a3077aa489",
+    "lib/fwtool/sony/dslr.py": "67b3d70ab002cbf3e3297293e0023c380c238d9a35e22a861d57a361057b9e01",
+    "lib/fwtool/sony/dat.py": "5f5c1324649ee6c1719b14d5fc3b829741daf904c5f79da2ddcab10ef17f8d8e",
+    "lib/fwtool/sony/wbi.py": "21b672eafc5f6f71fd02e87b3e5444047c5df34971a951877c4b80b79f5c6dc1",
+    "lib/fwtool/sony/msfirm.py": "491a3693c69c7c85de0484ad07163a44536589ede00fa7b3c729879d85e9524e",
+    "lib/fwtool/sony/constants.py": "beaed6b7beb90d8dc513b53640535d5594855fcfaeb183b9504ea22286378cb3",
+    "lib/fwtool/sony/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lib/fwtool/sony/bootloader.py": "161d9ccbd680d947c318a07e6706b3ce279f46c59a82d38bbbf5af38823c1504",
+    "lib/fwtool/sony/xor55.py": "de2436b832be580ff1955df9ad507b2e0c4bb96e6e93380ec0c90a0399962224",
+    "lib/fwtool/sony/ash.py": "20a6e6299e3512f7257a2b91a27d12ff33c5b6f33e51b7335f8ec011e2d2ef09",
+    "lib/fwtool/sony/flash.py": "a1a8dd928091f4004995879ef897947bff010940a4c79c91e464c45f853d571c",
+    "lib/fwtool/sony/fdat.py": "962b570e68a407d5ca1b5d47923641ca0ae8d7e33b2e03348bae0b1187b6b64d",
+    "import/r5_shutter_backend_native.c": "0206c4b85f4d2d6e7d5f8249e93335b15987761ef489bfe9c5dad755cc5dc712",
+    "import/sd_native_persist.h": "57a6672f94b258ad52d54cf2baa4edfb640fe49779f68584945ab4c75fdd76f8",
+    "import/r5_boot_transaction.h": "e5ee3dd11f1109eff2ff6bfa6dba93c4f9d5933ced135b25241dd926821f5b44",
+    "import/r5sound_package.h": "03537cd5a3e0a9769dfbe3d7bd13221b32a41d568b881ff1ad0064365acc5d4b",
+    "import/r5_filter423.h": "f306f8621547cc44a4ebe82c2a5377e9788e154604eae34662eec9810ea2ff0a",
+    "import/r5sound_runtime.h": "a3f4bad7585325f7dc66c1ca194f0613685fd6f18c1d2e599f79f57056197d2d",
+    "import/sd_native_store.c": "b91c0c43bba888f354e7ea5e8326aadd721ecf1f21b58325d3254ce239243efb",
+    "import/build_ap_module.py": "0f1658fdb3c35b7d5e8a83f25adfb6a1ba4d9e3001957cfeb798e68014cf53cf",
+    "import/r5_render_binding.h": "fb3d6b5e2b892703e7abf86607c0126b44348d281652d52bc83ca6e17f6ef589",
+    "import/r5_lut_directory.c": "6becb278134c984b98d514d3a11c92b333646a42b6bb578836fd08e91ce6d41f",
+    "import/r5_dedicated_worker.h": "0fdb68688ef5b14349f9837fdd66940085b23c26caf69433516e3a4f6be2e109",
+    "import/r5_stage410_codec.c": "305f6f2037b649c4d5453ae2882ef8616cce9f52de543b6373299e7b8e95ea64",
+    "import/r5_native_lut_directory.h": "0ca38d1291541852bc25175abe55cfdc0ae01b512f3a19d27e6758c813840408",
+    "import/r5_shutter_backend.h": "7d142aa7aaeea39214a3a1bdf2fcd96052687d1a8fda9fc89a5fdab85754b412",
+    "import/r5_color_shadow.h": "99d9558c962030f32553fe264b5f29db28d2c9892dcf13d6cfe8661cdc54d5b8",
+    "import/r5_filter_runtime423.h": "47eb53ce63d3c226cf1cb7cfc66ac99d4548f0aaa1f99e32592dfc64227254b8",
+    "import/r5_scan_gate.c": "7c1964fede43354e7bae3a85e64f40fd779a439858ba07600c29897c5afb5bf3",
+    "import/r5_shutter_bridge_native.h": "67afb9bab8883e6e38c658014211ed6ea871bce21e141513888cb61730cb68c9",
+    "import/r5_grid422.h": "aa570b921b7d890d7abbd169a6756e0f7168e577d17438534f23db03ee46a5f0",
+    "import/r5_filter_selection423.c": "8aea5b711f39c7ad67b85dd6c216af5f9f221fb23c6a61695d489797ca9e5bcc",
+    "import/build_ap_image.py": "cafba30b04ebf6aec6b2d910522ed8571c1c14f6b38e395ff2479d85652db6ff",
+    "import/r5_stage413_transfer.c": "ee2244697cdb36909cf627cb4cc18fb6c7184872034721088f9a4a1fe647a287",
+    "import/r5_runtime_session.h": "a1695ade13c99797812f96d9948a0f7e45d8997a0dd5e7cceec3c2f80659472a",
+    "import/r5_filter_names423.c": "801bde8843b1c8ac35a49bc53f57c337c58dbdd35938c9752d15fcc3aaeeab7d",
+    "import/r5sound_scan.c": "f777f45d9d2d7eb26b952870224376ba26e2b7f6bb361ee4c3cc8d9502fe2d15",
+    "import/r5_shutter_ap.h": "31ae1051d3bf2f610d7fe45b13d0a3afe1dead7079c926d41ea8434fd571dfc4",
+    "import/r5_boot_runtime.h": "8ac1a1b1c0a939cfed43f0310b8641c342ef9edb71febe81b7bf543ae6b66840",
+    "import/r5sound_store.h": "feb1dacf41419b1cca65b525cf737310686d6e6f7495e5c239005c4f434022ea",
+    "import/r5_preview.h": "25c62139aa472af6b77e03cf8b346213de58d865c56ef74d950bea205f36fb61",
+    "import/r5_boot_coordinator.h": "9ca01f71c88b7cb1fece3ddf6863318011501987a222fb69a7a7bec9e52279e3",
+    "import/r5_native_readonly_services.h": "b22a7cf70e563ea4312e1c00ccd7b571c20378c42a7db1d73307cbafa4e8aeea",
+    "import/r5_fsys_adapter.h": "b6038bbd5422fb559f4305801215087b378f2453e89d63ca9b1a1682768f5fae",
+    "import/r5sound_catalog.c": "f456f9a92f51787b13d4ce06ed496aafa40dbfa1133c734b5208e0c083e0de9e",
+    "import/r5_native_transport.h": "4f55864941aa28bbe3054224ee90fd381b28df81e5387905fb5e5e81d2079e35",
+    "import/r5_posix_persist.h": "ce341a9e792a5fdbbd3ddd5bf3f5051aabf9ec99cdef6c3b3c34ed65071abbce",
+    "import/r5_lut_mount_guard.c": "f2a2934e12e7f6e7108eba40d5ab74c7f044fffeaf6e8f81977b2ae5d26c09ac",
+    "import/r5_ap_activation.h": "b12245559e6dad1bbe05651f6b7b334df1bb33fcdd299ffcd8033a275fbc3292",
+    "import/r5_shutter.h": "5d5ade34e906514e706155b9a60f5b5aa9b5abef9ec71bf306bcf837144eaf10",
+    "import/r5_grid420_log.c": "135eee41d89c8cda07fe11cbd60b9087388f3f96de24f50ee5a97eec34053896",
+    "import/r5_stage413_probe.c": "6963d421bfe50ad0fa1c6a6eb431766036e5196aa458bd9a20968c7c7ed03a03",
+    "import/sd_native_store.h": "31eb6ad3d6ce0ea34833d6cf57dad163e8c3d98d6ea7406dcd7b8e35a14653e2",
+    "import/r5sound_integrity.c": "6b8ef29d162e8ba8aa8b2023d7541fb399a15fade74d81a0264dfd8ca70f7016",
+    "import/r5_stage413_transfer_core.c": "e952a53c46e0854ae7e97af412f11fdaf39f0e6dc2b692578752d63f73d22569",
+    "import/r5sound_runtime.c": "2f6e0a7127ee008ff467125038e6b60b4fbed2469fdcefcf1679f79855765215",
+    "import/native_loader_contract.h": "9a2acd5f02a09b41d5aa0020733619210fc9db8d1e48406a995d8f38b4593e1c",
+    "import/r5sound_package.c": "c9d4601a0dca5cb48e3429489e8e218438d38782034e0e2caa99a718e93deca0",
+    "import/r5_stage413_thread.c": "e4a2d0a340817da1ec05bdef73d84c603bbffbb0b6a2ea0570542e2ad61e11e2",
+    "import/r5_lifecycle.h": "ec75906fd92038114f6d691c89ae78bbeb04cdf878daa171104927cfe6d45fb6",
+    "import/sd_native_persist.c": "ef1a7d599308bcdeddd1a96d263c72c1f088fe8e334d18283423908fbaa65a64",
+    "import/r5_boot_media_bridge.h": "320df3f42dcb8ab9dc2f9ad33783861b1837f058e1a09816ddedcc2fdac64c0c",
+    "import/r5_isp_carrier.h": "11127dfc7c3644ff62af46a556f74c7d0265ca1bcf01725a86c0c2744c4a2de9",
+    "import/r5_shutter_bridge_native.c": "a45f98ff8b1361f6276d4ab8f4535274a2bc41d6826b5cd989a56f5dafd90f13",
+    "import/r5_native_transport_pie.c": "ecd7dddd3b57afb99f892ff24cd31a3f2a675af412ed9547b5e0ae3a0081cbe1",
+    "import/r5_boot_bank.h": "b04fcb762993329b2e6f0e44504af95ec87eeaed0dd7d2cdc6708109bbc09e8e",
+    "import/r5_filter_selection423.h": "5bdd8079e562ce996384b180da5cc789759af839be2b9446e7dc464abbed54f0",
+    "import/r5_grid_diagnostics.h": "cbdcc091835fdacd16d3938667b39697af864b3fe17576be410c706942232078",
+    "import/r5_color_q_carrier.h": "46408fed44e198819597afe22b5189f70a548d6e5ce32eb8760a8602e1e17870",
+    "import/r5_scan_gate.h": "d65b0030bed4350b68b946c1acaeab9c582e83e3e3348be0e444adc92678f524",
+    "import/r5_filter_runtime423.c": "067523ac6bdac655f74b75de8c54afe89358fe3f1384b42c6166312ba4a891fe",
+    "import/r5_native_lut_directory.c": "376b8c200c28f5d9f86ac434e46ba136dfce68adcf08ba0d996a4cf3f90fd691",
+    "import/r5_lut_directory.h": "e8ed9746378b768179bff63c8e91e3fe658cf313e2e08f5cbd38ed32b482c188",
+    "import/r5_look_transfer.h": "ec6cdbdca8e6789bd0fce188e7866933f87f01fb763272af83e1649b364eb805",
+    "import/r5_async_import.h": "2d7cee5b8d61bb8660038f8f402066b9bcc04b27f5017ff05c363d765ae5946f",
+    "import/r5_stage411_hooks.c": "bfdcbcecf85e774754d29171dd7c2adaa1a6048be721e222a3f463cafd5fd728",
+    "import/r5_shutter_scheduler.c": "3d06303beff85a6f359f87f14ba61017eb807191e6c4830f0d03b3f6a620b585",
+    "import/r5_sound_snapshot_wire.h": "0154a2ce6ebd087e43cf13f6783804a2e1082f44f9d76c8ac7da60d560571770",
+    "import/r5sound_store.c": "b9322c1a33630845378f9d6babbf0faa26f66826ac1b07db49267c1ed19d693b",
+    "import/r5_stage423_codec.c": "a5a5eccaf405dc9d555cc900a70c32ebc688cc5006ed5ca78354780c8bb7b659",
+    "import/r5_lut_mount_reader.h": "f7f70f3948c42a79b685bfea8bc00e3ffb33cd0123248c8d12a3041611a350b7",
+    "import/r5_gamma_identity.h": "09190d689af74f307f333b97369fd022e80774b1c9e20bf7d7aaa05e537acca3",
+    "import/r5_custom_filter423.h": "4459e5ba65d5bbbf4615a39139e8e225976342a6c70f327ae0ce87cb824f3909",
+    "import/sd_native_look.h": "56201f26cc28dc60629391d9aaa6f7d82eb8fda0089710d3b8d5e09ae4c1e72f",
+    "import/r5_shutter_ap.c": "ca357d3ef855b00efe659e94f2a7d72ed698e8dc89c07fcfb70516ff04ea8421",
+    "import/r5sound_scan.h": "80de83c43c210da8d67a228b422fd50aabcb5977c925154a2a42146cb5845d68",
+    "import/r5_runtime_session.c": "c8ec2e790619c5f23eedb892e27d6fe15d201bed41643c241c6fddb06b03f4a9",
+    "import/sound_core.h": "7a4f3fc2b294b6862025a8466a77caa66f2bccf58f5ad131fef2b200781a09b9",
+    "import/r5_color_consumer.h": "be94d154620ea1a0648148d7c92f0a434f59078c8fe69abd597edbe5b4481db8",
+    "import/r5_boot_transfer_adapter.h": "bc3bdc8207ab492b9afd3062252354a08bdede505d3d1f94019740682bdc293d",
+    "import/r5_aa_snapshot.h": "5e5ee6593234c2e35dc7b483ccb20a503db0a4079330d622e4f8867980705905",
+    "import/native_extra425.json": "ea9ef3477c8bb8f12fa5899c7cdb75cc16ec38ecb142c09fd869ba2c2ccaf1f7",
+    "import/r5_posix_stage.h": "51495add0df53ad22088c489cf2764763b950cfa6cb73819725111c78eb5b7c2",
+    "import/r5_gamma_qualification.h": "ae24eddf783c8a75f59262fbb224c96cdc9ba55578b3f6518ee1e9135b7b1980",
+    "import/r5_lut_mount_guard.h": "ec7f65e67edb817cff953cd48b5b03165d3b10f92822b9c9702f80a7f17c1fea",
+    "import/r5_ap_terminal.h": "d040c23ab4c8a9c28c6707fee0760bc782d295daa0cea24628db265140805e12",
+    "import/r5_direct_pthread.h": "6ee7d46003ad6af6817cfdbd21b44445e0e018c96b2734279f140fc9529daabc",
+    "import/r5sound_catalog.h": "609bcbe1e119ba5a42d36ba3f6cdd9cef5970c6197276db98e674bf026c98cac",
+    "import/r5_boot_services.h": "436c0bed03856009409e7dca97bd405e13f3dc895664ce7076f029c2d7ba7b54",
+    "import/r5_fsys_adapter.c": "02016da2f9e50c6d04947fd0e570c2b004e8689c2a89e50bf1a05163d77baa3b",
+    "import/include/string.h": "bcb2395d00d401f5157b7e5edf99fcd8636143a13fe8aa71b0291c4027503050"
+  },
+  "adapter_production_root": "aspect_module_dispatch",
+  "adapter_sections": {
+    "crop_core.o:.text.aspect_divide": {
+      "bytes": 48,
+      "executable": true,
+      "writable": false,
+      "references": []
+    },
+    "crop_core.o:.ARM.exidx.text.aspect_divide": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "crop_core.o:.text.aspect_divide"
+      ]
+    },
+    "crop_core.o:.text.aspect_crop_geometry": {
+      "bytes": 392,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "crop_core.o:.text.aspect_divide",
+        "crop_core.o:.text.aspect_divide",
+        "crop_core.o:.rodata.cst8",
+        "crop_core.o:.rodata.cst8"
+      ]
+    },
+    "crop_core.o:.ARM.exidx.text.aspect_crop_geometry": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "crop_core.o:.text.aspect_crop_geometry"
+      ]
+    },
+    "crop_core.o:.rodata.cst8": {
+      "bytes": 16,
+      "executable": false,
+      "writable": false,
+      "references": []
+    },
+    "cp_capture_latch.o:.text.aspect_pool_reset": {
+      "bytes": 40,
+      "executable": true,
+      "writable": false,
+      "references": []
+    },
+    "cp_capture_latch.o:.ARM.exidx.text.aspect_pool_reset": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_pool_reset"
+      ]
+    },
+    "cp_capture_latch.o:.text.aspect_task_id": {
+      "bytes": 40,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.task_index"
+      ]
+    },
+    "cp_capture_latch.o:.ARM.exidx.text.aspect_task_id": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_task_id"
+      ]
+    },
+    "cp_capture_latch.o:.text.task_index": {
+      "bytes": 72,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "crop_core.o:.text.aspect_divide"
+      ]
+    },
+    "cp_capture_latch.o:.ARM.exidx.text.task_index": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.task_index"
+      ]
+    },
+    "cp_capture_latch.o:.text.aspect_task_clear": {
+      "bytes": 28,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.task_index"
+      ]
+    },
+    "cp_capture_latch.o:.ARM.exidx.text.aspect_task_clear": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_task_clear"
+      ]
+    },
+    "cp_capture_latch.o:.text.aspect_pool_release": {
+      "bytes": 28,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_task_clear"
+      ]
+    },
+    "cp_capture_latch.o:.ARM.exidx.text.aspect_pool_release": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_pool_release"
+      ]
+    },
+    "cp_capture_latch.o:.text.aspect_freeze_copy": {
+      "bytes": 92,
+      "executable": true,
+      "writable": false,
+      "references": []
+    },
+    "cp_capture_latch.o:.ARM.exidx.text.aspect_freeze_copy": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_freeze_copy"
+      ]
+    },
+    "cp_capture_latch.o:.text.aspect_capture_copy": {
+      "bytes": 96,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_task_clear",
+        "cp_capture_latch.o:.text.task_index"
+      ]
+    },
+    "cp_capture_latch.o:.ARM.exidx.text.aspect_capture_copy": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_capture_copy"
+      ]
+    },
+    "cp_capture_latch.o:.text.aspect_jpeg_request_copy": {
+      "bytes": 124,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_task_id",
+        "crop_core.o:.text.aspect_crop_geometry"
+      ]
+    },
+    "cp_capture_latch.o:.ARM.exidx.text.aspect_jpeg_request_copy": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_jpeg_request_copy"
+      ]
+    },
+    "cp_capture_latch.o:.text.aspect_thumbnail_request_clear": {
+      "bytes": 232,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_task_id",
+        "crop_core.o:.text.aspect_crop_geometry",
+        "crop_core.o:.text.aspect_divide",
+        "crop_core.o:.text.aspect_divide"
+      ]
+    },
+    "cp_capture_latch.o:.ARM.exidx.text.aspect_thumbnail_request_clear": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_thumbnail_request_clear"
+      ]
+    },
+    "cp_capture_latch.o:.text.aspect_notify_dimensions": {
+      "bytes": 86,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_task_id",
+        "crop_core.o:.text.aspect_crop_geometry"
+      ]
+    },
+    "cp_capture_latch.o:.ARM.exidx.text.aspect_notify_dimensions": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_notify_dimensions"
+      ]
+    },
+    "cp_capture_latch.o:.text.aspect_cp_select": {
+      "bytes": 24,
+      "executable": true,
+      "writable": false,
+      "references": []
+    },
+    "cp_capture_latch.o:.ARM.exidx.text.aspect_cp_select": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_cp_select"
+      ]
+    },
+    "cp_wrappers.o:.text.aspect_jpeg_copy_hook": {
+      "bytes": 6,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_jpeg_request_copy"
+      ]
+    },
+    "cp_wrappers.o:.text.aspect_thumbnail_clear_hook": {
+      "bytes": 6,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_thumbnail_request_clear"
+      ]
+    },
+    "cp_wrappers.o:.text.aspect_pool_reset_hook": {
+      "bytes": 32,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_pool_reset"
+      ]
+    },
+    "cp_wrappers.o:.text.aspect_notify_primary_hook": {
+      "bytes": 44,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_notify_dimensions"
+      ]
+    },
+    "cp_wrappers.o:.text.aspect_notify_secondary_hook": {
+      "bytes": 44,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_notify_dimensions"
+      ]
+    },
+    "cp_wrappers.o:.text.aspect_notify_release_hook": {
+      "bytes": 20,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_task_clear"
+      ]
+    },
+    "cp_wrappers.o:.text.aspect_cp_select_hook": {
+      "bytes": 34,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_cp_select"
+      ]
+    },
+    "raw_emb.o:.text.aspect_raw_emb_build": {
+      "bytes": 112,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_capture_latch.o:.text.aspect_task_id",
+        "crop_core.o:.text.aspect_crop_geometry"
+      ]
+    },
+    "raw_emb.o:.ARM.exidx.text.aspect_raw_emb_build": {
+      "bytes": 8,
+      "executable": false,
+      "writable": false,
+      "references": [
+        "raw_emb.o:.text.aspect_raw_emb_build"
+      ]
+    },
+    "aspect_module_dispatch.o:.text.aspect_module_dispatch": {
+      "bytes": 140,
+      "executable": true,
+      "writable": false,
+      "references": [
+        "cp_wrappers.o:.text.aspect_cp_select_hook",
+        "cp_capture_latch.o:.text.aspect_freeze_copy",
+        "cp_capture_latch.o:.text.aspect_capture_copy",
+        "cp_wrappers.o:.text.aspect_jpeg_copy_hook",
+        "cp_wrappers.o:.text.aspect_jpeg_copy_hook",
+        "cp_wrappers.o:.text.aspect_thumbnail_clear_hook",
+        "cp_wrappers.o:.text.aspect_notify_primary_hook",
+        "cp_wrappers.o:.text.aspect_notify_secondary_hook",
+        "cp_wrappers.o:.text.aspect_notify_release_hook",
+        "cp_wrappers.o:.text.aspect_pool_reset_hook",
+        "cp_capture_latch.o:.text.aspect_pool_release",
+        "raw_emb.o:.text.aspect_raw_emb_build"
+      ]
+    }
+  },
+  "reachable_sections": [
+    "aspect_module_dispatch.o:.text.aspect_module_dispatch",
+    "cp_capture_latch.o:.text.aspect_capture_copy",
+    "cp_capture_latch.o:.text.aspect_cp_select",
+    "cp_capture_latch.o:.text.aspect_freeze_copy",
+    "cp_capture_latch.o:.text.aspect_jpeg_request_copy",
+    "cp_capture_latch.o:.text.aspect_notify_dimensions",
+    "cp_capture_latch.o:.text.aspect_pool_release",
+    "cp_capture_latch.o:.text.aspect_pool_reset",
+    "cp_capture_latch.o:.text.aspect_task_clear",
+    "cp_capture_latch.o:.text.aspect_task_id",
+    "cp_capture_latch.o:.text.aspect_thumbnail_request_clear",
+    "cp_capture_latch.o:.text.task_index",
+    "cp_wrappers.o:.text.aspect_cp_select_hook",
+    "cp_wrappers.o:.text.aspect_jpeg_copy_hook",
+    "cp_wrappers.o:.text.aspect_notify_primary_hook",
+    "cp_wrappers.o:.text.aspect_notify_release_hook",
+    "cp_wrappers.o:.text.aspect_notify_secondary_hook",
+    "cp_wrappers.o:.text.aspect_pool_reset_hook",
+    "cp_wrappers.o:.text.aspect_thumbnail_clear_hook",
+    "crop_core.o:.rodata.cst8",
+    "crop_core.o:.text.aspect_crop_geometry",
+    "crop_core.o:.text.aspect_divide",
+    "raw_emb.o:.text.aspect_raw_emb_build"
+  ],
+  "unreachable_executable_sections": [],
+  "legacy_heif_or_test_reset_symbols": false,
+  "native_HEIF_copy_bytes": "0df7a6e5",
+  "fixture_hashes": {
+    "analysis/r5_sound439_playback_20261102/m4-chain/integrated/replay_lifecycle.py": "eb81ebde848657fb3f007f36cd634470374a97c14894fc9699f61b29d51c069d",
+    "analysis/r5_sound437_minimal_20261102/cp/replay_lifecycle.py": "25ae4340281bbcfc9a44d8598df210984681eacd570a525ae52944684f11c3dc",
+    "analysis/r5_aspect456_20261110/cp/gamma_compact.json": "db9ee457d789cfa4aafbb52c0882b5f3fda00a5fb805d369bb8b3f96ef7a32f3"
+  },
+  "verifier_hashes": {
+    "build_integrated.py": "cc203996280db20ab43861f138755be157410d8b17ee3a6d1c911cf445609372",
+    "build_adapter.py": "44f033a2308124344072003b501cf0f3fe4a4a2f759146ac6670c08201576bee",
+    "verify_integrated.py": "a8cef0f679223c3ec19e30230bb68bb2776ab2b4f8384903c6c3d3f83df237e3",
+    "verify_hook_matrix.py": "d31d55afdf93f1595ab61366af36a2b1328f81adf821e6073cdc2f14256668c4",
+    "verify_preservation.py": "d77b930d6bfc69d321cee0cb3b12ae43f6d0b4c49cbba68e954ffd6b8722792d",
+    "verify_layout_gamma.py": "7f82d88a129f1cc006b8709342b5d26fdd776fa8ca9a77d234de7439b55397a2",
+    "audit_final.py": "cdbaca85998d7c1c88d30f4cebf29240880aac6fb0183674159365b1b714cff4"
+  }
+}

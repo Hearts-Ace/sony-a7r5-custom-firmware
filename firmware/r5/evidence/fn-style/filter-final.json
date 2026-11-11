@@ -1,0 +1,617 @@
+{
+  "passed": true,
+  "status": "NATIVE_DISPLAY_WITH_EXPLICIT_IMMEDIATE_SCROLL_AND_TRANSACTIONS_VERIFIED",
+  "AP_sha256": "e403e98212fc20056e0f876f7b8312cf48f9bfe5122b9954cb4e3e45e0d61937",
+  "build_sha256": "28afa45e4e99411c5e4287f7c72ee40923b9b834804fb8ed185bdf0a8c028c75",
+  "source_sha256": "9ec1fbea660d68dcb27294cafb1b957678de3227e62214411398487fa2b0c324",
+  "test_sha256": "579f0b53eed2af60ee23bbb461403541bb1d22f2d94c2811829f4f9a131d93b1",
+  "cases": [
+    {
+      "bias": 0,
+      "capacity": 131072,
+      "layout": 0,
+      "outputs": [
+        {
+          "focus": 0,
+          "left_names": [
+            "关闭",
+            "AS",
+            "CC"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 5,
+          "arena_used": 65408
+        },
+        {
+          "focus": 12,
+          "left_names": [
+            "SN",
+            "SS",
+            "ST"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 5,
+          "arena_used": 65408
+        },
+        {
+          "focus": 6,
+          "left_names": [
+            "ET",
+            "NC",
+            "NH",
+            "NN",
+            "NS"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 7,
+          "arena_used": 65408
+        },
+        {
+          "focus": 7,
+          "left_names": [
+            "NC",
+            "NH",
+            "NN",
+            "NS",
+            "RE"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 7,
+          "arena_used": 65408
+        }
+      ],
+      "requests": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "bias": 0,
+      "capacity": 4194304,
+      "layout": 0,
+      "outputs": [
+        {
+          "focus": 0,
+          "left_names": [
+            "关闭",
+            "AS",
+            "CC",
+            "EBB"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 6,
+          "arena_used": 700800
+        },
+        {
+          "focus": 12,
+          "left_names": [
+            "RE",
+            "SN",
+            "SS",
+            "ST",
+            "关闭"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 11,
+          "arena_used": 700800
+        },
+        {
+          "focus": 6,
+          "left_names": [
+            "EBB",
+            "ET",
+            "NC",
+            "NH",
+            "NN",
+            "NS",
+            "RE"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 16,
+          "arena_used": 700800
+        },
+        {
+          "focus": 7,
+          "left_names": [
+            "ET",
+            "NC",
+            "NH",
+            "NN",
+            "NS",
+            "RE",
+            "SN"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 17,
+          "arena_used": 700800
+        }
+      ],
+      "requests": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "bias": 274877906944,
+      "capacity": 131072,
+      "layout": 1,
+      "outputs": [
+        {
+          "focus": 0,
+          "left_names": [
+            "关闭",
+            "AS",
+            "CC"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 5,
+          "arena_used": 65408
+        },
+        {
+          "focus": 12,
+          "left_names": [
+            "SN",
+            "SS",
+            "ST"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 5,
+          "arena_used": 65408
+        },
+        {
+          "focus": 6,
+          "left_names": [
+            "ET",
+            "NC",
+            "NH",
+            "NN",
+            "NS"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 7,
+          "arena_used": 65408
+        },
+        {
+          "focus": 7,
+          "left_names": [
+            "NC",
+            "NH",
+            "NN",
+            "NS",
+            "RE"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 7,
+          "arena_used": 65408
+        }
+      ],
+      "requests": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "bias": 274877906944,
+      "capacity": 4194304,
+      "layout": 1,
+      "outputs": [
+        {
+          "focus": 0,
+          "left_names": [
+            "关闭",
+            "AS",
+            "CC",
+            "EBB"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 6,
+          "arena_used": 700800
+        },
+        {
+          "focus": 12,
+          "left_names": [
+            "RE",
+            "SN",
+            "SS",
+            "ST",
+            "关闭"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 11,
+          "arena_used": 700800
+        },
+        {
+          "focus": 6,
+          "left_names": [
+            "EBB",
+            "ET",
+            "NC",
+            "NH",
+            "NN",
+            "NS",
+            "RE"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 16,
+          "arena_used": 700800
+        },
+        {
+          "focus": 7,
+          "left_names": [
+            "ET",
+            "NC",
+            "NH",
+            "NN",
+            "NS",
+            "RE",
+            "SN"
+          ],
+          "selected_left_child_observed": true,
+          "footer": [
+            33563479,
+            33563479,
+            33563479
+          ],
+          "footer_names": [
+            33596013,
+            33596080,
+            33596044
+          ],
+          "text_submissions": 17,
+          "arena_used": 700800
+        }
+      ],
+      "requests": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "sparse_cancel": [
+    {
+      "focus": 0,
+      "left_names": [
+        "关闭",
+        "AS",
+        "ET"
+      ],
+      "selected_left_child_observed": true,
+      "footer": [
+        33563479,
+        33563479,
+        33563479
+      ],
+      "footer_names": [
+        33596013,
+        33596080,
+        33596044
+      ],
+      "text_submissions": 5,
+      "arena_used": 65408
+    },
+    {
+      "focus": 1,
+      "left_names": [
+        "关闭",
+        "AS",
+        "ET",
+        "ST"
+      ],
+      "selected_left_child_observed": true,
+      "footer": [
+        33563479,
+        33563479,
+        33563479
+      ],
+      "footer_names": [
+        33596013,
+        33596080,
+        33596044
+      ],
+      "text_submissions": 6,
+      "arena_used": 65408
+    },
+    {
+      "focus": 4,
+      "left_names": [
+        "关闭",
+        "AS",
+        "ET",
+        "ST"
+      ],
+      "selected_left_child_observed": true,
+      "footer": [
+        33563479,
+        33563479,
+        33563479
+      ],
+      "footer_names": [
+        33596013,
+        33596080,
+        33596044
+      ],
+      "text_submissions": 6,
+      "arena_used": 65408
+    },
+    {
+      "focus": 12,
+      "left_names": [
+        "AS",
+        "ET",
+        "ST"
+      ],
+      "selected_left_child_observed": true,
+      "footer": [
+        33563479,
+        33563479,
+        33563479
+      ],
+      "footer_names": [
+        33596013,
+        33596080,
+        33596044
+      ],
+      "text_submissions": 5,
+      "arena_used": 65408
+    }
+  ],
+  "preserved455_functions": [
+    "owned",
+    "valid",
+    "close_page",
+    "r5_filter_parent_refresh425",
+    "wait_command",
+    "return_parent",
+    "finish_command",
+    "submit",
+    "next",
+    "private_input",
+    "dispatch",
+    "exit_page",
+    "destroy",
+    "controller_destroy",
+    "sound_parent_presenter",
+    "sound_menu_event",
+    "r5sound_menu_event2d6_443",
+    "r5sound_menu_event425"
+  ],
+  "fixtures": [
+    "Original OS/library services, empty language/font lookup caches, font raster and image engine submit boundaries",
+    "Global scene/manager/worker services; actual widget constructors/apply/producers and names publisher/getters execute",
+    "Actual original list children generated; native pending row callbacks invoked explicitly",
+    "Large pool scrolling uses original stop-animation and immediate-position setters, with bounded10M instructions for native child construction; no fixture writes focus, child IDs or output"
+  ],
+  "limits": [
+    "No font glyph rasterization, physical LCD, device installation/startup or encoding test",
+    "Natural Engine animation scheduling is not simulated; original immediate layout is explicitly requested",
+    "Parent native pop is observed; full parent reconstruction is not simulated"
+  ],
+  "camera_io": false,
+  "device_tested": false
+}

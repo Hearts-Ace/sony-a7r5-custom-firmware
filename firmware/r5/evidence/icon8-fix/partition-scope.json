@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "parent_DAT_sha256": "4effe34a806359ea0517db7240557f3f771a034322ab8aa37c2640ed29467cf1",
+  "changed_n15_files": [
+    "/share/app/image_00_32_IPSX.uxc",
+    "/share/app/image_00_23_IPSX.uxc"
+  ],
+  "other_regular_files_exact": 917,
+  "all_regular_inodes_exact": true,
+  "all_components_exact": true,
+  "three_other_partitions_exact": true,
+  "version": "4.57",
+  "camera_io": false
+}

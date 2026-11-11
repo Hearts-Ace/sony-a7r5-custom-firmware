@@ -1,0 +1,3767 @@
+{
+  "schema": "r5-aspect-final-cp455-preservation/1",
+  "CP_sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a",
+  "script_sha256": "d77b930d6bfc69d321cee0cb3b12ae43f6d0b4c49cbba68e954ffd6b8722792d",
+  "cases": [
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 0,
+      "page": "native",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 0,
+      "page": "native",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000967bc56e00000000000000000100000001000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 0,
+      "page": "missing",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 0,
+      "page": "missing",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 0,
+      "page": "missing_second",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 0,
+      "page": "missing_second",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 0,
+      "page": "wrong_PTE",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 0,
+      "page": "wrong_PTE",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 0,
+      "page": "wrong_L1_type",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 0,
+      "page": "wrong_L1_type",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 0,
+      "page": "corrupt:0",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 0,
+      "page": "corrupt:0",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 0,
+      "page": "corrupt:2239",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 0,
+      "page": "corrupt:2239",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 0,
+      "page": "corrupt:4095",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 0,
+      "page": "corrupt:4095",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 0,
+      "page": "corrupt:4096",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 0,
+      "page": "corrupt:4096",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 0,
+      "page": "corrupt:5859",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 0,
+      "page": "corrupt:5859",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_RETIRE",
+      "EXEC_MODE": 0,
+      "page": "native",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000fc844fb200000000000000000100000001000000010000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "actual_filter_SELECT_then_all11_Gamma_hooks",
+      "mode": 0,
+      "page": "native",
+      "passed": true,
+      "events": {
+        "entries": {
+          "r5ss_cp_guard_consume": 1,
+          "r5_cp_stage413_consume": 1
+        },
+        "sends": [
+          {
+            "source": "0x90030001",
+            "payload_hex": "ea01812052354653010000000000000044332211d204000000000000fcd89ee4",
+            "bytes": 32
+          }
+        ],
+        "allocations": [
+          32
+        ],
+        "frees": [],
+        "native_cleanup_calls": [],
+        "invalid_accesses": [],
+        "native_continuation": "0x496068",
+        "registry_setup": {
+          "actual_constructor_once_in_boot": "0x6566E2",
+          "actual_memclr": true,
+          "focus4": false,
+          "pathmask": 0,
+          "registry_ready": true,
+          "actor": false,
+          "exists17": false,
+          "persistent_mode": 0
+        }
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 0,
+      "page": "native",
+      "kind": 4,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 0,
+      "page": "native",
+      "kind": 17,
+      "native_result": "0x0",
+      "completion_sequence": 1,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_completion_hook": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "actual_filter_SELECT_then_all11_Gamma_hooks",
+      "mode": 0,
+      "page": "missing",
+      "passed": true,
+      "events": {
+        "entries": {
+          "r5ss_cp_guard_consume": 1,
+          "r5_cp_stage413_consume": 1
+        },
+        "sends": [
+          {
+            "source": "0x90030001",
+            "payload_hex": "ea01812052354653010000000000000044332211d204000000000000fcd89ee4",
+            "bytes": 32
+          }
+        ],
+        "allocations": [
+          32
+        ],
+        "frees": [],
+        "native_cleanup_calls": [],
+        "invalid_accesses": [],
+        "native_continuation": "0x496068",
+        "registry_setup": {
+          "actual_constructor_once_in_boot": "0x6566E2",
+          "actual_memclr": true,
+          "focus4": false,
+          "pathmask": 0,
+          "registry_ready": true,
+          "actor": false,
+          "exists17": false,
+          "persistent_mode": 0
+        }
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 0,
+      "page": "missing",
+      "kind": 4,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 0,
+      "page": "missing",
+      "kind": 17,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1,
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "actual_filter_SELECT_then_all11_Gamma_hooks",
+      "mode": 0,
+      "page": "missing_second",
+      "passed": true,
+      "events": {
+        "entries": {
+          "r5ss_cp_guard_consume": 1,
+          "r5_cp_stage413_consume": 1
+        },
+        "sends": [
+          {
+            "source": "0x90030001",
+            "payload_hex": "ea01812052354653010000000000000044332211d204000000000000fcd89ee4",
+            "bytes": 32
+          }
+        ],
+        "allocations": [
+          32
+        ],
+        "frees": [],
+        "native_cleanup_calls": [],
+        "invalid_accesses": [],
+        "native_continuation": "0x496068",
+        "registry_setup": {
+          "actual_constructor_once_in_boot": "0x6566E2",
+          "actual_memclr": true,
+          "focus4": false,
+          "pathmask": 0,
+          "registry_ready": true,
+          "actor": false,
+          "exists17": false,
+          "persistent_mode": 0
+        }
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 0,
+      "page": "missing_second",
+      "kind": 4,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 0,
+      "page": "missing_second",
+      "kind": 17,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1,
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "actual_filter_SELECT_then_all11_Gamma_hooks",
+      "mode": 0,
+      "page": "corrupt:4096",
+      "passed": true,
+      "events": {
+        "entries": {
+          "r5ss_cp_guard_consume": 1,
+          "r5_cp_stage413_consume": 1
+        },
+        "sends": [
+          {
+            "source": "0x90030001",
+            "payload_hex": "ea01812052354653010000000000000044332211d204000000000000fcd89ee4",
+            "bytes": 32
+          }
+        ],
+        "allocations": [
+          32
+        ],
+        "frees": [],
+        "native_cleanup_calls": [],
+        "invalid_accesses": [],
+        "native_continuation": "0x496068",
+        "registry_setup": {
+          "actual_constructor_once_in_boot": "0x6566E2",
+          "actual_memclr": true,
+          "focus4": false,
+          "pathmask": 0,
+          "registry_ready": true,
+          "actor": false,
+          "exists17": false,
+          "persistent_mode": 0
+        }
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 0,
+      "page": "corrupt:4096",
+      "kind": 4,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 0,
+      "page": "corrupt:4096",
+      "kind": 17,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1,
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 0,
+      "page": "native",
+      "kind": 17,
+      "native_result": "0xe003",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_completion_hook": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 0,
+      "variant": "default7",
+      "original_gain": 7,
+      "selected_gain": 7,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 0,
+      "variant": "old_gain0",
+      "original_gain": 0,
+      "selected_gain": 7,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 0,
+      "variant": "unbound",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 0,
+      "variant": "path_off",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 0,
+      "variant": "wrong_caller",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 0,
+      "variant": "missing",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 0,
+      "variant": "wrong_PTE",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 0,
+      "variant": "wrong_L1_type",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 0,
+      "variant": "corrupt:4096",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 0,
+      "variant": "corrupt:5859",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 0,
+      "options": {
+        "focus4": false,
+        "pathmask": 0
+      },
+      "initial_safe": 1,
+      "rejects": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000967bc56e00000000000000000100000001000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 0,
+      "options": {
+        "focus4": false,
+        "pathmask": 2
+      },
+      "initial_safe": 1,
+      "rejects": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000967bc56e00000000000000000100000001000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 2,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 0,
+      "options": {
+        "focus4": true,
+        "pathmask": 0
+      },
+      "initial_safe": 1,
+      "rejects": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000967bc56e00000000000000000100000001000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": true,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 0,
+      "options": {
+        "focus4": true,
+        "pathmask": 2
+      },
+      "initial_safe": 1,
+      "rejects": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000967bc56e00000000000000000100000001000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": true,
+        "pathmask": 2,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 0,
+      "options": {
+        "registry_ready": false
+      },
+      "initial_safe": 0,
+      "rejects": 3,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c05253533101000000443322110000000000000000000000006376071400000000000000000100000001000000000000000300000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": false,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 0,
+      "options": {
+        "actor": true
+      },
+      "initial_safe": 0,
+      "rejects": 64,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000549cb27701000000000000000100000000000000000000004000000016000000010000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": true,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 0,
+      "options": {
+        "exists17": true
+      },
+      "initial_safe": 0,
+      "rejects": 24,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000c2ea6b2e00000000000000000100000001000000000000001800000016000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": true,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 0,
+      "options": {
+        "persistent_mode": 1
+      },
+      "initial_safe": 1,
+      "rejects": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c05253533101000000443322110000000000000000000000007bb8f6e000800000000000000100000000000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 1
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 1,
+      "page": "native",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 1,
+      "page": "native",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000967bc56e00000000000000000100000001000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 1,
+      "page": "missing",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 1,
+      "page": "missing",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 1,
+      "page": "missing_second",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 1,
+      "page": "missing_second",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 1,
+      "page": "wrong_PTE",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 1,
+      "page": "wrong_PTE",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 1,
+      "page": "wrong_L1_type",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 1,
+      "page": "wrong_L1_type",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 1,
+      "page": "corrupt:0",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 1,
+      "page": "corrupt:0",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 1,
+      "page": "corrupt:2239",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 1,
+      "page": "corrupt:2239",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 1,
+      "page": "corrupt:4095",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 1,
+      "page": "corrupt:4095",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 1,
+      "page": "corrupt:4096",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 1,
+      "page": "corrupt:4096",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "ordinary_class0",
+      "EXEC_MODE": 1,
+      "page": "corrupt:5859",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496056",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_SNAPSHOT",
+      "EXEC_MODE": 1,
+      "page": "corrupt:5859",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5_cp_stage413_consume": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x49604e",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "sound_RETIRE",
+      "EXEC_MODE": 1,
+      "page": "native",
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000fc844fb200000000000000000100000001000000010000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "actual_filter_SELECT_then_all11_Gamma_hooks",
+      "mode": 1,
+      "page": "native",
+      "passed": true,
+      "events": {
+        "entries": {
+          "r5ss_cp_guard_consume": 1,
+          "r5_cp_stage413_consume": 1
+        },
+        "sends": [
+          {
+            "source": "0x90030001",
+            "payload_hex": "ea01812052354653010000000000000044332211d204000000000000fcd89ee4",
+            "bytes": 32
+          }
+        ],
+        "allocations": [
+          32
+        ],
+        "frees": [],
+        "native_cleanup_calls": [],
+        "invalid_accesses": [],
+        "native_continuation": "0x496068",
+        "registry_setup": {
+          "actual_constructor_once_in_boot": "0x6566E2",
+          "actual_memclr": true,
+          "focus4": false,
+          "pathmask": 0,
+          "registry_ready": true,
+          "actor": false,
+          "exists17": false,
+          "persistent_mode": 0
+        }
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 1,
+      "page": "native",
+      "kind": 4,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 1,
+      "page": "native",
+      "kind": 17,
+      "native_result": "0x0",
+      "completion_sequence": 1,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_completion_hook": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "actual_filter_SELECT_then_all11_Gamma_hooks",
+      "mode": 1,
+      "page": "missing",
+      "passed": true,
+      "events": {
+        "entries": {
+          "r5ss_cp_guard_consume": 1,
+          "r5_cp_stage413_consume": 1
+        },
+        "sends": [
+          {
+            "source": "0x90030001",
+            "payload_hex": "ea01812052354653010000000000000044332211d204000000000000fcd89ee4",
+            "bytes": 32
+          }
+        ],
+        "allocations": [
+          32
+        ],
+        "frees": [],
+        "native_cleanup_calls": [],
+        "invalid_accesses": [],
+        "native_continuation": "0x496068",
+        "registry_setup": {
+          "actual_constructor_once_in_boot": "0x6566E2",
+          "actual_memclr": true,
+          "focus4": false,
+          "pathmask": 0,
+          "registry_ready": true,
+          "actor": false,
+          "exists17": false,
+          "persistent_mode": 0
+        }
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 1,
+      "page": "missing",
+      "kind": 4,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 1,
+      "page": "missing",
+      "kind": 17,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1,
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "actual_filter_SELECT_then_all11_Gamma_hooks",
+      "mode": 1,
+      "page": "missing_second",
+      "passed": true,
+      "events": {
+        "entries": {
+          "r5ss_cp_guard_consume": 1,
+          "r5_cp_stage413_consume": 1
+        },
+        "sends": [
+          {
+            "source": "0x90030001",
+            "payload_hex": "ea01812052354653010000000000000044332211d204000000000000fcd89ee4",
+            "bytes": 32
+          }
+        ],
+        "allocations": [
+          32
+        ],
+        "frees": [],
+        "native_cleanup_calls": [],
+        "invalid_accesses": [],
+        "native_continuation": "0x496068",
+        "registry_setup": {
+          "actual_constructor_once_in_boot": "0x6566E2",
+          "actual_memclr": true,
+          "focus4": false,
+          "pathmask": 0,
+          "registry_ready": true,
+          "actor": false,
+          "exists17": false,
+          "persistent_mode": 0
+        }
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 1,
+      "page": "missing_second",
+      "kind": 4,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 1,
+      "page": "missing_second",
+      "kind": 17,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1,
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "actual_filter_SELECT_then_all11_Gamma_hooks",
+      "mode": 1,
+      "page": "corrupt:4096",
+      "passed": true,
+      "events": {
+        "entries": {
+          "r5ss_cp_guard_consume": 1,
+          "r5_cp_stage413_consume": 1
+        },
+        "sends": [
+          {
+            "source": "0x90030001",
+            "payload_hex": "ea01812052354653010000000000000044332211d204000000000000fcd89ee4",
+            "bytes": 32
+          }
+        ],
+        "allocations": [
+          32
+        ],
+        "frees": [],
+        "native_cleanup_calls": [],
+        "invalid_accesses": [],
+        "native_continuation": "0x496068",
+        "registry_setup": {
+          "actual_constructor_once_in_boot": "0x6566E2",
+          "actual_memclr": true,
+          "focus4": false,
+          "pathmask": 0,
+          "registry_ready": true,
+          "actor": false,
+          "exists17": false,
+          "persistent_mode": 0
+        }
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 1,
+      "page": "corrupt:4096",
+      "kind": 4,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 1,
+      "page": "corrupt:4096",
+      "kind": 17,
+      "native_result": "0x0",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1,
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [
+        "0x64f378",
+        "0x64f64c",
+        "0x20000100",
+        "0x6531ca",
+        "0x65337a",
+        "0x53bfc8",
+        "0x63cfb0",
+        "0x63d068"
+      ],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "native_cleanup",
+      "EXEC_MODE": 1,
+      "page": "native",
+      "kind": 17,
+      "native_result": "0xe003",
+      "completion_sequence": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_cleanup": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_completion_hook": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 1,
+      "variant": "default7",
+      "original_gain": 7,
+      "selected_gain": 7,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 1,
+      "variant": "old_gain0",
+      "original_gain": 0,
+      "selected_gain": 7,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 1,
+      "variant": "unbound",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 1,
+      "variant": "path_off",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 1,
+      "variant": "wrong_caller",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 1,
+      "variant": "missing",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 1,
+      "variant": "wrong_PTE",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 1,
+      "variant": "wrong_L1_type",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 1,
+      "variant": "corrupt:4096",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "owned_gain_after_late_mmu",
+      "EXEC_MODE": 1,
+      "variant": "corrupt:5859",
+      "original_gain": 0,
+      "selected_gain": 0,
+      "all_other_registers_APSR_original_stack_exact": true,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_sound_page_error": 1
+      },
+      "sends": [],
+      "allocations": [],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": null,
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 1,
+      "options": {
+        "focus4": false,
+        "pathmask": 0
+      },
+      "initial_safe": 1,
+      "rejects": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000967bc56e00000000000000000100000001000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 1,
+      "options": {
+        "focus4": false,
+        "pathmask": 2
+      },
+      "initial_safe": 1,
+      "rejects": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000967bc56e00000000000000000100000001000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 2,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 1,
+      "options": {
+        "focus4": true,
+        "pathmask": 0
+      },
+      "initial_safe": 1,
+      "rejects": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000967bc56e00000000000000000100000001000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": true,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 1,
+      "options": {
+        "focus4": true,
+        "pathmask": 2
+      },
+      "initial_safe": 1,
+      "rejects": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000967bc56e00000000000000000100000001000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": true,
+        "pathmask": 2,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 1,
+      "options": {
+        "registry_ready": false
+      },
+      "initial_safe": 0,
+      "rejects": 3,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c05253533101000000443322110000000000000000000000006376071400000000000000000100000001000000000000000300000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": false,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 1,
+      "options": {
+        "actor": true
+      },
+      "initial_safe": 0,
+      "rejects": 64,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000549cb27701000000000000000100000000000000000000004000000016000000010000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": true,
+        "exists17": false,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 1,
+      "options": {
+        "exists17": true
+      },
+      "initial_safe": 0,
+      "rejects": 24,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c0525353310100000044332211000000000000000000000000c2ea6b2e00000000000000000100000001000000000000001800000016000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": true,
+        "persistent_mode": 0
+      }
+    },
+    {
+      "name": "initial_registration_variant",
+      "EXEC_MODE": 1,
+      "options": {
+        "persistent_mode": 1
+      },
+      "initial_safe": 1,
+      "rejects": 0,
+      "passed": true,
+      "entries": {
+        "r5ss_cp_guard_consume": 1,
+        "r5ss_cp_sound_page_error": 1,
+        "r5ss_cp_extended_consume": 1
+      },
+      "sends": [
+        {
+          "source": "0x90030001",
+          "payload_hex": "e60181c05253533101000000443322110000000000000000000000007bb8f6e000800000000000000100000000000000000000000000000016000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000",
+          "bytes": 192
+        }
+      ],
+      "allocations": [
+        192
+      ],
+      "frees": [],
+      "native_cleanup_calls": [],
+      "invalid_accesses": [],
+      "native_continuation": "0x496068",
+      "registry_setup": {
+        "actual_constructor_once_in_boot": "0x6566E2",
+        "actual_memclr": true,
+        "focus4": false,
+        "pathmask": 0,
+        "registry_ready": true,
+        "actor": false,
+        "exists17": false,
+        "persistent_mode": 1
+      }
+    }
+  ],
+  "count": 104,
+  "boots": [
+    {
+      "mode": 0,
+      "mappings": [
+        [
+          1081344,
+          4096,
+          1081344,
+          2
+        ],
+        [
+          1212416,
+          11304960,
+          1212416,
+          15
+        ],
+        [
+          12517376,
+          4780032,
+          12517376,
+          13
+        ],
+        [
+          17297408,
+          1146880,
+          17297408,
+          12
+        ],
+        [
+          18444288,
+          9064448,
+          18444288,
+          12
+        ],
+        [
+          27561984,
+          8192,
+          27561984,
+          12
+        ],
+        [
+          27574272,
+          8192,
+          27574272,
+          12
+        ],
+        [
+          27586560,
+          8192,
+          27586560,
+          12
+        ],
+        [
+          27598848,
+          8192,
+          27598848,
+          12
+        ],
+        [
+          27611136,
+          8192,
+          27611136,
+          12
+        ],
+        [
+          27623424,
+          8192,
+          27623424,
+          12
+        ],
+        [
+          27635712,
+          8192,
+          27635712,
+          12
+        ],
+        [
+          27648000,
+          8192,
+          27648000,
+          12
+        ],
+        [
+          27660288,
+          8192,
+          27660288,
+          12
+        ],
+        [
+          27672576,
+          8192,
+          27672576,
+          12
+        ],
+        [
+          27684864,
+          8192,
+          27684864,
+          12
+        ],
+        [
+          27697152,
+          8192,
+          27697152,
+          12
+        ],
+        [
+          27709440,
+          8192,
+          27709440,
+          12
+        ],
+        [
+          27721728,
+          8192,
+          27721728,
+          12
+        ],
+        [
+          27734016,
+          8192,
+          27734016,
+          12
+        ],
+        [
+          27746304,
+          8192,
+          27746304,
+          12
+        ],
+        [
+          27758592,
+          8192,
+          27758592,
+          12
+        ],
+        [
+          27770880,
+          8192,
+          27770880,
+          12
+        ],
+        [
+          27783168,
+          8192,
+          27783168,
+          12
+        ],
+        [
+          27795456,
+          8192,
+          27795456,
+          12
+        ],
+        [
+          27807744,
+          8192,
+          27807744,
+          12
+        ],
+        [
+          27820032,
+          8192,
+          27820032,
+          12
+        ],
+        [
+          27832320,
+          8192,
+          27832320,
+          12
+        ],
+        [
+          27844608,
+          8192,
+          27844608,
+          12
+        ],
+        [
+          27508736,
+          16384,
+          27508736,
+          8
+        ],
+        [
+          27525120,
+          32768,
+          27525120,
+          8
+        ],
+        [
+          18440192,
+          4096,
+          18440192,
+          15
+        ],
+        [
+          18436096,
+          4096,
+          18436096,
+          14
+        ],
+        [
+          27500544,
+          8192,
+          27500544,
+          15
+        ]
+      ],
+      "clears": [
+        [
+          18445336,
+          9052800
+        ],
+        [
+          26559488,
+          528
+        ],
+        [
+          18601896,
+          800
+        ]
+      ],
+      "late_PTE": {
+        "0x108000": "0x0",
+        "0x10a000": "0x0",
+        "0x1195000": "0x119541e",
+        "0x1196000": "0x119663e",
+        "0x1a3a000": "0x1a3a63e",
+        "0x1a3b000": "0x1a3b63e"
+      },
+      "actual_registry_constructor": true
+    },
+    {
+      "mode": 1,
+      "mappings": [
+        [
+          1081344,
+          4096,
+          1081344,
+          2
+        ],
+        [
+          1212416,
+          11304960,
+          3491889152,
+          15
+        ],
+        [
+          12517376,
+          4780032,
+          12517376,
+          13
+        ],
+        [
+          17297408,
+          1146880,
+          17297408,
+          12
+        ],
+        [
+          18444288,
+          9064448,
+          18444288,
+          12
+        ],
+        [
+          27561984,
+          8192,
+          27561984,
+          12
+        ],
+        [
+          27574272,
+          8192,
+          27574272,
+          12
+        ],
+        [
+          27586560,
+          8192,
+          27586560,
+          12
+        ],
+        [
+          27598848,
+          8192,
+          27598848,
+          12
+        ],
+        [
+          27611136,
+          8192,
+          27611136,
+          12
+        ],
+        [
+          27623424,
+          8192,
+          27623424,
+          12
+        ],
+        [
+          27635712,
+          8192,
+          27635712,
+          12
+        ],
+        [
+          27648000,
+          8192,
+          27648000,
+          12
+        ],
+        [
+          27660288,
+          8192,
+          27660288,
+          12
+        ],
+        [
+          27672576,
+          8192,
+          27672576,
+          12
+        ],
+        [
+          27684864,
+          8192,
+          27684864,
+          12
+        ],
+        [
+          27697152,
+          8192,
+          27697152,
+          12
+        ],
+        [
+          27709440,
+          8192,
+          27709440,
+          12
+        ],
+        [
+          27721728,
+          8192,
+          27721728,
+          12
+        ],
+        [
+          27734016,
+          8192,
+          27734016,
+          12
+        ],
+        [
+          27746304,
+          8192,
+          27746304,
+          12
+        ],
+        [
+          27758592,
+          8192,
+          27758592,
+          12
+        ],
+        [
+          27770880,
+          8192,
+          27770880,
+          12
+        ],
+        [
+          27783168,
+          8192,
+          27783168,
+          12
+        ],
+        [
+          27795456,
+          8192,
+          27795456,
+          12
+        ],
+        [
+          27807744,
+          8192,
+          27807744,
+          12
+        ],
+        [
+          27820032,
+          8192,
+          27820032,
+          12
+        ],
+        [
+          27832320,
+          8192,
+          27832320,
+          12
+        ],
+        [
+          27844608,
+          8192,
+          27844608,
+          12
+        ],
+        [
+          27508736,
+          16384,
+          27508736,
+          8
+        ],
+        [
+          27525120,
+          32768,
+          27525120,
+          8
+        ],
+        [
+          18440192,
+          4096,
+          18440192,
+          15
+        ],
+        [
+          18436096,
+          4096,
+          18436096,
+          14
+        ],
+        [
+          27500544,
+          8192,
+          27500544,
+          15
+        ]
+      ],
+      "clears": [
+        [
+          18445336,
+          9052800
+        ],
+        [
+          26559488,
+          528
+        ],
+        [
+          18601896,
+          800
+        ]
+      ],
+      "late_PTE": {
+        "0x108000": "0x0",
+        "0x10a000": "0x0",
+        "0x1195000": "0x119541e",
+        "0x1196000": "0x119663e",
+        "0x1a3a000": "0x1a3a63e",
+        "0x1a3b000": "0x1a3b63e"
+      },
+      "actual_registry_constructor": true
+    }
+  ],
+  "limits": [
+    "Ordinary Unicorn, not REA Evidence. Flat memory with native page table edits, no real MMU/cache/TLB/DMA/speaker proof.",
+    "Native OS IPC allocation/send/free and peripheral cleanup leaves use explicit imported historical fixtures.",
+    "Historical test functions are reused against final CP bytes, never old candidate payloads. Sound retirement, cleanup, registry and gain hooks execute; not AP scheduling or full acoustic playback."
+  ]
+}

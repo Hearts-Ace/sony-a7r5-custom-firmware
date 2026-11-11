@@ -1,0 +1,2119 @@
+{
+  "passed": true,
+  "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac",
+  "other_8cc_descriptors": 2,
+  "gap_cases": 192,
+  "producer_cases": 122,
+  "other_conditions": 30,
+  "actor_mismatch": [
+    {
+      "bias": 0,
+      "control": "target_descriptor_actor_mismatch",
+      "preserved": true
+    },
+    {
+      "bias": 268435456,
+      "control": "target_descriptor_actor_mismatch",
+      "preserved": true
+    }
+  ],
+  "scope": [
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "actor": 4132,
+      "preserved": true
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "actor": 4132,
+      "preserved": true
+    }
+  ],
+  "gaps": [
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x504a",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x504b",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x504c",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x504d",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x504e",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x504f",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5050",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5051",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5052",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5053",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5054",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5055",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5056",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5057",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5058",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5059",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x505a",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x505b",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x505c",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x505d",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x505e",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x505f",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5060",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5061",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5062",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5063",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5064",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5065",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5066",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5067",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5068",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5069",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x506a",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x506b",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x506c",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x506d",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x506e",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x506f",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5070",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5071",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5072",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5073",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5074",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5075",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5076",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5077",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5078",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db860",
+      "value": "0x5079",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x504a",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x504b",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x504c",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x504d",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x504e",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x504f",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5050",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5051",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5052",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5053",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5054",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5055",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5056",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5057",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5058",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5059",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x505a",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x505b",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x505c",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x505d",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x505e",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x505f",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5060",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5061",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5062",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5063",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5064",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5065",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5066",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5067",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5068",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5069",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x506a",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x506b",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x506c",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x506d",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x506e",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x506f",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5070",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5071",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5072",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5073",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5074",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5075",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5076",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5077",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5078",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 0,
+      "descriptor": "0x53db910",
+      "value": "0x5079",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x504a",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x504b",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x504c",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x504d",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x504e",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x504f",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5050",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5051",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5052",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5053",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5054",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5055",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5056",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5057",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5058",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5059",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x505a",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x505b",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x505c",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x505d",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x505e",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x505f",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5060",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5061",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5062",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5063",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5064",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5065",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5066",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5067",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5068",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5069",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x506a",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x506b",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x506c",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x506d",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x506e",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x506f",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5070",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5071",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5072",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5073",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5074",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5075",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5076",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5077",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5078",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db860",
+      "value": "0x5079",
+      "invalid_leaf": "0x510a070"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x504a",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x504b",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x504c",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x504d",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x504e",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x504f",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5050",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5051",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5052",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5053",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5054",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5055",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5056",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5057",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5058",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5059",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x505a",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x505b",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x505c",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x505d",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x505e",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x505f",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5060",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5061",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5062",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5063",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5064",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5065",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5066",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5067",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5068",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5069",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x506a",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x506b",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x506c",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x506d",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x506e",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x506f",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5070",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5071",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5072",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5073",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5074",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5075",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5076",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5077",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5078",
+      "invalid_leaf": "0x510a210"
+    },
+    {
+      "bias": 268435456,
+      "descriptor": "0x53db910",
+      "value": "0x5079",
+      "invalid_leaf": "0x510a210"
+    }
+  ],
+  "producer": [
+    {
+      "bias": 0,
+      "value": 0,
+      "before": "0x5041",
+      "after": "0x5041"
+    },
+    {
+      "bias": 0,
+      "value": 1,
+      "before": "0x5042",
+      "after": "0x5042"
+    },
+    {
+      "bias": 0,
+      "value": 2,
+      "before": "0x5043",
+      "after": "0x5043"
+    },
+    {
+      "bias": 0,
+      "value": 3,
+      "before": "0x5044",
+      "after": "0x5044"
+    },
+    {
+      "bias": 0,
+      "value": 4,
+      "before": "0x5045",
+      "after": "0x5045"
+    },
+    {
+      "bias": 0,
+      "value": 5,
+      "before": "0x5046",
+      "after": "0x5046"
+    },
+    {
+      "bias": 0,
+      "value": 6,
+      "before": "0x5047",
+      "after": "0x5047"
+    },
+    {
+      "bias": 0,
+      "value": 7,
+      "before": "0x5048",
+      "after": "0x5048"
+    },
+    {
+      "bias": 0,
+      "value": 8,
+      "before": "0x5049",
+      "after": "0x507a"
+    },
+    {
+      "bias": 0,
+      "value": 9,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 10,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 11,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 12,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 13,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 14,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 15,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 16,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 17,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 18,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 19,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 20,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 21,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 22,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 23,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 24,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 25,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 26,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 27,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 28,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 29,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 30,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 31,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 32,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 33,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 34,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 35,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 36,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 37,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 38,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 39,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 40,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 41,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 42,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 43,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 44,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 45,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 46,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 47,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 48,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 49,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 50,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 51,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 52,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 53,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 54,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 55,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 56,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 57,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 256,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 2147483647,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 0,
+      "value": 4294967295,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 0,
+      "before": "0x5041",
+      "after": "0x5041"
+    },
+    {
+      "bias": 268435456,
+      "value": 1,
+      "before": "0x5042",
+      "after": "0x5042"
+    },
+    {
+      "bias": 268435456,
+      "value": 2,
+      "before": "0x5043",
+      "after": "0x5043"
+    },
+    {
+      "bias": 268435456,
+      "value": 3,
+      "before": "0x5044",
+      "after": "0x5044"
+    },
+    {
+      "bias": 268435456,
+      "value": 4,
+      "before": "0x5045",
+      "after": "0x5045"
+    },
+    {
+      "bias": 268435456,
+      "value": 5,
+      "before": "0x5046",
+      "after": "0x5046"
+    },
+    {
+      "bias": 268435456,
+      "value": 6,
+      "before": "0x5047",
+      "after": "0x5047"
+    },
+    {
+      "bias": 268435456,
+      "value": 7,
+      "before": "0x5048",
+      "after": "0x5048"
+    },
+    {
+      "bias": 268435456,
+      "value": 8,
+      "before": "0x5049",
+      "after": "0x507a"
+    },
+    {
+      "bias": 268435456,
+      "value": 9,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 10,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 11,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 12,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 13,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 14,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 15,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 16,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 17,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 18,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 19,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 20,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 21,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 22,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 23,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 24,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 25,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 26,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 27,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 28,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 29,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 30,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 31,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 32,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 33,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 34,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 35,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 36,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 37,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 38,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 39,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 40,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 41,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 42,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 43,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 44,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 45,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 46,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 47,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 48,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 49,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 50,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 51,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 52,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 53,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 54,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 55,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 56,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 57,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 256,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 2147483647,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    },
+    {
+      "bias": 268435456,
+      "value": 4294967295,
+      "before": "0x80000000",
+      "after": "0x80000000"
+    }
+  ],
+  "other_condition_rows": [
+    {
+      "bias": 0,
+      "domain": "0x86",
+      "values": 2,
+      "blocked": 1
+    },
+    {
+      "bias": 0,
+      "domain": "0xa9",
+      "values": 3,
+      "blocked": 1
+    },
+    {
+      "bias": 0,
+      "domain": "0x871",
+      "values": 3,
+      "blocked": 1
+    },
+    {
+      "bias": 0,
+      "domain": "0x872",
+      "values": 3,
+      "blocked": 1
+    },
+    {
+      "bias": 0,
+      "domain": "0x8a9",
+      "values": 8,
+      "blocked": 2
+    },
+    {
+      "bias": 0,
+      "domain": "0x8b5",
+      "values": 5,
+      "blocked": 2
+    },
+    {
+      "bias": 0,
+      "domain": "0x8ca",
+      "values": 10,
+      "blocked": 1
+    },
+    {
+      "bias": 0,
+      "domain": "0x8cb",
+      "values": 10,
+      "blocked": 2
+    },
+    {
+      "bias": 0,
+      "domain": "0x8cd",
+      "values": 2,
+      "blocked": 1
+    },
+    {
+      "bias": 0,
+      "domain": "0x908",
+      "values": 6,
+      "blocked": 1
+    },
+    {
+      "bias": 0,
+      "domain": "0x998",
+      "values": 3,
+      "blocked": 1
+    },
+    {
+      "bias": 0,
+      "domain": "0x9a6",
+      "values": 2,
+      "blocked": 1
+    },
+    {
+      "bias": 0,
+      "domain": "0xa47",
+      "values": 10,
+      "blocked": 1
+    },
+    {
+      "bias": 0,
+      "domain": "0xa58",
+      "values": 4,
+      "blocked": 1
+    },
+    {
+      "bias": 0,
+      "domain": "0xa59",
+      "values": 4,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0x86",
+      "values": 2,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0xa9",
+      "values": 3,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0x871",
+      "values": 3,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0x872",
+      "values": 3,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0x8a9",
+      "values": 8,
+      "blocked": 2
+    },
+    {
+      "bias": 268435456,
+      "domain": "0x8b5",
+      "values": 5,
+      "blocked": 2
+    },
+    {
+      "bias": 268435456,
+      "domain": "0x8ca",
+      "values": 10,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0x8cb",
+      "values": 10,
+      "blocked": 2
+    },
+    {
+      "bias": 268435456,
+      "domain": "0x8cd",
+      "values": 2,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0x908",
+      "values": 6,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0x998",
+      "values": 3,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0x9a6",
+      "values": 2,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0xa47",
+      "values": 10,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0xa58",
+      "values": 4,
+      "blocked": 1
+    },
+    {
+      "bias": 268435456,
+      "domain": "0xa59",
+      "values": 4,
+      "blocked": 1
+    }
+  ],
+  "camera_io": false,
+  "device_tested": false,
+  "native": [
+    "actual24921b8 producer legacy/out-of-range projection",
+    "actual249069c selector across every bounded-scanned8cc descriptor and gap504a..5079",
+    "actual native reason engine for all remaining zoom-start domains"
+  ],
+  "models": [
+    "referencePolicyReplay C++ containers, heap/libc, API indexes and observer notification boundary"
+  ],
+  "limits": [
+    "bounded original descriptor scan50b0000..53f8000",
+    "other conditions use explicit valid state fixtures, not whole boot state",
+    "no hardware decoder or GUI acceptance"
+  ]
+}

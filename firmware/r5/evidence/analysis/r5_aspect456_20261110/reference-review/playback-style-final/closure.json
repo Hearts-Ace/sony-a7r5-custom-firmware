@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "status": "FINAL_STYLE_AP_PLAYBACK_OFFLINE_CLOSED",
+  "AP": "analysis/r5_filter_native_style_20261110/candidate-c/appFw-NONINSTALLABLE.so",
+  "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac",
+  "MPR_sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478",
+  "binding_sha256": "e3d23c028fd6eec567388168fae7846256f72bfa5648154bf67ac0a4a732a0db",
+  "component_ledger_sha256": "2f6d0de271067d6956da3e2755d9636156191cfab6087832f647f88c46c75b60",
+  "component_sources_current_exact": true,
+  "playback1200B_and_all_hooks_preserved_by_style": true,
+  "evidence": {
+    "preview-gate.json": {
+      "sha256": "88bad76e6612dd10c26cfa610b0acbcf564ade51ddfad0f0932275f6ec43f8c5",
+      "passed": true,
+      "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac"
+    },
+    "policy.json": {
+      "sha256": "87e5f791a973de65e14ee04f70570c1ee1d23286b510152c1664e96c20800049",
+      "passed": true,
+      "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac"
+    },
+    "zoom-gate.json": {
+      "sha256": "eea84d91e0d24fb7faffe4f4e330571770942dd6cf28e88d0d3d5ccda58a776c",
+      "passed": true,
+      "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac"
+    },
+    "policy-scope.json": {
+      "sha256": "eaf8dc463769b2e79d0c347b0f9392419898cfcce1fa63b8dd4ff964b9bc0920",
+      "passed": true,
+      "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac"
+    },
+    "raw-writer-reader-ap.json": {
+      "sha256": "d44ea4f1e3a7b13c7bad4326a1491852d82693135836afec84467d50ab878f44",
+      "passed": true,
+      "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac"
+    }
+  },
+  "camera_io": false,
+  "device_tested": false,
+  "scope": "Final style AP has all four required native playback subset reruns plus full native RAW TIFF writer/reader/AP closure; encoder-component tests reused only by exact unchanged SHA.",
+  "limits": [
+    "Native writer serialized TIFF uses explicit metadata/SCN fixtures, no actual Bayer encoder output",
+    "No hardware image encoding/decoding/LCD/GUI/camera/card/flash"
+  ]
+}

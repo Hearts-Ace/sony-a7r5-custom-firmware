@@ -1,0 +1,359 @@
+{
+  "passed": true,
+  "kind": "STATIC_FINAL_AP_SOURCE_RESOURCE_SCOPE",
+  "AP_sha256": "e403e98212fc20056e0f876f7b8312cf48f9bfe5122b9954cb4e3e45e0d61937",
+  "parent_AP_sha256": "470b36805d5c05f847e585100e63bd2517fe0a856e9b78b397826043ecdcde9e",
+  "stock_AP_sha256": "41bd8f4cda1f44c7038912837737e1ce6a650065f2108061ada30e5c7f9ce7c7",
+  "regions": [
+    {
+      "name": "Fn select vertical style98",
+      "lo": "0x414ead8",
+      "hi_exclusive": "0x414fec0",
+      "bytes": 5096,
+      "sha256": "36ca5ad9ba8d550d0ffa8d3545a0dd8a33fbb0f6648107517db5a0c4f719dd52",
+      "exact_stock": true,
+      "relocated_existing_crop_preview_hooks": [],
+      "exact_parent": true
+    },
+    {
+      "name": "Fn select horizontal style98",
+      "lo": "0x414fef8",
+      "hi_exclusive": "0x41512e0",
+      "bytes": 5096,
+      "sha256": "16ba8887f730f267f0ebf40644d764bacab6d4f8390e2ebdddbc1ef8bc2b80b4",
+      "exact_stock": true,
+      "relocated_existing_crop_preview_hooks": [],
+      "exact_parent": true
+    },
+    {
+      "name": "Fn original controller presenter constructor refresh lifecycle region",
+      "lo": "0x1db0000",
+      "hi_exclusive": "0x1dc0000",
+      "bytes": 65536,
+      "sha256": "8d2600ecef644de1be88ac639b3841f0da204153bca82176939f593013f1496e",
+      "exact_stock": false,
+      "relocated_existing_crop_preview_hooks": [
+        "0x1db602c",
+        "0x1db648c"
+      ],
+      "exact_parent": false
+    },
+    {
+      "name": "Fn original model output and input region",
+      "lo": "0x21f0000",
+      "hi_exclusive": "0x2200000",
+      "bytes": 65536,
+      "sha256": "d37c507415faa94a0c142b1cbb5340f9e58f7cf179e90c6de1c8df2d2dee7d76",
+      "exact_stock": true,
+      "relocated_existing_crop_preview_hooks": [],
+      "exact_parent": true
+    },
+    {
+      "name": "Fn image queries both",
+      "lo": "0x1bd18e8",
+      "hi_exclusive": "0x1bd1ae8",
+      "bytes": 512,
+      "sha256": "8216c3a67d09bad36730149df3ef0f54c0a1ef733321a63fff7aff45ecbeedf4",
+      "exact_stock": true,
+      "relocated_existing_crop_preview_hooks": [],
+      "exact_parent": true
+    },
+    {
+      "name": "MENU original row icon query",
+      "lo": "0x1bd1ae8",
+      "hi_exclusive": "0x1bd1b88",
+      "bytes": 160,
+      "sha256": "a795d7b4c774b89777a194169644679f6157f1a07ee30f269d7db0aa98975e38",
+      "exact_stock": true,
+      "relocated_existing_crop_preview_hooks": [],
+      "exact_parent": true
+    },
+    {
+      "name": "MENU and Fn wrappers",
+      "lo": "0x1bd5810",
+      "hi_exclusive": "0x1bd58a0",
+      "bytes": 144,
+      "sha256": "7a742e7971ba2979eb9af597270f7525f8ea36d03fcc2ce74c96c851c34f4abc",
+      "exact_stock": true,
+      "relocated_existing_crop_preview_hooks": [],
+      "exact_parent": true
+    },
+    {
+      "name": "Fn original list producers",
+      "lo": "0x1bc36f8",
+      "hi_exclusive": "0x1bc3a00",
+      "bytes": 776,
+      "sha256": "a88ca26351c698679f3f3a59033fa7634108aaeccb717e6c87a61cf08e3f074c",
+      "exact_stock": true,
+      "relocated_existing_crop_preview_hooks": [],
+      "exact_parent": false
+    },
+    {
+      "name": "Native dimension category",
+      "lo": "0x1bc785c",
+      "hi_exclusive": "0x1bc78a4",
+      "bytes": 72,
+      "sha256": "4fc863befacbd8c5bdc9e7dc76cc99bf41067e5569d2db65688201af53ab5d29",
+      "exact_stock": true,
+      "relocated_existing_crop_preview_hooks": [],
+      "exact_parent": true
+    },
+    {
+      "name": "MENU original producer",
+      "lo": "0x22df69c",
+      "hi_exclusive": "0x22df800",
+      "bytes": 356,
+      "sha256": "f801681a4f7f99d295d0af68dc1c083c4a32a9de75fc587d3309ea68f132d321",
+      "exact_stock": true,
+      "relocated_existing_crop_preview_hooks": [],
+      "exact_parent": true
+    },
+    {
+      "name": "Native aspect row table four128B",
+      "lo": "0x3f46600",
+      "hi_exclusive": "0x3f46800",
+      "bytes": 512,
+      "sha256": "dfc7c8d7430aad7b444677eca8b13867d4d44d44048efc5a5e25cda583b5a725",
+      "exact_stock": true,
+      "relocated_existing_crop_preview_hooks": [],
+      "exact_parent": true
+    }
+  ],
+  "consumers": {
+    "MENU row0c query": "01bd1ae8: stp      x29, x30, [sp, #-0x50]!\n01bd1aec: mov      x29, sp\n01bd1af0: ldr      x2, [x0]\n01bd1af4: stp      x19, x20, [sp, #0x10]\n01bd1af8: mov      x19, x0\n01bd1afc: mov      w20, w1\n01bd1b00: ldr      x2, [x2, #0x560]\n01bd1b04: str      x21, [sp, #0x20]\n01bd1b08: blr      x2\n01bd1b0c: tst      w0, #0xff\n01bd1b10: ldr      x0, [x19]\n01bd1b14: b.eq     #0x1bd1b70\n01bd1b18: ldr      x2, [x0, #0x2a8]\n01bd1b1c: mov      x0, x19\n01bd1b20: mov      w1, #0x21\n01bd1b24: blr      x2\n01bd1b28: mov      w21, w0\n01bd1b2c: bl       #0x1bd0590\n01bd1b30: mov      w19, w0\n01bd1b34: mov      w0, w20\n01bd1b38: bl       #0x1bc8aac\n01bd1b3c: mov      w20, w0\n01bd1b40: mov      w0, w21\n01bd1b44: bl       #0x1bcfd18\n01bd1b48: mov      w2, w0\n01bd1b4c: add      x8, x29, #0x30\n01bd1b50: mov      w0, w19\n01bd1b54: mov      w1, w20\n01bd1b58: bl       #0x181b090\n01bd1b5c: ldr      w0, [x29, #0x40]\n01bd1b60: ldp      x19, x20, [sp, #0x10]\n01bd1b64: ldr      x21, [sp, #0x20]\n01bd1b68: ldp      x29, x30, [sp], #0x50\n01bd1b6c: ret      \n01bd1b70: ldr      x2, [x0, #0x790]\n01bd1b74: mov      w1, w20\n01bd1b78: mov      x0, x19\n01bd1b7c: blr      x2\n01bd1b80: ldr      w0, [x0, #0xc]\n01bd1b84: b        #0x1bd1b60",
+    "Fn row20 row24 queries": "01bd18e8: stp      x29, x30, [sp, #-0x50]!\n01bd18ec: mov      x29, sp\n01bd18f0: ldr      x2, [x0]\n01bd18f4: stp      x19, x20, [sp, #0x10]\n01bd18f8: mov      x19, x0\n01bd18fc: mov      w20, w1\n01bd1900: ldr      x2, [x2, #0x550]\n01bd1904: str      x21, [sp, #0x20]\n01bd1908: blr      x2\n01bd190c: tst      w0, #0xff\n01bd1910: ldr      x0, [x19]\n01bd1914: b.eq     #0x1bd1938\n01bd1918: ldr      x3, [x0, #0x8b8]\n01bd191c: ldr      x21, [sp, #0x20]\n01bd1920: mov      w1, w20\n01bd1924: mov      x0, x19\n01bd1928: mov      w2, #0\n01bd192c: ldp      x19, x20, [sp, #0x10]\n01bd1930: ldp      x29, x30, [sp], #0x50\n01bd1934: br       x3\n01bd1938: ldr      x2, [x0, #0x558]\n01bd193c: mov      w1, w20\n01bd1940: mov      x0, x19\n01bd1944: blr      x2\n01bd1948: tst      w0, #0xff\n01bd194c: ldr      x0, [x19]\n01bd1950: b.eq     #0x1bd195c\n01bd1954: ldr      x3, [x0, #0x8c0]\n01bd1958: b        #0x1bd191c\n01bd195c: ldr      x2, [x0, #0x560]\n01bd1960: mov      w1, w20\n01bd1964: mov      x0, x19\n01bd1968: blr      x2\n01bd196c: tst      w0, #0xff\n01bd1970: ldr      x0, [x19]\n01bd1974: b.eq     #0x1bd19d0\n01bd1978: ldr      x2, [x0, #0x2a8]\n01bd197c: mov      x0, x19\n01bd1980: mov      w1, #0x21\n01bd1984: blr      x2\n01bd1988: mov      w21, w0\n01bd198c: bl       #0x1bd0590\n01bd1990: mov      w19, w0\n01bd1994: mov      w0, w20\n01bd1998: bl       #0x1bc8aac\n01bd199c: mov      w20, w0\n01bd19a0: mov      w0, w21\n01bd19a4: bl       #0x1bcfd18\n01bd19a8: mov      w2, w0\n01bd19ac: add      x8, x29, #0x30\n01bd19b0: mov      w0, w19\n01bd19b4: mov      w1, w20\n01bd19b8: bl       #0x181b090\n01bd19bc: ldr      w0, [x29, #0x38]\n01bd19c0: ldp      x19, x20, [sp, #0x10]\n01bd19c4: ldr      x21, [sp, #0x20]\n01bd19c8: ldp      x29, x30, [sp], #0x50\n01bd19cc: ret      \n01bd19d0: ldr      x2, [x0, #0x790]\n01bd19d4: mov      w1, w20\n01bd19d8: mov      x0, x19\n01bd19dc: blr      x2\n01bd19e0: ldr      w0, [x0, #0x20]\n01bd19e4: b        #0x1bd19c0\n01bd19e8: stp      x29, x30, [sp, #-0x50]!\n01bd19ec: mov      x29, sp\n01bd19f0: ldr      x2, [x0]\n01bd19f4: stp      x19, x20, [sp, #0x10]\n01bd19f8: mov      x19, x0\n01bd19fc: mov      w20, w1\n01bd1a00: ldr      x2, [x2, #0x550]\n01bd1a04: str      x21, [sp, #0x20]\n01bd1a08: blr      x2\n01bd1a0c: tst      w0, #0xff\n01bd1a10: ldr      x0, [x19]\n01bd1a14: b.eq     #0x1bd1a38\n01bd1a18: ldr      x3, [x0, #0x8b8]\n01bd1a1c: ldr      x21, [sp, #0x20]\n01bd1a20: mov      w1, w20\n01bd1a24: mov      x0, x19\n01bd1a28: mov      w2, #1\n01bd1a2c: ldp      x19, x20, [sp, #0x10]\n01bd1a30: ldp      x29, x30, [sp], #0x50\n01bd1a34: br       x3\n01bd1a38: ldr      x2, [x0, #0x558]\n01bd1a3c: mov      w1, w20\n01bd1a40: mov      x0, x19\n01bd1a44: blr      x2\n01bd1a48: tst      w0, #0xff\n01bd1a4c: ldr      x0, [x19]\n01bd1a50: b.eq     #0x1bd1a5c\n01bd1a54: ldr      x3, [x0, #0x8c0]\n01bd1a58: b        #0x1bd1a1c\n01bd1a5c: ldr      x2, [x0, #0x560]\n01bd1a60: mov      w1, w20\n01bd1a64: mov      x0, x19\n01bd1a68: blr      x2\n01bd1a6c: tst      w0, #0xff\n01bd1a70: ldr      x0, [x19]\n01bd1a74: b.eq     #0x1bd1ad0\n01bd1a78: ldr      x2, [x0, #0x2a8]\n01bd1a7c: mov      x0, x19\n01bd1a80: mov      w1, #0x21\n01bd1a84: blr      x2\n01bd1a88: mov      w21, w0\n01bd1a8c: bl       #0x1bd0590\n01bd1a90: mov      w19, w0\n01bd1a94: mov      w0, w20\n01bd1a98: bl       #0x1bc8aac\n01bd1a9c: mov      w20, w0\n01bd1aa0: mov      w0, w21\n01bd1aa4: bl       #0x1bcfd18\n01bd1aa8: mov      w2, w0\n01bd1aac: add      x8, x29, #0x30\n01bd1ab0: mov      w0, w19\n01bd1ab4: mov      w1, w20\n01bd1ab8: bl       #0x181b090\n01bd1abc: ldr      w0, [x29, #0x3c]\n01bd1ac0: ldp      x19, x20, [sp, #0x10]\n01bd1ac4: ldr      x21, [sp, #0x20]\n01bd1ac8: ldp      x29, x30, [sp], #0x50\n01bd1acc: ret      \n01bd1ad0: ldr      x2, [x0, #0x790]\n01bd1ad4: mov      w1, w20\n01bd1ad8: mov      x0, x19\n01bd1adc: blr      x2\n01bd1ae0: ldr      w0, [x0, #0x24]\n01bd1ae4: b        #0x1bd1ac0",
+    "MENU icon store": "022df718: ldr      w0, [x23, x20, lsl #2]\n022df71c: bl       #0x1bd5810\n022df720: cmn      w0, #1\n022df724: mov      w27, w0\n022df728: ldr      x0, [x19, #0x30]\n022df72c: csinc    w25, w25, wzr, eq\n022df730: add      x0, x0, #0x10\n022df734: str      x0, [x29, #0x88]\n022df738: mov      x0, x22\n022df73c: bl       #0x21e9020\n022df740: add      x0, x0, x21, lsl #2\n022df744: str      w27, [x0, #0x288]",
+    "Fn image text stores": "01bc3778: ldp      w23, w24, [x21, #-4]\n01bc377c: cmp      w24, #0x335\n01bc3780: mov      w0, w23\n01bc3784: b.ne     #0x1bc386c\n01bc3788: bl       #0x1bd5840\n01bc378c: mov      w27, w0\n01bc3790: cmn      w27, #1\n01bc3794: str      x19, [x29, #0x78]\n01bc3798: mov      x0, x20\n01bc379c: sxtw     x24, w22\n01bc37a0: b.eq     #0x1bc3820\n01bc37a4: bl       #0x1bc3220\n01bc37a8: mov      x27, x0\n01bc37ac: mov      w0, w23\n01bc37b0: bl       #0x1bd5840\n01bc37b4: add      x2, x24, #0xc\n01bc37b8: str      w0, [x27, x2, lsl #2]\n01bc37bc: mov      x0, x20\n01bc37c0: str      x19, [x29, #0x78]\n01bc37c4: bl       #0x1bc3220\n01bc37c8: mov      x27, x0\n01bc37cc: mov      w0, w23\n01bc37d0: bl       #0x1bd5870\n01bc37d4: add      x2, x24, #0x10c\n01bc37d8: str      w0, [x27, x2, lsl #2]\n01bc37dc: mov      x0, x20\n01bc37e0: str      x19, [x29, #0x78]\n01bc37e4: bl       #0x1bc3220\n01bc37e8: add      x1, x24, #0x20c\n01bc37ec: str      w28, [x0, x1, lsl #2]\n01bc37f0: mov      x0, x20\n01bc37f4: str      x19, [x29, #0x78]\n01bc37f8: bl       #0x1bc3220\n01bc37fc: mov      x27, x0\n01bc3800: mov      w0, w23\n01bc3804: add      x24, x24, x27\n01bc3808: add      w22, w22, #1\n01bc380c: bl       #0x1bd5d50\n01bc3810: strb     w0, [x24, #0xc30]\n01bc3814: add      w26, w26, #1\n01bc3818: add      x21, x21, #8\n01bc381c: b        #0x1bc3768\n01bc3820: bl       #0x1bc3220\n01bc3824: mov      x2, x0\n01bc3828: mov      w0, w23\n01bc382c: str      x2, [x29, #0x60]\n01bc3830: bl       #0x1bd5508\n01bc3834: ldr      x2, [x29, #0x60]\n01bc3838: add      x3, x24, #0x20c"
+  },
+  "removed_Fn_list_detour": [
+    {
+      "path": "analysis/r5_aspect456_20261110/ap/integration.json",
+      "removed": [
+        {
+          "va": "0x1bc36f8",
+          "kind": "B",
+          "before": "ffc320d1",
+          "symbol": "r5_aspect_list_hook",
+          "reason": "Preserve original list producer then install eight text labels"
+        }
+      ],
+      "all_other_fields_exact": true
+    },
+    {
+      "path": "analysis/r5_aspect456_20261110/cancel/candidate-f/contract.json",
+      "removed": [
+        {
+          "va": "0x1bc36f8",
+          "kind": "B",
+          "before": "ffc320d1",
+          "symbol": "r5_aspect_list_hook",
+          "reason": "Preserve original list producer then install eight text labels"
+        }
+      ],
+      "all_other_fields_exact": true
+    }
+  ],
+  "native_ratio_copy_source_exact": true,
+  "new_MENU_row_icons": [
+    "02001e80",
+    "02001e81",
+    "02001e82",
+    "02001e83"
+  ],
+  "Fn_row_icons_unchanged": [
+    "02001e90..02001e93",
+    "02001e94..02001e97"
+  ],
+  "resources": [
+    {
+      "bank": "image_00_23_IPSX.uxc",
+      "sha256": "9d888054ea26c91851f7c6f925c73770dfa3e292d754cbbbfbf344e3c3a1deb5",
+      "prior_records": 3525,
+      "prior_payloads_exact": true,
+      "prior_descriptors_exact_except_offset_delta80": true,
+      "new_images": [
+        {
+          "id": "0x2001e80",
+          "label": "1.618:1",
+          "width": 76,
+          "height": 40,
+          "stride": 80,
+          "pixels_sha256": "c54583d58401489189827b9df28b4e9a4f5acff4df0651d7b6763c0c0a98a20c"
+        },
+        {
+          "id": "0x2001e81",
+          "label": "2.39:1",
+          "width": 76,
+          "height": 40,
+          "stride": 80,
+          "pixels_sha256": "d42f0c025a37c5e9a501e0972f16e87eedae5374c0512a89d4741ce2950ef971"
+        },
+        {
+          "id": "0x2001e82",
+          "label": "5:4",
+          "width": 76,
+          "height": 40,
+          "stride": 80,
+          "pixels_sha256": "f8ab559ae7f0fe5a0d0a13dc69ad9dc3ec6557d0fab2786a77cbf65287ea8c2a"
+        },
+        {
+          "id": "0x2001e83",
+          "label": "1.85:1",
+          "width": 76,
+          "height": 40,
+          "stride": 80,
+          "pixels_sha256": "3b4a4a16736b08bcbb51b7c4c1dc61357f596c25711c04402fc65b75033fd5c1"
+        }
+      ]
+    },
+    {
+      "bank": "image_00_32_IPSX.uxc",
+      "sha256": "4358c553cf9775e68340fc097f2c2b90c80e25053cccb4ad03eea62826818590",
+      "prior_records": 3525,
+      "prior_payloads_exact": true,
+      "prior_descriptors_exact_except_offset_delta80": true,
+      "new_images": [
+        {
+          "id": "0x2001e80",
+          "label": "1.618:1",
+          "width": 76,
+          "height": 40,
+          "stride": 80,
+          "pixels_sha256": "fd3a1f4d8be3d8f434379b1cc3714c8e6975033ae530237132db489f4f63e81b"
+        },
+        {
+          "id": "0x2001e81",
+          "label": "2.39:1",
+          "width": 76,
+          "height": 40,
+          "stride": 80,
+          "pixels_sha256": "6811b90dcfbc440ad4cca0dd123960bb3517dc2f4006d48aa771986568f548fe"
+        },
+        {
+          "id": "0x2001e82",
+          "label": "5:4",
+          "width": 76,
+          "height": 40,
+          "stride": 80,
+          "pixels_sha256": "e812b22b7250346afdf9e2eb831dbab01c652965eeeaf72f4f0e6bb3688f674a"
+        },
+        {
+          "id": "0x2001e83",
+          "label": "1.85:1",
+          "width": 76,
+          "height": 40,
+          "stride": 80,
+          "pixels_sha256": "43845f734048af140de8388279cc53e889dfa6a1531f07b60edbab7a2d52e348"
+        }
+      ]
+    }
+  ],
+  "original_68_strings_exact": true,
+  "preserved455_filter_functions": [
+    "owned",
+    "valid",
+    "close_page",
+    "r5_filter_parent_refresh425",
+    "wait_command",
+    "return_parent",
+    "finish_command",
+    "submit",
+    "next",
+    "private_input",
+    "dispatch",
+    "exit_page",
+    "destroy",
+    "controller_destroy",
+    "sound_parent_presenter",
+    "sound_menu_event",
+    "r5sound_menu_event2d6_443",
+    "r5sound_menu_event425"
+  ],
+  "private_style_copies_original_fn": true,
+  "parent_production_sources": {
+    "exact_files": 304,
+    "changed_files": [
+      "analysis/r5_aspect456_20261110/ap/compile_module.py",
+      "analysis/r5_aspect456_20261110/ap/integration.json",
+      "analysis/r5_aspect456_20261110/ap/r5_aspect_menu.c",
+      "analysis/r5_aspect456_20261110/ap/r5_aspect_wire.S",
+      "analysis/r5_aspect456_20261110/cancel/candidate-f/contract.json",
+      "analysis/r5_aspect456_20261110/full/build_partitions.py",
+      "analysis/r5_aspect456_20261110/full/package_candidate.py",
+      "analysis/r5_aspect456_20261110/resources/build_resources.py",
+      "analysis/r5_aspect456_20261110/resources/reference_style.py",
+      "analysis/r5_filter_native_style_20261110/build_style.py",
+      "analysis/r5_filter_native_style_20261110/r5_filter_page_style.c"
+    ]
+  },
+  "PT": {
+    "rx_bytes": 112,
+    "bss_bytes": 0,
+    "source_exact": true,
+    "bindings_exact": true,
+    "normalized_instructions_exact": true,
+    "private_refresh_site": "0x8e98034",
+    "unique_existing_call_target_verified": true,
+    "new_rx": "0x8ee50e0",
+    "parent_rx": "0x8ee5120"
+  },
+  "unchanged_components": [
+    {
+      "name": "CP",
+      "bytes": 17617008,
+      "sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a",
+      "exact_parent": true
+    },
+    {
+      "name": "AVCAM",
+      "bytes": 12958672,
+      "sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b",
+      "exact_parent": true
+    },
+    {
+      "name": "MPR",
+      "bytes": 3606928,
+      "sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478",
+      "exact_parent": true
+    }
+  ],
+  "unchanged_partitions": [
+    "nflasha3",
+    "nflasha8",
+    "nflasha5"
+  ],
+  "reverse_chain": [
+    {
+      "report": "analysis/r5_filter_pt456_20261110/candidate-build-b/build.json",
+      "reverse_exact": true,
+      "base_sha256": "290621e6fa770f10be543f4de1d0206263a683dc89ba8728037a5dc30336c01b"
+    },
+    {
+      "report": "analysis/r5_filter_native_style_20261110/candidate-build-b/build.json",
+      "reverse_exact": true,
+      "base_sha256": "c6f5f3d6b1842ef4d5cb5ab46559dfee55ca0c7fec846f3bd93604fdfe4571d3"
+    }
+  ],
+  "unchanged_crop_ui_object_files": [
+    "ui_create.o",
+    "r5_aspect_cancel.o",
+    "ui_preview.o",
+    "r5_aspect_cancel_hooks.o",
+    "ui_draw.o",
+    "r5_aspect_state.o",
+    "r5_aspect_persist.o",
+    "preview_core.o",
+    "ui_wrappers.o",
+    "ui_hooks.o"
+  ],
+  "small_pool_kind13_parameter_fields_exact": true,
+  "instruction_replay": false,
+  "camera_io": false,
+  "device_tested": false,
+  "limitations": [
+    "Static comparisons and host resource decoding do not execute the native Fn producer or observe a physical LCD.",
+    "PT helper relocates because preceding modules shrink/grow; normalized instruction semantics and target bindings are equal, raw112 bytes are not all byte-identical.",
+    "Existing crop and playback behavior is inherited; full crop/runtime batch and icon/runtime tests previously rejected were not run or bypassed.",
+    "Filter dynamic scroll and final native output acceptance are separately owned by root; this report does not assert them passed."
+  ]
+}

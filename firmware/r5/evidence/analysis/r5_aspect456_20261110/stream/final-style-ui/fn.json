@@ -1,0 +1,3136 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "cases": [
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        }
+      ],
+      "transitions": [
+        {
+          "page": 1,
+          "changed": "direction"
+        },
+        {
+          "page": 1,
+          "changed": "route"
+        },
+        {
+          "page": 2,
+          "changed": "direction"
+        },
+        {
+          "page": 2,
+          "changed": "route"
+        }
+      ],
+      "bias": "0x4000000000"
+    },
+    {
+      "cases": [
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 1,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 0,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 1,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 0,
+          "format": 0,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 1,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 2,
+          "mapping": 4,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 0,
+          "selected": 7
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 4
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 5
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 6
+        },
+        {
+          "page": 2,
+          "direction": 2,
+          "route": 1,
+          "format": 3,
+          "mapping": 4,
+          "selected": 7
+        }
+      ],
+      "transitions": [
+        {
+          "page": 1,
+          "changed": "direction"
+        },
+        {
+          "page": 1,
+          "changed": "route"
+        },
+        {
+          "page": 2,
+          "changed": "direction"
+        },
+        {
+          "page": 2,
+          "changed": "route"
+        }
+      ],
+      "bias": "0x6000000000"
+    }
+  ],
+  "AP_sha256": "bb6c2a1057d99c99f71e42bd9f93f27b06ac426b3129945f795a6ca82abf3fac",
+  "module_sha256": "22bec8a57a39ff7c66016bbc84e4e168206cebda4a0be49c1b31b62cf0528a14",
+  "script_sha256": "fe3b62ca2d1be089511f2321e143d985a2f3bb5004a92d944dff6425f69ac19b",
+  "actual_Fn_snapshot_constructors": true,
+  "actual_Fn_parameter_producer": true,
+  "no_test_written_positive_completed_fields": true,
+  "fixtures": [
+    "Native scalar model inputs and presenter object connectivity",
+    "OS locks, libc memory/allocation, UX engine and palette lookup from support"
+  ],
+  "limitations": [
+    "No full Fn event lifecycle or native rendering engine/device LCD"
+  ]
+}

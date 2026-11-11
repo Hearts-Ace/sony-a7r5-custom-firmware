@@ -1,0 +1,140 @@
+{
+  "status": "OFFLINE_COMPONENTS_COMPLETE_NONINSTALLABLE",
+  "camera_io": false,
+  "device_tested": false,
+  "ratios": [
+    "1.618:1",
+    "2.39:1",
+    "5:4",
+    "1.85:1"
+  ],
+  "RAW_policy": {
+    "embedded_JPEG_previews_cropped": true,
+    "Bayer_fullframe": true,
+    "DefaultCrop_fullframe": true,
+    "SonyCrop_fullframe": true,
+    "Exif_IFD2_declarations_synchronized": true,
+    "AP_uses_native_RAW_WH_slot": true
+  },
+  "components": {
+    "AVCAM": {
+      "path": "candidate-d/avcam/av-cam.bin",
+      "sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b"
+    },
+    "MPR": {
+      "path": "candidate-d/mpr/libmpr.so",
+      "sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478"
+    },
+    "AP": {
+      "path": "playback-ui-e/appFw-NONINSTALLABLE.so",
+      "sha256": "e2922e5fc11bda7d1e39f00f1d32467a9a30c76be23bfe10845a52847269ce65"
+    }
+  },
+  "production_source_sha256": {
+    "source/mpr_heif.S": "c8a73f089dbe8e15ce9499d11596f510adc734086e75944622ee7ffe8cedbcd6",
+    "source/avcam_thm.S": "c4d34748f8a41e01c4d4ded7bdd8fd36b461108befec00e74f43bbcb27a5cb95",
+    "source/mpr_jpeg_metadata.c": "f04a35979aa1ceaea849832c15a33f10b4e04653bd49a0b05dc38742fb97897b",
+    "source/mpr_raw_metadata.c": "2ac4b20ff1f8c1dda95771943b20e0b03e430472a901310b983dadd3605649a2",
+    "source/ap_playback_badge.S": "dfa44270d280271cd03e71dca43f8b3da4a00f08249f9e89ccf1688b109d8a39",
+    "source/crop_core.h": "0ddcf1b4af8a9e5fc92466d852d6405d1882ff253eac78ba668cadc2c7ac4c16",
+    "source/avcam_heif.c": "824d9fb9392b86fd976b747cfbbf2a9245e15f9b56e3f7123f948abb22515011",
+    "source/avcam_jpeg.S": "2fe762c7bfe5c46deaa271b74da906f435d308d9b426e0cfac8e959faaf2d1fe",
+    "source/ap_playback_zoom.S": "0000f60f10061c5c42342f352c499934935e530cc9dd4ce316d9a56080c0850d",
+    "source/ap_playback_pixels.S": "a00ebbe33a8516a6ffcdd76fdaf880b29c9f53893c01b986cfd2de8ed1ad749c",
+    "source/crop_core.c": "1fdd68e9ed22a747171f9e47c4fbe57be6716e1ce0b2d284f316f3f594c5dc3e",
+    "source/ap_still_size.S": "672656ced06d3178d740e7dfcc96db946c0ddaa70c7a86428a1b0eeab75d604b",
+    "source/avcam_heif.S": "492a54d4ab80fa10c72166adc42c67ebee93bf580290c5b992a20bfe57e45c29",
+    "avcam_patch.py": "f42774ae2182826dab83dc74784ec21d1cac962c9c17f1626c3a4ab183aec556",
+    "mpr_patch.py": "deff07037c76f7a8b40175d4e50bef78d4c6974405c4c1f217fb1fb0839a542d",
+    "append_playback_segment.py": "e0e71b052e4a2a7d63853b9da6b60c154c1189fc80bff0b3d5c8d2f773d2e143",
+    "tests/verify_avcam.py": "e824442b6c4b442d1fe1f6e83740c03a682b60048da5988295603eed4f5394ec",
+    "tests/verify_avcam_loader.py": "73dafaae59f89a2bd7ec2dc50b8ca996402942c9cbec004b7d1cef7995ffa4f4",
+    "tests/verify_avcam_snapshot.py": "5287d9f85e52eea1c7231d8972ee6cbb0fe101a0a8903be53960cb3e111f3027",
+    "tests/verify_heif_clip.py": "e7836a8f98860d5a0afd12250befac98840c9be1cdc6b50d4660c83182ad571a",
+    "tests/verify_mpr_jpeg_metadata.py": "df8b8585ccaf47ec449a93dc937b277269fd5e27a3d82305d1307d697cbc9aca",
+    "tests/verify_mpr_heif_c.py": "de656fb0edad601869305265b7f0577647fe8cdddd5cb97bf0402e3fe7068b8a",
+    "tests/verify_mpr_preview_metadata.py": "de37650709bbda90937c18e01098229499434d27bfe9e5e94d1aa5abed661f1a",
+    "tests/verify_raw_preview_local.py": "4d6f71d8dd1ba87b03c35cb1ce020fe6e2692746cf1dbae4f55a55b454d3707e",
+    "tests/verify_playback_preview_gate.py": "55d01d7be0cde5b3ddadc48267a2315b798d9e6f89727786f222760584b863f1",
+    "tests/verify_preview_policy.py": "5648a72c85373ba2b2eb91b1fc28de347455b223fa40ef830f767613c731640b",
+    "tests/verify_policy_scope.py": "09f77885bd2cf18ddd0a7a8c74deaaa863f5e83b412af592cb734267826b57be",
+    "tests/verify_preview_zoom_gate.py": "aa42b78dbd1efb1a2d3cfc3049deadafedb86411319920679ee12e6ab6277c2b",
+    "tests/verify_raw_preview_writer_reader_ap.py": "621f0d228354058a8de3249a0f56d2e96124b576108f9dfcd9b0d2314f5403d6",
+    "tests/mpr_native.py": "fa511c04d47276a6f0ac20543ddc916dc6398bd4488221d3710d78af385fa658"
+  },
+  "evidence": {
+    "candidate-d/avcam-native.json": {
+      "sha256": "66806fdbc432cf214cc7ebe1280e3c458178dc092c011caa891aef5e731a3c8c",
+      "passed": true,
+      "bound_artifact_sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b"
+    },
+    "candidate-d/heif-clip.json": {
+      "sha256": "9033c6582aa356e1bf9c592fbb48a959f65913130802e8f898d9af02d1924e77",
+      "passed": true,
+      "bound_artifact_sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b"
+    },
+    "candidate-c/mpr-jpeg.json": {
+      "sha256": "732c565a4387bec894cabac9c6ed8b5136c8d6591ec702e9510ef8bc7af1fd6a",
+      "passed": true,
+      "bound_artifact_sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478"
+    },
+    "candidate-c/mpr-heif.json": {
+      "sha256": "8b85417048725c85243df9eeff34a60f815fc5a073b3954508287fe732dce68a",
+      "passed": true,
+      "bound_artifact_sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478"
+    },
+    "candidate-d/mpr-preview.json": {
+      "sha256": "9b31b98eb76d8c08c56c223b194b5a8b77028f46b329f8d5e031ec0ec4482c05",
+      "passed": true,
+      "bound_artifact_sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478"
+    },
+    "candidate-d/raw-preview-local.json": {
+      "sha256": "1600f9136cc17dab461d65e8f6de1c20eeb63e7e9efc9c9e3ab5737f91d21bdb",
+      "passed": true,
+      "bound_artifact_sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b"
+    },
+    "candidate-d/snapshot.json": {
+      "sha256": "710089a2033a76f3b02e135310ec1e18e1d5ee6205e5882f8cdf8becd4660ab8",
+      "passed": true,
+      "bound_artifact_sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b"
+    },
+    "candidate-d/loader.json": {
+      "sha256": "7f496433089d02eeefda438ccbd57c9367e058acc2398df78c6a6c094e5a8c19",
+      "passed": true,
+      "bound_artifact_sha256": null
+    },
+    "playback-ui-e/preview-gate.json": {
+      "sha256": "fd750af808614605ee58f9d9995d7e936592e8b8bdd9421d83c1027438c256e8",
+      "passed": true,
+      "bound_artifact_sha256": "e2922e5fc11bda7d1e39f00f1d32467a9a30c76be23bfe10845a52847269ce65"
+    },
+    "playback-ui-e/policy.json": {
+      "sha256": "973b6a1b6fefea4ef49fc31ed03a38365bc2c74b696d3cbae93b7ef5b2b3ba70",
+      "passed": true,
+      "bound_artifact_sha256": "e2922e5fc11bda7d1e39f00f1d32467a9a30c76be23bfe10845a52847269ce65"
+    },
+    "playback-ui-e/policy-scope.json": {
+      "sha256": "032fe27c314ca3f777989cc2d9604af95df9ddfad2aa531520e038c9a446cd3f",
+      "passed": true,
+      "bound_artifact_sha256": "e2922e5fc11bda7d1e39f00f1d32467a9a30c76be23bfe10845a52847269ce65"
+    },
+    "playback-ui-e/zoom-gate.json": {
+      "sha256": "c5ffdd2e9cac1a1e69b7aa6198f0b7431d32e68eaad7662fe8d166dfd7f37273",
+      "passed": true,
+      "bound_artifact_sha256": "e2922e5fc11bda7d1e39f00f1d32467a9a30c76be23bfe10845a52847269ce65"
+    },
+    "playback-ui-e/raw-writer-reader-ap-final.json": {
+      "sha256": "dc093204a093f3845b54e57c69790a0ad4380c33904675b6ccbbaae315847fdb",
+      "passed": true,
+      "bound_artifact_sha256": "e2922e5fc11bda7d1e39f00f1d32467a9a30c76be23bfe10845a52847269ce65"
+    }
+  },
+  "supersedes": [
+    "closure-reference-b.json RAW-exclusion policy"
+  ],
+  "limits": [
+    "Native TIFF writer/reader fixture contains no captured Bayer or hardware encoder output",
+    "CP actual-header linkage is separately source/hash bound by stream-o and raw-stream-o",
+    "No real device/card/GUI/encoder/decoder or final complete package verification in this component ledger"
+  ]
+}

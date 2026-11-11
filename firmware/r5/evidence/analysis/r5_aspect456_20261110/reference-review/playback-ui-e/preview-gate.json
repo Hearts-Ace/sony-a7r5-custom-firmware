@@ -1,0 +1,3381 @@
+{
+  "passed": true,
+  "cases": 280,
+  "AP_sha256": "e2922e5fc11bda7d1e39f00f1d32467a9a30c76be23bfe10845a52847269ce65",
+  "script_sha256": "55d01d7be0cde5b3ddadc48267a2315b798d9e6f89727786f222760584b863f1",
+  "rows": [
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 0,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5872
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3856
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2936
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        3976
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        2608
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        1992
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        7920,
+        6336
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        5200,
+        4160
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        3968,
+        3168
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": true
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5136
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        6240,
+        3376
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": true,
+      "badge": true,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        4752,
+        2568
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        6336
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "jpeg",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "heif",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "heif",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "raw",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "raw",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "raw+jpeg",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "raw+jpeg",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "unknown",
+      "metadata": 0,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    },
+    {
+      "bias": 274877906944,
+      "WH": [
+        9504,
+        5871
+      ],
+      "format": "unknown",
+      "metadata": 1,
+      "zoom": false,
+      "badge": false,
+      "pixel": false
+    }
+  ],
+  "camera_io": false,
+  "device_tested": false,
+  "native": [
+    "actual appended helper instructions at two loading biases",
+    "native prologue replay and exact continuation boundaries"
+  ],
+  "models": [
+    "content record fields and metadata-valid flag are explicit fixtures"
+  ],
+  "limits": [
+    "native GUI/zoom policy and encoder not executed",
+    "no actual camera validation"
+  ]
+}

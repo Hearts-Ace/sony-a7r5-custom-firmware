@@ -1,0 +1,54 @@
+--- reference/ap_playback_pixels.S
+
++++ 4.56/ap_playback_pixels.S
+
+@@ -1,11 +1,25 @@
+
+-// 已通过原生元数据、HLG和特殊尺寸门，仅补旧47M及本轮三个精确MP空档。
++// Hook 23dfa30 while X3 is still current content record. Native HLG/meta gates precede site.
+ .text
+ .balign 16
+ .global aspect_playback_pixels
+ .type aspect_playback_pixels,%function
+ aspect_playback_pixels:
++    // RAW paths must publish the same preview WH in the dedicated RAW slot.
++    ldrb w8, [x3, #0xf3]
++    cbnz w8, .Lraw_dimensions
++    ldrb w8, [x3, #0xf2]
++    ldrb w9, [x3, #0xf4]
++    orr w8, w8, w9
++    cbz w8, .Lnative
++    b .Ldimensions_known
++.Lraw_dimensions:
++    ldp w8, w9, [x3, #0x14]
++    cmp w8, w2
++    ccmp w9, w0, #0, eq
++    b.ne .Lnative
++.Ldimensions_known:
+     adr x9, .Lpairs
+-    mov w10, #4
++    mov w10, #3
+ .Lnext:
+     ldp w11, w12, [x9], #8
+     ldr w13, [x9], #4
+@@ -15,9 +29,7 @@
+
+     subs w10, w10, #1
+     b.ne .Lnext
+ .Lnative:
+-    // 原入口此前将w3置为7680；续接保留原值和乘法。
+-    mov w3, #7680
+-    mul w0, w2, w0
++    mov w3, #4320
+     b aspect_playback_pixels_continue
+ .Lrecognized:
+     mov w0, w13
+@@ -25,7 +37,6 @@
+
+     b aspect_playback_pixels_store
+ .balign 4
+ .Lpairs:
+-    .word 7392, 6336, 0x02001e9b
+     .word 9504, 5872, 0x02001e8d
+     .word 4752, 1992, 0x02001e8e
+     .word 9504, 5136, 0x02001e8f

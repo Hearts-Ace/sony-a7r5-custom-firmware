@@ -1,9 +1,135 @@
 {
-  "AP": "23f5b11d8f79c7c984fc42a4e6d2cac9dc5b5d74bb327b3b36e77985112f3bf6",
-  "CP": "bbae506511291eb3daab9befaaf80449e4e93d5200975fb68716a3772898e709",
-  "nflasha15": "06dcf249a3138ef81c70d5e384375454353215d2aa01fa0b7eb8887d14644a1a",
-  "nflasha8": "a73be9de2c2d1087ad2aac3d639293638a48377466310c8c015cafb0e889f693",
-  "nflasha5": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693",
-  "archive": "6c0f53875996923cf835efb60de1cce1cc257c041cae4d24aa99fec3160f9db8",
-  "DAT": "e6376d3836cb1fdfc65c7cfaf314044af96bde3442fc2a699c0841a4d2c6feef"
+  "version": "4.58",
+  "components": {
+    "AP": {
+      "bytes": 97583104,
+      "sha256": "e403e98212fc20056e0f876f7b8312cf48f9bfe5122b9954cb4e3e45e0d61937"
+    },
+    "CP": {
+      "bytes": 17617008,
+      "sha256": "c44989e5990f375b4658f18e082f5e2773a6011e693f976b1ac09d452141975a"
+    },
+    "AVCAM": {
+      "bytes": 12958672,
+      "sha256": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b"
+    },
+    "MPR": {
+      "bytes": 3606928,
+      "sha256": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478"
+    }
+  },
+  "partitions": {
+    "nflasha8": {
+      "bytes": 24531968,
+      "sha256": "15b9f91c85e8c938e6322aa48811a8d0192864bd85457f30358074054ed20429"
+    },
+    "nflasha15": {
+      "bytes": 410652672,
+      "sha256": "91d675bc8d465bc14c95ba54e99e30b35e0599a9b6a5144b0d1cdc51b3d3679c"
+    },
+    "nflasha3": {
+      "bytes": 31803392,
+      "sha256": "d79845e753bd786058d14b50209f877e5f1799b649f0619a64860915d77d9631"
+    },
+    "nflasha5": {
+      "bytes": 243789184,
+      "sha256": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693"
+    }
+  },
+  "resources": {
+    "string_arabic_horizontal.uxc": "cbdeb79bca78abb826d9f576a1cae154b9fe5edb466d69f956b222b47e94d510",
+    "string_brazilianportuguese_horizontal.uxc": "f72f90b861ea6b7ab36b0cca66c2938acb2971337067f183c7e0ffff944f1250",
+    "string_bulgarian_horizontal.uxc": "4d62064cfafb737673ac772c44a74fe79ad7cfe409d3a88c19264739106b34c5",
+    "string_canadianfrench_horizontal.uxc": "847e4179bdb088e1322c2b3f28b33c1e249bbe6d39e065ce5bc47a5799bc4b45",
+    "string_croatian_horizontal.uxc": "2e3ba0a20163cf9ee789c6123a6eed7e16c71fbea9c70be277f2df498bea1348",
+    "string_czech_horizontal.uxc": "92ef8b5d19453ba0f0d47a712549f0e8bdd0dee6fdaf42d7ee7da6e912bc016d",
+    "string_danish_horizontal.uxc": "a12d4fbd20a94fb7b32ebddcfe3d00a4ce2cac2147888fa6b5fbccd6a3e400c0",
+    "string_dutch_horizontal.uxc": "2fa14f0751d8d6037efbe69ecea5a39e2424064001ce1c21a774d5343f4c0504",
+    "string_english_horizontal.uxc": "032bd347473aa8b8ec7027db041bc58b029fac76b6d312134f84cea31aa909c8",
+    "string_finnish_horizontal.uxc": "275146533d86aeeeb6fee1cbd96cf096ebde84cff0c0bc729cbf3291f3210d1f",
+    "string_french_horizontal.uxc": "14ca25f891ae07f3aa6304e2a0af509eb87c0741c2630b47dc9fa56d6679cf64",
+    "string_german_horizontal.uxc": "b8867ab75c2d556e15f1cf22ba12012757159f095b5af90f72fff523f7d46e3d",
+    "string_greek_horizontal.uxc": "ec42f492424af67883fcffcb999b35ab2468f678b58bb692ade6627e779a2584",
+    "string_hindi_horizontal.uxc": "d61450b027911cc7404a92dc70b33aa9f05d05fb0763f670a68da676ccf7b68b",
+    "string_hungarian_horizontal.uxc": "d5056a1db268cb7cba9acd789330759a50c34313660d3f4cc699571025a25cb5",
+    "string_indonesia_horizontal.uxc": "d1934dc3b5653b8fcef5ee3a8fc289fc581693f2b8f8062a3454d56bc9e479cc",
+    "string_italian_horizontal.uxc": "9fe6b8388df8d6b607cebe0a0b138825db947b633aadfb64b048d0bf19c6256b",
+    "string_japanese_horizontal.uxc": "be9d8fb319fd40540331ac2cd31c58dd22cc804736064049c8e1e922afdd84e7",
+    "string_korean_horizontal.uxc": "641a8aea96631d9097bcaf676d62cd33cb58771f9b59982eccbdaf6d69e3f8b2",
+    "string_malay_horizontal.uxc": "ea35e6cb83a7c77cb65e6824702777509fd4671ce84ba65bae7aa82eb7ccda11",
+    "string_norwegian_horizontal.uxc": "86b7b1ad3bf00a2053f27a1f54005ee0bd61510ed2bcde013fee1154dafc288e",
+    "string_persian_horizontal.uxc": "509e5018a02341f35a472ae6e968ba6ca152aa60ae0c6fed708d0c547ac6e892",
+    "string_polish_horizontal.uxc": "2c87412f80b821ff54bb91fb62e4e89c4f787d31a1ebca9fcd824960d2f07867",
+    "string_portuguese_horizontal.uxc": "d9701b352649d05529ab325c5cc8736abba88128e60cfaf92ebd8a073eb4c518",
+    "string_romanian_horizontal.uxc": "36a24d585ab5cbbde8f70c0a03501943fee03279cbde60b5647372fe2d27dba0",
+    "string_russian_horizontal.uxc": "6c792b23f1f0ecd0000f50b7c4024651c717b9978ca60940767fe0ed81550123",
+    "string_simplifiedchinese_horizontal.uxc": "548294af80717bd1c2cacb9f354a3dab2d342ad6c9c679d62d896bcea9076947",
+    "string_spanish_horizontal.uxc": "10037ba59b9d23913fe4c5047d3461251c18af21687a20279fba92e33b78420b",
+    "string_swedish_horizontal.uxc": "922100d43af84377253ceb6a1622ed0ffe2833ed0487ba615e4afe3a99a9010a",
+    "string_thai_horizontal.uxc": "672cecaa71459e08817d37882eb67a986f1cf7c63b9b37d5d46f4f3bac7df61d",
+    "string_traditionalchinese_horizontal.uxc": "9beb7d72b980272208edd9641038e3c1c13463d1b050dc41cf650c47e0eabcc3",
+    "string_turkish_horizontal.uxc": "6d525885f9ccfb21431fe5be6eb1e11ad30d7854f2945de289f52776acfbcea8",
+    "string_ukrainian_horizontal.uxc": "d8368c06a6ecd970bdda80c087a0dcb1073697df87514b4c910cbd6a8250bf51",
+    "string_vietnamese_horizontal.uxc": "50ac35cbcbd871a2d4438d5f63d2f1a2887d1ca49833ed7af3756fe1c9deb2c7",
+    "string_arabic_vertical.uxc": "d1d3c01a9c05415e2220dd41abc77b77d99521124b960a542d0902bb101006cf",
+    "string_brazilianportuguese_vertical.uxc": "60a8266865c6218c013a33a145af91dadd33438dd2ee46f7d5d2069baa8f02c9",
+    "string_bulgarian_vertical.uxc": "f353c01db9d8f184637edcbf2a3a70e3eae54030f0faf577b08edbee07afe860",
+    "string_canadianfrench_vertical.uxc": "b0a7b4d9954298e3aea95cb7a50b9a90e628fdcf222f42901f4bd549759e434d",
+    "string_croatian_vertical.uxc": "4cbadb63add3e03a5f7944317260b1daca24ffbae37af7a7cc5f27d26e3302b1",
+    "string_czech_vertical.uxc": "a7f3c08b7190092a10bb557ca0aeea2206d9ab975b36a77556f0f9b6f8e9d2f4",
+    "string_danish_vertical.uxc": "ab8d1bec2651501bbfc2e95bc1ccf972a8691c3f60fff08fdea0f15ed13e64d6",
+    "string_dutch_vertical.uxc": "af1d8d25412f030475982ddbe4dfdba86ded8ff7b472e7666fa6445cee640a35",
+    "string_english_vertical.uxc": "61ba637fe27ef59f98d6b60ee126e37a4369abf990d3eaac7139adcf71a53ab7",
+    "string_finnish_vertical.uxc": "126f15a37587fa0e28e32b784a0050c3f5b7309f8cf8e0bf35e5b409bfcec3e0",
+    "string_french_vertical.uxc": "607025ecb022b9f10b9179e68363839931bfa6987e707120136748d18d0714ef",
+    "string_german_vertical.uxc": "c300336593239ec48f247fe437edfe1292d0c9d2358eb480bbe471aca45acf4d",
+    "string_greek_vertical.uxc": "67eebd070e101ebe5f1a4bf70193fe3bb070b0af8ccd2f440f5b884b141d5c91",
+    "string_hindi_vertical.uxc": "35cb678cca7335386f73f3257fa8e613d765b14026dcdb7f78e27ef979f75bce",
+    "string_hungarian_vertical.uxc": "bd7aea5f6d99a5f57c2a664a48a224bc31dc05dd0de3c40abde73b3f1eb19eac",
+    "string_indonesia_vertical.uxc": "9755326363a52bdbac9b8d0ec942689ac71763c373f8199c07d22729813aa646",
+    "string_italian_vertical.uxc": "7b00fab0ff8cdd06486e8af7ef86c2fb646e622eb132a9b65fcabd550095fc2e",
+    "string_japanese_vertical.uxc": "d3a14f759541fdcf1c8966e593e24bec03a9e71b09e5edb5ab69c6544ad2c9c6",
+    "string_korean_vertical.uxc": "eae913edee911df43743b453072c504b06d2b13d32e55bf9e1caedb0eb24f972",
+    "string_malay_vertical.uxc": "15c879452974055fe3e93d01b174c819547338c8e003bf37b511b96ee8962b28",
+    "string_norwegian_vertical.uxc": "84271fc3572cbc24dacd84f8de66cdc155278b125b4faca32ece99be3ab0b078",
+    "string_persian_vertical.uxc": "4003f3f82edd33adad3c13c85aedd593b9ecce988fb6274875c93727d918c4df",
+    "string_polish_vertical.uxc": "91f66c803717ba29272fa886530eac76e591a5943489558e5d8e309341398c72",
+    "string_portuguese_vertical.uxc": "a21a78f9c58f40872e7ff6773cd632cbe06f808c61fb2b45a5181e7091f63896",
+    "string_romanian_vertical.uxc": "4d0f93d1b418fbf9382a9d82d6981f3b81833986952fed168a6a60d137447a2c",
+    "string_russian_vertical.uxc": "ec025fecfe96ea5d1bdece2d53a2bce14f099f7220a04759ccfa2fe53dd32dd6",
+    "string_simplifiedchinese_vertical.uxc": "cea340b101189c4e056b657a2238af461cd92d4b94322aba57240446a9e116ea",
+    "string_spanish_vertical.uxc": "758b7c9956841c6da7ce0cd91d3c7834c72bd26ddba36e6a037efdeced2fa8f7",
+    "string_swedish_vertical.uxc": "58a4e3a73ee10b20c8492717719f785c9d76f99fcf3ec24e197ae01a6ef2f8ac",
+    "string_thai_vertical.uxc": "22b1d8315650687f59ed985a37868713ccce1c904ee5611fae525bb583dd10bf",
+    "string_traditionalchinese_vertical.uxc": "2d4963f008d1177fa0f0ee015ce706a7b86b083e4f182ea41a608dd3390b93c3",
+    "string_turkish_vertical.uxc": "5a77890f05b4523c09615247368edc6b3aead83f12a9ea8e9a7c61ac88b61b9b",
+    "string_ukrainian_vertical.uxc": "d32fd8162c284904e096a9b44059f3bfe4986cd00713b27c28809cb6e52ebe46",
+    "string_vietnamese_vertical.uxc": "0a05d87066906f5194b7472407ddce5cb7a5ecdd228bd348979d60eba517301f",
+    "image_00_23_IPSX.uxc": "2b1ec64c4b564873e246464a9eead42d8fa627ff63219d005c0182739940572f",
+    "image_00_32_IPSX.uxc": "fa68ac82410845bd545a545a083973f4103f964c8ac0614bd5e3ff6dc2898844"
+  },
+  "RAW": "Full Bayer, DefaultCrop and SonyCrop preserved; shared embedded JPEG previews crop with JPEG/HEIF and their private size declarations are synchronized.",
+  "ratios": [
+    "809/500",
+    "239/100",
+    "5/4",
+    "37/20"
+  ],
+  "menu_order": [
+    0,
+    4,
+    1,
+    6,
+    2,
+    7,
+    5,
+    3
+  ],
+  "filter_menu_style": "Private D9 using original aspect Fn style entries; left abbreviations, selected full name right; original async/filter/sound paths retained",
+  "physical_device_verified": false,
+  "Fn_aspect_style": "Original producers, queries, style tables and input/lifecycle; new ratios/icons only, no list detour",
+  "DAT": {
+    "bytes": 754525608,
+    "sha256": "c37605b64aa04653d9cd57e63c7e223a4064e96d8480e0021137686bf61f7c8b"
+  }
 }

@@ -1,0 +1,2448 @@
+{
+  "passed": true,
+  "status": "DISPLAY_CANDIDATE_NONINSTALLABLE",
+  "base_sha256": "e2922e5fc11bda7d1e39f00f1d32467a9a30c76be23bfe10845a52847269ce65",
+  "sha256": "bafcd7da96cd644a040a61f29cb09288ec700c89b2417bc1bc22deac700cce66",
+  "rx": 149830048,
+  "rw": 149882256,
+  "rx_bytes": 6004,
+  "rw_memory_bytes": 27640,
+  "symbols": {
+    "r5_ap_posix_open": 23959360,
+    "r5_ap_posix_openat": 23972720,
+    "r5_ap_posix_read": 23959616,
+    "r5_ap_posix_write": 23964080,
+    "r5_ap_posix_close": 23968256,
+    "r5_ap_posix_fsync": 23968704,
+    "r5_ap_posix_unlinkat": 23965168,
+    "r5_ap_posix_errno": 23967104,
+    "r5_ap_dlsym": 23964816,
+    "r5_osal_alloc": 23971648,
+    "r5_osal_send": 23965632,
+    "r5_osal_free": 23972448,
+    "r5_osal_set_src": 23960000,
+    "r5_osal_msg_size": 23964640,
+    "r5ss_native_silent_get": 29573436,
+    "r5ss_native_signals_get": 29416636,
+    "r5ss_native_volume_get": 29416076,
+    "r5ss_native_sysnd_start": 55747880,
+    "r5ss_original_pending": 55742864,
+    "r5ss_native_dmm_claim": 56030908,
+    "r5ss_native_dmm_release": 56031396,
+    "r5ss_native_mem_map": 56032896,
+    "r5ss_native_mem_unmap": 56033124,
+    "r5ss_native_file_read": 56033304,
+    "r5ss_native_copy": 55859768,
+    "r5ss_native_set_table": 55727180,
+    "r5_native_fsys_find_first": 57217480,
+    "r5_native_fsys_find_next": 57217528,
+    "r5ss_native_sysnd_command": 55710556,
+    "r5ss_native_sysnd_result": 55703164,
+    "r5_native_menu_template": 92482864,
+    "r5_native_row_template": 66526464,
+    "r5_native_menu_insert": 29957184,
+    "r5_native_row_insert": 29957780,
+    "r5_native_menu_normalize": 29171156,
+    "r5_native_row_normalize": 29171448,
+    "r5_native_row_available": 29163516,
+    "r5_native_row_available_direct": 29163664,
+    "name_id": 23966960,
+    "name_char": 23958384,
+    "r5_native_row_parent": 29208752,
+    "r5_native_string_construct": 25709776,
+    "r5_native_string_destroy": 25712120,
+    "r5_native_child_attach": 23971344,
+    "r5_native_list_update_continue": 25555828,
+    "r5_native_list_destroy_continue": 25554892,
+    "r5_native_menu_icon_continue434": 29189048,
+    "r5_native_refresh_construct425": 51963328,
+    "r5_native_refresh_execute425": 55060780,
+    "r5_filter_page_anchor": 150994944,
+    "usleep": 23965536,
+    "r5sound_sha256_init": 23960144,
+    "r5sound_sha256_update": 23959536,
+    "r5sound_sha256_final": 23959920,
+    "r5_stage411_dlsym": 23964816,
+    "r5_native_fsys_open": 57217284,
+    "r5_native_fsys_write": 57217396,
+    "r5_native_fsys_read": 57217336,
+    "r5_native_fsys_close": 57217316,
+    "r5_native_creative_sequence_request": 38471552,
+    "r5_session_cold_start": 149490012,
+    "r5_session_epoch": 149490036,
+    "r5_session_current": 149490052,
+    "r5_session_admit": 149490092,
+    "r5_session_leave": 149490184,
+    "r5_stage421_power": 149490212,
+    "r5_session_cold": 149490384,
+    "r5_session_prepare": 149490424,
+    "r5_stage421_loop": 149490616,
+    "r5_session_new_transfer": 149490828,
+    "r5_session_token": 149491080,
+    "r5sound_worker_yield": 149491116,
+    "memset": 149491272,
+    "memcpy": 149491300,
+    "r5_stage411_initial": 149491332,
+    "r5_stage411_state": 149618720,
+    "r5_stage411_completed": 149491392,
+    "r5_stage411_media": 149491440,
+    "r5_stage411_child": 149491500,
+    "r5_stage425_reload": 149494784,
+    "r5_stage411_startup": 149494792,
+    "r5_log420_emit": 149495336,
+    "r5_log420_state": 149707104,
+    "r5_grid420_inbound": 149495812,
+    "r5_grid420_watch": 149496248,
+    "r5_stage421_log_reset": 149497344,
+    "r5_stage411_startup_hook": 149497464,
+    "r5_stage411_initial_hook": 149497740,
+    "r5_stage411_completed_hook": 149498024,
+    "r5_stage411_media_hook": 149498304,
+    "r5_stage411_inbound_hook": 149498596,
+    "r5_stage411_power_hook": 149499020,
+    "r5_stage411_probe_run": 149499296,
+    "r5_stage411_probe_state": 149707280,
+    "r5_stage413_capacity_ready": 149500412,
+    "r5_probe420_log": 149500436,
+    "r5_stage421_probe_reset": 149500528,
+    "r5_stage411_inbound": 149500548,
+    "r5_stage413_inbound": 149501200,
+    "r5_stage413_transfer_state": 149707360,
+    "r5_stage413_transfer_run": 149501552,
+    "r5_stage421_parameters_ready": 149502588,
+    "r5_transfer420_log": 149502688,
+    "r5_stage421_transfer_reset": 149502912,
+    "r5_stage421_transfer_matched": 149502932,
+    "r5_transfer_is_envelope": 149502984,
+    "r5_transfer_ap_begin": 149503076,
+    "r5_transfer_ap_step": 149503164,
+    "r5_transfer_ap_ack": 149503840,
+    "r5_native_ap_send": 149504280,
+    "r5_decode_look_file": 149504488,
+    "r5_encode_look_file": 149505960,
+    "r5_filter_pack_compact": 149507172,
+    "r5_filter_compact_set_crc": 149507584,
+    "r5_fsys_reader_init": 149508356,
+    "r5_fsys_open_file": 149508508,
+    "r5_fsys_read_file": 149508688,
+    "r5_fsys_close_file": 149508892,
+    "r5_scan_gate_initial": 149508996,
+    "r5_scan_gate_completed": 149509100,
+    "r5_scan_gate_ready": 149509140,
+    "r5_stage_validated_look_bytes": 149509244,
+    "r5_load_persisted_look": 149509584,
+    "r5_publish_staged_look_bytes": 149510088,
+    "r5_lut_directory_acquire": 149510628,
+    "r5_lut_directory_release": 149511940,
+    "r5_lut_directory_read_open": 149512008,
+    "r5_lut_directory_create": 149512240,
+    "r5_lut_directory_read": 149512400,
+    "r5_lut_directory_write": 149512596,
+    "r5_lut_directory_close": 149512736,
+    "r5_lut_directory_sync": 149512824,
+    "r5_lut_directory_open_parent": 149512912,
+    "r5_lut_directory_rename": 149513016,
+    "r5_lut_directory_unlink": 149513148,
+    "r5_lut_directory_bind_storage": 149513272,
+    "r5_native_lut_directory_api_init": 149513704,
+    "r5_lut_mountinfo_check": 149513888,
+    "r5_filter_names_publish": 149514964,
+    "r5_filter_short_name": 149515508,
+    "r5_filter_full_name": 149515596,
+    "r5_filter_available_mask": 149515628,
+    "r5_filter_select_is_envelope": 149515644,
+    "r5_filter_select_encode": 149515708,
+    "r5_filter_select_ack": 149516028,
+    "r5_filter_selection_load": 149516292,
+    "r5_filter_selection_save": 149516864,
+    "r5_filter_selected": 149517448,
+    "r5_filter_pending": 149517460,
+    "r5_filter_command_state": 149517520,
+    "r5_filter_command_sequence": 149517532,
+    "r5_filter_request": 149517544,
+    "r5_filter_refresh_construct425": 149517812,
+    "r5_filter_refresh_execute425": 149517892,
+    "r5_filter_load_selection": 149518008,
+    "r5_filter_bank_ready": 149518140,
+    "r5_filter_inbound": 149518388,
+    "r5_filter_service": 149518616,
+    "r5_filter_menu_register": 149520856,
+    "r5_filter_menu_selected": 149521912,
+    "r5_filter_menu_select": 149521916,
+    "r5_filter_rows_register": 149521428,
+    "r5_filter_menu_normalize": 149521492,
+    "r5_filter_row_normalize": 149521568,
+    "r5_filter_row_available": 149521624,
+    "r5_filter_row_available_direct": 149521772,
+    "r5_filter_row_parent": 149521836,
+    "r5_filter_menu_text": 149522000,
+    "r5_filter_menu_name_draw": 149522160,
+    "r5_filter_menu_descriptor": 149724656,
+    "r5_filter_menu_rows": 149725056,
+    "r5_filter_list_update": 149522356,
+    "r5_filter_list_destroy": 149522980,
+    "r5_native_list_update_original": 149523136,
+    "r5_native_list_destroy_original": 149523144,
+    "r5_filter_menu_icon_query434": 149529232,
+    "r5sound_menu_selected": 149530016,
+    "r5sound_menu_stage": 149531536,
+    "r5sound_menu_commit": 23958184,
+    "r5sound_volume_menu_get": 149530064,
+    "r5sound_volume_menu_stage": 149530628,
+    "r5sound_volume_menu_commit": 149529628,
+    "r5sound_menu_gui_changed": 149529912,
+    "r5sound_menu_row_available": 23957524,
+    "r5sound_menu_catalog_changed": 149531540,
+    "r5sound_menu_register_extra": 23958256,
+    "r5sound_menu_rows": 149755048,
+    "r5sound_rows_register_extra": 149529688,
+    "r5sound_menu_text": 23950948,
+    "r5sound_menu_descriptor": 149763064,
+    "r5sound_volume_descriptor": 149763256,
+    "r5sound_blob_name": 23956344,
+    "r5sound_catalog_decode": 23945744,
+    "ss_crc32": 23957956,
+    "memcmp": 149530404,
+    "ss_valid_name": 23948000,
+    "r5sound_catalog_encode": 23948808,
+    "r5sound_catalog_load": 23955232,
+    "r5sound_catalog_add": 23944720,
+    "r5sound_package_validate": 23951496,
+    "ss_sha256": 23956464,
+    "r5sound_package_header": 23946668,
+    "r5sound_catalog_publish": 23944128,
+    "r5sound_catalog_audio": 23952852,
+    "r5sound_selection_load": 23950384,
+    "r5sound_selection_save": 23951972,
+    "r5sound_volume_load": 23952204,
+    "r5sound_volume_save": 23954236,
+    "r5sound_package_audio": 23952428,
+    "r5sound_volume_get": 149530572,
+    "r5sound_revision": 149531080,
+    "r5sound_volume_blocked": 23957708,
+    "r5sound_volume_enqueue": 23956808,
+    "r5sound_count": 149530440,
+    "r5sound_name": 149529280,
+    "r5sound_selected": 149531096,
+    "r5sound_status": 23954416,
+    "r5sound_request": 23956088,
+    "r5sound_initial": 149530700,
+    "r5sound_completed": 149530292,
+    "r5sound_media": 149529748,
+    "r5sound_power": 149529564,
+    "r5sound_inbound": 23955536,
+    "r5ss_parse_exposure": 23955384,
+    "r5ss_expose": 23951224,
+    "r5sound_boot": 23939476,
+    "r5sound_scan_root": 23943504,
+    "r5sound_storage_bind": 149530112,
+    "r5sound_log": 23947564,
+    "r5sound_service": 23935936,
+    "r5ss_backend_resume": 23941316,
+    "r5ss_bridge_bind_epoch": 23957876,
+    "r5ss_reset_retired": 23957224,
+    "r5ss_native_gate": 149529496,
+    "r5ss_backend_poll": 23956580,
+    "r5ss_backend_stop": 23953852,
+    "r5ss_backend_authorize": 23955816,
+    "r5ss_backend_install": 23940532,
+    "r5ss_backend_start": 23952640,
+    "r5ss_native_first_owner17": 23954588,
+    "r5ss_configure": 23956912,
+    "r5ss_tick": 23947120,
+    "r5ss_backend_first_authorize": 149529424,
+    "r5ss_backend_unload": 23953260,
+    "r5ss_backend_stage": 23954760,
+    "r5ss_native_resume_check17": 23949792,
+    "r5ss_bridge_diagnostics": 23957424,
+    "r5ss_native_gain_bind17": 23955676,
+    "r5ss_native_retirement_poll": 23948428,
+    "r5ss_native_owner_check17": 23957120,
+    "r5ss_bridge_stop_ready": 149530724,
+    "r5ss_native_start_arm17": 23954048,
+    "r5ss_snapshot_inbound": 23949484,
+    "r5_filter_parent_refresh425": 149830048,
+    "r5_filter_parent_presenter425": 149830292,
+    "r5sound_menu_event2d6_443": 149830316,
+    "r5sound_menu_event425": 149830668,
+    "r5_filter_controller425": 149830688,
+    "r5_filter_presenter425": 149831920,
+    "r5_filter_page_text425": 149833160
+  },
+  "relocations": [
+    {
+      "kind": 283,
+      "site": "0x8ee39b0",
+      "target": "0x8e97488",
+      "symbol": "r5_filter_selected",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee39b8",
+      "target": "0x8ee3a20",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee39d8",
+      "target": "0x8ee3a80",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee39e0",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee39e4",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3a20",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3a24",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3a40",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 286,
+      "site": "0x8ee3a48",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3a4c",
+      "target": "0x8ee47c0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3a58",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3a5c",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3a98",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3a9c",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee3abc",
+      "target": "0x8ee4ffc",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3ac8",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3acc",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3bb8",
+      "target": "0x8e9a538",
+      "symbol": "r5sound_menu_gui_changed",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee3c1c",
+      "target": "0x8ee4ffc",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3c2c",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3c30",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3c88",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee3c8c",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3c94",
+      "target": "0x8ee3d44",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3c98",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3c9c",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3cac",
+      "target": "0x8ee3a80",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3cb8",
+      "target": "0x8ee5030",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3ce4",
+      "target": "0x8e97488",
+      "symbol": "r5_filter_selected",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3d28",
+      "target": "0x8ee5030",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3d38",
+      "target": "0x8ee4fa0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3d4c",
+      "target": "0x8ef0590",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3d50",
+      "target": "0x8ef0590",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3d80",
+      "target": "0x8ef05ac",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3d84",
+      "target": "0x8ef05ac",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3d88",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3d8c",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3da4",
+      "target": "0x8ee480c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3dbc",
+      "target": "0x8ee480c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3dc0",
+      "target": "0x8ee4824",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3dc4",
+      "target": "0x8ee4824",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3dd0",
+      "target": "0x8ee483c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3dd4",
+      "target": "0x8ee483c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3ddc",
+      "target": "0x8ee4854",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3de0",
+      "target": "0x8ee4854",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3de8",
+      "target": "0x8ee4b04",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3dec",
+      "target": "0x8ee4b04",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3df4",
+      "target": "0x8ee4b20",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3df8",
+      "target": "0x8ee4b20",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3e00",
+      "target": "0x8ee4b38",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3e04",
+      "target": "0x8ee4b38",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3e0c",
+      "target": "0x8ee4b50",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3e10",
+      "target": "0x8ee4b50",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3e18",
+      "target": "0x8ee4b00",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3e1c",
+      "target": "0x8ee4b00",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3e2c",
+      "target": "0x8ee4b9c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3e30",
+      "target": "0x8ee4b9c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee3e58",
+      "target": "0x8ee50cc",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee3e5c",
+      "target": "0x8ee50cc",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3f48",
+      "target": "0x8ee480c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3f80",
+      "target": "0x8e90e64",
+      "symbol": "memcpy",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee3fe0",
+      "target": "0x8e90e64",
+      "symbol": "memcpy",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee401c",
+      "target": "0x8e90e64",
+      "symbol": "memcpy",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4050",
+      "target": "0x8e90e64",
+      "symbol": "memcpy",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4088",
+      "target": "0x8ef0590",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee408c",
+      "target": "0x8ef0590",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee40c4",
+      "target": "0x8ef0590",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee40cc",
+      "target": "0x8ef0590",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee40fc",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4100",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4148",
+      "target": "0x8ee3a20",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4158",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee415c",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4184",
+      "target": "0x8ef05b8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 286,
+      "site": "0x8ee4188",
+      "target": "0x8ef05b8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4190",
+      "target": "0x8ee3d44",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4198",
+      "target": "0x8ef0590",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee419c",
+      "target": "0x8ef0590",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee41ac",
+      "target": "0x8ee3a80",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee426c",
+      "target": "0x8ee501c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4278",
+      "target": "0x8ee4300",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee42a0",
+      "target": "0x8ef1778",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee42a4",
+      "target": "0x8ef1778",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee42d0",
+      "target": "0x8ee4fa0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee42dc",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee42e0",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee42f4",
+      "target": "0x8ee4fa0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4300",
+      "target": "0x8ef05b8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 286,
+      "site": "0x8ee4304",
+      "target": "0x8ef05b8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4330",
+      "target": "0x8ee3a20",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4340",
+      "target": "0x8ef05ac",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4344",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4348",
+      "target": "0x8ef05ac",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4350",
+      "target": "0x8e96d6c",
+      "symbol": "r5_filter_available_mask",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee43b4",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee440c",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4410",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4464",
+      "target": "0x8ee46d0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4468",
+      "target": "0x8ef05ac",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee44a0",
+      "target": "0x8ee4f60",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee44b8",
+      "target": "0x8ee4f60",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee44e0",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee44fc",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee451c",
+      "target": "0x8ee4f60",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4534",
+      "target": "0x8ee4f60",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee454c",
+      "target": "0x8ee4f60",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4554",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4560",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4570",
+      "target": "0x8ee4f60",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee45ec",
+      "target": "0x8ee46d0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee4600",
+      "target": "0x8e96cf4",
+      "symbol": "r5_filter_short_name",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4610",
+      "target": "0x8ee46d0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4620",
+      "target": "0x8ee5045",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4624",
+      "target": "0x8ee5045",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee464c",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4650",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4674",
+      "target": "0x8ee5072",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4678",
+      "target": "0x8ee5072",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4680",
+      "target": "0x8ee5044",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4684",
+      "target": "0x8ee5044",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee468c",
+      "target": "0x8ee504c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4690",
+      "target": "0x8ee504c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee469c",
+      "target": "0x8e96d4c",
+      "symbol": "r5_filter_full_name",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee46ac",
+      "target": "0x8ee50a4",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee46b0",
+      "target": "0x8ee50a4",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee46b8",
+      "target": "0x8ee508b",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee46bc",
+      "target": "0x8ee508b",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee46c4",
+      "target": "0x8ee505c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee46c8",
+      "target": "0x8ee505c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee46e4",
+      "target": "0x8e96d6c",
+      "symbol": "r5_filter_available_mask",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4720",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee472c",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4754",
+      "target": "0x8ef05ac",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4758",
+      "target": "0x8ef05ac",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee47c4",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee47c8",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4824",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 286,
+      "site": "0x8ee4828",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee4834",
+      "target": "0x8ee4fb8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee483c",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 286,
+      "site": "0x8ee4840",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee484c",
+      "target": "0x8ee4fb8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4874",
+      "target": "0x8ee47c0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4884",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4888",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee48a4",
+      "target": "0x8ee500c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee48b0",
+      "target": "0x8ee500c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee48b8",
+      "target": "0x8ee3a20",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee48c0",
+      "target": "0x8ef05a0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee48c4",
+      "target": "0x8ef05a0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee48d0",
+      "target": "0x8ee4ca8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee48d8",
+      "target": "0x8e974dc",
+      "symbol": "r5_filter_command_sequence",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4900",
+      "target": "0x8ef05a8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4908",
+      "target": "0x8ef05a8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee490c",
+      "target": "0x8e974d0",
+      "symbol": "r5_filter_command_state",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4910",
+      "target": "0x8ee4cd4",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4918",
+      "target": "0x8ee3a20",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4964",
+      "target": "0x8ee46d0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4970",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4974",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4a1c",
+      "target": "0x8ee4ca8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4a50",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4a54",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4a8c",
+      "target": "0x8e97488",
+      "symbol": "r5_filter_selected",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4a90",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4a94",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4a98",
+      "target": "0x8ee4ee4",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4aa4",
+      "target": "0x8ee4e60",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4ab0",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4ab4",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4abc",
+      "target": "0x8ee4d58",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4ac0",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4ac4",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4adc",
+      "target": "0x8ee4b50",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee4b00",
+      "target": "0x8ee5028",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4b04",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 286,
+      "site": "0x8ee4b08",
+      "target": "0x8ef05b0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4b14",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4b18",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee4b1c",
+      "target": "0x8ee5028",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4b20",
+      "target": "0x8ef05b8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 286,
+      "site": "0x8ee4b24",
+      "target": "0x8ef05b8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee4b30",
+      "target": "0x8ee4fe0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4b38",
+      "target": "0x8ef05b8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 286,
+      "site": "0x8ee4b3c",
+      "target": "0x8ef05b8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee4b48",
+      "target": "0x8ee4fe0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4b64",
+      "target": "0x8ee4300",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4b9c",
+      "target": "0x8ef05b8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 286,
+      "site": "0x8ee4ba0",
+      "target": "0x8ef05b8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4bc8",
+      "target": "0x8ee3a20",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4c1c",
+      "target": "0x8ef0590",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4c20",
+      "target": "0x8ef0590",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4c4c",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4c50",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4c74",
+      "target": "0x8ee501c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4c7c",
+      "target": "0x8ee4300",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee4ca4",
+      "target": "0x8ee5028",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4ce4",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4cec",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4cf4",
+      "target": "0x8ef05a0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4cfc",
+      "target": "0x8ef05a0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4d0c",
+      "target": "0x8e97488",
+      "symbol": "r5_filter_selected",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4d10",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4d14",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4d2c",
+      "target": "0x8ee4ee4",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4d3c",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4d40",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4d5c",
+      "target": "0x8ef05a8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4d70",
+      "target": "0x8ef05a8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4d74",
+      "target": "0x8e97494",
+      "symbol": "r5_filter_pending",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4d78",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4d80",
+      "target": "0x8e974d0",
+      "symbol": "r5_filter_command_state",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4d8c",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4d90",
+      "target": "0x8e97488",
+      "symbol": "r5_filter_selected",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4d9c",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4da0",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee4db4",
+      "target": "0x8ee4ee4",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4db8",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4dbc",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4dd4",
+      "target": "0x8ee4b50",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4dd8",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4ddc",
+      "target": "0x8e974e8",
+      "symbol": "r5_filter_request",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4e00",
+      "target": "0x8e974dc",
+      "symbol": "r5_filter_command_sequence",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4e08",
+      "target": "0x8ef05a0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4e10",
+      "target": "0x8ef05a0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4e18",
+      "target": "0x8e974dc",
+      "symbol": "r5_filter_command_sequence",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4e24",
+      "target": "0x8e974d0",
+      "symbol": "r5_filter_command_state",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4e38",
+      "target": "0x16daf60",
+      "symbol": "usleep",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee4e5c",
+      "target": "0x8ee4cd4",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4e64",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4e70",
+      "target": "0x8ef0598",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4e80",
+      "target": "0x8e96d6c",
+      "symbol": "r5_filter_available_mask",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4ef0",
+      "target": "0x8ee39a0",
+      "symbol": "r5_filter_parent_refresh425",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4ef8",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 285,
+      "site": "0x8ee4f00",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4f10",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4f14",
+      "target": "0x8ef059c",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 283,
+      "site": "0x8ee4f20",
+      "target": "0x8ee3a20",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4f38",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4f3c",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4fbc",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4fc0",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4fc8",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4fcc",
+      "target": "0x8ef0594",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 275,
+      "site": "0x8ee4fe4",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 277,
+      "site": "0x8ee4fe8",
+      "target": "0x9000000",
+      "symbol": "r5_filter_page_anchor",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 286,
+      "site": "0x8ee4ff0",
+      "target": "0x8ef05b8",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    },
+    {
+      "kind": 282,
+      "site": "0x8ee5008",
+      "target": "0x8ee3ac0",
+      "symbol": "",
+      "source_object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    }
+  ],
+  "layout": [
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 2,
+      "name": ".text",
+      "va": "0x8ee39a0",
+      "size": 0,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 3,
+      "name": ".text.r5_filter_parent_refresh425",
+      "va": "0x8ee39a0",
+      "size": 128,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 5,
+      "name": ".text.valid",
+      "va": "0x8ee3a20",
+      "size": 96,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 7,
+      "name": ".text.zero",
+      "va": "0x8ee3a80",
+      "size": 20,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 8,
+      "name": ".text.r5_filter_parent_presenter425",
+      "va": "0x8ee3a94",
+      "size": 24,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 10,
+      "name": ".text.r5sound_menu_event2d6_443",
+      "va": "0x8ee3aac",
+      "size": 20,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 12,
+      "name": ".text.sound_menu_event",
+      "va": "0x8ee3ac0",
+      "size": 332,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 14,
+      "name": ".text.r5sound_menu_event425",
+      "va": "0x8ee3c0c",
+      "size": 20,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 16,
+      "name": ".text.r5_filter_controller425",
+      "va": "0x8ee3c20",
+      "size": 292,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 18,
+      "name": ".text.setup",
+      "va": "0x8ee3d44",
+      "size": 940,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 20,
+      "name": ".text.r5_filter_presenter425",
+      "va": "0x8ee40f0",
+      "size": 528,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 22,
+      "name": ".text.project",
+      "va": "0x8ee4300",
+      "size": 712,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 24,
+      "name": ".text.r5_filter_page_text425",
+      "va": "0x8ee45c8",
+      "size": 264,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 26,
+      "name": ".text.visible_row",
+      "va": "0x8ee46d0",
+      "size": 240,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 28,
+      "name": ".text.owned",
+      "va": "0x8ee47c0",
+      "size": 76,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 30,
+      "name": ".text.copy",
+      "va": "0x8ee480c",
+      "size": 24,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 31,
+      "name": ".text.controller_destroy",
+      "va": "0x8ee4824",
+      "size": 24,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 33,
+      "name": ".text.controller_delete",
+      "va": "0x8ee483c",
+      "size": 24,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 35,
+      "name": ".text.dispatch",
+      "va": "0x8ee4854",
+      "size": 684,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 37,
+      "name": ".text.none",
+      "va": "0x8ee4b00",
+      "size": 4,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 39,
+      "name": ".text.exit_page",
+      "va": "0x8ee4b04",
+      "size": 28,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 41,
+      "name": ".text.destroy",
+      "va": "0x8ee4b20",
+      "size": 24,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 43,
+      "name": ".text.delete_presenter",
+      "va": "0x8ee4b38",
+      "size": 24,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 45,
+      "name": ".text.refresh",
+      "va": "0x8ee4b50",
+      "size": 76,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 47,
+      "name": ".text.relayout",
+      "va": "0x8ee4b9c",
+      "size": 268,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 49,
+      "name": ".text.private_input",
+      "va": "0x8ee4ca8",
+      "size": 44,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 50,
+      "name": ".text.finish_command",
+      "va": "0x8ee4cd4",
+      "size": 132,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 52,
+      "name": ".text.submit",
+      "va": "0x8ee4d58",
+      "size": 264,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 54,
+      "name": ".text.next",
+      "va": "0x8ee4e60",
+      "size": 132,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 56,
+      "name": ".text.return_parent",
+      "va": "0x8ee4ee4",
+      "size": 124,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 58,
+      "name": ".text.resource",
+      "va": "0x8ee4f60",
+      "size": 64,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 59,
+      "name": ".text.OUTLINED_FUNCTION_0",
+      "va": "0x8ee4fa0",
+      "size": 24,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 60,
+      "name": ".text.OUTLINED_FUNCTION_1",
+      "va": "0x8ee4fb8",
+      "size": 40,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 62,
+      "name": ".text.OUTLINED_FUNCTION_2",
+      "va": "0x8ee4fe0",
+      "size": 28,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 64,
+      "name": ".text.OUTLINED_FUNCTION_3",
+      "va": "0x8ee4ffc",
+      "size": 16,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 66,
+      "name": ".text.OUTLINED_FUNCTION_4",
+      "va": "0x8ee500c",
+      "size": 16,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 67,
+      "name": ".text.OUTLINED_FUNCTION_5",
+      "va": "0x8ee501c",
+      "size": 12,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 68,
+      "name": ".text.OUTLINED_FUNCTION_6",
+      "va": "0x8ee5028",
+      "size": 8,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 69,
+      "name": ".text.OUTLINED_FUNCTION_7",
+      "va": "0x8ee5030",
+      "size": 20,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 71,
+      "name": ".rodata.str1.1",
+      "va": "0x8ee5044",
+      "size": 136,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 72,
+      "name": ".rodata..L__const.setup.visible",
+      "va": "0x8ee50cc",
+      "size": 72,
+      "space": "rx"
+    },
+    {
+      "object": "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o",
+      "index": 70,
+      "name": ".bss.g",
+      "va": "0x8ef0590",
+      "size": 27640,
+      "space": "bss"
+    }
+  ],
+  "patches": [
+    {
+      "offset": 97532320,
+      "before": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "after": "fd7bbea9fc4f01a9fd030091ffc30bd1b6cefe97f303002a1a000094e803002a00008012680200347f32007128020054e0230091015d80522a00009468409592e90800b029010091a817bff2e1230091a0c680522801088b00013fd608608852e85fa0726802082a1f01006be0039f5affc30b91fc4f41a9fd7bc2a8c0035fd6680000b008511691e0031f2a090140b969020034081140b928020035fd7bbfa9680000b0fd03009100d942f95d03009440010034e81b8f92e90800b0290100914831bff22801088b00013fd6080040b91fd51871e0179f1afd7bc1a8c0035fd681000034210400511f140038c1ffff35c0035fd668709e92e90800b029010091281bbff22601088bc0001fd6044190520580825286578052c35a805250050014fd7bbba9f90b00f9f90800b039030091e9ff9f922803048bf85f02a909e0bef2f65703a9fd0300910801098bf44f04a9f50306aaf70305aaf603032af80302aaf40300aa00013fd6f30300aa340700b4e841a0521f0308ebc1060054887a41b91f01166b61060054e81b8f924831bff22803088b00013fd6080040b908791f121fd918716105005488c240f9280500b409cd41f93f0114ebc1040054189d41f9df5e0b71080b8052090780522901889a180400b4ebff9f92080340f92a03178b0be0bef24a010b8b1f010aeb21030054096b69b83f01166bc1020054e9ff9f92160940f92803158b09e0bef20801098bdf0208ebe101005460dafe97a0010034689e8092e00314aac1c68052a817bff23503088ba0023fd6e00314aae1c68052a0023fd6e00318aa21008052c0023fd6e00313aaf44f44a9f65743a9f90b40f9f85f42a9fd7bc5a8c0035fd60412915205a1825206bd8152e35a8052f8040014fd7bbaa9e81b8f92fa6702a9fa0800b05a0300914831bff2fb0b00f94803088bf85f03a9fd030091f65704a9f50304aaf70303aaf44f05a9f30305aaf80302aaf40301aaf90300aa00013fd6080040b91fd5187161050054bf1600f1f6031faa229b45fae8030054680000b0089545b9880300352c0000947b0000b07b5316910161805276733b91e00316aa75ffff97e8a18392e00316aade0400944803088be40315aae50319aa261b8052e70313aa00013fd62800805276c301f874c302f8680300b9e9cdfe971f300071691301917fff00a9e883801ac90200f9680700b9e00316aaf44f45a9f65744a9fb0b40f9f85f43a9fa6742a9fd7bc6a8c0035fd6e86e8392e00319aac20400944603088be40315aae50313aa9a040094fd7bc6a8c0001fd6ff4302d1f65707a9750000b0b5421691a80240b9fd7b03a9fdc30091fc6f04a9fa6705a9f85f06a9f44f08a968000034a81e40b9c81a0034e8358b92740000b094b21691f30800b073020091a891bff2807200916102088b020a80529f0200b99a020094e8338b9280b20191020c80528891bff26102088b94020094090000b029912091e8031faa89c202f8090000b029f12091894203f8090000b02951219189c203f8090000b029112c91894205f8090000b029812c9189c207f8090000b029e12c91894208f8090000b029412d9189c208f8090000b029012c91894204f889c204f889420af8090000b029712e9189c20bf8290080521f8900f1a0000054aa02088b0805009149e13a39fbffff17e8031faa090000d0293103911f2101f1c00000542a6968b808110091aa020a8b5fe13a39faffff17e8031faa1f1d00f1a0000054a902088b080500913fe93a39fbffff17e88c9f92e9708092ea031faac860bff2a960bff2b5831ff86802088be80700f96802098be80300f95f0900f10010005408dd80525f0100f1ed830d325b55089be92340a90c0e80520b0e8052ea0b00f94c05a072cb07a07202dd80522101889aa88140118981051114018d1a084e80526a018c1ac805a072aac31eb88ae105113a01881a68810311890108116b81051108018a1a60a30391e81b00b97601891ac805a052c908a052a0031ff83c01881a3102009413808852686343b96a7343b9f35fa07260330e9161930c91690a041182068052682f03b9695f03b96a3f03b9732b03b97fc703b9b9b3fe97a801a05215018052f8031faaf7031f2a68b303b9680604111508a072d902a052689303b9748303b97a8703b91fb305f100060054e83e00111f0300f1290180523301881a88068052a9035ff87426a89b61630d9182068052e00314aaa1b3fe971a808852693e105361630d91fa5fa072820680524843041189d60429e802082a880600b9a8835ff81301188ba8c35eb860420591882e00b992b3fe972803455149830411aa020211687601b9e802092a60821591685601b9e81b40b961d30f91820680526a7a01b9687e01b985b3fe97798605b9f706001118d30091758a05b9b5021c0b39434011768e05b9d0ffff170b018052ea0b40f90c3a80520b36a0720c04a07275000090b5421691680165115f0100f108018b1aab035ff8898102118901891a4a05009168cd02b9a8835ff869d102b908a11b91a8831ff880ffff176800009029008052099105b9f44f48a9f65747a9f85f46a9fa6745a9fc6f44a9fd7b43a9ff430291c0035fd6fd7bbaa9e81b8f92fa6702a9f9080090390300914831bff2fb0b00f92803088bf85f03a9fd030091f65704a9f70304aaf50303aaf44f05a9f40305aaf60302aaf30301aaf80300aa00013fd6080040b91fd51871410b005436feff97ff6603f1e10a0054c00a00346800009008c11691090140f9080940f929c140f93f0108ebe10900541f1700f1e0031faaa29a45faa80b00546800009008dd42f9480b00b5edfeff97083d82527a0000905a4316915703088b01428b52e00317aa35feff979f02007108dd80527b0240f9e9179f1a531709f9e00313aa2869a89b4963029154f311b949f708f918a1039158ff08f9681b40f900013fd669368a92281b80520ae38b524916bff2401b09f940030a8b483b12b9087a8d522903098be10318aa4204805256e735f9556b28b820013fd6689f999209ae8c52e10318aa8817bff24003098b420480522803088b00013fd6e9979e92eaa89e92680b40f9c960bff2ca60bff245e33a912603098b27030a8be00313aa211b8052e20318aa6c030094e00317aa571700f9220000941f040071e1020054682b40f9e00313aa00013fd6681340f9e00313aae1031faa00013fd6600000b000e01d911300001468cb8392e00318aae10313aa281cbff2e20316aae30315aa2603088be40317aae50314aa34030094fd7bc6a8c0001fd66800009008711691690080528a3b8252090100b900010a8b2b030094fd7bc6a8c0035fd66800009008dd42f91f0008eb21070054fd7bbaa9fc6f01a9fd030091fa6702a9f85f03a9f65704a9f44f05a9f30300aabcfdff9720060034732640f9531300b47700009078000090e8ae45b9c807003487cafe97689240b91f71007141120054744e40f908008012141200b4890a4092c91100b50a008012eb0314aa0c608852e8031f2a6a0d03b8ec5fa0726d0110916e0120912f0080526a0104b96c0108b97f0130393f310071c00200541024c91ad0010036119b45b9f0751e53320500118101090b5f02116b6a4930b831040011aa4930b8e801881ad14930b8f0c13011ef0500119f4a303829050011eeffff17e8031f2a73000014e8031f2a6b000014eaf38692883a0db9a8c68052e9080090290100918a31bff2883e0db92800805229010a8b8f320db99f360db988b2003988023539885a353920013fd6080040b988460db9f9a488527aa20591db0080923c018052f95fa0723b0500b4751f0091e003152a9b000094e8ae45b9f403002a88020035685b00117f1f00b1e00313aa8103881a086088529f060031e85fa072f6079f1a08410811e303162aa202082ab00200940008f837612700116203190be00313aae303162aaa0200944007f83748835fb81f510071e1060054490741f808008012a90600b42a0940926a0600b5089b45b99f0600317b0700918012487ae8179f1a28b100393bfbffb5089b45b914608852e00313aaf45fa07261018052e3031f2a8802080b02010411910200942004f837820a0811e00313aa81018052230080528b0200946003f837e00313aac1018052e2031f2ae3031f2a85020094a002f8376800009082060811e00313aa089d45b9a10180521f010071e3079f1a7c0200948001f83768f240b91f51007121010054697e40f908008012e90000b42a094092aa0000b5280080523fb100390200001408008012f44f45a9f65744a9f85f43a9fa6742a9fc6f41a9fd7bc6a8e003082ac0035fd6fd7bbfa9085c9752fd03009108a0bf720800080b094100113f19007108010054e003092a390000941f0400316004005440010034fd7bc1a8bdc9fe171f19007128010054e003082a300000941f04003140030054e0030035000000b0001401911f00001448a08852e85fa0721f00086ba002005428a08852e85fa0721f00086bc102005468000090089d45b91f050071600300541f150071600200541f110071800200541f0d007181000054000000b000c801910a000014000000b00010019107000014000000b00030019104000014fd7bc1a8acc9fe17e0031faafd7bc1a8c0035fd6000000b000900291fcffff17000000b0002c0291f9ffff17000000b000700191f6ffff17ff8301d1fd7b04a9fd030191f32b00f9f303002aa2c9fe9729008052ea33009128008052ff0f00b93f350071200100542b0500510b24cb1a8b0000360b050011495928b8e8030b2a29050011f7ffff1769000090eb031faaea031f2a2c9945b9e903082aed3300913f010bebc0000054ae796bb8df010c6b6a018a1a6b050091faffff176b0000906bad45b92b0100344901130b7f1200712a0900512899427a42a1487aa3010054000080120d0000144a0d00710b1d0051ea338a1a5f010b6b4a318b1a1f210071e8338a1a0a01130b5f01096ba2feff54e833009100596ab8fd7b44a9f32b40f9ff830191c0035fd6000200b46900009029c11691280140f91f0008ebe8031f2a61010054290940f9290100b4087841b91f650371a100005408c040f91f0109ebe8179f1a02000014e8031f2ae003082ac0035fd6a2000034281440384204005108140038a2ffff35c0035fd66800009008d942f91f0008eb41000054e1010014c0035fd66800009008d942f91f0008eb41000054db010014c0035fd6fd7bbca9f85f01a9fd030091f65702a9f50302aaf44f03a9f30301aaf40300aad3ffff97a0070034a81e08120980a052f7080090f70200911f01096b0920a0520411497af60315aae1000054689a8d92da01009468918d92f60300aad7010094160016aa5afcff97e00a00346800009018a145b9d8020034e003162af60000946002003401cbfe971f03006b810b0054e80180522840a072df0208eb880180522840a072c41248fa81000054680000902900805209a905b9f1cafe97f1000094600d003442fcff97200d0034930300b4480080522860a072df0208eb01030054680240b9560080523660a0721f050071a1060054681a40b91f65037141060054680e40b9005900511f180071c80500545bffff975000001468e68492e908009029010091c814bff2e00314aae10313aa2301088be20315aa2c00001448ff9f52c8bfbf72c802080b1f250071490600542840a052df02086b480080522840a072c412487ac0020054680080522840a072df02086ba80080522840a072c412487aa840a052c412487a20060054a8008052a840a072df02086b2001005488008052a840a072df02086b2005005428008052a840a072df02086b61000054e0031f2a24000014e003162aa30000940006003568e68492e203152ae00314aac814bff2e10313aae302088bf44f43a9f65742a9f85f41a9fd7bc4a860001fd66800009008711691690080521f0d00b9090100f91700001429008052aa0580522921c81a3f010a6a410200541f190071c00300541f250071e1f8ff547fcafe9768000090009905b9130100940900001420008052ef0000941f040031a000005468000090009905b9e0031f2aa70000946800009008511691004142f8a00000b4080140b968000034210080521d000094f44f43a920008052f65742a9f85f41a9fd7bc4a8c0035fd620008052f0ffff174a0100146800009008d942f91f0008eb61000054680000901f9505b9430100146800009009dd42f93f0100eb410000542c010014c0035fd66800009009dd42f93f0100eb4100005426010014c0035fd6fd7bbea9f44f01a9fd030091f30301aaf40300aae7fdff971f04007101010054802240f9e10313aaf44f41a9080040f9021140f9fd7bc2a840001fd6f44f41a9e0031faafd7bc2a8c0035fd66800009008dd42f91f0008ebe1070054fd7bbca9f85f01a9fd030091f65702a9f44f03a9f30300aaf40301aa96fbff9740060034680a40b99f0208ebe00500549f020071752240f9740a00b9e9179f1a1f010071e8079f1ab70240f92801084ac8000036e83240f9e00315aae10314aa00013fd6210000149f02007109dd80527800009018431691e8179f1ae00315aa0861a99b16a10391760a00f9e80e40f900013fd6ea979e92eba89e92e80a40f9e908009029010091ca60bff2cb60bff205e33a9126010a8b27010b8be00315aa211b8052e20316aaea000094e00313aaa1fdff971f04007181000054e82a40f9e00315aa00013fd6f44f43a9f65742a9f85f41a9fd7bc4a8e1000014a8ffbf522940a0520a3c10120800080a1f01096ba840a0524411487a2860a0524411487ae0179f1ac0035fd61f1000710418417ac1000054e0031f2a6800009089008052099d05b9c0035fd6680000901f0800711fa105b9e1010054fd7bbfa9fd030091dfc9fe9768000090086116911f300071091140b9ea83801a0a7d0029490000346e00009420008052fd7bc1a8c0035fd6680000900871169169008052200080521f0d00b9090100b9c0035fd6fd7bbda968000090f50b00f9fd030091f44f02a9f303002a00a905b9c8c9fe9774000090e0010035d4c9fe971f08007181010054959a45b9bec9fe97bf02006b01010054680000901f9d05b973020034f44f42a9f50b40f9fd7bc3a84c00001473000090737216912800805260c241f8680200b9600000b4210080525fffff97809a45b9c3c9fe9700010034680080527f0e00b9680200b9f44f42a9f50b40f9fd7bc3a8c0035fd6b7c9fe97f303002a6800009014fa805200a105b994010034b1c9fe977f02006b61010054abc9fe971f1000710418417a0101005400e284524ad81f9694060051d4feff35200080520200001460008052f44f42a9f50b40f9fd7bc3a89effff17fd7bbda968000090f44f02a9fd030091149945b9f50b00f9f303002ad5018052bbc7fe97b5060071e0010054b30000349f32007180010054280080520300001408008012740100349402082b00010054880600510924c81ae803142a49fe0736040000140800801202000014e8031f2af44f42a9e003082af50b40f9fd7bc3a8c0035fd6fd7bbea9f44f01a9fd030091acfaff97e000003468000090a9008052099d05b9f44f41a9fd7bc2a8c0035fd67400009094721691934241f89f0200b9c0faff9700ffff34880a40b9c8feff3560c240f961e205916900009029511691f44f41a9080040f92a0080523f0100b92a1100b9021140f9fd7bc2a840001fd60850218b090140b93f09007161010054080540f900008012280100b409094092e90000b5e0031f2a023100b91f1d00f903b10039c0035fd600008012c0035fd6f44f45a9fb0b40f9f65744a9f85f43a9fa6742a9c0035fd66a828f92e9080090290100910a24bff2680000900851169121010a8b1f0100b91fc101f820001fd6ea8f8092e9080090290100916a19bff21fdd02f921010a8b20001fd62433a07285b1a072263ba072aefaff17e00315aa4816bff2e802088b00011fd643048052e403142a00011fd6e0031faac0035fd6e10314aa481abff2e20318aae30317aac0035fd600e585b3e997ad00e887aae5ae9ae4b989e6bba4e9959c00e6ada3e59ca8e5908ce6ada5e5ba94e794a8e280a600e5ba94e794a8e5a4b1e8b4a5efbc8ce8afb7e9878de8af9500e6ada3e59ca8e5ba94e794a8efbc8ce8afb7e7a88de5809900e6bba4e9959ce5b7b2e5ba94e794a8efbc8ce88f9ce58d95e588b7e696b0e5be85e9878de8af95000000000001000000090000000c0000000d000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c000000",
+      "reason": "New display-only page module in zero RX padding"
+    },
+    {
+      "offset": 97518048,
+      "before": "a039000000000000a039000000000000",
+      "after": "14510000000000001451000000000000",
+      "reason": "Expand existing aspect RX only"
+    },
+    {
+      "offset": 97518112,
+      "before": "8c05000000000000",
+      "after": "8871000000000000",
+      "reason": "Private D9 view ownership BSS after aspect state"
+    },
+    {
+      "offset": 97422668,
+      "before": "fd7bbaa9",
+      "after": "b52b0114",
+      "reason": "Redirect original r5_filter_controller425 entry to display module"
+    },
+    {
+      "offset": 97424052,
+      "before": "fd7bbaa9",
+      "after": "8f2b0114",
+      "reason": "Redirect original r5_filter_presenter425 entry to display module"
+    },
+    {
+      "offset": 97422268,
+      "before": "68709e92",
+      "after": "b62b0114",
+      "reason": "Redirect original r5_filter_parent_presenter425 entry to display module"
+    },
+    {
+      "offset": 97425252,
+      "before": "fd7bbea9",
+      "after": "992b0114",
+      "reason": "Redirect original r5_filter_page_text425 entry to display module"
+    },
+    {
+      "offset": 97422032,
+      "before": "fd7bbea9",
+      "after": "b42b0114",
+      "reason": "Redirect original r5_filter_parent_refresh425 entry to display module"
+    },
+    {
+      "offset": 97422648,
+      "before": "04129152",
+      "after": "b52b0114",
+      "reason": "Redirect original r5sound_menu_event425 entry to display module"
+    },
+    {
+      "offset": 97422296,
+      "before": "04419052",
+      "after": "b52b0114",
+      "reason": "Redirect original r5sound_menu_event2d6_443 entry to display module"
+    }
+  ],
+  "reverse_exact": true,
+  "old_program_header_count_unchanged": true,
+  "sources": {
+    "r5_filter_page_style.c": "8b6b0ceb05fc7ea0c149ff883f49d6c505bc2a99baba0a192a57c66469432fbf",
+    "r5_filter_menu423.h": "f24dc35ed16e4b682407eaaf7d8eb59cf7fd9a8731bfd9045d6c7c317a497c47",
+    "r5_sound_menu437.h": "3f81c15a7465df6ff0a4dc18f3ed820c6d196906c2de05d29c4de552503864f4"
+  },
+  "audit_sha256": "d26036cbf6303b34e5674a83eb09dc8f0ebdfca05ec63c6b84717c4a5b649a09",
+  "commands": [
+    [
+      "clang",
+      "--target=aarch64-none-elf",
+      "-Oz",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-fno-stack-protector",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-mgeneral-regs-only",
+      "-fno-jump-tables",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_filter_native_style_20261110",
+      "-c",
+      "/Users/zhaoyunpeng/Documents/ChatGPT/\u56fa\u4ef6/analysis/r5_filter_native_style_20261110/r5_filter_page_style.c",
+      "-o",
+      "analysis/r5_filter_native_style_20261110/candidate-h/r5_filter_page_style.c.o"
+    ]
+  ],
+  "scope": "D9 full-width list, left abbreviations right full names, no separate right operation pane; original async path retained",
+  "device_tested": false,
+  "limits": [
+    "Pending independent native lifecycle/render output replay; no installable package"
+  ]
+}
