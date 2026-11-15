@@ -1,0 +1,30 @@
+{
+  "version": "4.65",
+  "release_status": "unverified_candidate",
+  "base_firmware": "Original R5 4.00",
+  "output_sha256": "9bf21b2d4b94c7e4fec44213a642af07d0f31be4ad686a673049c9a1ecd2b8d2",
+  "output_bytes": 754525608,
+  "source_files": 201,
+  "source_zip_sha256": "06d906ce500caab952792ff18aa0f8ffd6e5e9f7c7d29573b42dc3ab31f41cb1",
+  "saved_signature_valid": true,
+  "tampered_signature_rejected": true,
+  "outer_crc_valid": true,
+  "plaintext_verification": {
+    "independent_library": "PyCryptodome AES; encryption uses cryptography",
+    "plaintext_bytes": 751577088,
+    "decrypted_blocks": 736841,
+    "plaintext_sha256": "b5f5053d9e46431def58a1d595694cc27b73a14850e24bb70f5fbee43e3d882e",
+    "every_plaintext_byte_matches": true,
+    "all_block_checksums_lengths_flags_and_padding_valid": true
+  },
+  "open_owner_boundaries": [
+    "live_root",
+    "pending_gamma",
+    "AA_three_routes",
+    "capture_freeze_clone",
+    "successful_pool_return",
+    "off_control_reclamation"
+  ],
+  "device_acceptance_tested": false,
+  "independent_full_rebuild_from_zip": false
+}

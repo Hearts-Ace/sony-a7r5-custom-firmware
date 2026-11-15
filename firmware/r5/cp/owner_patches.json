@@ -1,0 +1,198 @@
+[
+  {
+    "va": "0x24119a",
+    "before": "d8f840ea",
+    "kind": "b",
+    "target": "od_live_color_gate",
+    "reason": "od_live_color_gate"
+  },
+  {
+    "va": "0x2429a6",
+    "before": "d9f804c1",
+    "kind": "b",
+    "target": "od_photo_color_gate",
+    "reason": "od_photo_color_gate"
+  },
+  {
+    "va": "0x230bf2",
+    "before": "0df5b06d",
+    "kind": "b",
+    "target": "od_live_frame_end",
+    "reason": "od_live_frame_end"
+  },
+  {
+    "va": "0x71771a",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end0",
+    "reason": "od_photo_end0"
+  },
+  {
+    "va": "0x7179ba",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end1",
+    "reason": "od_photo_end1"
+  },
+  {
+    "va": "0x717c40",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end2",
+    "reason": "od_photo_end2"
+  },
+  {
+    "va": "0x717f3c",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end3",
+    "reason": "od_photo_end3"
+  },
+  {
+    "va": "0x718238",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end4",
+    "reason": "od_photo_end4"
+  },
+  {
+    "va": "0x7184cc",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end5",
+    "reason": "od_photo_end5"
+  },
+  {
+    "va": "0x7187c4",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end6",
+    "reason": "od_photo_end6"
+  },
+  {
+    "va": "0x718ac6",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end7",
+    "reason": "od_photo_end7"
+  },
+  {
+    "va": "0x718d4c",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end8",
+    "reason": "od_photo_end8"
+  },
+  {
+    "va": "0x718fb2",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end9",
+    "reason": "od_photo_end9"
+  },
+  {
+    "va": "0x71921a",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end10",
+    "reason": "od_photo_end10"
+  },
+  {
+    "va": "0x719580",
+    "before": "0df50e6d",
+    "kind": "b",
+    "target": "od_photo_end11",
+    "reason": "od_photo_end11"
+  },
+  {
+    "va": "0xae09b8",
+    "before": "206828602560",
+    "kind": "b_nop",
+    "target": "od_task_retire_gate",
+    "reason": "od_task_retire_gate"
+  },
+  {
+    "va": "0x4614a4",
+    "before": "00220260",
+    "kind": "bl",
+    "target": "od_pool_reset_gate",
+    "reason": "od_pool_reset_gate"
+  },
+  {
+    "va": "0x898568",
+    "before": "5cf528ee",
+    "kind": "bl",
+    "target": "od_settings_snapshot",
+    "reason": "od_settings_snapshot"
+  },
+  {
+    "va": "0xadf128",
+    "before": "16f748e0",
+    "kind": "bl",
+    "target": "od_freeze_snapshot",
+    "reason": "od_freeze_snapshot"
+  },
+  {
+    "va": "0xadd846",
+    "before": "7bf555f7",
+    "kind": "bl",
+    "target": "od_capture_snapshot",
+    "reason": "od_capture_snapshot"
+  },
+  {
+    "va": "0xafcb80",
+    "before": "f8f61ce3",
+    "kind": "bl",
+    "target": "od_settings_snapshot",
+    "reason": "deferred native settings snapshot"
+  },
+  {
+    "va": "0x4baab6",
+    "before": "3af182eb",
+    "kind": "bl",
+    "target": "od_settings_snapshot",
+    "reason": "deferred settings copy to native live source descriptor"
+  },
+  {
+    "va": "0x314eb6",
+    "before": "d0f8401ac9f8dc1c",
+    "kind": "b_nop2",
+    "target": "od_tone_owner_gate",
+    "reason": "od_tone_owner_gate"
+  },
+  {
+    "va": "0x845700",
+    "before": "67f209fa",
+    "kind": "bl",
+    "target": "od_pending_send_gate",
+    "reason": "od_pending_send_gate"
+  },
+  {
+    "va": "0xaa8212",
+    "before": "e36095f804a0",
+    "kind": "b_nop",
+    "target": "od_pending_input_gate",
+    "reason": "od_pending_input_gate"
+  },
+  {
+    "va": "0xaa6978",
+    "before": "4ef720e4",
+    "kind": "bl",
+    "target": "od_pending_snapshot",
+    "reason": "od_pending_snapshot"
+  },
+  {
+    "va": "0xaa7764",
+    "before": "4df72ae5",
+    "kind": "bl",
+    "target": "od_pending_snapshot",
+    "reason": "od_pending_snapshot"
+  },
+  {
+    "va": "0xaa7780",
+    "before": "28463146",
+    "kind": "b",
+    "target": "od_gamma_stack_end",
+    "reason": "od_gamma_stack_end"
+  }
+]

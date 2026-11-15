@@ -1,0 +1,32 @@
+{
+  "patches": [
+    {
+      "va": "0x496044",
+      "before": "242022f192ee",
+      "kind": "b_nop",
+      "target": "r5_receive_early_gate",
+      "reason": "Validate and prepare E7 outside native settings lock; handled frames jump after unlock"
+    },
+    {
+      "va": "0x49604a",
+      "before": "307818b1",
+      "kind": "b",
+      "target": "r5_receive_sound_gate",
+      "reason": "Only E6 enters optional sound guard; replay native type discriminator"
+    },
+    {
+      "va": "0x496064",
+      "before": "aff698fd",
+      "kind": "bl",
+      "target": "r5_receive_dispatch_gate",
+      "reason": "402f selection under lock accepts only tagged matching owner or falls back stock"
+    },
+    {
+      "va": "0x49606e",
+      "before": "00992046",
+      "kind": "b",
+      "target": "r5_receive_complete_gate",
+      "reason": "ACK only after native unlock and before original message free"
+    }
+  ]
+}

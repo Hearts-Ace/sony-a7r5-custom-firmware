@@ -14,7 +14,7 @@ https://github.com/Liwenru88/a7r5-rea
 
 这是针对已破解机器的补充打包方案。只完成本地构建、封装和验证，不连接或刷写相机。
 
-1. 获取本项目4.59完整源码，唯一入口为firmware/r5/build.py。先阅读该目录README.md、inputs.example.json、inputs.lock.json、expected_outputs.json、sources.lock.json、source_provenance.json和evidence_manifest.json。使用实际本机路径，不照搬他人电脑的路径。所需基础配方已包含在source中，无需旧版本生成件。
+1. 获取本项目 4.65 候选源码，唯一入口为firmware/r5/build.py。先阅读该目录README.md、inputs.example.json、build_support/inputs.lock.json、sources.lock.json、build_support/provenance.json 和 validation.lock.json。使用实际本机路径，不照搬他人电脑的路径。所需基础配方已包含在source中，无需旧版本生成件。
 
 2. 检查我本机a7r5-rea环境及当初破解记录，定位这台相机实际使用的公钥、私钥和更新器材料。复用现有密钥，不生成新密钥，也不使用固件作者的签名身份。核对公私钥匹配，并依据已有记录核对相机信任身份；如无法确定，向我询问缺失路径或记录。私钥仅在本机由签名程序读取，不输出、不上传、不提交Git。
 

@@ -1,0 +1,37 @@
+[
+  {
+    "va": "0x41363c",
+    "before": "f0b503af",
+    "kind": "b",
+    "target": "od_gamma_inner",
+    "reason": "od_gamma_inner"
+  },
+  {
+    "va": "0x4138ec",
+    "before": "0b9304a8",
+    "kind": "b",
+    "target": "od_gamma_ordinate",
+    "reason": "Use leased ordinary Gamma ordinates; preserve native metadata and forced Gamma"
+  },
+  {
+    "va": "0x71e720",
+    "before": "002139f80120",
+    "kind": "b_nop",
+    "target": "od_cc1_gate",
+    "reason": "od_cc1_gate"
+  },
+  {
+    "va": "0x71d6cc",
+    "before": "352b10d1",
+    "kind": "b",
+    "target": "od_b13_gate",
+    "reason": "od_b13_gate"
+  },
+  {
+    "va": "0x71d6f8",
+    "before": "00f091fe",
+    "kind": "bl",
+    "target": "od_matrix",
+    "reason": "od_matrix"
+  }
+]

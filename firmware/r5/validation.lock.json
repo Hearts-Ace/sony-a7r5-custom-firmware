@@ -1,0 +1,142 @@
+{
+  "version": "4.65",
+  "release_status": "unverified_candidate",
+  "passed": false,
+  "offline_only": true,
+  "device_acceptance_tested": false,
+  "components": {
+    "AP": "7cbe4534c6b61dbec09044411279dc358668b8ba42d1fefed219e4de47b15266",
+    "CP": "f7c385b5a8b88ddc03543b3a92ce7c3ddeeeb0e58069fa5b8fcbdc904f44cf83",
+    "AVCAM": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b",
+    "MPR": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478"
+  },
+  "reports": [
+    {
+      "id": "ap-build",
+      "path": "analysis/r5_owner_submit465_20261115/ap-build1/ap_build.json",
+      "sha256": "da9f27205052c0f57840ec20072098060cb838ce81a40a3aa4db0b668a226a56"
+    },
+    {
+      "id": "ap-worker",
+      "path": "analysis/r5_owner_submit465_20261115/ap-filter-native-final.json",
+      "sha256": "8fbeee91ae945b063edb6e381f5794e64ed1593d406b1881aecba43fbf7958bf"
+    },
+    {
+      "id": "ap-regressions",
+      "path": "analysis/r5_owner_submit465_20261115/ap-regression-summary.json",
+      "sha256": "10db7ea90589194873399d1cc2d735cf93eaa16ff5fde40db559c9f57fb48948"
+    },
+    {
+      "id": "cp-build",
+      "path": "analysis/r5_owner_submit465_20261115/cp-integrate-final/build.json",
+      "sha256": "00e40e95e2696c71cdba002c022f91de4a8e08accf978de138c854afe8afb092"
+    },
+    {
+      "id": "cp-receive",
+      "path": "analysis/r5_owner_submit465_20261115/receive-lock-replay-final.json",
+      "sha256": "d3388398a3bf5b3023c4e99d0a2f64e0b5dcd057bcb8336782f20d08e9ea3f37"
+    },
+    {
+      "id": "cp-gamma",
+      "path": "analysis/r5_owner_submit465_20261115/gamma-ordinate-replay-final.json",
+      "sha256": "4de4b2cba0ad1c476be365326102dace1d33aecf4b0bf223b14ea5d02670c919"
+    },
+    {
+      "id": "live-static",
+      "path": "analysis/r5_owner_submit465_20261115/live-owner-copy-reviewed.md",
+      "sha256": "c649470edffcc07c5c042d9890d2d5a2229fe48de00e64e8763b78b9b1f91b72"
+    },
+    {
+      "id": "owner-static",
+      "path": "analysis/r5_owner_submit465_20261115/owner-hook-static-review.json",
+      "sha256": "5458135ce36f56d13a0b7183066184b95fb3c7019f98686724a8f864d1a14209"
+    },
+    {
+      "id": "retained-build",
+      "path": "analysis/r5_owner_submit465_20261115/retained-final/build.json",
+      "sha256": "85a7e1c9436dc8f1deb88cb2e9b8e0246cec8819238a880777445cc1f150a520"
+    },
+    {
+      "id": "host-package",
+      "path": "analysis/r5_owner_submit465_20261115/build-support-checks.json",
+      "sha256": "8c572f2f13c9cffe4f0280c54d83b3d0433922b3b7ff375c1c0325187df9fe59"
+    }
+  ],
+  "owner_handoff": {
+    "prepare_outside_settings_lock": {
+      "passed": true,
+      "boundary": "在最终 CP 指令回放中，E7 参数检查、15,352 B context 准备、回收和 ACK 在 0x24 锁外；原厂 402f 接收使用原锁。",
+      "evidence": [
+        "cp-receive"
+      ]
+    },
+    "exact_E4_cookie_handoff": {
+      "passed": true,
+      "boundary": "最终 AP/CP 各自运行实际指令接口 fixture；原厂选择字段及 tagged cookie 的接收、重复、陈旧和 ACK 经过校验。环境为独立主机 fixture。",
+      "evidence": [
+        "ap-worker",
+        "cp-receive"
+      ]
+    },
+    "live_root": {
+      "passed": false,
+      "boundary": "原厂 live snapshot 与 work 根传播；0x4baab6 前缀复制已接线。",
+      "reason": "来源和复制路径经静态核对；没有完整实机取景，也未确认持久 live/deferred owner 的最终失效时刻。",
+      "evidence": [
+        "live-static",
+        "owner-static",
+        "cp-build"
+      ]
+    },
+    "pending_gamma": {
+      "passed": false,
+      "boundary": "原厂 pending color 到 Gamma 输入 +0xc；只替换 516 B 曲线纵坐标。",
+      "reason": "Gamma 指令 fixture 已通过，但 pending 跨 root 与全部异步复制生命周期未完整验证。",
+      "evidence": [
+        "cp-gamma",
+        "owner-static",
+        "cp-build"
+      ]
+    },
+    "AA_three_routes": {
+      "passed": false,
+      "boundary": "原厂 AA 三个同步 grid 提交调用使用 descriptor 所附 generation。",
+      "reason": "三个入口有接线及前像核验；全链路并发更新、释放、各渲染结果未实机验证。",
+      "evidence": [
+        "cp-build"
+      ]
+    },
+    "capture_freeze_clone": {
+      "passed": false,
+      "boundary": "原厂 capture、freeze、snapshot 保存同一 generation。",
+      "reason": "对已定位入口作静态核验，未覆盖所有延迟 clone 与拍摄时序。",
+      "evidence": [
+        "owner-static",
+        "cp-build"
+      ]
+    },
+    "successful_pool_return": {
+      "passed": false,
+      "boundary": "原厂成功回池压入 free-list 时释放任务引用。",
+      "reason": "已核验补丁前像与指令边界，未复现全机任务退出与对象复用。",
+      "evidence": [
+        "owner-static",
+        "cp-build"
+      ]
+    },
+    "off_control_reclamation": {
+      "passed": false,
+      "boundary": "Off 不分配新 context，最后原厂所有者归还后由 CP 控制路径回收。",
+      "reason": "指令 fixture 证明模型所归还 context 的回收，未证明全部实际预览、拍摄和持久快照何时退场。",
+      "evidence": [
+        "cp-receive",
+        "live-static"
+      ]
+    }
+  },
+  "limits": [
+    "此收据绑定候选包的四项组件，不代表实机、ISP、预览/放大/拍摄组合或设置加载功能已通过。",
+    "SD 导入保留整包到 eMMC；AP 切换只读取一条记录。已有 AP 和 CP 回归为主机 fixture。",
+    "Off 后正在使用旧参数的 native 对象须完成引用退场；实际最后释放时间及原机卡死根因未确定。"
+  ]
+}

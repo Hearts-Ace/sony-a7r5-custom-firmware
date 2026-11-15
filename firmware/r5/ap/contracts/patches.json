@@ -1,0 +1,234 @@
+{
+  "patches": [
+    {
+      "va": 24077772,
+      "kind": "BL",
+      "before": "9d6d1694",
+      "symbol": "r5_filter_menu_register"
+    },
+    {
+      "va": 24077840,
+      "kind": "BL",
+      "before": "216e1694",
+      "symbol": "r5_aspect_rows_register"
+    },
+    {
+      "va": 29197632,
+      "kind": "BL",
+      "before": "25e6ff97",
+      "symbol": "r5_filter_menu_normalize"
+    },
+    {
+      "va": 29200092,
+      "kind": "BL",
+      "before": "07e4ff97",
+      "symbol": "r5_aspect_row_normalize"
+    },
+    {
+      "va": 29186772,
+      "kind": "BL",
+      "before": "6fe9ff97",
+      "symbol": "r5_aspect_row_available_direct"
+    },
+    {
+      "va": 25713464,
+      "kind": "BL",
+      "before": "6e56f997",
+      "symbol": "r5_filter_menu_name_draw"
+    },
+    {
+      "va": 29209144,
+      "kind": "BL",
+      "before": "9effff97",
+      "symbol": "r5_aspect_row_parent"
+    },
+    {
+      "va": 29189044,
+      "kind": "B",
+      "before": "3f903271",
+      "symbol": "r5_filter_menu_icon_query434"
+    },
+    {
+      "va": 52987368,
+      "kind": "BL",
+      "before": "f617fc97",
+      "symbol": "r5_filter_refresh_construct425"
+    },
+    {
+      "va": 55992184,
+      "kind": "B",
+      "before": "810a40b9",
+      "symbol": "r5_aspect_freeze_hook",
+      "reason": "Restore once and freeze choice alongside native aspect read"
+    },
+    {
+      "va": 55994948,
+      "kind": "BL",
+      "before": "7ac7ff97",
+      "symbol": "r5_aspect_send_hook",
+      "reason": "Use frozen private wire5..8 for this exact packet"
+    },
+    {
+      "va": 29128480,
+      "kind": "B",
+      "before": "fd7bbea9",
+      "symbol": "r5_aspect_apply_hook",
+      "reason": "Normalize independent row broker to native alias126"
+    },
+    {
+      "va": 29162776,
+      "kind": "B",
+      "before": "00f80151",
+      "symbol": "r5_aspect_size_alias_hook",
+      "reason": "Normalize original size lookup alias"
+    },
+    {
+      "va": 92715492,
+      "kind": "BYTES",
+      "before": "04000000",
+      "after": "08000000",
+      "reason": "Eight entries in native aspect descriptor"
+    },
+    {
+      "va": 44956988,
+      "kind": "B",
+      "symbol": "r5_aspect_capture_value",
+      "before": "fd7bbfa9",
+      "reason": "Pair private selection with actual native key52b snapshot"
+    },
+    {
+      "va": 44957020,
+      "kind": "B",
+      "symbol": "r5_aspect_restore_value",
+      "before": "fd7bbea9",
+      "reason": "Restore paired private selection with fresh epoch"
+    },
+    {
+      "va": 29189320,
+      "kind": "BL",
+      "symbol": "r5_aspect_restore_alias",
+      "before": "09bbff97",
+      "reason": "Carry full selection epoch from native restored alias"
+    },
+    {
+      "va": 29189332,
+      "kind": "BL",
+      "symbol": "r5_aspect_restore_commit",
+      "before": "20003fd6",
+      "reason": "CAS protects restored commit from newer publication"
+    },
+    {
+      "va": 55973116,
+      "kind": "BL",
+      "before": "96bbff97",
+      "symbol": "r5_filter_serialize_color",
+      "reason": "Carry the owner cookie only in native402f serialized payload"
+    }
+  ],
+  "rela_remaps": [
+    {
+      "va": 92459432,
+      "before_addend": 29171156,
+      "symbol": "r5_filter_menu_normalize"
+    },
+    {
+      "va": 92462424,
+      "before_addend": 29171156,
+      "symbol": "r5_filter_menu_normalize"
+    },
+    {
+      "va": 92459448,
+      "before_addend": 29171448,
+      "symbol": "r5_aspect_row_normalize"
+    },
+    {
+      "va": 92462440,
+      "before_addend": 29171448,
+      "symbol": "r5_aspect_row_normalize"
+    },
+    {
+      "va": 92458000,
+      "before_addend": 29163516,
+      "symbol": "r5_aspect_row_available"
+    },
+    {
+      "va": 92460992,
+      "before_addend": 29163516,
+      "symbol": "r5_aspect_row_available"
+    },
+    {
+      "va": 92458008,
+      "before_addend": 29163664,
+      "symbol": "r5_aspect_row_available_direct"
+    },
+    {
+      "va": 92461000,
+      "before_addend": 29163664,
+      "symbol": "r5_aspect_row_available_direct"
+    },
+    {
+      "va": 92458384,
+      "before_addend": 29208752,
+      "symbol": "r5_aspect_row_parent"
+    },
+    {
+      "va": 92461376,
+      "before_addend": 29208752,
+      "symbol": "r5_aspect_row_parent"
+    },
+    {
+      "va": 93357488,
+      "before_addend": 55060780,
+      "symbol": "r5_filter_refresh_execute425"
+    },
+    {
+      "va": 93167808,
+      "before_addend": 26837512,
+      "symbol": "r5sound_menu_event2d6_443"
+    },
+    {
+      "va": 93167912,
+      "before_addend": 26839184,
+      "symbol": "r5sound_menu_event425"
+    },
+    {
+      "va": 84349056,
+      "before_addend": 31580580,
+      "symbol": "r5_filter_presenter425"
+    },
+    {
+      "va": 84349064,
+      "before_addend": 30598280,
+      "symbol": "r5_filter_controller425"
+    },
+    {
+      "va": 84398016,
+      "before_addend": 31001724,
+      "symbol": "r5_filter_parent_presenter425"
+    },
+    {
+      "va": 92715496,
+      "before_addend": 66348544,
+      "symbol": "r5_aspect_menu_rows",
+      "reason": "Use eight-row table initialized in original row registry constructor"
+    },
+    {
+      "va": 92715528,
+      "before_addend": 29640924,
+      "symbol": "r5_aspect_menu_get",
+      "reason": "Native0 plus private token yields UI choice"
+    },
+    {
+      "va": 92715536,
+      "before_addend": 29760788,
+      "symbol": "r5_aspect_menu_set",
+      "reason": "Native menu browse/cancel setter preserves separate private state"
+    },
+    {
+      "va": 92715544,
+      "before_addend": 29965704,
+      "symbol": "r5_aspect_menu_commit",
+      "reason": "Commit native alias126 then persist private choice"
+    }
+  ]
+}

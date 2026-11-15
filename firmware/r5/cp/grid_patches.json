@@ -1,0 +1,93 @@
+[
+  {
+    "va": "0x230ee0",
+    "before": "002ac5f88421",
+    "kind": "b_nop",
+    "target": "od_grid_source_gate",
+    "reason": "Pin the work-owned immutable grid before native enable and late-disable policy"
+  },
+  {
+    "va": "0x2310d0",
+    "before": "91e87c00",
+    "kind": "b",
+    "target": "od_grid_snapshot_gate",
+    "reason": "Take an independent generation reference for the native state snapshot"
+  },
+  {
+    "va": "0x728c0a",
+    "before": "dce91101",
+    "kind": "b",
+    "target": "od_grid_packet_gate",
+    "reason": "Copy the native packet source and its exact generation"
+  },
+  {
+    "va": "0x72b020",
+    "before": "f0b391f83c23",
+    "kind": "b_nop",
+    "target": "od_grid_descriptor",
+    "reason": "Transfer packet ownership to the existing native descriptor field"
+  },
+  {
+    "va": "0x719f6e",
+    "before": "c2f820e0",
+    "kind": "b",
+    "target": "od_grid_state_clear_gate",
+    "reason": "Retire state ownership at native state reset"
+  },
+  {
+    "va": "0x71437a",
+    "before": "c6f85003",
+    "kind": "b",
+    "target": "od_grid_packet_reset0",
+    "reason": "Retire packet ownership at native zero source store"
+  },
+  {
+    "va": "0x7299cc",
+    "before": "c4f85053",
+    "kind": "b",
+    "target": "od_grid_packet_reset1",
+    "reason": "Retire packet ownership at native zero source store"
+  },
+  {
+    "va": "0x230982",
+    "before": "c4f31cec",
+    "kind": "bl",
+    "target": "od_grid_live_copy",
+    "reason": "Transfer a native live ping-pong state reference when its output block is copied"
+  },
+  {
+    "va": "0x7199a8",
+    "before": "dbf608ec",
+    "kind": "bl",
+    "target": "od_grid_live_copy",
+    "reason": "Transfer the initial native ping-pong block ownership"
+  },
+  {
+    "va": "0xaacfa0",
+    "before": "47f69870",
+    "kind": "b",
+    "target": "od_grid_fixed_reset",
+    "reason": "Release fixed AA descriptor on native run initialization"
+  },
+  {
+    "va": "0x7196dc",
+    "before": "dcf6e8e8",
+    "kind": "bl",
+    "target": "od_grid_live_reset",
+    "reason": "Retire live snapshot source owner before original reset"
+  },
+  {
+    "va": "0x719736",
+    "before": "dcf6bce8",
+    "kind": "bl",
+    "target": "od_grid_live_reset",
+    "reason": "Retire both native live packet/state source owners before original reset"
+  },
+  {
+    "va": "0x414f44",
+    "before": "f0b503af",
+    "kind": "b",
+    "target": "od_grid_aa",
+    "reason": "Decode generation/strength once at the sole AA function entry; pin exact native task or retained field owner across the original synchronous copy/upload"
+  }
+]

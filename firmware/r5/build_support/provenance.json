@@ -1,0 +1,302 @@
+{
+  "source_only": true,
+  "old_runtime_filter_code_imported": false,
+  "source_baseline": "Frozen 4.64 build-support sources only; firmware binary inputs remain official R5 4.00",
+  "files": [
+    {
+      "path": "inputs.lock.json",
+      "sha256": "c6a8d54a17122bf9535a265303b20bbc24bdd14568bba426c4ffa12bca833f44",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/inputs.lock.json",
+      "imported_sha256": "c6a8d54a17122bf9535a265303b20bbc24bdd14568bba426c4ffa12bca833f44",
+      "modified": false
+    },
+    {
+      "path": "LICENSE.fwtool",
+      "sha256": "a485f27d0b22eb7fd9b9419795695d0a1750ea32c961d11c1dd8ddade564dedf",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/LICENSE.fwtool",
+      "imported_sha256": "a485f27d0b22eb7fd9b9419795695d0a1750ea32c961d11c1dd8ddade564dedf",
+      "modified": false
+    },
+    {
+      "path": "LICENSE.Erlla",
+      "sha256": "a5aafd5c1a36bd33e8098371f499eb5a3f2bd935abf933a545c2519915f94a96",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/LICENSE.Erlla",
+      "imported_sha256": "a5aafd5c1a36bd33e8098371f499eb5a3f2bd935abf933a545c2519915f94a96",
+      "modified": false
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "34b6b44593254ec01407ced34c299cbd2e7506a9e40253036be683c2ed094c69",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/THIRD_PARTY_NOTICES.md",
+      "imported_sha256": "34b6b44593254ec01407ced34c299cbd2e7506a9e40253036be683c2ed094c69",
+      "modified": false
+    },
+    {
+      "path": "dependencies/baseline_recipes.json",
+      "sha256": "676ee0ffd8f8011c7780bf8101ee3438354cba5eaba272c697235a4b2c8605fc",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/dependencies/baseline_recipes.json",
+      "imported_sha256": "676ee0ffd8f8011c7780bf8101ee3438354cba5eaba272c697235a4b2c8605fc",
+      "modified": false
+    },
+    {
+      "path": "lib/package.py",
+      "sha256": "56a01ac04f34ec23855aa0fdcbf9e2a28f4264dd17ff70da81d78b19daff2b76",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/package.py",
+      "imported_sha256": "0675df4b9d8e2d0ee827edbd2833ab93e513abcb8bbecd5512037a8b11144f4e",
+      "modified": true
+    },
+    {
+      "path": "lib/overlay.py",
+      "sha256": "2d19f2fc563dc3d9c7a3ce35106d5cea55d88274b795e04b4e5756c4c7cd2b81",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/overlay.py",
+      "imported_sha256": "2d19f2fc563dc3d9c7a3ce35106d5cea55d88274b795e04b4e5756c4c7cd2b81",
+      "modified": false
+    },
+    {
+      "path": "lib/strict_ap_link.py",
+      "sha256": "1734fd0d8069fbf034764a95b240085582e5f2e668ae7fa59102ee80db88ff41",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/strict_ap_link.py",
+      "imported_sha256": "1734fd0d8069fbf034764a95b240085582e5f2e668ae7fa59102ee80db88ff41",
+      "modified": false
+    },
+    {
+      "path": "lib/image_io.py",
+      "sha256": "a2064c0b85274a5a2642cc241895ebb15e6b4e0b2fa78277b1f97d74f5bdee10",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/image_io.py",
+      "imported_sha256": "a2064c0b85274a5a2642cc241895ebb15e6b4e0b2fa78277b1f97d74f5bdee10",
+      "modified": false
+    },
+    {
+      "path": "lib/arm_ops.py",
+      "sha256": "a2a95d370ee934be16bb26db1aa40a114944f289b7b3d66b190420a41ca8cb98",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/arm_ops.py",
+      "imported_sha256": "a2a95d370ee934be16bb26db1aa40a114944f289b7b3d66b190420a41ca8cb98",
+      "modified": false
+    },
+    {
+      "path": "lib/fat_reader.py",
+      "sha256": "a24e86423804532991d24fe8e93878197d2f09ceade479bde307d70199cad1df",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/fat_reader.py",
+      "imported_sha256": "a24e86423804532991d24fe8e93878197d2f09ceade479bde307d70199cad1df",
+      "modified": false
+    },
+    {
+      "path": "lib/thumb_ops.py",
+      "sha256": "2d27a76f72432bf96d61ff12e152463326bb317d96fceea9b438a9146d8a40fe",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/thumb_ops.py",
+      "imported_sha256": "2d27a76f72432bf96d61ff12e152463326bb317d96fceea9b438a9146d8a40fe",
+      "modified": false
+    },
+    {
+      "path": "lib/fdat_encrypt.py",
+      "sha256": "6f8317a3fbb7b94dbc57fa04c415b1139f2b768d27e4d517466c3f995f422603",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/fdat_encrypt.py",
+      "imported_sha256": "6f8317a3fbb7b94dbc57fa04c415b1139f2b768d27e4d517466c3f995f422603",
+      "modified": false
+    },
+    {
+      "path": "lib/thumb_link.py",
+      "sha256": "2bbe431f8cdbec9a6bfab48c4f652f7a05a2ed32fa9532345e612f2846d4d64a",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/thumb_link.py",
+      "imported_sha256": "2bbe431f8cdbec9a6bfab48c4f652f7a05a2ed32fa9532345e612f2846d4d64a",
+      "modified": false
+    },
+    {
+      "path": "lib/signature.py",
+      "sha256": "285496c313926ec22acf1e126e6278ceb34b64fc84c6e3d2a3d1fdfbaf0800cb",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/signature.py",
+      "imported_sha256": "285496c313926ec22acf1e126e6278ceb34b64fc84c6e3d2a3d1fdfbaf0800cb",
+      "modified": false
+    },
+    {
+      "path": "lib/ext2read.py",
+      "sha256": "ba8fdfd5dfb6367d9d58f3571bb87ee40d94e9d46f10878d8f42b8342ebfd776",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/ext2read.py",
+      "imported_sha256": "ba8fdfd5dfb6367d9d58f3571bb87ee40d94e9d46f10878d8f42b8342ebfd776",
+      "modified": false
+    },
+    {
+      "path": "lib/fwtool/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/fwtool/__init__.py",
+      "imported_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "path": "lib/fwtool/util/__init__.py",
+      "sha256": "befbfdb6f5a096f4cc33ca68a5cd5690dbc67b630aa0a56e007fec90f45596b6",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/fwtool/util/__init__.py",
+      "imported_sha256": "befbfdb6f5a096f4cc33ca68a5cd5690dbc67b630aa0a56e007fec90f45596b6",
+      "modified": false
+    },
+    {
+      "path": "lib/fwtool/io/__init__.py",
+      "sha256": "6981352a7a39e1427555468e11ef301b7e4bc3e40ae02b09e86e05a2d96e6963",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/fwtool/io/__init__.py",
+      "imported_sha256": "6981352a7a39e1427555468e11ef301b7e4bc3e40ae02b09e86e05a2d96e6963",
+      "modified": false
+    },
+    {
+      "path": "lib/fwtool/sony/dat.py",
+      "sha256": "5f5c1324649ee6c1719b14d5fc3b829741daf904c5f79da2ddcab10ef17f8d8e",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/fwtool/sony/dat.py",
+      "imported_sha256": "5f5c1324649ee6c1719b14d5fc3b829741daf904c5f79da2ddcab10ef17f8d8e",
+      "modified": false
+    },
+    {
+      "path": "lib/fwtool/sony/constants.py",
+      "sha256": "beaed6b7beb90d8dc513b53640535d5594855fcfaeb183b9504ea22286378cb3",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/fwtool/sony/constants.py",
+      "imported_sha256": "beaed6b7beb90d8dc513b53640535d5594855fcfaeb183b9504ea22286378cb3",
+      "modified": false
+    },
+    {
+      "path": "lib/fwtool/sony/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/fwtool/sony/__init__.py",
+      "imported_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "path": "lib/fwtool/sony/fdat.py",
+      "sha256": "962b570e68a407d5ca1b5d47923641ca0ae8d7e33b2e03348bae0b1187b6b64d",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/fwtool/sony/fdat.py",
+      "imported_sha256": "962b570e68a407d5ca1b5d47923641ca0ae8d7e33b2e03348bae0b1187b6b64d",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_gain.h",
+      "sha256": "8ba6551fa334ab7566ad7a21211874274ac43ef5026c4bfa533425f1a34a1ec9",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_gain.h",
+      "imported_sha256": "8ba6551fa334ab7566ad7a21211874274ac43ef5026c4bfa533425f1a34a1ec9",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_gain_hooks.S",
+      "sha256": "c373c886a6128634e285175dbefbea2be00f791c0eaeaa6b20f6de8fd328886e",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_gain_hooks.S",
+      "imported_sha256": "c373c886a6128634e285175dbefbea2be00f791c0eaeaa6b20f6de8fd328886e",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_completion_hooks.S",
+      "sha256": "e8511abe95906d177d4322f5db071a8ecc2815cb60b659a4314e0540f2abaaf1",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_completion_hooks.S",
+      "imported_sha256": "e8511abe95906d177d4322f5db071a8ecc2815cb60b659a4314e0540f2abaaf1",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_guard_hooks.S",
+      "sha256": "85850e5277eadfc162f953c0bfe550decc92bff2b2a6f88e6bcfef4d3f5cc8d9",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_guard_hooks.S",
+      "imported_sha256": "85850e5277eadfc162f953c0bfe550decc92bff2b2a6f88e6bcfef4d3f5cc8d9",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_receive.c",
+      "sha256": "3fe87124ec6ed92fe105dd0a36aaa4e9c67f4e9b3a7efb47b8a0d8ec11520a01",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_receive.c",
+      "imported_sha256": "3fe87124ec6ed92fe105dd0a36aaa4e9c67f4e9b3a7efb47b8a0d8ec11520a01",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_completion_state.c",
+      "sha256": "76e4799aa4b67f26da29393a87d56d6fe8962a6e512507650a91439f890953da",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_completion_state.c",
+      "imported_sha256": "76e4799aa4b67f26da29393a87d56d6fe8962a6e512507650a91439f890953da",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_page.S",
+      "sha256": "1590807f58d20cf1ae283fac540a39ecfc32164592e76743bb1947aabbc2aaa1",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_page.S",
+      "imported_sha256": "1590807f58d20cf1ae283fac540a39ecfc32164592e76743bb1947aabbc2aaa1",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_completion.c",
+      "sha256": "99b0af49cff28e10f137fc77d67775a1622f58fd8800f2774f9b8c44e646ba39",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_completion.c",
+      "imported_sha256": "99b0af49cff28e10f137fc77d67775a1622f58fd8800f2774f9b8c44e646ba39",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_gain_guard.S",
+      "sha256": "02c87a24eb07edffbd29c0fbdc96c1b8a693aef7f86beafdbd212ada338e2745",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_gain_guard.S",
+      "imported_sha256": "02c87a24eb07edffbd29c0fbdc96c1b8a693aef7f86beafdbd212ada338e2745",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_gain.c",
+      "sha256": "fecfeaed5c667ebd75ab9c49b4bd51edc9106745ae0439c59e55df50446b4d32",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_gain.c",
+      "imported_sha256": "fecfeaed5c667ebd75ab9c49b4bd51edc9106745ae0439c59e55df50446b4d32",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_snapshot_wire.h",
+      "sha256": "8e50146d343f3a6ccd0062f6c9f304c02db372b69d2358e8459be6eaa81b2ba4",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_snapshot_wire.h",
+      "imported_sha256": "8e50146d343f3a6ccd0062f6c9f304c02db372b69d2358e8459be6eaa81b2ba4",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_snapshot.c",
+      "sha256": "9a2b3bacf6babcae7c6994a3c593a64cd00d06a31fa28e90453fe63653feefc1",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_snapshot.c",
+      "imported_sha256": "9a2b3bacf6babcae7c6994a3c593a64cd00d06a31fa28e90453fe63653feefc1",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/r5_sound_completion.h",
+      "sha256": "6619feb648e09c9e507820a070545760753601fde315907a9eb8f7e43ba93c74",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/r5_sound_completion.h",
+      "imported_sha256": "6619feb648e09c9e507820a070545760753601fde315907a9eb8f7e43ba93c74",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/aspect/crop_core.h",
+      "sha256": "0ddcf1b4af8a9e5fc92466d852d6405d1882ff253eac78ba668cadc2c7ac4c16",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/aspect/crop_core.h",
+      "imported_sha256": "0ddcf1b4af8a9e5fc92466d852d6405d1882ff253eac78ba668cadc2c7ac4c16",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/aspect/raw_emb.c",
+      "sha256": "1b7de547c8307bdfc3da5be9acb230b021eca7e04ed9f31838e5c9a845c3b063",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/aspect/raw_emb.c",
+      "imported_sha256": "1b7de547c8307bdfc3da5be9acb230b021eca7e04ed9f31838e5c9a845c3b063",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/aspect/crop_core.c",
+      "sha256": "1fdd68e9ed22a747171f9e47c4fbe57be6716e1ce0b2d284f316f3f594c5dc3e",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/aspect/crop_core.c",
+      "imported_sha256": "1fdd68e9ed22a747171f9e47c4fbe57be6716e1ce0b2d284f316f3f594c5dc3e",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/aspect/cp_capture_latch.c",
+      "sha256": "03b16a6dad6ba48b11ef661d9215fffafd8c83dad42fa5140336f81a87ed4472",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/aspect/cp_capture_latch.c",
+      "imported_sha256": "03b16a6dad6ba48b11ef661d9215fffafd8c83dad42fa5140336f81a87ed4472",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/aspect/aspect_module_dispatch.S",
+      "sha256": "99d74ec771d8aa272466da48f46f2daecbed175d59b4c973697b4ce47b4bf706",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/aspect/aspect_module_dispatch.S",
+      "imported_sha256": "99d74ec771d8aa272466da48f46f2daecbed175d59b4c973697b4ce47b4bf706",
+      "modified": false
+    },
+    {
+      "path": "cp_aux/aspect/cp_wrappers.S",
+      "sha256": "c21a16eb80a9757c200a52f30b86c0325fd2a2e9ae9fec3184b226f69c19f151",
+      "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/aspect/cp_wrappers.S",
+      "imported_sha256": "c21a16eb80a9757c200a52f30b86c0325fd2a2e9ae9fec3184b226f69c19f151",
+      "modified": false
+    }
+  ],
+  "scope": "Retained host/auxiliary provenance subset; final complete distribution identity is sources.lock.json"
+}

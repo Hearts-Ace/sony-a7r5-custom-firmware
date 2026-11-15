@@ -17,11 +17,11 @@
 
 新增或替换声音时，把需要的.R5S放到SD卡根目录，完整取下电池再开机导入，再在相机声音菜单选择。已经导入eMMC的声音普通重启从机内恢复。中文文件名可以直接使用；JSON及说明文档不需要放卡。
 
-转换自己的音频使用仓库firmware/r5/host/prepare_sound.py：
+转换自己的音频使用仓库tools/r5-sound/prepare_sound.py：
 
 ```sh
-python3 firmware/r5/host/prepare_sound.py convert "声音.WAV" -o "声音.R5S"
-python3 firmware/r5/host/prepare_sound.py inspect "声音.R5S"
+python3 tools/r5-sound/prepare_sound.py convert "声音.WAV" -o "声音.R5S"
+python3 tools/r5-sound/prepare_sound.py inspect "声音.R5S"
 ```
 
 转换来源及历史记录见[CONVERSION_NOTES.md](CONVERSION_NOTES.md)。YAOYAO/YEAH同名JSON保留此前格式检查信息；新增8份未重新检查。本次没有新增实体扬声器或普通重启测试。
