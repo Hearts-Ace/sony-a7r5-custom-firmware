@@ -6,4 +6,4 @@
 
 富士九款不加去毛刺；后三款已尝试去毛刺，但未接受整数修补。合并未改变各槽参数；编解码回环和来源逐槽一致性通过，未实机验收。
 
-[可编辑配置、色卡对比及交付审计](https://github.com/Hearts-Ace/sony-r5-colorlab/tree/main/filters/Latest_Shared_12_20261114)与[工作台算子和通用训练说明](https://github.com/Hearts-Ace/sony-r5-colorlab/blob/main/R5ColorLab/TRAINING.md)在独立工作台仓库。两仓库BIN逐字一致。富士逆向内容不在本次发布范围。
+[可编辑配置、色卡对比及交付审计](https://github.com/Hearts-Ace/sony-r5-colorlab/tree/main/filters/Latest_Shared_12_20261114)与[工作台算子和通用训练说明](https://github.com/Hearts-Ace/sony-r5-colorlab/blob/main/R5ColorLab/TRAINING.md)在独立工作台仓库。
