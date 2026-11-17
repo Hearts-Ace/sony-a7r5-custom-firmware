@@ -1,6 +1,6 @@
 # 快门声资源与安装
 
-[在线试听、选择下载和 WAV 转换](https://hearts-ace.github.io/sony-a7r5-custom-firmware/#audio) · [全部 5 款 ZIP](R5-Sounds-4.55.zip)
+[在线试听、选择下载和 WAV 转换](https://hearts-ace.github.io/sony-a7r5-custom-firmware/#audio) · [全部 6 款 ZIP](R5-Sounds-4.55.zip)
 
 ## 声音目录
 
@@ -13,6 +13,7 @@
 |YEAH|[YEAH.R5S](YEAH.R5S)|
 |mambo|[mambo.R5S](mambo.R5S)|
 |wow|[wow.R5S](wow.R5S)|
+|奶蛙大笑（前2秒）|[奶蛙大笑.R5S](奶蛙大笑.R5S)|
 
 ## 放入相机
 

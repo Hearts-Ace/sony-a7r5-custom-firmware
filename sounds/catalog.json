@@ -38,5 +38,13 @@
     "format": "R5SNDF0/v1",
     "duration": 1.392,
     "sha256": "b07b52b2d5cba3b85a755186f9e06368871a64aa15de068b37ae1bf3f66b8242"
+  },
+  {
+    "id": "naiwa-laugh",
+    "name": "奶蛙大笑",
+    "file": "sounds/奶蛙大笑.R5S",
+    "format": "R5SNDF0/v1",
+    "duration": 2.0,
+    "sha256": "a28ac964394aa13d8f678d6e6c76a9c7af9655473888f9674f0bea1ec1428b35"
   }
 ]

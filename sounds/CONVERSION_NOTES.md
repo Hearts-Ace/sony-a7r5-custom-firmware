@@ -13,3 +13,5 @@
 固件随包的YAOYAO约0.627秒、YEAH约1.115秒。YEAH由Erlla/sony-a7m4-custom-firmware固定声音参考提交0bfeee4f961610434588dc89c2cd3bc658816a3d的examples/custom-sounds/YEAH.WAV转换。YAOYAO和2026-11-04批次由用户提供并明确要求随音频包公开。源音频不随本包上传。
 
 电脑转换器代码许可见firmware/r5/build_support/THIRD_PARTY_NOTICES.md，代码许可不改变声音素材本身的权利。R5S机外转换路线适用于当前4.55；机内不直接导入WAV。
+
+2026-11-18：按用户要求新增“奶蛙大笑”，取用户提供 MP3 的前2秒。macOS 解码为48kHz双声道16-bit WAV，再由本仓库原生转换器生成24kHz单声道、十档音量 R5S。格式、包头CRC和十段载荷SHA256校验通过。用户明确授权同步GitHub，仅发布转换后的R5S，不附原MP3或WAV。素材原文件名标注爱给网，未获得额外素材许可声明；代码许可不覆盖音效素材。
