@@ -39,3 +39,7 @@ analysis/sony_write_path_20261008/reference/
 
 # Explicitly authorized downloadable sound bundle
 !sounds/R5-Sounds-4.55.zip
+
+# Published filter BINs are source-controlled downloadable resources.
+!filters/**/*.bin
+!docs/resource-library/data/filters/*.bin
