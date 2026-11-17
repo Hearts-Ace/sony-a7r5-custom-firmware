@@ -5,7 +5,8 @@
 - [完整源码与唯一构建入口](firmware/r5/README.md)
 - [4.65 验证摘要](publication/4.65/validation.json) · [4.65 源码锁](firmware/r5/sources.lock.json)
 - [六槽回读与解放工具](tools/r5-slots/README.md)
-- [音频包](sounds/README.md) · [下载声音ZIP](sounds/R5-Sounds-4.55.zip)
+- [在线滤镜与声音资源库](https://hearts-ace.github.io/sony-a7r5-custom-firmware/)：选择滤镜、下载整合 BIN，试听/下载 10 款快门声，转换自己的 WAV
+- [声音安装与文件目录](sounds/README.md) · [全部声音 ZIP](sounds/R5-Sounds-4.55.zip)
 - [十二款滤镜BIN](filters/FUJ_12_v45/README.md)
 - [滤镜训练与网格工作台](https://github.com/Hearts-Ace/sony-r5-colorlab)
 

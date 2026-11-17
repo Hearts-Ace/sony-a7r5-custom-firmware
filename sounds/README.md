@@ -1,27 +1,41 @@
-# R5 声音包
+# 快门声资源与安装
 
-共10份现成R5S，可下载单个文件或[R5-Sounds-4.55.zip](R5-Sounds-4.55.zip)。均来自此前转换交付，本次补齐8份时直接复制，没有重新转换或校验音频。
+[在线试听、选择下载和 WAV 转换](https://hearts-ace.github.io/sony-a7r5-custom-firmware/#audio) · [全部 10 款 ZIP](R5-Sounds-4.55.zip)
 
-| 文件 | 转换批次 |
-| --- | --- |
-| [YAOYAO.R5S](YAOYAO.R5S) | 固件随包 |
-| [YEAH.R5S](YEAH.R5S) | 固件随包 |
-| [Ciallo.R5S](Ciallo.R5S) | 2026-11-04 |
-| [WOCAO.R5S](WOCAO.R5S) | 2026-11-04 |
-| [YYLX.R5S](YYLX.R5S) | 2026-11-04 |
-| [ZBS.R5S](ZBS.R5S) | 2026-11-04 |
-| [ZYJH.R5S](ZYJH.R5S) | 2026-11-04 |
-| [你干嘛.R5S](你干嘛.R5S) | 2026-11-04，取前2秒 |
-| [兔娘caliio.R5S](兔娘caliio.R5S) | 2026-11-04 |
-| [遥遥领先.R5S](遥遥领先.R5S) | 2026-11-04 |
+## 声音目录
 
-新增或替换声音时，把需要的.R5S放到SD卡根目录，完整取下电池再开机导入，再在相机声音菜单选择。已经导入eMMC的声音普通重启从机内恢复。中文文件名可以直接使用；JSON及说明文档不需要放卡。
+本目录是仓库声音文件的唯一来源。网页部署时从这里复制资源，按 [catalog.json](catalog.json) 加载；网页内不再另存一套音频。ZIP 文件名中的 4.55 是历史打包版本，不代表当前固件版本。
 
-转换自己的音频使用仓库tools/r5-sound/prepare_sound.py：
+|声音|单个下载|
+|---|---|
+|Ciallo|[Ciallo.R5S](Ciallo.R5S)|
+|WOCAO|[WOCAO.R5S](WOCAO.R5S)|
+|YAOYAO|[YAOYAO.R5S](YAOYAO.R5S)|
+|YEAH|[YEAH.R5S](YEAH.R5S)|
+|YYLX|[YYLX.R5S](YYLX.R5S)|
+|ZBS|[ZBS.R5S](ZBS.R5S)|
+|ZYJH|[ZYJH.R5S](ZYJH.R5S)|
+|你干嘛|[你干嘛.R5S](你干嘛.R5S)|
+|兔娘caliio|[兔娘caliio.R5S](兔娘caliio.R5S)|
+|遥遥领先|[遥遥领先.R5S](遥遥领先.R5S)|
+
+## 放入相机
+
+下载需要的 `.R5S`，放到 SD 卡根目录，完整取下电池再开机导入，然后在相机声音菜单选择。已导入 eMMC 的声音普通重启从机内恢复。中文文件名可直接使用，JSON 和文档无需放卡。机内不直接导入 WAV。
+
+## 转换自己的声音
+
+最简单的方式是在在线资源库选择 PCM WAV，然后下载转换后的 R5S。文件只在浏览器中处理，不上传服务器。输入不超过 2 秒、1 MiB，支持单/双声道、8–192 kHz、8/16/24/32-bit PCM；输出 24 kHz 单声道，包含十档音量。
+
+也可运行仓库内工具：
 
 ```sh
 python3 tools/r5-sound/prepare_sound.py convert "声音.WAV" -o "声音.R5S"
 python3 tools/r5-sound/prepare_sound.py inspect "声音.R5S"
 ```
 
-转换来源及历史记录见[CONVERSION_NOTES.md](CONVERSION_NOTES.md)。YAOYAO/YEAH同名JSON保留此前格式检查信息；新增8份未重新检查。本次没有新增实体扬声器或普通重启测试。
+## 校验与历史
+
+2026-11-17 对本目录 10 个 R5S 重新执行严格格式、包头 CRC 和十段音量 SHA256 检查，全部通过；目录记录当前文件 SHA256。网页试听由 R5S 的 50% 音量段解码生成，不另发布原始 WAV。格式检查与试听不替代实体扬声器验收。
+
+[历史转换来源与素材说明](CONVERSION_NOTES.md)仅用于追溯；YAOYAO.json、YEAH.json 是历史检查回执，不是需要安装的文件。

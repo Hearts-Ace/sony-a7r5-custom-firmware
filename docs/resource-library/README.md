@@ -18,13 +18,13 @@
 
 ## 快门声
 
-音频区可试听、下载仓库里的 `.R5S`，或在浏览器内将本地 PCM WAV 转成 R5SNDF0/v1。沿用原转换器 Q24 FIR、24 kHz 单声道、F0 编码、十档音量和包校验规则；最多 2 秒、1 MiB，支持 8/16/24/32-bit PCM 与 8–192 kHz 采样率。转换不上传文件。当前 YAOYAO 输出与原 C 编码器逐字节相同。转换结果未实机测试。
+音频区可试听、下载仓库里的 `.R5S`，或在浏览器内将本地 PCM WAV 转成 R5SNDF0/v1。沿用原转换器 Q24 FIR、24 kHz 单声道、F0 编码、十档音量和包校验规则；最多 2 秒、1 MiB，支持 8/16/24/32-bit PCM 与 8–192 kHz 采样率。转换不上传文件。当前 YAOYAO 输出与原 C 编码器逐字节相同。网页加载仓库 `sounds/catalog.json` 中全部 10 款声音，部署时从唯一的 `sounds/` 目录组装。转换结果未实机测试。
 
-后续声音在 `data/audio/catalog.json` 登记，包含 `id`、`name`、`file`（R5S）、`preview`（WAV）。
+后续声音添加至仓库 `sounds/`，更新 `sounds/catalog.json`，无需向网页目录复制文件。
 
 ## 发布状态（2026-11-17）
 
-Gitee：https://gitee.com/michael_ace/sony-r5-filter-library ，默认分支 main。当前仓库服务菜单未提供 Pages，`/pages` 返回 404；仓库地址不等于静态网页地址。本地预览可用，公网静态托管待选。
+网页：https://hearts-ace.github.io/sony-a7r5-custom-firmware/ 。源码在本仓库 `docs/resource-library/`，声音唯一来源在 `sounds/`。GitHub Actions 自动组装并发布。原 Gitee 仓库已设为私有下架。
 
 ## 验证
 
