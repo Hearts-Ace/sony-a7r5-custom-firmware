@@ -222,3 +222,48 @@ button:disabled{box-shadow:none;transform:none}
 /* Slot limits dim the arrow only; disabled controls have no visible button shell. */
 .slot-actions .ui-button:disabled{opacity:1;background:transparent;border-color:transparent;box-shadow:none}
 .slot-actions .ui-button:disabled svg{opacity:.28}
+
+/* Keep projected edges out of the document's scrollable area. */
+.filter-catalog-stage{display:flow-root;min-width:0;overflow:clip;overflow-clip-margin:24px}
+
+/* Compact landscape frames: three across on desktop, readable controls inside. */
+.filter-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:var(--space-4)}
+.filter-card{aspect-ratio:3/2;container-type:inline-size}
+.filter-card-body{min-height:0;grid-template-columns:44px minmax(0,1fr);gap:var(--space-3);padding:var(--space-2) var(--space-3)}
+.film-identity{gap:var(--space-1)}
+.film-identity .film-label{font-size:8px;line-height:12px;letter-spacing:.06em}
+.film-identity .film-code{font-size:26px;line-height:28px}
+.film-content .filter-card-name{font-size:14px;line-height:18px}
+.film-content p{max-width:100%;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px;line-height:14px;margin:2px 0 4px}
+.film-content .card-add{min-height:44px;padding:4px 8px;font-size:11px;line-height:16px}
+.film-perforations{gap:4px;padding:2px 8px}
+.film-perforations i{width:7px;height:6px}
+.film-edge{padding:2px 8px;font-size:8px;line-height:12px}
+@container (max-width:230px){
+ .filter-card-body{gap:var(--space-2);padding:var(--space-1) var(--space-2)}
+ .film-content .filter-card-name{font-size:13px;line-height:16px}
+ .film-content p{font-size:10px;line-height:12px}
+}
+@media(min-width:640px) and (max-width:900px){.filter-workspace{grid-template-columns:minmax(0,1fr)}.tray{position:static}}
+@media(max-width:639px){.filter-grid{grid-template-columns:minmax(0,1fr);gap:var(--space-3)}}
+/* Radix focuses a tab during mousedown; pointer entry must not look like Tab navigation. */
+.ui-tabs-trigger[data-pointer-focus=true]:focus-visible{outline:none}
+
+.film-identity .film-code{font-size:clamp(14px,8cqw,26px);max-width:100%;letter-spacing:-.06em}
+@media(max-width:900px){
+ .filter-workspace{grid-template-columns:minmax(0,1fr)}
+ .tray-jump{display:flex;position:fixed;left:auto;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:25;min-height:48px;gap:8px;padding:12px 20px;border-radius:24px;font-size:14px}
+ .site-footer{padding-bottom:88px}
+}
+
+.tray-dialog{max-width:480px;max-height:calc(100dvh - 48px);padding:48px 20px 20px;overscroll-behavior:contain}
+.tray-dialog .panel-title h2{font-size:20px;line-height:28px}
+.tray-dialog .slots-list{max-height:48dvh;overflow-y:auto;overscroll-behavior:contain}
+.tray-dialog .slot-row{grid-template-columns:24px 20px minmax(0,1fr) auto;gap:2px}
+.tray-dialog .slot-actions{gap:0}
+.tray-dialog .slot-actions .ui-icon{width:44px}
+@media(max-width:360px){.tray-dialog{padding-inline:12px}.tray-dialog .slot-actions .ui-icon{width:36px}}
+
+/* Phones use the same film frame and information hierarchy as desktop. */
+.filter-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:var(--space-4)}
+.film-edge>span:nth-child(2){display:inline}
