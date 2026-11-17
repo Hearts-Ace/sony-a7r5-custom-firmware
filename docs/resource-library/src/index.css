@@ -1,3 +1,5 @@
+/* Hallmark · checked: 2026-11-18 · genre: atmospheric · shape: app screen
+ * built: the project · redesign: polish · user-directed glass and motion */
 @import "tailwindcss";
 @theme {
  --color-accent:#d5b777; --color-ink:#f1ede3; --color-muted:#aaa69b;
@@ -27,3 +29,196 @@ body{margin:0;min-width:320px;font-size:14px;line-height:20px}button:not(:disabl
 @media(max-width:640px){.site-frame{padding-inline:16px}.header-inner{min-height:64px}.brand{font-size:16px}.brand-sub{font-size:12px;letter-spacing:.08em}.guide{gap:8px}.guide>svg:last-child{display:none}.intro{padding-block:32px}.eyebrow{font-size:12px;letter-spacing:.08em;margin-bottom:24px}.heading-1{font-size:36px;line-height:40px;letter-spacing:-.04em}.hero-action{margin-top:24px}.filter-catalog{scroll-margin-top:24px}.intro-text{margin-top:16px;line-height:24px}.mobile-break{display:block}.ui-tabs-list{gap:24px}.ui-tabs-content{padding-top:16px}.filter-workspace{gap:16px}.category-button{font-size:12px;padding:8px}.sidebar{gap:4px}.filter-grid{gap:12px}.filter-card-body{padding:8px 12px 12px}.film-perforations{gap:4px;padding:8px}.film-perforations i:nth-last-child(-n+3){display:none}.film-perforations i{width:8px;height:8px}.film-label{font-size:8px;line-height:12px;letter-spacing:.04em}.card-meta{gap:0;margin-bottom:8px}.card-meta .ui-icon{width:32px;flex-shrink:0}.film-code{font-size:36px;line-height:40px;margin-bottom:12px}.filter-card-name{font-size:14px;line-height:20px}.filter-card p{font-size:12px;line-height:16px;margin-bottom:16px}.film-edge{padding:8px 12px;font-size:8px}.film-edge>span:nth-child(2){display:none}.panel-title h2{font-size:18px;line-height:28px}.panel-title{gap:8px}.panel-title .ui-small{padding:8px;font-size:12px;gap:4px}.search-field{margin-block:16px}.filter-section-title{margin-bottom:12px}.ui-button{font-size:12px;line-height:16px}.sound-row>button:first-child{gap:8px}.sound-row strong{font-size:14px}.sound-row small svg{display:none}.dialog-content{padding:24px}}
 @media(max-width:360px){.site-frame{padding-inline:12px}.catalog-panel{padding:12px}.filter-grid{gap:8px}.filter-card-body{padding-inline:8px}.film-label{font-size:8px;letter-spacing:0}.card-meta .ui-icon{width:28px}.brand-sub{letter-spacing:0}.guide{gap:4px}.film-perforations{padding-inline:4px}.film-perforations i:nth-last-child(4){display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Review revision: compact original introduction and landscape film cards. */
+.intro{padding-block:32px}.intro::before{display:none}.intro .eyebrow{margin-bottom:12px}.intro .heading-1{font-size:36px;line-height:40px;letter-spacing:-.03em}.intro .intro-text{margin-top:12px}
+.filter-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.filter-card{aspect-ratio:3/2}
+.filter-card-body{display:grid;grid-template-columns:80px minmax(0,1fr);gap:16px;padding:12px 16px;align-items:stretch}
+.film-identity{display:flex;min-width:0;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px}
+.film-identity .film-code{font-size:36px;line-height:40px;margin:0;letter-spacing:-.055em}
+.film-identity .film-label{font-size:10px;line-height:16px;letter-spacing:.12em}
+.film-identity .ui-icon{margin-left:-8px}
+.film-content{display:flex;min-width:0;flex-direction:column;align-items:flex-start;justify-content:center}
+.film-content .filter-card-name{font-size:16px;line-height:24px}
+.film-content p{margin:4px 0 12px;font-size:12px;line-height:16px}
+.film-content .card-add{margin-top:auto}
+@media(max-width:760px){.filter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.intro{padding-block:24px}.intro .heading-1{font-size:24px;line-height:32px;letter-spacing:-.02em}.intro .intro-text{line-height:24px}.filter-grid{grid-template-columns:minmax(0,1fr);gap:16px}.filter-card-body{grid-template-columns:80px minmax(0,1fr);gap:16px;padding:12px 16px}.film-content .filter-card-name{font-size:16px;line-height:24px}.film-content p{font-size:12px;line-height:16px}.film-edge{padding:8px 16px;font-size:10px;line-height:16px}.film-edge>span:nth-child(2){display:inline}.film-perforations i:nth-last-child(n){display:block}}
+@media(max-width:360px){.filter-card-body{grid-template-columns:64px minmax(0,1fr);gap:12px;padding:8px 12px}.film-content .filter-card-name{font-size:14px;line-height:20px}.film-identity .film-code{font-size:30px;line-height:36px}.film-edge{padding:8px 12px}.film-identity .film-label{font-size:10px;letter-spacing:.08em}}
+
+/* Local glass study: CSS light leaks, small blur surfaces and scroll-driven depth. */
+:root{background:#08090c;--color-line:#ffffff1f;--color-muted:#b3b1ae}
+#root{position:relative;min-height:100svh;isolation:isolate}
+.glass-atmosphere{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:radial-gradient(ellipse at 74% 5%,#b1833220,transparent 54%),radial-gradient(ellipse at 8% 62%,#66314e12,transparent 56%),#08090c}
+.film-leak{position:absolute;width:150%;height:130%;left:-25%;top:-15%;pointer-events:none;will-change:transform,opacity;animation-timing-function:cubic-bezier(.4,0,.6,1);animation-iteration-count:infinite}
+.film-leak-amber{background:radial-gradient(ellipse at 14% 38%,#ff9b3d50,transparent 42%),radial-gradient(ellipse at 65% 75%,#f3742442,transparent 38%);animation-name:amber-pass;animation-duration:34s;animation-delay:-11s}
+.film-leak-red{background:radial-gradient(ellipse at 30% 60%,#f141324a,transparent 40%);animation-name:red-pass;animation-duration:41s;animation-delay:-19s}
+.film-leak-magenta{background:radial-gradient(ellipse at 82% 30%,#de468343,transparent 42%);animation-name:magenta-pass;animation-duration:47s;animation-delay:-7s}
+.glass-atmosphere[data-paused=true] .film-leak{animation-play-state:paused}
+@keyframes amber-pass{0%,100%{transform:translate3d(-15%,4%,0) rotate(-8deg);opacity:.25}45%{transform:translate3d(16%,-5%,0) rotate(4deg);opacity:.7}72%{transform:translate3d(5%,6%,0) rotate(-4deg);opacity:.45}}
+@keyframes red-pass{0%,100%{transform:translate3d(-20%,10%,0) rotate(-12deg);opacity:.18}54%{transform:translate3d(20%,-7%,0) rotate(7deg);opacity:.5}}
+@keyframes magenta-pass{0%,100%{transform:translate3d(12%,-6%,0) rotate(8deg);opacity:.2}48%{transform:translate3d(-18%,8%,0) rotate(-7deg);opacity:.6}}
+.site-header{position:sticky;top:0;z-index:20;background:#101013f5;border-bottom:1px solid #ffffff12}
+.header-inner{border-bottom:0}.header-actions{display:flex;align-items:center;gap:24px}
+.catalog-panel{background:#141417ad;border-color:#ffffff20;box-shadow:inset 0 1px 0 #ffffff09,0 16px 48px #00000018}
+.tray{top:104px;background:#222126f5;border-color:#d5b77752;box-shadow:inset 0 1px 0 #fff3,0 16px 48px #0003}
+.filter-card{position:relative;background:linear-gradient(125deg,#ffffff09,transparent 56%),#24232987;border-color:#ffffff2b;box-shadow:inset 0 1px 0 #ffffff12,inset 1px 0 0 #ffffff08,0 8px 20px #00000016;transform:none;transition:border-color .3s var(--motion),translate .3s var(--motion)}
+.filter-card::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(112deg,#ffffff06,transparent 32%,transparent 78%,#d5b77705)}
+.filter-card.is-selected{background:linear-gradient(125deg,#d5b77712,transparent 64%),#30291fba;border-color:#d5b777a6;box-shadow:inset 0 1px 0 #f2ddb54a,0 8px 24px #0003}
+.film-identity{transform:translate3d(0,var(--film-depth,0px),0)}.film-content{position:relative;z-index:1}
+.film-perforations,.film-edge{background:#09090c59}.film-perforations i{background:#c7b38230;box-shadow:inset 0 1px 1px #0005}
+.search-field,.wave-player{background:#ffffff05;border-color:#ffffff1f}.search-field:focus-within{background:#ffffff08;border-color:#d5b77788}
+.ui-outline{background:#ffffff04;border-color:#ffffff29}.ui-outline:hover:not(:disabled){background:#d5b7770d;border-color:#d5b77770}
+.category-button.active{background:#d5b77717;box-shadow:inset 0 1px 0 #d5b77717}.category-button:hover{background:#ffffff09}
+.slot-row{background:#0d0d116b;border-color:#ffffff20}.site-footer{border-color:#ffffff19}.dialog-content{background:#242126f5;border-color:#d5b77766;box-shadow:inset 0 1px 0 #ffffff2b,0 24px 80px #0008;max-height:calc(100svh - 32px);overflow-y:auto}.dialog-overlay{background:#0008}
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+ .site-header{background:#101013ad;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+ .tray{background:#222126a8;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+ .dialog-content{background:#242126c4;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+}
+@media(hover:hover){.filter-card:hover{transform:none;translate:0 -2px;border-color:#d5b77790}.filter-card.is-selected:hover{border-color:#e9d4a3}}
+@media(max-width:760px){.tray{top:auto}.header-actions{gap:12px}.film-leak{width:130%;height:110%;left:-15%;top:-5%}.tray-jump{background:#cbb076ed;border-color:#e4c98f90;box-shadow:0 -1px 0 #ffffff18,0 -8px 32px #0003}}
+@media(max-width:400px){.header-actions{gap:8px}.guide{font-size:0;gap:0}.guide svg:first-child{width:16px;height:16px}.guide{width:44px;justify-content:center}.brand-sub{letter-spacing:0}}
+@media(prefers-reduced-motion:reduce){.film-leak{animation:none!important;will-change:auto;opacity:.22}.filter-card{transform:none!important;translate:none!important;will-change:auto!important}.film-identity{transform:none!important}}
+
+/* Strong glass revision: light must pass through the entire filter workspace. */
+.catalog-panel{background:linear-gradient(135deg,#ffffff09,#ffffff02 42%,#ffffff05);border-color:#ffffff35;box-shadow:inset 0 1px 0 #ffffff29,inset 1px 0 0 #ffffff0c,0 20px 64px #0002}
+.filter-card{background:linear-gradient(120deg,#ffffff17,#ffffff05 40%,#ffffff03 68%,#ffffff0c);border-color:#ffffff45;box-shadow:inset 0 1px 0 #ffffff50,inset 1px 0 0 #ffffff18,inset -1px -1px 0 #ffffff09,0 10px 32px #00000024;transform-origin:50% 50%}
+.filter-card::after{background:linear-gradient(110deg,#ffffff0d,transparent 34%,transparent 66%,#d5b7770a);transform:translate3d(0,calc(var(--film-depth,0px) * .5),0)}
+.filter-card.is-selected{background:linear-gradient(125deg,#e2c48722,#d5b77708 54%,#ffffff09);border-color:#e2c487b3;box-shadow:inset 0 1px 0 #fff3,0 10px 32px #0002}
+.film-content{transform:translate3d(0,var(--film-content-depth,0px),0)}
+.film-perforations,.film-edge{background:#09090c24}.film-perforations i{background:#d8c8aa4a}
+.tray{background:#302b3380;box-shadow:inset 0 1px 0 #ffffff4d,inset 1px 0 0 #ffffff12,0 20px 56px #0002}
+.search-field,.wave-player{background:#ffffff08;border-color:#ffffff35}
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.catalog-panel{-webkit-backdrop-filter:blur(8px) saturate(125%);backdrop-filter:blur(8px) saturate(125%)}.tray{background:#302b3359;-webkit-backdrop-filter:blur(14px) saturate(125%);backdrop-filter:blur(14px) saturate(125%)}}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.catalog-panel{background:#24212899}.tray{background:#302b33cc}}
+@media(prefers-reduced-motion:reduce){.film-content,.filter-card::after{transform:none!important}}
+
+/* Scroll moves the entire filter panel as one glass plane. */
+.filter-catalog{transform-origin:50% 50%;transition:none}
+.filter-workspace{isolation:isolate}
+.filter-card{transform:none!important}.film-identity,.film-content,.filter-card::after{transform:none}
+@media(prefers-reduced-motion:reduce){.filter-catalog{transform:none!important;will-change:auto!important}}
+
+/* Hallmark polish · app screen · atmospheric darkroom · project palette.
+ * Motion: the panel leads; card lift is secondary; controls answer with colour.
+ * Requested film light leaks and scroll perspective take precedence over style defaults.
+ * Glass blur belongs to panels, never to every card nested inside them. */
+:root{
+ --glass-edge:oklch(92% .014 82 / .24);
+ --glass-edge-lit:oklch(96% .018 82 / .55);
+ --glass-edge-gold:oklch(83% .09 84 / .75);
+ --glass-face:oklch(96% .012 82 / .08);
+ --glass-clear:oklch(96% .012 82 / .025);
+ --glass-reflection:oklch(98% .008 82 / .12);
+ --glass-rim:oklch(98% .008 82 / .32);
+ --glass-rim-soft:oklch(98% .008 82 / .09);
+ --glass-gold:oklch(81% .09 84 / .13);
+ --glass-gold-soft:oklch(81% .09 84 / .045);
+ --glass-well:oklch(18% .012 295 / .24);
+ --glass-shadow:oklch(12% .012 295 / .23);
+ --glass-shadow-raised:oklch(12% .012 295 / .4);
+ --leak-amber:oklch(79% .15 65 / .31);
+ --leak-warm:oklch(70% .17 48 / .26);
+ --leak-red:oklch(64% .2 28 / .29);
+ --leak-magenta:oklch(65% .19 353 / .26);
+ --color-focus:oklch(86% .105 84);
+ --color-accent-ink:oklch(21% .015 84);
+ --color-field-edge:oklch(77% .018 82 / .7);
+ --ease-out:cubic-bezier(.22,1,.36,1);
+ --ease-in-out:cubic-bezier(.4,0,.2,1);
+ --dur-micro:120ms;
+ --dur-short:220ms;
+ --dur-long:420ms;
+ --glass-bevel:inset 0 1px 0 var(--glass-rim),inset 1px 0 0 var(--glass-rim-soft);
+ scrollbar-color:var(--color-muted) var(--color-surface);
+ caret-color:var(--color-accent);
+}
+/* Keep every radial fade inside its moving layer, including rotated phone views. */
+.film-leak-amber{background:radial-gradient(ellipse 32% 36% at 35% 44%,var(--leak-amber),transparent 100%),radial-gradient(ellipse 24% 26% at 66% 68%,var(--leak-warm),transparent 100%)}
+.film-leak-red{background:radial-gradient(ellipse 35% 38% at 42% 57%,var(--leak-red),transparent 100%)}
+.film-leak-magenta{background:radial-gradient(ellipse 30% 34% at 65% 42%,var(--leak-magenta),transparent 100%)}
+.catalog-panel,.tray,.dialog-content{
+ color:var(--color-ink);
+ border-color:var(--glass-edge);
+ background:linear-gradient(135deg,var(--glass-face),var(--glass-clear) 58%,var(--glass-face));
+ box-shadow:var(--glass-bevel),0 16px 40px var(--glass-shadow);
+}
+.tray{border-color:var(--glass-edge-gold)}
+.dialog-content{background:var(--color-surface)}
+.filter-card{
+ color:var(--color-ink);
+ background:linear-gradient(128deg,var(--glass-face),var(--glass-clear) 58%,var(--glass-face));
+ border-color:var(--glass-edge);
+ box-shadow:var(--glass-bevel),0 6px 16px var(--glass-shadow);
+ translate:0 0;
+ transition:translate var(--dur-short) var(--ease-out),border-color var(--dur-short) var(--ease-out),box-shadow var(--dur-short) var(--ease-out);
+}
+.filter-card::after{
+ background:linear-gradient(125deg,var(--glass-reflection),transparent 48%,var(--glass-gold-soft));
+ opacity:.4;
+ transition:opacity var(--dur-short) var(--ease-out);
+}
+.filter-card.is-selected{
+ background:linear-gradient(128deg,var(--glass-gold),var(--glass-gold-soft) 58%,var(--glass-face));
+ border-color:var(--glass-edge-gold);
+ box-shadow:var(--glass-bevel),0 6px 16px var(--glass-shadow);
+}
+.filter-card:focus-within{border-color:var(--glass-edge-lit)}
+.filter-card:focus-within::after{opacity:1}
+.filter-card.is-selected:focus-within{border-color:var(--color-focus)}
+.film-perforations,.film-edge{background:var(--glass-well)}
+.card-add:disabled.ui-secondary{background:var(--glass-gold);color:var(--color-accent);border-color:var(--glass-edge-gold)}
+.sound-list ul{display:grid;gap:var(--space-2)}
+.sound-row,.sound-row:nth-child(2n),.slot-row,.wave-player{
+ color:var(--color-ink);background:var(--glass-clear);border:1px solid var(--glass-edge);
+ box-shadow:inset 0 1px 0 var(--glass-rim-soft);
+}
+.sound-row,.slot-row{
+ transition:background-color var(--dur-short) var(--ease-out),border-color var(--dur-short) var(--ease-out);
+}
+.sound-row.active{background:var(--glass-gold);border-color:var(--glass-edge-gold)}
+.sound-row>button:first-child:hover{background:transparent}
+.sound-row:focus-within,.slot-row:focus-within{border-color:var(--glass-edge-lit);background:var(--glass-face)}
+.sound-row.active:focus-within{border-color:var(--color-focus);background:var(--glass-gold)}
+.slot-row.dragging{background:var(--color-surface);border-color:var(--color-focus);box-shadow:0 12px 32px var(--glass-shadow-raised)}
+.search-field{background:var(--glass-well);border-color:var(--color-field-edge)}
+.search-field:focus-within{border-color:var(--color-focus);outline:2px solid var(--color-focus);outline-offset:2px;background:var(--glass-clear)}
+.search-field input:focus-visible{outline:none}
+.ui-button,.category-button,.dialog-close{
+ transition:color var(--dur-micro) var(--ease-out),background-color var(--dur-short) var(--ease-out),border-color var(--dur-short) var(--ease-out),transform var(--dur-micro) var(--ease-out);
+}
+.ui-button{white-space:nowrap}
+.ui-outline{background:var(--glass-clear);border-color:var(--glass-edge)}
+.ui-primary{color:var(--color-accent-ink);box-shadow:inset 0 1px 0 var(--glass-rim)}
+.ui-secondary{color:var(--color-accent);background:var(--glass-gold)}
+.ui-button:active:not(:disabled){transform:translateY(1px)}
+.category-button.active{background:var(--glass-gold);box-shadow:inset 0 1px 0 var(--glass-rim-soft)}
+:focus-visible{outline-color:var(--color-focus)}
+button:disabled{box-shadow:none;transform:none}
+.ui-button:disabled:not(.card-add){opacity:1;background:var(--glass-well);color:var(--color-muted);border-color:var(--glass-edge);cursor:default}
+.filter-card .ui-icon:focus-visible{outline-offset:-3px}
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+ .catalog-panel,.tray{-webkit-backdrop-filter:blur(12px) saturate(120%);backdrop-filter:blur(12px) saturate(120%)}
+ .dialog-content{background:color-mix(in oklch,var(--color-surface) 82%,transparent);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+ .catalog-panel,.tray{background:color-mix(in oklch,var(--color-surface) 85%,transparent)}
+}
+@media(hover:hover) and (pointer:fine){
+ .filter-card:hover{translate:0 -4px;border-color:var(--glass-edge-lit);box-shadow:var(--glass-bevel),0 14px 28px var(--glass-shadow-raised)}
+ .filter-card:hover::after{opacity:1}
+ .filter-card.is-selected:hover{border-color:var(--color-focus)}
+ .sound-row:hover,.slot-row:not(.dragging):hover{background:var(--glass-face);border-color:var(--glass-edge-lit)}
+ .sound-row.active:hover{background:var(--glass-gold);border-color:var(--color-focus)}
+ .ui-button:hover:not(:disabled){transform:none;box-shadow:none}
+ .ui-outline:hover:not(:disabled){background:var(--glass-face);border-color:var(--glass-edge-lit);color:var(--color-ink)}
+ .ui-secondary:hover:not(:disabled),.ui-ghost:hover:not(:disabled),.dialog-close:hover{background:var(--glass-gold);color:var(--color-accent)}
+ .ui-button:active:not(:disabled){transform:translateY(1px)}
+}
+@media(prefers-reduced-motion:reduce){.filter-card:hover{translate:none}.ui-button:active:not(:disabled){transform:none}}
+
+/* Slot limits dim the arrow only; disabled controls have no visible button shell. */
+.slot-actions .ui-button:disabled{opacity:1;background:transparent;border-color:transparent;box-shadow:none}
+.slot-actions .ui-button:disabled svg{opacity:.28}

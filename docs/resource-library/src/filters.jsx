@@ -21,11 +21,11 @@ function FilterCard({item,index,slot,busy,onAdd}){
  return <li className={`filter-card ${slot?'is-selected':''}`}>
  {item.preview&&<FilterPreview key={item.preview} path={item.preview} name={item.name}/>}
  <div className="film-perforations" aria-hidden="true">{Array.from({length:10},(_,i)=><i key={i}/>)}</div><div className="filter-card-body">
- <div className="card-meta"><span className="film-label">R5 FILM SIMULATION</span><FilterDetail item={item}/></div><span className="film-code" aria-hidden="true">{item.id}</span>
+ <div className="film-identity"><span className="film-label" aria-hidden="true">R5 FILM</span><span className="film-code" aria-hidden="true">{item.id}</span><FilterDetail item={item}/></div><div className="film-content">
  <strong className="filter-card-name">{item.name}</strong>
  <p>{item.series}</p>
  <Button className="card-add" variant={slot?'secondary':'outline'} size="sm" disabled={busy||Boolean(slot)} aria-label={slot?`${item.name} 已加入资源栏，槽位 ${pad(slot)}`:`加入 ${item.name}`} onClick={onAdd}>{slot?<Check size={15}/>:<Plus size={15}/>} {slot?`槽位 ${pad(slot)}`:'加入资源栏'}</Button>
- </div><div className="film-edge" aria-hidden="true"><span>{pad(index+1)} <span className="film-arrow">▸</span></span><span>R5 · V4</span><span>{pad(index+1)}A</span></div>
+ </div></div><div className="film-edge" aria-hidden="true"><span>{pad(index+1)} <span className="film-arrow">▸</span></span><span>R5 · V4</span><span>{pad(index+1)}A</span></div>
  </li>;
 }
 function Slot({item,index,total,remove,reorder}){const {attributes,listeners,setNodeRef,transform,transition,isDragging}=useSortable({id:item.id});return <li className={`slot-row ${isDragging?'dragging':''}`} ref={setNodeRef} style={{transform:CSS.Transform.toString(transform),transition}}><button className="grip" {...attributes} {...listeners} aria-label={`拖动排序 ${item.name}`}><GripVertical size={16}/></button><span className="slot-number">{pad(index+1)}</span><span className="slot-name" title={item.name}><b>{item.id}</b><small>{item.name}</small></span><div className="slot-actions"><Button variant="ghost" size="icon" aria-label={`上移 ${item.name}`} disabled={index===0} onClick={()=>reorder(index,index-1)}><ArrowUp size={14}/></Button><Button variant="ghost" size="icon" aria-label={`下移 ${item.name}`} disabled={index===total-1} onClick={()=>reorder(index,index+1)}><ArrowDown size={14}/></Button><Button variant="ghost" size="icon" aria-label={`移除 ${item.name}`} onClick={()=>remove(item.id)}><X size={16}/></Button></div></li>}
