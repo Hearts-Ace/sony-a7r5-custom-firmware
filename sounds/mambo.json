@@ -1,0 +1,85 @@
+{
+  "format": "R5SNDF0/v1",
+  "version": 1,
+  "bytes": 172896,
+  "sample_rate": 24000,
+  "pcm_frames": 16704,
+  "duration_seconds": 0.696,
+  "encoded_bytes_per_step": 17248,
+  "steps": 10,
+  "source_wav_sha256": "77b1efe68acb280c2815abcf32f45c0d49e84ac6deac5c1723816d97a92877d9",
+  "header_crc32": "6391d7f5",
+  "sha256": "af631cde5290043065a917fccf564937b1fba58bb62c7ba5bb2502dc73e2f355",
+  "header_sha256": "d99487479b371307d7b27541e1ee63a12792fb075a131983c744edcdf6282b08",
+  "catalog_identity": {
+    "algorithm": "sha256",
+    "scope": "first_416_bytes",
+    "value": "d99487479b371307d7b27541e1ee63a12792fb075a131983c744edcdf6282b08",
+    "purpose": "camera catalog e.sha and internal R5SN filename; header commits all ten payload hashes"
+  },
+  "payloads": [
+    {
+      "step": 1,
+      "percent": 10,
+      "bytes": 17248,
+      "sha256": "a1ab8d835ab6e31da2810ef1e522642c103225b476421381110f478d455e3efa"
+    },
+    {
+      "step": 2,
+      "percent": 20,
+      "bytes": 17248,
+      "sha256": "95297a65d19605c7216e9b1ae22f55390a12e7ec03d143456e14bb78628f2b1d"
+    },
+    {
+      "step": 3,
+      "percent": 30,
+      "bytes": 17248,
+      "sha256": "66c0b9526e4b0a2d44b1c1f0d32ec0446d870b1775561c25d149c09459ddb356"
+    },
+    {
+      "step": 4,
+      "percent": 40,
+      "bytes": 17248,
+      "sha256": "3d3597331dcfb9136c5fb4ac21ba5fd4c157122e95dff652506cae47383c9c3d"
+    },
+    {
+      "step": 5,
+      "percent": 50,
+      "bytes": 17248,
+      "sha256": "d99e9d0cd14e2ebfaf03dce181524b917681a37ba93efaaa2994317be94aec3c"
+    },
+    {
+      "step": 6,
+      "percent": 60,
+      "bytes": 17248,
+      "sha256": "4d92d895ab1c2a5d1957d15f214c56650669febfec4f10538f1ffea3cb75f7c3"
+    },
+    {
+      "step": 7,
+      "percent": 70,
+      "bytes": 17248,
+      "sha256": "654e00d3c93585cae5d325e752a60c70c21869801b2fccb94586cc72cd3d97ed"
+    },
+    {
+      "step": 8,
+      "percent": 80,
+      "bytes": 17248,
+      "sha256": "3e96488e5ac503449ad0d31780629936b0a64000f3fece68e9f2c59a3293f1c3"
+    },
+    {
+      "step": 9,
+      "percent": 90,
+      "bytes": 17248,
+      "sha256": "0251967f49cac96dc30b61770abdf07910453a1d3a6a23c8c2b0742089371770"
+    },
+    {
+      "step": 10,
+      "percent": 100,
+      "bytes": 17248,
+      "sha256": "7b922b5eea99dd27ac2f55d6f7c436e3dcd3e445c1586e8fe81e78b60181d984"
+    }
+  ],
+  "guard_bytes_stored": 0,
+  "path": "mambo.R5S",
+  "passed": true
+}

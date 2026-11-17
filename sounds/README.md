@@ -1,6 +1,6 @@
 # 快门声资源与安装
 
-[在线试听、选择下载和 WAV 转换](https://hearts-ace.github.io/sony-a7r5-custom-firmware/#audio) · [全部 10 款 ZIP](R5-Sounds-4.55.zip)
+[在线试听、选择下载和 WAV 转换](https://hearts-ace.github.io/sony-a7r5-custom-firmware/#audio) · [全部 5 款 ZIP](R5-Sounds-4.55.zip)
 
 ## 声音目录
 
@@ -9,15 +9,10 @@
 |声音|单个下载|
 |---|---|
 |Ciallo|[Ciallo.R5S](Ciallo.R5S)|
-|WOCAO|[WOCAO.R5S](WOCAO.R5S)|
 |YAOYAO|[YAOYAO.R5S](YAOYAO.R5S)|
 |YEAH|[YEAH.R5S](YEAH.R5S)|
-|YYLX|[YYLX.R5S](YYLX.R5S)|
-|ZBS|[ZBS.R5S](ZBS.R5S)|
-|ZYJH|[ZYJH.R5S](ZYJH.R5S)|
-|你干嘛|[你干嘛.R5S](你干嘛.R5S)|
-|兔娘caliio|[兔娘caliio.R5S](兔娘caliio.R5S)|
-|遥遥领先|[遥遥领先.R5S](遥遥领先.R5S)|
+|mambo|[mambo.R5S](mambo.R5S)|
+|wow|[wow.R5S](wow.R5S)|
 
 ## 放入相机
 
@@ -36,6 +31,6 @@ python3 tools/r5-sound/prepare_sound.py inspect "声音.R5S"
 
 ## 校验与历史
 
-2026-11-17 对本目录 10 个 R5S 重新执行严格格式、包头 CRC 和十段音量 SHA256 检查，全部通过；目录记录当前文件 SHA256。网页试听由 R5S 的 50% 音量段解码生成，不另发布原始 WAV。格式检查与试听不替代实体扬声器验收。
+2026-11-17 本目录按用户要求精简为 Ciallo、YAOYAO、YEAH、mambo、wow。5 个 R5S 均重新执行严格格式、包头 CRC 和十段音量 SHA256 检查，全部通过；目录记录当前文件 SHA256。mambo、wow 分别保留完整的 0.696 秒和 1.392 秒音频。网页试听由 R5S 的 50% 音量段解码生成，不另发布原始 WAV。格式检查与试听不替代实体扬声器验收。
 
-[历史转换来源与素材说明](CONVERSION_NOTES.md)仅用于追溯；YAOYAO.json、YEAH.json 是历史检查回执，不是需要安装的文件。
+[历史转换来源与素材说明](CONVERSION_NOTES.md)仅用于追溯；同名 JSON 是格式检查回执，不是需要安装的文件。

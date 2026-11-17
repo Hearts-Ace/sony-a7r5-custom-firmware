@@ -8,14 +8,6 @@
     "sha256": "8b1be70c0ac3f1fdda745c517e98dfd0c9acaca41e0ed0c9413723e391615126"
   },
   {
-    "id": "WOCAO",
-    "name": "WOCAO",
-    "file": "sounds/WOCAO.R5S",
-    "format": "R5SNDF0/v1",
-    "duration": 0.6501666666666667,
-    "sha256": "44db091bb0e51e336a8dd144d1dd578d067c1eda261b1106da19c00e6ccc2048"
-  },
-  {
     "id": "YAOYAO",
     "name": "YAOYAO",
     "file": "sounds/YAOYAO.R5S",
@@ -32,51 +24,19 @@
     "sha256": "35369fbb8880c56f9af360faca95674f7e4582bd208f8927a8ae5f76b24ba204"
   },
   {
-    "id": "YYLX",
-    "name": "YYLX",
-    "file": "sounds/YYLX.R5S",
+    "id": "mambo",
+    "name": "mambo",
+    "file": "sounds/mambo.R5S",
     "format": "R5SNDF0/v1",
-    "duration": 0.9520416666666667,
-    "sha256": "f23f312b981bea34befe687b9c4eb475079cbda6987035962301318459e4320f"
+    "duration": 0.696,
+    "sha256": "af631cde5290043065a917fccf564937b1fba58bb62c7ba5bb2502dc73e2f355"
   },
   {
-    "id": "ZBS",
-    "name": "ZBS",
-    "file": "sounds/ZBS.R5S",
+    "id": "wow",
+    "name": "wow",
+    "file": "sounds/wow.R5S",
     "format": "R5SNDF0/v1",
-    "duration": 0.97525,
-    "sha256": "ccc84f3bea1bae96fcbf1b6c66081e8f2ae98d83dd1f2cef6e0a526092c7e235"
-  },
-  {
-    "id": "ZYJH",
-    "name": "ZYJH",
-    "file": "sounds/ZYJH.R5S",
-    "format": "R5SNDF0/v1",
-    "duration": 0.97525,
-    "sha256": "e349c9ec8b6dbd0ec2ff70c093c1fa1b218f9ee66bc10a4ea0deeb21d69f2617"
-  },
-  {
-    "id": "你干嘛",
-    "name": "你干嘛",
-    "file": "sounds/你干嘛.R5S",
-    "format": "R5SNDF0/v1",
-    "duration": 2.0,
-    "sha256": "62de67430a221b3ef3b567a1f0c339f01c669ac70a2dd67477f0d600bd8a586c"
-  },
-  {
-    "id": "兔娘caliio",
-    "name": "兔娘caliio",
-    "file": "sounds/兔娘caliio.R5S",
-    "format": "R5SNDF0/v1",
-    "duration": 1.6130416666666667,
-    "sha256": "ce7737940fd731fafc13803bd2bf04c6b8e1d4423b1f7eb963ebbeeb50bd0486"
-  },
-  {
-    "id": "遥遥领先",
-    "name": "遥遥领先",
-    "file": "sounds/遥遥领先.R5S",
-    "format": "R5SNDF0/v1",
-    "duration": 0.6269583333333333,
-    "sha256": "433b20843d83d833d47dadac82b9d88934d691fa335c3a5fa9bab808a705b8f6"
+    "duration": 1.392,
+    "sha256": "b07b52b2d5cba3b85a755186f9e06368871a64aa15de068b37ae1bf3f66b8242"
   }
 ]

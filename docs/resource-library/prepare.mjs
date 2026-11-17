@@ -2,6 +2,7 @@ import{mkdir,cp,copyFile,rm}from'node:fs/promises';
 await mkdir('public',{recursive:true});
 await cp('data','public/data',{recursive:true});
 await rm('public/data/audio',{recursive:true,force:true});
+await rm('public/sounds',{recursive:true,force:true});
 await mkdir('public/sounds',{recursive:true});
 // On GitHub, the root /sounds is canonical. Local working copy retains the same catalog.
 const {existsSync}=await import('node:fs');
