@@ -9,7 +9,7 @@ import {Dialog,DialogTrigger,DialogContent,DialogTitle,DialogDescription} from '
 import {verifiedResource,mergeBins,download,resourceURL} from '@/lib/resources';
 const pad=n=>String(n).padStart(2,'0');
 const limit=12;
-function stored(){try{const s=JSON.parse(localStorage.getItem('r5-selection'));return Array.isArray(s)?[...new Set(s)].slice(0,limit):[];}catch{return [];}}
+function stored(){try{const s=JSON.parse(localStorage.getItem('r5-selection'));const renamed={'正片':'RP','负片':'RN',Portra400:'P400'};return Array.isArray(s)?[...new Set(s.map(id=>renamed[id]||id))].slice(0,limit):[];}catch{return [];}}
 function FilterDetail({item}){return <Dialog><DialogTrigger asChild><Button variant="ghost" size="icon" title="滤镜详情" aria-label={`查看 ${item.name} 详情`}><Info size={16}/></Button></DialogTrigger><DialogContent><span className="code-badge">{item.id}</span><DialogTitle className="dialog-title">{item.name}</DialogTitle><DialogDescription className="muted">{item.series} · {item.category}</DialogDescription><dl className="detail-grid"><dt>训练版本</dt><dd>{item.version}</dd><dt>配置格式</dt><dd>R5 自定义滤镜 v4</dd><dt>实机验收</dt><dd>{item.camera_tested?'已验收':'尚未验收'}</dd></dl><Button variant="outline" asChild><a href={resourceURL(item.json)} download><Download size={16}/>下载单滤镜 JSON</a></Button></DialogContent></Dialog>}
 // Catalog previews are optional and are rendered from the same site as the BIN files.
 function FilterPreview({path,name}){
