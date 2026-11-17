@@ -108,6 +108,30 @@
     "camera_tested": false
   },
   {
+    "id": "NS",
+    "name": "PRO Neg. Std",
+    "category": "富士数码",
+    "version": "2026-11-17",
+    "type": "digital",
+    "series": "Fujifilm Film Simulation",
+    "json": "data/filters/NS.json",
+    "bin": "data/filters/NS.bin",
+    "sha256": "c81dc23a2235b80738afd3409099913a4e8b7e4aff0544b793d3274a1f7d991a",
+    "camera_tested": false
+  },
+  {
+    "id": "NN",
+    "name": "NOSTALGIC Neg.",
+    "category": "富士数码",
+    "version": "2026-11-17",
+    "type": "digital",
+    "series": "Fujifilm Film Simulation",
+    "json": "data/filters/NN.json",
+    "bin": "data/filters/NN.bin",
+    "sha256": "257bbcc1dfd7217c97340c879efff52b1ec286319bb1cc5c21a17a45cc126c29",
+    "camera_tested": false
+  },
+  {
     "id": "RP",
     "name": "理光正片",
     "category": "理光",

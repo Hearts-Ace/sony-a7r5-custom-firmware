@@ -8,6 +8,7 @@
 - [在线滤镜与声音资源库](https://hearts-ace.github.io/sony-a7r5-custom-firmware/)：选择滤镜、下载整合 BIN，试听/下载 10 款快门声，转换自己的 WAV
 - [声音安装与文件目录](sounds/README.md) · [全部声音 ZIP](sounds/R5-Sounds-4.55.zip)
 - [十二款滤镜BIN](filters/FUJ_12_v45/README.md)
+- [NS／NN 新增单滤镜（PRO Neg. Std／NOSTALGIC Neg.）](filters/Fuji_NS_NN_20261117/README.md)
 - [滤镜训练与网格工作台](https://github.com/Hearts-Ace/sony-r5-colorlab)
 
 本项目以魔改线方案为主，不再提供macOS刷写工作台；六槽工具仅用于独立读取和限定设置修复，固件本身不自动补槽。
