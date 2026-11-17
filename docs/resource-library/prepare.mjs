@@ -9,3 +9,4 @@ const {existsSync}=await import('node:fs');
 const source=existsSync('../../sounds/catalog.json')?'../../sounds':'sounds';
 const {readdir}=await import('node:fs/promises');for(const f of await readdir(source)){if(f.endsWith('.R5S')||f==='catalog.json')await copyFile(`${source}/${f}`,`public/sounds/${f}`);}
 await copyFile('kernel.json','public/kernel.json');
+await copyFile('favicon.svg','public/favicon.svg');

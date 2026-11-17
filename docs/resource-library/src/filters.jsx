@@ -17,15 +17,15 @@ function FilterPreview({path,name}){
  if(failed)return null;
  return <div className="filter-preview"><img src={resourceURL(path)} alt={`${name} 滤镜渲染预览`} loading="lazy" decoding="async" onError={()=>setFailed(true)}/></div>;
 }
-function FilterCard({item,slot,busy,onAdd}){
+function FilterCard({item,index,slot,busy,onAdd}){
  return <li className={`filter-card ${slot?'is-selected':''}`}>
  {item.preview&&<FilterPreview key={item.preview} path={item.preview} name={item.name}/>}
- <div className="filter-card-body">
- <div className="card-meta"><span className="code-badge">{item.id}</span><FilterDetail item={item}/></div>
+ <div className="film-perforations" aria-hidden="true">{Array.from({length:10},(_,i)=><i key={i}/>)}</div><div className="filter-card-body">
+ <div className="card-meta"><span className="film-label">R5 FILM SIMULATION</span><FilterDetail item={item}/></div><span className="film-code" aria-hidden="true">{item.id}</span>
  <strong className="filter-card-name">{item.name}</strong>
  <p>{item.series}</p>
  <Button className="card-add" variant={slot?'secondary':'outline'} size="sm" disabled={busy||Boolean(slot)} aria-label={slot?`${item.name} 已加入资源栏，槽位 ${pad(slot)}`:`加入 ${item.name}`} onClick={onAdd}>{slot?<Check size={15}/>:<Plus size={15}/>} {slot?`槽位 ${pad(slot)}`:'加入资源栏'}</Button>
- </div>
+ </div><div className="film-edge" aria-hidden="true"><span>{pad(index+1)} <span className="film-arrow">▸</span></span><span>R5 · V4</span><span>{pad(index+1)}A</span></div>
  </li>;
 }
 function Slot({item,index,total,remove,reorder}){const {attributes,listeners,setNodeRef,transform,transition,isDragging}=useSortable({id:item.id});return <li className={`slot-row ${isDragging?'dragging':''}`} ref={setNodeRef} style={{transform:CSS.Transform.toString(transform),transition}}><button className="grip" {...attributes} {...listeners} aria-label={`拖动排序 ${item.name}`}><GripVertical size={16}/></button><span className="slot-number">{pad(index+1)}</span><span className="slot-name" title={item.name}><b>{item.id}</b><small>{item.name}</small></span><div className="slot-actions"><Button variant="ghost" size="icon" aria-label={`上移 ${item.name}`} disabled={index===0} onClick={()=>reorder(index,index-1)}><ArrowUp size={14}/></Button><Button variant="ghost" size="icon" aria-label={`下移 ${item.name}`} disabled={index===total-1} onClick={()=>reorder(index,index+1)}><ArrowDown size={14}/></Button><Button variant="ghost" size="icon" aria-label={`移除 ${item.name}`} onClick={()=>remove(item.id)}><X size={16}/></Button></div></li>}
@@ -53,8 +53,8 @@ export function FilterLibrary({catalog,loading,error}){
  {[...categories].map(([name,items])=><button key={name} className={`category-button ${group===name?'active':''}`} aria-pressed={group===name} onClick={()=>setGroup(name)}><Folder size={15}/><span>{name}</span><small>{items.length}</small></button>)}
  </aside>
  <section className="catalog-panel filter-catalog" aria-labelledby="catalog-heading"><div className="panel-title"><div><h2 id="catalog-heading">{group||'全部滤镜'}</h2><p>{shown.length} 款滤镜</p></div><Button variant="outline" size="sm" disabled={busy||!shown.some(x=>!selected.includes(x.id))} onClick={()=>add(shown)}><Plus size={16}/>加入当前列表</Button></div>
- <label className="search-field"><Search size={17}/><input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜索名称、简称或系列" aria-label="搜索滤镜"/></label>
- {loading?<p className="empty-state" role="status">正在加载滤镜…</p>:error?<p className="empty-state" role="alert">{error}，请刷新重试。</p>:!shown.length?<p className="empty-state">没有匹配的滤镜。</p>:<div className="filter-sections">{sections.map(([name,items])=><section key={name} className="filter-section">{!group&&<h3 className="filter-section-title">{name}<span>{items.length} 款</span></h3>}<ul className="filter-grid">{items.map(item=><FilterCard key={item.id} item={item} slot={selected.indexOf(item.id)+1} busy={busy} onAdd={()=>add([item])}/>)}</ul></section>)}</div>}
+ <label className="search-field"><Search size={17}/><span className="search-label">搜索</span><input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜索名称、简称或系列" aria-label="搜索滤镜"/></label>
+ {loading?<div className="loading-panel" role="status"><span className="skeleton"/><span className="skeleton"/>正在加载滤镜…</div>:error?<p className="empty-state" role="alert">{error}，请刷新重试。</p>:!shown.length?<p className="empty-state">没有匹配的滤镜。</p>:<div className="filter-sections">{sections.map(([name,items])=><section key={name} className="filter-section">{!group&&<h3 className="filter-section-title">{name}<span>{items.length} 款</span></h3>}<ul className="filter-grid">{items.map(item=><FilterCard key={item.id} item={item} index={catalog.indexOf(item)} slot={selected.indexOf(item.id)+1} busy={busy} onAdd={()=>add([item])}/>)}</ul></section>)}</div>}
  </section>
  <aside className="tray" id="tray" aria-labelledby="tray-title"><div className="panel-title"><div><div className="panel-kicker"><ListOrdered size={15}/> 相机槽位</div><h2 id="tray-title">资源栏 <span className="tray-count">{selected.length} / {limit}</span></h2></div><Button size="sm" variant="ghost" disabled={!selected.length||busy} onClick={()=>setSelection([])}>清空</Button></div><div className="tray-meter" aria-hidden="true">{Array.from({length:limit},(_,i)=><i key={i} className={i<selected.length?'filled':''}/>)}</div>
  {!selected.length?<div className="tray-empty"><SlidersHorizontal size={24}/><p>还没有选择滤镜</p><small>可跨系列添加，列表顺序对应相机槽位。</small></div>:<DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={({active,over})=>{if(over)reorder(selected.indexOf(active.id),selected.indexOf(over.id));}}><SortableContext items={selected} strategy={verticalListSortingStrategy}><ol className="slots-list">{selected.map((id,index)=><Slot key={id} item={ids.get(id)} index={index} total={selected.length} reorder={reorder} remove={id=>setSelection(selected.filter(x=>x!==id))}/>)}</ol></SortableContext></DndContext>}
