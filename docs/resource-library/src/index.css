@@ -284,3 +284,13 @@ button:disabled{box-shadow:none;transform:none}
 .film-content .card-add{margin:0;align-self:end;width:100%;height:44px}
 .filter-card-name>span{animation:film-name-pan 9s var(--ease-in-out) infinite alternate}
 @container(max-width:230px){.filter-card-body{grid-template-columns:44px minmax(0,1fr);padding:4px 8px;gap:8px}.film-content{gap:0;grid-template-rows:20px minmax(12px,1fr) 44px}}
+
+/* Center the identity within its fixed zone on every screen. */
+.film-identity{justify-items:center}
+.film-identity .ui-icon{margin-left:0}
+
+/* Phones retain the desktop card internals in a compact two-column grid. */
+@media(max-width:639px){
+ .filter-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .filter-card{aspect-ratio:auto;height:132px}
+}
