@@ -9,7 +9,8 @@
     "json": "data/filters/AS.json",
     "bin": "data/filters/AS.bin",
     "sha256": "eceb970745be9ad45cb569b8dc406c8e3d17cd525fb8d3b1e39c1f447350a974",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "AS"
   },
   {
     "id": "CC",
@@ -21,7 +22,8 @@
     "json": "data/filters/CC.json",
     "bin": "data/filters/CC.bin",
     "sha256": "b85df6f832759f07a17c2aaf6774ba1cd0b8949aad09d6bfb364c24a7cee6dc1",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "CC"
   },
   {
     "id": "EBB",
@@ -33,7 +35,8 @@
     "json": "data/filters/EBB.json",
     "bin": "data/filters/EBB.bin",
     "sha256": "0670c36a2debec35980c1aa82ed9ee411da29760144cb1944ed1f9f147646989",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "EBB"
   },
   {
     "id": "ET",
@@ -45,7 +48,8 @@
     "json": "data/filters/ET.json",
     "bin": "data/filters/ET.bin",
     "sha256": "e02d47fa53d5b56cc5c1d9f3ec1029d6c576290599cea3f201760a11d95a8383",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "ET"
   },
   {
     "id": "NC",
@@ -57,7 +61,8 @@
     "json": "data/filters/NC.json",
     "bin": "data/filters/NC.bin",
     "sha256": "1dd9e6c05fdf075feb164e534e908ca27eed3956c7926804758661b95738c7b9",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "NC"
   },
   {
     "id": "NH",
@@ -69,7 +74,8 @@
     "json": "data/filters/NH.json",
     "bin": "data/filters/NH.bin",
     "sha256": "96926ad097e3c4b8bf0424edebbb3a7423be99e334d9c943f1022e2e6546fa76",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "NH"
   },
   {
     "id": "PV",
@@ -81,7 +87,8 @@
     "json": "data/filters/PV.json",
     "bin": "data/filters/PV.bin",
     "sha256": "c7231505ce340289835a7cd44b003c961a8362aba871bde2535a5cd2f04beabf",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "PV"
   },
   {
     "id": "RA",
@@ -93,7 +100,8 @@
     "json": "data/filters/RA.json",
     "bin": "data/filters/RA.bin",
     "sha256": "e90f922fc4da7027728f643e8306e5f64280cd6b4a4328eef8018ca1140b700e",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "RA"
   },
   {
     "id": "VN",
@@ -105,7 +113,8 @@
     "json": "data/filters/VN.json",
     "bin": "data/filters/VN.bin",
     "sha256": "1b64755022a88c1695dab964245d79d59b69d73e50134d5c7ddaf305f1b1d7df",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "VN"
   },
   {
     "id": "NS",
@@ -117,7 +126,8 @@
     "json": "data/filters/NS.json",
     "bin": "data/filters/NS.bin",
     "sha256": "c81dc23a2235b80738afd3409099913a4e8b7e4aff0544b793d3274a1f7d991a",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "NS"
   },
   {
     "id": "NN",
@@ -129,7 +139,8 @@
     "json": "data/filters/NN.json",
     "bin": "data/filters/NN.bin",
     "sha256": "257bbcc1dfd7217c97340c879efff52b1ec286319bb1cc5c21a17a45cc126c29",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "NN"
   },
   {
     "id": "RP",
@@ -141,7 +152,8 @@
     "json": "data/filters/RP.json",
     "bin": "data/filters/RP.bin",
     "sha256": "4de1271d084eac486ed7930d195dd70dcdb1630a2e00cbd6df2b4fb39087c371",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "RP"
   },
   {
     "id": "RN",
@@ -153,7 +165,8 @@
     "json": "data/filters/RN.json",
     "bin": "data/filters/RN.bin",
     "sha256": "f04fe51e80175c3bdff531f26d7dc990b967e5915b0d4872daa94608ab33b61f",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "RN"
   },
   {
     "id": "P400",
@@ -165,7 +178,8 @@
     "json": "data/filters/P400.json",
     "bin": "data/filters/P400.bin",
     "sha256": "77511022442a3ecba79a304b32b32aefe1c483290935ab20da992d74fe0979dc",
-    "camera_tested": false
+    "camera_tested": false,
+    "short_name": "P400"
   },
   {
     "id": "CAutumnHues",
@@ -176,8 +190,9 @@
     "series": "Canon",
     "json": "data/filters/CAutumnHues.json",
     "bin": "data/filters/CAutumnHues.bin",
-    "sha256": "2ed7878bcd976a5c934632f952b12e5ceca7e69026cddc37948233de77d2dbd7",
-    "camera_tested": false
+    "sha256": "b74ace67f087db4617cedce03add6c5752759323219e19f6fc1a3876d5a5db5f",
+    "camera_tested": false,
+    "short_name": "CAH"
   },
   {
     "id": "CClear",
@@ -188,8 +203,9 @@
     "series": "Canon",
     "json": "data/filters/CClear.json",
     "bin": "data/filters/CClear.bin",
-    "sha256": "d059dfd2dfa2d43cd1b28c551648bd21ff21400c3d9c5b632767f1ebaa21c9f3",
-    "camera_tested": false
+    "sha256": "9fb82a0db1461bceffe787ae3ae5f2e914865464b44ec80c38445a814bc11b24",
+    "camera_tested": false,
+    "short_name": "CC"
   },
   {
     "id": "CEmerald",
@@ -200,8 +216,9 @@
     "series": "Canon",
     "json": "data/filters/CEmerald.json",
     "bin": "data/filters/CEmerald.bin",
-    "sha256": "5ee5832b1ffc43b801c18711ba05ed2287b364bda9926efc380fb582c134f8f7",
-    "camera_tested": false
+    "sha256": "8544212ca6c3ef277093eed30ba77296f6fca4c48aa81cecbeb852990613862e",
+    "camera_tested": false,
+    "short_name": "CE"
   },
   {
     "id": "CFaithful",
@@ -212,8 +229,9 @@
     "series": "Canon",
     "json": "data/filters/CFaithful.json",
     "bin": "data/filters/CFaithful.bin",
-    "sha256": "30ca801e5f4e0c8b75e774c81329e0e64afbb61903f0f7d75fb4a24e62681e09",
-    "camera_tested": false
+    "sha256": "abee9116757b5896b8ae58ecfd08aac7c9a9ccea4d06727e885f43477c1b34d9",
+    "camera_tested": false,
+    "short_name": "CF"
   },
   {
     "id": "CFineDetail",
@@ -224,8 +242,9 @@
     "series": "Canon",
     "json": "data/filters/CFineDetail.json",
     "bin": "data/filters/CFineDetail.bin",
-    "sha256": "55a309b4599c9a9337df7327815c941570c4a8f16f583469dbc272edc5d797c8",
-    "camera_tested": false
+    "sha256": "2ea31e49315800ecb8026da4c78fae8d3874d64c24bfdb5401955725398199bc",
+    "camera_tested": false,
+    "short_name": "CFD"
   },
   {
     "id": "CLandscape",
@@ -236,8 +255,9 @@
     "series": "Canon",
     "json": "data/filters/CLandscape.json",
     "bin": "data/filters/CLandscape.bin",
-    "sha256": "01641bb942390316b857dc58c28b871c79ce749c216f98d4b66759ef14b90af7",
-    "camera_tested": false
+    "sha256": "4cf8d4a75b2baddc4049534acd3b57797e18bc4059c16ef9f1d67e1e8d170a1e",
+    "camera_tested": false,
+    "short_name": "CL"
   },
   {
     "id": "CMonochrome",
@@ -248,8 +268,9 @@
     "series": "Canon",
     "json": "data/filters/CMonochrome.json",
     "bin": "data/filters/CMonochrome.bin",
-    "sha256": "a4e99862d43c0520a0954828d61989b8ef577c69a4c658f2d576a79a111ddf86",
-    "camera_tested": false
+    "sha256": "b280375c54acc0f420d338cb8d19a9938277a257ce20565f944caa0531be96a3",
+    "camera_tested": false,
+    "short_name": "CM"
   },
   {
     "id": "CNeutral",
@@ -260,8 +281,9 @@
     "series": "Canon",
     "json": "data/filters/CNeutral.json",
     "bin": "data/filters/CNeutral.bin",
-    "sha256": "43bed6000b1ed596d40725b17c774926068827da0a9b1dbd0497a3b9cc65a1c7",
-    "camera_tested": false
+    "sha256": "e7dc77ce4acebed8440d3b6b8e6357e001c97714ea43cb93d970b30bb46bd1ff",
+    "camera_tested": false,
+    "short_name": "CN"
   },
   {
     "id": "CNostalgia",
@@ -272,8 +294,9 @@
     "series": "Canon",
     "json": "data/filters/CNostalgia.json",
     "bin": "data/filters/CNostalgia.bin",
-    "sha256": "f82258a2beef34cb8d4b1d4e6d3f545276cdcfeb1a98f6328045edaa03613524",
-    "camera_tested": false
+    "sha256": "36810199b81b2005e64a570a26dee48e319ed4a9250c9753f2c9b7f0c8b583f8",
+    "camera_tested": false,
+    "short_name": "CN"
   },
   {
     "id": "CPortraitSnapshot",
@@ -284,8 +307,9 @@
     "series": "Canon",
     "json": "data/filters/CPortraitSnapshot.json",
     "bin": "data/filters/CPortraitSnapshot.bin",
-    "sha256": "2a40c3e30a2322cf4a7f4bfae8c79ffcc9c4b84a37b123930a21ddfbf21ef576",
-    "camera_tested": false
+    "sha256": "e1fdb6538b6393b361dd4fd47ec2a5abc06ac682f6f3dfb58ea75e863b63c7b5",
+    "camera_tested": false,
+    "short_name": "CPS"
   },
   {
     "id": "CPortraitStudio",
@@ -296,8 +320,9 @@
     "series": "Canon",
     "json": "data/filters/CPortraitStudio.json",
     "bin": "data/filters/CPortraitStudio.bin",
-    "sha256": "bb7b86fb86a4ee210325a572ee6374bcd38a9bb317feb58cc74059273d824c71",
-    "camera_tested": false
+    "sha256": "904742a9f83dc593c026399c7e3deee6dbf35bbb005e6e8580ff06f8331aa410",
+    "camera_tested": false,
+    "short_name": "CPS"
   },
   {
     "id": "CPortrait",
@@ -308,8 +333,9 @@
     "series": "Canon",
     "json": "data/filters/CPortrait.json",
     "bin": "data/filters/CPortrait.bin",
-    "sha256": "ca9bb6def8caf9243a67dc5692b0e225114ecd4be4e3ed4bb4bea1068c5d1530",
-    "camera_tested": false
+    "sha256": "2c43fa9cbd98ba6eb7b83f17cf0de16471e953262af7d005bc00b6ce698ddc1d",
+    "camera_tested": false,
+    "short_name": "CP"
   },
   {
     "id": "CStandard",
@@ -320,8 +346,9 @@
     "series": "Canon",
     "json": "data/filters/CStandard.json",
     "bin": "data/filters/CStandard.bin",
-    "sha256": "569fc2cdceff6b1a072a149df297a0fa6b32b855e238fb348988f902c3ec9315",
-    "camera_tested": false
+    "sha256": "87d2fe5c14e38d3373139676ee806c23404461ff912a92777119acf30fcfbeda",
+    "camera_tested": false,
+    "short_name": "CS"
   },
   {
     "id": "CTwilight",
@@ -332,8 +359,9 @@
     "series": "Canon",
     "json": "data/filters/CTwilight.json",
     "bin": "data/filters/CTwilight.bin",
-    "sha256": "fc77ea15d1ce51fb300fcfe9c6b136008301564bfa58fcac3c409758bd2ecf3b",
-    "camera_tested": false
+    "sha256": "77dbc9a4a6c5df8e30e3737f5ca36a6a74e7c24f9e4a8c9a4b03e5e066f7e62d",
+    "camera_tested": false,
+    "short_name": "CT"
   },
   {
     "id": "CBWEliteIlfordHP5+-23e3",
@@ -344,8 +372,9 @@
     "series": "Classic BW",
     "json": "data/filters/CBWEliteIlfordHP5+-23e3.json",
     "bin": "data/filters/CBWEliteIlfordHP5+-23e3.bin",
-    "sha256": "4114d32e7013adf73dcadd41a28d6510dcfbd5be6a87e559650f238563adbf6f",
-    "camera_tested": false
+    "sha256": "bd5f5ead0a78bbfbf2584afa6ec1fe8d1fa6b16bc82d4f96d1f94d21e0cea300",
+    "camera_tested": false,
+    "short_name": "HP5+Y"
   },
   {
     "id": "CBWEliteIlfordHP5+-8144",
@@ -356,8 +385,9 @@
     "series": "Classic BW",
     "json": "data/filters/CBWEliteIlfordHP5+-8144.json",
     "bin": "data/filters/CBWEliteIlfordHP5+-8144.bin",
-    "sha256": "e2428daf308a47073d2dee0dacbd223bd0f08aea0a1cbea5c7abca1c648350e6",
-    "camera_tested": false
+    "sha256": "30f64a6bb6f462de10c2cbd0b3c88fbeb37fd03c53d23702c729e09a13a14a86",
+    "camera_tested": false,
+    "short_name": "HP5+R"
   },
   {
     "id": "CBWEliteIlfordHP5+-a1a5",
@@ -368,8 +398,9 @@
     "series": "Classic BW",
     "json": "data/filters/CBWEliteIlfordHP5+-a1a5.json",
     "bin": "data/filters/CBWEliteIlfordHP5+-a1a5.bin",
-    "sha256": "d38413f0bc65528c6e477a4dab06e83d49f76cdd8d888ef4822c994b583f84e5",
-    "camera_tested": false
+    "sha256": "63d8cef9acf5f1e3bb1b4c6dec4798992ebd9f3b5df7e7536899634e2b28ea20",
+    "camera_tested": false,
+    "short_name": "HP5+G"
   },
   {
     "id": "CBWEliteIlfordHP5+400-L",
@@ -380,8 +411,9 @@
     "series": "Classic BW",
     "json": "data/filters/CBWEliteIlfordHP5+400-L.json",
     "bin": "data/filters/CBWEliteIlfordHP5+400-L.bin",
-    "sha256": "9f40bea32402910c5d14845f3e3a643d067c97fbde09f0114e74f1741eb2dab8",
-    "camera_tested": false
+    "sha256": "03e6982030baed51c2ebed3f8cf2f6b60c615cee9055f039281403b3ca623b02",
+    "camera_tested": false,
+    "short_name": "HP5+L"
   },
   {
     "id": "CBWEliteIlfordHP5+400",
@@ -392,8 +424,9 @@
     "series": "Classic BW",
     "json": "data/filters/CBWEliteIlfordHP5+400.json",
     "bin": "data/filters/CBWEliteIlfordHP5+400.bin",
-    "sha256": "05605ac07a4aa6091122db0f8af0bd79e4ecb304adbbd490a52cb40355735cd9",
-    "camera_tested": false
+    "sha256": "f23f7cbd4458a9fb8941c90980a117ff0aa9ab7128016543cc9791550cc41207",
+    "camera_tested": false,
+    "short_name": "HP5+"
   },
   {
     "id": "CBWTmax100-L",
@@ -404,8 +437,9 @@
     "series": "Classic BW",
     "json": "data/filters/CBWTmax100-L.json",
     "bin": "data/filters/CBWTmax100-L.bin",
-    "sha256": "64456ad065ec628db5d078bac417410fb1868dec1512ac55a11692cda41e465d",
-    "camera_tested": false
+    "sha256": "4aaafa0b8aee9c93a3da579871a5def203455e529ca0698a1844d33cb457c3d6",
+    "camera_tested": false,
+    "short_name": "TM100L"
   },
   {
     "id": "CBWTmax100",
@@ -416,8 +450,9 @@
     "series": "Classic BW",
     "json": "data/filters/CBWTmax100.json",
     "bin": "data/filters/CBWTmax100.bin",
-    "sha256": "435a1b09e00c5896f42077e8b2f15651a7f87aa65ce3352d60117dea7ec6a28b",
-    "camera_tested": false
+    "sha256": "04521c28cfd9714cd2bc4c9ee1c7e184900b87f209fe04a800a903e0ec4f77d6",
+    "camera_tested": false,
+    "short_name": "TM100"
   },
   {
     "id": "CBWTmax100Green",
@@ -428,8 +463,9 @@
     "series": "Classic BW",
     "json": "data/filters/CBWTmax100Green.json",
     "bin": "data/filters/CBWTmax100Green.bin",
-    "sha256": "9207ce11aaa27df22ec1ba9f62f8372a4a1b573667024fc4114a2e6b5ad691b9",
-    "camera_tested": false
+    "sha256": "45d7ed772270f9c1c5406687a3a8826e3e64708b90d3f69e7a6a29dbdf2f617e",
+    "camera_tested": false,
+    "short_name": "TM100G"
   },
   {
     "id": "CBWTmax100Red",
@@ -440,8 +476,9 @@
     "series": "Classic BW",
     "json": "data/filters/CBWTmax100Red.json",
     "bin": "data/filters/CBWTmax100Red.bin",
-    "sha256": "32b4f3ce8c48952f752d5e72c9415a1055a8d0345ae541193cbc3eb7eaf1cd46",
-    "camera_tested": false
+    "sha256": "051ad6fbadd476c12072a26ccd2d5e99a8f52f7db9bc62362ab9d983fc38f6a1",
+    "camera_tested": false,
+    "short_name": "TM100R"
   },
   {
     "id": "CBWTmax100Yellow",
@@ -452,7 +489,8 @@
     "series": "Classic BW",
     "json": "data/filters/CBWTmax100Yellow.json",
     "bin": "data/filters/CBWTmax100Yellow.bin",
-    "sha256": "e432a71609f1cbcf009b575e64311c05c1e39d6c388a9713ab773bb1a1c43935",
-    "camera_tested": false
+    "sha256": "974a4ce4f5f5e4e6a9893b18134b43670c20dff7a512176d63db69bc16f68651",
+    "camera_tested": false,
+    "short_name": "TM100Y"
   }
 ]

@@ -267,3 +267,20 @@ button:disabled{box-shadow:none;transform:none}
 /* Phones use the same film frame and information hierarchy as desktop. */
 .filter-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:var(--space-4)}
 .film-edge>span:nth-child(2){display:inline}
+
+/* Native single-line scrolling avoids observers, measurement and animation loops. */
+.film-content .filter-card-name{display:block;max-width:100%;width:100%;container-type:inline-size;overflow-x:auto;overflow-y:hidden;white-space:nowrap;line-height:20px;text-wrap:nowrap;scrollbar-width:none;overscroll-behavior-x:contain}
+.filter-card-name>span{display:block;width:max-content;min-width:100%;white-space:nowrap}
+.filter-card-name:hover>span{animation:film-name-pan 9s var(--ease-in-out) infinite alternate}
+@keyframes film-name-pan{0%,15%{transform:translateX(0)}85%,100%{transform:translateX(min(0px,calc(-100% + 100cqw)))}}
+@media(prefers-reduced-motion:reduce){.filter-card-name>span{animation:none!important}}
+
+/* Fixed bento zones keep controls anchored when the card's width changes. */
+.filter-card-body{display:grid;grid-template-columns:48px minmax(0,1fr);grid-template-rows:minmax(0,1fr);align-items:stretch;gap:8px;padding:8px}
+.film-identity{display:grid;grid-template-rows:12px minmax(0,1fr) 44px;align-items:center;justify-items:start;gap:0;padding-right:4px;border-right:1px solid var(--glass-edge)}
+.film-identity .film-code{line-height:28px}
+.film-content{display:grid;grid-template-rows:20px minmax(12px,1fr) 44px;align-items:start;gap:2px}
+.film-content p{margin:0;align-self:start;line-height:14px}
+.film-content .card-add{margin:0;align-self:end;width:100%;height:44px}
+.filter-card-name>span{animation:film-name-pan 9s var(--ease-in-out) infinite alternate}
+@container(max-width:230px){.filter-card-body{grid-template-columns:44px minmax(0,1fr);padding:4px 8px;gap:8px}.film-content{gap:0;grid-template-rows:20px minmax(12px,1fr) 44px}}
