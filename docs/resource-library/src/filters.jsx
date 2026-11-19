@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react';
+import {useState,useEffect,useLayoutEffect,useRef} from 'react';
 import {DndContext, PointerSensor, KeyboardSensor, closestCenter, useSensor, useSensors} from '@dnd-kit/core';
 import {SortableContext, useSortable, verticalListSortingStrategy, sortableKeyboardCoordinates, arrayMove} from '@dnd-kit/sortable';
 import {CSS} from '@dnd-kit/utilities';
@@ -18,12 +18,27 @@ function FilterPreview({path,name}){
  if(failed)return null;
  return <div className="filter-preview"><img src={resourceURL(path)} alt={`${name} 滤镜渲染预览`} loading="lazy" decoding="async" onError={()=>setFailed(true)}/></div>;
 }
+function FilterName({name}){
+ const viewport=useRef(null),text=useRef(null),[overflow,setOverflow]=useState(0);
+ useLayoutEffect(()=>{
+  const measure=()=>{
+   const distance=Math.max(0,text.current.scrollWidth-viewport.current.clientWidth);
+   setOverflow(distance>1?distance:0);
+  };
+  const observer=new ResizeObserver(measure);
+  observer.observe(viewport.current);
+  observer.observe(text.current);
+  measure();
+  return()=>observer.disconnect();
+ },[name]);
+ return <strong ref={viewport} className="filter-card-name" title={name} data-overflow={overflow>0} style={{'--name-pan':`${-overflow}px`}}><span ref={text}>{name}</span></strong>;
+}
 function FilterCard({item,index,slot,busy,onAdd}){
  return <li className={`filter-card ${slot?'is-selected':''}`}>
  {item.preview&&<FilterPreview key={item.preview} path={item.preview} name={item.name}/>}
  <div className="film-perforations" aria-hidden="true">{Array.from({length:10},(_,i)=><i key={i}/>)}</div><div className="filter-card-body">
  <div className="film-identity"><span className="film-label" aria-hidden="true">R5 FILM</span><span className="film-code" aria-hidden="true" style={{fontSize:`${Math.min(26,Math.floor(60/(item.short_name||item.id).length))}px`}}>{(item.short_name||item.id)}</span><FilterDetail item={item}/></div><div className="film-content">
- <strong className="filter-card-name" title={item.name}><span>{item.name}</span></strong>
+ <FilterName name={item.name}/>
  <p className="filter-error" title={item.training_error?.label||"等待原始色差记录"}>{cardError(item)}</p>
  <Button className="card-add" variant={slot?'secondary':'outline'} size="sm" disabled={busy||Boolean(slot)} aria-label={slot?`${item.name} 已加入资源栏，槽位 ${pad(slot)}`:`加入 ${item.name}`} onClick={onAdd}>{slot?<Check size={15}/>:<Plus size={15}/>} {slot?`槽位 ${pad(slot)}`:'加入资源栏'}</Button>
  </div></div><div className="film-edge" aria-hidden="true"><span>{pad(index+1)} <span className="film-arrow">▸</span></span><span>R5 · V4</span><span>{pad(index+1)}A</span></div>
@@ -31,7 +46,7 @@ function FilterCard({item,index,slot,busy,onAdd}){
 }
 function Slot({item,index,total,remove,reorder}){const {attributes,listeners,setNodeRef,transform,transition,isDragging}=useSortable({id:item.id});return <li className={`slot-row ${isDragging?'dragging':''}`} ref={setNodeRef} style={{transform:CSS.Transform.toString(transform),transition}}><button className="grip" {...attributes} {...listeners} aria-label={`拖动排序 ${item.name}`}><GripVertical size={16}/></button><span className="slot-number">{pad(index+1)}</span><span className="slot-name" title={item.name}><b>{(item.short_name||item.id)}</b><small>{item.name}</small></span><div className="slot-actions"><Button variant="ghost" size="icon" aria-label={`上移 ${item.name}`} disabled={index===0} onClick={()=>reorder(index,index-1)}><ArrowUp size={14}/></Button><Button variant="ghost" size="icon" aria-label={`下移 ${item.name}`} disabled={index===total-1} onClick={()=>reorder(index,index+1)}><ArrowDown size={14}/></Button><Button variant="ghost" size="icon" aria-label={`移除 ${item.name}`} onClick={()=>remove(item.id)}><X size={16}/></Button></div></li>}
 function TrayBody({selected,ids,limit,busy,setSelection,reorder,exportSelected,sensors,mobile=false}){const Heading=mobile?DialogTitle:'h2';return <><div className="panel-title"><div><div className="panel-kicker"><ListOrdered size={15}/> 相机槽位</div><Heading id={mobile?undefined:"tray-title"}>资源栏 <span className="tray-count">{selected.length} / {limit}</span></Heading></div><Button size="sm" variant="ghost" disabled={!selected.length||busy} onClick={()=>setSelection([])}>清空</Button></div><div className="tray-meter" aria-hidden="true">{Array.from({length:limit},(_,i)=><i key={i} className={i<selected.length?'filled':''}/>)}</div>{!selected.length?<div className="tray-empty"><SlidersHorizontal size={24}/><p>还没有选择滤镜</p><small>可跨系列添加，列表顺序对应相机槽位。</small></div>:<DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={({active,over})=>{if(over)reorder(selected.indexOf(active.id),selected.indexOf(over.id));}}><SortableContext items={selected} strategy={verticalListSortingStrategy}><ol className="slots-list">{selected.map((id,index)=><Slot key={id} item={ids.get(id)} index={index} total={selected.length} reorder={reorder} remove={id=>setSelection(selected.filter(x=>x!==id))}/>)}</ol></SortableContext></DndContext>}<div className="tray-footer"><Button disabled={!selected.length||busy} onClick={exportSelected}><Download size={17}/>{busy?'正在生成…':'下载整合 BIN'}</Button><p>R5NATIVE.BIN · 最多 12 槽</p></div></>}
-export function FilterLibrary({catalog,loading,error,bundle,reload}){
+export function FilterLibrary({catalog,loading,error}){
  const [mobile,setMobile]=useState(()=>matchMedia('(max-width:900px)').matches),[trayOpen,setTrayOpen]=useState(false);
  useEffect(()=>{const media=matchMedia('(max-width:900px)'),change=()=>{setMobile(media.matches);setTrayOpen(false);};media.addEventListener('change',change);return()=>media.removeEventListener('change',change);},[]);
  const [selection,setSelection]=useState(stored),[group,setGroup]=useState(''),[query,setQuery]=useState(''),[busy,setBusy]=useState(false);
@@ -49,18 +64,16 @@ export function FilterLibrary({catalog,loading,error,bundle,reload}){
   .map(([name,items])=>[name,items.filter(matches)])
   .filter(([,items])=>items.length);
  const shown=sections.flatMap(([,items])=>items);
- const add=(list)=>{const remaining=list.filter(x=>!selected.includes(x.id));if(remaining.length+selected.length>limit){toast.error('剩余槽位不足，请减少选择');return;}setSelection([...selected,...remaining.map(x=>x.id)]);if(remaining.length)toast.success(`已加入 ${remaining.length} 款滤镜`);};
+ const add=item=>{if(selected.includes(item.id))return;if(selected.length>=limit){toast.error('资源栏已满，最多 12 款滤镜');return;}setSelection([...selected,item.id]);toast.success('已加入 1 款滤镜');};
  const reorder=(i,j)=>{if(i>=0&&j>=0&&i!==j)setSelection(arrayMove(selected,i,j));};
  async function exportSelected(){setBusy(true);try{const inputs=await Promise.all(selected.map(id=>verifiedResource(ids.get(id))));download(mergeBins(inputs),'R5NATIVE.BIN');toast.success(`已生成 ${selected.length} 槽 R5NATIVE.BIN`);}catch(e){toast.error(e.message);}finally{setBusy(false);}}
- async function exportBundle(){setBusy(true);try{download(await verifiedResource(bundle),'R5NATIVE.BIN');toast.success('已下载常用十二款');}catch(e){toast.error(e.message);}finally{setBusy(false);}}
  return <div className="filter-workspace">
  <aside className="sidebar" aria-label="滤镜分类"><div className="panel-kicker"><Layers3 size={16}/> 分类</div><button className={`category-button all ${!group?'active':''}`} aria-pressed={!group} onClick={()=>setGroup('')}><Layers3 size={15}/><span>全部滤镜</span><small>{catalog.length}</small></button>
  {[...categories].map(([name,items])=><button key={name} className={`category-button ${group===name?'active':''}`} aria-pressed={group===name} onClick={()=>setGroup(name)}><Folder size={15}/><span>{name}</span><small>{items.length}</small></button>)}
  </aside>
- <div className="filter-catalog-stage"><section className="catalog-panel filter-catalog" aria-labelledby="catalog-heading"><div className="panel-title"><div><h2 id="catalog-heading">{group||'全部滤镜'}</h2><p>{shown.length} 款滤镜</p></div><Button variant="outline" size="sm" disabled={busy||!shown.some(x=>!selected.includes(x.id))} onClick={()=>add(shown)}><Plus size={16}/>加入当前列表</Button></div>
- <div className="resource-actions"><Button variant="ghost" size="sm" disabled={loading||busy} onClick={reload}>刷新资源</Button>{bundle&&<Button variant="outline" size="sm" disabled={busy||loading} onClick={exportBundle}><Download size={15}/>常用十二款</Button>}</div>
- <label className="search-field"><Search size={17}/><span className="search-label">搜索</span><input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜索名称、简称或系列" aria-label="搜索滤镜"/></label>
- {loading?<div className="loading-panel" role="status"><span className="skeleton"/><span className="skeleton"/>正在加载滤镜…</div>:error?<p className="empty-state" role="alert">{error}，请刷新重试。</p>:!shown.length?<p className="empty-state">没有匹配的滤镜。</p>:<div className="filter-sections">{sections.map(([name,items])=><section key={name} className="filter-section">{!group&&<h3 className="filter-section-title">{name}<span>{items.length} 款</span></h3>}<ul className="filter-grid">{items.map(item=><FilterCard key={item.id} item={item} index={catalog.indexOf(item)} slot={selected.indexOf(item.id)+1} busy={busy} onAdd={()=>add([item])}/>)}</ul></section>)}</div>}
+ <div className="filter-catalog-stage"><section className="catalog-panel filter-catalog" aria-labelledby="catalog-heading"><div className="panel-title catalog-heading-row"><div><h2 id="catalog-heading">{group||'全部滤镜'}</h2><p>{shown.length} 款滤镜</p></div>
+ <label className="search-field"><Search size={17}/><input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜索滤镜" aria-label="搜索滤镜"/></label></div>
+ {loading?<div className="loading-panel" role="status"><span className="skeleton"/><span className="skeleton"/>正在加载滤镜…</div>:error?<p className="empty-state" role="alert">{error}，请刷新重试。</p>:!shown.length?<p className="empty-state">没有匹配的滤镜。</p>:<div className="filter-sections">{sections.map(([name,items])=><section key={name} className="filter-section">{!group&&<h3 className="filter-section-title">{name}<span>{items.length} 款</span></h3>}<ul className="filter-grid">{items.map(item=><FilterCard key={item.id} item={item} index={catalog.indexOf(item)} slot={selected.indexOf(item.id)+1} busy={busy} onAdd={()=>add(item)}/>)}</ul></section>)}</div>}
  </section></div>
  {mobile?<Dialog open={trayOpen} onOpenChange={setTrayOpen}><DialogTrigger asChild><button className="tray-jump" type="button" aria-label={`打开资源栏，已选 ${selected.length} 款`}><ListOrdered size={17}/> 资源栏 <b>{selected.length}</b></button></DialogTrigger><DialogContent className="tray-dialog" closeLabel="关闭资源栏"><TrayBody selected={selected} ids={ids} limit={limit} busy={busy} setSelection={setSelection} reorder={reorder} exportSelected={exportSelected} sensors={sensors} mobile/><DialogDescription className="sr-only">调整滤镜槽位顺序，或下载整合 BIN。</DialogDescription></DialogContent></Dialog>:<aside className="tray" id="tray" aria-labelledby="tray-title"><TrayBody selected={selected} ids={ids} limit={limit} busy={busy} setSelection={setSelection} reorder={reorder} exportSelected={exportSelected} sensors={sensors}/></aside>}
  </div>;

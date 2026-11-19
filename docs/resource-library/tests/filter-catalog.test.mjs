@@ -8,8 +8,7 @@ function server(files,{truncated=false,status=200}={}){
  const fetcher=async(url,options)=>{
   requests.push({url,options});
   let data;
-  if(url.endsWith('/commits/main'))data={sha:commit};
-  else if(url.includes('/git/trees/'))data={truncated,tree:Object.keys(files).map(path=>({type:'blob',path}))};
+  if(url.endsWith('/resource-index/directory.json'))data=truncated?{}:{schema:'r5-resource-directory/1',revision:commit,paths:Object.keys(files)};
   else{const path=decodeURIComponent(url.split(`/${commit}/`)[1]||'');assert.ok(path in files,`missing mock ${path}`);data=files[path];}
   return {ok:status===200,status,json:async()=>data};
  };
@@ -23,7 +22,7 @@ test('discovers a newly added category and filter without catalog/build changes'
  files['filters/New Film/TX400.json']=filter('TX400');files['filters/New Film/TX400.bin']='BIN';
  result=await loadFilterCatalog(mock);assert.equal(result.catalog.length,2);
  assert.equal(result.catalog.find(c=>c.id==='TX400').category,'New Film');
- assert.equal(mock.requests.filter(r=>r.url.startsWith('https://api.github.com/')).length,4);
+ assert.equal(mock.requests.filter(r=>r.url.startsWith('https://api.github.com/')).length,0);
  assert.ok(mock.requests.every(r=>r.options.cache==='no-cache'));
 });
 test('fails clearly on missing BIN and missing descriptor',async()=>{
@@ -38,11 +37,12 @@ test('does not serve a partial tree or silently hide rate limits',async()=>{
  await assert.rejects(loadFilterCatalog(server({}, {truncated:true})),/目录不完整/);
  await assert.rejects(loadFilterCatalog(server({}, {status:403})),/请求受限/);
 });
-test('discovers current twelve-filter bundle separately from categories',async()=>{
+test('does not fetch or expose repository bundles in the page catalog',async()=>{
  const ids=Array.from({length:12},(_,i)=>'F'+i),files={};
  for(const id of ids){files[`filters/A/${id}.json`]=filter(id);files[`filters/A/${id}.bin`]='BIN';}
  files['filter-bundles/常用十二款.bin']='BIN';
  files['filter-bundles/常用十二款.json']={schema:'r5-filter-bundle/1',name:'常用十二款',filters:ids,sha256:hash};
- const result=await loadFilterCatalog(server(files));assert.equal(result.catalog.length,12);
- assert.ok(result.bundle.bin.includes(encodeURIComponent('常用十二款')));
+ const mock=server(files),result=await loadFilterCatalog(mock);assert.equal(result.catalog.length,12);
+ assert.equal('bundle' in result,false);
+ assert.equal(mock.requests.some(r=>r.url.includes('/filter-bundles/')),false);
 });

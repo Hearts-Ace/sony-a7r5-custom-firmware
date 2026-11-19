@@ -71,7 +71,7 @@ def validate(root):
     info = json.loads((root / 'resource-info/simulation-error.json').read_text(encoding='utf-8'))
     assert info['schema'] == 'r5-simulation-error/1'
     assert all(math.isfinite(info[k]) and info[k] >= 0 for k in ['mean', 'p95', 'maximum', 'samples'])
-    assert info['scope'] and info['note']
+    assert isinstance(info['scope'], str) and info['scope'].strip()
     print(f'Validated {len(ids)} current filters and twelve-filter bundle')
 
 

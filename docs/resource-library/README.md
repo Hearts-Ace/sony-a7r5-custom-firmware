@@ -2,15 +2,15 @@
 
 [打开网页](https://hearts-ace.github.io/sony-a7r5-custom-firmware/)
 
-色彩滤镜按分类浏览卡片，加入资源栏并排序，下载最多十二槽的R5NATIVE.BIN。也可直接下载常用十二款合并包。声音页支持试听、下载及本机WAV转R5S。
+色彩滤镜按分类浏览卡片，逐款加入资源栏并排序，下载最多十二槽的R5NATIVE.BIN。搜索框与当前分类标题共用一行。声音页支持试听、下载及本机WAV转R5S。
 
 ## 资源目录
 
 滤镜唯一来源是仓库根目录[filters/](../../filters/README.md)。每个分类一个目录，每款一份同名BIN和描述JSON；不维护总目录文件，不在此目录复制滤镜，也不保留日期发布包。分类名直接来自文件夹名。说明、名称、简称、更新时间、散列和可选预览来自描述JSON。
 
-页面运行时通过GitHub公开文件树自动发现这些文件，并固定到同一提交读取描述和BIN，下载核验SHA256。点击“刷新资源”可读取最新提交。新增分类、新增滤镜或替换资源文件都不需要重新构建或部署Pages。GitHub公开API每次刷新仅两次请求，描述与BIN从原始文件地址读取；API受限时页面会明确报错，稍后重试。
+资源工作流每天北京时间04:00扫描实际文件夹和文件，自动在resource-index分支生成仅含路径和源提交的directory.json；无需手动维护总catalog，不在每次提交时刷新。GitHub定时执行可能有延迟，需要立即更新时可在Actions手动运行。页面打开时从原始文件地址读取这个目录，再固定到同一提交读取描述和BIN，下载核验SHA256，不调用GitHub API。新增分类、新增滤镜或替换资源文件都不需要重新构建或部署Pages，目录刷新后重新打开页面即可加载。
 
-常用十二款放在[filter-bundles/](../../filter-bundles/)，只保留当前合并包和说明JSON，单款目录包含其全部成员。
+常用十二款保留在仓库的[filter-bundles/](../../filter-bundles/)供直接取用，网页不加载该合并包；页面下载统一通过资源栏生成。
 
 ## 更新流程
 
@@ -26,6 +26,6 @@
 
 ## 开发
 
-Node 22：npm ci；npm run build；npm run preview，打开http://127.0.0.1:4193/。页面预览也直接读取公开仓库当前资源。node --test tests/filter-catalog.test.mjs可验证自动发现、目录新增、描述错误及合并包读取。
+Node 22：npm ci；npm run build；npm run preview，打开http://127.0.0.1:4193/。页面预览也直接读取公开仓库当前资源。node --test tests/filter-catalog.test.mjs可验证自动发现、目录新增、描述错误及不加载仓库整包。
 
-Pages只在网页源码或声音资源变化时构建。filters/及filter-bundles/更新不会触发Pages，独立资源检查工作流负责验证文件，页面保持同一份构建产物。
+Pages只在网页源码或声音资源变化时构建。filters/及filter-bundles/更新不会触发Pages，每天的独立资源工作流负责验证文件并刷新目录，页面保持同一份构建产物。

@@ -1,14 +1,18 @@
-name: Validate filter resources
+name: Refresh filter resources daily
 on:
-  push:
-    branches: [main]
-    paths: ['filters/**', 'filter-bundles/**', 'resource-info/**', 'tools/validate_filter_resources.py', '.github/workflows/filter-resources.yml']
-  pull_request:
-    paths: ['filters/**', 'filter-bundles/**', 'resource-info/**', 'tools/validate_filter_resources.py', '.github/workflows/filter-resources.yml']
+  schedule:
+    # 20:00 UTC = 04:00 Asia/Shanghai on the following day.
+    - cron: '0 20 * * *'
+  workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: filter-resource-directory
+  cancel-in-progress: false
 jobs:
   validate:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,3 +20,5 @@ jobs:
         with:
           python-version: '3.12'
       - run: python tools/validate_filter_resources.py
+      - name: Update directory without rebuilding Pages
+        run: python tools/publish_resource_directory.py
