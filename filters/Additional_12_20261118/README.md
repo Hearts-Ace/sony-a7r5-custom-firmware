@@ -1,4 +1,4 @@
-# Cobalt 新完成十二款
+# 新完成十二款
 
 2026-11-18：Canon Standard、Canon Twilight 及 Classic BW 十款。每份 BIN 为槽位1，JSON可编辑；网页可跨分类合并最多12槽。
 
