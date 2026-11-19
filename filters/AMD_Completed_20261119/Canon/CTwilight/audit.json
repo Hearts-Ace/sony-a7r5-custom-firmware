@@ -1,0 +1,20 @@
+{
+  "filter": "CTwilight",
+  "category": "Canon",
+  "sha256": "d419e4e3b88253022be938bcbf5361e470934df38a920e07bb77bafb2c62f639",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 75.9546056138767,
+  "seed_validation_objective": 79.32625587169676,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 91,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "CTW",
+  "only_menu_name_changed": true
+}

@@ -1,0 +1,20 @@
+{
+  "filter": "CBWTmax100Green",
+  "category": "Classic BW",
+  "sha256": "45d7ed772270f9c1c5406687a3a8826e3e64708b90d3f69e7a6a29dbdf2f617e",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 76.95732850744655,
+  "seed_validation_objective": 85.6193087162458,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 13,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "TM100G",
+  "only_menu_name_changed": true
+}

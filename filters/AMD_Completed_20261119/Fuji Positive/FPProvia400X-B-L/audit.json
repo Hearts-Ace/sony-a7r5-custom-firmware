@@ -1,0 +1,20 @@
+{
+  "filter": "FPProvia400X-B-L",
+  "category": "Fuji Positive",
+  "sha256": "0e2877a2002af55d0995cb75d23e65862d4c490dbc5532cae2e9976a7357df6f",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 25.193893629485036,
+  "seed_validation_objective": 25.82617356632119,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 56,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "RXP400-B-L",
+  "only_menu_name_changed": true
+}

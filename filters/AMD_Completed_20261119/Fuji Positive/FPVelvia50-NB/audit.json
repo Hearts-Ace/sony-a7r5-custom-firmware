@@ -1,0 +1,20 @@
+{
+  "filter": "FPVelvia50-NB",
+  "category": "Fuji Positive",
+  "sha256": "9ef99d241c77272f70001ff0ffcddc7293bb9549a348614d93d00e6fc4e0353d",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 87.13038510359227,
+  "seed_validation_objective": 87.13038510359227,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 136,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "RVP50-NB",
+  "only_menu_name_changed": true
+}

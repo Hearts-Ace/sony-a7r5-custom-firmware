@@ -1,0 +1,22 @@
+{
+  "filter": "KEktar100-B",
+  "category": "Kodak",
+  "sha256": "77d73105dee23ed875ae50b196cb21720c3e4bddc45a20e9d7398bc0b679ebdf",
+  "response": {
+    "schema": "r5-measured-grid-response/1",
+    "preset": "r5-raw-differential-refit-20261118",
+    "sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "model": "ILCE-7RM5"
+  },
+  "validation_objective": 41.359288204682265,
+  "seed_validation_objective": 41.47961715937326,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 77,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "EKT100-B",
+  "only_menu_name_changed": true
+}

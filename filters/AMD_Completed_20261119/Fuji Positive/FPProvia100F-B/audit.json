@@ -1,0 +1,20 @@
+{
+  "filter": "FPProvia100F-B",
+  "category": "Fuji Positive",
+  "sha256": "9d457e0dc7e46eed39f4b516410b430da7347bb03246b506fe1727611f609c46",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 40.221571232566596,
+  "seed_validation_objective": 40.221571232566596,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 28,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "RDP100-B",
+  "only_menu_name_changed": true
+}

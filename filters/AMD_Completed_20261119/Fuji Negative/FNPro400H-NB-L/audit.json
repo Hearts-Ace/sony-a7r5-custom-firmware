@@ -1,0 +1,20 @@
+{
+  "filter": "FNPro400H-NB-L",
+  "category": "Fuji Negative",
+  "sha256": "bb750fc87e0378b185959e9cfa983403d24c33c0a0b52d95b913b16ade2040b5",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 35.57772104218469,
+  "seed_validation_objective": 35.57772104218469,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 43,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "400H-NB-L",
+  "only_menu_name_changed": true
+}

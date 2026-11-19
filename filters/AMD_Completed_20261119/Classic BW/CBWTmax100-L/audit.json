@@ -1,0 +1,20 @@
+{
+  "filter": "CBWTmax100-L",
+  "category": "Classic BW",
+  "sha256": "4aaafa0b8aee9c93a3da579871a5def203455e529ca0698a1844d33cb457c3d6",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 92.64022304844956,
+  "seed_validation_objective": 99.59037825322359,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 17,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "TM100L",
+  "only_menu_name_changed": true
+}

@@ -1,0 +1,20 @@
+{
+  "filter": "KCKodachrome25-B",
+  "category": "Kodachrome",
+  "sha256": "ac89078d6a606c3c0b9534b6548e74fbe715cbf597779753e6c43a750e4d1d5c",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 36.92532897699755,
+  "seed_validation_objective": 36.92532897699755,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 61,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "K25-B",
+  "only_menu_name_changed": true
+}

@@ -1,0 +1,22 @@
+{
+  "filter": "KGold200-NB",
+  "category": "Kodak",
+  "sha256": "bc0e521f51ccd9c2ac3ffc820b8ce90cddff70996a2c4b9f500ca27fc2b78f00",
+  "response": {
+    "schema": "r5-measured-grid-response/1",
+    "preset": "r5-raw-differential-refit-20261118",
+    "sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "model": "ILCE-7RM5"
+  },
+  "validation_objective": 35.11757111118089,
+  "seed_validation_objective": 35.11757111118089,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 68,
+  "max_neighbor_coefficient_step": 117,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "G200-NB",
+  "only_menu_name_changed": true
+}

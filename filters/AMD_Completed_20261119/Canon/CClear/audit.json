@@ -1,0 +1,20 @@
+{
+  "filter": "CClear",
+  "category": "Canon",
+  "sha256": "c492f6e2c88fe659984903f943a99b233344ef712746d7ec21e684601bd773fa",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 47.728405141580346,
+  "seed_validation_objective": 47.90730120921011,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 87,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "CCLR",
+  "only_menu_name_changed": true
+}

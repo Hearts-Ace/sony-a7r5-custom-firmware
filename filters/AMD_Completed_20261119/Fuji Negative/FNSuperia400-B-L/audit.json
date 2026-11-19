@@ -1,0 +1,20 @@
+{
+  "filter": "FNSuperia400-B-L",
+  "category": "Fuji Negative",
+  "sha256": "084c4ec402424623969b620352ae54f11be5962bad1ac6adfd4d906fc0ba7bab",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 26.87479240863733,
+  "seed_validation_objective": 26.87479240863733,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 26,
+  "max_neighbor_coefficient_step": 126,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "SUP400-B-L",
+  "only_menu_name_changed": true
+}

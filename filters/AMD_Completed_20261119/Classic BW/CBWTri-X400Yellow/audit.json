@@ -1,0 +1,20 @@
+{
+  "filter": "CBWTri-X400Yellow",
+  "category": "Classic BW",
+  "sha256": "6bce1539d4549739604f854fc7267d1085d17bf8f68d87710b2a343fc895c054",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 53.80960758233316,
+  "seed_validation_objective": 61.37704884156534,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 10,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "TX400Y",
+  "only_menu_name_changed": true
+}

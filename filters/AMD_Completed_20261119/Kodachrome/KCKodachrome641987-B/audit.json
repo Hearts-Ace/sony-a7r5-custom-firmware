@@ -1,0 +1,22 @@
+{
+  "filter": "KCKodachrome641987-B",
+  "category": "Kodachrome",
+  "sha256": "17d7fc8ee7be877cb5f68c0144adad6fb5080e514467d9f1450494903000b3e4",
+  "response": {
+    "schema": "r5-measured-grid-response/1",
+    "preset": "r5-raw-differential-refit-20261118",
+    "sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "model": "ILCE-7RM5"
+  },
+  "validation_objective": 30.767172476164767,
+  "seed_validation_objective": 30.767172476164767,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 53,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "K64-87-B",
+  "only_menu_name_changed": true
+}

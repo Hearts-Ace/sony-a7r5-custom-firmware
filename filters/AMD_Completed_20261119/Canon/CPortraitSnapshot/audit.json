@@ -1,0 +1,20 @@
+{
+  "filter": "CPortraitSnapshot",
+  "category": "Canon",
+  "sha256": "457d2adeb058c74a8c0cade0e400477059f42547389a04c34bdb13f3b5353b7c",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 21.905206267788373,
+  "seed_validation_objective": 21.932720445896784,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 48,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "CPSN",
+  "only_menu_name_changed": true
+}

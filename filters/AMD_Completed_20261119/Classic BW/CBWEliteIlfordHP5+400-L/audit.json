@@ -1,0 +1,20 @@
+{
+  "filter": "CBWEliteIlfordHP5+400-L",
+  "category": "Classic BW",
+  "sha256": "03e6982030baed51c2ebed3f8cf2f6b60c615cee9055f039281403b3ca623b02",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 57.86182010542566,
+  "seed_validation_objective": 67.9585844800331,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 8,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "HP5+L",
+  "only_menu_name_changed": true
+}

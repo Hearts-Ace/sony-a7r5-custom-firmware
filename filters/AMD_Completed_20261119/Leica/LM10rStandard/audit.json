@@ -1,0 +1,22 @@
+{
+  "filter": "LM10rStandard",
+  "category": "Leica",
+  "sha256": "20bf8d809710d808cb4606cba293fa94e38724d9711403bff2f50df5674c9c2a",
+  "response": {
+    "schema": "r5-measured-grid-response/1",
+    "preset": "r5-raw-differential-refit-20261118",
+    "sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "model": "ILCE-7RM5"
+  },
+  "validation_objective": 15.047421132021773,
+  "seed_validation_objective": 15.059355991804603,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 44,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "M10R-ST",
+  "only_menu_name_changed": true
+}

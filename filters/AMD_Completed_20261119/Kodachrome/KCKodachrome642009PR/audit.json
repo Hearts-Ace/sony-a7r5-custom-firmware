@@ -1,0 +1,22 @@
+{
+  "filter": "KCKodachrome642009PR",
+  "category": "Kodachrome",
+  "sha256": "05445d8a8b5128aaadb765b332f67a747be60c1d8ae22879c503d000e92e40f5",
+  "response": {
+    "schema": "r5-measured-grid-response/1",
+    "preset": "r5-raw-differential-refit-20261118",
+    "sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "model": "ILCE-7RM5"
+  },
+  "validation_objective": 41.06174837676842,
+  "seed_validation_objective": 41.06174837676842,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 57,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "K64-09-PR",
+  "only_menu_name_changed": true
+}

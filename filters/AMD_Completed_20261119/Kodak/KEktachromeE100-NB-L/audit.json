@@ -1,0 +1,22 @@
+{
+  "filter": "KEktachromeE100-NB-L",
+  "category": "Kodak",
+  "sha256": "9cda4c121f9bc6059bd9f28544b63c6dbd7d5bcb06a49d884eab73ed52f2212e",
+  "response": {
+    "schema": "r5-measured-grid-response/1",
+    "preset": "r5-raw-differential-refit-20261118",
+    "sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "model": "ILCE-7RM5"
+  },
+  "validation_objective": 25.84728933541697,
+  "seed_validation_objective": 25.84728933541697,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 37,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "E100-NB-L",
+  "only_menu_name_changed": true
+}

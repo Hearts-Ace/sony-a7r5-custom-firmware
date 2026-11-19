@@ -1,0 +1,20 @@
+{
+  "filter": "CPortraitStudio",
+  "category": "Canon",
+  "sha256": "859e6df3bd983c78465a9fb5a021602684ffcf6edd2ae14f7c6dcc27f0912d49",
+  "response": {
+    "preset": "prior-formal-operator",
+    "provenance": "pre-migration queue; audit omits response identity"
+  },
+  "validation_objective": 23.29709526320508,
+  "seed_validation_objective": 23.29709526320508,
+  "grid_min": -64,
+  "grid_max": 63,
+  "boundary_coefficients": 52,
+  "max_neighbor_coefficient_step": 127,
+  "codec_roundtrip": true,
+  "remote_cpu_replay_recorded": true,
+  "camera_verified": false,
+  "short_name": "CPST",
+  "only_menu_name_changed": true
+}
