@@ -11,10 +11,20 @@
   "order": 93,
   "type": "color-film",
   "training_error": {
-    "status": "pending",
+    "status": "available",
     "metric": "ΔE00",
-    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
-    "validation_objective": 15.047421132021773,
-    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+    "mean": 0.8173679249992013,
+    "p95": 1.9027707017267528,
+    "maximum": 6.733731264717201,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+    "encoding": "float display sRGB (clip 0..1, no 8-bit quantization) -> D65 Lab -> CIEDE2000",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "parameter_sha256": "9b1fa8a38a7c572b953137313bfa6e38e42eec3af8215d7cb73a03121f27cc40",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   }
 }
