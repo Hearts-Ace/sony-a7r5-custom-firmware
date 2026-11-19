@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWTri-X400Green",
+  "name": "Elite Kodak Tri-X 400 Green",
+  "short_name": "TX400G",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "c6ef966afb6f5e5d9aed4ba5df9f07a3c27c84841a2e4568fb164dc88315f8c6",
+  "camera_tested": false,
+  "order": 40,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 39.76965143630191,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

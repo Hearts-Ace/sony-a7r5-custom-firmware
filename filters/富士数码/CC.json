@@ -1,0 +1,25 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CC",
+  "name": "CLASSIC CHROME",
+  "short_name": "CC",
+  "series": "Fujifilm Film Simulation",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "a453278ce3d3baa4b6e01aa0134f57691fb185b572ec913f48d7eed739ed6322",
+  "camera_tested": false,
+  "order": 1,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 0.8596574864679829,
+    "p95": 1.9919132191632156,
+    "maximum": 6.855648003178646,
+    "samples": 63111,
+    "split": "test",
+    "protocol": "fuji-algorithm-holdout-63111",
+    "label": "算法留出测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  }
+}

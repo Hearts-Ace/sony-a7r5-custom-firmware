@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWTri-X400Yellow",
+  "name": "Elite Kodak Tri-X 400 Yellow",
+  "short_name": "TX400Y",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "6bce1539d4549739604f854fc7267d1085d17bf8f68d87710b2a343fc895c054",
+  "camera_tested": false,
+  "order": 42,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 53.80960758233316,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

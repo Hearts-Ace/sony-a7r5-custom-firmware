@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "KGold200-NB",
+  "name": "Elite Kodak Gold200 NB",
+  "short_name": "G200-NB",
+  "series": "Kodak",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "bc0e521f51ccd9c2ac3ffc820b8ce90cddff70996a2c4b9f500ca27fc2b78f00",
+  "camera_tested": false,
+  "order": 90,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 35.11757111118089,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "FPProvia400X-NB-L",
+  "name": "Elite Fuji Provia400X NB (linear)",
+  "short_name": "RXP400-NB-L",
+  "series": "Fuji Positive",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "d48cea1b88d3fe30db109c13e0de237b20e7e23b6ce62a80f75a1ac084cb5c4c",
+  "camera_tested": false,
+  "order": 62,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 24.926751955203745,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

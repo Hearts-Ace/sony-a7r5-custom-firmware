@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWEliteIlfordHP5+-a1a5",
+  "name": "Elite Ilford HP5+ 400 Green",
+  "short_name": "HP5+G",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "63d8cef9acf5f1e3bb1b4c6dec4798992ebd9f3b5df7e7536899634e2b28ea20",
+  "camera_tested": false,
+  "order": 30,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 65.92715524987649,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

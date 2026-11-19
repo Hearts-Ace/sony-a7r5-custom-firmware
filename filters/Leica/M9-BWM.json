@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LM9-BWMedium",
+  "name": "Leica M9 BW Medium",
+  "short_name": "M9-BWM",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "87bc7c6bf1a375d59f09bb45d43e2f32577f29a97d7dd94bb0cb042404d0e73d",
+  "camera_tested": false,
+  "order": 96,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 30.139821849996352,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

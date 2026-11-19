@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "KEktar100-B",
+  "name": "Elite Kodak Ektar100 B",
+  "short_name": "EKT100-B",
+  "series": "Kodak",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "77d73105dee23ed875ae50b196cb21720c3e4bddc45a20e9d7398bc0b679ebdf",
+  "camera_tested": false,
+  "order": 84,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 41.359288204682265,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

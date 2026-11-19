@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "FPVelvia100-B",
+  "name": "Elite Fuji Velvia100 B",
+  "short_name": "RVP100-B",
+  "series": "Fuji Positive",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "ac78cb69c69eba22e25fd3a55d7fd4468da5aab79c8c4853782a42da1b989ddb",
+  "camera_tested": false,
+  "order": 63,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 68.24745337649374,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

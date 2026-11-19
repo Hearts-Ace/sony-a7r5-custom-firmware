@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LM9-BWLow",
+  "name": "Leica M9 BW Low",
+  "short_name": "M9-BWL",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "83de8e7cea3522eb45f8d208289a7d26fce3d860e51af4d7eb776ae4c263b668",
+  "camera_tested": false,
+  "order": 95,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 33.74365620863301,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

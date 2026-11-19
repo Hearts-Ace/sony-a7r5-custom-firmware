@@ -1,0 +1,25 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NN",
+  "name": "NOSTALGIC Neg.",
+  "short_name": "NN",
+  "series": "Fujifilm Film Simulation",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "039fa6b81c6ec87cd95c2fa1f2e9d5b01767abc9e7b1ad874325e91644e342bd",
+  "camera_tested": false,
+  "order": 10,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.0908045845641496,
+    "p95": 2.7082627525800365,
+    "maximum": 7.81279799457301,
+    "samples": 63111,
+    "split": "test",
+    "protocol": "fuji-algorithm-holdout-63111",
+    "label": "算法留出测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  }
+}

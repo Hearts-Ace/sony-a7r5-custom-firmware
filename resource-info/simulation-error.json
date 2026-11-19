@@ -1,0 +1,13 @@
+{
+  "schema": "r5-simulation-error/1",
+  "title": "模拟到实机的误差",
+  "metric": "ΔE00",
+  "mean": 0.23242024699198652,
+  "p95": 0.5560591465376302,
+  "maximum": 1.4575278744496434,
+  "samples": 1627,
+  "protocol": "NC网格色卡校验",
+  "scope": "最新算子，固定同一实拍ZERO输入；既有开发数据，非新盲测。",
+  "note": "衡量网格算子的模拟与机内输出差异，不代表完整RAW渲染或任意实拍场景误差。",
+  "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+}

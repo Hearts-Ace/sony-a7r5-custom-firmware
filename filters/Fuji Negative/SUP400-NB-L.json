@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "FNSuperia400-NB-L",
+  "name": "Elite Fuji Superia400 NB (linear)",
+  "short_name": "SUP400-NB-L",
+  "series": "Fuji Negative",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "c44cffbd96befa561a79bcbeaddffd756486be688eefdd776d866062992a157e",
+  "camera_tested": false,
+  "order": 54,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 28.384408488251786,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

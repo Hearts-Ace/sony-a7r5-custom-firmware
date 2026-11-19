@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CFaithful",
+  "name": "Canon Faithful",
+  "short_name": "CFA",
+  "series": "Canon",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "5cf1153c25e53bde62e9b5a46aec9a7ad06100dbd18d833d291b61fea60ab49f",
+  "camera_tested": false,
+  "order": 17,
+  "type": "digital",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 26.665385295565894,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

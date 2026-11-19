@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "FPProvia100F-NB-L",
+  "name": "Elite Fuji Provia100F NB (linear)",
+  "short_name": "RDP100-NB-L",
+  "series": "Fuji Positive",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "b5a02c5342f926ae46148ba9f94f01f13b1a5dd761f5ad8eebc32c6de5712f5b",
+  "camera_tested": false,
+  "order": 58,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 24.86873353642558,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

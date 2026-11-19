@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "KCKodachrome642009PR",
+  "name": "Kodachrome 64 2009 PR",
+  "short_name": "K64-09-PR",
+  "series": "Kodachrome",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "05445d8a8b5128aaadb765b332f67a747be60c1d8ae22879c503d000e92e40f5",
+  "camera_tested": false,
+  "order": 79,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 41.06174837676842,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

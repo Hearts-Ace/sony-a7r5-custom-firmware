@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CStandard",
+  "name": "Canon Standard",
+  "short_name": "CST",
+  "series": "Canon",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "d489e3668af38245b510c50b9c85504e8b20470c4c40f158066f1e260084763b",
+  "camera_tested": false,
+  "order": 26,
+  "type": "digital",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 25.227255159127754,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

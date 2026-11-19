@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CLandscape",
+  "name": "Canon Landscape",
+  "short_name": "CLS",
+  "series": "Canon",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "51d58c2d31025897b302368c07ad71ce7b43067df589afc8629deef509c0013d",
+  "camera_tested": false,
+  "order": 19,
+  "type": "digital",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 34.12209762907448,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

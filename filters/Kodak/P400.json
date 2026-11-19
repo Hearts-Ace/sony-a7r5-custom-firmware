@@ -1,0 +1,25 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "P400",
+  "name": "Portra400NB",
+  "short_name": "P400",
+  "series": "Portra",
+  "description": "",
+  "updated": "2026-11-17",
+  "sha256": "77511022442a3ecba79a304b32b32aefe1c483290935ab20da992d74fe0979dc",
+  "camera_tested": false,
+  "order": 13,
+  "type": "color-film",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.304331317384927,
+    "p95": 2.9797116801485837,
+    "maximum": 11.92460510314385,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809"
+  }
+}

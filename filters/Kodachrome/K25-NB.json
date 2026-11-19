@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "KCKodachrome25-NB",
+  "name": "Kodachrome 25 NB",
+  "short_name": "K25-NB",
+  "series": "Kodachrome",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "2a596d1dbe0ec1da2b44b7070e80b7dd40969e0fd20856b1a69f721b56506d4d",
+  "camera_tested": false,
+  "order": 72,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 39.51349666086099,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

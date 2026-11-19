@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "KEktachromeE100-NB-L",
+  "name": "Elite Kodak EktachromeE100 NB (linear)",
+  "short_name": "E100-NB-L",
+  "series": "Kodak",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "9cda4c121f9bc6059bd9f28544b63c6dbd7d5bcb06a49d884eab73ed52f2212e",
+  "camera_tested": false,
+  "order": 83,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 25.84728933541697,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

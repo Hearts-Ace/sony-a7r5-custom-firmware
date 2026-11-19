@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWTmax100",
+  "name": "Elite Kodak Tmax 100",
+  "short_name": "TM100",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "04521c28cfd9714cd2bc4c9ee1c7e184900b87f209fe04a800a903e0ec4f77d6",
+  "camera_tested": false,
+  "order": 34,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 56.787902858707675,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

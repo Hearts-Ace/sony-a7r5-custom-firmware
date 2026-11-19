@@ -1,0 +1,25 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "EBB",
+  "name": "ETERNA BLEACH BYPASS",
+  "short_name": "EBB",
+  "series": "Fujifilm Film Simulation",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "8540434423e93fd759443dc69ccecf2741387a30dbd16c3740ab1a5fbcae08a5",
+  "camera_tested": false,
+  "order": 2,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.107646732413597,
+    "p95": 2.6785230037884675,
+    "maximum": 9.775942398967134,
+    "samples": 63111,
+    "split": "test",
+    "protocol": "fuji-algorithm-holdout-63111",
+    "label": "算法留出测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  }
+}

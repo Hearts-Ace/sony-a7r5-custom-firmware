@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWTri-X400Red",
+  "name": "Elite Kodak Tri-X 400 Red",
+  "short_name": "TX400R",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "6cc4f6d9033c507937e12a9901c03234da0ad60bc1f2fe79d293d1d56fa360f8",
+  "camera_tested": false,
+  "order": 41,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 98.53539294052003,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

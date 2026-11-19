@@ -1,0 +1,25 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NC",
+  "name": "CLASSIC Neg.",
+  "short_name": "NC",
+  "series": "Fujifilm Film Simulation",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "1c949c4fc92a120546458c766903f23e0ea3364a9f4fbf315eafa55c09289992",
+  "camera_tested": false,
+  "order": 4,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.1730771950741001,
+    "p95": 2.7880270174064954,
+    "maximum": 10.448945085510905,
+    "samples": 63111,
+    "split": "test",
+    "protocol": "fuji-algorithm-holdout-63111",
+    "label": "算法留出测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  }
+}

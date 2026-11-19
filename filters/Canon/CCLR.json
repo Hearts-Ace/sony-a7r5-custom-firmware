@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CClear",
+  "name": "Canon Clear",
+  "short_name": "CCLR",
+  "series": "Canon",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "c492f6e2c88fe659984903f943a99b233344ef712746d7ec21e684601bd773fa",
+  "camera_tested": false,
+  "order": 15,
+  "type": "digital",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 47.728405141580346,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

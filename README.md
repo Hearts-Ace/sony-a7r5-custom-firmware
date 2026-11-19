@@ -6,10 +6,9 @@
 - [4.65 验证摘要](publication/4.65/validation.json) · [4.65 源码锁](firmware/r5/sources.lock.json)
 - [六槽回读与解放工具](tools/r5-slots/README.md)
 - [在线滤镜与声音资源库](https://hearts-ace.github.io/sony-a7r5-custom-firmware/)：选择滤镜、下载整合 BIN，试听/下载 5 款快门声，转换自己的 WAV
-- [Canon 十二款单滤镜](filters/Canon_12_20261118/README.md)：AMD 正式训练已完成的 Canon 第一批
+- [当前单滤镜目录](filters/README.md)：按网页分类保存，每款只保留最新 BIN 与描述 JSON
 - [声音安装与文件目录](sounds/README.md) · [全部声音 ZIP](sounds/R5-Sounds-4.55.zip)
-- [十二款滤镜BIN](filters/FUJ_12_v45/README.md)
-- [NS／NN 新增单滤镜（PRO Neg. Std／NOSTALGIC Neg.）](filters/Fuji_NS_NN_20261117/README.md)
+- [常用十二款合并包](filter-bundles/常用十二款.bin) · [槽位说明](filter-bundles/常用十二款.json)
 - [滤镜训练与网格工作台](https://github.com/Hearts-Ace/sony-r5-colorlab)
 
 本项目以魔改线方案为主，不再提供macOS刷写工作台；六槽工具仅用于独立读取和限定设置修复，固件本身不自动补槽。
@@ -26,4 +25,4 @@ python3 firmware/r5/build.py --inputs /path/to/inputs.json --output /path/to/new
 来源和许可见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 
-当前正式富士滤镜已于2026-11-19更新：[整包、单滤镜与测试结果](filters/FUJ_12_v45/README.md)。NS、NN独立提供；历史日期目录为存档。
+滤镜不再按发布日期分包。更新filters/内的BIN与同名描述JSON后，网页运行时自动读取；新增资源无需重新部署Pages。

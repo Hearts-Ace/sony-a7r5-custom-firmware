@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "KCKodachrome641987PR",
+  "name": "Kodachrome 64 1987 PR",
+  "short_name": "K64-87-PR",
+  "series": "Kodachrome",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "b7bdfa2bf3fa11751dbcf9d2b6b268794abf4ea8fd9bb6649d91efd242ac08d1",
+  "camera_tested": false,
+  "order": 76,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 31.295787509166402,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

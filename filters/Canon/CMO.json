@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CMonochrome",
+  "name": "Canon Monochrome",
+  "short_name": "CMO",
+  "series": "Canon",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "604958a9ee9251dbe460436f1558f0c5353d61b619bef40b23184b478e160034",
+  "camera_tested": false,
+  "order": 20,
+  "type": "monochrome",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 43.7717367108965,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "FNPro400H-NB",
+  "name": "Elite Fuji Pro400H NB",
+  "short_name": "400H-NB",
+  "series": "Fuji Negative",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "f13fac252b67b90fbffee22d1293a431fb7a68209c09a055c0dd72cd2e13e8b7",
+  "camera_tested": false,
+  "order": 49,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 32.93500856471595,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

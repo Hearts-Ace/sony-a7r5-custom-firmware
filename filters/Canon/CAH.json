@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CAutumnHues",
+  "name": "Canon Autumn Hues",
+  "short_name": "CAH",
+  "series": "Canon",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "b74ace67f087db4617cedce03add6c5752759323219e19f6fc1a3876d5a5db5f",
+  "camera_tested": false,
+  "order": 14,
+  "type": "digital",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 28.94827924812023,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

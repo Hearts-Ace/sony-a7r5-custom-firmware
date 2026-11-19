@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LM10r-BW",
+  "name": "Leica M10r BW",
+  "short_name": "M10R-BW",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "fc8ca121ca0fb2f5461562e5d576a970d156b4c3a1021d30d4e3811022ee59ce",
+  "camera_tested": false,
+  "order": 92,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 50.05903421103294,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

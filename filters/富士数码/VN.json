@@ -1,0 +1,25 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "VN",
+  "name": "Velvia",
+  "short_name": "VN",
+  "series": "Fujifilm Film Simulation",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "d51458b16c75b5a95a3cf301e7fc9c2b2bc1902670c2c3a17599a0243e20dd09",
+  "camera_tested": false,
+  "order": 8,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.57723627161629,
+    "p95": 3.709477727324382,
+    "maximum": 8.12684427732464,
+    "samples": 63111,
+    "split": "test",
+    "protocol": "fuji-algorithm-holdout-63111",
+    "label": "算法留出测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  }
+}

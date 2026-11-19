@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "KEktar100-B-L",
+  "name": "Elite Kodak Ektar100 B (linear)",
+  "short_name": "EKT100-B-L",
+  "series": "Kodak",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "2f4bfb57052524cc97c3d641000d899f37bc6a51a9c1933d0c221cec65768ddc",
+  "camera_tested": false,
+  "order": 85,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 31.465546022960158,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

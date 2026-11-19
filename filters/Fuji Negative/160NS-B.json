@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "FNPro160NS-B",
+  "name": "Elite Fuji Pro160NS B",
+  "short_name": "160NS-B",
+  "series": "Fuji Negative",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "e8fedb9a73f4dd1c12ee478f5566b5c010beda59b0fda7a68fde913883335dd3",
+  "camera_tested": false,
+  "order": 43,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 35.727099171914716,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

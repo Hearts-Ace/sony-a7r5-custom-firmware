@@ -1,0 +1,25 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "RN",
+  "name": "理光负片",
+  "short_name": "RN",
+  "series": "Ricoh GR",
+  "description": "",
+  "updated": "2026-11-17",
+  "sha256": "f04fe51e80175c3bdff531f26d7dc990b967e5915b0d4872daa94608ab33b61f",
+  "camera_tested": false,
+  "order": 12,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 0.9649688398929692,
+    "p95": 2.1974915051097854,
+    "maximum": 8.412310805272552,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809"
+  }
+}

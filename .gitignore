@@ -42,4 +42,6 @@ analysis/sony_write_path_20261008/reference/
 
 # Published filter BINs are source-controlled downloadable resources.
 !filters/**/*.bin
-!docs/resource-library/data/filters/*.bin
+!filters/**/*.jpg
+!filters/**/*.JPG
+!filter-bundles/*.bin

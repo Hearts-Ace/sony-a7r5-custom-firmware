@@ -1,0 +1,25 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "PV",
+  "name": "PROVIA",
+  "short_name": "PV",
+  "series": "Fujifilm Film Simulation",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "ffe3a9a48dee70e6e6365d89a664c82888673307cec44d4f05f9869c8cc857c6",
+  "camera_tested": false,
+  "order": 6,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.1603663435844274,
+    "p95": 2.9241997325282085,
+    "maximum": 6.878390449959274,
+    "samples": 63111,
+    "split": "test",
+    "protocol": "fuji-algorithm-holdout-63111",
+    "label": "算法留出测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  }
+}

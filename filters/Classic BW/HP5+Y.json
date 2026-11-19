@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWEliteIlfordHP5+-23e3",
+  "name": "Elite Ilford HP5+ 400 Yellow",
+  "short_name": "HP5+Y",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "bd5f5ead0a78bbfbf2584afa6ec1fe8d1fa6b16bc82d4f96d1f94d21e0cea300",
+  "camera_tested": false,
+  "order": 28,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 79.30118800744039,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

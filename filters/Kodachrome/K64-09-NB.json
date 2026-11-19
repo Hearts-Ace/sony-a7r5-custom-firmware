@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "KCKodachrome642009-NB",
+  "name": "Kodachrome 64 2009 NB",
+  "short_name": "K64-09-NB",
+  "series": "Kodachrome",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "6c8c00a7c6d4f1da707df7ee422705011e2626d09588f01e41f40e57477cd02b",
+  "camera_tested": false,
+  "order": 78,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 30.551350868863405,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

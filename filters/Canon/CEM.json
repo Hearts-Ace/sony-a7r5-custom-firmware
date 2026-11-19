@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CEmerald",
+  "name": "Canon Emerald",
+  "short_name": "CEM",
+  "series": "Canon",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "5c1ce13051596498bc5d953f673b2042070d4461dcefa3cece635d02138eec88",
+  "camera_tested": false,
+  "order": 16,
+  "type": "digital",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 61.671166874535814,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

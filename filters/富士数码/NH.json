@@ -1,0 +1,25 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NH",
+  "name": "PRO Neg. Hi",
+  "short_name": "NH",
+  "series": "Fujifilm Film Simulation",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "0d170fd1ce6fdeed45c53c796f99b7d7d0429a6a810b76b4c258b2d0075ddeab",
+  "camera_tested": false,
+  "order": 5,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.0990346650961496,
+    "p95": 2.8237537311990866,
+    "maximum": 7.718966683749727,
+    "samples": 63111,
+    "split": "test",
+    "protocol": "fuji-algorithm-holdout-63111",
+    "label": "算法留出测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  }
+}

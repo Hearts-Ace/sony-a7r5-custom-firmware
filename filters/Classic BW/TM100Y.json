@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWTmax100Yellow",
+  "name": "Elite Kodak Tmax 100 Yellow",
+  "short_name": "TM100Y",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "974a4ce4f5f5e4e6a9893b18134b43670c20dff7a512176d63db69bc16f68651",
+  "camera_tested": false,
+  "order": 37,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 83.79843752525424,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

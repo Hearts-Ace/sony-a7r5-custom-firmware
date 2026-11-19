@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LM9-BWRetro",
+  "name": "Leica M9 BW Retro",
+  "short_name": "M9-BWR",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "7445db249e4645ec63b0836a59d553a68bad2c759fb8643e5d9a7de9d038b197",
+  "camera_tested": false,
+  "order": 97,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 22.867965753679556,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

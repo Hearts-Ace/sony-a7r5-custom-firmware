@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CNostalgia",
+  "name": "Canon Nostalgia",
+  "short_name": "CNS",
+  "series": "Canon",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "9c287e14da5b02455db0e962079850686da44452d21e00f5b537904c754910de",
+  "camera_tested": false,
+  "order": 22,
+  "type": "digital",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 38.14881912786861,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

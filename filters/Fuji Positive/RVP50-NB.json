@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "FPVelvia50-NB",
+  "name": "Elite Fuji Velvia50 NB",
+  "short_name": "RVP50-NB",
+  "series": "Fuji Positive",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "9ef99d241c77272f70001ff0ffcddc7293bb9549a348614d93d00e6fc4e0353d",
+  "camera_tested": false,
+  "order": 69,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 87.13038510359227,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

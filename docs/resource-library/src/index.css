@@ -290,6 +290,22 @@ button:disabled{box-shadow:none;transform:none}
 .film-identity .ui-icon{margin-left:0}
 
 /* Phones retain the desktop card internals in a compact two-column grid. */
+.resource-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px;margin-top:16px}
+.intro{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.simulation-error{width:320px;max-width:100%;padding:20px 24px;border-left:1px solid var(--color-line);flex-shrink:0}
+.error-title{display:flex;justify-content:space-between;gap:16px;font-size:13px;line-height:20px;font-weight:500}
+.error-title small{color:var(--color-muted);font-size:11px;font-weight:400}
+.error-values{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:16px 0 12px}
+.error-values dt{font-size:11px;line-height:16px;color:var(--color-muted)}
+.error-values dd{font-size:24px;line-height:32px;font-variant-numeric:tabular-nums;font-weight:500;letter-spacing:-.03em;margin:4px 0 0}
+.error-scope{font-size:11px!important;line-height:18px!important;color:var(--color-muted);margin:8px 0!important}
+.simulation-error details{font-size:11px;line-height:18px;color:var(--color-muted)}
+.simulation-error summary{cursor:pointer;width:max-content}
+.simulation-error details p{margin-top:8px}
+.training-error{padding:16px 0;border-block:1px solid var(--color-line)}
+.training-error>.muted{font-size:12px;line-height:20px;margin-top:8px}
+.filter-error{font-variant-numeric:tabular-nums}
+@media(max-width:900px){.simulation-error{border-left:0;border-top:1px solid var(--color-line);padding:16px 0 0;width:100%}.simulation-error .error-values{max-width:320px}.intro{gap:24px}}
 @media(max-width:639px){
  .filter-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
  .filter-card{aspect-ratio:auto;height:132px}

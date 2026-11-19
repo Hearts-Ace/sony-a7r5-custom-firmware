@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWEliteIlfordHP5+400-L",
+  "name": "Elite Ilford HP5+ 400 (linear)",
+  "short_name": "HP5+L",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "03e6982030baed51c2ebed3f8cf2f6b60c615cee9055f039281403b3ca623b02",
+  "camera_tested": false,
+  "order": 31,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 57.86182010542566,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

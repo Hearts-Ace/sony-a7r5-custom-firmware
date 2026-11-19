@@ -1,0 +1,25 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "RA",
+  "name": "REALA ACE",
+  "short_name": "RA",
+  "series": "Fujifilm Film Simulation",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "5aa135bc609ef1bfbdc93b156f1ad024cb2c73cef045ad8cec4760c3df687a41",
+  "camera_tested": false,
+  "order": 7,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.0883560110851858,
+    "p95": 2.3014372952921036,
+    "maximum": 9.042891781520058,
+    "samples": 63111,
+    "split": "test",
+    "protocol": "fuji-algorithm-holdout-63111",
+    "label": "算法留出测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  }
+}

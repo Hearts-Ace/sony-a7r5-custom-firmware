@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LM10rStandard",
+  "name": "Leica M10r Standard",
+  "short_name": "M10R-ST",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "20bf8d809710d808cb4606cba293fa94e38724d9711403bff2f50df5674c9c2a",
+  "camera_tested": false,
+  "order": 93,
+  "type": "color-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 15.047421132021773,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

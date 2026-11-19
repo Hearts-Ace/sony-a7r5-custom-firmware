@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWTmax100Green",
+  "name": "Elite Kodak Tmax 100 Green",
+  "short_name": "TM100G",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "45d7ed772270f9c1c5406687a3a8826e3e64708b90d3f69e7a6a29dbdf2f617e",
+  "camera_tested": false,
+  "order": 35,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 76.95732850744655,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

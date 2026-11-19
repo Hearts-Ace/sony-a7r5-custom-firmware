@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CPortrait",
+  "name": "Canon Portrait",
+  "short_name": "CP",
+  "series": "Canon",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "2c43fa9cbd98ba6eb7b83f17cf0de16471e953262af7d005bc00b6ce698ddc1d",
+  "camera_tested": false,
+  "order": 25,
+  "type": "digital",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 44.140044208114126,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

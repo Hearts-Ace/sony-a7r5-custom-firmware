@@ -1,0 +1,25 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "AS",
+  "name": "ASTIA",
+  "short_name": "AS",
+  "series": "Fujifilm Film Simulation",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "96da9895e100d6da2a9e72d727b5e59566c367dde6d4016ad999d16d9ee7e93a",
+  "camera_tested": false,
+  "order": 0,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.155005605033426,
+    "p95": 2.9383029882535325,
+    "maximum": 9.135061637508402,
+    "samples": 63111,
+    "split": "test",
+    "protocol": "fuji-algorithm-holdout-63111",
+    "label": "算法留出测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  }
+}

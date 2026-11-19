@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWTri-X400-L",
+  "name": "Elite Kodak Tri-X 400 (linear)",
+  "short_name": "TX400L",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-19",
+  "sha256": "409ad393063f19cefd0eb55d51a3d0a0bb9cac7b686e1b470c8101983e1728d0",
+  "camera_tested": false,
+  "order": 39,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 45.187309241531075,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}

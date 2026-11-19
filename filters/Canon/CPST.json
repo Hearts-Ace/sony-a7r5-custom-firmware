@@ -1,0 +1,20 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CPortraitStudio",
+  "name": "Canon Portrait Studio",
+  "short_name": "CPST",
+  "series": "Canon",
+  "description": "",
+  "updated": "2026-11-18",
+  "sha256": "859e6df3bd983c78465a9fb5a021602684ffcf6edd2ae14f7c6dcc27f0912d49",
+  "camera_tested": false,
+  "order": 24,
+  "type": "digital",
+  "training_error": {
+    "status": "pending",
+    "metric": "ΔE00",
+    "reason": "结果包未包含最终色差统计，等待原始训练记录。",
+    "validation_objective": 23.29709526320508,
+    "validation_objective_label": "复合验证目标值（不是ΔE00）"
+  }
+}
