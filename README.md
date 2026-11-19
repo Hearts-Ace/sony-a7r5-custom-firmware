@@ -9,7 +9,6 @@
 - [当前单滤镜目录](filters/README.md)：按网页分类保存，每款只保留最新 BIN 与描述 JSON
 - [声音安装与文件目录](sounds/README.md) · [全部声音 ZIP](sounds/R5-Sounds-4.55.zip)
 - [常用十二款合并包](filter-bundles/常用十二款.bin) · [槽位说明](filter-bundles/常用十二款.json)
-- [滤镜训练与网格工作台](https://github.com/Hearts-Ace/sony-r5-colorlab)
 
 本项目以魔改线方案为主，不再提供macOS刷写工作台；六槽工具仅用于独立读取和限定设置修复，固件本身不自动补槽。
 
@@ -20,7 +19,7 @@ python3 firmware/r5/build.py --inputs /path/to/inputs.json --output /path/to/new
 
 自行提供散列匹配的原厂 R5 4.00 输入、外部签名材料和工具链。签名、CRC、只读文件系统及全部解密明文核验通过。4.65 尚未实机验证，不能据此确认放大卡死或设置加载故障已解决。
 
-公开范围为源码、脚本、滤镜BIN、R5S音频及校验摘要，完整DAT/AP/CP、机身备份、签名材料及设备原始日志不发布。独立照片/PPLUT分支未合入。旧版本文件及旧发布记录已移除，Git提交历史保留。
+公开范围为固件源码、设备工具、滤镜BIN、资源描述、R5S音频及校验摘要。色彩拟合方案、训练台、模拟算子、训练数据和相关研究源码不在本仓库发布。完整DAT/AP/CP、机身备份、签名材料及设备原始日志不发布。独立照片/PPLUT分支未合入。
 
 来源和许可见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 

@@ -24,6 +24,10 @@ analysis/*/upstream/
 analysis/sony_write_path_20261008/reference/
 
 # Local build/runtime and private fitting inputs
+R5ColorLab/
+R5GridCalibrator/
+research/r5_custom_lut/
+publication/colorlab-*/
 *.o
 *.so
 *.dylib
