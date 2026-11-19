@@ -3,7 +3,8 @@ from pathlib import Path, PurePosixPath
 import subprocess
 
 root = Path(__file__).resolve().parents[1]
-paths = subprocess.check_output(['git', '-C', str(root), '-c', 'core.quotepath=false', 'ls-files', '-z']).decode().split('\0')
+paths = set(subprocess.check_output(['git', '-C', str(root), '-c', 'core.quotepath=false', 'ls-files', '-z']).decode().split('\0'))
+paths.update(subprocess.check_output(['git', '-C', str(root), '-c', 'core.quotepath=false', 'log', 'HEAD', '--format=', '--name-only']).decode().splitlines())
 blocked = []
 for path in filter(None, paths):
     parts = PurePosixPath(path).parts
