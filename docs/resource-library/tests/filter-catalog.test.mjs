@@ -8,7 +8,7 @@ function server(files,{truncated=false,status=200}={}){
  const fetcher=async(url,options)=>{
   requests.push({url,options});
   let data;
-  if(url.endsWith('/resource-index/directory.json'))data=truncated?{}:{schema:'r5-resource-directory/1',revision:commit,paths:Object.keys(files)};
+  if(new URL(url).pathname.endsWith('/resource-index/directory.json'))data=truncated?{}:{schema:'r5-resource-directory/1',revision:commit,paths:Object.keys(files)};
   else{const path=decodeURIComponent(url.split(`/${commit}/`)[1]||'');assert.ok(path in files,`missing mock ${path}`);data=files[path];}
   return {ok:status===200,status,json:async()=>data};
  };
