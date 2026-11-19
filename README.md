@@ -24,3 +24,6 @@ python3 firmware/r5/build.py --inputs /path/to/inputs.json --output /path/to/new
 公开范围为源码、脚本、滤镜BIN、R5S音频及校验摘要，完整DAT/AP/CP、机身备份、签名材料及设备原始日志不发布。独立照片/PPLUT分支未合入。旧版本文件及旧发布记录已移除，Git提交历史保留。
 
 来源和许可见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+
+当前正式富士滤镜已于2026-11-19更新：[整包、单滤镜与测试结果](filters/FUJ_12_v45/README.md)。NS、NN独立提供；历史日期目录为存档。
