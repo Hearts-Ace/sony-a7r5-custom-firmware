@@ -8,8 +8,8 @@ function server(files,{truncated=false,status=200}={}){
  const fetcher=async(url,options)=>{
   requests.push({url,options});
   let data;
-  if(new URL(url).pathname.endsWith('/resource-index/directory.json'))data=truncated?{}:{schema:'r5-resource-directory/1',revision:commit,paths:Object.keys(files)};
-  else{const path=decodeURIComponent(url.split(`/${commit}/`)[1]||'');assert.ok(path in files,`missing mock ${path}`);data=files[path];}
+  if(/[@/]resource-index\/directory\.json$/.test(new URL(url).pathname))data=truncated?{}:{schema:'r5-resource-directory/1',revision:commit,paths:Object.keys(files)};
+  else{const path=decodeURIComponent(url.split(new URL(url).hostname==='raw.githubusercontent.com'?`/${commit}/`:`@${commit}/`)[1]||'');assert.ok(path in files,`missing mock ${path}`);data=files[path];}
   return {ok:status===200,status,json:async()=>data};
  };
  return {fetcher,requests};
@@ -45,4 +45,9 @@ test('does not fetch or expose repository bundles in the page catalog',async()=>
  const mock=server(files),result=await loadFilterCatalog(mock);assert.equal(result.catalog.length,12);
  assert.equal('bundle' in result,false);
  assert.equal(mock.requests.some(r=>r.url.includes('/filter-bundles/')),false);
+});
+test('loads the whole catalog when raw GitHub is blocked',async()=>{
+ const mock=server({'filters/A/NC.json':filter('NC'),'filters/A/NC.bin':'BIN'});
+ const fetcher=async(url,options)=>{assert.ok(!url.startsWith('https://raw.githubusercontent.com/'));return mock.fetcher(url,options);};
+ assert.equal((await loadFilterCatalog({fetcher})).catalog[0].id,'NC');
 });

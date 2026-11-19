@@ -1,16 +1,10 @@
+import {readResource} from './resource-fetch.mjs';
 // Discover resource files at runtime. No generated catalog or Pages rebuild.
 export const FILTER_REPOSITORY = 'Hearts-Ace/sony-a7r5-custom-firmware';
 const RAW = 'https://raw.githubusercontent.com';
 const encodePath = path => path.split('/').map(encodeURIComponent).join('/');
 
-async function json(fetcher, url, signal) {
- const response = await fetcher(url, {signal, cache:'no-cache'});
- if (!response.ok) {
-  if (response.status === 403 || response.status === 429) throw Error('资源目录请求受限，请稍后刷新');
-  throw Error(`资源读取失败 (${response.status})`);
- }
- return response.json();
-}
+const json=(fetcher,url,signal)=>readResource(url,{fetcher,signal});
 
 async function mapLimit(items, count, callback) {
  const result = new Array(items.length); let next = 0;
