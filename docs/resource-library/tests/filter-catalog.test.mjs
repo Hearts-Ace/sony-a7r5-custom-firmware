@@ -51,3 +51,22 @@ test('loads the whole catalog when raw GitHub is blocked',async()=>{
  const fetcher=async(url,options)=>{assert.ok(!url.startsWith('https://raw.githubusercontent.com/'));return mock.fetcher(url,options);};
  assert.equal((await loadFilterCatalog({fetcher})).catalog[0].id,'NC');
 });
+
+test('unchanged directory reuses the catalog; a new revision reloads metrics',async()=>{
+ const files={'filters/A/NC.json':filter('NC'),'filters/A/NC.bin':'BIN'};
+ const mock=server(files),previous=await loadFilterCatalog(mock);
+ mock.requests.length=0;
+ assert.equal(await loadFilterCatalog({...mock,previous}),previous);
+ assert.equal(mock.requests.length,3);
+ files['filters/A/NC.json']={...filter('NC'),training_error:{mean:1.057279}};
+ const next='c'.repeat(40);
+ const fetcher=async(url,options)=>{
+  const response=await mock.fetcher(url.replaceAll(next,commit),options);
+  if(url.includes('/directory.json'))return {...response,json:async()=>({...await response.json(),revision:next})};
+  return response;
+ };
+ const result=await loadFilterCatalog({fetcher,previous});
+ assert.equal(result.revision,next);
+ assert.equal(result.catalog[0].training_error.mean,1.057279);
+ assert.notEqual(result,previous);
+});

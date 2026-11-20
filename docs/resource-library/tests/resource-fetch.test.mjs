@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readResource,resourceSources} from '../src/lib/resource-fetch.mjs';
+import {readResource,resourceSources,readResourceDirectory} from '../src/lib/resource-fetch.mjs';
 const url='https://raw.githubusercontent.com/Hearts-Ace/sony-a7r5-custom-firmware/abc/filters/A/NC.bin';
 test('keeps the exact revision, encoded path and query across sources',()=>{
  const sources=resourceSources(url+'?check=123');
@@ -32,4 +32,14 @@ test('times out a stalled source and advances to the next',async()=>{
   return new Promise((resolve,reject)=>signal.addEventListener('abort',()=>reject(new Error('timeout')),{once:true}));
  }});
  assert.equal(value,42);assert.equal(calls,2);
+});
+
+test('mutable directory selects the latest publication rather than the first stale CDN',async()=>{
+ const directory={schema:'r5-resource-directory/1',paths:[]};
+ const result=await readResourceDirectory(url,{fetcher:async u=>{
+  if(u.startsWith('https://raw.'))throw Error('connection reset');
+  const fresh=u.startsWith('https://cdn.');
+  return {ok:true,json:async()=>({...directory,revision:(fresh?'b':'a').repeat(40),revision_time:fresh?200:100})};
+ }});
+ assert.equal(result.revision,'b'.repeat(40));
 });

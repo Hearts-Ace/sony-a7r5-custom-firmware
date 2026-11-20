@@ -1,4 +1,4 @@
-import {readResource} from './resource-fetch.mjs';
+import {readResource,readResourceDirectory} from './resource-fetch.mjs';
 // Discover resource files at runtime. No generated catalog or Pages rebuild.
 export const FILTER_REPOSITORY = 'Hearts-Ace/sony-a7r5-custom-firmware';
 const RAW = 'https://raw.githubusercontent.com';
@@ -14,11 +14,12 @@ async function mapLimit(items, count, callback) {
  return result;
 }
 
-export async function loadFilterCatalog({fetcher=fetch, signal, repository=FILTER_REPOSITORY}={}) {
- const directory=await json(fetcher,`${RAW}/${repository}/resource-index/directory.json?check=${Date.now()}`,signal);
+export async function loadFilterCatalog({fetcher=fetch, signal, repository=FILTER_REPOSITORY, previous}={}) {
+ const directory=await readResourceDirectory(`${RAW}/${repository}/resource-index/directory.json?check=${Date.now()}`,{fetcher,signal});
  if(directory.schema!=='r5-resource-directory/1'||!Array.isArray(directory.paths))throw Error('资源目录不完整，请稍后刷新');
  if(!/^[a-f0-9]{40}$/.test(directory.revision))throw Error('资源版本信息无效');
  if(directory.paths.some(p=>typeof p!=='string'||p.startsWith('/')||p.split('/').includes('..')))throw Error('资源路径无效');
+ if(previous?.revision===directory.revision || (previous?.revisionTime||0)>(Number(directory.revision_time)||0))return previous;
  const paths=new Set(directory.paths);
  const raw=path=>`${RAW}/${repository}/${directory.revision}/${encodePath(path)}`;
  // Folder name is the category; same-stem BIN and JSON form a filter.
@@ -45,5 +46,5 @@ export async function loadFilterCatalog({fetcher=fetch, signal, repository=FILTE
   simulationError=await json(fetcher,raw(errorPath),signal);
   if(simulationError.schema!=='r5-simulation-error/1'||!['mean','p95','maximum','samples'].every(k=>Number.isFinite(simulationError[k])))throw Error('模拟误差说明无效');
  }
- return {catalog,simulationError,revision:directory.revision};
+ return {catalog,simulationError,revision:directory.revision,revisionTime:Number(directory.revision_time)||0};
 }

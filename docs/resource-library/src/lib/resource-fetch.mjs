@@ -10,8 +10,8 @@ export function resourceSources(url){
  const [,repo,ref,path]=match;
  return [...CDN.map(base=>`${base}${repo}@${ref}/${path}${parsed.search}`),`${RAW}${repo}/${ref}/${path}${parsed.search}`];
 }
-export async function readResource(url,{fetcher=fetch,signal,as='json',timeoutMs=6000}={}){
- const sources=resourceSources(url),order=sources.map((_,i)=>(i+preferred)%sources.length);
+export async function readResource(url,{fetcher=fetch,signal,as='json',timeoutMs=6000,singleSource=false}={}){
+ const sources=singleSource?[url]:resourceSources(url),order=sources.map((_,i)=>(i+preferred)%sources.length);
  let last;
  for(const index of order){
   if(signal?.aborted)throw signal.reason||new DOMException('Aborted','AbortError');
@@ -32,4 +32,15 @@ export async function readResource(url,{fetcher=fetch,signal,as='json',timeoutMs
   finally{clearTimeout(timer);signal?.removeEventListener('abort',abort);}
  }
  throw Error(`资源加载失败，请检查网络后重试：${last?.message||'连接不可用'}`);
+}
+
+// Mutable branch pointers can differ between CDN edges even with a cache-busting query.
+export async function readResourceDirectory(url,options={}){
+ const results=await Promise.allSettled(resourceSources(url).map(source=>readResource(source,{...options,singleSource:true})));
+ if(options.signal?.aborted)throw options.signal.reason||new DOMException('Aborted','AbortError');
+ const valid=results.filter(x=>x.status==='fulfilled'&&x.value?.schema==='r5-resource-directory/1'&&
+  /^[a-f0-9]{40}$/.test(x.value.revision)&&Array.isArray(x.value.paths)&&
+  x.value.paths.every(p=>typeof p==='string'&&!p.startsWith('/')&&!p.split('/').includes('..'))).map(x=>x.value);
+ if(!valid.length)throw results.find(x=>x.status==='rejected')?.reason||Error('资源目录不完整，请稍后刷新');
+ return valid.sort((a,b)=>(Number(b.revision_time)||0)-(Number(a.revision_time)||0))[0];
 }
