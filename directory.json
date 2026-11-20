@@ -1,6 +1,7 @@
 {
   "schema": "r5-resource-directory/1",
-  "revision": "35aa66d14090277e734aaaf34bf58c11e617ac9c",
+  "revision": "0e7596aa131dfa5af164d7f0959d80468cc4c549",
+  "revision_time": 1795136082,
   "paths": [
     "filter-bundles/常用十二款.bin",
     "filter-bundles/常用十二款.json",
