@@ -1,11 +1,15 @@
 # Sony A7R V / R5 自定义固件 4.65 候选
 
+**[打开在线滤镜与声音资源库（Pages）](https://hearts-ace.github.io/sony-a7r5-custom-firmware/)**
+
+[R5 滤镜](https://hearts-ace.github.io/sony-a7r5-custom-firmware/#filters) · [C2 滤镜](https://hearts-ace.github.io/sony-a7r5-custom-firmware/#c2) · [M4 滤镜](https://hearts-ace.github.io/sony-a7r5-custom-firmware/#m4) · [快门声音](https://hearts-ace.github.io/sony-a7r5-custom-firmware/#audio)
+
 4.65 为当前唯一固件构建，基于官方 R5 4.00，保留自定义滤镜、FL2/FL3、声音、Fn、比例与裁切。滤镜切换按需读取 eMMC 中的一款，原厂颜色任务接管后再切换参数，旧任务归还引用后回收。
 
 - [完整源码与唯一构建入口](firmware/r5/README.md)
 - [4.65 验证摘要](publication/4.65/validation.json) · [4.65 源码锁](firmware/r5/sources.lock.json)
 - [六槽回读与解放工具](tools/r5-slots/README.md)
-- [在线滤镜与声音资源库](https://hearts-ace.github.io/sony-a7r5-custom-firmware/)：选择滤镜、下载整合 BIN，试听/下载 5 款快门声，转换自己的 WAV
+- 在线资源库支持 R5 选择滤镜并下载整合 BIN，C2/M4 单滤镜下载，以及快门声试听、下载与转换。
 - [当前单滤镜目录](filters/README.md)：按网页分类保存，每款只保留最新 BIN 与描述 JSON
 - [声音安装与文件目录](sounds/README.md) · [全部声音 ZIP](sounds/R5-Sounds-4.55.zip)
 - [常用十二款合并包](filter-bundles/常用十二款.bin) · [槽位说明](filter-bundles/常用十二款.json)
