@@ -32,3 +32,5 @@ for(const folder of ['m4-filters','c2-filters']){
  await rm('public/'+folder,{recursive:true,force:true});
  if(existsSync('../../'+folder))await cp('../../'+folder,'public/'+folder,{recursive:true});
 }
+
+if(existsSync("../../resource-info"))await cp("../../resource-info","public/resource-info",{recursive:true});

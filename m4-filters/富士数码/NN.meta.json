@@ -7,5 +7,19 @@
   "sha256": "20f2cdb7317bcc3f6febcc9c02efa56c647733039338a81c1ea3ade0787fb288",
   "updated": "2026-11-20",
   "order": 10,
-  "camera_tested": false
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.055093139151266,
+    "p95": 2.545233899777102,
+    "maximum": 7.8465013713147105,
+    "samples": 62715,
+    "split": "test",
+    "protocol": "fuji-algorithm-holdout-62715",
+    "label": "算法留出测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  },
+  "metric_source_model": "r5",
+  "description": ""
 }

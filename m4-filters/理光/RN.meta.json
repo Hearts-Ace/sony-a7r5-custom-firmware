@@ -7,5 +7,19 @@
   "sha256": "ee1c831e7e39da956c0962b1e4ac41b33489a9158a4f3f5d055cfe5fe899caea",
   "updated": "2026-11-20",
   "order": 12,
-  "camera_tested": false
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 0.9649688398929692,
+    "p95": 2.1974915051097854,
+    "maximum": 8.412310805272552,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809"
+  },
+  "metric_source_model": "r5",
+  "description": ""
 }

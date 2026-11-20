@@ -7,5 +7,24 @@
   "sha256": "64e3bd6726846fcb6f3ac21e1baf409080c2ac2f1197cbb29a620847d1b8f6f1",
   "updated": "2026-11-20",
   "order": 48,
-  "camera_tested": false
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.3188813732694094,
+    "p95": 3.1548016978616116,
+    "maximum": 8.917002799575009,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+    "encoding": "float display sRGB (clip 0..1, no 8-bit quantization) -> D65 Lab -> CIEDE2000",
+    "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809",
+    "parameter_sha256": "1d0cd22d6dfcba2b0975adeb25c2c505f3615831f47a3cae24defff413eb76cb",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "description": ""
 }

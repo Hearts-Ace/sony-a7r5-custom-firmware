@@ -10,6 +10,9 @@ for model,ext in [('c2','.a7look'),('m4','.json')]:
   assert item['schema']=='sony-single-filter-download/1' and item['model']==model and item['short_name']==name
   assert name not in names and hashlib.sha256(blob).hexdigest()==item['sha256'];names.add(name)
   assert doc['name']==item['name'] and item['camera_tested'] is False
+  source=json.loads((ROOT/'filters'/meta.parent.name/(name+'.json')).read_text())
+  assert item['metric_source_model']=='r5' and item['training_error']==source['training_error']
+  assert doc['conversion' if model=='c2' else 'provenance']['source_bin_sha256']==source['sha256']
   if model=='c2':
    assert doc['schema']=='a7c2-creative-look/2' and doc['target']=={'model':'ILCE-7CM2','firmware':'2.01'}
    grid=base64.b64decode(doc['table_base64'],validate=True);assert len(grid)==1215 and all(v<64 or v>=192 for v in grid)

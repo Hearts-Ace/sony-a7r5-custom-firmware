@@ -27,3 +27,20 @@ test('download verifies bytes and retries the pinned CDN when local bytes are st
  const result=await readDownload({sha256:hash,sources:['/local','https://cdn.example/file']},{fetcher:async url=>{calls.push(url);return {ok:true,arrayBuffer:async()=>url==='/local'?new Uint8Array([1]).buffer:data.buffer};}});
  assert.deepEqual(new Uint8Array(result),data);assert.equal(calls.length,2);
 });
+
+test('model cards retain R5 source metrics and read only the shared operator summary',async()=>{
+ const metrics={status:'available',mean:1,p95:2,maximum:3,samples:62715};
+ const simulation={schema:'r5-simulation-error/1',mean:.2,p95:.5,maximum:1.5,samples:1627};
+ const directory={...baselineDirectory,paths:[...baselineDirectory.paths,'resource-info/simulation-error.json']};
+ const requests=[];
+ const result=await loadDownloadCatalog('c2',{baselineDirectory:directory,directoryURL:'/resource-directory.json',localBase:'/',fetcher:async url=>{
+  requests.push(url);
+  if(url.includes('directory.json'))return {ok:true,json:async()=>directory};
+  if(url.endsWith('simulation-error.json'))return {ok:true,json:async()=>simulation};
+  assert.ok(url.startsWith('/c2-filters/')&&url.endsWith('.meta.json'));
+  return {ok:true,json:async()=>({schema:'sony-single-filter-download/1',model:'c2',short_name:'NC',name:'Classic Negative',sha256:sha,training_error:metrics,metric_source_model:'r5'})};
+ }});
+ assert.deepEqual(result.catalog[0].training_error,metrics);
+ assert.equal(result.catalog[0].metric_source_model,'r5');assert.deepEqual(result.simulationError,simulation);
+ assert.equal(requests.filter(x=>x.endsWith('simulation-error.json')).length,1);
+});

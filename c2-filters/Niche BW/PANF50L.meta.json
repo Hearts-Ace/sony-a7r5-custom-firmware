@@ -7,5 +7,21 @@
   "sha256": "cb47084cc8a8103b8fae40330e78d738a37de46fbe0c7e7c9c95cf43f4a0ea73",
   "updated": "2026-11-20",
   "order": 10000,
-  "camera_tested": false
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.6404682743045502,
+    "p95": 5.591391452481803,
+    "maximum": 17.218583058253028,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "description": ""
 }

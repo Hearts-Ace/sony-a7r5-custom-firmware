@@ -22,12 +22,17 @@ export async function loadDownloadCatalog(model,{fetcher=fetch,signal,baselineDi
     const item=await read(path),stem=path.slice(0,-10),file=stem+(model==='c2'?'.a7look':'.json');
     if(item.schema!=='sony-single-filter-download/1'||item.model!==model||!paths.has(file)||item.short_name!==stem.split('/').at(-1)||typeof item.name!=='string'||!item.name||!/^[a-f0-9]{64}$/.test(item.sha256))throw Error('滤镜描述无效：'+path);
     if(catalog.some(x=>x.short_name===item.short_name))throw Error('重复滤镜简称');
-    catalog.push({...item,category:path.split('/')[1],file,filename:file.split('/').at(-1),sources:sources(file)});
+    catalog.push({...item,category:path.split('/')[1],file,filename:file.split('/').at(-1),sources:sources(file),json:sources(path).at(0),id:item.short_name,version:item.updated,metric_source_model:'r5'});
     if(!stopped&&(catalog.length===1||catalog.length%6===0||catalog.length===descriptors.length))onProgress?.({catalog:sort(catalog),total:descriptors.length});
    }catch(e){stopped=true;throw e;}
   }
  }));
- return {catalog:sort(catalog),total:catalog.length,revision:directory.revision};
+ let simulationError=null;
+ if(paths.has('resource-info/simulation-error.json')){
+  simulationError=await read('resource-info/simulation-error.json');
+  if(simulationError.schema!=='r5-simulation-error/1'||!['mean','p95','maximum','samples'].every(k=>Number.isFinite(simulationError[k])))throw Error('模拟误差说明无效');
+ }
+ return {catalog:sort(catalog),total:catalog.length,revision:directory.revision,simulationError};
 }
 export async function readDownload(item,{fetcher=fetch,signal}={}){
  let error;
