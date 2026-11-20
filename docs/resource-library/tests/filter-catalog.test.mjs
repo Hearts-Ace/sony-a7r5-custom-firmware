@@ -70,3 +70,23 @@ test('unchanged directory reuses the catalog; a new revision reloads metrics',as
  assert.equal(result.catalog[0].training_error.mean,1.057279);
  assert.notEqual(result,previous);
 });
+
+test('publishes usable cards before a slow descriptor finishes; no BIN is prefetched',async()=>{
+ const files={'filters/A/NC.json':filter('NC'),'filters/A/NC.bin':'BIN','filters/A/CC.json':filter('CC'),'filters/A/CC.bin':'BIN'};
+ const mock=server(files),snapshots=[];
+ let release,firstCard;
+ const blocked=new Promise(resolve=>{release=resolve;});
+ const visible=new Promise(resolve=>{firstCard=resolve;});
+ const pending=loadFilterCatalog({fetcher:async(url,options)=>{
+  if(url.endsWith('/CC.json'))await blocked;
+  return mock.fetcher(url,options);
+ },onProgress:partial=>{snapshots.push(partial);if(partial.catalog.length===1)firstCard();}});
+ await visible;
+ assert.equal(snapshots.at(-1).catalog[0].id,'NC');
+ assert.equal(snapshots.at(-1).total,2);
+ release();
+ const result=await pending;
+ assert.equal(result.catalog.length,2);
+ assert.deepEqual(snapshots[0],{catalog:[],total:2});
+ assert.equal(mock.requests.some(x=>x.url.endsWith('.bin')),false);
+});

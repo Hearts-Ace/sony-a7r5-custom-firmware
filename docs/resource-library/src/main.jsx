@@ -21,7 +21,9 @@ function useFilters(){
    if(document.visibilityState==='hidden'||busy||Date.now()-lastCheck<60000)return;
    busy=true;lastCheck=Date.now();
    try{
-    const result=await loadFilterCatalog({signal:ctrl.signal,previous});
+    const result=await loadFilterCatalog({signal:ctrl.signal,previous,onProgress:partial=>{
+     if(!ctrl.signal.aborted&&!previous)setState({...partial,loading:true,error:''});
+    }});
     if(!ctrl.signal.aborted&&result!==previous){previous=result;setState({...result,loading:false,error:''});}
    }catch(e){
     if(!ctrl.signal.aborted&&!previous)setState({catalog:[],loading:false,error:e.message});
@@ -38,7 +40,7 @@ function App(){const reducedMotion=useFilmMotion(true);const [tab,setTab]=useSta
  return <><div className="glass-atmosphere" aria-hidden="true" data-paused={reducedMotion}><div className="film-leak film-leak-amber"/><div className="film-leak film-leak-red"/><div className="film-leak film-leak-magenta"/></div><a className="skip" href="#main">跳到主要内容</a><header className="site-header"><div className="site-frame header-inner"><a className="brand" href={location.pathname}><span className="brand-mark"><Aperture size={19}/></span><span>R5 <span className="brand-sub">FILM LAB</span></span></a><div className="header-actions"><a className="guide" href={`${repo}/blob/main/${tab==='audio'?'sounds':'docs/resource-library'}/README.md`}><BookOpen size={15}/> 使用说明 <ExternalLink size={12}/></a></div></div></header>
  <main id="main" className="site-frame" tabIndex={-1}><div className="intro" data-enter><div><p className="eyebrow">SONY A7R V</p><h1 className="heading-1">滤镜与声音资源库</h1><p className="intro-text body-6">选择滤镜、安排相机槽位，或试听和转换快门声音。</p></div>{tab==='filters'&&<SimulationError metrics={filters.simulationError}/>}</div>
  <Tabs value={tab} onValueChange={x=>{setTab(x);history.replaceState(null,'',x==='audio'?'#audio':'#filters');}}>
- <TabsList aria-label="资源类型"><TabsTrigger value="filters"><Layers3 size={17}/>色彩滤镜<span className="tab-count">{filters.catalog.length}</span></TabsTrigger><TabsTrigger value="audio"><AudioLines size={17}/>快门声音<span className="tab-count">{sounds.catalog.length}</span></TabsTrigger></TabsList>
+ <TabsList aria-label="资源类型"><TabsTrigger value="filters"><Layers3 size={17}/>色彩滤镜<span className="tab-count">{filters.total??filters.catalog.length}</span></TabsTrigger><TabsTrigger value="audio"><AudioLines size={17}/>快门声音<span className="tab-count">{sounds.catalog.length}</span></TabsTrigger></TabsList>
  <TabsContent value="filters" forceMount><FilterLibrary {...filters}/></TabsContent><TabsContent value="audio" forceMount>{audioOpened&&<Suspense fallback={<div className="loading-panel" role="status"><span className="skeleton"/><span className="skeleton"/>正在打开声音工作台…</div>}><SoundLibrary {...sounds}/></Suspense>}</TabsContent></Tabs>
  <footer className="site-footer"><span>{tab==='filters'?'适用于支持自定义滤镜 v4 的 Sony A7R V 固件。':'相机使用 R5S；WAV 文件可在本页转换。'}</span><a href={repo}>GitHub 源码 <ExternalLink size={12}/></a></footer></main><Toaster theme="dark" position="bottom-center" richColors closeButton/></>;
 }

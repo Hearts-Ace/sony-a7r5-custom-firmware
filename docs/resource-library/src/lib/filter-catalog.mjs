@@ -6,15 +6,19 @@ const encodePath = path => path.split('/').map(encodeURIComponent).join('/');
 
 const json=(fetcher,url,signal)=>readResource(url,{fetcher,signal});
 
-async function mapLimit(items, count, callback) {
- const result = new Array(items.length); let next = 0;
+async function mapLimit(items, count, callback, onItem) {
+ const result = new Array(items.length); let next = 0, stopped = false;
  await Promise.all(Array.from({length:Math.min(count,items.length)}, async () => {
-  while (next < items.length) {const index=next++;result[index]=await callback(items[index]);}
+  while (!stopped && next < items.length) {
+   const index=next++;
+   try{result[index]=await callback(items[index]);if(!stopped)onItem?.(result[index]);}
+   catch(error){stopped=true;throw error;}
+  }
  }));
  return result;
 }
 
-export async function loadFilterCatalog({fetcher=fetch, signal, repository=FILTER_REPOSITORY, previous}={}) {
+export async function loadFilterCatalog({fetcher=fetch, signal, repository=FILTER_REPOSITORY, previous, onProgress}={}) {
  const directory=await readResourceDirectory(`${RAW}/${repository}/resource-index/directory.json?check=${Date.now()}`,{fetcher,signal});
  if(directory.schema!=='r5-resource-directory/1'||!Array.isArray(directory.paths))throw Error('资源目录不完整，请稍后刷新');
  if(!/^[a-f0-9]{40}$/.test(directory.revision))throw Error('资源版本信息无效');
@@ -26,6 +30,10 @@ export async function loadFilterCatalog({fetcher=fetch, signal, repository=FILTE
  const descriptors=[...paths].filter(p=>/^filters\/[^/]+\/[^/]+\.json$/.test(p));
  for(const path of paths)if(/^filters\/[^/]+\/[^/]+\.bin$/.test(path)&&!paths.has(path.replace(/\.bin$/,'.json')))throw Error(`缺少滤镜描述：${path}`);
  if (!descriptors.length) throw Error('资源目录中暂无滤镜');
+ const compare=(a,b)=>(a.order??10000)-(b.order??10000)||a.category.localeCompare(b.category)||a.name.localeCompare(b.name);
+ const ready=[],ids=new Set(),names=new Set();
+ const progress=()=>onProgress?.({catalog:[...ready].sort(compare),total:descriptors.length});
+ progress();
  const catalog=await mapLimit(descriptors,8,async path=>{
   const bin=path.replace(/\.json$/,'.bin');
   if(!paths.has(bin))throw Error(`缺少滤镜 BIN：${path}`);
@@ -34,17 +42,21 @@ export async function loadFilterCatalog({fetcher=fetch, signal, repository=FILTE
      typeof item.name!=='string' || !item.name || typeof item.short_name!=='string' || !item.short_name ||
      !/^[a-f0-9]{64}$/.test(item.sha256) || item.short_name!==path.split('/').at(-1).slice(0,-5))throw Error(`滤镜描述无效：${path}`);
   if(item.preview && (!paths.has(item.preview) || !item.preview.startsWith('filters/')))throw Error(`缺少预览图片：${path}`);
+  if(ids.has(item.id))throw Error('滤镜 ID 重复');
+  if(names.has(item.short_name))throw Error('滤镜菜单简称重复');
+  ids.add(item.id);names.add(item.short_name);
   return {...item,category:path.split('/')[1],series:item.series||path.split('/')[1],
    version:item.updated||'',json:raw(path),bin:raw(bin),preview:item.preview?raw(item.preview):undefined};
+ },item=>{
+  ready.push(item);
+  if(ready.length===1||ready.length%8===0||ready.length===descriptors.length)progress();
  });
- if(new Set(catalog.map(x=>x.id)).size!==catalog.length)throw Error('滤镜 ID 重复');
- if(new Set(catalog.map(x=>x.short_name)).size!==catalog.length)throw Error('滤镜菜单简称重复');
- catalog.sort((a,b)=>(a.order??10000)-(b.order??10000)||a.category.localeCompare(b.category)||a.name.localeCompare(b.name));
+ catalog.sort(compare);
  let simulationError=null;
  const errorPath='resource-info/simulation-error.json';
  if(paths.has(errorPath)){
   simulationError=await json(fetcher,raw(errorPath),signal);
   if(simulationError.schema!=='r5-simulation-error/1'||!['mean','p95','maximum','samples'].every(k=>Number.isFinite(simulationError[k])))throw Error('模拟误差说明无效');
  }
- return {catalog,simulationError,revision:directory.revision,revisionTime:Number(directory.revision_time)||0};
+ return {catalog,total:catalog.length,simulationError,revision:directory.revision,revisionTime:Number(directory.revision_time)||0};
 }
