@@ -1,0 +1,26 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "NCAR",
+  "name": "Nikon Carbon",
+  "format": "A7Look /2",
+  "sha256": "7dc2b7c0fe9c0f59cf8553b8a4b9df2027871c25d75b1fb883ce75f52fd55945",
+  "updated": "2026-11-20",
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.689816204318411,
+    "p95": 5.707104573213324,
+    "maximum": 22.26648317300497,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "description": ""
+}

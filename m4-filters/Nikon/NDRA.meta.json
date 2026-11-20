@@ -1,0 +1,26 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "NDRA",
+  "name": "Nikon Dramatic",
+  "format": "camera-look v2",
+  "sha256": "0a73fab5f72bbf6616c7bb17efa563d7fc2f8543bd05190e50257a61ada37422",
+  "updated": "2026-11-20",
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.87704427827815,
+    "p95": 5.649894349625723,
+    "maximum": 15.466193919761961,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "description": ""
+}

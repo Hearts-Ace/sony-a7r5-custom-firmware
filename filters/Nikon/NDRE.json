@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NDream",
+  "name": "Nikon Dream",
+  "short_name": "NDRE",
+  "series": "Nikon",
+  "description": "",
+  "updated": "2026-11-20",
+  "sha256": "38c06520aab855f3f3bd6322f3b35aaf585ee6c76f302ad35e350659715bf0ec",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.1089011017326502,
+    "p95": 2.610039907560767,
+    "maximum": 5.98868700743662,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}
