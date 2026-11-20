@@ -20,5 +20,6 @@ jobs:
         with:
           python-version: '3.12'
       - run: python tools/validate_filter_resources.py
+      - run: python tools/validate_model_filters.py
       - name: Update directory without rebuilding Pages
         run: python tools/publish_resource_directory.py
