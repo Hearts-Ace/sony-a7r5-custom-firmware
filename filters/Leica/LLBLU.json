@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LLL-Blue",
+  "name": "LL Blue",
+  "short_name": "LLBLU",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-20",
+  "sha256": "068d8b359e7f51443a4411db0301e0c123de61b839f26a72da250b46fbd6d32f",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.3506118847423199,
+    "p95": 4.331816362116796,
+    "maximum": 13.458727367006938,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

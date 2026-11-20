@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LLL100YearsMono",
+  "name": "LL 100 Years Mono",
+  "short_name": "LL100M",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-20",
+  "sha256": "0a89baa7a190c381d4446ffc3e25b70a47d6aeccbcdb0f258c6027654be40690",
+  "camera_tested": false,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 2.287547891828905,
+    "p95": 7.3114475247083055,
+    "maximum": 18.274851623285805,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

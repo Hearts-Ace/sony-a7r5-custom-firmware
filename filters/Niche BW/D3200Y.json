@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NBWEliteIlfordDelt-7e4e",
+  "name": "Elite Ilford Delta 3200 Pro Yellow",
+  "short_name": "D3200Y",
+  "series": "Niche BW",
+  "description": "",
+  "updated": "2026-11-20",
+  "sha256": "9b8383a5ae331348625b9ac65de75b9949c540e482917d1d657fa3d20be006af",
+  "camera_tested": false,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.9809651803525106,
+    "p95": 6.15480990954701,
+    "maximum": 23.864876417412766,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

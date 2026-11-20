@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LLLSilver",
+  "name": "LL Silver",
+  "short_name": "LLSIL",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-20",
+  "sha256": "fb2a4c12a4c84e54c1aacc0e073a89301090d05e552471eedaf913dad7550ebc",
+  "camera_tested": false,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.109461792376156,
+    "p95": 2.587648918278775,
+    "maximum": 8.062300943388898,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

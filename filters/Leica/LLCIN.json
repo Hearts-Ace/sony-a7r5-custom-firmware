@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LLLCine",
+  "name": "LL Cine",
+  "short_name": "LLCIN",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-20",
+  "sha256": "4b524f4e6097546e77f0a0b2d53b0ebffb2ece953b0bdb343c52b3a630ef07de",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.0772421854211487,
+    "p95": 2.5945528041954367,
+    "maximum": 7.262981061732357,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

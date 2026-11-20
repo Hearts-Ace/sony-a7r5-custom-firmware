@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LLLClassic",
+  "name": "LL Classic",
+  "short_name": "LLCLS",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-20",
+  "sha256": "5c077c6311b35ecd7047e807291bec91cafeda5d4aa911c13fcd4298f8e25d85",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.127686131861618,
+    "p95": 2.65711482306415,
+    "maximum": 7.078145555890448,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

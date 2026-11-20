@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LM9Embedded",
+  "name": "Leica M9 Embedded",
+  "short_name": "LM9E",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-20",
+  "sha256": "e85f7993544a9448538f6ba6dacf7c7cfc30e00aed9921b0507b879fb64b4b80",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 0.9189043345306938,
+    "p95": 2.4978752148209806,
+    "maximum": 7.816166101981246,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

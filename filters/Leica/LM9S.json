@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "LM9Standard",
+  "name": "Leica M9 Standard",
+  "short_name": "LM9S",
+  "series": "Leica",
+  "description": "",
+  "updated": "2026-11-20",
+  "sha256": "519466cc15f11654ba12696bfbd49b86accd4870dcc7b512bda91cb49cc59347",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 0.8582308428421115,
+    "p95": 2.092021673597703,
+    "maximum": 9.748300337244114,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

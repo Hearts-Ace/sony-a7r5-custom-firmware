@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NBWEliteIlfordPanF-c66c",
+  "name": "Elite Ilford PanF Plus 50 Green",
+  "short_name": "PANF50G",
+  "series": "Niche BW",
+  "description": "",
+  "updated": "2026-11-20",
+  "sha256": "b5d3124afd1f3b78d1415d27a4900cddc1136ab2576051b7739b791a3a4d3e27",
+  "camera_tested": false,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 2.3428713917849087,
+    "p95": 7.827680053266045,
+    "maximum": 23.61419954589371,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}
