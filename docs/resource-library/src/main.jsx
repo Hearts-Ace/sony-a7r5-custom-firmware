@@ -22,7 +22,7 @@ function useFilters(){
    if(document.visibilityState==='hidden'||busy||Date.now()-lastCheck<60000)return;
    busy=true;lastCheck=Date.now();
    try{
-    const result=await loadFilterCatalog({signal:ctrl.signal,previous,baselineDirectory,onProgress:partial=>{
+    const result=await loadFilterCatalog({signal:ctrl.signal,previous,baselineDirectory,directoryURL:resourceURL('resource-directory.json'),onProgress:partial=>{
      if(!ctrl.signal.aborted&&!previous)setState({...partial,loading:true,error:''});
     }});
     if(!ctrl.signal.aborted&&result!==previous){previous=result;setState({...result,loading:false,error:''});}

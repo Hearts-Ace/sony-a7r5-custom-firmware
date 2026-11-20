@@ -1,5 +1,5 @@
 const RAW='https://raw.githubusercontent.com/';
-const CDN=['https://fastly.jsdelivr.net/gh/','https://cdn.jsdelivr.net/gh/'];
+const CDN=['https://cdn.jsdelivr.net/gh/'];
 let preferred=0;
 export function resourceSources(url){
  const parsed=new URL(url,'https://local.invalid');
@@ -36,7 +36,10 @@ export async function readResource(url,{fetcher=fetch,signal,as='json',timeoutMs
 
 // Mutable branch pointers can differ between CDN edges even with a cache-busting query.
 export async function readResourceDirectory(url,options={}){
- const results=await Promise.allSettled(resourceSources(url).map(source=>readResource(source,{...options,singleSource:true})));
+ const sources=resourceSources(url);
+ // Read the page's own directory first; remote directories may advance this baseline.
+ const local=options.directoryURL?await Promise.allSettled([readResource(options.directoryURL,{...options,singleSource:true})]):[];
+ const results=[...local,...await Promise.allSettled(sources.map(source=>readResource(source,{...options,singleSource:true})))];
  if(options.signal?.aborted)throw options.signal.reason||new DOMException('Aborted','AbortError');
  const candidates=results.filter(x=>x.status==='fulfilled').map(x=>x.value);
  if(options.baselineDirectory)candidates.push(options.baselineDirectory);

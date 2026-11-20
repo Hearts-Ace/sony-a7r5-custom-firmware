@@ -25,3 +25,5 @@ if(existsSync('../../filters')){
 }else if(!existsSync(baselineFile)){
  throw Error('Missing public resource tree; build from the public repository or copy its generated directory for local preview.');
 }
+
+await copyFile(baselineFile,'public/resource-directory.json');

@@ -57,7 +57,7 @@ test('unchanged directory reuses the catalog; a new revision reloads metrics',as
  const mock=server(files),previous=await loadFilterCatalog(mock);
  mock.requests.length=0;
  assert.equal(await loadFilterCatalog({...mock,previous}),previous);
- assert.equal(mock.requests.length,3);
+ assert.equal(mock.requests.length,2);
  files['filters/A/NC.json']={...filter('NC'),training_error:{mean:1.057279}};
  const next='c'.repeat(40);
  const fetcher=async(url,options)=>{
@@ -97,7 +97,7 @@ test('progressive loading stays on the baseline when only an old untimed CDN res
  const mock=server(files),snapshots=[];
  const result=await loadFilterCatalog({baselineDirectory,onProgress:partial=>snapshots.push(partial),fetcher:async(url,options)=>{
   if(url.includes('/directory.json')){
-   if(!url.startsWith('https://fastly.'))throw Error('connection reset');
+   if(!url.startsWith('https://cdn.'))throw Error('connection reset');
    return {ok:true,json:async()=>({...baselineDirectory,revision:'c'.repeat(40),revision_time:undefined,paths:Object.keys(files).filter(p=>p.includes('/NC.'))})};
   }
   assert.ok(url.includes(commit));
