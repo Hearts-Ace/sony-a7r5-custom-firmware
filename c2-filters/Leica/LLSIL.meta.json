@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLSIL",
+  "name": "LL Silver",
+  "format": "A7Look /2",
+  "sha256": "6a231d13200152681a5f9c897e44d23f451193647b659390c69a033e45a19111",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

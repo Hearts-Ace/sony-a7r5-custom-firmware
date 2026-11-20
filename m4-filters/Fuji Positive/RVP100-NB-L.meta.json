@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "RVP100-NB-L",
+  "name": "Elite Fuji Velvia100 NB (linear)",
+  "format": "camera-look v2",
+  "sha256": "0a8ed2d50f38dc4d50cf3d4323582f29ad1a2de08f65372d72176d065a83738b",
+  "updated": "2026-11-20",
+  "order": 66,
+  "camera_tested": false
+}

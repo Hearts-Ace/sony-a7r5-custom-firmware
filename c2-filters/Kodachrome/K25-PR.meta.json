@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "K25-PR",
+  "name": "Kodachrome 25 PR",
+  "format": "A7Look /2",
+  "sha256": "ca176a11f49c246ab071fcf509272125627157bac37d085f0bade289ee2e1771",
+  "updated": "2026-11-20",
+  "order": 73,
+  "camera_tested": false
+}

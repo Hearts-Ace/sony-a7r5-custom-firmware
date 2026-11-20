@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLVIV",
+  "name": "LL Vivid",
+  "format": "A7Look /2",
+  "sha256": "25b532455e1fa7c369e82f2e040c906a7a9c74e129aca93a73e012d0bc8c6690",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

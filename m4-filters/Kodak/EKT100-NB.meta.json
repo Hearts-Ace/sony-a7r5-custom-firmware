@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "EKT100-NB",
+  "name": "Elite Kodak Ektar100 NB",
+  "format": "camera-look v2",
+  "sha256": "e2736a6e532097c03b7b31fc16367b0f632aa75495253d17cf99dbaa5101fd81",
+  "updated": "2026-11-20",
+  "order": 86,
+  "camera_tested": false
+}

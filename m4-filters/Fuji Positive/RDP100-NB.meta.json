@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "RDP100-NB",
+  "name": "Elite Fuji Provia100F NB",
+  "format": "camera-look v2",
+  "sha256": "29c8d5a15395e6d96659e6605ff10093ce51ef737abae258f73e0b5789fa09a1",
+  "updated": "2026-11-20",
+  "order": 57,
+  "camera_tested": false
+}

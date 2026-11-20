@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "NN",
+  "name": "NOSTALGIC Neg.",
+  "format": "A7Look /2",
+  "sha256": "15bb05257f153fee39717ae64e55a476dc7acdb602a1dfb2916d390ea0707853",
+  "updated": "2026-11-20",
+  "order": 10,
+  "camera_tested": false
+}

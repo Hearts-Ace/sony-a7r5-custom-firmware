@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "TX400L",
+  "name": "Elite Kodak Tri-X 400 (linear)",
+  "format": "A7Look /2",
+  "sha256": "f726cd1205c84acbea8d1e6e2bb214b91502e337f2b7fe7644eefedef4d968ec",
+  "updated": "2026-11-20",
+  "order": 39,
+  "camera_tested": false
+}

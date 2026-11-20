@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "TX400R",
+  "name": "Elite Kodak Tri-X 400 Red",
+  "format": "camera-look v2",
+  "sha256": "dd4f173801424a0059fab99caa73e8c675af8990e3dbcdd0c9948cd89e2f9bdd",
+  "updated": "2026-11-20",
+  "order": 41,
+  "camera_tested": false
+}

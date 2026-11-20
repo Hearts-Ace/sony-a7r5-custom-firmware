@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CP",
+  "name": "Canon Portrait",
+  "format": "A7Look /2",
+  "sha256": "5879f305d3561eb0cfdb34b1012a8075cac3bdad56933a110093cf1db5861210",
+  "updated": "2026-11-20",
+  "order": 25,
+  "camera_tested": false
+}

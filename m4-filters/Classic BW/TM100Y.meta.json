@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "TM100Y",
+  "name": "Elite Kodak Tmax 100 Yellow",
+  "format": "camera-look v2",
+  "sha256": "3ab5a8b95c896be7d204c606ec28fcdcadaa74ddb61ac140795013103cb65aab",
+  "updated": "2026-11-20",
+  "order": 37,
+  "camera_tested": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLSEL",
+  "name": "LL Selenium",
+  "format": "A7Look /2",
+  "sha256": "7e44295898c560f1dcec3c6b81d14aed322897e51dccd770c16e92c134122832",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

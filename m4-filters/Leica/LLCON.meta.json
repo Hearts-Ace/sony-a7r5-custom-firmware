@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "LLCON",
+  "name": "LL Contemporary",
+  "format": "camera-look v2",
+  "sha256": "8cd493f41331f37e9c09f532b0a8afee202180b82c089c8c1d647ae963b21bbd",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

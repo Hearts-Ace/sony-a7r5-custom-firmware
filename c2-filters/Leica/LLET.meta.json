@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLET",
+  "name": "LL Eternal",
+  "format": "A7Look /2",
+  "sha256": "240783b470cf723e5e18429d3e16b3c35d1892bbc49f3222646c8c9141b858ce",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

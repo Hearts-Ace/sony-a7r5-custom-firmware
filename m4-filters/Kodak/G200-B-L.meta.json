@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "G200-B-L",
+  "name": "Elite Kodak Gold200 B (linear)",
+  "format": "camera-look v2",
+  "sha256": "63b4faa3caea9d6aba3ab255d719a508e1867c1af63e767a2dc82cf22bc4b47b",
+  "updated": "2026-11-20",
+  "order": 89,
+  "camera_tested": false
+}

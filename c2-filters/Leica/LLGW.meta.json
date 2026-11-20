@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLGW",
+  "name": "LL GW",
+  "format": "A7Look /2",
+  "sha256": "7748f8ce388194bf6d689e3cb43560ffaf9d868047bcb0c3f1537e101350523a",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

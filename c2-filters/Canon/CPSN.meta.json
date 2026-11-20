@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CPSN",
+  "name": "Canon Portrait Snapshot",
+  "format": "A7Look /2",
+  "sha256": "3d7ea689767110c6d48389800ff0603c40042807a21f2c32034d027aca524c88",
+  "updated": "2026-11-20",
+  "order": 23,
+  "camera_tested": false
+}

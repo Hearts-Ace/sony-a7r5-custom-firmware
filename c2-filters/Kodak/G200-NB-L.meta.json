@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "G200-NB-L",
+  "name": "Elite Kodak Gold200 NB (linear)",
+  "format": "A7Look /2",
+  "sha256": "34e44c4b915312400ed884e41811d0d1ecc2b02ec6c54747cf151af0bc833416",
+  "updated": "2026-11-20",
+  "order": 91,
+  "camera_tested": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "TM100G",
+  "name": "Elite Kodak Tmax 100 Green",
+  "format": "A7Look /2",
+  "sha256": "6b92b1ddc55c777e658401cbd045d49af3a7550587784d09e0d3673b6fb2df22",
+  "updated": "2026-11-20",
+  "order": 35,
+  "camera_tested": false
+}

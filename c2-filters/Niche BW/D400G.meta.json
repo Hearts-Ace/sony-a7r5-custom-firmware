@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "D400G",
+  "name": "Elite Ilford Delta 400 Pro Green",
+  "format": "A7Look /2",
+  "sha256": "21dd337eb912047ccc5d0f8132e66b210a3d3a68b2be114fc6e2a8fcb4197180",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

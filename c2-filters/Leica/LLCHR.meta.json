@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLCHR",
+  "name": "LL Chrome",
+  "format": "A7Look /2",
+  "sha256": "58667eef257f887710c616ffc58cc9643c633e55c120ef766851ae5b54ed44b4",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

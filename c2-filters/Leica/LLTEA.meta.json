@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLTEA",
+  "name": "LL Teal",
+  "format": "A7Look /2",
+  "sha256": "def306166fec11cf25fd78ed3e183b6b3ea0426c844edc0bb3e393875061a95f",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

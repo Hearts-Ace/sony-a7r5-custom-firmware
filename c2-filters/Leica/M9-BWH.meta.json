@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "M9-BWH",
+  "name": "Leica M9 BW High",
+  "format": "A7Look /2",
+  "sha256": "f6c2bf9504a753caa11a166b4a8ad971a9aa363db6590c2875a5bbf78fadadf4",
+  "updated": "2026-11-20",
+  "order": 94,
+  "camera_tested": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "PV",
+  "name": "PROVIA",
+  "format": "A7Look /2",
+  "sha256": "c3204e5559eea46cc4aeae7eb3f0e9ce46b92fd8af75a6c502565bb80975970b",
+  "updated": "2026-11-20",
+  "order": 6,
+  "camera_tested": false
+}

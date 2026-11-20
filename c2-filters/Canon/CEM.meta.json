@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CEM",
+  "name": "Canon Emerald",
+  "format": "A7Look /2",
+  "sha256": "9a787aa7668136450dde03f40267a83aad48ac04f200e033fa0e746ce4554b0e",
+  "updated": "2026-11-20",
+  "order": 16,
+  "camera_tested": false
+}

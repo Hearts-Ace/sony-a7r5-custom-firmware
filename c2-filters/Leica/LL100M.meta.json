@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LL100M",
+  "name": "LL 100 Years Mono",
+  "format": "A7Look /2",
+  "sha256": "c2b7dc3d01ac6dcd8ef6bd5fcaf23b39b37dc531b73495f1f3211bac4e09dcba",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

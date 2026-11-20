@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLCIN",
+  "name": "LL Cine",
+  "format": "A7Look /2",
+  "sha256": "982b53a77e06527e3c8b4aefd34850ac8009f74a4284658cee3f1b47b55e202d",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

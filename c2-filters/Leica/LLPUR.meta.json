@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLPUR",
+  "name": "LL Pure",
+  "format": "A7Look /2",
+  "sha256": "a29b7a458367627f8e3355592385ede81dfb0e68a3c44f6dfe8fadf56a99eeeb",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

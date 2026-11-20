@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "K64-87-PR",
+  "name": "Kodachrome 64 1987 PR",
+  "format": "camera-look v2",
+  "sha256": "890b839a22bd4668348364f3d56303cf8eb3c9b078410fb2e76eaadb774ad8ad",
+  "updated": "2026-11-20",
+  "order": 76,
+  "camera_tested": false
+}

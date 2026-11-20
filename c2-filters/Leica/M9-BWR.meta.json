@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "M9-BWR",
+  "name": "Leica M9 BW Retro",
+  "format": "A7Look /2",
+  "sha256": "6302df0a49cfbe38fa0b385bdd241f7d40dcabc167de3e68bf95031dfe645d0e",
+  "updated": "2026-11-20",
+  "order": 97,
+  "camera_tested": false
+}

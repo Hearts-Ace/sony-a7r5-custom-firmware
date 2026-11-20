@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "D3200Y",
+  "name": "Elite Ilford Delta 3200 Pro Yellow",
+  "format": "camera-look v2",
+  "sha256": "a29461ec6ad474a7ac349bd05294783389e3e9b82e37cce8f6eb75ebabc2e8ca",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

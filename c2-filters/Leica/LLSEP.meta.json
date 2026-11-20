@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLSEP",
+  "name": "LL Sepia",
+  "format": "A7Look /2",
+  "sha256": "b6ffd1413d43be10f69b8935c6aa41eacd074e041642ce0ebddce8638fcd4f89",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

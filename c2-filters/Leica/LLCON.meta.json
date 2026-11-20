@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLCON",
+  "name": "LL Contemporary",
+  "format": "A7Look /2",
+  "sha256": "7f7ca1aa97ac4e9766fc27f3a99cfa2f1a1a1b6613f2dd6e77c11756be178243",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

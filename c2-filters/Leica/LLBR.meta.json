@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLBR",
+  "name": "LL Brass",
+  "format": "A7Look /2",
+  "sha256": "b8497e54662c4cbdb88e5529bad06cec238eba0cc7547dfddf1d3c16130ed4cc",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

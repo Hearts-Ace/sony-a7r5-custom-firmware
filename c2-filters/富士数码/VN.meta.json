@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "VN",
+  "name": "Velvia",
+  "format": "A7Look /2",
+  "sha256": "d41ff61d9db4e924817cbc623c7c0c9006e9f5da7aab20a15aabfd931d848037",
+  "updated": "2026-11-20",
+  "order": 8,
+  "camera_tested": false
+}

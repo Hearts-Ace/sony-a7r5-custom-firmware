@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "ACROSII100L",
+  "name": "Elite Fuji Neopan Acros II 100 (linear)",
+  "format": "A7Look /2",
+  "sha256": "8837fd63a591dd3e3fd2b2cd50d74f82e9c6053968b0258048c68f7defbfc385",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

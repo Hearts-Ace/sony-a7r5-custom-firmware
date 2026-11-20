@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "ACROSII100G",
+  "name": "Elite Fuji Neopan Acros II 100 Green",
+  "format": "A7Look /2",
+  "sha256": "a1fde24398bf42a9da0fb17cccdd6d8206df2344977cbff484d03651119a8550",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "CC",
+  "name": "CLASSIC CHROME",
+  "format": "camera-look v2",
+  "sha256": "c6cf8e24a13063891df2435ec6fa872b79837629b8cc472b5e5dd06b2b865d55",
+  "updated": "2026-11-20",
+  "order": 1,
+  "camera_tested": false
+}

@@ -19,7 +19,7 @@ if(existsSync('../../filters')){
  const {writeFile}=await import('node:fs/promises');
  const git=(...args)=>execFileSync('git',['-C','../..',...args],{encoding:'utf8'}).trim();
  const revision=git('rev-parse','HEAD');
- const paths=git('-c','core.quotepath=false','ls-tree','-r','--name-only',revision,'--','filters','filter-bundles','resource-info').split('\n').filter(Boolean);
+ const paths=git('-c','core.quotepath=false','ls-tree','-r','--name-only',revision,'--','filters','m4-filters','c2-filters','filter-bundles','resource-info').split('\n').filter(Boolean);
  await mkdir('src/generated',{recursive:true});
  await writeFile(baselineFile,JSON.stringify({schema:'r5-resource-directory/1',revision,revision_time:Number(git('show','-s','--format=%ct',revision)),paths}));
 }else if(!existsSync(baselineFile)){
@@ -27,3 +27,8 @@ if(existsSync('../../filters')){
 }
 
 await copyFile(baselineFile,'public/resource-directory.json');
+
+for(const folder of ['m4-filters','c2-filters']){
+ await rm('public/'+folder,{recursive:true,force:true});
+ if(existsSync('../../'+folder))await cp('../../'+folder,'public/'+folder,{recursive:true});
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "TX400Y",
+  "name": "Elite Kodak Tri-X 400 Yellow",
+  "format": "A7Look /2",
+  "sha256": "a6a927290dd4ea4175587de5e9f6d4beb64bfc4503ae1afc084fc1b645b47701",
+  "updated": "2026-11-20",
+  "order": 42,
+  "camera_tested": false
+}

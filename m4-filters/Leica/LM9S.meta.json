@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "LM9S",
+  "name": "Leica M9 Standard",
+  "format": "camera-look v2",
+  "sha256": "3e7f584f743740d98fd00df0b69590087955eee3f7aa98dede20993508c5592b",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

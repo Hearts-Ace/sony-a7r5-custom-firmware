@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "K64-87-NB",
+  "name": "Kodachrome 64 1987 NB",
+  "format": "A7Look /2",
+  "sha256": "0ae912f056014f45d0da65224e9a0976ae62b8cf12f832a168d8b25bba6ac821",
+  "updated": "2026-11-20",
+  "order": 75,
+  "camera_tested": false
+}

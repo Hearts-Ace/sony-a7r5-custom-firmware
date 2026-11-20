@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "LLSEP",
+  "name": "LL Sepia",
+  "format": "camera-look v2",
+  "sha256": "f664a7d413d3d7874e5e1ada94b0bac59c57b9c65fc16f8c74b0ee7ac2e0365e",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

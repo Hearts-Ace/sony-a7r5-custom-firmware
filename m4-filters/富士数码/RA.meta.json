@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "RA",
+  "name": "REALA ACE",
+  "format": "camera-look v2",
+  "sha256": "2038376007ad4e9adf3a07f1c55f7149e65af950bd522dcaf350c87181e91402",
+  "updated": "2026-11-20",
+  "order": 7,
+  "camera_tested": false
+}

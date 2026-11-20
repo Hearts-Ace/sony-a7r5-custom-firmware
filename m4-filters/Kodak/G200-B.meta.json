@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "G200-B",
+  "name": "Elite Kodak Gold200 B",
+  "format": "camera-look v2",
+  "sha256": "982d5b43176eb729dd90e9a09ca0ca7a68d0f9b5fca85a8d10227fdda002b752",
+  "updated": "2026-11-20",
+  "order": 88,
+  "camera_tested": false
+}

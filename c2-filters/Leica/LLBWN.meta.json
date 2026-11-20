@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLBWN",
+  "name": "LL BW Natural",
+  "format": "A7Look /2",
+  "sha256": "f89e96a5161f576cafd81df2649cd9dbf993fc2747403f7cdb0c5ffc4d214b11",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

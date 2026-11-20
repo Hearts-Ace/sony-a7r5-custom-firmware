@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "EKT100-NB-L",
+  "name": "Elite Kodak Ektar100 NB (linear)",
+  "format": "A7Look /2",
+  "sha256": "530e5427252774c58744b1e5a83eb7239b2717b54875bdf28a864eca720aa7f0",
+  "updated": "2026-11-20",
+  "order": 87,
+  "camera_tested": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "RVP100-NB",
+  "name": "Elite Fuji Velvia100 NB",
+  "format": "A7Look /2",
+  "sha256": "e210cc7e94ce58f816c6af65eac59800efada903fab739e804a9df72639e2534",
+  "updated": "2026-11-20",
+  "order": 65,
+  "camera_tested": false
+}

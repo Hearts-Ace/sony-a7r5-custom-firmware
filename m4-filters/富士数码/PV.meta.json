@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "PV",
+  "name": "PROVIA",
+  "format": "camera-look v2",
+  "sha256": "0904dfca0fe5767d7400192980dd8dd1070d389008f310596220d1683e8bb51f",
+  "updated": "2026-11-20",
+  "order": 6,
+  "camera_tested": false
+}

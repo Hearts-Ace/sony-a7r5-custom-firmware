@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "PANF50L",
+  "name": "Elite Ilford PanF Plus 50 (linear)",
+  "format": "camera-look v2",
+  "sha256": "5b2751fbb4b70fa737538146240676cca14a981203990f8b1e72c1b459ac588e",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

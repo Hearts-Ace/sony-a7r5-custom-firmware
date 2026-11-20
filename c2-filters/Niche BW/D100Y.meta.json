@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "D100Y",
+  "name": "Elite Ilford Delta 100 Pro Yellow",
+  "format": "A7Look /2",
+  "sha256": "86bb5fb06ddf5b98a2c798882e220f9ba5c249ec711dcf9f7ac033d50bbb34b0",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "RXP400-B",
+  "name": "Elite Fuji Provia400X B",
+  "format": "camera-look v2",
+  "sha256": "ff10c4652d3dc11b1a03a3e6ad722a6cbd57cad94e863102239d95202405eb57",
+  "updated": "2026-11-20",
+  "order": 59,
+  "camera_tested": false
+}

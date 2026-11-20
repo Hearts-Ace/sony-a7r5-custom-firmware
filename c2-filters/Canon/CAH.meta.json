@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CAH",
+  "name": "Canon Autumn Hues",
+  "format": "A7Look /2",
+  "sha256": "025988c3ff17468027753349b1a3176dac885b6f2afdc1dfa819bf1b3d53d357",
+  "updated": "2026-11-20",
+  "order": 14,
+  "camera_tested": false
+}

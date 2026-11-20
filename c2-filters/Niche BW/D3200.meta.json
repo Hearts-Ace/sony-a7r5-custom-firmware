@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "D3200",
+  "name": "Elite Ilford Delta 3200 Pro",
+  "format": "A7Look /2",
+  "sha256": "cf67268fa1e01766d8433ccc22ef8cc09278cc5c73f810cb5ff284a890c0a9b2",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

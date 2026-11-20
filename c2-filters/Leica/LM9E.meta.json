@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LM9E",
+  "name": "Leica M9 Embedded",
+  "format": "A7Look /2",
+  "sha256": "42b8e6ba1cea4e3781b30540b08bdca05dbf9d13d8e21c319d2c86ae35ec206b",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

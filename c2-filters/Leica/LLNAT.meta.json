@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLNAT",
+  "name": "LL Natural",
+  "format": "A7Look /2",
+  "sha256": "c08a4700a547bfe0d6886aea3048c814fa6881cb983aa0ad9a03f970dda8729e",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

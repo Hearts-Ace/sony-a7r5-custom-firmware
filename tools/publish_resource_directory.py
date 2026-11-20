@@ -14,7 +14,7 @@ def git(*args, input=None):
 def publish():
     revision = git('rev-parse', 'HEAD')
     # Git quotes non-ASCII names unless core.quotepath is disabled.
-    paths = git('-c', 'core.quotepath=false', 'ls-tree', '-r', '--name-only', revision, '--', 'filters', 'filter-bundles', 'resource-info').splitlines()
+    paths = git('-c', 'core.quotepath=false', 'ls-tree', '-r', '--name-only', revision, '--', 'filters', 'm4-filters', 'c2-filters', 'filter-bundles', 'resource-info').splitlines()
     document = dict(schema='r5-resource-directory/1', revision=revision,
                     revision_time=int(git('show', '-s', '--format=%ct', revision)), paths=paths)
     data = (json.dumps(document, ensure_ascii=False, indent=2)+'\n').encode()

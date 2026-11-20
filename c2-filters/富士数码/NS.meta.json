@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "NS",
+  "name": "PRO Neg. Std",
+  "format": "A7Look /2",
+  "sha256": "867d9a2880b71149cbac9781f896b043cfd25b23103653786d67f734ae7a95d4",
+  "updated": "2026-11-20",
+  "order": 9,
+  "camera_tested": false
+}

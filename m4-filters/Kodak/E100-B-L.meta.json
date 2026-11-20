@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "E100-B-L",
+  "name": "Elite Kodak EktachromeE100 B (linear)",
+  "format": "camera-look v2",
+  "sha256": "75261b349f1c9c830582c2265427b1296061ce10505033b6557523ab5c53dae1",
+  "updated": "2026-11-20",
+  "order": 81,
+  "camera_tested": false
+}

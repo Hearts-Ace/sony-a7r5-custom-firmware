@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "LLNAT",
+  "name": "LL Natural",
+  "format": "camera-look v2",
+  "sha256": "e44112b610bb807412f590a25a5abd218049ace403189572bbadcf3b7df8a262",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

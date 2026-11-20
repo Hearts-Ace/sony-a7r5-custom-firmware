@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CNT",
+  "name": "Canon Neutral",
+  "format": "A7Look /2",
+  "sha256": "84ccc98edd31dcab545fb7a169147e6e31a1ba0e8256b5681f9a796d01b9511a",
+  "updated": "2026-11-20",
+  "order": 21,
+  "camera_tested": false
+}

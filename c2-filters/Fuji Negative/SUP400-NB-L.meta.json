@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "SUP400-NB-L",
+  "name": "Elite Fuji Superia400 NB (linear)",
+  "format": "A7Look /2",
+  "sha256": "e0f21e57bd7c1f3bc7c852c84e631d765ad7dc4e3c9b73379df8e0a6b503c2c0",
+  "updated": "2026-11-20",
+  "order": 54,
+  "camera_tested": false
+}

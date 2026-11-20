@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLSTD",
+  "name": "LL Standard",
+  "format": "A7Look /2",
+  "sha256": "a70ba1767a218d56aae81b1b84d378348d6421aa2bae1d41231b27d815de9aab",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

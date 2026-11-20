@@ -312,3 +312,9 @@ button:disabled{box-shadow:none;transform:none}
  .filter-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
  .filter-card{aspect-ratio:auto;height:132px}
 }
+
+/* Single-download model pages share the existing card system, without a slot tray. */
+.filter-workspace.download-workspace{grid-template-columns:160px minmax(0,1fr)}
+.download-scope{font-size:12px;line-height:20px;color:var(--color-muted);margin:0 0 20px}
+@media(max-width:1000px){.filter-workspace.download-workspace{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:639px){.ui-tabs-list{gap:8px;justify-content:space-between}.ui-tabs-trigger{font-size:12px;gap:4px}.ui-tabs-trigger svg{width:14px}.ui-tabs-trigger .tab-count{min-width:20px;font-size:10px}}

@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "TX400R",
+  "name": "Elite Kodak Tri-X 400 Red",
+  "format": "A7Look /2",
+  "sha256": "323054a22295b5d7f5469dbd9dd188c01d820e28d97b4151f6d4f3f2e41b8e8a",
+  "updated": "2026-11-20",
+  "order": 41,
+  "camera_tested": false
+}

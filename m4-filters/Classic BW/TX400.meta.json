@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "TX400",
+  "name": "Elite Kodak Tri-X 400",
+  "format": "camera-look v2",
+  "sha256": "12ccb578e736f6ccc459a95018679400b7e12d3e53612aa58c3ad3dac669c1e6",
+  "updated": "2026-11-20",
+  "order": 38,
+  "camera_tested": false
+}

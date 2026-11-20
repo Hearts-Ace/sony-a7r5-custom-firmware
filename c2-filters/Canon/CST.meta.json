@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CST",
+  "name": "Canon Standard",
+  "format": "A7Look /2",
+  "sha256": "e3345f631f5ba380dae364e22fdcf32979783dcaf6799dd109134fbda1429c16",
+  "updated": "2026-11-20",
+  "order": 26,
+  "camera_tested": false
+}

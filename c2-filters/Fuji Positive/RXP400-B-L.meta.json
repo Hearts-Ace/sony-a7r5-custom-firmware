@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "RXP400-B-L",
+  "name": "Elite Fuji Provia400X B (linear)",
+  "format": "A7Look /2",
+  "sha256": "cabae61cedb115dd4f8c1db4aa1e85ab194fa2a4a632d0b39282a209ce8c4b92",
+  "updated": "2026-11-20",
+  "order": 60,
+  "camera_tested": false
+}

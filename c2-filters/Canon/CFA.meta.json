@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CFA",
+  "name": "Canon Faithful",
+  "format": "A7Look /2",
+  "sha256": "7c4ec63c45ea34432367eec395ffc8793a65c20ee0a96cfe8884c3a69749d418",
+  "updated": "2026-11-20",
+  "order": 17,
+  "camera_tested": false
+}

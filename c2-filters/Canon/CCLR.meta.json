@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CCLR",
+  "name": "Canon Clear",
+  "format": "A7Look /2",
+  "sha256": "a06a29c0d76d7995cd5da87d6fe8867621d743e178b1183d36056f60adfab23b",
+  "updated": "2026-11-20",
+  "order": 15,
+  "camera_tested": false
+}

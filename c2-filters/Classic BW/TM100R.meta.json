@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "TM100R",
+  "name": "Elite Kodak Tmax 100 Red",
+  "format": "A7Look /2",
+  "sha256": "4602f1e970707c1574171f756e406fd062303c418c8f0a058dc82192909a6707",
+  "updated": "2026-11-20",
+  "order": 36,
+  "camera_tested": false
+}

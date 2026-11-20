@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "HP5+L",
+  "name": "Elite Ilford HP5+ 400 (linear)",
+  "format": "A7Look /2",
+  "sha256": "babb1795f8aec9dc9fcbf8e70357021535c15db1ce0168a3ecd48cac535f1771",
+  "updated": "2026-11-20",
+  "order": 31,
+  "camera_tested": false
+}

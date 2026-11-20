@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "NC",
+  "name": "CLASSIC Neg.",
+  "format": "camera-look v2",
+  "sha256": "4bd4571f96ffbc7aa146ed083292e18ac56aba304140b015c35359fca5453dcc",
+  "updated": "2026-11-20",
+  "order": 4,
+  "camera_tested": false
+}

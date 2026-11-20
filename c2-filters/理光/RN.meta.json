@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "RN",
+  "name": "理光负片",
+  "format": "A7Look /2",
+  "sha256": "e199786d78ae8b6d051eb70d5abfeccebb3a04afd12d94f2cdc80ec413a14609",
+  "updated": "2026-11-20",
+  "order": 12,
+  "camera_tested": false
+}

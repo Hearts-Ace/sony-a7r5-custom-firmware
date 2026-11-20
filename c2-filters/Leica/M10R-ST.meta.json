@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "M10R-ST",
+  "name": "Leica M10r Standard",
+  "format": "A7Look /2",
+  "sha256": "abaece7989ad349a6153595fd3c6aa02ddbd9a296840a2662ad5ab404aa7e434",
+  "updated": "2026-11-20",
+  "order": 93,
+  "camera_tested": false
+}

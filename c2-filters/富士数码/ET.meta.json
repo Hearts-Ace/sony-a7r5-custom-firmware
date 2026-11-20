@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "ET",
+  "name": "ETERNA",
+  "format": "A7Look /2",
+  "sha256": "ad3c3618dd03bb5c3a672840e191537bf7b391c2c384e57646e3beedb08d3dba",
+  "updated": "2026-11-20",
+  "order": 3,
+  "camera_tested": false
+}

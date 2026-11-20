@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "D400",
+  "name": "Elite Ilford Delta 400 Pro",
+  "format": "camera-look v2",
+  "sha256": "6e05a8513255ef69d50058c0bf951cac1816bb159758a27e209df3477bcd60be",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

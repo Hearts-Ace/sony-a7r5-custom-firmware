@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "AS",
+  "name": "ASTIA",
+  "format": "A7Look /2",
+  "sha256": "41d7b11beb055169f4ce39fbdd96115cccbf395876f95202f60de4eb8c281f5a",
+  "updated": "2026-11-20",
+  "order": 0,
+  "camera_tested": false
+}

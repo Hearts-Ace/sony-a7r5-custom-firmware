@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "M10R-BW",
+  "name": "Leica M10r BW",
+  "format": "camera-look v2",
+  "sha256": "a69ce13973e6cd89077bb10a087e643339815540dfe4d0a2231a14336002b23a",
+  "updated": "2026-11-20",
+  "order": 92,
+  "camera_tested": false
+}

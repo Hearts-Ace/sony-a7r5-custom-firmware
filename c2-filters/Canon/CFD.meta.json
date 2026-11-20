@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CFD",
+  "name": "Canon Fine Detail",
+  "format": "A7Look /2",
+  "sha256": "ba23c8cb1468261010aa86b3162cb35b2a5ed4f0fcd2d28769a7d9d6855ec7d0",
+  "updated": "2026-11-20",
+  "order": 18,
+  "camera_tested": false
+}

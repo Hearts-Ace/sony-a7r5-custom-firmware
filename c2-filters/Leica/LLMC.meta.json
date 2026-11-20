@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLMC",
+  "name": "LL MC",
+  "format": "A7Look /2",
+  "sha256": "6b2de89482617896aa741dd53b8b16091f50883a0c391b906e7bd60b0ef92c86",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

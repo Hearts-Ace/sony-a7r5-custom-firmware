@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "K25-NB",
+  "name": "Kodachrome 25 NB",
+  "format": "A7Look /2",
+  "sha256": "169295a29088095bdfb69566bec344ab0c50d370683707b84f6c358165f284a8",
+  "updated": "2026-11-20",
+  "order": 72,
+  "camera_tested": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "FP4+G",
+  "name": "Elite Ilford FP4 Plus 125 Green",
+  "format": "A7Look /2",
+  "sha256": "69a69a0991e77d2e62fa00d9fe663afc2009d51859fcc1b50bdeaa3d799f9c06",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

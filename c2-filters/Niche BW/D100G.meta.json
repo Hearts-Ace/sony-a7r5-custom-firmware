@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "D100G",
+  "name": "Elite Ilford Delta 100 Pro Green",
+  "format": "A7Look /2",
+  "sha256": "260101ba2ce81dc6c693188797c94cc35595bb0b46199e55bfc8389b2959e855",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

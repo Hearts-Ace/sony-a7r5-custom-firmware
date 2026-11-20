@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CTW",
+  "name": "Canon Twilight",
+  "format": "A7Look /2",
+  "sha256": "5650145f6440e0fa10e18c1d99b850398887e00ee61792156366ca95bafad486",
+  "updated": "2026-11-20",
+  "order": 27,
+  "camera_tested": false
+}

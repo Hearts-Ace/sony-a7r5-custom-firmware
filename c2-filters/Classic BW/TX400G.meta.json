@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "TX400G",
+  "name": "Elite Kodak Tri-X 400 Green",
+  "format": "A7Look /2",
+  "sha256": "04ddae46a2ddd4f1105750e15865620c684fd16cd63ae1e9fc7bbfee5371a53a",
+  "updated": "2026-11-20",
+  "order": 40,
+  "camera_tested": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "CCLR",
+  "name": "Canon Clear",
+  "format": "camera-look v2",
+  "sha256": "2267f4da82a3e1b557a2d44ee2df3f508f04daabc867bea2ed8de599474612df",
+  "updated": "2026-11-20",
+  "order": 15,
+  "camera_tested": false
+}

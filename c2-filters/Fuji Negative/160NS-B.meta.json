@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "160NS-B",
+  "name": "Elite Fuji Pro160NS B",
+  "format": "A7Look /2",
+  "sha256": "a0033296fb919e73900dbebc3f1ec426e194818dd1d1219c10f435a71b6d9aae",
+  "updated": "2026-11-20",
+  "order": 43,
+  "camera_tested": false
+}

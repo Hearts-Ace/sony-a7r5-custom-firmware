@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "RDP100-NB-L",
+  "name": "Elite Fuji Provia100F NB (linear)",
+  "format": "A7Look /2",
+  "sha256": "a315df81f6b5714cfefec4263f0e26a0d4b3846d36deee07b05da7714f49097b",
+  "updated": "2026-11-20",
+  "order": 58,
+  "camera_tested": false
+}

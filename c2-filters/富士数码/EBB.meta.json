@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "EBB",
+  "name": "ETERNA BLEACH BYPASS",
+  "format": "A7Look /2",
+  "sha256": "a7f81d7425b3dde44d9eb06dcc668a23afb8dbf20d5ed2efef14df8715a5ee4e",
+  "updated": "2026-11-20",
+  "order": 2,
+  "camera_tested": false
+}

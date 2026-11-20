@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "K64-09-PR",
+  "name": "Kodachrome 64 2009 PR",
+  "format": "A7Look /2",
+  "sha256": "348c708fc3d0bc12497a115033f5a57c3c55eff874c879f1110f2f53b3fa5fd4",
+  "updated": "2026-11-20",
+  "order": 79,
+  "camera_tested": false
+}

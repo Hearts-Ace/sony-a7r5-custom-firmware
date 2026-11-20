@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "SUP400-B-L",
+  "name": "Elite Fuji Superia400 B (linear)",
+  "format": "camera-look v2",
+  "sha256": "a758d5f81668bec18ac2d2f21732067b1af2ed157f59863557a6c98fdd5ea7d4",
+  "updated": "2026-11-20",
+  "order": 52,
+  "camera_tested": false
+}

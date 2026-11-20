@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CNS",
+  "name": "Canon Nostalgia",
+  "format": "A7Look /2",
+  "sha256": "e6a2c16b787f0fc053267e2e0e60fa19c73e510ea68150d77b1d795039a2e0d9",
+  "updated": "2026-11-20",
+  "order": 22,
+  "camera_tested": false
+}

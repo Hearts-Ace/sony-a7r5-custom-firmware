@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLBL",
+  "name": "LL Bleach",
+  "format": "A7Look /2",
+  "sha256": "5fc6d87f6caa6f4976de3a2016b96c58437447cda64d3a9954d1e5d2a151daf1",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

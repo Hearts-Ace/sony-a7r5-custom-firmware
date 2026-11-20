@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "K25-NB",
+  "name": "Kodachrome 25 NB",
+  "format": "camera-look v2",
+  "sha256": "ea5872f34fa5fc72fe45b075252e7afd6565d1a226f27a2c537c71b57f1ad088",
+  "updated": "2026-11-20",
+  "order": 72,
+  "camera_tested": false
+}

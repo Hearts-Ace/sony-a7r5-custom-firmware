@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "CMO",
+  "name": "Canon Monochrome",
+  "format": "camera-look v2",
+  "sha256": "6933e477fe7c1d8a5f64143bc2d5af2ca8d329ef6dd7b9ef26515dc67a5d1f05",
+  "updated": "2026-11-20",
+  "order": 20,
+  "camera_tested": false
+}

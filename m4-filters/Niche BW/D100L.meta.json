@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "D100L",
+  "name": "Elite Ilford Delta 100 Pro (linear)",
+  "format": "camera-look v2",
+  "sha256": "a0dadc9ac62e32671ae28ae5fb7e5311fc72e702a653edcafaa21c36e702c4d9",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

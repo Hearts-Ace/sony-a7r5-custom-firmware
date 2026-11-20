@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLBWHC",
+  "name": "LL BW High Contrast",
+  "format": "A7Look /2",
+  "sha256": "5d3e1e048bbed22071c36660b810ca11dbf97b7cfe2d738446cc199df79841fc",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

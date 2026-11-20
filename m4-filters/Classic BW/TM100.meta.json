@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "TM100",
+  "name": "Elite Kodak Tmax 100",
+  "format": "camera-look v2",
+  "sha256": "d5563b5397e1cf571c1afb238c76299690109b7a72eaaf6ff55b6fbeef39d2bc",
+  "updated": "2026-11-20",
+  "order": 34,
+  "camera_tested": false
+}

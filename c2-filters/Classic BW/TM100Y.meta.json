@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "TM100Y",
+  "name": "Elite Kodak Tmax 100 Yellow",
+  "format": "A7Look /2",
+  "sha256": "55c20712dccded3e7e1d9b7a8a4ce81eaec3e458a3ac007854bba6a08ee3ea23",
+  "updated": "2026-11-20",
+  "order": 37,
+  "camera_tested": false
+}

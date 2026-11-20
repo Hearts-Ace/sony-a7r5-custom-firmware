@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "CLS",
+  "name": "Canon Landscape",
+  "format": "camera-look v2",
+  "sha256": "34acdf8b553ab7f66bab340b37b83ba681a52f225b6de7469637273c2b599173",
+  "updated": "2026-11-20",
+  "order": 19,
+  "camera_tested": false
+}

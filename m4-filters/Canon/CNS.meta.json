@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "CNS",
+  "name": "Canon Nostalgia",
+  "format": "camera-look v2",
+  "sha256": "5d1c4bf5bf3a875703242a8f1f94c6566ce71aa4ec546d17e4cab1d1cd3916f1",
+  "updated": "2026-11-20",
+  "order": 22,
+  "camera_tested": false
+}

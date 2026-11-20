@@ -18,7 +18,7 @@ function FilterPreview({path,name}){
  if(failed)return null;
  return <div className="filter-preview"><img src={resourceURL(path)} alt={`${name} 滤镜渲染预览`} loading="lazy" decoding="async" onError={()=>setFailed(true)}/></div>;
 }
-function FilterName({name}){
+export function FilterName({name}){
  const viewport=useRef(null),text=useRef(null),[overflow,setOverflow]=useState(0);
  useLayoutEffect(()=>{
   const measure=()=>{

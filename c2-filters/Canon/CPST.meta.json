@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "CPST",
+  "name": "Canon Portrait Studio",
+  "format": "A7Look /2",
+  "sha256": "abdec1f8bd61993498ac907fd1d30bf9ab8706a4b6edf10e2515b7dc75d4d0cc",
+  "updated": "2026-11-20",
+  "order": 24,
+  "camera_tested": false
+}

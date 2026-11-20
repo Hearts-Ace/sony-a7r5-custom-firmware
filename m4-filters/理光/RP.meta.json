@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "RP",
+  "name": "理光正片",
+  "format": "camera-look v2",
+  "sha256": "f629418e16a49cfd09ada226b8fa7d8720fc8294be9f87d574fa99f87ef81a3a",
+  "updated": "2026-11-20",
+  "order": 11,
+  "camera_tested": false
+}

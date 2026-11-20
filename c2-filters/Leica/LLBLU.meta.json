@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "LLBLU",
+  "name": "LL Blue",
+  "format": "A7Look /2",
+  "sha256": "bd49b188a84d6cf636b112e1bdb03fb55ebc4a0fda8ba1b2c7bb71bb89399eb0",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

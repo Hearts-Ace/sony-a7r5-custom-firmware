@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "HP5+G",
+  "name": "Elite Ilford HP5+ 400 Green",
+  "format": "A7Look /2",
+  "sha256": "881157d598ff4cdf331ed3a997a5bb9dca6ab18c03cf9b6f58127e540573e314",
+  "updated": "2026-11-20",
+  "order": 30,
+  "camera_tested": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "400H-B",
+  "name": "Elite Fuji Pro400H B",
+  "format": "A7Look /2",
+  "sha256": "e808fa4b96d63b8ade62a71fe4ef976bf62dc7f26bb8bdb3b4e411bb0075fe22",
+  "updated": "2026-11-20",
+  "order": 47,
+  "camera_tested": false
+}

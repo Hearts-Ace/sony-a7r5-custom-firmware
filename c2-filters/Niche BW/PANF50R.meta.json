@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "PANF50R",
+  "name": "Elite Ilford PanF Plus 50 Red",
+  "format": "A7Look /2",
+  "sha256": "f1fff0c77030adbb5a1b0b3e899f537e490d23a8f2062cc735bc9b7229a33556",
+  "updated": "2026-11-20",
+  "order": 10000,
+  "camera_tested": false
+}

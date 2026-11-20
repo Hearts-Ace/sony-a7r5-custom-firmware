@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "CPST",
+  "name": "Canon Portrait Studio",
+  "format": "camera-look v2",
+  "sha256": "602fb433b99f7817ad839651aed28eea3f33d0fb6388292a4ebd4b814ca31a66",
+  "updated": "2026-11-20",
+  "order": 24,
+  "camera_tested": false
+}

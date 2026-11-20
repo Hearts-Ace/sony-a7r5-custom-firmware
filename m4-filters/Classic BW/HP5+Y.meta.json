@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "HP5+Y",
+  "name": "Elite Ilford HP5+ 400 Yellow",
+  "format": "camera-look v2",
+  "sha256": "d0fbc6e07a65d9539e1d8290b0cc7e99eb917d0a6b6f572bbcb3baabc8fc61d4",
+  "updated": "2026-11-20",
+  "order": 28,
+  "camera_tested": false
+}

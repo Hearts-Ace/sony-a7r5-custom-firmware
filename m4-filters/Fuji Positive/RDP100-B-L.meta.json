@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "RDP100-B-L",
+  "name": "Elite Fuji Provia100F B (linear)",
+  "format": "camera-look v2",
+  "sha256": "b53ce15d2073c3ccad94c687596d897d3cabf1261a98e0a0fdd6ca7364410b70",
+  "updated": "2026-11-20",
+  "order": 56,
+  "camera_tested": false
+}

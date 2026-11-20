@@ -1,0 +1,11 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "160NS-NB-L",
+  "name": "Elite Fuji Pro160NS NB (linear)",
+  "format": "camera-look v2",
+  "sha256": "6b3f898beacc3f170ddc093ada6d91b8fdb2946a86c999fefeafcd07441c56f1",
+  "updated": "2026-11-20",
+  "order": 46,
+  "camera_tested": false
+}
