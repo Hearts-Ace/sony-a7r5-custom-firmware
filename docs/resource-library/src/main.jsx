@@ -7,6 +7,7 @@ import{FilterLibrary}from'./filters';
 const SoundLibrary=lazy(()=>import('./sounds').then(m=>({default:m.SoundLibrary})));
 import{resourceURL}from'@/lib/resources';
 import{loadFilterCatalog}from'./lib/filter-catalog.mjs';
+import baselineDirectory from './generated/resource-directory.json';
 import{SimulationError}from'./metrics';
 import {useFilmMotion} from './film-motion';
 import './index.css';
@@ -21,7 +22,7 @@ function useFilters(){
    if(document.visibilityState==='hidden'||busy||Date.now()-lastCheck<60000)return;
    busy=true;lastCheck=Date.now();
    try{
-    const result=await loadFilterCatalog({signal:ctrl.signal,previous,onProgress:partial=>{
+    const result=await loadFilterCatalog({signal:ctrl.signal,previous,baselineDirectory,onProgress:partial=>{
      if(!ctrl.signal.aborted&&!previous)setState({...partial,loading:true,error:''});
     }});
     if(!ctrl.signal.aborted&&result!==previous){previous=result;setState({...result,loading:false,error:''});}

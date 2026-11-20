@@ -90,3 +90,21 @@ test('publishes usable cards before a slow descriptor finishes; no BIN is prefet
  assert.deepEqual(snapshots[0],{catalog:[],total:2});
  assert.equal(mock.requests.some(x=>x.url.endsWith('.bin')),false);
 });
+
+test('progressive loading stays on the baseline when only an old untimed CDN responds',async()=>{
+ const files={'filters/A/NC.json':filter('NC'),'filters/A/NC.bin':'BIN','filters/A/CC.json':filter('CC'),'filters/A/CC.bin':'BIN'};
+ const baselineDirectory={schema:'r5-resource-directory/1',revision:commit,revision_time:300,paths:Object.keys(files)};
+ const mock=server(files),snapshots=[];
+ const result=await loadFilterCatalog({baselineDirectory,onProgress:partial=>snapshots.push(partial),fetcher:async(url,options)=>{
+  if(url.includes('/directory.json')){
+   if(!url.startsWith('https://fastly.'))throw Error('connection reset');
+   return {ok:true,json:async()=>({...baselineDirectory,revision:'c'.repeat(40),revision_time:undefined,paths:Object.keys(files).filter(p=>p.includes('/NC.'))})};
+  }
+  assert.ok(url.includes(commit));
+  return mock.fetcher(url,options);
+ }});
+ assert.ok(snapshots.every(p=>p.total===2));
+ assert.equal(snapshots.find(p=>p.catalog.length===1).catalog.length,1);
+ assert.equal(result.catalog.length,2);
+ assert.equal(result.revision,commit);
+});

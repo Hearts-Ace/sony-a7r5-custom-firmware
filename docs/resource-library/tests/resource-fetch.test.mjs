@@ -43,3 +43,25 @@ test('mutable directory selects the latest publication rather than the first sta
  }});
  assert.equal(result.revision,'b'.repeat(40));
 });
+
+test('legacy directories without timestamps cannot beat the deployment baseline',async()=>{
+ const paths=count=>Array.from({length:count},(_,i)=>`filters/A/F${i}.bin`);
+ const legacy={schema:'r5-resource-directory/1',revision:'a'.repeat(40),paths:paths(98)};
+ const fresh={schema:'r5-resource-directory/1',revision:'b'.repeat(40),paths:paths(146)};
+ const baselineDirectory={...fresh,revision_time:300};
+ for(const onlyFastly of [false,true]){
+  const result=await readResourceDirectory(url,{baselineDirectory,fetcher:async u=>{
+   if(u.startsWith('https://raw.')||(onlyFastly&&u.startsWith('https://cdn.')))throw Error('connection reset');
+   return {ok:true,json:async()=>u.startsWith('https://fastly.')?legacy:fresh};
+  }});
+  assert.equal(result.revision,baselineDirectory.revision);
+  assert.equal(result.paths.length,146);
+ }
+});
+test('a newer publication may remove filters and still replace the baseline',async()=>{
+ const baselineDirectory={schema:'r5-resource-directory/1',revision:'a'.repeat(40),revision_time:100,paths:['filters/A/NC.bin']};
+ const newer={...baselineDirectory,revision:'b'.repeat(40),revision_time:200,paths:[]};
+ const result=await readResourceDirectory(url,{baselineDirectory,fetcher:async()=>({ok:true,json:async()=>newer})});
+ assert.equal(result.revision,newer.revision);
+ assert.equal(result.paths.length,0);
+});

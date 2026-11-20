@@ -18,8 +18,8 @@ async function mapLimit(items, count, callback, onItem) {
  return result;
 }
 
-export async function loadFilterCatalog({fetcher=fetch, signal, repository=FILTER_REPOSITORY, previous, onProgress}={}) {
- const directory=await readResourceDirectory(`${RAW}/${repository}/resource-index/directory.json?check=${Date.now()}`,{fetcher,signal});
+export async function loadFilterCatalog({fetcher=fetch, signal, repository=FILTER_REPOSITORY, previous, onProgress, baselineDirectory}={}) {
+ const directory=await readResourceDirectory(`${RAW}/${repository}/resource-index/directory.json?check=${Date.now()}`,{fetcher,signal,baselineDirectory});
  if(directory.schema!=='r5-resource-directory/1'||!Array.isArray(directory.paths))throw Error('资源目录不完整，请稍后刷新');
  if(!/^[a-f0-9]{40}$/.test(directory.revision))throw Error('资源版本信息无效');
  if(directory.paths.some(p=>typeof p!=='string'||p.startsWith('/')||p.split('/').includes('..')))throw Error('资源路径无效');
