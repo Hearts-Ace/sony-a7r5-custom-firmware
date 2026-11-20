@@ -4,7 +4,7 @@ export function cardError(item){const m=item.training_error;return m?.status==='
 function Values({metrics}){return <dl className="error-values"><div><dt>平均</dt><dd>{number(metrics.mean)}</dd></div><div><dt>P95</dt><dd>{number(metrics.p95)}</dd></div><div><dt>最大</dt><dd>{number(metrics.maximum)}</dd></div></dl>;}
 export function SimulationError({metrics}){
  if(!metrics)return null;
- return <aside className="simulation-error" aria-label="模拟到实机的误差"><div className="error-title"><span>模拟到实机的误差</span><small>ΔE00</small></div><Values metrics={metrics}/>{metrics.source_note&&<p className="error-scope">{metrics.source_note}</p>}<p className="error-scope">{metrics.protocol} · {metrics.samples.toLocaleString()} 色块</p><details><summary>测试范围</summary><p>{metrics.scope}</p></details></aside>;
+ return <aside className="simulation-error" aria-label="模拟到实机的误差"><div className="error-title"><span>模拟到实机的误差</span><small>ΔE00</small></div><Values metrics={metrics}/><details><summary>测试范围</summary><p className="error-scope">{metrics.protocol} · {metrics.samples.toLocaleString()} 色块</p>{metrics.source_note&&<p className="error-scope">{metrics.source_note}</p>}<p>{metrics.scope}</p></details></aside>;
 }
 export function FilterTrainingError({item}){
  const m=item.training_error;
