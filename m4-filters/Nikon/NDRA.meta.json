@@ -4,7 +4,7 @@
   "short_name": "NDRA",
   "name": "Nikon Dramatic",
   "format": "camera-look v2",
-  "sha256": "0a73fab5f72bbf6616c7bb17efa563d7fc2f8543bd05190e50257a61ada37422",
+  "sha256": "d56cfcc5f09d6fde9ee83534585d2273c9fcfb7e14729b0e6b6c8813e05ed9a8",
   "updated": "2026-11-20",
   "camera_tested": false,
   "training_error": {

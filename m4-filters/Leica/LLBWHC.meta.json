@@ -4,7 +4,7 @@
   "short_name": "LLBWHC",
   "name": "LL BW High Contrast",
   "format": "camera-look v2",
-  "sha256": "e84f0991f692086c6029e5b4cf889b1361a31f1ddc3f0c2dd9482fdf8efd563f",
+  "sha256": "613023b5702aca9a8aaf625c1a13e5e7cf102ef81a6ee83336ddcf788e54fe9d",
   "updated": "2026-11-20",
   "order": 10000,
   "camera_tested": false,

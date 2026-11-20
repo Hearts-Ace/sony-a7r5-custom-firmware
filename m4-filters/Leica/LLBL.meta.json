@@ -4,7 +4,7 @@
   "short_name": "LLBL",
   "name": "LL Bleach",
   "format": "camera-look v2",
-  "sha256": "d61ca952a211e9127b11a1bb6a7c9ff598be008881ce40c6f34fc4e70c2ad541",
+  "sha256": "4ef0d5bf0e2e3e17b5efb32227d9b078f8c32114598d921cee2365fd03d2a86d",
   "updated": "2026-11-20",
   "order": 10000,
   "camera_tested": false,

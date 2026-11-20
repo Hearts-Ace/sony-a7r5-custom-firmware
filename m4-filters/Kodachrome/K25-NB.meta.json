@@ -4,7 +4,7 @@
   "short_name": "K25-NB",
   "name": "Kodachrome 25 NB",
   "format": "camera-look v2",
-  "sha256": "ea5872f34fa5fc72fe45b075252e7afd6565d1a226f27a2c537c71b57f1ad088",
+  "sha256": "e21c48237f2b582bed946f998ce24fefa8c9ce88f7dedf8b836e50a655d68406",
   "updated": "2026-11-20",
   "order": 72,
   "camera_tested": false,

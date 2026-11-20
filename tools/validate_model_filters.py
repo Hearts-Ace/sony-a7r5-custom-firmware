@@ -1,6 +1,7 @@
 """Validate public M4/C2 downloadable files and their page descriptions."""
 from pathlib import Path
 import base64,hashlib,json,struct
+M4_GAMMA_CAP=130944
 ROOT=Path(__file__).resolve().parents[1]
 FIELDS='defaults draft engine_abi format id mode model name parameters required_capabilities revision version'.split()
 for model,ext in [('c2','.a7look'),('m4','.json')]:
@@ -28,6 +29,10 @@ for model,ext in [('c2','.a7look'),('m4','.json')]:
    p=doc['parameters'];records=p['photo']['gamma']['records']+p['live']['gamma']['records']
    assert len(p['photo']['gamma']['records'])==7 and len(p['live']['gamma']['records'])==1
    assert all(len(r)==572 and r==records[0] for r in records)
+   for record in records:
+    gamma=list(struct.unpack('<129I',bytes(record[:516])))
+    assert all(0 <= value <= M4_GAMMA_CAP for value in gamma)
+    assert struct.unpack_from('<I',bytes(record),544)[0] == gamma[-1]
    assert p['photo']['coefficients']==p['live']['coefficients'] and p['photo']['matrices']==p['live']['matrices'] and p['grid']['photo']==p['grid']['live']
   count+=1
  payloads={p for p in root.glob('*/*'+ext) if not p.name.endswith('.meta.json')}

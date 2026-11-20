@@ -35,4 +35,4 @@ Pages只在网页源码或声音资源变化时构建。filters/及filter-bundle
 
 R5、C2、M4、快门声音为同级标签。只有打开对应标签才请求该机型描述，滤镜本体仅点击下载后读取。C2/M4只提供单款下载，无资源栏或合并操作。根目录`c2-filters/`保存A7Look /2（内置文字图标），`m4-filters/`保存camera-look v2。每款配同名`.meta.json`描述，页面从资源目录动态发现分类与文件，不维护手写滤镜清单。
 
-C2/M4为正式R5参数转封装，未跨机型重拟合、未实机验收；不显示R5色差作为这两机型的误差。M4照片/预览使用相同参数及Gamma记录。
+C2/M4为正式R5参数转封装，未跨机型重拟合、未实机验收；不显示R5色差作为这两机型的误差。M4照片/预览使用相同参数及Gamma记录。M4转换由`tools/m4-adapter/convert.py`执行：Gamma的129个little-endian uint32值统一限制为不超过130944，偏移544的重复端点同步为末值，并在转换后重算payload及`.meta.json`散列；`tools/validate_model_filters.py`会逐条检查该上限和端点。

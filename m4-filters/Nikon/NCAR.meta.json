@@ -4,7 +4,7 @@
   "short_name": "NCAR",
   "name": "Nikon Carbon",
   "format": "camera-look v2",
-  "sha256": "0229201f6a922f1432ae29be88b41f2e9bda08f2c849f5acef7c54e6928a30df",
+  "sha256": "7e447e9352b33940bf6a1c0d914427215662090b797e4b75f066265b16ced8b7",
   "updated": "2026-11-20",
   "camera_tested": false,
   "training_error": {
