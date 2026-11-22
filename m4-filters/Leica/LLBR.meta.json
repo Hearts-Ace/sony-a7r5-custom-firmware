@@ -4,8 +4,8 @@
   "short_name": "LLBR",
   "name": "LL Brass",
   "format": "camera-look v2",
-  "sha256": "aab85bd372bc10a154c1ffd900f1a351f48bdd4683dcfcd608b13f5f69a14e3e",
-  "updated": "2026-11-20",
+  "sha256": "b2b845ef7793edb4c45353d78a90a76605d1d4c0d4da99a6c3f24b186c64f572",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

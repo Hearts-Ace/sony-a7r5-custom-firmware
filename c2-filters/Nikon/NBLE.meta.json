@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NBLE",
   "name": "Nikon Bleached",
-  "format": "A7Look /2",
-  "sha256": "9b3f0c468dde31299b86c41dc8c8382b5511f469594144b4c6c5c02a091e361c",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "059c0210f81dca5425570fa205b3645f99d1ab2c8e4e2d123380fa03ec3c4d9e",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",
@@ -22,5 +22,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "7ea26524fb03f0b5dcb90d67954b77a0c344fa20306d436074861db5b8989dae"
 }

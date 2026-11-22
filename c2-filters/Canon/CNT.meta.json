@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CNT",
   "name": "Canon Neutral",
-  "format": "A7Look /2",
-  "sha256": "84ccc98edd31dcab545fb7a169147e6e31a1ba0e8256b5681f9a796d01b9511a",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "65a40d8fe8474030cd7af4cc23acc0fafeb8b05e1f06ba8687f70111658afbc6",
+  "updated": "2026-11-22",
   "order": 21,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "365fca627dd3244a30daf7ba40ae243835ed5eab73a6aea1255af7f94c6b57c7"
 }

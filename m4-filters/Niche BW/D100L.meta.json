@@ -4,8 +4,8 @@
   "short_name": "D100L",
   "name": "Elite Ilford Delta 100 Pro (linear)",
   "format": "camera-look v2",
-  "sha256": "de4e7541e49b3c5ffbb9fbde0e618b5a5d851079fe42885869e8086b4262eb7e",
-  "updated": "2026-11-20",
+  "sha256": "3f0dab52441c31b49b34874363c1884ed8ebe7d5addee6b9ebba26366a7aa11e",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

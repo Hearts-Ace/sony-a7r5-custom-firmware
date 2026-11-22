@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "TX400Y",
   "name": "Elite Kodak Tri-X 400 Yellow",
-  "format": "A7Look /2",
-  "sha256": "a6a927290dd4ea4175587de5e9f6d4beb64bfc4503ae1afc084fc1b645b47701",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "0eb6bbf172ddb813a7a41348b3ec70163d41c6b60c91832ed3e1e3fc32ef252d",
+  "updated": "2026-11-22",
   "order": 42,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "6bce1539d4549739604f854fc7267d1085d17bf8f68d87710b2a343fc895c054"
 }

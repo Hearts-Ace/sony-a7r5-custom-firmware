@@ -4,8 +4,8 @@
   "short_name": "RN",
   "name": "理光负片",
   "format": "camera-look v2",
-  "sha256": "ce6fab3a50678dcaaa16695dbf44ed6198589e3cb7dc5e18fff7b09a8d760553",
-  "updated": "2026-11-20",
+  "sha256": "59a64e8121d8530730188b92454f0b1940fc494b99763ab3e465c80be1823f6f",
+  "updated": "2026-11-22",
   "order": 12,
   "camera_tested": false,
   "training_error": {

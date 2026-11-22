@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "D3200L",
   "name": "Elite Ilford Delta 3200 Pro (linear)",
-  "format": "A7Look /2",
-  "sha256": "2c25ac766df3737608aae283ffad787fe0ddc5dae25b5562adcd4f431bb55319",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "a0d65c9fe691e5b01448fb2cbe2386a64c23c045c17bf555e902b90327e58413",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "7a56c42561ebca03c0260c42f8cb666eff6ddf3f4a19122bee2e690e50ffdc8d"
 }

@@ -4,8 +4,8 @@
   "short_name": "400H-B-L",
   "name": "Elite Fuji Pro400H B (linear)",
   "format": "camera-look v2",
-  "sha256": "8f1d2033e2e39c735b4d510c715bc1c3b8944b99f53662037d521a3b5b9e0459",
-  "updated": "2026-11-20",
+  "sha256": "a94f953468f3ed7449ba7a466be46956f3a76204b240eb33df9f0c2b81d40af4",
+  "updated": "2026-11-22",
   "order": 48,
   "camera_tested": false,
   "training_error": {

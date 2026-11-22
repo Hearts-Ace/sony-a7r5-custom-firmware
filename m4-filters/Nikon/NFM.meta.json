@@ -4,8 +4,8 @@
   "short_name": "NFM",
   "name": "Nikon Flat Monochrome",
   "format": "camera-look v2",
-  "sha256": "29329097c8de143df3b25538df1033e2b840bce2821f1222cf1853d0faf099b6",
-  "updated": "2026-11-20",
+  "sha256": "60022f9e9ae9496a34fad99f2420652ca8a9a2cfd924b1a2d1a8d66b578064e8",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",

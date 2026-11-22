@@ -4,8 +4,8 @@
   "short_name": "RP",
   "name": "理光正片",
   "format": "camera-look v2",
-  "sha256": "17a113c7711d65906e122907c2f91adb40c3420ed0c81fdb9b12dbf89c1c05ae",
-  "updated": "2026-11-20",
+  "sha256": "df591edad88ddeeeb9a8b4ef05a1d6d0a9a59e89dd50fff1b2e4076d308f9012",
+  "updated": "2026-11-22",
   "order": 11,
   "camera_tested": false,
   "training_error": {

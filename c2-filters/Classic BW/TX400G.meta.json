@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "TX400G",
   "name": "Elite Kodak Tri-X 400 Green",
-  "format": "A7Look /2",
-  "sha256": "04ddae46a2ddd4f1105750e15865620c684fd16cd63ae1e9fc7bbfee5371a53a",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "f2b3420109a1ad2e791ccc72cbac6b7e2d8dd3647f3535d2d33a7e70083f832a",
+  "updated": "2026-11-22",
   "order": 40,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "c6ef966afb6f5e5d9aed4ba5df9f07a3c27c84841a2e4568fb164dc88315f8c6"
 }

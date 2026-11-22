@@ -4,8 +4,8 @@
   "short_name": "D400G",
   "name": "Elite Ilford Delta 400 Pro Green",
   "format": "camera-look v2",
-  "sha256": "cf3a4ccd5480461085b8c31743d720c78c6f760876b236c6118da38e3b0e7e82",
-  "updated": "2026-11-20",
+  "sha256": "7a41ebea9f3b2a001fd05170d19ac240cd24bb70db00937208e5852eef3be73f",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

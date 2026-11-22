@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "EBB",
   "name": "ETERNA BLEACH BYPASS",
-  "format": "A7Look /2",
-  "sha256": "a7f81d7425b3dde44d9eb06dcc668a23afb8dbf20d5ed2efef14df8715a5ee4e",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "7ea472a8ac7f52399bc65e8b13ee824101c0ecb17a2cc2eb60d83c33cd2bcf20",
+  "updated": "2026-11-22",
   "order": 2,
   "camera_tested": false,
   "training_error": {
@@ -21,5 +21,6 @@
     "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "a6dbd933273c02d60c86967b34405fcf5cf5c6023f46a5c1e557a8abbd393216"
 }

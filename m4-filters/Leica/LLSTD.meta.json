@@ -4,8 +4,8 @@
   "short_name": "LLSTD",
   "name": "LL Standard",
   "format": "camera-look v2",
-  "sha256": "0d06912b915fded83f20120049fd92b0c1c055c17ea588b71923bc81154652e9",
-  "updated": "2026-11-20",
+  "sha256": "2af21f151a240687dc45dc903fa648ac1b9d92421b197421dd77eb0429ce00c5",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

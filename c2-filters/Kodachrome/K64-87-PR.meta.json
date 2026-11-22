@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "K64-87-PR",
   "name": "Kodachrome 64 1987 PR",
-  "format": "A7Look /2",
-  "sha256": "c8df775494288dbbe1a431f898b0fe15b75f28fe3b76c9cd6a9fe10ee936c954",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "930521c99c1cdfbf940ca48565ba41688b2c7a658bd64bfc39cb5eb2c87407b6",
+  "updated": "2026-11-22",
   "order": 76,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "b7bdfa2bf3fa11751dbcf9d2b6b268794abf4ea8fd9bb6649d91efd242ac08d1"
 }

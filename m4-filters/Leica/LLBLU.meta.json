@@ -4,8 +4,8 @@
   "short_name": "LLBLU",
   "name": "LL Blue",
   "format": "camera-look v2",
-  "sha256": "ca4d2721dc766365157fc50f84be283834b5e74bde317eb0fecf2a49d7e4cecf",
-  "updated": "2026-11-20",
+  "sha256": "963000ca9ba0ed1b568f5c8a6ba1be368066e2499501b1676f1e4900f8cbf0e1",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

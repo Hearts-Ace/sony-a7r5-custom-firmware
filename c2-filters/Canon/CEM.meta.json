@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CEM",
   "name": "Canon Emerald",
-  "format": "A7Look /2",
-  "sha256": "9a787aa7668136450dde03f40267a83aad48ac04f200e033fa0e746ce4554b0e",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "37c5a5038f3e5266b775353697d7626f45479861d11adec3c45250978c2e0842",
+  "updated": "2026-11-22",
   "order": 16,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "5c1ce13051596498bc5d953f673b2042070d4461dcefa3cece635d02138eec88"
 }

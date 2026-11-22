@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "PV",
   "name": "PROVIA",
-  "format": "A7Look /2",
-  "sha256": "588db3e5acd7785b623a8d3558bdca14163167ffce866b339f59d4b560ac3229",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "fdd1275249958ba4a07fe6870ac45525e28cdd5537da9210f6663f1a169bfbf4",
+  "updated": "2026-11-22",
   "order": 6,
   "camera_tested": false,
   "training_error": {
@@ -21,5 +21,6 @@
     "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "c4b3fe0920fe9b64bee085c84f04250e51c2a6abc8caf17f67071641fce399a5"
 }

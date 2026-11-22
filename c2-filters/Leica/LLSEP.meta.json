@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLSEP",
   "name": "LL Sepia",
-  "format": "A7Look /2",
-  "sha256": "b6ffd1413d43be10f69b8935c6aa41eacd074e041642ce0ebddce8638fcd4f89",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "d0fb7e09aa9df0a213412efe326a749dcfd8573651da57e5b300b8d2047d9d31",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "289f08f1270de4a1ba05e93bde84439af823759b842db13fa383714577dc2bc9"
 }

@@ -4,8 +4,8 @@
   "short_name": "CMO",
   "name": "Canon Monochrome",
   "format": "camera-look v2",
-  "sha256": "22964416e141e3b12fcea8895b40f24d7082b1d6884521a89e429f6e1701ed29",
-  "updated": "2026-11-20",
+  "sha256": "07ea817efd769fcbfd78ffd64fb45d772a4dba56358f760f3d62b038b6197dfc",
+  "updated": "2026-11-22",
   "order": 20,
   "camera_tested": false,
   "training_error": {

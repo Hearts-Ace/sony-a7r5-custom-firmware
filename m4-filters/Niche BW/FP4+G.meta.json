@@ -4,8 +4,8 @@
   "short_name": "FP4+G",
   "name": "Elite Ilford FP4 Plus 125 Green",
   "format": "camera-look v2",
-  "sha256": "02565d8dbe8a58fa9798b69d058fd1f469ab0bb9dd7a7677537bc77e02a407b9",
-  "updated": "2026-11-20",
+  "sha256": "bdde507097f193c319bfa72de96bac5413a84b8ab9ddbb33f8dedc684f71d477",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

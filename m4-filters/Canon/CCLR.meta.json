@@ -4,8 +4,8 @@
   "short_name": "CCLR",
   "name": "Canon Clear",
   "format": "camera-look v2",
-  "sha256": "8bcf78e5288b0e6ad79a9d62fae201cb9b4e81ed3c6576b1903ac89bfdd2f112",
-  "updated": "2026-11-20",
+  "sha256": "aa7ea2db8209716c38c12e2eafcc5958be0cfde10e43e26b2990dae33ecb8dad",
+  "updated": "2026-11-22",
   "order": 15,
   "camera_tested": false,
   "training_error": {

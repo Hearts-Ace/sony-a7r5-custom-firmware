@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "PANF50Y",
   "name": "Elite Ilford PanF Plus 50 Yellow",
-  "format": "A7Look /2",
-  "sha256": "f51989ffabc6b6ede2859759e9e1c69e54f81c51baa874c330db6f0eb05dabb8",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "c13c5251a3a1a29b25a360f6f7bb6c306608e4d9e630e25aa7b89dd2118352cc",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",
@@ -22,5 +22,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "7da6a675851a2784f5925c5002cf4886aafa560c7a4769284a119f2d3b3b59cd"
 }

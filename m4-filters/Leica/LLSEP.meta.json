@@ -4,8 +4,8 @@
   "short_name": "LLSEP",
   "name": "LL Sepia",
   "format": "camera-look v2",
-  "sha256": "121bb413b4a5428794eab4eb603d29897d01616d057c820c349071a0e3ec2f8c",
-  "updated": "2026-11-20",
+  "sha256": "f6981796159495ce2fd6eeef097620ea419d7668f1386d480f500253468f4c43",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

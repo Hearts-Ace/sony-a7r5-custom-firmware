@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLMC",
   "name": "LL MC",
-  "format": "A7Look /2",
-  "sha256": "6b2de89482617896aa741dd53b8b16091f50883a0c391b906e7bd60b0ef92c86",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "f4946e0e75a1d8935a1032d8b06aaf8452cf99c39358eb473a57cd75306f8d36",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "c69333d8b78bedfa91f2670fbf2b8cad4dcbb847d0fff640b33f98c1665fd29a"
 }

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "ACROSII100G",
   "name": "Elite Fuji Neopan Acros II 100 Green",
-  "format": "A7Look /2",
-  "sha256": "a1fde24398bf42a9da0fb17cccdd6d8206df2344977cbff484d03651119a8550",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "7a2bc1dea524fe3584988156840da531e804bda29f39257b279cb0c07b88eefa",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "ba88e6bfc98be2de5e178d8bfa09d42ff4c8a830773410c969c5a7f362f1b6c9"
 }

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "TX400L",
   "name": "Elite Kodak Tri-X 400 (linear)",
-  "format": "A7Look /2",
-  "sha256": "f726cd1205c84acbea8d1e6e2bb214b91502e337f2b7fe7644eefedef4d968ec",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "99657fc0668c8b907939b047cb7eaf8676faa45c2ae32660e8e8b4a11b9c69b8",
+  "updated": "2026-11-22",
   "order": 39,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "409ad393063f19cefd0eb55d51a3d0a0bb9cac7b686e1b470c8101983e1728d0"
 }

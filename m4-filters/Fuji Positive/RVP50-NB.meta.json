@@ -4,8 +4,8 @@
   "short_name": "RVP50-NB",
   "name": "Elite Fuji Velvia50 NB",
   "format": "camera-look v2",
-  "sha256": "f073b56b6a485e3771c23b0a189e987ea99d30ae57230b078de9616129b8a037",
-  "updated": "2026-11-20",
+  "sha256": "d9a882f0c71928d9e071ab878191daad2988c9362a2dce16fbe3eed2c5cc5a41",
+  "updated": "2026-11-22",
   "order": 69,
   "camera_tested": false,
   "training_error": {

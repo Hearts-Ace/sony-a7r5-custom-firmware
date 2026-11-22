@@ -4,8 +4,8 @@
   "short_name": "CPSN",
   "name": "Canon Portrait Snapshot",
   "format": "camera-look v2",
-  "sha256": "0a3ce4f7b53fd70f92b19363da56aa66e8553cb1f14bfc477e2132161efe1680",
-  "updated": "2026-11-20",
+  "sha256": "e252a0967656c1dda5cd679902d270afa12c4bd2e6cc1573e542c21351271ddd",
+  "updated": "2026-11-22",
   "order": 23,
   "camera_tested": false,
   "training_error": {

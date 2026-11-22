@@ -1,0 +1,27 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "NPINK",
+  "name": "Nikon Pink",
+  "format": "A7Look /1",
+  "sha256": "3d89b3eae913f64f659c675877fa161c36d834f2466a9f8002b8c220a2ce3311",
+  "updated": "2026-11-22",
+  "description": "",
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.0121791323217832,
+    "p95": 2.2961663672172348,
+    "maximum": 5.479548278119098,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "source_bin_sha256": "f6a2076a25efa67a14a264571483f3b1c42d0332f9fa3a7577a4cd0f29387c92"
+}

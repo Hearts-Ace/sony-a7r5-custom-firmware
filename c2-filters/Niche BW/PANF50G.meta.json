@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "PANF50G",
   "name": "Elite Ilford PanF Plus 50 Green",
-  "format": "A7Look /2",
-  "sha256": "5fa3d01dcf5d0fcc2887ea240c0f94bdb60e504c405cd0b417641efb7e24659c",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "141477cae81fbe88d18f105ec7ec6739d78134a8ba521079222ff57208788ed0",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "b5d3124afd1f3b78d1415d27a4900cddc1136ab2576051b7739b791a3a4d3e27"
 }

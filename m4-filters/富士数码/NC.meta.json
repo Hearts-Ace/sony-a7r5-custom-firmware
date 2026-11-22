@@ -4,8 +4,8 @@
   "short_name": "NC",
   "name": "CLASSIC Neg.",
   "format": "camera-look v2",
-  "sha256": "52a55f40149d3c02c6e979d38b6bbb35efcf86a5c66bed7eca317998200cd2a3",
-  "updated": "2026-11-20",
+  "sha256": "24bce0bb519e5521368617f573ab48dfe9409b5cd227f8775fa85bf4c9d2b64c",
+  "updated": "2026-11-22",
   "order": 4,
   "camera_tested": false,
   "training_error": {

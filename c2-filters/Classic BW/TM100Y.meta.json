@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "TM100Y",
   "name": "Elite Kodak Tmax 100 Yellow",
-  "format": "A7Look /2",
-  "sha256": "55c20712dccded3e7e1d9b7a8a4ce81eaec3e458a3ac007854bba6a08ee3ea23",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "779f2035fc95e0f0a095422a33bb6cc40a0df6607a9bc95195f1eb68651db572",
+  "updated": "2026-11-22",
   "order": 37,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "974a4ce4f5f5e4e6a9893b18134b43670c20dff7a512176d63db69bc16f68651"
 }

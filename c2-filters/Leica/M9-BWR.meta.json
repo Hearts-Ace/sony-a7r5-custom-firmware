@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "M9-BWR",
   "name": "Leica M9 BW Retro",
-  "format": "A7Look /2",
-  "sha256": "6302df0a49cfbe38fa0b385bdd241f7d40dcabc167de3e68bf95031dfe645d0e",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "753863659f3c89b322c85ec92b303f02af767597b65770fdf4fb203d954ecdf0",
+  "updated": "2026-11-22",
   "order": 97,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "7445db249e4645ec63b0836a59d553a68bad2c759fb8643e5d9a7de9d038b197"
 }

@@ -4,8 +4,8 @@
   "short_name": "LLCLS",
   "name": "LL Classic",
   "format": "camera-look v2",
-  "sha256": "83092def6ab42c08f10ac7e857f8346c00d2bcd1be6beea766c552eb6f7f550b",
-  "updated": "2026-11-20",
+  "sha256": "a7672d79f0a6a72c986e8dd706c4914a6c77efdb9d1d9cab7f4d5c370e0e61fa",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

@@ -4,8 +4,8 @@
   "short_name": "D3200",
   "name": "Elite Ilford Delta 3200 Pro",
   "format": "camera-look v2",
-  "sha256": "01ba36690587f1892adbb0c93e7ceea68c4a24884331cc64e57bedfa3e7591b1",
-  "updated": "2026-11-20",
+  "sha256": "ab851453e87a091dd739bfe698c86edba525174cc8f1c8afa3b779e70242f7b7",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

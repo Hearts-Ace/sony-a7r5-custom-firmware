@@ -4,8 +4,8 @@
   "short_name": "FP4+L",
   "name": "Elite Ilford FP4 Plus 125 (linear)",
   "format": "camera-look v2",
-  "sha256": "c92382a715491212c5e0e199e948bb317992221ebf2b26a4ef64e4643ce051a8",
-  "updated": "2026-11-20",
+  "sha256": "da92de3de24479b27deb0a7eaa1d37079182b462281ed236ac3615266f9847a9",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "HP5+L",
   "name": "Elite Ilford HP5+ 400 (linear)",
-  "format": "A7Look /2",
-  "sha256": "babb1795f8aec9dc9fcbf8e70357021535c15db1ce0168a3ecd48cac535f1771",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "311751676087fdf60a7c6584d754dd6075cfd23a748f9e0a53bb5e8393397377",
+  "updated": "2026-11-22",
   "order": 31,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "03e6982030baed51c2ebed3f8cf2f6b60c615cee9055f039281403b3ca623b02"
 }

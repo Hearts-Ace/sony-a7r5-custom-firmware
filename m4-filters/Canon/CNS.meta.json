@@ -4,8 +4,8 @@
   "short_name": "CNS",
   "name": "Canon Nostalgia",
   "format": "camera-look v2",
-  "sha256": "7e65aa5d133b913c2a6e4e4c34452a07b7d07e77e7e4301ec608d95cbcb4b2d9",
-  "updated": "2026-11-20",
+  "sha256": "9ee624460e3b880a06234c7fcec86794f218854cf7bd46af8c85d42d4e04ae64",
+  "updated": "2026-11-22",
   "order": 22,
   "camera_tested": false,
   "training_error": {

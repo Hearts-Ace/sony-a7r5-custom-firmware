@@ -4,8 +4,8 @@
   "short_name": "LLBWN",
   "name": "LL BW Natural",
   "format": "camera-look v2",
-  "sha256": "4e20f5088e7ae4828686822df098f3571d90fa97001ec44148c5a714d90891b7",
-  "updated": "2026-11-20",
+  "sha256": "3a017d84c8e0cd9131c65a48f92986e8bd5599574bc12ab5e4dc1e8cb6ac8256",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

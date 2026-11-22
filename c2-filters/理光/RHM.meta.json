@@ -1,0 +1,27 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "RHM",
+  "name": "Ricoh Hard Monotone",
+  "format": "A7Look /1",
+  "sha256": "b29fff8e8c837babba5a5e7a9b457bd1fae809e7284120a09bb90f5542905682",
+  "updated": "2026-11-22",
+  "description": "",
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.125624776339882,
+    "p95": 4.156233538148647,
+    "maximum": 15.904618491013371,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "source_bin_sha256": "0fea6c6cb492ecea8840268ca83b04860792906217424edb24880aec8c35683f"
+}

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NCHA",
   "name": "Nikon Charcoal",
-  "format": "A7Look /2",
-  "sha256": "b70d52ee5ce52dcea4f6113d576f97e909ef4fa1a3d2b41b3c5fbd836ac4461d",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "2151d064074b2a064b7bf226b97cc9a33a0de40b1535bbb3a054f7b735fdfe0d",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",
@@ -22,5 +22,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "519b4edcf54154597ec21a627aff3dbd3961394d4703401e2c9bb376b55db992"
 }

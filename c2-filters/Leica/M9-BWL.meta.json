@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "M9-BWL",
   "name": "Leica M9 BW Low",
-  "format": "A7Look /2",
-  "sha256": "365cc4fff20eaf909402e6c7ff25929dca9dccc5d963f60f8f13f71768a14a28",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "d474466aed55b848a1cc7df36fe92a3ef6555b7a2795331749956d0cbb8c7c3e",
+  "updated": "2026-11-22",
   "order": 95,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "83de8e7cea3522eb45f8d208289a7d26fce3d860e51af4d7eb776ae4c263b668"
 }

@@ -4,8 +4,8 @@
   "short_name": "LL100M",
   "name": "LL 100 Years Mono",
   "format": "camera-look v2",
-  "sha256": "f3c93d0cff70f3b2eb4c490a45150df71ba56cd970a87af06d13efabde81c8f3",
-  "updated": "2026-11-20",
+  "sha256": "8b5d087248acd880df442eb81c1ef43dbc48d551b3430900a294d779fbdcaed8",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

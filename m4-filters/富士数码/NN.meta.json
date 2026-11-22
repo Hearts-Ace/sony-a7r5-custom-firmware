@@ -4,8 +4,8 @@
   "short_name": "NN",
   "name": "NOSTALGIC Neg.",
   "format": "camera-look v2",
-  "sha256": "1d2d4e446f8b5badb9566bc3325c4a198e33ba4928053fcf5338c415df6374ec",
-  "updated": "2026-11-20",
+  "sha256": "ee57f1902511a54790173066b22f470f57d174fba17404e2a3416caea7be28c4",
+  "updated": "2026-11-22",
   "order": 10,
   "camera_tested": false,
   "training_error": {

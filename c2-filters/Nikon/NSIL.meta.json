@@ -1,0 +1,27 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "NSIL",
+  "name": "Nikon Silence",
+  "format": "A7Look /1",
+  "sha256": "413a9429989ab642a8ae338fe7fa642308bbcde6b65a1e904523c2a2c65856b8",
+  "updated": "2026-11-22",
+  "description": "",
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 0.8929541991561539,
+    "p95": 1.973324507675824,
+    "maximum": 4.5966998286289575,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "source_bin_sha256": "8b74da619c80171dfe56468bd465241c0999038afc4f1ad9a478189d2ba836ac"
+}

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CFD",
   "name": "Canon Fine Detail",
-  "format": "A7Look /2",
-  "sha256": "ba23c8cb1468261010aa86b3162cb35b2a5ed4f0fcd2d28769a7d9d6855ec7d0",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "397051ca4bb6c5fe795b4f715131be160838d3573a94ced2a1cf460cf54aedc5",
+  "updated": "2026-11-22",
   "order": 18,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "2ea31e49315800ecb8026da4c78fae8d3874d64c24bfdb5401955725398199bc"
 }

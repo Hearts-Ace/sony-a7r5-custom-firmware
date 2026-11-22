@@ -4,8 +4,8 @@
   "short_name": "K25-B",
   "name": "Kodachrome 25 B",
   "format": "camera-look v2",
-  "sha256": "52feb67dac7adca2f488c12ab84b17e1c91158f14827c4b7e359a72d4d1fb4fd",
-  "updated": "2026-11-20",
+  "sha256": "ff05baea33994cb71a99b00c63f13a88dbbbf36b4dea14a016cd73a628f16cf7",
+  "updated": "2026-11-22",
   "order": 71,
   "camera_tested": false,
   "training_error": {

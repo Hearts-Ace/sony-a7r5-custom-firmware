@@ -4,8 +4,8 @@
   "short_name": "M9-BWH",
   "name": "Leica M9 BW High",
   "format": "camera-look v2",
-  "sha256": "50cb2754a7518313dd5db558adc1c161b6d338cc749d840597845d9252d2822d",
-  "updated": "2026-11-20",
+  "sha256": "ba07fe766fe2512f5976c5f6102bdd3768eeb541443cb8334e09c92de10c4d95",
+  "updated": "2026-11-22",
   "order": 94,
   "camera_tested": false,
   "training_error": {

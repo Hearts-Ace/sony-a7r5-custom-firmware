@@ -4,8 +4,8 @@
   "short_name": "M9-BWR",
   "name": "Leica M9 BW Retro",
   "format": "camera-look v2",
-  "sha256": "2115cfacc80691838e369079ed3b1a77d1c12af5e201855a82fdf66ca760bc03",
-  "updated": "2026-11-20",
+  "sha256": "3a53ed84cf4a565487b13a56a0655bb217b189336b82b02695548db6d311491c",
+  "updated": "2026-11-22",
   "order": 97,
   "camera_tested": false,
   "training_error": {

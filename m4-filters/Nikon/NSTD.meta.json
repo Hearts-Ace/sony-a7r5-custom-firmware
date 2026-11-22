@@ -1,0 +1,26 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "NSTD",
+  "name": "Nikon Standard",
+  "format": "camera-look v2",
+  "sha256": "1a2a75ef77cf72e39f389add6b2f929abcda1c8980831ff1cf7c6584a280d3b8",
+  "updated": "2026-11-22",
+  "description": "",
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.014303447541544,
+    "p95": 2.44747123465069,
+    "maximum": 5.990149365937323,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5"
+}

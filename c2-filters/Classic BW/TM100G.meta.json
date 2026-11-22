@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "TM100G",
   "name": "Elite Kodak Tmax 100 Green",
-  "format": "A7Look /2",
-  "sha256": "6b92b1ddc55c777e658401cbd045d49af3a7550587784d09e0d3673b6fb2df22",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "8823aac8b1d316340971b86dc74f48ce2f3c4b4440ffd3d6e5f53c92f01a0fdc",
+  "updated": "2026-11-22",
   "order": 35,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "45d7ed772270f9c1c5406687a3a8826e3e64708b90d3f69e7a6a29dbdf2f617e"
 }

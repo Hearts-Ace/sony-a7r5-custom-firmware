@@ -4,8 +4,8 @@
   "short_name": "M10R-BW",
   "name": "Leica M10r BW",
   "format": "camera-look v2",
-  "sha256": "bff51f46ff85880bc12438024e6dfceb863437a3671831243f1b4aeadb77901c",
-  "updated": "2026-11-20",
+  "sha256": "5e62bf2753cf8c3505acfc485fdcb37768c7726b1a5f7343c9f99718fa7c2cf7",
+  "updated": "2026-11-22",
   "order": 92,
   "camera_tested": false,
   "training_error": {

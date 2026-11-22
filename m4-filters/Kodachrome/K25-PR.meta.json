@@ -4,8 +4,8 @@
   "short_name": "K25-PR",
   "name": "Kodachrome 25 PR",
   "format": "camera-look v2",
-  "sha256": "788b2283b606a952c00c40d93db4f479009fcc499475ce8412cebabef92c0f02",
-  "updated": "2026-11-20",
+  "sha256": "ef885f74ce79592cefa7d0be2bdd36e39cbdbdf0c851373c9b18e9235c11b25d",
+  "updated": "2026-11-22",
   "order": 73,
   "camera_tested": false,
   "training_error": {

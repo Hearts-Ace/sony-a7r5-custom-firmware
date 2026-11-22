@@ -4,8 +4,8 @@
   "short_name": "TX400G",
   "name": "Elite Kodak Tri-X 400 Green",
   "format": "camera-look v2",
-  "sha256": "4b79d3739b4bd6d32c79b5761f32347ffc0a84a0c5d21926e4a8a0deb3761593",
-  "updated": "2026-11-20",
+  "sha256": "f05900e950458e91bd13e41ae1f1be8326e2e30905685f9c22a10404bf2ec898",
+  "updated": "2026-11-22",
   "order": 40,
   "camera_tested": false,
   "training_error": {

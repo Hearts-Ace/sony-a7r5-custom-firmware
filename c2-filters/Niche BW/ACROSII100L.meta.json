@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "ACROSII100L",
   "name": "Elite Fuji Neopan Acros II 100 (linear)",
-  "format": "A7Look /2",
-  "sha256": "8837fd63a591dd3e3fd2b2cd50d74f82e9c6053968b0258048c68f7defbfc385",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "a5d52c2f640c46c4df663d66b3e4c06a6d2633824f1dad060165d3b5ff41dfed",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "ced47af2a046776017cdf7fe910879822b335fda4f79dee0078f5891dbf26fe0"
 }

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NDEN",
   "name": "Nikon Denim",
-  "format": "A7Look /2",
-  "sha256": "f47c6a8de7478247239806104276221a7caa890b2661f9e9cac2c505852d44d7",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "bb58501817537fd5b99b61ef267dfc941e527c945d56a681ac3ff8f47e680f51",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",
@@ -22,5 +22,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "eea5a775f8cc2e081479f3aca67c53f53143eb5a0e380e94c28bd3dc5f69fa99"
 }

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "RVP100-NB",
   "name": "Elite Fuji Velvia100 NB",
-  "format": "A7Look /2",
-  "sha256": "e210cc7e94ce58f816c6af65eac59800efada903fab739e804a9df72639e2534",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "644262c1fb7a882b7ae0863e8db6afb27e58bf2387c1f153c04eb26ca0618469",
+  "updated": "2026-11-22",
   "order": 65,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "e1f071d87530a9968bdefdd0c217ed40930e41acda9ce3d0b74a2b37e667d42f"
 }

@@ -4,8 +4,8 @@
   "short_name": "CFA",
   "name": "Canon Faithful",
   "format": "camera-look v2",
-  "sha256": "4950a1063270893de251747e72f8a902c9096850f79826f352750c108b2cfa74",
-  "updated": "2026-11-20",
+  "sha256": "dd15c37734098067073dae11dd12ca534c78ac1f7be5947ba36fa88d9137d189",
+  "updated": "2026-11-22",
   "order": 17,
   "camera_tested": false,
   "training_error": {

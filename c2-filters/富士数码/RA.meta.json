@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "RA",
   "name": "REALA ACE",
-  "format": "A7Look /2",
-  "sha256": "1eeca2ac5b85845db3f8f447c0bf10a4f54016cfbc198584ed1fb123c1ad4c90",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "7afe0e7fb6700083d856afe85ed3f41ad0a915a6eb0f345482ad85e3bd3e3d13",
+  "updated": "2026-11-22",
   "order": 7,
   "camera_tested": false,
   "training_error": {
@@ -21,5 +21,6 @@
     "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "cbe1d008252215e922c3d48f91c10acb7f5e0d5559976d5b105e08fd15cf2e6d"
 }

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "FP4+L",
   "name": "Elite Ilford FP4 Plus 125 (linear)",
-  "format": "A7Look /2",
-  "sha256": "ef4e4c8f10fef2fbbbf18b008445b161ec184839e0b8c731821d1e512c704578",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "8491df3f38bfeb4ab02e5f4871cf78a97154bd7e2c5bafdd4a672f51ae72f571",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "ae597d211c92df584ac5321f8c69ecee85144a7a1e25006f56cb94a3b76bce61"
 }

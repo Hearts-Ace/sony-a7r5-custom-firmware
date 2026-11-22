@@ -4,8 +4,8 @@
   "short_name": "RVP100-NB-L",
   "name": "Elite Fuji Velvia100 NB (linear)",
   "format": "camera-look v2",
-  "sha256": "7b4311cf316c72f1702044cd8698c7ff1652ed18950019a3bf1dd2fce70eea6e",
-  "updated": "2026-11-20",
+  "sha256": "c7f4f9d8b72b6fbd508ba67da2818e27fb700b6610ae3f685983ab5dd55c9fc1",
+  "updated": "2026-11-22",
   "order": 66,
   "camera_tested": false,
   "training_error": {

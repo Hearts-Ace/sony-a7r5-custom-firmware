@@ -1,0 +1,26 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "NTOY",
+  "name": "Nikon Toy",
+  "format": "camera-look v2",
+  "sha256": "97c33507cf92fc6a62f5d8a98027a6b81e2176fb6c4952150092d8c51bdf778a",
+  "updated": "2026-11-22",
+  "description": "",
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.2430420299071465,
+    "p95": 3.0247526770264965,
+    "maximum": 8.58241569633596,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5"
+}

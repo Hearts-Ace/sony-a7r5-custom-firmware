@@ -4,8 +4,8 @@
   "short_name": "G200-B-L",
   "name": "Elite Kodak Gold200 B (linear)",
   "format": "camera-look v2",
-  "sha256": "1d9b848b80e7247fd8dfba7bc476313c7c11cfb8529609a4500f6ee72f0bc0ba",
-  "updated": "2026-11-20",
+  "sha256": "ab660f4c8ae87cd09966bfce2bcc1345d2823b5327dd4c998eb95dd81a15fab0",
+  "updated": "2026-11-22",
   "order": 89,
   "camera_tested": false,
   "training_error": {

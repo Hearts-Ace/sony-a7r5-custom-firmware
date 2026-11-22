@@ -4,8 +4,8 @@
   "short_name": "TX400Y",
   "name": "Elite Kodak Tri-X 400 Yellow",
   "format": "camera-look v2",
-  "sha256": "9d60c1dcb018f06cf0aee263b1e04277ff34195a3207c8872262f767b37859ec",
-  "updated": "2026-11-20",
+  "sha256": "499e9b4b2ea320930c619fe1bebe3319b50e9b40ebee6552144db1bd20c81b3e",
+  "updated": "2026-11-22",
   "order": 42,
   "camera_tested": false,
   "training_error": {

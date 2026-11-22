@@ -4,8 +4,8 @@
   "short_name": "D3200Y",
   "name": "Elite Ilford Delta 3200 Pro Yellow",
   "format": "camera-look v2",
-  "sha256": "19d611d7a465b9aa177b7f3a5865f485521141ba5fcfcfbdbb121c448cee638f",
-  "updated": "2026-11-20",
+  "sha256": "b321bc3ed086cbcefa90a4fd190ab6bb58b1b8a68677c1859234d5d3d2120ca0",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

@@ -4,8 +4,8 @@
   "short_name": "D100Y",
   "name": "Elite Ilford Delta 100 Pro Yellow",
   "format": "camera-look v2",
-  "sha256": "0e711526a1236d97fddecc1e22913cc343efd544f4d441e468d25af4b26cb6d5",
-  "updated": "2026-11-20",
+  "sha256": "b59915e7ae1d79ffe4db63d302d321efc12d1526823afa6d9b24f16aeaad6854",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

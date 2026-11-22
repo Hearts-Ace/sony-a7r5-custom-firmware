@@ -4,8 +4,8 @@
   "short_name": "K64-09-PR",
   "name": "Kodachrome 64 2009 PR",
   "format": "camera-look v2",
-  "sha256": "8c42fabb437f68f07de81541c34947b11f7d9ff9eb6441eac5701dca6b93ec12",
-  "updated": "2026-11-20",
+  "sha256": "4709c0d08ffd4aa22b5375ce8ad8c81fe36e335bb8acf712780f9127e9d20622",
+  "updated": "2026-11-22",
   "order": 79,
   "camera_tested": false,
   "training_error": {

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NFM",
   "name": "Nikon Flat Monochrome",
-  "format": "A7Look /2",
-  "sha256": "4f9f40233b397e107715fd6644562e82ea41ecec253e1af9a3c8c8cc5eb7a20a",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "10f8d178a4bb2665f51f40251ff026a5b3f642440246738137460af937fa9fc1",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",
@@ -22,5 +22,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "c15b4643e50e539e11fcc446b78744a5dfdd1e9efbb99992f840921500a13b7d"
 }

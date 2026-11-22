@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLBR",
   "name": "LL Brass",
-  "format": "A7Look /2",
-  "sha256": "b8497e54662c4cbdb88e5529bad06cec238eba0cc7547dfddf1d3c16130ed4cc",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "69eb47a7ac6c83f826e2e3109c2dd9dff9cf32d1deef1e615c873bd39a6f2c50",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "b9220eff1f2a280a329be411d2e4f016774cab293961d97265f915900730982d"
 }

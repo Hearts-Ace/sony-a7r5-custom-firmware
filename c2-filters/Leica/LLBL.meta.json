@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLBL",
   "name": "LL Bleach",
-  "format": "A7Look /2",
-  "sha256": "5fc6d87f6caa6f4976de3a2016b96c58437447cda64d3a9954d1e5d2a151daf1",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "2d89529ed563080186935af84f321c25c17601491d1105f08adb16f58bafcca1",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "27c5a643ae0969fd454da4d1438eb57256242df38bf820f4b5e4cd5c0ddae9ad"
 }

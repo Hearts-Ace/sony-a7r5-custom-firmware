@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CFA",
   "name": "Canon Faithful",
-  "format": "A7Look /2",
-  "sha256": "7c4ec63c45ea34432367eec395ffc8793a65c20ee0a96cfe8884c3a69749d418",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "e4268e2c7c8404b415f61b5cd4076d9e64b7d5f390eece17d391e3a2ae11e5d0",
+  "updated": "2026-11-22",
   "order": 17,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "5cf1153c25e53bde62e9b5a46aec9a7ad06100dbd18d833d291b61fea60ab49f"
 }

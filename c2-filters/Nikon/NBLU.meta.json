@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NBLU",
   "name": "Nikon Blue",
-  "format": "A7Look /2",
-  "sha256": "6b2cefb381a974df866f6c32942f7f835bb60fa36875920a975f0a56b0fb8dea",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "0454ab1a662f72cdab85e18325a5cc31f6dcd0fe86d98c0bcdb51cda4313b335",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",
@@ -22,5 +22,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "524ca98b67e08af9c65ea86e7a58995015d2bdf77a67eedd7a578d586f0476d8"
 }

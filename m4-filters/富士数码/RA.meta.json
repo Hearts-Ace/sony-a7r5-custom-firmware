@@ -4,8 +4,8 @@
   "short_name": "RA",
   "name": "REALA ACE",
   "format": "camera-look v2",
-  "sha256": "a9650b2d30819af11feb012de3464537fc58b1b4c950df7189aa4e4304438210",
-  "updated": "2026-11-20",
+  "sha256": "71248e2a6328b4a72ca11124a7b97026ea5ff820bd585dc2c2622f66a4509770",
+  "updated": "2026-11-22",
   "order": 7,
   "camera_tested": false,
   "training_error": {

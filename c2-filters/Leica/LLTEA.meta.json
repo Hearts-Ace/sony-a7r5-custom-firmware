@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLTEA",
   "name": "LL Teal",
-  "format": "A7Look /2",
-  "sha256": "def306166fec11cf25fd78ed3e183b6b3ea0426c844edc0bb3e393875061a95f",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "ae1e95f781a7914ee20d0a46795d42fbd0da95b0eff6b787106402af841faa73",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "6adf96b57dfddd1b973eaa3db7a718db108db0aca921e85d8d69089fa4940a0f"
 }

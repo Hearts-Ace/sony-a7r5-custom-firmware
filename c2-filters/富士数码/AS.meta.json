@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "AS",
   "name": "ASTIA",
-  "format": "A7Look /2",
-  "sha256": "41d7b11beb055169f4ce39fbdd96115cccbf395876f95202f60de4eb8c281f5a",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "06df4f4fc92d6fa4260ae0f001428c63ab13eba9c965ad26e490b09c92b47245",
+  "updated": "2026-11-22",
   "order": 0,
   "camera_tested": false,
   "training_error": {
@@ -21,5 +21,6 @@
     "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "8e2cfc16506ec3169a3e6516240ece54ead87bbecc6bbf5b458e7f43acfa0e47"
 }

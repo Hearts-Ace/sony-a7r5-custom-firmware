@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "P400",
   "name": "Portra400NB",
-  "format": "A7Look /2",
-  "sha256": "edc24208f3d7e518cfa4c4229b44816e289d7c5a9efb77efa596f3b2f01314da",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "11cccbbe987d8bd62b7b7cd5373742b5fa49806d3bba180580a2a83dfaa15041",
+  "updated": "2026-11-22",
   "order": 13,
   "camera_tested": false,
   "training_error": {
@@ -21,5 +21,6 @@
     "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "77511022442a3ecba79a304b32b32aefe1c483290935ab20da992d74fe0979dc"
 }

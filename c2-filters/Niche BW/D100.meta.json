@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "D100",
   "name": "Elite Ilford Delta 100 Pro",
-  "format": "A7Look /2",
-  "sha256": "1a2e4e8ceec80078d939fd2160f00e15c75199a51b923c474b90610e2ff776bc",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "5b7f3158ab28aae17f625daa002d99392dc5f2db12a225b033553a9baed70602",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "435abc9ad62b6500d077c98f7cfdb4f0363e38348daa8d78701b6b33ee617c4d"
 }

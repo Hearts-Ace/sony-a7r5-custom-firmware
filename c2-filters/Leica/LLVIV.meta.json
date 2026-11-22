@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLVIV",
   "name": "LL Vivid",
-  "format": "A7Look /2",
-  "sha256": "25b532455e1fa7c369e82f2e040c906a7a9c74e129aca93a73e012d0bc8c6690",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "cbeabddce29af008623ff39e74415f7058b47e54448b24a583674e1b9d87c220",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "9b63a68ce8163c2a241c4a761ea476c4ca6f317082bbb568b8087549124158eb"
 }

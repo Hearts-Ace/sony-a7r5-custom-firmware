@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLBWHC",
   "name": "LL BW High Contrast",
-  "format": "A7Look /2",
-  "sha256": "5d3e1e048bbed22071c36660b810ca11dbf97b7cfe2d738446cc199df79841fc",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "3aa3bde3672b06d95bd632931774b8a02caeaab361acac6268f73ecda42190a6",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "66bb3f5894ee7525c77f36ffbc69d9626580ce687a778148edbd17eded5fec1b"
 }

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLCHR",
   "name": "LL Chrome",
-  "format": "A7Look /2",
-  "sha256": "58667eef257f887710c616ffc58cc9643c633e55c120ef766851ae5b54ed44b4",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "2a49072109b47fd8356502eab9a9dc48733ec2c6f57bc21f951765012a1bd4e4",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "159240d28315ad7a05931da53fce178fc913cc0bb4e2f1f685fd1c5f550bdda8"
 }

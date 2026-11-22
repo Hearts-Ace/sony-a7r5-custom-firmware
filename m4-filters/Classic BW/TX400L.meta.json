@@ -4,8 +4,8 @@
   "short_name": "TX400L",
   "name": "Elite Kodak Tri-X 400 (linear)",
   "format": "camera-look v2",
-  "sha256": "0a147c6c1110a7359ea4bc7a4dfd5140e06cf6c393fb731e8a3654c0885bdc5a",
-  "updated": "2026-11-20",
+  "sha256": "2b297d99afcea3400a3f5596a9a2fc7d1089036599427d1b058430877a27b6dd",
+  "updated": "2026-11-22",
   "order": 39,
   "camera_tested": false,
   "training_error": {

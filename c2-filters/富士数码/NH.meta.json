@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NH",
   "name": "PRO Neg. Hi",
-  "format": "A7Look /2",
-  "sha256": "e46936dbf7136147a686ef84c66e7cf12cf0f6fd2981a2176554700824e25a8a",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "c60448c6702d027586327098ad7e1776483c1d06c2923999a7649016db69f9a7",
+  "updated": "2026-11-22",
   "order": 5,
   "camera_tested": false,
   "training_error": {
@@ -21,5 +21,6 @@
     "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "242a08b2334d9e02d2b4d747745ce2a4e935bd0d00041e2de08c4579cfdcd69e"
 }

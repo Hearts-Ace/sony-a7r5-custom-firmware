@@ -4,8 +4,8 @@
   "short_name": "TM100L",
   "name": "Elite Kodak Tmax 100 (linear)",
   "format": "camera-look v2",
-  "sha256": "9549b6cfcfb9009bd1b08b9615b10ce8a2301c3235410e50c896317b6d7d7393",
-  "updated": "2026-11-20",
+  "sha256": "8ae3ed8079f7e61091557fe092f8eb586391c353501e2a7cc4387dc2dea9e0fa",
+  "updated": "2026-11-22",
   "order": 33,
   "camera_tested": false,
   "training_error": {

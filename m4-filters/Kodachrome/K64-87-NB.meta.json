@@ -4,8 +4,8 @@
   "short_name": "K64-87-NB",
   "name": "Kodachrome 64 1987 NB",
   "format": "camera-look v2",
-  "sha256": "2299785d32ee884581620ac04434db70aa3972e134405699ab118aaf59344c75",
-  "updated": "2026-11-20",
+  "sha256": "2480007a6909068329fef260d109aa54a5d001e21a388c58e498231acc662fac",
+  "updated": "2026-11-22",
   "order": 75,
   "camera_tested": false,
   "training_error": {

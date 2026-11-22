@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "RVP50-B",
   "name": "Elite Fuji Velvia50 B",
-  "format": "A7Look /2",
-  "sha256": "97f4956f065689e9c542f55bbaeced8bc9644b964a132fd183cdc4e86cf5523b",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "bf0babd66efa0289ee4558bdc043ba48762bdff066d1c3c43846da1d5072ee41",
+  "updated": "2026-11-22",
   "order": 67,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "5c4ad8aacf7475412611864c72b3a7ce11896d92803f5642513ee7be945617af"
 }

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "D3200Y",
   "name": "Elite Ilford Delta 3200 Pro Yellow",
-  "format": "A7Look /2",
-  "sha256": "9dc9fddd28b8cc2833f80ebb5be5cb69bfae250e051d6b373c1c62e5ecbbb059",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "517f3b0fdb3efa080ac59946cb70c154fedd094d2f8e6b1d9cca19da80d870f2",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "9b8383a5ae331348625b9ac65de75b9949c540e482917d1d657fa3d20be006af"
 }

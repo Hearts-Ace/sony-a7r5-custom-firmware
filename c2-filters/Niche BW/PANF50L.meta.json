@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "PANF50L",
   "name": "Elite Ilford PanF Plus 50 (linear)",
-  "format": "A7Look /2",
-  "sha256": "cb47084cc8a8103b8fae40330e78d738a37de46fbe0c7e7c9c95cf43f4a0ea73",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "9143ed1ed4262f3b158c24395f2fe3d87edfd76ea26fd6d180af73cb1bdecc02",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "5ae04993d8268ae1f97e71d9ea74e38b92a6c698d6e3db596585f2d6643652e4"
 }

@@ -4,8 +4,8 @@
   "short_name": "HP5+",
   "name": "Elite Ilford HP5+ 400",
   "format": "camera-look v2",
-  "sha256": "c8a2a3b759868240597e6d49c077187c9731bb24c8962a5710d5a28b0afe34d8",
-  "updated": "2026-11-20",
+  "sha256": "2f845ee64652ff6413bc7976c61c31ce22a88f05c2d098a869c30e3d297f9446",
+  "updated": "2026-11-22",
   "order": 32,
   "camera_tested": false,
   "training_error": {

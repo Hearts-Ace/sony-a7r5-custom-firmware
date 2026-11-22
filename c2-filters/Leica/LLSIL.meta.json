@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLSIL",
   "name": "LL Silver",
-  "format": "A7Look /2",
-  "sha256": "6a231d13200152681a5f9c897e44d23f451193647b659390c69a033e45a19111",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "f3fb20a7200c651d4de31d70cfe11ccede9c042626058ea0a88fe9d9c251ebb3",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "fb2a4c12a4c84e54c1aacc0e073a89301090d05e552471eedaf913dad7550ebc"
 }

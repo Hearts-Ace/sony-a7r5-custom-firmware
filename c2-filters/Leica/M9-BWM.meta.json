@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "M9-BWM",
   "name": "Leica M9 BW Medium",
-  "format": "A7Look /2",
-  "sha256": "556454c36c04160aedf8db093f52b6490afdcde350285f58b2cc6d855b2d1d4f",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "86ecf02ef132b61c30348851f7eed4c9ca0e8c65bcbab9fcd478f49694290fe2",
+  "updated": "2026-11-22",
   "order": 96,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "87bc7c6bf1a375d59f09bb45d43e2f32577f29a97d7dd94bb0cb042404d0e73d"
 }

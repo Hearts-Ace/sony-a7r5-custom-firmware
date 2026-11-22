@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CMO",
   "name": "Canon Monochrome",
-  "format": "A7Look /2",
-  "sha256": "e7a7cf1b701398cd5e46148170aa9cc6347d4ef0454b2f534a14d77157113593",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "9dceff60f758f6e61e01799fa39defc7e0b7cc6db02a840b23ab7f2ed17f81fe",
+  "updated": "2026-11-22",
   "order": 20,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "604958a9ee9251dbe460436f1558f0c5353d61b619bef40b23184b478e160034"
 }

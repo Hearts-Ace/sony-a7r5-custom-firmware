@@ -4,8 +4,8 @@
   "short_name": "LLPUR",
   "name": "LL Pure",
   "format": "camera-look v2",
-  "sha256": "02ab27522fdb4eda4ce61e3609365a89a09bf213ba418dabd6435d4062fd5479",
-  "updated": "2026-11-20",
+  "sha256": "d3f8eeb294fe986e930fc49b7597b1bdb32a3f6969e8c8b3aec51518271b2318",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

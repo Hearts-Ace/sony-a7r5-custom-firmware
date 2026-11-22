@@ -1,0 +1,27 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "PORTRA160-B",
+  "name": "Elite Kodak Portra160 B",
+  "format": "A7Look /1",
+  "sha256": "9dc072765e29c678664eb56cccddc02ccf538ace9379799683e8feb1d6751356",
+  "updated": "2026-11-22",
+  "description": "",
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.1031480596094143,
+    "p95": 2.5522166651335443,
+    "maximum": 8.766930168083402,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "source_bin_sha256": "cb370365032dd82b018d5023e6dfa7f42b85174320d6b42ae475ee90b2d9313f"
+}

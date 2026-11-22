@@ -4,8 +4,8 @@
   "short_name": "FP4+Y",
   "name": "Elite Ilford FP4 Plus 125 Yellow",
   "format": "camera-look v2",
-  "sha256": "5a3c997f39a9cde8a083cae56e613b7c731827898d482ce716bc9815a90f67ea",
-  "updated": "2026-11-20",
+  "sha256": "b4945844200131b079c7aecf60732e3ab508f1783823f0448635c517ef3086f4",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

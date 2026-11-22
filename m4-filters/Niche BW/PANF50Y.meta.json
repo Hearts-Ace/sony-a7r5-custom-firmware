@@ -4,8 +4,8 @@
   "short_name": "PANF50Y",
   "name": "Elite Ilford PanF Plus 50 Yellow",
   "format": "camera-look v2",
-  "sha256": "e477e4caba59e8870cda2105ab57d68a4fe62d5b38dcfb02bd9dcbe9d43041bb",
-  "updated": "2026-11-20",
+  "sha256": "9a7333c2d87bff8cac7c1ed5df38bd5accf0a8a7ee211998eade4a680be9ca95",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",

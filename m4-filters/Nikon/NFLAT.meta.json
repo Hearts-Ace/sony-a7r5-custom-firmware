@@ -4,8 +4,8 @@
   "short_name": "NFLAT",
   "name": "Nikon Flat",
   "format": "camera-look v2",
-  "sha256": "03c85252c05a54fe91424210cefce4990273cb2e4579a64cd125d4b9ff2b99fe",
-  "updated": "2026-11-20",
+  "sha256": "6fcc2d3a22dbf89ff552a26ef820caba0f42a99020cdfaf247dd0f8901735eba",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",

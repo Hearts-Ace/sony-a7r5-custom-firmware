@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CCLR",
   "name": "Canon Clear",
-  "format": "A7Look /2",
-  "sha256": "a06a29c0d76d7995cd5da87d6fe8867621d743e178b1183d36056f60adfab23b",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "33437091aa890f2e585e06dfdfa914bda942154aa43f3f083aea731d948de470",
+  "updated": "2026-11-22",
   "order": 15,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "c492f6e2c88fe659984903f943a99b233344ef712746d7ec21e684601bd773fa"
 }

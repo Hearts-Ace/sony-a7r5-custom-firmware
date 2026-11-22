@@ -1,0 +1,27 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "c2",
+  "short_name": "NGRAPH",
+  "name": "Nikon Graphite",
+  "format": "A7Look /1",
+  "sha256": "aec623571c554493cc2d655938e7f2aa7faeec6ceaf0fa3080ac85c7759491bd",
+  "updated": "2026-11-22",
+  "description": "",
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.1350367924002782,
+    "p95": 3.903834436988348,
+    "maximum": 13.103145993176296,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "source_bin_sha256": "ab7cf39806d63b476fa3fc6fa377ef0a6f9babcb055b5e5bcdef6dd935fb7a65"
+}

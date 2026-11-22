@@ -4,8 +4,8 @@
   "short_name": "D400",
   "name": "Elite Ilford Delta 400 Pro",
   "format": "camera-look v2",
-  "sha256": "129305724bdcc0143dbab6c00e2bd591068832d65503b5305c3cb6bce2f8510c",
-  "updated": "2026-11-20",
+  "sha256": "7deae3d2e46b44df694980be37455cbe4fc656f2b1a19fceb9d0da5e73aa21e3",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

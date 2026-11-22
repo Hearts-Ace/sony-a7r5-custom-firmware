@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLCIN",
   "name": "LL Cine",
-  "format": "A7Look /2",
-  "sha256": "982b53a77e06527e3c8b4aefd34850ac8009f74a4284658cee3f1b47b55e202d",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "062ef158eaea41e31c31f654816bf9f84143932b61f9e95a7502a1edf90d3f05",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "4b524f4e6097546e77f0a0b2d53b0ebffb2ece953b0bdb343c52b3a630ef07de"
 }

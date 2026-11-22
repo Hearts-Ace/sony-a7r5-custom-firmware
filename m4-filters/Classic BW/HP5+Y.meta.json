@@ -4,8 +4,8 @@
   "short_name": "HP5+Y",
   "name": "Elite Ilford HP5+ 400 Yellow",
   "format": "camera-look v2",
-  "sha256": "77a73847192b3823d97b882c73bfd80a0838fc043fa9b8d5a7fd4b972cc33e1f",
-  "updated": "2026-11-20",
+  "sha256": "c8e9f0fdd1ed693db4ee8b721701cab38a1cf665ae084ed831047be7d7d01009",
+  "updated": "2026-11-22",
   "order": 28,
   "camera_tested": false,
   "training_error": {

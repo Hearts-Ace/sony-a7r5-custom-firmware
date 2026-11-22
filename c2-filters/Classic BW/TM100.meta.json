@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "TM100",
   "name": "Elite Kodak Tmax 100",
-  "format": "A7Look /2",
-  "sha256": "e3f8bbf505a1d7a68f757168a0513222be8795c71ba79634b4606e30d3969a3c",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "34818358e1d2c179afd49c09e94b4964c4fb9632aac8cbe11a2f0c5aa81dd998",
+  "updated": "2026-11-22",
   "order": 34,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "04521c28cfd9714cd2bc4c9ee1c7e184900b87f209fe04a800a903e0ec4f77d6"
 }

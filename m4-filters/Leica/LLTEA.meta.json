@@ -4,8 +4,8 @@
   "short_name": "LLTEA",
   "name": "LL Teal",
   "format": "camera-look v2",
-  "sha256": "253bd4b5d869148a3131d4c9a9531d532402e5a0c8b598487ac0e475ecef1013",
-  "updated": "2026-11-20",
+  "sha256": "f0244dd47a5a1c728bd8b1201a0ce6a669445fef3513160a4a131518de8f8acd",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

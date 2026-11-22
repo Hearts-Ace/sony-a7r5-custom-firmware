@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "K25-PR",
   "name": "Kodachrome 25 PR",
-  "format": "A7Look /2",
-  "sha256": "ca176a11f49c246ab071fcf509272125627157bac37d085f0bade289ee2e1771",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "203524d2226931d08ab9dc1dd2f864d24b7eafee311f73312d4b59afd582d193",
+  "updated": "2026-11-22",
   "order": 73,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "9ea271520bafb20dfc69d40f2d67a217edf0c70da0cc90fe3328aa7c85c078ec"
 }

@@ -4,8 +4,8 @@
   "short_name": "EKT100-B-L",
   "name": "Elite Kodak Ektar100 B (linear)",
   "format": "camera-look v2",
-  "sha256": "621e3d5bbf620918b6365a20f09e4f4b8559fcd9f809f9563f0dbb8907701c07",
-  "updated": "2026-11-20",
+  "sha256": "5e95cd3363c280813b7378abc92f7e2486f65181629cd2167841b4a8714052ca",
+  "updated": "2026-11-22",
   "order": 85,
   "camera_tested": false,
   "training_error": {

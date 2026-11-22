@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LL100M",
   "name": "LL 100 Years Mono",
-  "format": "A7Look /2",
-  "sha256": "c2b7dc3d01ac6dcd8ef6bd5fcaf23b39b37dc531b73495f1f3211bac4e09dcba",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "a22453d3d0a5bbe427385a6cf8b276e70aac83e3a61ad48739c254b8dbdb4a44",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "0a89baa7a190c381d4446ffc3e25b70a47d6aeccbcdb0f258c6027654be40690"
 }

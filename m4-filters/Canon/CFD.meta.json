@@ -4,8 +4,8 @@
   "short_name": "CFD",
   "name": "Canon Fine Detail",
   "format": "camera-look v2",
-  "sha256": "94f3a6af9510228835144846880f512d2d2f666c58a144f9927361b9d5f77dee",
-  "updated": "2026-11-20",
+  "sha256": "287bd69e0b066b614c185a1d50d52dcc56164dfd33d43804aab145576ebf4a12",
+  "updated": "2026-11-22",
   "order": 18,
   "camera_tested": false,
   "training_error": {

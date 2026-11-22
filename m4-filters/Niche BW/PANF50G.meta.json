@@ -4,8 +4,8 @@
   "short_name": "PANF50G",
   "name": "Elite Ilford PanF Plus 50 Green",
   "format": "camera-look v2",
-  "sha256": "2fddd7064a8e8a0c4f4cd709b43295e35fefa5f0ba4c85ec5dd2f3b833f63480",
-  "updated": "2026-11-20",
+  "sha256": "1f13bcb0d58528dbbb5c0926cb6a83f1310bb1aaef6944c56c64ffe5bbdab37c",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

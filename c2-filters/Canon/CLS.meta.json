@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CLS",
   "name": "Canon Landscape",
-  "format": "A7Look /2",
-  "sha256": "b54f7e7c743c86046407df8a4956b76242d730772e547609363a0c2e73b46ded",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "13b8cf79eef5153c8b966f78c7d527b1652250adf6b1768d57290e1be31c1b9a",
+  "updated": "2026-11-22",
   "order": 19,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "51d58c2d31025897b302368c07ad71ce7b43067df589afc8629deef509c0013d"
 }

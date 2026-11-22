@@ -4,8 +4,8 @@
   "short_name": "CPST",
   "name": "Canon Portrait Studio",
   "format": "camera-look v2",
-  "sha256": "92ed3324e4232b35ee5ce0aaa2de9aa02e18a62dec5e49c5b13b31f9c396b7ba",
-  "updated": "2026-11-20",
+  "sha256": "d8f5a1bcd32905847b32d0988c01c689c3ed6e43de080d2328c9ca8eb3226003",
+  "updated": "2026-11-22",
   "order": 24,
   "camera_tested": false,
   "training_error": {

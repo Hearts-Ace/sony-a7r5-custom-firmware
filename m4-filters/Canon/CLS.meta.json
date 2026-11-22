@@ -4,8 +4,8 @@
   "short_name": "CLS",
   "name": "Canon Landscape",
   "format": "camera-look v2",
-  "sha256": "f074f14fc4a51b0662069d553d132391d7efea1274358cb6d62aa6b58b79231c",
-  "updated": "2026-11-20",
+  "sha256": "f64c14954d8f380cba987788a8cb27b7d00fa848e780a16b5806c04b9f893b93",
+  "updated": "2026-11-22",
   "order": 19,
   "camera_tested": false,
   "training_error": {

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLCON",
   "name": "LL Contemporary",
-  "format": "A7Look /2",
-  "sha256": "7f7ca1aa97ac4e9766fc27f3a99cfa2f1a1a1b6613f2dd6e77c11756be178243",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "cbda926ebb289f878734f4cc885bddfb77e89cad558820a598929644269e6abf",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "29d4d057b52b13692f2c0abdca5c12adcc1513d33f158c57cffd6809b0663cf7"
 }

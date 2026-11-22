@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLBWN",
   "name": "LL BW Natural",
-  "format": "A7Look /2",
-  "sha256": "f89e96a5161f576cafd81df2649cd9dbf993fc2747403f7cdb0c5ffc4d214b11",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "f5971d86de77feb413b995a5f1ee9f7e01ea63b4852bcba32f5b217fe0742707",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "1d0228d78b5b22cc6e69abab39bb11817c8630221d6d8330d67bf62ffb85665f"
 }

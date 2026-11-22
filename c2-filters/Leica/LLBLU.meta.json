@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLBLU",
   "name": "LL Blue",
-  "format": "A7Look /2",
-  "sha256": "bd49b188a84d6cf636b112e1bdb03fb55ebc4a0fda8ba1b2c7bb71bb89399eb0",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "8590fb67ceb5e99537c4f5d7b4dc18788680c4a9f2c095a81eeed2dd55af0b43",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "068d8b359e7f51443a4411db0301e0c123de61b839f26a72da250b46fbd6d32f"
 }

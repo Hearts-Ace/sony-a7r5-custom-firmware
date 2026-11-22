@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "FP4+Y",
   "name": "Elite Ilford FP4 Plus 125 Yellow",
-  "format": "A7Look /2",
-  "sha256": "ca546e0f6f4c3c9bd0c3c66f9e89b490e0abda63b46b831468217579fe5bc1cb",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "c620e053a4e8fe9b3a9462ed4919afa1221c33b6e3e79f6e464a543581f9898d",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "3a0751fd5d2d1ba6901e9bdca0db58c29de6f6f1dee53b7a3dc920bc036c843a"
 }

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "D3200G",
   "name": "Elite Ilford Delta 3200 Pro Green",
-  "format": "A7Look /2",
-  "sha256": "5ae79a8bb1fe96a1575a0f089dc16aa1b5cb22b7ad6f33afead951cec4d745a5",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "4857a300640fbc8372b1887dfc9a7f75fea7f9f9bd4393d2dc8a4cfedf66f334",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "110158961c9deee122ff5f19e7693ea81789b46d05de40a3bb06a062828aec5a"
 }

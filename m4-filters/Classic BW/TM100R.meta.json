@@ -4,8 +4,8 @@
   "short_name": "TM100R",
   "name": "Elite Kodak Tmax 100 Red",
   "format": "camera-look v2",
-  "sha256": "36df04f715ec7e5f14c04611aedb875bc2fe696aa9f8d70cbcc2eaa71c9c7515",
-  "updated": "2026-11-20",
+  "sha256": "cd550445de8ecb2fb63a7b02b7b7e2212d6aec4efe5fb5cddbd896ce61151314",
+  "updated": "2026-11-22",
   "order": 36,
   "camera_tested": false,
   "training_error": {

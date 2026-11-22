@@ -4,8 +4,8 @@
   "short_name": "LLSIL",
   "name": "LL Silver",
   "format": "camera-look v2",
-  "sha256": "39411ffdc157d2888c5e94b679ad264e756a7f92e7b736e0d191a1f03a837546",
-  "updated": "2026-11-20",
+  "sha256": "bd5fc41b01270ca329d192c695e5c254c1bbe472e3cbac780f55b0efc8053c6b",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

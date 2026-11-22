@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""Offline single BIN -> M4 camera-look v2. All photo/live parameters copied identically."""
+"""Offline single BIN -> M4 camera-look v2. Share source color values with photo and live control templates."""
 import argparse,copy,hashlib,importlib.util,json,struct,uuid
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 CODEC=Path(__file__).with_name('custom_filter_v4.py')
 spec=importlib.util.spec_from_file_location('r5codec',CODEC);codec=importlib.util.module_from_spec(spec);spec.loader.exec_module(codec)
 FIELDS='defaults draft engine_abi format id mode model name parameters required_capabilities revision version'.split()
-M4_GAMMA_CAP=130944
+M4_GAMMA_CAP=262143
 
 def digest(d):
  data=json.dumps({k:d[k] for k in FIELDS},sort_keys=True,separators=(',',':'),ensure_ascii=False,allow_nan=False).encode('utf8')
  return hashlib.sha256(b'CAMLOOK2\0'+data).hexdigest()
 
-def validate(d):
+def validate(d, template):
  if (d['format'],d['version'],d['model'],d['engine_abi'],d['mode'])!=('camera-look',2,'ILCE-7M4',131072,'photo'):raise ValueError('Unsupported M4 contract')
  if d['payload_sha256']!=digest(d):raise ValueError('M4 payload hash mismatch')
  if not 1<=len(d['name'].encode('utf8'))<=63:raise ValueError('Invalid name')
@@ -26,31 +26,37 @@ def validate(d):
   if len(v['matrices']['values'])!=3 or any(len(a)!=16 or any(len(b)!=6 or any(type(x)is not int or not -8192<=x<=8191 for x in b) for b in a) for a in v['matrices']['values']):raise ValueError('Invalid matrices')
   records=v['gamma']['records']
   if len(records)!=(7 if key=='photo' else 1):raise ValueError('Invalid Gamma record count')
-  for r in records:
+  for r, original in zip(records, template['parameters'][key]['gamma']['records']):
    if len(r)!=572:raise ValueError('Invalid Gamma size')
    b=bytes(r);points=struct.unpack('<129I',b[:516])
-   if points[0]!=0 or any(a>b for a,b in zip(points,points[1:])) or max(points)>M4_GAMMA_CAP:raise ValueError('Invalid M4 Gamma ordinates (must be <= 130944)')
+   if points[0] != 0 or not points[-1] or any(a > b for a, b in zip(points, points[1:])) or points[-1] > M4_GAMMA_CAP:
+    raise ValueError('Invalid M4 Gamma ordinates')
+   controls = bytes(original)
+   if b[516:544] != controls[516:544] or b[548:] != controls[548:]:
+    raise ValueError('Invalid photo/live Gamma template controls')
    if struct.unpack_from('<I',b,544)[0]!=points[-1]:raise ValueError('Invalid duplicated Gamma endpoint at byte 544')
  if p['photo']['coefficients']!=p['live']['coefficients'] or p['photo']['matrices']!=p['live']['matrices'] or g['photo']!=g['live']:raise ValueError('Photo/live copy mismatch')
- if any(r!=p['photo']['gamma']['records'][0] for r in p['photo']['gamma']['records']+p['live']['gamma']['records']):raise ValueError('Eight Gamma records must be identical')
+ if any(r[:516]!=p['photo']['gamma']['records'][0][:516] for r in p['photo']['gamma']['records']+p['live']['gamma']['records']):raise ValueError('Eight Gamma curves must share the same Y values')
  return d
 
 def convert(source,template):
  blob=source.read_bytes();cfg=codec.unpack(blob)
  if len(cfg['entries'])!=1:raise ValueError('Requires a single-filter BIN')
  e=cfg['entries'][0];d=copy.deepcopy(template)
- d.update(name=e['full_name'],author='Native parameter transfer',description='Identical photo/live parameter transfer; camera validation pending.',id=str(uuid.uuid5(uuid.NAMESPACE_URL,'sony-filter-transfer/ILCE-7M4/'+e['short_name'])),revision=1,draft=False)
- p=d['parameters'];record=bytearray(p['photo']['gamma']['records'][0])
- gamma=[min(value,M4_GAMMA_CAP) for value in e['gamma_native_129']]
- struct.pack_into('<129I',record,0,*gamma)
- struct.pack_into('<I',record,544,gamma[128])
- for branch,count in [('photo',7),('live',1)]:
+ d.update(name=e['full_name'],author='Native parameter transfer',description='Shared color parameters with native photo/live controls.',id=str(uuid.uuid5(uuid.NAMESPACE_URL,'sony-filter-transfer/ILCE-7M4/'+e['short_name'])),revision=1,draft=False)
+ p=d['parameters']
+ gamma=e['gamma_native_129']
+ for branch in ('photo', 'live'):
   p[branch]['coefficients']['values']=copy.deepcopy(e['cc1_delta'])
   p[branch]['matrices']['values']=copy.deepcopy(e['block13'])
-  p[branch]['gamma']['records']=[list(record) for _ in range(count)]
+  for index, original in enumerate(p[branch]['gamma']['records']):
+   record = bytearray(original)
+   struct.pack_into('<129I', record, 0, *gamma)
+   struct.pack_into('<I', record, 544, gamma[-1])
+   p[branch]['gamma']['records'][index] = list(record)
   p['grid'][branch]=copy.deepcopy(e['grid_5x9x9']['coefficients'])
- d['provenance']={'method':'native-integer-transfer-photo-live-identical','source_bin_sha256':hashlib.sha256(blob).hexdigest(),'short_name':e['short_name'],'camera_verified':False,'refitted':False,'gamma_policy':'129 source points clamped to <= 130944; byte offset 544 repeats final point; normalized complete 572-byte record copied to all seven photo and one live records'}
- d['payload_sha256']=digest(d);validate(d)
+ d['provenance']={'method':'native-integer-transfer-with-branch-controls','source_bin_sha256':hashlib.sha256(blob).hexdigest(),'short_name':e['short_name'],'camera_verified':False,'refitted':False,'gamma_policy':'All 129 source points copied to each record using its M4 template controls; the final point is duplicated at byte 544'}
+ d['payload_sha256']=digest(d);validate(d,template)
  return e,d
 
 def main():

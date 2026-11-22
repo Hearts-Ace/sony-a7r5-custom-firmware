@@ -4,8 +4,8 @@
   "short_name": "G200-NB",
   "name": "Elite Kodak Gold200 NB",
   "format": "camera-look v2",
-  "sha256": "353761da501d4b8a94a68ada10f8a1bd0501e1b9fa31eb09d27a35a9323e5e4d",
-  "updated": "2026-11-20",
+  "sha256": "47b79b6f0d6ef117e5b955e1d17911cc0d545c268d08a9949e4cb4954bff709a",
+  "updated": "2026-11-22",
   "order": 90,
   "camera_tested": false,
   "training_error": {

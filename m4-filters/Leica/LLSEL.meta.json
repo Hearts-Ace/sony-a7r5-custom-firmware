@@ -4,8 +4,8 @@
   "short_name": "LLSEL",
   "name": "LL Selenium",
   "format": "camera-look v2",
-  "sha256": "6d8b062f1766f9b387aa831fcdd251d210aaa9328649496909842b50c1e73757",
-  "updated": "2026-11-20",
+  "sha256": "a319761f535250af4915a20ad689eb44e7bbe690bcf623140f4f8783ec93eb76",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

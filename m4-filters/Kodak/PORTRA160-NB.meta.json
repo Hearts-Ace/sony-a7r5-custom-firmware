@@ -1,0 +1,26 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "PORTRA160-NB",
+  "name": "Elite Kodak Portra160 NB",
+  "format": "camera-look v2",
+  "sha256": "6515647cb9c39be1c11fdfac4b0ae8778eb661b7586be0ccd373b6e3ad8ff293",
+  "updated": "2026-11-22",
+  "description": "",
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.3018339042290843,
+    "p95": 2.9215272407599953,
+    "maximum": 9.21048636146718,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5"
+}

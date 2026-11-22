@@ -4,8 +4,8 @@
   "short_name": "NDTM",
   "name": "Nikon Deep Tone Monochrome",
   "format": "camera-look v2",
-  "sha256": "a2e069333dc27bd7482325066a2a7f4bc7625f6709c0e81aaec62f4d8031d37c",
-  "updated": "2026-11-20",
+  "sha256": "90bda899eb0f801a27e15485c957747344575b17d6d43fcfa6f612840afc1882",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",

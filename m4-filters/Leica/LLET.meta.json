@@ -4,8 +4,8 @@
   "short_name": "LLET",
   "name": "LL Eternal",
   "format": "camera-look v2",
-  "sha256": "42a355c49ef65e0a92789fd873c6a78c9d6b039c3c726236a517c099c8fbd5a8",
-  "updated": "2026-11-20",
+  "sha256": "db0b04e6d259b955df827fc5661eb6a34c4c1681a96a4f1fc79a51557263b3d4",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

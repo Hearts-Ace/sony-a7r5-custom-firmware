@@ -4,8 +4,8 @@
   "short_name": "PANF50L",
   "name": "Elite Ilford PanF Plus 50 (linear)",
   "format": "camera-look v2",
-  "sha256": "d8434a1ebb22b4fa5c4b3faf05a8630a4564dbb79e0a380f9bb6512721831336",
-  "updated": "2026-11-20",
+  "sha256": "f8d9399aaafe4a506dacf146dd6357dab6828985ebf29d7862aacfc5fb9177dc",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

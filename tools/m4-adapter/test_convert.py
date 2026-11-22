@@ -15,10 +15,10 @@ class Tests(unittest.TestCase):
    for branch in ['photo','live']:
     self.assertEqual(p[branch]['coefficients']['values'],e['cc1_delta']);self.assertEqual(p[branch]['matrices']['values'],e['block13']);self.assertEqual(p['grid'][branch],e['grid_5x9x9']['coefficients'])
     for r in p[branch]['gamma']['records']:
-     points=list(struct.unpack('<129I',bytes(r[:516])));self.assertEqual(points,[min(v,m.M4_GAMMA_CAP) for v in e['gamma_native_129']]);self.assertLessEqual(max(points),m.M4_GAMMA_CAP);self.assertEqual(struct.unpack('<I',bytes(r[544:548]))[0],points[128])
+     points=list(struct.unpack('<129I',bytes(r[:516])));self.assertEqual(points,e['gamma_native_129']);self.assertLessEqual(max(points),m.M4_GAMMA_CAP);self.assertEqual(struct.unpack('<I',bytes(r[544:548]))[0],points[128])
    self.assertEqual(d['defaults'],template['defaults'])
    bad=copy.deepcopy(d);bad['parameters']['live']['gamma']['records'][0][540]^=1;bad['payload_sha256']=m.digest(bad)
-   with self.assertRaisesRegex(ValueError,'identical'):m.validate(bad)
+   with self.assertRaisesRegex(ValueError,'template controls'):m.validate(bad,template)
    bad=copy.deepcopy(d);bad['name']='modified'
-   with self.assertRaisesRegex(ValueError,'hash'):m.validate(bad)
+   with self.assertRaisesRegex(ValueError,'hash'):m.validate(bad,template)
 if __name__=='__main__':unittest.main()

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "FP4+R",
   "name": "Elite Ilford FP4 Plus 125 Red",
-  "format": "A7Look /2",
-  "sha256": "a622e0c38803d703a891adcd6f4bb00e511684109bc647dba27e79c977585a98",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "5b8881eb5eeb5774c65278397097eabbe00a2590e042dbb9cf817e2e6823dbe0",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "b963355f913f30b2045c357a61852c8082437b573dfa2aa796e302c50123f879"
 }

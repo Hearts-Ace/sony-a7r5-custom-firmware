@@ -4,8 +4,8 @@
   "short_name": "CP",
   "name": "Canon Portrait",
   "format": "camera-look v2",
-  "sha256": "60012ebc1eec0f77d307f35d7fa00628721a17c9ee09f7953f4cd3e34e88cee9",
-  "updated": "2026-11-20",
+  "sha256": "deb19a431079013fe916a789fb24cc64e329adec344e15349d06ed9ce40948a4",
+  "updated": "2026-11-22",
   "order": 25,
   "camera_tested": false,
   "training_error": {

@@ -4,8 +4,8 @@
   "short_name": "M9-BWM",
   "name": "Leica M9 BW Medium",
   "format": "camera-look v2",
-  "sha256": "4f4c495a02cfa45d28cdf3ab223a0ea2bd2d608f9c2c643d1375fd836ca96308",
-  "updated": "2026-11-20",
+  "sha256": "ee2055d59f7b21ab7652d13004adc86da33d141cc521b905a7bcbd2ac95a0102",
+  "updated": "2026-11-22",
   "order": 96,
   "camera_tested": false,
   "training_error": {

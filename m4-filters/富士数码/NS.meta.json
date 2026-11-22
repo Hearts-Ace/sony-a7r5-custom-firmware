@@ -4,8 +4,8 @@
   "short_name": "NS",
   "name": "PRO Neg. Std",
   "format": "camera-look v2",
-  "sha256": "8b507b63f5673d4ce1b3edc51646c219a150c96efdf4da8ac691cd2d9923b0c7",
-  "updated": "2026-11-20",
+  "sha256": "5bbd2260322022646e9f41ae596945227a0194196b7c5c3e3b216e56d3c94b7e",
+  "updated": "2026-11-22",
   "order": 9,
   "camera_tested": false,
   "training_error": {

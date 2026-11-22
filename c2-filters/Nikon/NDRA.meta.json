@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NDRA",
   "name": "Nikon Dramatic",
-  "format": "A7Look /2",
-  "sha256": "82be5674b5b4b6000af874dd4f54d1b10b9ab58b3382c4157b22542a99e08ca0",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "c6c7a39aaa5544e7d7fe915328a18803ccc7879ca886fdfbc4280757e66d70a1",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",
@@ -22,5 +22,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "2fe2637a732efcedab16baba447113931e1c95235c08a79572561c6ffa0e0857"
 }

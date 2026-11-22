@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "D400",
   "name": "Elite Ilford Delta 400 Pro",
-  "format": "A7Look /2",
-  "sha256": "8965382aeb09e8ef19a7548a6eab4e38dd864739bb97f6b5d05e9323431f68c4",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "b71a067129240fc73fac9e582b0ec38130bc1c81baa2da5d10dcf93079b93471",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "c2995cbbc5deaf4daa770f53d90955d601ec0a634f297b5d615e854671d8ca79"
 }

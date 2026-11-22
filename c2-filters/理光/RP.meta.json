@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "RP",
   "name": "理光正片",
-  "format": "A7Look /2",
-  "sha256": "d609aa733e7a5b32302a35968dc945a5710549da16c2a539d66a8482ccbd6361",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "007eee60bb1864ddcbd96f1d6c45268e21d9964f29a32da32c6f355a40164033",
+  "updated": "2026-11-22",
   "order": 11,
   "camera_tested": false,
   "training_error": {
@@ -21,5 +21,6 @@
     "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "4de1271d084eac486ed7930d195dd70dcdb1630a2e00cbd6df2b4fb39087c371"
 }

@@ -4,8 +4,8 @@
   "short_name": "M10R-ST",
   "name": "Leica M10r Standard",
   "format": "camera-look v2",
-  "sha256": "463b08b9e1f289ce725c85921f3097dadacf36960a59a530bc196c86266a31e6",
-  "updated": "2026-11-20",
+  "sha256": "88a5190519722413eb2ad55699126bfecede8e240fd84b44dfb7cf4bc641044b",
+  "updated": "2026-11-22",
   "order": 93,
   "camera_tested": false,
   "training_error": {

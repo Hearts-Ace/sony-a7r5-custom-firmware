@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "RDP100-B-L",
   "name": "Elite Fuji Provia100F B (linear)",
-  "format": "A7Look /2",
-  "sha256": "fff3d02d26cccc1ec8beb6864ec677a0a1a385053f8ddbce6bd604cd8f81b84e",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "b28f6248c71cedeafb7c9d3adeacdc6b7d301f637cfeb6bba68a1e3d06411a27",
+  "updated": "2026-11-22",
   "order": 56,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "2a2f2fde5e62a5d1b9f99f998b94e2bf127c384c153c550219e7a3106e7dfed9"
 }

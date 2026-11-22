@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LM9S",
   "name": "Leica M9 Standard",
-  "format": "A7Look /2",
-  "sha256": "7a28daee0b9288e854235aca99d8aaf710f03b66aa68239d857066539b85a22b",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "9eab72d98e6466a4316051db209cba4c62975d8f8b0dd259dd56ca0b92c58abc",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "519466cc15f11654ba12696bfbd49b86accd4870dcc7b512bda91cb49cc59347"
 }

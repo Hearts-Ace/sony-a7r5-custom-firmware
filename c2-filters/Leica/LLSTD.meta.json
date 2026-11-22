@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLSTD",
   "name": "LL Standard",
-  "format": "A7Look /2",
-  "sha256": "a70ba1767a218d56aae81b1b84d378348d6421aa2bae1d41231b27d815de9aab",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "87cbed47ea700ca77fdcb5a8b2ed4e052647de21ffa27118c99ea4c516a9d605",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "0135a17813a1adcd4e2bd6d38dbd9325c668198c8b4dea246e09986500e669cb"
 }

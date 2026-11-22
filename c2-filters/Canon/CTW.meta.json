@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CTW",
   "name": "Canon Twilight",
-  "format": "A7Look /2",
-  "sha256": "5650145f6440e0fa10e18c1d99b850398887e00ee61792156366ca95bafad486",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "48d8ef4f173a0b3d377eceaba817e15f149a9f71411b273217731756f97e241e",
+  "updated": "2026-11-22",
   "order": 27,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "d419e4e3b88253022be938bcbf5361e470934df38a920e07bb77bafb2c62f639"
 }

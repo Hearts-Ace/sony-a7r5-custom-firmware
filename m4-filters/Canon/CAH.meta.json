@@ -4,8 +4,8 @@
   "short_name": "CAH",
   "name": "Canon Autumn Hues",
   "format": "camera-look v2",
-  "sha256": "5c6c63e65d3484186f877a75e7b73300ca59b6d006cbca585dc10ab0a1313ffb",
-  "updated": "2026-11-20",
+  "sha256": "660fb352e14b84a5d68124ca05434e18dd85ed265f35dc0e7b01289a596dda0e",
+  "updated": "2026-11-22",
   "order": 14,
   "camera_tested": false,
   "training_error": {

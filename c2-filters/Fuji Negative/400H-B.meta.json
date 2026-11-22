@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "400H-B",
   "name": "Elite Fuji Pro400H B",
-  "format": "A7Look /2",
-  "sha256": "e808fa4b96d63b8ade62a71fe4ef976bf62dc7f26bb8bdb3b4e411bb0075fe22",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "27b654515d6c1191aad946bd9f2a5a3532a73e5ad104ae3a61099aa68c7a74a2",
+  "updated": "2026-11-22",
   "order": 47,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "1d4b9d7c5a216a0f36578680fda8762c57bca87703e43b57234af6b1686309ca"
 }

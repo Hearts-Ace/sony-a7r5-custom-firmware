@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "E100-B",
   "name": "Elite Kodak EktachromeE100 B",
-  "format": "A7Look /2",
-  "sha256": "7fb6d5ed841f6d08711edfca620f86cc46a150c7ce2ca80fbb85084dce855658",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "515f1f1e01fc4b7163e39c90d90f52f6e7b2fe232eeff2f100a764e8360475b1",
+  "updated": "2026-11-22",
   "order": 80,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "3bb78b218bb8b9ba1cbbb88711a6d652ed3747e865b8786ee53cad7214736317"
 }

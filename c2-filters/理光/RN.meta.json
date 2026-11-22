@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "RN",
   "name": "理光负片",
-  "format": "A7Look /2",
-  "sha256": "e199786d78ae8b6d051eb70d5abfeccebb3a04afd12d94f2cdc80ec413a14609",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "1da0769c69dd703ba39ab898e355c38bba563af46d06e2f2314c7e376394cf49",
+  "updated": "2026-11-22",
   "order": 12,
   "camera_tested": false,
   "training_error": {
@@ -21,5 +21,6 @@
     "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "f04fe51e80175c3bdff531f26d7dc990b967e5915b0d4872daa94608ab33b61f"
 }

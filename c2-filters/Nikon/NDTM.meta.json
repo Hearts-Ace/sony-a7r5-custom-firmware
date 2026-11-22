@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NDTM",
   "name": "Nikon Deep Tone Monochrome",
-  "format": "A7Look /2",
-  "sha256": "e3fc20406bde23f567582562e4b1d3999e25a3f010c6035824634cd410a5c4ba",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "f5139029d9e19659f214816b5c59ea72ce94f02f67d1c314d00b353a4e22fb49",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",
@@ -22,5 +22,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "67cc3af05806d5fea7143d89b2dba66adef6162a76983daad3fdff3d88f18abe"
 }

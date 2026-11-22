@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "HP5+Y",
   "name": "Elite Ilford HP5+ 400 Yellow",
-  "format": "A7Look /2",
-  "sha256": "0543b32d6b66fa9687f0eea7606af48313b354f87d7e65a6c8b7a268dfe5c061",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "6f1f7b89b40076af2bde24e4f86e77befa349df12aa0dd061e044130068ad53b",
+  "updated": "2026-11-22",
   "order": 28,
   "camera_tested": false,
   "training_error": {
@@ -26,5 +26,6 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "bd5f5ead0a78bbfbf2584afa6ec1fe8d1fa6b16bc82d4f96d1f94d21e0cea300"
 }

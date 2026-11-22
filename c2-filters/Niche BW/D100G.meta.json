@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "D100G",
   "name": "Elite Ilford Delta 100 Pro Green",
-  "format": "A7Look /2",
-  "sha256": "260101ba2ce81dc6c693188797c94cc35595bb0b46199e55bfc8389b2959e855",
-  "updated": "2026-11-20",
+  "format": "A7Look /1",
+  "sha256": "af35cceab368d638e2ff6f452c1326c6691d4e32dc10e257773c5a3ab4182f5d",
+  "updated": "2026-11-22",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,5 +23,6 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": ""
+  "description": "",
+  "source_bin_sha256": "131dd998311cde586111bbe4342e0833d341ed7ee98d22a7fbe9dddb831a0443"
 }

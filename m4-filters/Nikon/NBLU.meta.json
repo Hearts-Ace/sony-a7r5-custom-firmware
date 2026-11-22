@@ -4,8 +4,8 @@
   "short_name": "NBLU",
   "name": "Nikon Blue",
   "format": "camera-look v2",
-  "sha256": "2f15c142eb14a473774bb79568f3041707e8bc6ed6231bcf27e885e36d31eac2",
-  "updated": "2026-11-20",
+  "sha256": "8483440b56f1fa5b887106694a509fcb7d360184d1c5c02abe8b926a83603652",
+  "updated": "2026-11-22",
   "camera_tested": false,
   "training_error": {
     "status": "available",
