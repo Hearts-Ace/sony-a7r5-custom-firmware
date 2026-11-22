@@ -4,7 +4,7 @@
   "short_name": "NC",
   "name": "CLASSIC Neg.",
   "format": "camera-look v2",
-  "sha256": "1c3f6e3fc5613a2e8bfd56f8a213ee0c1ff2eb4c27ca32f0d6090cfd4f153f87",
+  "sha256": "88ede004943d8520987003bbcbbe8e1571878b8b3a77413d94d458d4ab553929",
   "updated": "2026-11-22",
   "order": 4,
   "camera_tested": false,
@@ -22,5 +22,5 @@
   },
   "metric_source_model": "r5",
   "description": "",
-  "source_bin_sha256": "31562ad1292080b473b353533fb7b680e1fab612b8258cb9a6052cce5619b6fa"
+  "source_bin_sha256": "e2377fc3a311f4d380f3405632a92ad3c9f1d586e0ff2b3d9b292cf23f7e546a"
 }
