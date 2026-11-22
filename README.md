@@ -6,6 +6,7 @@
 
 4.65 为当前唯一固件构建，基于官方 R5 4.00，保留自定义滤镜、FL2/FL3、声音、Fn、比例与裁切。滤镜切换按需读取 eMMC 中的一款，原厂颜色任务接管后再切换参数，旧任务归还引用后回收。
 
+- [Modified-cable quick start (English) and RP2040 firmware](docs/MODIFIED_CABLE_QUICKSTART.en.md)
 - [完整源码与唯一构建入口](firmware/r5/README.md)
 - [4.65 验证摘要](publication/4.65/validation.json) · [4.65 源码锁](firmware/r5/sources.lock.json)
 - [六槽回读与解放工具](tools/r5-slots/README.md)
