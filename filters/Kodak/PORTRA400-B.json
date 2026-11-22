@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "PPortra400-B",
+  "name": "Elite Kodak Portra400 B",
+  "short_name": "PORTRA400-B",
+  "series": "Kodak",
+  "description": "",
+  "updated": "2026-11-22",
+  "sha256": "9017be83774ba991fbd954c1ccd437cbe41e0e13bf42ca0491e04bfe84bdfe0e",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.2042503418102355,
+    "p95": 2.80616500119132,
+    "maximum": 6.729595365366893,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

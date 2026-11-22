@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "RBleach-BypassWarm",
+  "name": "Ricoh Bleach Bypass Warm",
+  "short_name": "RBB-W",
+  "series": "理光",
+  "description": "",
+  "updated": "2026-11-22",
+  "sha256": "5e6fea622050fcbd6a374546bdcdfa898e8faf400957401f13be7611349c35fc",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 0.8978675622530099,
+    "p95": 2.0392862219652157,
+    "maximum": 6.934650589317143,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

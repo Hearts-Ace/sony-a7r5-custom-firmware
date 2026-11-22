@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "RCinemaYellow",
+  "name": "Ricoh Cinema Yellow",
+  "short_name": "RCIN-Y",
+  "series": "理光",
+  "description": "",
+  "updated": "2026-11-22",
+  "sha256": "489b89340003af1616b771655c829ba6bd5f50c4c4eb698628d163c5210449af",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 0.8813726476638403,
+    "p95": 2.1111269205515537,
+    "maximum": 5.293400000105128,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

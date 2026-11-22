@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "RCrossProcessing-Blue",
+  "name": "Ricoh Cross Processing Blue",
+  "short_name": "RCP-B",
+  "series": "理光",
+  "description": "",
+  "updated": "2026-11-22",
+  "sha256": "3b0e318830566360170e530e42ece60b6bc754e97eba3291c66da27d73249350",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.7141895316761926,
+    "p95": 4.267799693313028,
+    "maximum": 13.141391669631718,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "RCinemaGreen",
+  "name": "Ricoh Cinema Green",
+  "short_name": "RCIN-G",
+  "series": "理光",
+  "description": "",
+  "updated": "2026-11-22",
+  "sha256": "e67a3fcc20218b2c65eb6a1636914cbe0acc55fba4620f8664ee02a25a00d0e2",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 0.8717874942450299,
+    "p95": 1.9737053339505959,
+    "maximum": 6.771587924159733,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

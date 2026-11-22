@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NMelanchonic",
+  "name": "Nikon Melanchonic",
+  "short_name": "NMEL",
+  "series": "Nikon",
+  "description": "",
+  "updated": "2026-11-22",
+  "sha256": "c2715c39b983bdd67f46f103c11489a9059da57f589f6a9aef04938f00fbe1c2",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.099381552329356,
+    "p95": 2.403729905849965,
+    "maximum": 5.707246109230567,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

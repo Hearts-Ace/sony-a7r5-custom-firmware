@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "PPortra160-B-L",
+  "name": "Elite Kodak Portra160 B (linear)",
+  "short_name": "PORTRA160-B-L",
+  "series": "Kodak",
+  "description": "",
+  "updated": "2026-11-22",
+  "sha256": "2a48146abce1bbfd31d0713cf58b92df78acbe36384acaf63c6d0cd42c341226",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.1840140699190895,
+    "p95": 3.0248040099229083,
+    "maximum": 8.567585999152021,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

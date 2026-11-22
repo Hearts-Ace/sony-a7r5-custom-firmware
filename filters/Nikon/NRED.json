@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NRed",
+  "name": "Nikon Red",
+  "short_name": "NRED",
+  "series": "Nikon",
+  "description": "",
+  "updated": "2026-11-22",
+  "sha256": "a2ac098ad6184073299c07673ff7bdde08d837d4e47912bd6d98a0608a400fd8",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.255124608661694,
+    "p95": 2.9896023156273728,
+    "maximum": 6.249307573845356,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

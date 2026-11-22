@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NMorning",
+  "name": "Nikon Morning",
+  "short_name": "NMORN",
+  "series": "Nikon",
+  "description": "",
+  "updated": "2026-11-22",
+  "sha256": "da5a7a43ff8df042e6f2b24c7687cd31c0a241e81e7c0392a999aec420a7279f",
+  "camera_tested": false,
+  "type": "digital",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.1908578001234518,
+    "p95": 2.925309411594244,
+    "maximum": 10.23185680688571,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}
