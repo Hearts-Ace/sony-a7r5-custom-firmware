@@ -1,7 +1,7 @@
 {
   "schema": "r5-resource-directory/1",
-  "revision": "82327ea23b1eaa6fa7e5b318702241a8a0047f41",
-  "revision_time": 1795424240,
+  "revision": "a1d588a32d31b95ae8ce717bdf26dfe7150e0c21",
+  "revision_time": 1795424363,
   "paths": [
     "c2-filters/Canon/CAH.a7look",
     "c2-filters/Canon/CAH.meta.json",
