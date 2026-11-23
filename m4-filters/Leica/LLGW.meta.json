@@ -4,8 +4,8 @@
   "short_name": "LLGW",
   "name": "LL GW",
   "format": "camera-look v2",
-  "sha256": "522871d2ffe78552264fa7050e83b311cb4be6c51a5ad1a2aca5cd8d55f24fcb",
-  "updated": "2026-11-22",
+  "sha256": "8b996a948e441ed6fcede82258155fcc09bffd608272142d20d39e9389bd84c9",
+  "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

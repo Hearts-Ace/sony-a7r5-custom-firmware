@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LM9E",
   "name": "Leica M9 Embedded",
-  "format": "A7Look /1",
-  "sha256": "75e8728b518a563ca7a5d0c48c1cd3d36600dc30c1eab7ed396fe805b446d3bf",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "87b324159c62ca2d27519837a189312cea33915aa1deb8f39182e8e701cd6ff9",
+  "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,6 +23,5 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "e85f7993544a9448538f6ba6dacf7c7cfc30e00aed9921b0507b879fb64b4b80"
+  "description": ""
 }

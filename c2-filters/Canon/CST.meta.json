@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CST",
   "name": "Canon Standard",
-  "format": "A7Look /1",
-  "sha256": "6048373fb84648c9c72639f590d6c9bb5d4b82a3a0fa00b1a9b4840f88188474",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "624af25f635eda749377e40292bfd29e4637203cd292990eb3cf71b52e5795c0",
+  "updated": "2026-11-23",
   "order": 26,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "d489e3668af38245b510c50b9c85504e8b20470c4c40f158066f1e260084763b"
+  "description": ""
 }

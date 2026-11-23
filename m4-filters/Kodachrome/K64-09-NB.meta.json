@@ -4,8 +4,8 @@
   "short_name": "K64-09-NB",
   "name": "Kodachrome 64 2009 NB",
   "format": "camera-look v2",
-  "sha256": "036bd0234633d72592d44ed4802bf567fd6916d437cdf8b28870f874829a6c0f",
-  "updated": "2026-11-22",
+  "sha256": "609e1ac4cf01b89e58cad78c5303b1b66fb195534357452a58c838d949a16e17",
+  "updated": "2026-11-23",
   "order": 78,
   "camera_tested": false,
   "training_error": {

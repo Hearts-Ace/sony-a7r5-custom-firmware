@@ -4,8 +4,8 @@
   "short_name": "PORTRA800-NB-L",
   "name": "Elite Kodak Portra800 NB (linear)",
   "format": "camera-look v2",
-  "sha256": "e57a276469340cc7aea2bfec49a695304323085d237052ef82b4d1c90049281a",
-  "updated": "2026-11-22",
+  "sha256": "3f359d05783de442ac3bf2e460a0d32b713397a6401f7138196a1a46b36af203",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

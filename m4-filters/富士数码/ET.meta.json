@@ -4,8 +4,8 @@
   "short_name": "ET",
   "name": "ETERNA",
   "format": "camera-look v2",
-  "sha256": "900d4314f582fe123045624b025542962573a4e0a2d7bbaeaab2858951d11366",
-  "updated": "2026-11-22",
+  "sha256": "d0ea429663ab4708644cc1fc8f556e4b420871c1ab6ef0522d2a26e87469ac12",
+  "updated": "2026-11-23",
   "order": 3,
   "camera_tested": false,
   "training_error": {

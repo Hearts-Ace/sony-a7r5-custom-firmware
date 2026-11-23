@@ -4,8 +4,8 @@
   "short_name": "NSOMB",
   "name": "Nikon Somber",
   "format": "camera-look v2",
-  "sha256": "3d0afa5bdbff36eb9e1336517473ec0a816d17701fef16499acb467eebcb9c59",
-  "updated": "2026-11-22",
+  "sha256": "dd6ea8e996d7347a693135876a8b4bc2d22dd1f4d36fe00429d51e2f4dc64ddb",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

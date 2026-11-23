@@ -4,8 +4,8 @@
   "short_name": "CC",
   "name": "CLASSIC CHROME",
   "format": "camera-look v2",
-  "sha256": "266bf43c735a9902318646a2c2055eb227f572ac2db8f458718a5a2972b5a028",
-  "updated": "2026-11-22",
+  "sha256": "a8383b162e06d3c5bd9bc755ea4f292738f4409d9939539dc5e59ebb41dcdc89",
+  "updated": "2026-11-23",
   "order": 1,
   "camera_tested": false,
   "training_error": {

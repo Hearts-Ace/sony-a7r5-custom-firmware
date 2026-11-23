@@ -4,8 +4,8 @@
   "short_name": "160NS-B-L",
   "name": "Elite Fuji Pro160NS B (linear)",
   "format": "camera-look v2",
-  "sha256": "c2dc9ae901067719bccba9b564e50286940bc80c5fec8584afa97ca4ed000f9d",
-  "updated": "2026-11-22",
+  "sha256": "9624ce8e33cfea9b6aae39735d5469c22dac5d04bb1e2c46ce44a01c433566ad",
+  "updated": "2026-11-23",
   "order": 44,
   "camera_tested": false,
   "training_error": {

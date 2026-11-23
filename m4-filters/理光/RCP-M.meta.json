@@ -4,8 +4,8 @@
   "short_name": "RCP-M",
   "name": "Ricoh Cross processing Magenta",
   "format": "camera-look v2",
-  "sha256": "1c458c56846cbe7396e6f56fe06db466c50ba9f43dc46517202fa70ac57cde30",
-  "updated": "2026-11-22",
+  "sha256": "5ae9b51caccfa01bca5f91060a325b07b1b7b0ed333a716f1c0cb24010f111b8",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

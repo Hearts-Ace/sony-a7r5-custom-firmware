@@ -4,8 +4,8 @@
   "short_name": "RCP-Y",
   "name": "Ricoh Cross processing Yellow",
   "format": "camera-look v2",
-  "sha256": "12570dcfc8289b63929284eee2fa2243ee05aa12a044d698d1c44bb6d4454c18",
-  "updated": "2026-11-22",
+  "sha256": "85cb0d142e879e153280cf9eb1f9533a691037cceb802b668bc4b159602eec52",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

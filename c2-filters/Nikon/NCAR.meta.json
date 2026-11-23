@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NCAR",
   "name": "Nikon Carbon",
-  "format": "A7Look /1",
-  "sha256": "64712ee7eb7353b0b4fca7377048a9f090af74992d18439d711785b0fa0e2940",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "ffb6d3403ed12286dfaf6ae8f5b9bbfdd92178550e7e26aaf79be03e24c9170d",
+  "updated": "2026-11-23",
   "camera_tested": false,
   "training_error": {
     "status": "available",
@@ -22,6 +22,5 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "b5fe10ea436d335110a9bb3d40da3088e21c7fd755e75b0326fbb8629eb1ba90"
+  "description": ""
 }

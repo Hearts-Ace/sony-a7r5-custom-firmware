@@ -4,8 +4,8 @@
   "short_name": "LM9E",
   "name": "Leica M9 Embedded",
   "format": "camera-look v2",
-  "sha256": "267945a2ab454040058f803ff65187bae3b2c38a39af7ba67365c4c7534bf935",
-  "updated": "2026-11-22",
+  "sha256": "e6427cd0becf6c8262b4a75cba72d90a3d3e5d345d0c9383f88c8d1a7caed826",
+  "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

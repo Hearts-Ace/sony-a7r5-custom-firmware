@@ -4,8 +4,8 @@
   "short_name": "LLNAT",
   "name": "LL Natural",
   "format": "camera-look v2",
-  "sha256": "3aa787b471ec6674373197a4bca5a7bcf15480d74c61b597da3a38af3f46eb68",
-  "updated": "2026-11-22",
+  "sha256": "137cf46befa718fb043a0fd5c7380cbbadba8802c17263338cf66d4681e02f94",
+  "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

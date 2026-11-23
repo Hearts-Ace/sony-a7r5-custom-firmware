@@ -4,8 +4,8 @@
   "short_name": "NSUN",
   "name": "Nikon Sunday",
   "format": "camera-look v2",
-  "sha256": "a8fecb8b67660a41431688ef43eeaab4d2a04aa9bfd8ba9cfc02785ff9d70450",
-  "updated": "2026-11-22",
+  "sha256": "2d4657bc02586bf77dfa25beb98046cd5eaf0957c02e0438061abb0e320620aa",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

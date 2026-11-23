@@ -4,8 +4,8 @@
   "short_name": "RBB",
   "name": "Ricoh Bleach Bypass",
   "format": "camera-look v2",
-  "sha256": "4084388fa5f6bfee329ad303ef3c328fd4071e746921c97ebac34bca47cd5f82",
-  "updated": "2026-11-22",
+  "sha256": "c1a892e56df413d1b871225297fbe2371133b55f261088f1f7ca1433cea14a14",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

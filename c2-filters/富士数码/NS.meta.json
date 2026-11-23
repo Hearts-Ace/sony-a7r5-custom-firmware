@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NS",
   "name": "PRO Neg. Std",
-  "format": "A7Look /1",
-  "sha256": "6310c39f36726fe0e638de98f556deae1e720acaae588e4920c5ceb79cd9aa6a",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "0b9f7d8e7ba5a1ed032dc54e73f36e51b103f44ac9ce7d9a3ffb77d44f5499e3",
+  "updated": "2026-11-23",
   "order": 9,
   "camera_tested": false,
   "training_error": {
@@ -21,6 +21,5 @@
     "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "8c18c9e563a6eaa8d1769c4390e1542ec0dfa9115f23146cfa31f56d96695827"
+  "description": ""
 }

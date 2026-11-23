@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "K64-09-B",
   "name": "Kodachrome 64 2009 B",
-  "format": "A7Look /1",
-  "sha256": "867a992246fa7dc4481816c5d9e64789ef24a55372e8870414a47c471b5c32e8",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "214b1fd596e8f8999fcb7b6d004f549b11b01a778309060eb5ba9db63342bab1",
+  "updated": "2026-11-23",
   "order": 77,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "1cc023631b4d487ce86bea31175c852fa51a77f2f0062e3ea9ea40715cda1849"
+  "description": ""
 }

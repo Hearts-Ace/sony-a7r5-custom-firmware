@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "K64-87-B",
   "name": "Kodachrome 64 1987 B",
-  "format": "A7Look /1",
-  "sha256": "3f8441fd9b7d3264c101e6f5091c7582a7c80cc6e41bf99a8f00b96a09e2bf49",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "3b64e99c4ea35ee7052d5cdbd3fe1da239888e70528e58359699599d0a86aa2f",
+  "updated": "2026-11-23",
   "order": 74,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "17d7fc8ee7be877cb5f68c0144adad6fb5080e514467d9f1450494903000b3e4"
+  "description": ""
 }

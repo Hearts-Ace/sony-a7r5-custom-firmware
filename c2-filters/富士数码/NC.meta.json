@@ -3,24 +3,23 @@
   "model": "c2",
   "short_name": "NC",
   "name": "CLASSIC Neg.",
-  "format": "A7Look /1",
-  "sha256": "e89133c12c2acea6b3d6d6b527b51e0d1e8314a26567004b09c98286030f3dfc",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "6bc5577f8e64a64616816d3343d802c8b56ee93439514058c5671f5501f55a5e",
+  "updated": "2026-11-23",
   "order": 4,
   "camera_tested": false,
   "training_error": {
     "status": "available",
     "metric": "ΔE00",
-    "mean": 0.9422472138166531,
-    "p95": 2.220331634673668,
-    "maximum": 7.5850017338747735,
+    "mean": 1.0572794085135568,
+    "p95": 2.3640604525449875,
+    "maximum": 8.3592124291655,
     "samples": 62715,
     "split": "test",
-    "protocol": "fuji-de00-full-20261122",
+    "protocol": "fuji-algorithm-holdout-62715",
     "label": "算法留出测试集",
     "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "e2377fc3a311f4d380f3405632a92ad3c9f1d586e0ff2b3d9b292cf23f7e546a"
+  "description": ""
 }

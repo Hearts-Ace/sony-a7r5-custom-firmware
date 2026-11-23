@@ -4,8 +4,8 @@
   "short_name": "E100-B-L",
   "name": "Elite Kodak EktachromeE100 B (linear)",
   "format": "camera-look v2",
-  "sha256": "305bd4a1938d499db41564712fd16a1f3fe5a87d6681293daf64e392c84bdcda",
-  "updated": "2026-11-22",
+  "sha256": "425cf2fcee369fa4ebbd6dab9c05fc82af195b3977fc25400afa3769b804151d",
+  "updated": "2026-11-23",
   "order": 81,
   "camera_tested": false,
   "training_error": {

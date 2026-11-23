@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CNS",
   "name": "Canon Nostalgia",
-  "format": "A7Look /1",
-  "sha256": "dfa6c9eec276be4b5b8b551f9ff8494e071b6a7802b17ba0388b7f5cd1cf3b6f",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "ac6e10f97d80c1d312cc50222f5f0a85e17ac59fc81293817b89c023263718d6",
+  "updated": "2026-11-23",
   "order": 22,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "9c287e14da5b02455db0e962079850686da44452d21e00f5b537904c754910de"
+  "description": ""
 }

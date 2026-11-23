@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NN",
   "name": "NOSTALGIC Neg.",
-  "format": "A7Look /1",
-  "sha256": "e55121654af2324b4ba94530bd2ec5108402acc28b630641c64be31594d9c463",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "289d17c05aeb817ca131dd946ff3b629f588ac9bdb8bc15987226fca381ff5c3",
+  "updated": "2026-11-23",
   "order": 10,
   "camera_tested": false,
   "training_error": {
@@ -21,6 +21,5 @@
     "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "9c9d83a0ee5eb8c42cb8efc7a03f373910728504645c8a864c196e6d84ea663d"
+  "description": ""
 }

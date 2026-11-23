@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NDRE",
   "name": "Nikon Dream",
-  "format": "A7Look /1",
-  "sha256": "18ddea215ea881d245d30fa545741905eb3443217d24ca1872c18a58e1701a3c",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "dad0fd9e4cdfd9ceafb32b038c4f1f659d3d3eafed88f88244291d7d2e544427",
+  "updated": "2026-11-23",
   "camera_tested": false,
   "training_error": {
     "status": "available",
@@ -22,6 +22,5 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "38c06520aab855f3f3bd6322f3b35aaf585ee6c76f302ad35e350659715bf0ec"
+  "description": ""
 }

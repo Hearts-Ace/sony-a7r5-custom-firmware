@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "K25-B",
   "name": "Kodachrome 25 B",
-  "format": "A7Look /1",
-  "sha256": "5f86f8c0607f77e01f030c64bb8c81f205e58e33e6dacaecfdd915ec2b371a0b",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "8a325a813f9a076dcb1f8da63dc5259f5d9806792736bdaae91412d5c9bbc182",
+  "updated": "2026-11-23",
   "order": 71,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "ac89078d6a606c3c0b9534b6548e74fbe715cbf597779753e6c43a750e4d1d5c"
+  "description": ""
 }

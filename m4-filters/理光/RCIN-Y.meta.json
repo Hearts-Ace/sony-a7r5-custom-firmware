@@ -4,8 +4,8 @@
   "short_name": "RCIN-Y",
   "name": "Ricoh Cinema Yellow",
   "format": "camera-look v2",
-  "sha256": "cbd964af1b254b6f0589250c26b677b214eab2e41ebe67d3966afa74d5a61528",
-  "updated": "2026-11-22",
+  "sha256": "bcc6a2b372858f985376ee3cc508bed2c637064acf974835e66a30dceb36dac5",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

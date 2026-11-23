@@ -4,8 +4,8 @@
   "short_name": "NH",
   "name": "PRO Neg. Hi",
   "format": "camera-look v2",
-  "sha256": "ccebd460927e8f964d0853f576734ada761a0122a2117bef01fa27db79cf505a",
-  "updated": "2026-11-22",
+  "sha256": "32988cae255bb46d221d9435a3dbcc27bb1a3940f7a1f84981341b9eb3770444",
+  "updated": "2026-11-23",
   "order": 5,
   "camera_tested": false,
   "training_error": {

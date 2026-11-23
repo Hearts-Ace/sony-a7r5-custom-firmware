@@ -4,8 +4,8 @@
   "short_name": "NRTP",
   "name": "Nikon Rich Tone Portrait",
   "format": "camera-look v2",
-  "sha256": "a6313be32285a7a264d0d426e3aeda6e49ed87404c7597a5657d4969ddddbcff",
-  "updated": "2026-11-22",
+  "sha256": "48b2b3368200cd6634c562273a21f3a502d504741bc0d48afdb3658f7dcb2573",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

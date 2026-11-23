@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CPSN",
   "name": "Canon Portrait Snapshot",
-  "format": "A7Look /1",
-  "sha256": "348ff9b20e92e5a49f51f144d261071a4bb197e19835097ce64c19c5006f6b7e",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "d267e269939bd62e32c3c64bc98010eafd6e14e54b2cac0ab74bc3cc2775b80e",
+  "updated": "2026-11-23",
   "order": 23,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "457d2adeb058c74a8c0cade0e400477059f42547389a04c34bdb13f3b5353b7c"
+  "description": ""
 }

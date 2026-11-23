@@ -4,8 +4,8 @@
   "short_name": "NVIV",
   "name": "Nikon Vivid",
   "format": "camera-look v2",
-  "sha256": "d3c5454f391efe68dbabae1994482c1679e95edd0be8a040af582351c714b2e7",
-  "updated": "2026-11-22",
+  "sha256": "efd3da3289d509157b1e3dfc82666ddedf66f8509f0973c095897601624614e8",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

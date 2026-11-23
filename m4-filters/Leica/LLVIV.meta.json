@@ -4,8 +4,8 @@
   "short_name": "LLVIV",
   "name": "LL Vivid",
   "format": "camera-look v2",
-  "sha256": "79974bb69c2210a07b9ae7839f108cb9cc2c5a4e51d98cc768adeafec80773a7",
-  "updated": "2026-11-22",
+  "sha256": "3a2f3bf678fb81a7e271c07c0cb941c9263ed80b4a76d3b35cf2bbd9b6dff6ad",
+  "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

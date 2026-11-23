@@ -4,8 +4,8 @@
   "short_name": "160NS-NB",
   "name": "Elite Fuji Pro160NS NB",
   "format": "camera-look v2",
-  "sha256": "4b971c6e75013194f9164e7f469ab727deb5f0d384436c805f26d39f522de96e",
-  "updated": "2026-11-22",
+  "sha256": "522775a9f6cf76784b44bebcc09ed91edc42be07844ac1098c86f97f312a6d58",
+  "updated": "2026-11-23",
   "order": 45,
   "camera_tested": false,
   "training_error": {

@@ -4,8 +4,8 @@
   "short_name": "NTOY",
   "name": "Nikon Toy",
   "format": "camera-look v2",
-  "sha256": "97c33507cf92fc6a62f5d8a98027a6b81e2176fb6c4952150092d8c51bdf778a",
-  "updated": "2026-11-22",
+  "sha256": "9d4abafe0a60b9b7bad588c3f25543f8ebc1c0ecbdeb16493e42e0af6b6b11cc",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

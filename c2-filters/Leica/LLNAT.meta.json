@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLNAT",
   "name": "LL Natural",
-  "format": "A7Look /1",
-  "sha256": "97728934c8b3781d26beebbc8dcc2a4dbd9403e479ea3c16637cc8512de36a91",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "dc63e5324cce4c5ba527ad0bcf7ef96a991d1de36689c11ae8621fb60c624b86",
+  "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,6 +23,5 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "174a5604940d8311a5dfe4a3e1d28f36273a3a595a4b0a5771634d45af7ea8dd"
+  "description": ""
 }

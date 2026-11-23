@@ -4,8 +4,8 @@
   "short_name": "K64-87-PR",
   "name": "Kodachrome 64 1987 PR",
   "format": "camera-look v2",
-  "sha256": "172cd42af3c80fe271e54ade53a56fdb99afbd17cc3f693544f347fa4c9e3c69",
-  "updated": "2026-11-22",
+  "sha256": "355c37b5fbf75e0e1a3cd9bf674e69faa7153d109a52d5adf07f1016e2c85039",
+  "updated": "2026-11-23",
   "order": 76,
   "camera_tested": false,
   "training_error": {

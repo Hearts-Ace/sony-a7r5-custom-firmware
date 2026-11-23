@@ -4,8 +4,8 @@
   "short_name": "LLCON",
   "name": "LL Contemporary",
   "format": "camera-look v2",
-  "sha256": "7f649625171aebe58ad6811fc9a068e0f7dae7c2e7f776850c217a1531105469",
-  "updated": "2026-11-22",
+  "sha256": "9325f8ef2148104bfd4e46780171611187908746658fce850204a7c53805d9da",
+  "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

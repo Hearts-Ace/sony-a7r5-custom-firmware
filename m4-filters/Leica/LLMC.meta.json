@@ -4,8 +4,8 @@
   "short_name": "LLMC",
   "name": "LL MC",
   "format": "camera-look v2",
-  "sha256": "6efd1261d251a252ecb168860497171667ab3c25e88340ea67b602bad8520757",
-  "updated": "2026-11-22",
+  "sha256": "23f8c19c3c2c00e128245f55641133bebb9cb0ee8cec7458aa02162052dad187",
+  "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

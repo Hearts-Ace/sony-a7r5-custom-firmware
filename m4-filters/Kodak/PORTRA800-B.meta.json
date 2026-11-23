@@ -4,8 +4,8 @@
   "short_name": "PORTRA800-B",
   "name": "Elite Kodak Portra800 B",
   "format": "camera-look v2",
-  "sha256": "5adacc66dee8b577eb4fe2461ab12bbbbd4418b026e07886b27b97d16faf669b",
-  "updated": "2026-11-22",
+  "sha256": "c4fcfea6e7b22bec1e5aa73186c47441a91914e1d67ac5f9cf55e097c04e1046",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

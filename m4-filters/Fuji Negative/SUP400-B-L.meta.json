@@ -4,8 +4,8 @@
   "short_name": "SUP400-B-L",
   "name": "Elite Fuji Superia400 B (linear)",
   "format": "camera-look v2",
-  "sha256": "91c9dde0ee997784885bed729740d32d35c9032faeae2f4aa6907b96d1a0ae96",
-  "updated": "2026-11-22",
+  "sha256": "94872b5980fe4e47451a6daad49dfae81fe03ae82a921cbc2e9016427061f38c",
+  "updated": "2026-11-23",
   "order": 52,
   "camera_tested": false,
   "training_error": {

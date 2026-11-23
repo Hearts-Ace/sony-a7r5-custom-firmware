@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CP",
   "name": "Canon Portrait",
-  "format": "A7Look /1",
-  "sha256": "49a4f239eb94f84da3ad81bbbdc8b6a6f04c4dd84cb9aa5bb05514dfc0062f06",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "b327032636f442ebe52dd0aa9cafdc1f712d52f7fc01188b793ec49dc430d78f",
+  "updated": "2026-11-23",
   "order": 25,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "2c43fa9cbd98ba6eb7b83f17cf0de16471e953262af7d005bc00b6ce698ddc1d"
+  "description": ""
 }

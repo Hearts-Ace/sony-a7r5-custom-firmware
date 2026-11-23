@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLGW",
   "name": "LL GW",
-  "format": "A7Look /1",
-  "sha256": "02f821e30d374dec0741b1ee07326ba5767e8c36f154e7268029a99084054e63",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "1613cf669a09c293e8079425afce0519d80747fef654f7097c0dfb0ef7e4c589",
+  "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,6 +23,5 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "cf07eb46bb7f149e67d58420104e22e2f824a285de59f5d0ac3c6f2500bc4f24"
+  "description": ""
 }

@@ -4,8 +4,8 @@
   "short_name": "RVIV",
   "name": "Ricoh Vivid",
   "format": "camera-look v2",
-  "sha256": "bd2cabb370c3b9bf24de5e53265fdcb83168ea92cc29ff2b9fd89401c8533f06",
-  "updated": "2026-11-22",
+  "sha256": "b9f3f0820f4e59877551ae7b9b53a8c08bc854c44b4d718013214dee524dde29",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "EKT100-NB",
   "name": "Elite Kodak Ektar100 NB",
-  "format": "A7Look /1",
-  "sha256": "c92d567e4bfb0b12c1f86100dfc7a64bf65161d29bad5fed38f5d4ca9f137ad4",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "1a375bddf664d90833c2a4bcc0ef57e8d17dcf68782ce987f416dccabb102973",
+  "updated": "2026-11-23",
   "order": 86,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "9ec708aca90f060dbe045f017e49ab2cde47cc8d9169e4eb346f94f11587a3aa"
+  "description": ""
 }

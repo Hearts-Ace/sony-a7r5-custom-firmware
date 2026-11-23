@@ -4,8 +4,8 @@
   "short_name": "NCHA",
   "name": "Nikon Charcoal",
   "format": "camera-look v2",
-  "sha256": "74b345b376d34899820745a5161cd00b319c77ef3367929ef180eac0f0f15dc8",
-  "updated": "2026-11-22",
+  "sha256": "42c5c9e8e7712a64b034531a0e291e51591a19b9fc54273e52268b000771d191",
+  "updated": "2026-11-23",
   "camera_tested": false,
   "training_error": {
     "status": "available",

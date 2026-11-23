@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "VN",
   "name": "Velvia",
-  "format": "A7Look /1",
-  "sha256": "b45b96b4fc76a72dc8908cad86c472cab22a8e719a5559d500d2cd7c92629b8a",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "42cb1f1eaaac972f53981299a764be7b2d480f5b03bdb3d13e7e9eb78e9fe7cd",
+  "updated": "2026-11-23",
   "order": 8,
   "camera_tested": false,
   "training_error": {
@@ -21,6 +21,5 @@
     "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "4bf7036019a80514478ddab31ee88a5f60e867af25a00bcc99fcbad09313dabc"
+  "description": ""
 }

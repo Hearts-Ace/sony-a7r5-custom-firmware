@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CPST",
   "name": "Canon Portrait Studio",
-  "format": "A7Look /1",
-  "sha256": "c9231729e346ba01a6c654b675295a814dee838a8806f4600a10f89a6f5a48a9",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "22d0431d07dc95afd02d4242e15ea173184ced6dbe3b46a2287abf9bdfdc9fcd",
+  "updated": "2026-11-23",
   "order": 24,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "859e6df3bd983c78465a9fb5a021602684ffcf6edd2ae14f7c6dcc27f0912d49"
+  "description": ""
 }

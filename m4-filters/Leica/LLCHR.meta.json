@@ -4,8 +4,8 @@
   "short_name": "LLCHR",
   "name": "LL Chrome",
   "format": "camera-look v2",
-  "sha256": "e73136b8b730aa16528e83db9e6dd81bb3ea14fc3b3ada5aba8e4e9d12e569fd",
-  "updated": "2026-11-22",
+  "sha256": "ee9ebb2811afff0058fa0ca25f346c4dd499b9a9a1fdbb3202236691cb785d9c",
+  "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
   "training_error": {

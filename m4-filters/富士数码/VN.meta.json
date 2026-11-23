@@ -4,8 +4,8 @@
   "short_name": "VN",
   "name": "Velvia",
   "format": "camera-look v2",
-  "sha256": "893c7e00e79740104f5a2ab35fed7f039e4cd00da0a64c3bbcf53123521a5859",
-  "updated": "2026-11-22",
+  "sha256": "8ef49466209da0159b049ae3deb6fb645bdb5db74567e7173537db3f8bfb7589",
+  "updated": "2026-11-23",
   "order": 8,
   "camera_tested": false,
   "training_error": {

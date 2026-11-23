@@ -4,8 +4,8 @@
   "short_name": "RXP400-NB",
   "name": "Elite Fuji Provia400X NB",
   "format": "camera-look v2",
-  "sha256": "9b59550a771b4bdf7fd7a7c52a520a3b9740a9a43c1e2502ced1c0b8d09f2ca8",
-  "updated": "2026-11-22",
+  "sha256": "9545d2a4efc4dc9a7f8f5acd86e061de35715ef1a36952e0c9f9866c4174ba07",
+  "updated": "2026-11-23",
   "order": 61,
   "camera_tested": false,
   "training_error": {

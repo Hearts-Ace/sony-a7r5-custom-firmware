@@ -4,8 +4,8 @@
   "short_name": "EKT100-NB",
   "name": "Elite Kodak Ektar100 NB",
   "format": "camera-look v2",
-  "sha256": "63dbfe16e3f11ce8433c394683c50946dbb5158205c1b726ac511fb7c148688a",
-  "updated": "2026-11-22",
+  "sha256": "2f0f21d632f99ed7a9f58eb3865926fd1ec09e12882d03c9f54dce597d62b684",
+  "updated": "2026-11-23",
   "order": 86,
   "camera_tested": false,
   "training_error": {

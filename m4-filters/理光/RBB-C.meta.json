@@ -4,8 +4,8 @@
   "short_name": "RBB-C",
   "name": "Ricoh Bleach Bypass Cold",
   "format": "camera-look v2",
-  "sha256": "69cfe4682625b8b870a21274c1fe08105bc9b259c0fc156894b5349766924d22",
-  "updated": "2026-11-22",
+  "sha256": "a2c0214b3101b93b080338588968010bf2df849df639c445a9ec74cb83848602",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

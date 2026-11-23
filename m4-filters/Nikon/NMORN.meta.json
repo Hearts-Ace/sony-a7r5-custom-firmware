@@ -4,8 +4,8 @@
   "short_name": "NMORN",
   "name": "Nikon Morning",
   "format": "camera-look v2",
-  "sha256": "14863155368125939d3cba381edfe555b3312329f7c023443168c36550006eaf",
-  "updated": "2026-11-22",
+  "sha256": "063d7acf26f805937066c4988d0d68554902d7b76aab65303a045385f8e7ef44",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

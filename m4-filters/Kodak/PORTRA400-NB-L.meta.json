@@ -4,8 +4,8 @@
   "short_name": "PORTRA400-NB-L",
   "name": "Elite Kodak Portra400 NB (linear)",
   "format": "camera-look v2",
-  "sha256": "8cabfccd11b6c3d86c45a53ae8084018b16199a38d91131d6594c8d737763bda",
-  "updated": "2026-11-22",
+  "sha256": "8ea0a18528bafb21d55062d5ff7ddf8b14169272ee5b68323641a9b0d117daa2",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

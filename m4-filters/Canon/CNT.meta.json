@@ -4,8 +4,8 @@
   "short_name": "CNT",
   "name": "Canon Neutral",
   "format": "camera-look v2",
-  "sha256": "127b5c8db090231b4f33b12eac1d57d0f183e8069dee48aeaaba9badf042bc71",
-  "updated": "2026-11-22",
+  "sha256": "7af3d1dac4391ece3718ab0beb3418c1f7ad3135e87243bbe5b0dd13e3b664a8",
+  "updated": "2026-11-23",
   "order": 21,
   "camera_tested": false,
   "training_error": {

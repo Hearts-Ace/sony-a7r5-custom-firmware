@@ -4,8 +4,8 @@
   "short_name": "P400",
   "name": "Portra400NB",
   "format": "camera-look v2",
-  "sha256": "80a532f4d39ee878ab4361d7c6e38d9144433ba064e628c30bede3301857547c",
-  "updated": "2026-11-22",
+  "sha256": "50d19d8be0244c37273e015ccd2981641ee2ea3b4718186e950602e3206e5a05",
+  "updated": "2026-11-23",
   "order": 13,
   "camera_tested": false,
   "training_error": {

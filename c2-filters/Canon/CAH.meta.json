@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "CAH",
   "name": "Canon Autumn Hues",
-  "format": "A7Look /1",
-  "sha256": "9a5e71835f62c67d6017bd726dc599cf70f52f23a97a367b8e8e21620ca80ac3",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "a0c50fcbd4583c3f35a9efa04eb9d7a6d64c546548082b7c3baf13c1d9939a6f",
+  "updated": "2026-11-23",
   "order": 14,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "b74ace67f087db4617cedce03add6c5752759323219e19f6fc1a3876d5a5db5f"
+  "description": ""
 }

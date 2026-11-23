@@ -4,8 +4,8 @@
   "short_name": "RCP-B",
   "name": "Ricoh Cross Processing Blue",
   "format": "camera-look v2",
-  "sha256": "45ae0ab14344730b4d48c22ddf4032514d8279ac1ebd2467744a2d8cea7727ec",
-  "updated": "2026-11-22",
+  "sha256": "558416ccabbee462eb3ae6d615c6404b36b8d15410e4488d149a5f52116e7b9f",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

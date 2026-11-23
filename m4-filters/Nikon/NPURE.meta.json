@@ -4,8 +4,8 @@
   "short_name": "NPURE",
   "name": "Nikon Pure",
   "format": "camera-look v2",
-  "sha256": "905ce40b598568d2e18c2d234eba90360f84647787b266fbca3fba58f154f570",
-  "updated": "2026-11-22",
+  "sha256": "5cb226966ec502d7fc92d6ba2215c6c62ef66ce183e78383dafeeaf9da293125",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

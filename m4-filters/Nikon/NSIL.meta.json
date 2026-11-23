@@ -4,8 +4,8 @@
   "short_name": "NSIL",
   "name": "Nikon Silence",
   "format": "camera-look v2",
-  "sha256": "57853a8dd32392a7125bf89b5cffba14d3329b34a1c55dc632c2d7b76556ff2d",
-  "updated": "2026-11-22",
+  "sha256": "9968d05da33a9a4000609c5bf7a7c98bb206d6ecde7c1a038208093259c77c96",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

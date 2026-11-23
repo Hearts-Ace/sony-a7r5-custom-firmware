@@ -4,8 +4,8 @@
   "short_name": "NMEL",
   "name": "Nikon Melanchonic",
   "format": "camera-look v2",
-  "sha256": "a1e39767beefa90ba88d78735bc98ad77f40cd63642ca31d6da16c88eb227da1",
-  "updated": "2026-11-22",
+  "sha256": "5fa6c6d198ba41935d3e3dd65fcdde2dba02ac17caece423ce71aff2d9b822a5",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

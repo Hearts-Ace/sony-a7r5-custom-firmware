@@ -4,8 +4,8 @@
   "short_name": "NRED",
   "name": "Nikon Red",
   "format": "camera-look v2",
-  "sha256": "d2569c9370178f1436277c3fed97f71f9b1d85a0a72091548917353a4a3e10c3",
-  "updated": "2026-11-22",
+  "sha256": "2a8a2e71cad94605477acb4c24e0c38834e294aafb366df066638dbbdb3101ea",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

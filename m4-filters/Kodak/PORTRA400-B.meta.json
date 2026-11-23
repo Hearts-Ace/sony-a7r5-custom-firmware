@@ -4,8 +4,8 @@
   "short_name": "PORTRA400-B",
   "name": "Elite Kodak Portra400 B",
   "format": "camera-look v2",
-  "sha256": "66d7d399ae9f6a257d777dfeeb35f24758cc9bafc1e7ce2af0db6a6da20061c2",
-  "updated": "2026-11-22",
+  "sha256": "3c6b8c30f40a6eb56631f304daa5c0e40b0387054c91e45b248244bce119b6e2",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

@@ -4,8 +4,8 @@
   "short_name": "CTW",
   "name": "Canon Twilight",
   "format": "camera-look v2",
-  "sha256": "6f66d7eab55b7960a4d551eaa778a0f1c97c9b6976b413ae46d5729076a941cd",
-  "updated": "2026-11-22",
+  "sha256": "11357016911998e3debf5925279b6ed8cd2fdb0316ee8956c813ed4988ea9c1b",
+  "updated": "2026-11-23",
   "order": 27,
   "camera_tested": false,
   "training_error": {

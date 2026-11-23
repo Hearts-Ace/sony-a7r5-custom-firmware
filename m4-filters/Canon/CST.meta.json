@@ -4,8 +4,8 @@
   "short_name": "CST",
   "name": "Canon Standard",
   "format": "camera-look v2",
-  "sha256": "0c809a1b8c93ea375acdc044b4c7bdad4d8fbf850399f4c2671cb76de2696f6c",
-  "updated": "2026-11-22",
+  "sha256": "3eaa01ade9a4685f44139eb0d899455b7e4f72ddb9dde9a8c29d6b6b6b754761",
+  "updated": "2026-11-23",
   "order": 26,
   "camera_tested": false,
   "training_error": {

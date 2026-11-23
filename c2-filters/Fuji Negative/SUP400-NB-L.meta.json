@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "SUP400-NB-L",
   "name": "Elite Fuji Superia400 NB (linear)",
-  "format": "A7Look /1",
-  "sha256": "4dcc42142de43bed41f9c7c3d5fbb074efca3b08975f3b6356fc27529822e548",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "ac11b67a10a846ab66d455bad1217308589b7d373e90afbadb8b2f1a0f64aa5d",
+  "updated": "2026-11-23",
   "order": 54,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "c44cffbd96befa561a79bcbeaddffd756486be688eefdd776d866062992a157e"
+  "description": ""
 }

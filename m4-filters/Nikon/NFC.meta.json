@@ -4,8 +4,8 @@
   "short_name": "NFC",
   "name": "Nikon Flexible Color",
   "format": "camera-look v2",
-  "sha256": "645c9a2e4a5b626fc0fd2196426b3346e77b66e4df64ba1dafb5d3fc30be41fd",
-  "updated": "2026-11-22",
+  "sha256": "9638906c6a740c97cd81db692a3c291989144f0ca81c2e01c50d8183f95dd76e",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

@@ -4,8 +4,8 @@
   "short_name": "EBB",
   "name": "ETERNA BLEACH BYPASS",
   "format": "camera-look v2",
-  "sha256": "cf0a41b87036e08218201d8a84f4110bf096faf78fabb677a13240b305f16ded",
-  "updated": "2026-11-22",
+  "sha256": "6842be5c6dc4a7151751fd23e99b78c11db47926c2ab7bd9b764d430bc50964d",
+  "updated": "2026-11-23",
   "order": 2,
   "camera_tested": false,
   "training_error": {

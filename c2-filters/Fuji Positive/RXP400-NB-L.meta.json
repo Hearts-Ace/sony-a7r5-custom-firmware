@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "RXP400-NB-L",
   "name": "Elite Fuji Provia400X NB (linear)",
-  "format": "A7Look /1",
-  "sha256": "974bb7cbaf912f3d1cba2f352f1dd972e38849d42c8cea5121a2426bcd446b98",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "7875c7cc26443804abc37aac435d85eeb8af8286cfbc9c3498be572876da3686",
+  "updated": "2026-11-23",
   "order": 62,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "d48cea1b88d3fe30db109c13e0de237b20e7e23b6ce62a80f75a1ac084cb5c4c"
+  "description": ""
 }

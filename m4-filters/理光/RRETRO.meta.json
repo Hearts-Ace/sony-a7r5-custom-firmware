@@ -4,8 +4,8 @@
   "short_name": "RRETRO",
   "name": "Ricoh Retro",
   "format": "camera-look v2",
-  "sha256": "1d567bd1a4173cc5dbf1fb33f76e09da9ac958a7c67a0d9fb9b792826d60f3eb",
-  "updated": "2026-11-22",
+  "sha256": "ea42c79b2d58b5b770454d60b718138366e141b5725c6cb04e5bd55566fadb89",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

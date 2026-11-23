@@ -4,8 +4,8 @@
   "short_name": "RDP100-NB",
   "name": "Elite Fuji Provia100F NB",
   "format": "camera-look v2",
-  "sha256": "87315a378e5435b193e3f87d9fbacbe113f759dc9354f25816e22df16eee24d2",
-  "updated": "2026-11-22",
+  "sha256": "8e1dcea2dcd416fd273323222723f7e4b7ba8fe5324332465a97ee1c098563db",
+  "updated": "2026-11-23",
   "order": 57,
   "camera_tested": false,
   "training_error": {

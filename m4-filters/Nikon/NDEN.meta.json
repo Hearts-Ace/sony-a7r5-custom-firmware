@@ -4,8 +4,8 @@
   "short_name": "NDEN",
   "name": "Nikon Denim",
   "format": "camera-look v2",
-  "sha256": "6021ca36f4cd7bff447ac903a73de1484107abb13757eb7b26c5e8c967290b42",
-  "updated": "2026-11-22",
+  "sha256": "3bc741ebfb1c2d5a09ca3ca5ce861348a17b1f3cc0efc1a667ee7df1854bb4c6",
+  "updated": "2026-11-23",
   "camera_tested": false,
   "training_error": {
     "status": "available",

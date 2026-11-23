@@ -4,8 +4,8 @@
   "short_name": "PORTRA160-B-L",
   "name": "Elite Kodak Portra160 B (linear)",
   "format": "camera-look v2",
-  "sha256": "2c200de0d4b0c0cd236fe3c92535cf6eb3fa869d04683509eb96718cd109ff8d",
-  "updated": "2026-11-22",
+  "sha256": "ab44d483e47c2ab52ac612b2457b75e2a50dfec40271bf478db2bf0bb18dd56f",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

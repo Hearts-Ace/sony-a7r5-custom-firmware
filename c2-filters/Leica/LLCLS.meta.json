@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "LLCLS",
   "name": "LL Classic",
-  "format": "A7Look /1",
-  "sha256": "732d17d8f551928890375b5ca72762ecb5037c74aff69a2159b5adcf72270e09",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "e2524f211a3045d7c8a6f76f15a16fd6fa8fa06f092fa72cde63e9088c4a190f",
+  "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
   "training_error": {
@@ -23,6 +23,5 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "5c077c6311b35ecd7047e807291bec91cafeda5d4aa911c13fcd4298f8e25d85"
+  "description": ""
 }

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "160NS-B",
   "name": "Elite Fuji Pro160NS B",
-  "format": "A7Look /1",
-  "sha256": "9cc536183a7306bb369c740b51c95093a8eebc000793bb2ffc6edb80c8a99d11",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "081adaeb5a15a0d950d4767688541e6cd0f4fd8df174073b672d6245f61ca433",
+  "updated": "2026-11-23",
   "order": 43,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "e8fedb9a73f4dd1c12ee478f5566b5c010beda59b0fda7a68fde913883335dd3"
+  "description": ""
 }

@@ -4,8 +4,8 @@
   "short_name": "NPOP",
   "name": "Nikon Pop",
   "format": "camera-look v2",
-  "sha256": "d9d369bae7cab6f6c34970fa6ca595b3a5de0187ee775a5a9ba28ffeb3dcfa13",
-  "updated": "2026-11-22",
+  "sha256": "ba807ee9431fb7921e27f3203d431216fb0feae9a3f7727a026b4cced84a09a4",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "NFLAT",
   "name": "Nikon Flat",
-  "format": "A7Look /1",
-  "sha256": "d3c22fe9aa78c67a06fef4d3d8c7e8b325f0a941640a9786f9bfa8ec5f4f73c7",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "ebd637d4d7295e3a770639f727223dcfff853bbff690c3da5f7418ea17905d4b",
+  "updated": "2026-11-23",
   "camera_tested": false,
   "training_error": {
     "status": "available",
@@ -22,6 +22,5 @@
     "note": "最终整数参数及网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "6ce87b43e5f72b8dc7056be4da257dd6fa6e913b8c1e63cf9d6265d8e4c7203f"
+  "description": ""
 }

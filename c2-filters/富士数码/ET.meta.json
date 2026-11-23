@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "ET",
   "name": "ETERNA",
-  "format": "A7Look /1",
-  "sha256": "3fe7e24b24d034c26a55195b9175b02ded86ca3ed5f19c4f9bf9f7bac2c92b7b",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "8788aa31250d69a04739443b52802b20e02370245e699dfdfc023ceec3b3399e",
+  "updated": "2026-11-23",
   "order": 3,
   "camera_tested": false,
   "training_error": {
@@ -21,6 +21,5 @@
     "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "815e87a774c400312184d88064317baf4d8b259252af9bcdcce92c4d38ea377f"
+  "description": ""
 }

@@ -4,8 +4,8 @@
   "short_name": "NPINK",
   "name": "Nikon Pink",
   "format": "camera-look v2",
-  "sha256": "3d1e26f97424502ec7fe61f9045fc6723bbe1d58920b20a29474ba2ad86a752e",
-  "updated": "2026-11-22",
+  "sha256": "9ffe12826f935c15a1cc969ebbeefe03ef79ad10a3840c8b814098e6edacdde7",
+  "updated": "2026-11-23",
   "description": "",
   "camera_tested": false,
   "training_error": {

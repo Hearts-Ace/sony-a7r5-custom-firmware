@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "RDP100-NB",
   "name": "Elite Fuji Provia100F NB",
-  "format": "A7Look /1",
-  "sha256": "3e53e60004eb5a6c3881dfab9784edf5d2f14aba1e36258a068648649859ac87",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "b61acc79c0d5a73ad208545e06fe3153d3a37f0d4832530403c4dd2fe774c20c",
+  "updated": "2026-11-23",
   "order": 57,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "3f418dc1d6b379ff6742341d4cdf6f67c6149d80dae6388ecae1decaad3bba4b"
+  "description": ""
 }

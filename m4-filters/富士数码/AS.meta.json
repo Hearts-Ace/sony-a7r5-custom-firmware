@@ -4,8 +4,8 @@
   "short_name": "AS",
   "name": "ASTIA",
   "format": "camera-look v2",
-  "sha256": "670e490ef9ff99e485828769ea657e32052de175f69015e6ab9e35a7e9e0ff74",
-  "updated": "2026-11-22",
+  "sha256": "d3fb45c099fc9ca946e96d2c1a621714ba87fbe24fc60aa0a21cf1b23723f4cf",
+  "updated": "2026-11-23",
   "order": 0,
   "camera_tested": false,
   "training_error": {

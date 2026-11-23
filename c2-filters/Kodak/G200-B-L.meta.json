@@ -3,9 +3,9 @@
   "model": "c2",
   "short_name": "G200-B-L",
   "name": "Elite Kodak Gold200 B (linear)",
-  "format": "A7Look /1",
-  "sha256": "e2d4e19eb55256362388897c1d2c005c4b4540f8a11e585ccc629fc26042d16b",
-  "updated": "2026-11-22",
+  "format": "A7Look /2",
+  "sha256": "affa2314db782c7ae6a45cb85db79406ac8507b3ae04f3873533f16153aba778",
+  "updated": "2026-11-23",
   "order": 89,
   "camera_tested": false,
   "training_error": {
@@ -26,6 +26,5 @@
     "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
   },
   "metric_source_model": "r5",
-  "description": "",
-  "source_bin_sha256": "d3e3b7ef3ed84a4a8a9625d55beab520bba0339064c751e934ea999c06f81cea"
+  "description": ""
 }
