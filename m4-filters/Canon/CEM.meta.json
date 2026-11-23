@@ -4,7 +4,7 @@
   "short_name": "CEM",
   "name": "Canon Emerald",
   "format": "camera-look v2",
-  "sha256": "d76bc1b41fc09fee5ad2b6cc80600770eb4958d6aaf153bb7e49965a54502b3d",
+  "sha256": "fd6fcc76a24e42da5a1707b8052974cfe359f988aa2be4b68b33cd178e528012",
   "updated": "2026-11-23",
   "order": 16,
   "camera_tested": false,

@@ -4,7 +4,7 @@
   "short_name": "PV",
   "name": "PROVIA",
   "format": "camera-look v2",
-  "sha256": "e571f9aa55b3fa79469727aede7a354110bd4b1a03a5f54563562c6160de1760",
+  "sha256": "635b5877fcaa25d52db3cdf971530b0b86f05035edd765ce13995f9084e1abb3",
   "updated": "2026-11-23",
   "order": 6,
   "camera_tested": false,

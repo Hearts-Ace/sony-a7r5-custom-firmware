@@ -4,7 +4,7 @@
   "short_name": "LLCIN",
   "name": "LL Cine",
   "format": "camera-look v2",
-  "sha256": "fa96c66b88164df39e6f0ab24dd0b479e1da40bbc0e6e28b012b70541a851485",
+  "sha256": "4cc368386e550ffb1acfbdc123155be7384f46e166ebab17ddf48a5e94a2307a",
   "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,

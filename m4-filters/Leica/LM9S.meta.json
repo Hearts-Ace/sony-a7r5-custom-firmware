@@ -4,7 +4,7 @@
   "short_name": "LM9S",
   "name": "Leica M9 Standard",
   "format": "camera-look v2",
-  "sha256": "c2180c257354f6aa840187a4de8ca93140f24b3c79fdf65dbee60dc88c749f09",
+  "sha256": "1899d7f5da38250de8c67240643f1c2efb07cbe22d20a164f76e71db40f5d925",
   "updated": "2026-11-23",
   "order": 10000,
   "camera_tested": false,
