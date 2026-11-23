@@ -5,8 +5,8 @@
   "short_name": "NBLU",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "524ca98b67e08af9c65ea86e7a58995015d2bdf77a67eedd7a578d586f0476d8",
+  "updated": "2026-11-23",
+  "sha256": "e0aaa2536987fef83e8fff123c448c83f2dd9a328bdb6b006b25aefe577d0119",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

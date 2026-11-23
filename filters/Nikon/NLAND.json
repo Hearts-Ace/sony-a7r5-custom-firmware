@@ -5,8 +5,8 @@
   "short_name": "NLAND",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "cd28e9300db318131c646271a6792451b1508793ca39d397b00573b9565365ce",
+  "updated": "2026-11-23",
+  "sha256": "7aba10d68a1f8c0fc01665a36f33036b97b1e4d21fe094aba656e75c10c557b0",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

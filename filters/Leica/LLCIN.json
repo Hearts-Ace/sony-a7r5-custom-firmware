@@ -5,8 +5,8 @@
   "short_name": "LLCIN",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "4b524f4e6097546e77f0a0b2d53b0ebffb2ece953b0bdb343c52b3a630ef07de",
+  "updated": "2026-11-23",
+  "sha256": "02b9438c1013bdd902fda882f7e098e45e86ebaad3924fa518e4778a884455ae",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

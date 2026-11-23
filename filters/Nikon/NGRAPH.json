@@ -5,8 +5,8 @@
   "short_name": "NGRAPH",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "ab7cf39806d63b476fa3fc6fa377ef0a6f9babcb055b5e5bcdef6dd935fb7a65",
+  "updated": "2026-11-23",
+  "sha256": "b1cad13978699d83fe574946c2028292f3cf771b7377780b01c8d81b43462f8a",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

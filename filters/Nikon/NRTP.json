@@ -5,8 +5,8 @@
   "short_name": "NRTP",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "4dac681871d8cc61410f322bba096555547c4aa95b77148e76b11045278db788",
+  "updated": "2026-11-23",
+  "sha256": "45dd4c0398ef1a9f37c83282d6d00846a65de0c7a53c3ac701b7c52aef4ad6e1",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

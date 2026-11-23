@@ -5,8 +5,8 @@
   "short_name": "NBLE",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "7ea26524fb03f0b5dcb90d67954b77a0c344fa20306d436074861db5b8989dae",
+  "updated": "2026-11-23",
+  "sha256": "005a338e40396692d7808e15bb7378896e855b50e3e91a84e287df79579c3867",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

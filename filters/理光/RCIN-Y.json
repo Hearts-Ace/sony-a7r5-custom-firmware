@@ -5,8 +5,8 @@
   "short_name": "RCIN-Y",
   "series": "理光",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "489b89340003af1616b771655c829ba6bd5f50c4c4eb698628d163c5210449af",
+  "updated": "2026-11-23",
+  "sha256": "ecf4491be9d46e58b3cf9211aabe8b28b9abd96be1e014e9b2d020e4ed35a518",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

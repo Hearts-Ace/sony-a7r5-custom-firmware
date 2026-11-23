@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NDeepToneMonochrome",
+  "name": "Nikon Deep Tone Monochrome",
+  "short_name": "NDTM",
+  "series": "Nikon",
+  "description": "",
+  "updated": "2026-11-23",
+  "sha256": "b6486058d9d106835f93f3ff172fbfac00378803f64091f082b4a6e0b4d03a03",
+  "camera_tested": false,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.6668900736348138,
+    "p95": 4.719142064062431,
+    "maximum": 17.117858561983343,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

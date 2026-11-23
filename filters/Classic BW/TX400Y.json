@@ -1,0 +1,30 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWTri-X400Yellow",
+  "name": "Elite Kodak Tri-X 400 Yellow",
+  "short_name": "TX400Y",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-23",
+  "sha256": "3b07bd0a514df30a9f482f44b5d4e7d82284f89652001aa46c07db83a23330ea",
+  "camera_tested": false,
+  "order": 42,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.2999180833034638,
+    "p95": 4.349915661609247,
+    "maximum": 9.833355961717682,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+    "encoding": "float display sRGB (clip 0..1, no 8-bit quantization) -> D65 Lab -> CIEDE2000",
+    "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809",
+    "parameter_sha256": "c8cf6c8289c4403b26f23e9cb8171fd292d018334c92c3ab2abea68f49b2ee7e",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
+  }
+}

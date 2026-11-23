@@ -5,8 +5,8 @@
   "short_name": "NCHA",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "519b4edcf54154597ec21a627aff3dbd3961394d4703401e2c9bb376b55db992",
+  "updated": "2026-11-23",
+  "sha256": "72ba9ead98c3c041aae1f4b1406be0602477e0e40dcb23e24b5e686905b0349a",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

@@ -5,8 +5,8 @@
   "short_name": "NDRE",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "38c06520aab855f3f3bd6322f3b35aaf585ee6c76f302ad35e350659715bf0ec",
+  "updated": "2026-11-23",
+  "sha256": "9887ba67b814f47c204cd78fdf23b5dbe5714169fa60214f1362af0bf8e56e1f",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

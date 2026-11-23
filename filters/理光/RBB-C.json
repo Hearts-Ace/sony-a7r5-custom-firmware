@@ -5,8 +5,8 @@
   "short_name": "RBB-C",
   "series": "理光",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "53f4214d7c9989706f372d0966cf3349f31c57e55ccd3b499a968d969044b0ac",
+  "updated": "2026-11-23",
+  "sha256": "25f10b27f00a03efd416e16f6035c7c05df8f8978e60ec1d6b558cb6506579d7",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

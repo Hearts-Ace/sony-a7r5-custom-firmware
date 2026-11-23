@@ -1,0 +1,30 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWEliteIlfordHP5+-a1a5",
+  "name": "Elite Ilford HP5+ 400 Green",
+  "short_name": "HP5+G",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-23",
+  "sha256": "8e563a43934b4518b1a2f512bad1393fef57d86084c83cd642cac4e6cb616dc8",
+  "camera_tested": false,
+  "order": 30,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.60433735938544,
+    "p95": 5.087760376885549,
+    "maximum": 10.588619696663867,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+    "encoding": "float display sRGB (clip 0..1, no 8-bit quantization) -> D65 Lab -> CIEDE2000",
+    "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809",
+    "parameter_sha256": "d9bb2e8618c25ce130dce010304e527a7d3407f69ff04bdf24ad6dbe8da4ec92",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
+  }
+}

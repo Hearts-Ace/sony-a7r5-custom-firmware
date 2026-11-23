@@ -5,8 +5,8 @@
   "short_name": "LLNAT",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "174a5604940d8311a5dfe4a3e1d28f36273a3a595a4b0a5771634d45af7ea8dd",
+  "updated": "2026-11-23",
+  "sha256": "876d9cefcdc8b1b5932fefcf1898021f7a4a1e8e08a9b5d4e36ba97ac8538d37",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

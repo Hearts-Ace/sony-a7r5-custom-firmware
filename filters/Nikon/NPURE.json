@@ -5,8 +5,8 @@
   "short_name": "NPURE",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "7fda9a8c5ec0ee626dcc0d14a2f27d4afa8df3c87c9fb642847227712a8186a6",
+  "updated": "2026-11-23",
+  "sha256": "a844741f1e28a1910752a146a7c118cbd392fe75f84c0eea70b07569d04a9ad0",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

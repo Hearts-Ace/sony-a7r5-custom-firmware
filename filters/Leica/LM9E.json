@@ -5,8 +5,8 @@
   "short_name": "LM9E",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "e85f7993544a9448538f6ba6dacf7c7cfc30e00aed9921b0507b879fb64b4b80",
+  "updated": "2026-11-23",
+  "sha256": "107a8dacc958936376ffe2cde8aa0c52dcf87ed56e7d9166f8d000acb05f8158",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

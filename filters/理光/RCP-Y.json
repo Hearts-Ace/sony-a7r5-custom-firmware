@@ -5,8 +5,8 @@
   "short_name": "RCP-Y",
   "series": "理光",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "8f9db2cb4258323efba087d6f847ee4ee926c88558582111a219613db1513f3d",
+  "updated": "2026-11-23",
+  "sha256": "2a462689ac85acde582a4e5e7f8650b58b9d6be51ac99d1a30b89b2bda7c31e1",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

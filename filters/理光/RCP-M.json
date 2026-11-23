@@ -5,8 +5,8 @@
   "short_name": "RCP-M",
   "series": "理光",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "e112c8a3a616ab25bd4a4c5a68662058d432ec6d62d76770b7c06be1de8abbb3",
+  "updated": "2026-11-23",
+  "sha256": "b5e414f75d60e4f89da497762a0d67c30b718365aa15641a6266cae2c5415108",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

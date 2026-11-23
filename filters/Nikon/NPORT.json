@@ -5,8 +5,8 @@
   "short_name": "NPORT",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "49204af02df9d3c64b624ef9e6bbfac930c9ede6bf480966bc1f92b009ba1ab5",
+  "updated": "2026-11-23",
+  "sha256": "3941bd51fbaafdc4538433da1111d6daa807f21471c1284acb5aa471f2d66cc8",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

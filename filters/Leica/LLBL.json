@@ -5,8 +5,8 @@
   "short_name": "LLBL",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "27c5a643ae0969fd454da4d1438eb57256242df38bf820f4b5e4cd5c0ddae9ad",
+  "updated": "2026-11-23",
+  "sha256": "feef68c2fee40c3f80820dd80305213fe4c0fa8b6f89d721120b718cbff78c75",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

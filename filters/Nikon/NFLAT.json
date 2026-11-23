@@ -5,8 +5,8 @@
   "short_name": "NFLAT",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "6ce87b43e5f72b8dc7056be4da257dd6fa6e913b8c1e63cf9d6265d8e4c7203f",
+  "updated": "2026-11-23",
+  "sha256": "1fea056dede535b5a033bc25764c765e376746860d13f9c3f2ed2263432b2840",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

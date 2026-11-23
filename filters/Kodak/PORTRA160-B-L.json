@@ -5,8 +5,8 @@
   "short_name": "PORTRA160-B-L",
   "series": "Kodak",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "2a48146abce1bbfd31d0713cf58b92df78acbe36384acaf63c6d0cd42c341226",
+  "updated": "2026-11-23",
+  "sha256": "2e376a2fca42905e2c54b8c324ebfa7e70a74eae1f515cd6bf79ce3197807fc4",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

@@ -5,8 +5,8 @@
   "short_name": "LLCLS",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "5c077c6311b35ecd7047e807291bec91cafeda5d4aa911c13fcd4298f8e25d85",
+  "updated": "2026-11-23",
+  "sha256": "39c7e6b0369d01b807481fde35555443bd8b6ed0d59006896962af3acc502dfc",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

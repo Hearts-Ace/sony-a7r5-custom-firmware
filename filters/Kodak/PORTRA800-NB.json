@@ -5,8 +5,8 @@
   "short_name": "PORTRA800-NB",
   "series": "Kodak",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "f7128635be7b7c7493f36fb88a14d3a7d4b18efd886097967caff2ca4dc6626d",
+  "updated": "2026-11-23",
+  "sha256": "666b86d756916414e2d0e2a263eb35f3dcf3881f6dacc33f687b3dc24730cbbe",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

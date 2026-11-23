@@ -5,8 +5,8 @@
   "short_name": "LLTEA",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "6adf96b57dfddd1b973eaa3db7a718db108db0aca921e85d8d69089fa4940a0f",
+  "updated": "2026-11-23",
+  "sha256": "8f88d8f877ada8f73b136b3e75f8e58cd95b6c1ff6cdacec21df52b795a74e63",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

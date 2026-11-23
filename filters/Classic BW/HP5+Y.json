@@ -1,0 +1,30 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "CBWEliteIlfordHP5+-23e3",
+  "name": "Elite Ilford HP5+ 400 Yellow",
+  "short_name": "HP5+Y",
+  "series": "Classic BW",
+  "description": "",
+  "updated": "2026-11-23",
+  "sha256": "be63c515b4ec54d03f9e1045533a35eb2262665b890951fb3eb1440e5bd74e0e",
+  "camera_tested": false,
+  "order": 28,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.747452991660299,
+    "p95": 5.518812487001971,
+    "maximum": 11.744262022082225,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+    "encoding": "float display sRGB (clip 0..1, no 8-bit quantization) -> D65 Lab -> CIEDE2000",
+    "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809",
+    "parameter_sha256": "e39977f28655853b2598e382be730a4eebe13fede716f77cb49e82013acd0739",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
+  }
+}

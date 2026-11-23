@@ -5,8 +5,8 @@
   "short_name": "NVIV",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "8d622e27a90ce316afc547b2e6c271808edb4b2030184723256e7be66d87552a",
+  "updated": "2026-11-23",
+  "sha256": "6baf13a0061e27232946223b40800a1c3f1b30f650203c390199db1e145244de",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

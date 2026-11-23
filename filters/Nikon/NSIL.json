@@ -5,8 +5,8 @@
   "short_name": "NSIL",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "8b74da619c80171dfe56468bd465241c0999038afc4f1ad9a478189d2ba836ac",
+  "updated": "2026-11-23",
+  "sha256": "58190ef096b8ee0ba693daf0d4f1817eec52446f349cf80a187ac61cc4eaa5f3",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

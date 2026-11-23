@@ -5,8 +5,8 @@
   "short_name": "PORTRA400-B",
   "series": "Kodak",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "9017be83774ba991fbd954c1ccd437cbe41e0e13bf42ca0491e04bfe84bdfe0e",
+  "updated": "2026-11-23",
+  "sha256": "cb92ef067c96730e60e33e8ebed6567bf0dbcc6aecc1015d97f5b3d638a41704",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

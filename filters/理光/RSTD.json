@@ -5,8 +5,8 @@
   "short_name": "RSTD",
   "series": "理光",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "6d43423ef1186fc632aac200820b9c45dc0f4a021bb87cff289f0e517ad9b0a7",
+  "updated": "2026-11-23",
+  "sha256": "2efd6018bf44a8790c3c85ae9ee10f2d130f6ded932bbf9ba0c86f10aecfdab7",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

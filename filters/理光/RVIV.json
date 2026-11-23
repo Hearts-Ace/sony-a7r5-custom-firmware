@@ -5,8 +5,8 @@
   "short_name": "RVIV",
   "series": "理光",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "1cc9623a8b27f4f4b7b880f1d686717c59e80de9afcfce96d8b3a1aa60ffd7b2",
+  "updated": "2026-11-23",
+  "sha256": "11f1ca371649c2785fb6d8e6d3ef76129164c16af301c8fdb6e3d03a7c80ed8b",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

@@ -5,8 +5,8 @@
   "short_name": "LLBLU",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "068d8b359e7f51443a4411db0301e0c123de61b839f26a72da250b46fbd6d32f",
+  "updated": "2026-11-23",
+  "sha256": "50f07f5f4eadf819c9f92fdf196e7b22895646cbfb09fc46b50df47e5cddd82a",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

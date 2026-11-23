@@ -5,8 +5,8 @@
   "short_name": "LLGW",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "cf07eb46bb7f149e67d58420104e22e2f824a285de59f5d0ac3c6f2500bc4f24",
+  "updated": "2026-11-23",
+  "sha256": "fad39eb024b204f62e5f2f84e119ec84c9482e97fbb29a4e674bc047c2f133bd",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

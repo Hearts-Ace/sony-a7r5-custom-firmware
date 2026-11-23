@@ -5,8 +5,8 @@
   "short_name": "LM9S",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "519466cc15f11654ba12696bfbd49b86accd4870dcc7b512bda91cb49cc59347",
+  "updated": "2026-11-23",
+  "sha256": "971b96341d82586f04ad86f30129bbbf63808c07e80e0281d47bfec9ade01303",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

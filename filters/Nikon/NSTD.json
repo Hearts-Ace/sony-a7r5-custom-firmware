@@ -5,8 +5,8 @@
   "short_name": "NSTD",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "472ff8996281e9311269198689908638baf523f6002a50299800433590c0a264",
+  "updated": "2026-11-23",
+  "sha256": "38d1927a68705252155b7ccdb04ed938bd0f43a53694b1ba6691e1955ce35bfa",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

@@ -5,8 +5,8 @@
   "short_name": "LLCHR",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "159240d28315ad7a05931da53fce178fc913cc0bb4e2f1f685fd1c5f550bdda8",
+  "updated": "2026-11-23",
+  "sha256": "25bb9225c12c29b87abd86173be850dac88a656350eed5e34660cf93924f7edf",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

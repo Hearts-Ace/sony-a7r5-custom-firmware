@@ -5,8 +5,8 @@
   "short_name": "NFC",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "fa0b82d098f71f2f2dd90593b78196458ffd00e64105490c89b1e3b66dd07df5",
+  "updated": "2026-11-23",
+  "sha256": "c03eccc2bf4ee3bbe13ec545d9d44074eb184812ebe3f31ce7812703004deb8c",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

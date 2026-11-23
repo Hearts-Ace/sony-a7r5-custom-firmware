@@ -5,8 +5,8 @@
   "short_name": "LLVIV",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "9b63a68ce8163c2a241c4a761ea476c4ca6f317082bbb568b8087549124158eb",
+  "updated": "2026-11-23",
+  "sha256": "91d0facdd466091c5675e60b6918a1d48573546c8945a3e21c9fbfcc2226ff39",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

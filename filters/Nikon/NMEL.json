@@ -5,8 +5,8 @@
   "short_name": "NMEL",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "c2715c39b983bdd67f46f103c11489a9059da57f589f6a9aef04938f00fbe1c2",
+  "updated": "2026-11-23",
+  "sha256": "c1ef934e7d92ee386ed4183861c73a44c82ceff33968a2d3685fec99554183ed",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

@@ -5,8 +5,8 @@
   "short_name": "NSUN",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "25ad46004fd6eeef2239a333c390e6e1a26d4db61c97136b3a49961a52b8dca8",
+  "updated": "2026-11-23",
+  "sha256": "b6bdd6e4e78cdb78e3240185ffe35eb517b9f7a6629c1ccaa36ee809a1e04e82",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

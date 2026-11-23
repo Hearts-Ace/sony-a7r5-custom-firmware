@@ -5,8 +5,8 @@
   "short_name": "LLET",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "5a426cc20a7b23197d40710b48bb1489902744fe78b967e9f0aace136a029ae3",
+  "updated": "2026-11-23",
+  "sha256": "e99aaadfb2783f854467fe58b113ea9bf222921b613940fe09482ee105cff6fa",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

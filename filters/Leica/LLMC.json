@@ -5,8 +5,8 @@
   "short_name": "LLMC",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "c69333d8b78bedfa91f2670fbf2b8cad4dcbb847d0fff640b33f98c1665fd29a",
+  "updated": "2026-11-23",
+  "sha256": "6a71bafb67fd602bd5ebd1fde38d9d67d64c68738ce0984139fbd1221b40dc8f",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

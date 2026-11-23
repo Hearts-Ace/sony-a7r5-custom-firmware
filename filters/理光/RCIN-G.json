@@ -5,8 +5,8 @@
   "short_name": "RCIN-G",
   "series": "理光",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "e67a3fcc20218b2c65eb6a1636914cbe0acc55fba4620f8664ee02a25a00d0e2",
+  "updated": "2026-11-23",
+  "sha256": "3353b9a815911f1037ad2657075b4febecc9755b24ed398288908555bbc95091",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

@@ -5,8 +5,8 @@
   "short_name": "NDEN",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "eea5a775f8cc2e081479f3aca67c53f53143eb5a0e380e94c28bd3dc5f69fa99",
+  "updated": "2026-11-23",
+  "sha256": "874d4c4711e8f5bbb7f065e157812b8f8fa39198f4d50f7211ba718eb21388ea",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

@@ -5,8 +5,8 @@
   "short_name": "NSOMB",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "683766100cab87e0031875e64d6134b5b876b6b4f59aa4dc8caa4b106d6b6165",
+  "updated": "2026-11-23",
+  "sha256": "f00673981f86782700d31b369274fa7ebb0af8669aa85ec5f021a2d2e855e092",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

@@ -5,8 +5,8 @@
   "short_name": "LLCON",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "29d4d057b52b13692f2c0abdca5c12adcc1513d33f158c57cffd6809b0663cf7",
+  "updated": "2026-11-23",
+  "sha256": "3463d87a0e0d967e24974882696e471a836cd35948e389a8a5210049fb2a61ce",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

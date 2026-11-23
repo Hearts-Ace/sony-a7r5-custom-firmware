@@ -5,8 +5,8 @@
   "short_name": "LLSTD",
   "series": "Leica",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "0135a17813a1adcd4e2bd6d38dbd9325c668198c8b4dea246e09986500e669cb",
+  "updated": "2026-11-23",
+  "sha256": "2d87c2b0dfdfd9cd4b4df476a245d4ed25ae5d0ea8db1feaeaea0b32588403ad",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

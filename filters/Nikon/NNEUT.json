@@ -5,8 +5,8 @@
   "short_name": "NNEUT",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-22",
-  "sha256": "b26459a393359432f646cd8f7f4a232284cab4fb2a0c2eac7aae20cab3339942",
+  "updated": "2026-11-23",
+  "sha256": "1b3aac6cb8d1e45c25434563f72b9bc800664178751b4f6df421c748484ac798",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

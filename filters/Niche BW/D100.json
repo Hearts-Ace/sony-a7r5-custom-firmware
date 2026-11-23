@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NBWEliteIlfordDelt-6db8",
+  "name": "Elite Ilford Delta 100 Pro",
+  "short_name": "D100",
+  "series": "Niche BW",
+  "description": "",
+  "updated": "2026-11-23",
+  "sha256": "a4d0320a5461a331992fad2a189c4455118174fd279157030363a1d59cbde22c",
+  "camera_tested": false,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.2802607449752297,
+    "p95": 4.2597235704889345,
+    "maximum": 14.256551072651096,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}

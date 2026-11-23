@@ -5,8 +5,8 @@
   "short_name": "NCAR",
   "series": "Nikon",
   "description": "",
-  "updated": "2026-11-20",
-  "sha256": "b5fe10ea436d335110a9bb3d40da3088e21c7fd755e75b0326fbb8629eb1ba90",
+  "updated": "2026-11-23",
+  "sha256": "3d207dda17a9baf4428ff6d8ddcf3bacc2e933acbd933935ea32760aa527fb48",
   "camera_tested": false,
   "type": "digital",
   "training_error": {

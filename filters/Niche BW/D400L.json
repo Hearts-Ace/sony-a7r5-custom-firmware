@@ -1,0 +1,26 @@
+{
+  "schema": "r5-filter-description/1",
+  "id": "NBWEliteIlfordDelt-17b8",
+  "name": "Elite Ilford Delta 400 Pro (linear)",
+  "short_name": "D400L",
+  "series": "Niche BW",
+  "description": "",
+  "updated": "2026-11-23",
+  "sha256": "a2d7ff633368b8b26a4a8d5dc2914094b355064ef4cf564533dba43a84940b88",
+  "camera_tested": false,
+  "type": "black-white-film",
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.441495563378762,
+    "p95": 4.451832264621312,
+    "maximum": 9.309398230619651,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  }
+}
