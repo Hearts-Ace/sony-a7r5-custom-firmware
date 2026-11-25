@@ -1,0 +1,27 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "D3200L",
+  "name": "Elite Ilford Delta 3200 Pro (linear)",
+  "format": "camera-look v2",
+  "sha256": "2ad0f74edc4ba9bb0febcb431b82a8f752fa3dcf92fa0038a88be4cd36aac0fb",
+  "updated": "2026-11-23",
+  "order": 10000,
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.4136716452371043,
+    "p95": 4.167370640156416,
+    "maximum": 12.826828533593583,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "description": ""
+}

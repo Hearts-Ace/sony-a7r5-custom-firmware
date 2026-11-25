@@ -1,0 +1,30 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "TX400L",
+  "name": "Elite Kodak Tri-X 400 (linear)",
+  "format": "camera-look v2",
+  "sha256": "0258be31deb114d996ccb9e75a6c22ca0b40bb2aebe1531e2216c84a3e2889b5",
+  "updated": "2026-11-23",
+  "order": 39,
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.3461757108493022,
+    "p95": 3.9158119426397135,
+    "maximum": 13.67993087656651,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+    "encoding": "float display sRGB (clip 0..1, no 8-bit quantization) -> D65 Lab -> CIEDE2000",
+    "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809",
+    "parameter_sha256": "49cbed7a6e84dc3690eaaf007fce5882fbc21d7d4011d417bee22a4ba030407f",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "description": ""
+}

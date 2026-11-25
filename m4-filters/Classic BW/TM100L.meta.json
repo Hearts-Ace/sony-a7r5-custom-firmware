@@ -1,0 +1,30 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "TM100L",
+  "name": "Elite Kodak Tmax 100 (linear)",
+  "format": "camera-look v2",
+  "sha256": "f440ea8db1717404905cb6cd42217c1b5b32c401e9a2b0487b3bce419d9fdb73",
+  "updated": "2026-11-23",
+  "order": 33,
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.858951409967899,
+    "p95": 5.200915358518547,
+    "maximum": 16.64567516363278,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+    "encoding": "float display sRGB (clip 0..1, no 8-bit quantization) -> D65 Lab -> CIEDE2000",
+    "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809",
+    "parameter_sha256": "70e66285ad6bc2dca7c6860cc223b8218cb5d1a2635b2a39f8ac805ff18b24cb",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "description": ""
+}

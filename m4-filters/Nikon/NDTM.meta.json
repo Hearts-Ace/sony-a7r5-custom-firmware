@@ -1,0 +1,26 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "NDTM",
+  "name": "Nikon Deep Tone Monochrome",
+  "format": "camera-look v2",
+  "sha256": "98aec1a03e5126d9f47d0afa17a368ba17584bd3020e52c8d480ee7bb0d0bf29",
+  "updated": "2026-11-23",
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.6668900736348138,
+    "p95": 4.719142064062431,
+    "maximum": 17.117858561983343,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "description": ""
+}

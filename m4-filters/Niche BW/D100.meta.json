@@ -1,0 +1,27 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "D100",
+  "name": "Elite Ilford Delta 100 Pro",
+  "format": "camera-look v2",
+  "sha256": "bc898e3c888f822201ed50e8baf94d74b6959cb87d50332ae98cfdf48ed81c24",
+  "updated": "2026-11-23",
+  "order": 10000,
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.2802607449752297,
+    "p95": 4.2597235704889345,
+    "maximum": 14.256551072651096,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数参数及网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "description": ""
+}

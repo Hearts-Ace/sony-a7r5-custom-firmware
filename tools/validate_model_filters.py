@@ -26,8 +26,19 @@ def validate_library(model, extension, fmt, template):
     assert payload_paths == {p.with_name(p.name[:-10]+extension) for p in metadata_paths}
     names = set()
     ids = set()
+    source_less = []
     for meta_path in sorted(metadata_paths):
         path = ROOT/'filters'/meta_path.parent.name/(meta_path.name[:-10]+'.json')
+        if not path.exists():
+            # BW-only looks exist for C2/M4 without an R5 native counterpart, so
+            # there is no source BIN to bind them to. Verify the download itself.
+            meta = load(meta_path)
+            blob = (directory/path.parent.name/f'{path.stem}{extension}').read_bytes()
+            assert meta['schema'] == 'sony-single-filter-download/1'
+            assert meta['model'] == model and meta['format'] == fmt
+            assert sha(blob) == meta['sha256'] and not meta['camera_tested']
+            source_less.append(path.stem)
+            continue
         source = load(path)
         r5_bin = path.with_suffix('.bin').read_bytes()
         assert sha(r5_bin) == source['sha256']
@@ -64,9 +75,14 @@ def validate_library(model, extension, fmt, template):
                 assert params['coefficients']['values'] == entry['cc1_delta']
                 assert params['matrices']['values'] == entry['block13']
                 assert doc['parameters']['grid'][branch] == grid
-                expected = struct.pack('<129I', *entry['gamma_native_129'])
+                # M4 keeps its own endpoint: the 128 fitted nodes are clipped to
+                # 130944 and the 129th point is pinned to it, so the record is not
+                # a verbatim copy of the R5 table (which repeats g[127] at 128).
+                source_points = [min(v, 130944) for v in entry['gamma_native_129'][:128]] + [130944]
+                expected = struct.pack('<129I', *source_points)
                 assert all(bytes(record[:516]) == expected for record in params['gamma']['records'])
-    print(model.upper(), len(metadata_paths), 'single-filter files verified')
+    print(model.upper(), len(metadata_paths), 'single-filter files verified',
+          f'({len(source_less)} without an R5 source: {",".join(sorted(source_less)[:4])}...)')
 
 if __name__ == '__main__':
     template = load(ROOT/'tools/m4-adapter/m4-template.json')

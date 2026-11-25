@@ -1,0 +1,30 @@
+{
+  "schema": "sony-single-filter-download/1",
+  "model": "m4",
+  "short_name": "TM100Y",
+  "name": "Elite Kodak Tmax 100 Yellow",
+  "format": "camera-look v2",
+  "sha256": "8fca6ced2bf814d4105bcd4c57352228531ce582f625ef5a36a98766299e59b1",
+  "updated": "2026-11-23",
+  "order": 37,
+  "camera_tested": false,
+  "training_error": {
+    "status": "available",
+    "metric": "ΔE00",
+    "mean": 1.4610897675078465,
+    "p95": 4.93327007324962,
+    "maximum": 17.211437143050663,
+    "samples": 17343,
+    "split": "test",
+    "protocol": "v45-workbench-test-17343",
+    "label": "v4.5 训练台测试集",
+    "dataset_id": "v4.5-sony100mp-5300k-sim-center5-20261029",
+    "encoding": "float display sRGB (clip 0..1, no 8-bit quantization) -> D65 Lab -> CIEDE2000",
+    "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809",
+    "parameter_sha256": "b202f0ad12da7e27c8c93becfaf35cf3b8d81607b1380b80ffd291397a9ec630",
+    "source": "cpu_recompute_float_srgb",
+    "note": "最终整数原生参数与打包网格，按该任务记录的算子评测。"
+  },
+  "metric_source_model": "r5",
+  "description": ""
+}
