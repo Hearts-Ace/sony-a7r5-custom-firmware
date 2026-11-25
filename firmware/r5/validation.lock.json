@@ -1,14 +1,14 @@
 {
-  "version": "4.65",
+  "version": "4.67",
   "release_status": "unverified_candidate",
   "passed": false,
   "offline_only": true,
   "device_acceptance_tested": false,
   "components": {
     "AP": "7cbe4534c6b61dbec09044411279dc358668b8ba42d1fefed219e4de47b15266",
-    "CP": "f7c385b5a8b88ddc03543b3a92ce7c3ddeeeb0e58069fa5b8fcbdc904f44cf83",
-    "AVCAM": "c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b",
-    "MPR": "81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478"
+    "CP": "19b416ba87568efc49f5a6694d02aa881f38649c41c6f3ec0130cd83792f609c",
+    "AVCAM": "63005d933ba4d9d12d95fca97f1ba8a4627c64ab94d54be66f095bfd85396e15",
+    "MPR": "ec691ef38a03d8b147dbb46e56f262e8103eda200dba649365e724d751307618"
   },
   "reports": [
     {
@@ -27,19 +27,14 @@
       "sha256": "10db7ea90589194873399d1cc2d735cf93eaa16ff5fde40db559c9f57fb48948"
     },
     {
-      "id": "cp-build",
-      "path": "analysis/r5_owner_submit465_20261115/cp-integrate-final/build.json",
-      "sha256": "00e40e95e2696c71cdba002c022f91de4a8e08accf978de138c854afe8afb092"
-    },
-    {
       "id": "cp-receive",
-      "path": "analysis/r5_owner_submit465_20261115/receive-lock-replay-final.json",
-      "sha256": "d3388398a3bf5b3023c4e99d0a2f64e0b5dcd057bcb8336782f20d08e9ea3f37"
+      "path": "evidence/r5-receive.json",
+      "sha256": "17742a58c6578b0ea8d40066e32a86c6bf9ae9bc2b0ec76a57c6438e053dfc3b"
     },
     {
       "id": "cp-gamma",
-      "path": "analysis/r5_owner_submit465_20261115/gamma-ordinate-replay-final.json",
-      "sha256": "4de4b2cba0ad1c476be365326102dace1d33aecf4b0bf223b14ea5d02670c919"
+      "path": "evidence/r5-gamma.json",
+      "sha256": "6e7461282ff5fcc872a801e68e006970900405b237aba48c791d5a0926cac024"
     },
     {
       "id": "live-static",
@@ -60,6 +55,66 @@
       "id": "host-package",
       "path": "analysis/r5_owner_submit465_20261115/build-support-checks.json",
       "sha256": "8c572f2f13c9cffe4f0280c54d83b3d0433922b3b7ff375c1c0325187df9fe59"
+    },
+    {
+      "id": "cp-build",
+      "path": "build-result.json",
+      "sha256": "f2c6ed42168fb455df76982eddc9876c6364738b3711b8d9a97a1d221b6a392f"
+    },
+    {
+      "id": "avcam-build",
+      "path": "evidence/r5-avcam.json",
+      "sha256": "4333f8b6b668b5ed6b1b7f1f84cbcd31daeac5fd9c897824c3f0338a1054003e"
+    },
+    {
+      "id": "mpr-build",
+      "path": "evidence/r5-mpr-raw.json",
+      "sha256": "c709be60c70306b62684d213053a0496fe7982d59d9b8f26ba46b84c33c096da"
+    },
+    {
+      "id": "r5-routing",
+      "path": "evidence/r5-routing.json",
+      "sha256": "c4a00b8affd265c44e5c89efea50def09a2f485651258b73c80e1172d48db15d"
+    },
+    {
+      "id": "r5-lifecycle",
+      "path": "evidence/r5-lifecycle.json",
+      "sha256": "06a17521da2d66f23e410ad02395b87df41e09f0e218f05ed7b7e25f845ee44e"
+    },
+    {
+      "id": "r5-scope",
+      "path": "evidence/r5-scope.json",
+      "sha256": "8dc8e74880c9855154deaf00dbae048d0a165a5696330dfde3dcf7e2e266b392"
+    },
+    {
+      "id": "r5-avcam",
+      "path": "evidence/r5-avcam.json",
+      "sha256": "9349b49cb88e8fe2f82f262b79f743648f1a0ed932bc122ecc204cf7aeac838e"
+    },
+    {
+      "id": "r5-heif",
+      "path": "evidence/r5-heif.json",
+      "sha256": "d6c462858b3529e43e8268ea82ab13ac006fa068d380477df9338c994eb65dee"
+    },
+    {
+      "id": "r5-mpr-jpeg",
+      "path": "evidence/r5-mpr-jpeg.json",
+      "sha256": "18bf9d23c8a24c464d05eba7151a286bd8f0243e8663eb78b566cfafc8f8eaed"
+    },
+    {
+      "id": "r5-mpr-raw",
+      "path": "evidence/r5-mpr-raw.json",
+      "sha256": "2439d74877319af02ea0e127383ffff3f591b06f331651379c5dccf28fcc5509"
+    },
+    {
+      "id": "r5-loader",
+      "path": "evidence/r5-loader.json",
+      "sha256": "93c19158c673a74d1fe4ce284cdd6b17f69fa124463d288c424e5c35d607dd7c"
+    },
+    {
+      "id": "r5-snapshot",
+      "path": "evidence/r5-snapshot.json",
+      "sha256": "e7289d8fd838a82a58ffa42c28796acf82e1b9a63a73e46986aa49fb1dfe4e43"
     }
   ],
   "owner_handoff": {
@@ -109,10 +164,12 @@
     "capture_freeze_clone": {
       "passed": false,
       "boundary": "原厂 capture、freeze、snapshot 保存同一 generation。",
-      "reason": "对已定位入口作静态核验，未覆盖所有延迟 clone 与拍摄时序。",
+      "reason": "参考 R5 的选择／冻结序号校验、490 槽位绑定和回池失败保护已回放；中间 M4 clone 原型已撤销，仍未证明全部物理调度生命周期。",
       "evidence": [
         "owner-static",
-        "cp-build"
+        "cp-build",
+        "r5-lifecycle",
+        "r5-routing"
       ]
     },
     "successful_pool_return": {
@@ -135,8 +192,9 @@
     }
   },
   "limits": [
-    "此收据绑定候选包的四项组件，不代表实机、ISP、预览/放大/拍摄组合或设置加载功能已通过。",
-    "SD 导入保留整包到 eMMC；AP 切换只读取一条记录。已有 AP 和 CP 回归为主机 fixture。",
-    "Off 后正在使用旧参数的 native 对象须完成引用退场；实际最后释放时间及原机卡死根因未确定。"
+    "4.67 从 4.65 冻结源码派生，按用户提供的 R5 audit-fixes-20261123 修复；4.66 只作为失败对照。",
+    "中间 M4 clone、HEIF Notify 副本和 JPEG EXIF 替代原型已撤销；最终以参考 R5 的局部 view、显影后同步和私有 MPR 写头方案为准。",
+    "离线回放不等同机身完整调度、物理介质写入或连续拍摄实测；参考包实机反馈不替代本包验收。",
+    "继续按参考 R5 清理 4.65/4.66 的快照跨代发布与回池返回值误判；前一中间 CP 作为负例证据保留。"
   ]
 }

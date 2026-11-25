@@ -38,7 +38,7 @@ if __name__ == '__main__':
     if args.write:
         import sys
         sys.path.insert(0, str(HERE / 'build_support'))
-        from validation465 import load_validation
+        from validation import load_validation
         load_validation(HERE / 'validation.lock.json')
         rows = inventory()
         LOCK.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + '\n')

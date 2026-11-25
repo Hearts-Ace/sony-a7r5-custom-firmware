@@ -1,0 +1,101 @@
+{
+  "version": "4.67",
+  "release_status": "unverified_candidate",
+  "base_firmware": "Original R5 4.00",
+  "build_entry": "firmware/r5/build.py",
+  "source_files": 200,
+  "source_lock_sha256": "7e368b216b275848f6d51a32213eaefde4267be872412ab98c9b5cdd23bcccde",
+  "validation_receipt_sha256": "087357c6dc1590e637ed768961b1eb44f93f9b446aa267d7436ff49cfd444d12",
+  "previous_custom_firmware_input": false,
+  "aspect_reference": {
+    "name": "custom-aspect-ratios.zip",
+    "revision": "audit-fixes-20261123",
+    "sha256": "cc79fcb6d320172978770135449da7f93a13c9e488d2b0847eea9b6facb9d698"
+  },
+  "output_sha256": "196a4a612ba00c2f6a0f68a616d4223ca36d843e866d5794bc950c898a12d3e8",
+  "output_bytes": 754525608,
+  "saved_signature_valid": true,
+  "tampered_signature_rejected": true,
+  "outer_crc_valid": true,
+  "plaintext_verification": {
+    "independent_library": "PyCryptodome AES; encryption uses cryptography",
+    "plaintext_bytes": 751577088,
+    "decrypted_blocks": 736841,
+    "plaintext_sha256": "50f9de69812711bba0ec68a5a8f8799404b580b00b382f8ab8cfbb6d78913933",
+    "every_plaintext_byte_matches": true,
+    "all_block_checksums_lengths_flags_and_padding_valid": true
+  },
+  "components": {
+    "AP": {
+      "bytes": 97517568,
+      "sha256": "7cbe4534c6b61dbec09044411279dc358668b8ba42d1fefed219e4de47b15266"
+    },
+    "CP": {
+      "bytes": 17617008,
+      "sha256": "19b416ba87568efc49f5a6694d02aa881f38649c41c6f3ec0130cd83792f609c"
+    },
+    "AVCAM": {
+      "bytes": 12959372,
+      "sha256": "63005d933ba4d9d12d95fca97f1ba8a4627c64ab94d54be66f095bfd85396e15"
+    },
+    "MPR": {
+      "bytes": 3607140,
+      "sha256": "ec691ef38a03d8b147dbb46e56f262e8103eda200dba649365e724d751307618"
+    }
+  },
+  "partitions": {
+    "nflasha8": {
+      "bytes": 24531968,
+      "sha256": "9464da7b29fe2f544f0ca87a59534604c5d7169b894925765d6e26fc2e460a73"
+    },
+    "nflasha15": {
+      "bytes": 410652672,
+      "sha256": "00f8d606bf542a504965f09cb33f73e97574b7ce61353c5de91e14fdff5497ea"
+    },
+    "nflasha3": {
+      "bytes": 31803392,
+      "sha256": "0a2c35ff24efd558c47398d91fd9da5c1c3b92cb5e835dd6ec810b4857e7c70b"
+    },
+    "nflasha5": {
+      "bytes": 243789184,
+      "sha256": "eac727efd7af2142ddd9b8ae22387614eaaaba9dc9f04ce0434bf8e7c766d693"
+    }
+  },
+  "ext2_readonly_check_passed": true,
+  "independent_full_rebuild_from_git_snapshot": {
+    "source": "staged Git tree exported to a standalone directory",
+    "components_identical": true,
+    "partitions_identical": true,
+    "complete_DAT_byte_exact": true,
+    "reference_stream_compared": true
+  },
+  "local_reference_source_zip": {
+    "sha256": "7821b08ae7f011bc423ba6b2297bc6c56e116f4767f9afc32fe9051d3b32da69",
+    "independent_full_rebuild_byte_exact": true
+  },
+  "offline_case_counts": {
+    "routing": 450,
+    "raw_tags": 280,
+    "jpeg_raw_callbacks": 35,
+    "same_tier_raw_preview": 96,
+    "cross_tier_raw_preview": 48,
+    "jpeg_main_resize": 168,
+    "lossless_raw_ms_order": 108,
+    "heif_requests": 88,
+    "jpeg_private_metadata": 74,
+    "raw_private_metadata": 60,
+    "slot_bindings": 490,
+    "receive_locks": 17,
+    "gamma": 490
+  },
+  "open_owner_boundaries": [
+    "live_root",
+    "pending_gamma",
+    "AA_three_routes",
+    "capture_freeze_clone",
+    "successful_pool_return",
+    "off_control_reclamation"
+  ],
+  "camera_io": false,
+  "device_acceptance_tested": false
+}

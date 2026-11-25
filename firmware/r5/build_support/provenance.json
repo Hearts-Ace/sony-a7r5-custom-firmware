@@ -1,7 +1,7 @@
 {
   "source_only": true,
   "old_runtime_filter_code_imported": false,
-  "source_baseline": "Frozen 4.64 build-support sources only; firmware binary inputs remain official R5 4.00",
+  "source_baseline": "Frozen 4.65 source and R5 audit-fixes-20261123 reference; the build consumes only the bundled source, locked official R5 4.00 binaries and external signing material",
   "files": [
     {
       "path": "inputs.lock.json",
@@ -40,7 +40,7 @@
     },
     {
       "path": "lib/package.py",
-      "sha256": "56a01ac04f34ec23855aa0fdcbf9e2a28f4264dd17ff70da81d78b19daff2b76",
+      "sha256": "c773014d35c23ea3e2d95aa7b92e701909d02684214b7997c235d84c4f5aa6ac",
       "imported_source": "projects/firmware/development/prepared-submit464/build_support/lib/package.py",
       "imported_sha256": "0675df4b9d8e2d0ee827edbd2833ab93e513abcb8bbecd5512037a8b11144f4e",
       "modified": true
@@ -264,10 +264,10 @@
     },
     {
       "path": "cp_aux/aspect/raw_emb.c",
-      "sha256": "1b7de547c8307bdfc3da5be9acb230b021eca7e04ed9f31838e5c9a845c3b063",
+      "sha256": "33dd5a7d067123c8ce3a8ce5d7b00572cf36958d6c633aeb61123f4133d12212",
       "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/aspect/raw_emb.c",
       "imported_sha256": "1b7de547c8307bdfc3da5be9acb230b021eca7e04ed9f31838e5c9a845c3b063",
-      "modified": false
+      "modified": true
     },
     {
       "path": "cp_aux/aspect/crop_core.c",
@@ -278,24 +278,24 @@
     },
     {
       "path": "cp_aux/aspect/cp_capture_latch.c",
-      "sha256": "03b16a6dad6ba48b11ef661d9215fffafd8c83dad42fa5140336f81a87ed4472",
+      "sha256": "a2d095960f683bbaf6bdee45189a84b1a30c5a837ed8e6691addb0e1f94e7934",
       "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/aspect/cp_capture_latch.c",
       "imported_sha256": "03b16a6dad6ba48b11ef661d9215fffafd8c83dad42fa5140336f81a87ed4472",
-      "modified": false
+      "modified": true
     },
     {
       "path": "cp_aux/aspect/aspect_module_dispatch.S",
-      "sha256": "99d74ec771d8aa272466da48f46f2daecbed175d59b4c973697b4ce47b4bf706",
+      "sha256": "16eebc6497a91d18901b2b9d686fe3332072a6315da442ef83dcd0858739ae4d",
       "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/aspect/aspect_module_dispatch.S",
       "imported_sha256": "99d74ec771d8aa272466da48f46f2daecbed175d59b4c973697b4ce47b4bf706",
-      "modified": false
+      "modified": true
     },
     {
       "path": "cp_aux/aspect/cp_wrappers.S",
-      "sha256": "c21a16eb80a9757c200a52f30b86c0325fd2a2e9ae9fec3184b226f69c19f151",
+      "sha256": "36eff49d9231ba20fa60cf1ceac418e6c4bea82f4e19c1e16cac031b4351af4f",
       "imported_source": "projects/firmware/development/prepared-submit464/build_support/cp_aux/aspect/cp_wrappers.S",
       "imported_sha256": "c21a16eb80a9757c200a52f30b86c0325fd2a2e9ae9fec3184b226f69c19f151",
-      "modified": false
+      "modified": true
     }
   ],
   "scope": "Retained host/auxiliary provenance subset; final complete distribution identity is sources.lock.json"

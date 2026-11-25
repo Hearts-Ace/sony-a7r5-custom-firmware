@@ -1,4 +1,4 @@
-# 4.65 AP：准备参数与原厂颜色任务接管
+# 4.67 AP：准备参数与原厂颜色任务接管
 
 冷启动继续从 SD 校验完整 R5NATIVE.BIN、原子保存整包到 eMMC，再释放临时整包。AP 常驻目录为 1284 B。普通切换仅读取所选记录；Off 不读参数文件。菜单、Fn、声音、比例、预览及回放的 62 个共享源文件保留。
 
@@ -12,7 +12,7 @@
 
 `job.c`/`job.h` 仅处理任务副本与原厂颜色序列化；`r5_filter_store.c`、`r5_filter_file.c` 和 `r5_filter_boot.c` 保留整包导入/单条读取合同。单条读取实际共2581 B（128 B header、2452 B所选记录、末字节探测），临时 mount guard 65537 B立即归还。冷导入私有堆夹具峰95090 B、返回后全部释放，不等于整机内存峰。
 
-唯一 AP 入口：`build_ap465.py --stock-ap <原厂appFw.so> --output <新目录>`。固定官方输入，一次编译链接，不读取4.64产物。输出 appFw.so 与 ap_build.json。首次候选 SHA256 `7cbe4534c6b61dbec09044411279dc358668b8ba42d1fefed219e4de47b15266`，97517568 B，RX65896 B，所有功能BSS62736 B；最终身份以交付回执为准。
+AP 构建子步骤：`build_ap.py --stock-ap <原厂appFw.so> --output <新目录>`。从固定的原厂 AP 输入一次编译链接。输出 appFw.so 与 ap_build.json。首次候选 SHA256 `7cbe4534c6b61dbec09044411279dc358668b8ba42d1fefed219e4de47b15266`，97517568 B，RX65896 B，所有功能BSS62736 B；最终身份以交付回执为准。
 
 验证：`tests/run_runtime.py` 在 ASan/UBSan 下运行15种模式×5种原厂Look共75例；覆盖独立 ACCEPT、丢回执/迟到、ABORT接受结果、暂停恢复、文件/保存失败、Off收集和禁止PT get/set。`tests/native_support/replay_filter_native.py` 在两个PIE加载地址执行最终二进制的原厂E4、402f序列化与补丁，采用显式原生入队、字段/传输/CP actor夹具。存储/启动14场景、比例690断言、Fn/UI原生图形库与ABI回放分别报告。
 

@@ -36,16 +36,14 @@ def assemble(source,address,output,bindings=''):
     return code,symbols,commands
 
 def assemble_heif(output):
-    address=0xc5b380
     objects,commands=compile_objects([HERE/'source'/n for n in ('avcam_heif.c','crop_core.c','avcam_heif.S')],output)
-    externals=dict(aspect_native_prepare=0x206378,aspect_native_headers=0x1f52d4,
+    ext=dict(aspect_native_prepare=0x206378,aspect_native_headers=0x1f52d4,
         aspect_native_header_size=0x1f30c8,aspect_native_makernote_full_size=0x1f377c,
-        aspect_native_encode_body=0x200738,aspect_native_request_body=0x1f9978,
-        aspect_native_raw_headers=0x1f5388)
-    code,rw,memory,symbols,relocations,layout=link(objects,address,0x1100000,b'',externals)
-    if rw or memory or address+len(code)>0xc5c000: raise ValueError('AVCAM helper layout exceeds bound')
+        aspect_native_raw_headers=0x1f5388,aspect_native_raw_develop=0x1f2d7c,
+        aspect_native_encode_body=0x200738,aspect_native_request_body=0x1f9978)
+    code,rw,memory,symbols,relocations,layout=link(objects,0xc5b380,0x1100000,b'',ext)
+    if rw or memory or 0xc5b380+len(code)>0xc5c000:raise ValueError('AVCAM helper exceeds reserved tail')
     return code,symbols,commands
-
 
 def patch_avcam(raw,output):
     lock=json.loads((HERE/'native-inspection/identities.json').read_text())['AVCAM']
@@ -53,28 +51,27 @@ def patch_avcam(raw,output):
         raise ValueError('AVCAM 原厂身份不匹配')
     if output.exists():raise ValueError('输出目录已存在')
     output.mkdir(parents=True);(output/'INCOMPLETE.json').write_text('{"state":"PATCHING"}\n')
-    bindings='aspect_avcam_construct = 0x1f4160; aspect_avcam_assert = 0x20bb10; aspect_avcam_assert_file = 0x42977a; aspect_avcam_assert_function = 0x429c59;'
-    jpeg,symbols,commands=assemble(HERE/'source/avcam_jpeg.S',0x1f4dbc,output,bindings)
-    thm,_,more=assemble(HERE/'source/avcam_thm.S',0x20684c,output);commands+=more
+    thm,symbols,commands=assemble(HERE/'source/avcam_thm.S',0x20684c,output)
     heif,heif_symbols,more=assemble_heif(output);commands+=more;symbols.update(heif_symbols)
-    if len(jpeg)>296 or len(thm)!=104 or symbols['aspect_avcam_set_slot']!=0x1f4dfc:
-        raise ValueError(f'AVCAM 窗口容量/入口不匹配：JPEG={len(jpeg)}, THM={len(thm)}')
+    if len(thm)!=104:
+        raise ValueError(f'AVCAM THM 窗口容量不匹配：THM={len(thm)}')
     image=bytearray(raw);patches=[]
     def edit(at,code):
+        if image[at:at+len(code)] != raw[at:at+len(code)]:raise ValueError('AVCAM overlapping patch')
         patches.append(dict(offset=at,before=image[at:at+len(code)].hex(),after=code.hex()))
-        if bytes(image[at:at+len(code)]) != raw[at:at+len(code)]: raise ValueError('overlapping patches')
         image[at:at+len(code)]=code
-    edit(0x1f4dbc,jpeg+bytes.fromhex('1f2003d5')*((296-len(jpeg))//4))
-    for at in (0x1f40ec,0x1f4110):edit(at,branch(at,symbols['aspect_avcam_jpeg'],True))
+    # 原生 0x1f4088 已复制双槽 WH，0x1f4dbc/0x1f4dfc 保持原厂单次 GEN 资源与槽位2偏移绑定。
     # SCN mode 1 的目标尺寸沿用实际 source valid WH。
     scn_source=output/'scn.S';scn_source.write_text('.text\nldr w0,[x27,#4]\nstr w0,[sp,#0xd8]\nb aspect_scn_continue\n')
     scn,_,more=assemble(scn_source,0x2066b4,output,'aspect_scn_continue = 0x206490;');commands+=more
     if len(scn)!=12:raise ValueError('SCN 窗口长度错误')
     edit(0x2066b4,scn);edit(0x20684c,thm)
-    # 保持原生 L plan；只裁编码的局部 view，M/S 原有 resize 先裁输入。
-    edit(0x20746c,branch(0x20746c,symbols['aspect_avcam_heif_prepare'],True))
+    # 保持原生 L plan；只裁编码的局部 view，主图/M/S 原有 resize 先裁输入，无损 M/S 显影同步 SonyCrop。
+    for at in (0x206294,0x20746c):
+        edit(at,branch(at,symbols['aspect_avcam_heif_prepare'],True))
     for at in (0x207048,0x2071e8,0x207264):
         edit(at,branch(at,symbols['aspect_avcam_raw_preview_prepare'],True))
+    edit(0x2047d0,branch(0x2047d0,symbols['aspect_avcam_raw_develop'],True))
     edit(0x200734,branch(0x200734,symbols['aspect_avcam_heif_entry']))
     edit(0x1f9970,branch(0x1f9970,symbols['aspect_avcam_heif_request'])+bytes.fromhex('1f2003d5'))
     # 原RAM/BSS范围保持。程序自身的RAM快照搬到新增代码之后，防止恢复覆盖代码。
@@ -103,13 +100,13 @@ def patch_avcam(raw,output):
     (output/'av-cam.bin').write_bytes(image)
     report=dict(passed=True,camera_io=False,device_tested=False,bytes=len(image),
         sha256=hashlib.sha256(image).hexdigest(),input_sha256=lock['sha256'],patches=patches,
-        symbols=symbols,jpeg_code_bytes=len(jpeg),heif_code_bytes=len(heif),appended_bytes=len(image)-len(raw),
+        symbols=symbols,heif_code_bytes=len(heif),appended_bytes=len(image)-len(raw),
         original_bytes=len(raw),commands=commands,reverse_exact=True,
         snapshot_layout=dict(code_start=0xc5b380,code_end=code_end,ram_start=0xba7fc0,
             ram_end=0xc5b378,ram_bytes=ram_bytes,backup_start=backup_start,backup_end=backup_end,
             tail_end=tail_end,executable_reserved_bytes=0x1000000,header_ram_size_unchanged=True),
         sources={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in
-            (HERE/'source'/n for n in ('avcam_jpeg.S','avcam_thm.S','avcam_heif.c','avcam_heif.S','crop_core.c'))})
+            (HERE/'source'/n for n in ('avcam_thm.S','avcam_heif.c','avcam_heif.S','crop_core.c'))})
     (output/'patch.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');(output/'INCOMPLETE.json').unlink()
     return report
 

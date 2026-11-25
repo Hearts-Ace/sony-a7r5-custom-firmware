@@ -92,7 +92,7 @@ def build(stock_cp, out):
     native_externals = dict(aspect_module_dispatch=aspect_symbols['aspect_module_dispatch'],
         od_optional_aspect_freeze=aspect_symbols['aspect_freeze_copy'],
         od_optional_aspect_capture=aspect_symbols['aspect_capture_copy'], native_capture=0x4596f5,
-        native_dimensions=0x48b9d9, native_pool_release=0xae08c9, native_raw_exif=0xade83d)
+        native_dimensions=0x48b9d9, native_pool_release=0xae08c9)
     provisional = dict(r5ss_cp_extended_consume=SOUND | 1, r5ss_cp_completion_hook=SOUND | 1,
         r5ss_cp_gain_hook=SOUND | 1, r5ss_guard_expected_crc_inverse=0xdeadbeef, **native_externals)
     _, initial_symbols = link(filter_objects + guard_objects, base=RX, externals=provisional, read_only=True)
@@ -219,7 +219,7 @@ def build(stock_cp, out):
     target.write_bytes(candidate)
     (out / 'resident.bin').write_bytes(code)
     (out / 'optional.bin').write_bytes(optional_code)
-    save(out / 'build.json', dict(passed=True, version='4.65', stock_sha256=sha(stock_cp),
+    save(out / 'build.json', dict(passed=True, version='4.67', stock_sha256=sha(stock_cp),
         baseline_sha256=sha(baseline), sha256=sha(target), bytes=len(candidate),
         RX=hex(RX), resident_used=resident_used, resident_capacity=RX_END-RX,
         optional_crc32=hex(crc), optional_bytes=len(optional_code),

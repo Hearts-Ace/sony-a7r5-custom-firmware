@@ -37,14 +37,14 @@ def main():
         raw = archive.extractfile('0700_part_image/dev/nflasha3').read()
     avcam = FatImage(raw).read('/av-cam.bin')
     del raw
-    av = module('owner_submit465_avcam', HERE / 'nonfilter/avcam_patch.py')
+    av = module('r5_avcam', HERE / 'nonfilter/avcam_patch.py')
     av_report = av.patch_avcam(avcam, out / 'avcam')
-    assert av_report['sha256'] == 'c83007a07a4058e63e9e984210642f18c74fbd555dcf8379001b0493b899af6b'
+    assert av_report['sha256'] == '63005d933ba4d9d12d95fca97f1ba8a4627c64ab94d54be66f095bfd85396e15'
     fs = reader(config['stock_nflasha15'].read_bytes())
     mpr = fs.read_inode(fs.walk('/lib/libmpr.so'))
-    mp = module('owner_submit465_mpr', HERE / 'nonfilter/mpr_patch.py')
+    mp = module('r5_mpr', HERE / 'nonfilter/mpr_patch.py')
     mp_report = mp.patch_mpr(mpr, out / 'mpr')
-    assert mp_report['sha256'] == '81a97ba5ac2456077485fefa5eeaea441ae595f46e5edf8d3d8b7b7559ec1478'
+    assert mp_report['sha256'] == 'ec691ef38a03d8b147dbb46e56f262e8103eda200dba649365e724d751307618'
     inputs = out / 'resource-inputs'
     inputs.mkdir()
     manifest = json.loads((HERE / 'resources/inputs.json').read_text())
@@ -61,7 +61,7 @@ def main():
     assert compiled.returncode == 0, compiled.stdout + compiled.stderr
     resource_sha = sha(out / 'resources/manifest.json')
     assert resource_sha == '97d53cc175b07ee72517b1e9e9a45f57d68cd9e6d4bd8370945608b501ed5c27'
-    report = dict(passed=True, version='4.65', camera_io=False,
+    report = dict(passed=True, version='4.67', camera_io=False,
         AVCAM=av_report['sha256'], MPR=mp_report['sha256'],
         resource_manifest_sha256=resource_sha,
         previous_custom_firmware_input=False)

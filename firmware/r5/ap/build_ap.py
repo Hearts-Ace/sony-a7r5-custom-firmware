@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stock AP -> final 4.65 AP in one explicit compile/link/patch recipe.
+"""Stock AP -> final 4.67 AP in one explicit compile/link/patch recipe.
 
 The custom filter loader has no legacy bank/probe/transfer objects. Retained
 menu, sound, aspect, UI/cancel and playback consumers link together once; every
@@ -134,6 +134,6 @@ def main():
     for name in ['.dynsym','.dynstr','.init_array','.fini_array']:assert elf.get_section_by_name(name).data()==finalelf.get_section_by_name(name).data()
     (out/'appFw.so').write_bytes(image);(out/'runtime_rx.bin').write_bytes(code);(out/'runtime_extra_rx.bin').write_bytes(extra['data'])
     save(out/'module_audit.json',dict(**audit,commands=commands,section_gc=gc,extra_rx_bytes=len(extra['data']),sources={str(p.relative_to(HERE)):sha(p)for p in sorted(set(main_sources+[sound_menu]+sound_sources))}))
-    save(out/'ap_build.json',dict(passed=True,version='4.65',sha256=digest(image),bytes=len(image),stock_recipe=baseline_report,reverse_to_baseline_exact=True,patches=changes,menu_parent=menu_report,fn=fn_report,rx_bytes=final_rx_size,bss_bytes=memory,all_features_linked_once=True,legacy_bank_flow_present=False,device_tested=False))
-    print(json.dumps(dict(passed=True,version='4.65',AP_sha256=digest(image),bytes=len(image),rx_bytes=final_rx_size,bss_bytes=memory)))
+    save(out/'ap_build.json',dict(passed=True,version='4.67',sha256=digest(image),bytes=len(image),stock_recipe=baseline_report,reverse_to_baseline_exact=True,patches=changes,menu_parent=menu_report,fn=fn_report,rx_bytes=final_rx_size,bss_bytes=memory,all_features_linked_once=True,legacy_bank_flow_present=False,device_tested=False))
+    print(json.dumps(dict(passed=True,version='4.67',AP_sha256=digest(image),bytes=len(image),rx_bytes=final_rx_size,bss_bytes=memory)))
 if __name__=='__main__':main()

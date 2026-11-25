@@ -6,17 +6,26 @@
 #include "crop_core.h"
 
 #define aspect_selected_custom (*(volatile uint32_t *)(ASPECT_STATE))
-/* Native pool3F488C/3F4A36: at most490 objects, stride60A8. One byte per
+/* Native R5 pool: at most490 objects, stride6688. One byte per
  * native slot covers its complete capacity using less RAM than64 pointer/ID
  * pairs. No private fields are written inside the native task object.
  */
 #define task_ids ((uint8_t *)(ASPECT_STATE+12u))
 #define frozen_id (*(uint32_t *)(ASPECT_STATE+4u))
 #define frozen_request (*(uint32_t *)(ASPECT_STATE+8u))
+#define aspect_cp_sequence (*(volatile uint32_t *)(ASPECT_STATE-8u))
+#define frozen_sequence (*(volatile uint32_t *)(ASPECT_STATE-4u))
+#define aspect_cp_selection aspect_selected_custom
+#define POOL 0x1112c54u
+#define GFW 0x157aa10u
+#define REQUEST 0x163f3c8u
+#define SNAPSHOT 0x163f3f0u
+#define REQUEST_ID 0x5ae8u
 extern uint32_t aspect_divide(uint32_t,uint32_t);
 
 static void barrier(void) { __asm__ volatile ("dmb ish" ::: "memory"); }
 static uint32_t read32(uintptr_t p) { return *(const volatile uint32_t *)p; }
+static uint32_t acquire(const volatile uint32_t *p) { return __atomic_load_n(p, __ATOMIC_ACQUIRE); }
 
 static uint32_t task_index(uintptr_t task)
 {
@@ -54,44 +63,56 @@ void aspect_task_clear(uintptr_t task)
     if (index<490) {task_ids[index]=0;barrier();}
 }
 
-/* ImageParam_Capture is allocated from the native pool by3EF354/A05BC0.
- * At the checked pool-release siteA06184, keep the original lock/list/free
- * operation and retire the sidecar only when that operation succeeds.
- * This also covers owners that never reach normal Stage_Notify cleanup.
- */
-uint32_t aspect_pool_release(uintptr_t pool,uintptr_t task)
+/* Reference R5: retire only after native linked-list insertion succeeds. */
+uint32_t aspect_pool_release(uintptr_t pool, uintptr_t task)
 {
-    uint32_t result=((uint32_t (*)(uintptr_t,uintptr_t))0xae08c9)(pool,task);
-    if (result) aspect_task_clear(task);
+    uint32_t available = pool == POOL ? read32(POOL + 8) : 0;
+    uint32_t result = ((uint32_t (*)(uintptr_t, uintptr_t))0xae08c9u)(pool, task);
+    /* 原生范围检查即使内部等待失败也返回 1；按真实插回链表的结果退休。
+     * 此调用点处于原生外层池锁内，尚未向下一分配者释放所有权。 */
+    if (result && pool == POOL && read32(POOL) == task && read32(POOL + 8) == available + 1)
+        aspect_task_clear(task);
     return result;
 }
 
-/* Wrap only A049B0: native GFW snapshot, unchanged 0xD14 bytes. */
+/* Reference R5: publish only a stable, complete 0xdbc native snapshot. */
 void *aspect_freeze_copy(void *destination, const void *source, uint32_t length)
 {
-    uint32_t id=0;
-    if ((uintptr_t)destination == 0x163f3f0 &&
-        (uintptr_t)source == 0x157aa10 && length == 0xdbc &&
-        read32((uintptr_t)source+0xcc) == 2) id=aspect_selected_custom;
-    frozen_id = id >= 4 && id <= 7 ? id : 0;
-    frozen_request=read32(0x163f3c8);
+    uint32_t sequence = acquire(&aspect_cp_sequence);
+    uint32_t id = acquire(&aspect_cp_selection);
+    uint32_t request = read32(REQUEST);
+    void *result = ((void *(*)(void *, const void *, uint32_t))0x5f51bcu)(destination, source, length);
+    if ((uintptr_t)source != GFW || (uintptr_t)destination != SNAPSHOT || length != 0xdbc
+        || (sequence & 1u) || sequence != acquire(&aspect_cp_sequence)
+        || read32(REQUEST) != request || read32(SNAPSHOT + 0xcc) != 2 || id < 4 || id > 7) id = 0;
+    /* 私有编号只会由已准入的接收路径发布；这里不再有可失败分配。 */
+    uint32_t publication = frozen_sequence;
+    frozen_sequence = publication + 1;
     barrier();
-    return ((void *(*)(void *, const void *, uint32_t))0x5f51bc)
-        (destination, source, length);
+    frozen_request = request;
+    frozen_id = id;
+    barrier();
+    frozen_sequence = publication + 2;
+    return result;
 }
 
-/* Wrap only A03142. Original copy writes every native field first. */
+/* Reference R5: bind only a stable frozen publication and matching request. */
 void aspect_capture_copy(void *destination, const void *source)
 {
-    ((void (*)(void *, const void *))0x4596f5)(destination, source);
-    uintptr_t task=(uintptr_t)destination-0x20;
+    ((void (*)(void *, const void *))0x4596f5u)(destination, source);
+    uintptr_t task = (uintptr_t)destination - 0x20;
     aspect_task_clear(task);
+    uint32_t sequence = acquire(&frozen_sequence);
+    uint32_t id = frozen_id, request = frozen_request;
     barrier();
-    uint32_t id=frozen_id;
-    if ((uintptr_t)source != 0x163f3f0 || read32(task+0x24) != 2 ||
-        read32(task+0x5ae8) != frozen_request || id < 4 || id > 7) return;
-    uint32_t index=task_index(task);
-    if (index<490) {task_ids[index]=(uint8_t)id;barrier();}
+    if ((sequence & 1u) || sequence != acquire(&frozen_sequence)
+        || (uintptr_t)source != SNAPSHOT || read32(task + 0x24) != 2
+        || read32(task + REQUEST_ID) != request || id < 4 || id > 7) return;
+    uint32_t index = task_index(task);
+    if (index < 490) {
+        task_ids[index] = (uint8_t)id;
+        barrier();
+    }
 }
 
 /* Crop only the MainEnc request copy, after LUT/pixel development has finished.

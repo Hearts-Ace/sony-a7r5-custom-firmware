@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Package the R5 4.65 build offline from original R5 inputs.
+"""Package the R5 4.67 build offline from original R5 inputs.
 
 Reviewed AP/CP/WBI/AVCAM/MPR replacements are verified independently. Factory defaults remain original.
 No camera or block-device access is performed.
@@ -31,8 +31,8 @@ from signature import (require, digest_file, inspect, hashes_and_signature, veri
 from image_io import digest_stream
 
 OUT=None
-VERSION='4.65'
-TAG='465'
+VERSION='4.67'
+TAG='467'
 TAR=None
 NAME='BODYDATA.DAT'
 REFERENCE_DAT=None
@@ -205,6 +205,9 @@ def build_package():
         public_key_sha256=PUBLIC_SHA256,
         source_repository='https://github.com/Erlla/sony-a7m4-custom-firmware',
         source_commit=comp['upstream_commit'],
+        source_repository_scope='Inherited 4.65 base features only; aspect storage fix uses the user supplied R5 reference',
+        aspect_reference=dict(name='custom-aspect-ratios.zip', revision='audit-fixes-20261123',
+            sha256='cc79fcb6d320172978770135449da7f93a13c9e488d2b0847eea9b6facb9d698'),
         components=comp['components'], archive_sha256=ar['output_sha256'],
         updater_sha256=STOCK_UPDATER_SHA, updater_byte_for_byte_stock=True,
         changed_tar_members=ar['changed_members'], exact_five_member_scope_verified=True,

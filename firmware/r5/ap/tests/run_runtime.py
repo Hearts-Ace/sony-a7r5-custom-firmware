@@ -5,7 +5,7 @@ import argparse,subprocess,json,hashlib,tempfile
 HERE=Path(__file__).resolve().parent
 AP=HERE.parent
 p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);a=p.parse_args();assert not a.output.exists()
-with tempfile.TemporaryDirectory(prefix='r5-owner465-ap-') as td:
+with tempfile.TemporaryDirectory(prefix='r5-runtime-ap-') as td:
  target=Path(td)/'runtime'
  cmd=['clang','-std=c11','-O1','-g','-fsanitize=address,undefined','-Wall','-Wextra','-Werror','-Wno-misleading-indentation','-I',str(AP),'-I',str(AP/'shared'),'-I',str(AP.parent/'common'),str(AP/'r5_filter_runtime.c'),str(AP/'job.c'),str(HERE/'runtime.c'),'-o',str(target)]
  subprocess.run(cmd,check=True,capture_output=True,text=True)

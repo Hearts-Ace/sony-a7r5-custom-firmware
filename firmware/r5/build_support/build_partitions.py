@@ -117,7 +117,7 @@ def main():
         receipt.update(identity(target))
         save(evidence / (part + '.json'), receipt)
     apply_recipe(config['stock_nflasha5'], parts / 'nflasha5', 'nflasha5')
-    report = dict(passed=True, version='4.65', camera_io=False,
+    report = dict(passed=True, version='4.67', camera_io=False,
         source='Original R5 4.00 plus declared component/layout patches',
         previous_custom_firmware_input=False,
         components={key: identity(path) for key, path in components.items()},

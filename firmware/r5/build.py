@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build R5 4.65 from immutable original inputs and the locked current source.
+"""Build R5 4.67 from immutable original inputs and the locked current source.
 
 No camera, SD-card, USB, deployment or network operation exists here. The all
 stage requires a reviewed or explicitly unverified offline candidate receipt
@@ -20,7 +20,7 @@ SUPPORT = HERE / 'build_support'
 sys.path[:0] = [str(SUPPORT), str(HERE)]
 from stock_inputs import identity, load_inputs, save, sha
 from freeze_sources import check
-from validation465 import load_validation, match_components
+from validation import load_validation, match_components
 
 
 def main():
@@ -79,8 +79,8 @@ def main():
 
     ap, cp, retained = out / 'ap', out / 'cp', out / 'retained'
     run('00-host-checks', HERE / 'run_checks.py', '--output', out / 'host-checks')
-    run('01-ap', HERE / 'ap/build_ap465.py', '--stock-ap', paths['stock_ap'], '--output', ap)
-    run('02-cp', SUPPORT / 'build_cp465.py', '--stock-cp', paths['stock_cp'], '--output', cp)
+    run('01-ap', HERE / 'ap/build_ap.py', '--stock-ap', paths['stock_ap'], '--output', ap)
+    run('02-cp', SUPPORT / 'build_cp.py', '--stock-cp', paths['stock_cp'], '--output', cp)
     run('03-retained-features', SUPPORT / 'build_nonfilter.py', '--inputs', config_path, '--output', retained)
     components = dict(AP=ap / 'appFw.so', CP=cp / 'cpapp-b.bin',
         AVCAM=retained / 'avcam/av-cam.bin', MPR=retained / 'mpr/libmpr.so')
@@ -99,7 +99,7 @@ def main():
             package_args += ['--reference-dat', args.reference_dat.expanduser().resolve()]
         run('05-package', SUPPORT / 'package_firmware.py', *package_args)
     check()  # All build intermediates must remain outside the source tree.
-    report = dict(passed=True, version='4.65', stage=args.stage,
+    report = dict(passed=True, version='4.67', stage=args.stage,
         source_lock_sha256=sha(HERE / 'sources.lock.json'), source_files=len(lock),
         components={key:dict(path=str(path.relative_to(out)), **actual[key]) for key,path in components.items()},
         partition_manifest=str((partitions / 'build.json').relative_to(out)),

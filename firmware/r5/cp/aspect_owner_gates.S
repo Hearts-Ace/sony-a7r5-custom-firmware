@@ -19,8 +19,8 @@
  ldr r4,=\optional
  b 2f
 1:
- ldr r0,=0x1a394a0
- movw r1,#504
+ ldr r0,=0x1a39498
+ movw r1,#512
  ldr r2,=0x5f58b0
  blx r2
  ldr r4,=\native

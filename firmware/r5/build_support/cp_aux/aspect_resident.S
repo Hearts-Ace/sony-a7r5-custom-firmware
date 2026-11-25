@@ -15,8 +15,8 @@ aspect_resident_dispatch:
  beq good
  // Native BSS page remains mapped even when optional immutable pages fail.
  // Retire all private IDs before exact native fallback; never reuse stale IDs.
- ldr r0,=0x1a394a0
- movw r1,#504
+ ldr r0,=0x1a39498
+ movw r1,#512
  ldr r2,=0x5f58b0
  blx r2
  ldr r0,[sp,#28]
@@ -53,7 +53,7 @@ table:
  .hword 0x7a25,retire-table
  .hword 0x14a9,pool_reset-table
  .hword 0x088f,pool_release-table
- .hword 0xa00f,raw_emb-table
+ .hword 0xa00f,raw_exif-table
 .thumb_func
 selector:
  // A private wire must never enter native enum tables if module validation fails.
@@ -86,6 +86,6 @@ dimensions:
  b.w native_dimensions
 pool_release:
  b.w native_pool_release
-raw_emb:
- b.w native_raw_exif
+raw_exif:
+ ldr pc,=0xade83d
 .ltorg

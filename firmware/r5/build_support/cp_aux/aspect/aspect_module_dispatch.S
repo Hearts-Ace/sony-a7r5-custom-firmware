@@ -45,4 +45,4 @@ table:
  .word aspect_pool_release
 
  .hword 0xa00f,0
- .word aspect_raw_emb_build
+ .word aspect_raw_exif_build

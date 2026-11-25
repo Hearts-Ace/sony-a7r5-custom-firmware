@@ -3,8 +3,8 @@
   "RX": "0x1a3b000",
   "state": "0x1a394a0",
   "state_bytes": 504,
-  "code_bytes": 1764,
-  "code_sha256": "3227f1d226d6be8d57748aa2543f293d6a6dad8861fb48adf6c1766b1030957a",
+  "code_bytes": 2152,
+  "code_sha256": "d9a062d02e873ea336171c55a64ecb76f1f02596c5e1884474cc7f4c0d507766",
   "hooks": {
     "selector": {
       "VA": "0x33f322",
@@ -51,11 +51,6 @@
       "source_bytes": "45f61825",
       "target": "aspect_notify_release_hook"
     },
-    "raw_emb": {
-      "VA": "0x48a00a",
-      "source_bytes": "54f217f4",
-      "target": "aspect_raw_emb_build"
-    },
     "pool_reset": {
       "VA": "0x4614a4",
       "source_bytes": "00220260",
@@ -65,6 +60,11 @@
       "VA": "0xae088a",
       "source_bytes": "00f01df8",
       "target": "aspect_pool_release"
+    },
+    "raw_exif": {
+      "VA": "0x48a00a",
+      "source_bytes": "54f217f4",
+      "target": "aspect_raw_exif_build"
     }
   },
   "R5_contract": {
@@ -84,20 +84,19 @@
     "scn_roi": "0x5fdc",
     "thm_roi": "0x5fe8"
   },
+  "upstream_commit": "79c3663b1ac4fda98047c2c4f5769b9d60d25920",
   "production_sources": {
     "crop_core.c": "1fdd68e9ed22a747171f9e47c4fbe57be6716e1ce0b2d284f316f3f594c5dc3e",
-    "cp_capture_latch.c": "03b16a6dad6ba48b11ef661d9215fffafd8c83dad42fa5140336f81a87ed4472",
-    "cp_wrappers.S": "c21a16eb80a9757c200a52f30b86c0325fd2a2e9ae9fec3184b226f69c19f151",
-    "raw_emb.c": "1b7de547c8307bdfc3da5be9acb230b021eca7e04ed9f31838e5c9a845c3b063",
-    "aspect_module_dispatch.S": "99d74ec771d8aa272466da48f46f2daecbed175d59b4c973697b4ce47b4bf706",
-    "crop_core.h": "0ddcf1b4af8a9e5fc92466d852d6405d1882ff253eac78ba668cadc2c7ac4c16"
-  },
-  "sources": {
-    "crop_core.c": "16b5e359d4ed6264a2acf904c3936bb4fcbef6d4ee241faeaa7b8f58b5d3d109",
     "crop_core.h": "0ddcf1b4af8a9e5fc92466d852d6405d1882ff253eac78ba668cadc2c7ac4c16",
-    "cp_capture_latch.c": "cee4af00807d0ffe913c136140da5d75e7870edce99af12a64043c2edb13feb1",
-    "cp_crop_wrappers.S": "754685fb714f6a85bab0d9673d5e420bfff3c55813ddff8e591d32f2d243e352",
-    "cp_selector_wrapper.S": "1517beec4dd66156142580a4a3b8e11adc10b5b9186a8475566b877a82164b99"
+    "cp_capture_latch.c": "896cc5dcb50c1794455d5e0721a015ce104a9ed97b813cd70c4a67ecbcc80fcb",
+    "cp_wrappers.S": "13b2ac44ac37098bde3e103af0fcf491e63fb5973c91e6bb06f1edf5c8e9e7a3",
+    "raw_emb.c": "0f67b6e0dc0fb40b6248f9d1ba32e86b8fe55dea8bf83691741ac0fb0313cf62",
+    "aspect_module_dispatch.S": "16eebc6497a91d18901b2b9d686fe3332072a6315da442ef83dcd0858739ae4d"
   },
-  "upstream_commit": "79c3663b1ac4fda98047c2c4f5769b9d60d25920"
+  "reference_zip_sha256": "cc79fcb6d320172978770135449da7f93a13c9e488d2b0847eea9b6facb9d698",
+  "reference_method": "User supplied R5 custom-aspect-ratios.zip; audit-fixes-20261123",
+  "sequence_state": "0x1a39498",
+  "sequence_state_bytes": 8,
+  "guard_clear_start": "0x1a39498",
+  "guard_clear_bytes": 512
 }

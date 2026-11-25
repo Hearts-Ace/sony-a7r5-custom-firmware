@@ -1,6 +1,6 @@
 {
   "schema": "r5-current-source-layout/2",
-  "firmware_version": "4.65",
+  "firmware_version": "4.67",
   "firmware_entry": "firmware/r5/build.py",
   "firmware_source_lock": "firmware/r5/sources.lock.json",
   "firmware_original_inputs": "firmware/r5/build_support/inputs.lock.json",
@@ -10,7 +10,7 @@
   "supplementary_packaging_prompt": "R5FlashWorkbench/README.md",
   "private_material_excluded": ["color fitting schemes", "training workbenches", "simulation operators", "training inputs and research source"],
   "current_source_mapping": "firmware/r5/build_support/provenance.json",
-  "current_validation": "publication/4.65/validation.json",
+  "current_validation": "publication/4.67/validation.json",
   "current_filters": "filters/",
   "filter_source": "https://github.com/Hearts-Ace/sony-a7r5-custom-firmware/tree/main/filters",
   "slot_readback_and_unlock": "tools/r5-slots/README.md",

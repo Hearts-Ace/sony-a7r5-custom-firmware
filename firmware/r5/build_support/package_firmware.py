@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stream a fully verified local 4.65 DAT from the original archive.
+"""Stream a fully verified local 4.67 DAT from the original archive.
 
 Only the final DAT and replacement members are stored. No second complete TAR,
 FDAT plaintext or previous custom-firmware archive is created or consumed.
@@ -17,7 +17,7 @@ from overlay import Overlay
 from stock_inputs import identity, load_inputs, save, sha
 import package
 from freeze_sources import check
-from validation465 import load_validation, match_components
+from validation import load_validation, match_components
 
 
 def main():
@@ -32,7 +32,7 @@ def main():
     config = load_inputs(args.inputs, signing=True)
     report = json.loads((args.build / 'build.json').read_text())
     match_components(validation, report['components'])
-    assert report['passed'] and report['version'] == '4.65'
+    assert report['passed'] and report['version'] == '4.67'
     assert set(report['partitions']) == {'nflasha3', 'nflasha5', 'nflasha8', 'nflasha15'}
     for name, row in report['partitions'].items():
         assert identity(args.build / 'partitions' / name) == row
@@ -88,12 +88,12 @@ def main():
     expected_changed.add('0701_part_image_sum/part_image.sum')
     assert {row['member'] for row in facts if row['changed_from_stock']} == expected_changed
     assert set(replacements) == expected_changed
-    save(evidence / 'archive_verification_465.json', archive_receipt)
+    save(evidence / 'archive_verification_467.json', archive_receipt)
     package.ROOT = out / 'work'
     package.OUT = out
     package.TAR = overlay
-    package.VERSION = '4.65'
-    package.TAG = '465'
+    package.VERSION = '4.67'
+    package.TAG = '467'
     package.NAME = 'BODYDATA.DAT'
     package.REFERENCE_DAT = args.reference_dat.expanduser().resolve() if args.reference_dat else None
     package.components = lambda: dict(upstream_commit='086df3b1e33dfa0206553ac2bb003535c58ddb80', components=report['components'])
@@ -114,7 +114,7 @@ def main():
         device_acceptance_tested=False)
     save(out / 'verification.json', receipt)
     check()
-    print(json.dumps(dict(passed=True, version='4.65', output_sha256=receipt['output_sha256'],
+    print(json.dumps(dict(passed=True, version='4.67', output_sha256=receipt['output_sha256'],
         all_plaintext_verified=True, camera_io=False), ensure_ascii=False))
 
 

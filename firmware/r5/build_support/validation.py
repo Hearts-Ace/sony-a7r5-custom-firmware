@@ -23,10 +23,10 @@ def load_validation(path):
     candidate = status == 'unverified_candidate'
     if not (status in ('reviewed_offline', 'unverified_candidate')
             and receipt.get('passed') is (not candidate)
-            and receipt.get('version') == '4.65'
+            and receipt.get('version') == '4.67'
             and receipt.get('offline_only') is True
             and receipt.get('device_acceptance_tested') is False):
-        raise ValueError('Require an explicitly classified offline 4.65 validation receipt')
+        raise ValueError('Require an explicitly classified offline 4.67 validation receipt')
     components = receipt.get('components', {})
     if set(components) != COMPONENTS or any(not isinstance(v, str) or not HEX.fullmatch(v) for v in components.values()):
         raise ValueError('Validation must bind all four exact component SHA256 identities')

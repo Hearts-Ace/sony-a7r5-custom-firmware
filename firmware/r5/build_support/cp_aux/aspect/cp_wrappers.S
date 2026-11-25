@@ -85,10 +85,28 @@ aspect_cp_select_hook:
     push {r0-r3, r12, lr}
     mrs r12,apsr
     push {r4,r12}
+    ldr r4,=aspect_cp_sequence
+    ldr r12,[r4]
+    add r12,#1
+    str r12,[r4]
+    dmb ish
     mov r0, r1
     bl aspect_cp_select
     str.w r0, [r5, #0xcc]
+    dmb ish
+    ldr r12,[r4]
+    add r12,#1
+    str r12,[r4]
+    dmb ish
     pop {r4,r12}
     msr apsr_nzcvqg,r12
     pop {r0-r3, r12, pc}
 .size aspect_cp_select_hook, .-aspect_cp_select_hook
+
+/* Existing reserved sidecar, extended by two reference R5 sequence words. */
+.global aspect_cp_sequence
+.set aspect_cp_sequence,0x1a39498
+.global aspect_cp_selection
+.set aspect_cp_selection,0x1a394a0
+.global aspect_frozen_sequence
+.set aspect_frozen_sequence,0x1a3949c
