@@ -1,25 +1,25 @@
 {
-  "schema": "r5-filter-description/1",
-  "id": "EBB",
-  "name": "ETERNA BLEACH BYPASS",
-  "short_name": "EBB",
-  "series": "Fujifilm Film Simulation",
-  "description": "",
-  "updated": "2026-11-23",
-  "sha256": "0c73278afee8cd66044584aa2a91b5ccc86ab8037beedb2dead04fa4ac958424",
-  "camera_tested": false,
-  "order": 2,
-  "type": "digital",
-  "training_error": {
-    "status": "available",
-    "metric": "ΔE00",
-    "mean": 0.8344351276183898,
-    "p95": 1.8276552967327728,
-    "maximum": 6.121203517380457,
-    "samples": 62715,
-    "split": "test",
-    "protocol": "fuji-algorithm-holdout-62715",
-    "label": "算法留出测试集",
-    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
-  }
+ "schema": "r5-filter-description/1",
+ "id": "EBB",
+ "name": "ETERNA BLEACH BYPASS",
+ "short_name": "EBB",
+ "series": "Fujifilm Film Simulation",
+ "description": "",
+ "updated": "2026-11-25",
+ "sha256": "5736a160c340251c72f5055120c674a0f67be55ace932a9dc8a0671e13ddfdfa",
+ "camera_tested": false,
+ "order": 2,
+ "type": "digital",
+ "training_error": {
+  "status": "available",
+  "metric": "ΔE00",
+  "mean": 0.7352661176105046,
+  "p95": 1.5418127078863462,
+  "maximum": 5.845744316316666,
+  "samples": 63733,
+  "split": "test",
+  "protocol": "mac-pure-algorithm-63733",
+  "label": "Mac 纯算法评测集",
+  "operator_sha256": "adf3ce6b4c6a13cb1f9a7158f9dcd6d9c6633e9b4110078a2af52fecafe10345"
+ }
 }

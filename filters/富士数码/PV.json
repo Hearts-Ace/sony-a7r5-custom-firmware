@@ -1,25 +1,25 @@
 {
-  "schema": "r5-filter-description/1",
-  "id": "PV",
-  "name": "PROVIA",
-  "short_name": "PV",
-  "series": "Fujifilm Film Simulation",
-  "description": "",
-  "updated": "2026-11-23",
-  "sha256": "2c5fafbcb3ae2350634b995aa212538868e3ba2e1c110b338babc3bf58d0a1ea",
-  "camera_tested": false,
-  "order": 6,
-  "type": "digital",
-  "training_error": {
-    "status": "available",
-    "metric": "ΔE00",
-    "mean": 1.066633867582571,
-    "p95": 2.578343215313079,
-    "maximum": 6.964267232300056,
-    "samples": 62715,
-    "split": "test",
-    "protocol": "fuji-algorithm-holdout-62715",
-    "label": "算法留出测试集",
-    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
-  }
+ "schema": "r5-filter-description/1",
+ "id": "PV",
+ "name": "PROVIA",
+ "short_name": "PV",
+ "series": "Fujifilm Film Simulation",
+ "description": "",
+ "updated": "2026-11-25",
+ "sha256": "cb76982e134f40e5bceff01fecae96a75546a05b8778aa079b79e768232c845d",
+ "camera_tested": false,
+ "order": 6,
+ "type": "digital",
+ "training_error": {
+  "status": "available",
+  "metric": "ΔE00",
+  "mean": 0.8921997028367875,
+  "p95": 2.064052597566469,
+  "maximum": 5.664219283165714,
+  "samples": 63733,
+  "split": "test",
+  "protocol": "mac-pure-algorithm-63733",
+  "label": "Mac 纯算法评测集",
+  "operator_sha256": "adf3ce6b4c6a13cb1f9a7158f9dcd6d9c6633e9b4110078a2af52fecafe10345"
+ }
 }

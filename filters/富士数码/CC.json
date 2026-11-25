@@ -1,25 +1,25 @@
 {
-  "schema": "r5-filter-description/1",
-  "id": "CC",
-  "name": "CLASSIC CHROME",
-  "short_name": "CC",
-  "series": "Fujifilm Film Simulation",
-  "description": "",
-  "updated": "2026-11-23",
-  "sha256": "c9c7a7cc8b5523e65e87e54c72a0c7099d0e3ff62e5a8e465031839c963a5e69",
-  "camera_tested": false,
-  "order": 1,
-  "type": "digital",
-  "training_error": {
-    "status": "available",
-    "metric": "ΔE00",
-    "mean": 0.8388878894914167,
-    "p95": 1.8886406600780752,
-    "maximum": 6.999742815359978,
-    "samples": 62715,
-    "split": "test",
-    "protocol": "fuji-algorithm-holdout-62715",
-    "label": "算法留出测试集",
-    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
-  }
+ "schema": "r5-filter-description/1",
+ "id": "CC",
+ "name": "CLASSIC CHROME",
+ "short_name": "CC",
+ "series": "Fujifilm Film Simulation",
+ "description": "",
+ "updated": "2026-11-25",
+ "sha256": "a0749d4c7ca214c63e324691162d8535ba8d311df9ba5d68b6ee831dd3519a69",
+ "camera_tested": false,
+ "order": 1,
+ "type": "digital",
+ "training_error": {
+  "status": "available",
+  "metric": "ΔE00",
+  "mean": 0.7621632615792995,
+  "p95": 1.7426276911418606,
+  "maximum": 5.69603606697215,
+  "samples": 63733,
+  "split": "test",
+  "protocol": "mac-pure-algorithm-63733",
+  "label": "Mac 纯算法评测集",
+  "operator_sha256": "adf3ce6b4c6a13cb1f9a7158f9dcd6d9c6633e9b4110078a2af52fecafe10345"
+ }
 }

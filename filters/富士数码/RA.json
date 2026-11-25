@@ -1,25 +1,25 @@
 {
-  "schema": "r5-filter-description/1",
-  "id": "RA",
-  "name": "REALA ACE",
-  "short_name": "RA",
-  "series": "Fujifilm Film Simulation",
-  "description": "",
-  "updated": "2026-11-23",
-  "sha256": "3b3a9b3a969ae41d03040f0700dae7cf121618cb4e17d56f2ce99f7193892125",
-  "camera_tested": false,
-  "order": 7,
-  "type": "digital",
-  "training_error": {
-    "status": "available",
-    "metric": "ΔE00",
-    "mean": 0.97975632157335,
-    "p95": 1.997965878120914,
-    "maximum": 5.926986789645172,
-    "samples": 62715,
-    "split": "test",
-    "protocol": "fuji-algorithm-holdout-62715",
-    "label": "算法留出测试集",
-    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
-  }
+ "schema": "r5-filter-description/1",
+ "id": "RA",
+ "name": "REALA ACE",
+ "short_name": "RA",
+ "series": "Fujifilm Film Simulation",
+ "description": "",
+ "updated": "2026-11-25",
+ "sha256": "ff5d5b023e799c54b3442f38a35c27a9641af05a7aa5c505e9f1719e3a9f9b19",
+ "camera_tested": false,
+ "order": 7,
+ "type": "digital",
+ "training_error": {
+  "status": "available",
+  "metric": "ΔE00",
+  "mean": 0.9327883414598284,
+  "p95": 1.8307235767424874,
+  "maximum": 5.162183696285377,
+  "samples": 63733,
+  "split": "test",
+  "protocol": "mac-pure-algorithm-63733",
+  "label": "Mac 纯算法评测集",
+  "operator_sha256": "adf3ce6b4c6a13cb1f9a7158f9dcd6d9c6633e9b4110078a2af52fecafe10345"
+ }
 }
