@@ -4,23 +4,23 @@
  "short_name": "ET",
  "name": "ETERNA",
  "format": "camera-look v2",
- "sha256": "8dee2f64f104689271152476edcfef24060096f923f5822d379082046835a45b",
- "updated": "2026-11-25",
+ "sha256": "a2ec013ec3392217c3a40c23dcbdc4daa9882dc3e6c6db1efa9142cabc06f012",
+ "updated": "2026-11-26",
  "order": 3,
  "camera_tested": false,
  "training_error": {
   "status": "available",
   "metric": "ΔE00",
-  "mean": 0.8018719766975994,
-  "p95": 1.8600936624967188,
-  "maximum": 7.9222502167959785,
+  "mean": 0.7910578918743227,
+  "p95": 1.7238500160385806,
+  "maximum": 5.598601810605265,
   "samples": 62715,
   "split": "test",
   "protocol": "fuji-algorithm-holdout-62715",
   "label": "算法留出测试集",
-  "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  "operator_sha256": "adf3ce6b4c6a13cb1f9a7158f9dcd6d9c6633e9b4110078a2af52fecafe10345"
  },
  "metric_source_model": "r5",
  "description": "",
- "source_bin_sha256": "16922856bb16b5d9b2624fbb13faad4ad02835af7d4c479498bf331aad64d24d"
+ "source_bin_sha256": "3df1e04baae5e377447bdf7b0d024fde6a12ceef12ceeb9ddab1114b2b7fd80d"
 }

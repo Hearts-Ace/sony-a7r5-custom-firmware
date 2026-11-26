@@ -4,23 +4,23 @@
  "short_name": "VN",
  "name": "Velvia",
  "format": "A7Look /1",
- "sha256": "11cfd38336c34f97285f07a8c37f7869a6956d22d26b4aa8cd65e00787ba4240",
- "updated": "2026-11-25",
+ "sha256": "416919cb0bdcddf6003c4ad1d262f6929abb0465853642463e845d86c3991cc3",
+ "updated": "2026-11-26",
  "order": 8,
  "camera_tested": false,
  "training_error": {
   "status": "available",
   "metric": "ΔE00",
-  "mean": 1.3972930577162304,
-  "p95": 3.2038253506208982,
-  "maximum": 8.935830891646193,
-  "samples": 62715,
+  "mean": 1.1427569039587517,
+  "p95": 2.5265247844197902,
+  "maximum": 8.32265092517443,
+  "samples": 63733,
   "split": "test",
-  "protocol": "fuji-algorithm-holdout-62715",
-  "label": "算法留出测试集",
-  "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  "protocol": "mac-pure-algorithm-63733",
+  "label": "Mac 纯算法评测集",
+  "operator_sha256": "adf3ce6b4c6a13cb1f9a7158f9dcd6d9c6633e9b4110078a2af52fecafe10345"
  },
  "metric_source_model": "r5",
  "description": "",
- "source_bin_sha256": "84d8bd2dea66c3d6bc38b28d2b45c925a475886cd745cede39c5811a67263c6f"
+ "source_bin_sha256": "7186cacb55286274bd72ff20f4609e1b9d61c4b9b3293feba746feeaa6170eba"
 }

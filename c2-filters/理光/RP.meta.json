@@ -4,23 +4,23 @@
  "short_name": "RP",
  "name": "理光正片",
  "format": "A7Look /1",
- "sha256": "99c95dd35ae2472eb3b76f3d14f2c01e1e061c1c683cd2fa732bd0c170977305",
- "updated": "2026-11-25",
+ "sha256": "90e8a7b56ac02bc635789e7264bfea25988fb7a6573d0e2af45beb64fda9e976",
+ "updated": "2026-11-26",
  "order": 11,
  "camera_tested": false,
  "training_error": {
   "status": "available",
   "metric": "ΔE00",
-  "mean": 0.9866675886147479,
-  "p95": 2.355862004942624,
-  "maximum": 8.72075386998884,
+  "mean": 0.8373254472694087,
+  "p95": 1.914953530096168,
+  "maximum": 5.835876412539271,
   "samples": 17343,
   "split": "test",
   "protocol": "v45-workbench-test-17343",
   "label": "v4.5 训练台测试集",
-  "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809"
+  "operator_sha256": "9a6c2678c7fd5346d07244d01279bb28bc362af397a97b2f79a1e10c33c97dba"
  },
  "metric_source_model": "r5",
  "description": "",
- "source_bin_sha256": "7705144134a204c1a14db5fc94da712e0b75868b9cb81cf9545213e65b31d575"
+ "source_bin_sha256": "4fb6522756b0479fc9773be0eb32cfcc155adc119620944048e3b0f365098ec8"
 }

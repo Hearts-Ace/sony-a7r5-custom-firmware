@@ -4,7 +4,7 @@
  "short_name": "CC",
  "name": "CLASSIC CHROME",
  "format": "camera-look v2",
- "sha256": "8e52d5235d083081c9ff0552d2302dae356428d30d5a49968d486efaf3ebb61e",
+ "sha256": "2a3b0f337afbecf44080a7a43e848bf2a248ea1345c8fbb095e27c0c4ca746ce",
  "updated": "2026-11-25",
  "order": 1,
  "camera_tested": false,
@@ -22,5 +22,5 @@
  },
  "metric_source_model": "r5",
  "description": "",
- "source_bin_sha256": "a0749d4c7ca214c63e324691162d8535ba8d311df9ba5d68b6ee831dd3519a69"
+ "source_bin_sha256": "8239d8c7c6d744e62b16170c6cd640fea8bc873a82b885b57e4fb00bb6232122"
 }

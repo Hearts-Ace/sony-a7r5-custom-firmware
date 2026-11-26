@@ -4,23 +4,23 @@
  "short_name": "RN",
  "name": "理光负片",
  "format": "A7Look /1",
- "sha256": "226a7dcb4c6ad1c2339ec9ff88ed1a1d5988262b9ddc1dd965908eecb484d174",
- "updated": "2026-11-25",
+ "sha256": "9ec70c520082647200550f2b38a66c0b6396c10023214ade272f1a770cc8618e",
+ "updated": "2026-11-26",
  "order": 12,
  "camera_tested": false,
  "training_error": {
   "status": "available",
   "metric": "ΔE00",
-  "mean": 0.9649688398929692,
-  "p95": 2.1974915051097854,
-  "maximum": 8.412310805272552,
+  "mean": 0.8682319268128017,
+  "p95": 1.9176068230725234,
+  "maximum": 5.1720539497351545,
   "samples": 17343,
   "split": "test",
   "protocol": "v45-workbench-test-17343",
   "label": "v4.5 训练台测试集",
-  "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809"
+  "operator_sha256": "9a6c2678c7fd5346d07244d01279bb28bc362af397a97b2f79a1e10c33c97dba"
  },
  "metric_source_model": "r5",
  "description": "",
- "source_bin_sha256": "a19069cf1fa02e6600b2cad2b9619d5866594ea536bf60fefd483500539090c6"
+ "source_bin_sha256": "c13e70bbda3e27378004dcfddd8393f0fc4936aa75e58e1beccd0fc80b2454a9"
 }

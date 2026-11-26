@@ -4,23 +4,23 @@
  "short_name": "NS",
  "name": "PRO Neg. Std",
  "format": "A7Look /1",
- "sha256": "eb4912980ba61ecfdc7206e2c7f30d1fcba6d4cdd6bb29e15a2a930f9fde741a",
- "updated": "2026-11-25",
+ "sha256": "ae1dee008c67e7f4c36604911f94844751c1fa51ebdbbd4da3758a7fbfa8aacc",
+ "updated": "2026-11-26",
  "order": 9,
  "camera_tested": false,
  "training_error": {
   "status": "available",
   "metric": "ΔE00",
-  "mean": 0.9369561675490131,
-  "p95": 2.3120623326569043,
-  "maximum": 6.588854347487881,
+  "mean": 0.774243714234452,
+  "p95": 1.7808965115666553,
+  "maximum": 5.44669536723961,
   "samples": 62715,
   "split": "test",
   "protocol": "fuji-algorithm-holdout-62715",
   "label": "算法留出测试集",
-  "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  "operator_sha256": "adf3ce6b4c6a13cb1f9a7158f9dcd6d9c6633e9b4110078a2af52fecafe10345"
  },
  "metric_source_model": "r5",
  "description": "",
- "source_bin_sha256": "15980bf4dc14ba870505b7cd59d31bfc45204255a29bf40898b4401757b7ed2e"
+ "source_bin_sha256": "dbeeeb41e2baa3b4c1e08e2f8ce1a6b81bf8803be86398e1df3c5c0b73406cfd"
 }

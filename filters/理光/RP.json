@@ -1,25 +1,25 @@
 {
-  "schema": "r5-filter-description/1",
-  "id": "RP",
-  "name": "理光正片",
-  "short_name": "RP",
-  "series": "Ricoh GR",
-  "description": "",
-  "updated": "2026-11-23",
-  "sha256": "7705144134a204c1a14db5fc94da712e0b75868b9cb81cf9545213e65b31d575",
-  "camera_tested": false,
-  "order": 11,
-  "type": "digital",
-  "training_error": {
-    "status": "available",
-    "metric": "ΔE00",
-    "mean": 0.9866675886147479,
-    "p95": 2.355862004942624,
-    "maximum": 8.72075386998884,
-    "samples": 17343,
-    "split": "test",
-    "protocol": "v45-workbench-test-17343",
-    "label": "v4.5 训练台测试集",
-    "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809"
-  }
+ "schema": "r5-filter-description/1",
+ "id": "RP",
+ "name": "理光正片",
+ "short_name": "RP",
+ "series": "Ricoh GR",
+ "description": "",
+ "updated": "2026-11-26",
+ "sha256": "4fb6522756b0479fc9773be0eb32cfcc155adc119620944048e3b0f365098ec8",
+ "camera_tested": false,
+ "order": 11,
+ "type": "digital",
+ "training_error": {
+  "status": "available",
+  "metric": "ΔE00",
+  "mean": 0.8373254472694087,
+  "p95": 1.914953530096168,
+  "maximum": 5.835876412539271,
+  "samples": 17343,
+  "split": "test",
+  "protocol": "v45-workbench-test-17343",
+  "label": "v4.5 训练台测试集",
+  "operator_sha256": "9a6c2678c7fd5346d07244d01279bb28bc362af397a97b2f79a1e10c33c97dba"
+ }
 }

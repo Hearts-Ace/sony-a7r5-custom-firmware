@@ -4,23 +4,23 @@
  "short_name": "P400",
  "name": "Portra400NB",
  "format": "A7Look /1",
- "sha256": "352bce7fc0520aa88962657f5b955268c3bf78203bdcff539b215c7d89e497c4",
- "updated": "2026-11-25",
+ "sha256": "37d510a567c788ba68b197ae925cc6c71d7c8bf395bc3b48405fc84fe14ba353",
+ "updated": "2026-11-26",
  "order": 13,
  "camera_tested": false,
  "training_error": {
   "status": "available",
   "metric": "ΔE00",
-  "mean": 1.304331317384927,
-  "p95": 2.9797116801485837,
-  "maximum": 11.92460510314385,
+  "mean": 1.0673745208008127,
+  "p95": 2.403960032958756,
+  "maximum": 7.338518574909129,
   "samples": 17343,
   "split": "test",
   "protocol": "v45-workbench-test-17343",
   "label": "v4.5 训练台测试集",
-  "operator_sha256": "adcac4c201dd873c7a7f35a79abb4d59986a071443ac65a56208f69cf9c85809"
+  "operator_sha256": "9a6c2678c7fd5346d07244d01279bb28bc362af397a97b2f79a1e10c33c97dba"
  },
  "metric_source_model": "r5",
  "description": "",
- "source_bin_sha256": "83d3cc8cf9b949e78836005736a07a53b5255ea961bb35c6bf16380e1555b134"
+ "source_bin_sha256": "f0887e108ac24c26ade7ac606cf9d7ecf693824a157c3e9141acf8e208ebb423"
 }

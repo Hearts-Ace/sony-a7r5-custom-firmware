@@ -1,25 +1,25 @@
 {
-  "schema": "r5-filter-description/1",
-  "id": "ET",
-  "name": "ETERNA",
-  "short_name": "ET",
-  "series": "Fujifilm Film Simulation",
-  "description": "",
-  "updated": "2026-11-23",
-  "sha256": "16922856bb16b5d9b2624fbb13faad4ad02835af7d4c479498bf331aad64d24d",
-  "camera_tested": false,
-  "order": 3,
-  "type": "digital",
-  "training_error": {
-    "status": "available",
-    "metric": "ΔE00",
-    "mean": 0.8018719766975994,
-    "p95": 1.8600936624967188,
-    "maximum": 7.9222502167959785,
-    "samples": 62715,
-    "split": "test",
-    "protocol": "fuji-algorithm-holdout-62715",
-    "label": "算法留出测试集",
-    "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
-  }
+ "schema": "r5-filter-description/1",
+ "id": "ET",
+ "name": "ETERNA",
+ "short_name": "ET",
+ "series": "Fujifilm Film Simulation",
+ "description": "",
+ "updated": "2026-11-26",
+ "sha256": "3df1e04baae5e377447bdf7b0d024fde6a12ceef12ceeb9ddab1114b2b7fd80d",
+ "camera_tested": false,
+ "order": 3,
+ "type": "digital",
+ "training_error": {
+  "status": "available",
+  "metric": "ΔE00",
+  "mean": 0.7910578918743227,
+  "p95": 1.7238500160385806,
+  "maximum": 5.598601810605265,
+  "samples": 62715,
+  "split": "test",
+  "protocol": "fuji-algorithm-holdout-62715",
+  "label": "算法留出测试集",
+  "operator_sha256": "adf3ce6b4c6a13cb1f9a7158f9dcd6d9c6633e9b4110078a2af52fecafe10345"
+ }
 }

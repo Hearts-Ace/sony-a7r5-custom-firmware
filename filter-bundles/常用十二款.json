@@ -1,23 +1,23 @@
 {
-  "schema": "r5-filter-bundle/1",
-  "id": "standard-12",
-  "name": "常用十二款",
-  "description": "富士九款、理光正片与负片、Portra 400，按此顺序对应相机槽位。",
-  "filters": [
-    "AS",
-    "CC",
-    "EBB",
-    "ET",
-    "NC",
-    "NH",
-    "PV",
-    "RA",
-    "VN",
-    "RP",
-    "RN",
-    "P400"
-  ],
-  "sha256": "3bc48ef11e411edc23e9c907512358f2d66a9049faa18e5862c3a2c115bc15b1",
-  "updated": "2026-11-23",
-  "camera_tested": false
+ "schema": "r5-filter-bundle/1",
+ "id": "standard-12",
+ "name": "常用十二款",
+ "description": "富士十款（AS、CC、EBB、ET、NC、NH、PV、RA、VN、NS）、理光正片与负片，按此顺序对应相机槽位。",
+ "filters": [
+  "AS",
+  "CC",
+  "EBB",
+  "ET",
+  "NC",
+  "NH",
+  "PV",
+  "RA",
+  "VN",
+  "RP",
+  "RN",
+  "NS"
+ ],
+ "sha256": "3b126c53378ea295f2f0d9249f7f8acba7cff0f0f50e1bfc8133d001863142d2",
+ "updated": "2026-11-26",
+ "camera_tested": false
 }

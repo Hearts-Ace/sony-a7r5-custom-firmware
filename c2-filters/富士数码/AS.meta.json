@@ -4,23 +4,23 @@
  "short_name": "AS",
  "name": "ASTIA",
  "format": "A7Look /1",
- "sha256": "649c32fa9b2fb05e36a1248426a080f0cb898b0aa18b429d55baa990edce6e8d",
- "updated": "2026-11-25",
+ "sha256": "129f652dedb855eb8cfb8b91ab799ecbf34131e3ec52c7d0536925c5af779be5",
+ "updated": "2026-11-26",
  "order": 0,
  "camera_tested": false,
  "training_error": {
   "status": "available",
   "metric": "ΔE00",
-  "mean": 1.0976774416042823,
-  "p95": 2.5919765347577197,
-  "maximum": 7.8409718739008225,
-  "samples": 62715,
+  "mean": 0.9922694747805232,
+  "p95": 2.2785572818355218,
+  "maximum": 5.600649252967498,
+  "samples": 63733,
   "split": "test",
-  "protocol": "fuji-algorithm-holdout-62715",
-  "label": "算法留出测试集",
-  "operator_sha256": "1d74680defab8ceb9dfe92b39bb5e16cbcd0e73abbe62e9fd1126d980557b195"
+  "protocol": "mac-pure-algorithm-63733",
+  "label": "Mac 纯算法评测集",
+  "operator_sha256": "adf3ce6b4c6a13cb1f9a7158f9dcd6d9c6633e9b4110078a2af52fecafe10345"
  },
  "metric_source_model": "r5",
  "description": "",
- "source_bin_sha256": "50d2ba0cf29bd414a8b53f6bc0f15b22a3d048c4e9f630e4657131c63393a3a9"
+ "source_bin_sha256": "c35542715f5160b01482be545f9758bdd1400c3a746bdeb4c04667b770c7e4fd"
 }

@@ -4,7 +4,7 @@
  "short_name": "PV",
  "name": "PROVIA",
  "format": "camera-look v2",
- "sha256": "43d1bf86dd1c49340dbc599df90446eeedda0c70d2d402f28f17ed5451f49936",
+ "sha256": "fa5abe563b61bdead3838478bd8fffe54b9cc27524bb50569a19318bbac5a113",
  "updated": "2026-11-25",
  "order": 6,
  "camera_tested": false,
@@ -22,5 +22,5 @@
  },
  "metric_source_model": "r5",
  "description": "",
- "source_bin_sha256": "cb76982e134f40e5bceff01fecae96a75546a05b8778aa079b79e768232c845d"
+ "source_bin_sha256": "955c05cae77fe80908070dbfb174303b6d63c916b2dbd677d2f03c351751efb2"
 }
